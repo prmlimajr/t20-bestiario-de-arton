@@ -57,16 +57,48 @@ function montarAtor(fonte, arquivo) {
   ator.prototypeToken.name = fonte.name;
   ator.prototypeToken.texture.src = ator.img;
   ator._stats = stats();
-  ator.items = (fonte.items ?? []).map((it, i) => {
-    const item = mesclar(modelo(it.type), it);
-    item._id = gerarId(`item:${fonte.name}:${it.type}:${it.name}`);
-    item.img = caminhoImg(it.img ?? item.img);
-    item.sort = (i + 1) * 100000;
-    item._stats = stats();
-    return item;
-  });
+  ator.items = (fonte.items ?? []).map((it, i) => montarItem(it, `item:${fonte.name}`, (i + 1) * 100000));
   if (!fonte.name || !fonte.system?.attributes?.nd) throw new Error(`${arquivo}: "name" e "system.attributes.nd" são obrigatórios`);
   return ator;
+}
+
+const REGRAS_MONTARIA = fs.readFileSync(path.join(RAIZ, "tools/textos/regras-montaria.html"), "utf8").trim();
+
+/** Item (solto ou embutido em ator) com seus efeitos mesclados aos modelos. */
+function montarItem(fonte, prefixo, sort = 0) {
+  if (!fonte.name || !fonte.type) throw new Error(`item sem "name"/"type" em ${prefixo}`);
+  const item = mesclar(modelo(fonte.type), { ...fonte, effects: [] });
+  item._id = gerarId(`${prefixo}:${fonte.type}:${fonte.name}`);
+  item.img = caminhoImg(fonte.img ?? item.img);
+  item.sort = sort;
+  item._stats = stats();
+  // Montarias levam as Regras de Montarias do livro básico, como as do sistema.
+  if (item.system.subtipo === "Montaria") item.system.description.value += `\n${REGRAS_MONTARIA}`;
+  item.effects = (fonte.effects ?? []).map((ef) => {
+    const efeito = mesclar(modelo("efeito"), ef);
+    efeito._id = gerarId(`efeito:${item._id}:${ef.name}`);
+    efeito.img = caminhoImg(ef.img ?? item.img);
+    efeito.origin = `Item.${item._id}`;
+    efeito._stats = stats();
+    return efeito;
+  });
+  return item;
+}
+
+async function buildItens(pack) {
+  const dir = path.join(RAIZ, "src", pack);
+  const docs = [];
+  for (const arq of fs.existsSync(dir) ? fs.readdirSync(dir).filter((f) => f.endsWith(".json")).sort() : []) {
+    const item = montarItem(JSON.parse(fs.readFileSync(path.join(dir, arq), "utf8")), `${pack}`);
+    item.folder = null;
+    item.effects = item.effects.map((ef) => {
+      docs.push([`!items.effects!${item._id}.${ef._id}`, ef]);
+      return ef._id;
+    });
+    docs.push([`!items!${item._id}`, item]);
+    console.log(`  ${pack}: ${item.name}`);
+  }
+  await gravar(pack, docs);
 }
 
 async function gravar(pack, docs) {
@@ -112,6 +144,6 @@ async function buildAtores(pack) {
 
 for (const pack of MODULO.packs) {
   if (pack.type === "Actor") await buildAtores(pack.name);
-  else await gravar(pack.name, []); // Itens/parceiros: ainda sem conteúdo.
+  else await buildItens(pack.name);
   console.log(`✔ packs/${pack.name}`);
 }

@@ -1,0 +1,46 @@
+{
+  "tint": "#ffffff",
+  "flags": {
+    "tormenta20": {}
+  },
+  "duration": {
+    "value": null,
+    "units": "seconds",
+    "expiry": "sceneEnd",
+    "expired": false
+  },
+  "disabled": false,
+  "transfer": false,
+  "name": "",
+  "img": "icons/svg/upgrade.svg",
+  "type": "base",
+  "system": {
+    "changes": [],
+    "targets": [],
+    "status": null,
+    "onuse": false,
+    "abilityUse": {
+      "description": "",
+      "automatic": false,
+      "aumenta": false,
+      "custo": 0,
+      "names": [],
+      "types": []
+    },
+    "aura": {
+      "isAura": false,
+      "range": 0
+    },
+    "identifier": "",
+    "upgrade": {
+      "type": null,
+      "itemType": []
+    }
+  },
+  "description": "",
+  "statuses": [],
+  "sort": 0,
+  "start": null,
+  "showIcon": 1,
+  "folder": null
+}

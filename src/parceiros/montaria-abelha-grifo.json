@@ -1,0 +1,47 @@
+{
+  "name": "Montaria: Abelha-Grifo",
+  "type": "poder",
+  "img": "assets/tokens/abelha-grifo.png",
+  "system": {
+    "description": {
+      "value": "<p>A abelha-grifo é um parceiro montaria (Grande) que fornece os benefícios a seguir.</p>\n<p><strong>Iniciante</strong>: seu deslocamento muda para 15m e você recebe deslocamento de escalada 15m.</p>\n<p><strong>Veterano</strong>: como acima, mas você também recebe +2 em testes de agarrar e deslocamento de voo 15m.</p>\n<p><strong>Mestre</strong>: como acima, mas aumenta os deslocamentos fornecidos para 18m e você recebe uma ação de movimento extra por turno (apenas para se deslocar).</p>"
+    },
+    "source": "Bestiário de Arton",
+    "tipo": "geral",
+    "subtipo": "Montaria"
+  },
+  "effects": [
+    {
+      "name": "Montaria: Abelha-Grifo Iniciante",
+      "description": "<p>Deslocamento 15m e escalada 15m.</p>",
+      "system": {
+        "changes": [
+          { "key": "system.attributes.movement.walk.base", "value": 15, "priority": null, "type": "override", "phase": "initial" },
+          { "key": "system.attributes.movement.climb.base", "value": 15, "priority": null, "type": "override", "phase": "initial" }
+        ]
+      }
+    },
+    {
+      "name": "Montaria: Abelha-Grifo Veterano",
+      "description": "<p>Deslocamento 15m, escalada 15m e voo 15m.</p><p><strong>Não automatizado:</strong> +2 em testes de agarrar.</p>",
+      "system": {
+        "changes": [
+          { "key": "system.attributes.movement.walk.base", "value": 15, "priority": null, "type": "override", "phase": "initial" },
+          { "key": "system.attributes.movement.climb.base", "value": 15, "priority": null, "type": "override", "phase": "initial" },
+          { "key": "system.attributes.movement.fly.base", "value": 15, "priority": null, "type": "override", "phase": "initial" }
+        ]
+      }
+    },
+    {
+      "name": "Montaria: Abelha-Grifo Mestre",
+      "description": "<p>Deslocamento 18m, escalada 18m e voo 18m.</p><p><strong>Não automatizado:</strong> +2 em testes de agarrar e uma ação de movimento extra por turno (apenas para se deslocar).</p>",
+      "system": {
+        "changes": [
+          { "key": "system.attributes.movement.walk.base", "value": 18, "priority": null, "type": "override", "phase": "initial" },
+          { "key": "system.attributes.movement.climb.base", "value": 18, "priority": null, "type": "override", "phase": "initial" },
+          { "key": "system.attributes.movement.fly.base", "value": 18, "priority": null, "type": "override", "phase": "initial" }
+        ]
+      }
+    }
+  ]
+}
