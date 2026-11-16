@@ -1,0 +1,63 @@
+{
+  "id": "t20-bestiario-de-arton",
+  "title": "T20 — Bestiário de Arton",
+  "description": "Ameaças, parceiros e itens do livro Bestiário de Arton para o sistema Tormenta20, prontos para arrastar para a cena.",
+  "version": "0.1.0",
+  "authors": [
+    {
+      "name": "Paulo Lima"
+    }
+  ],
+  "url": "https://github.com/prmlimajr/t20-bestiario-de-arton",
+  "manifest": "https://github.com/prmlimajr/t20-bestiario-de-arton/releases/latest/download/module.json",
+  "download": "https://github.com/prmlimajr/t20-bestiario-de-arton/releases/download/0.1.0/module.zip",
+  "compatibility": {
+    "minimum": "14",
+    "verified": "14"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "tormenta20",
+        "type": "system",
+        "compatibility": {
+          "minimum": "1.6.7"
+        }
+      }
+    ]
+  },
+  "packs": [
+    {
+      "name": "ameacas",
+      "label": "Bestiário de Arton — Ameaças",
+      "system": "tormenta20",
+      "path": "packs/ameacas",
+      "type": "Actor",
+      "ownership": {
+        "PLAYER": "LIMITED",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "parceiros",
+      "label": "Bestiário de Arton — Parceiros",
+      "system": "tormenta20",
+      "path": "packs/parceiros",
+      "type": "Item"
+    },
+    {
+      "name": "itens",
+      "label": "Bestiário de Arton — Itens",
+      "system": "tormenta20",
+      "path": "packs/itens",
+      "type": "Item"
+    }
+  ],
+  "packFolders": [
+    {
+      "name": "Bestiário de Arton",
+      "sorting": "m",
+      "packs": ["ameacas", "parceiros", "itens"]
+    }
+  ]
+}

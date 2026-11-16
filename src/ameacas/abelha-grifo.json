@@ -1,0 +1,83 @@
+{
+  "name": "Abelha-Grifo",
+  "img": "assets/tokens/abelha-grifo.png",
+  "system": {
+    "atributos": {
+      "for": { "base": 5 },
+      "des": { "base": 3 },
+      "con": { "base": 3 },
+      "int": { "base": -5 },
+      "sab": { "base": 0 },
+      "car": { "base": -2 }
+    },
+    "attributes": {
+      "nd": "4",
+      "pv": { "value": 38, "max": 38 },
+      "defesa": { "base": 19 },
+      "movement": {
+        "walk": { "base": 18 },
+        "climb": { "base": 18 },
+        "fly": { "base": 24 }
+      },
+      "sentidos": { "value": ["penumbra"] }
+    },
+    "detalhes": {
+      "tipo": "ani",
+      "role": "lackey",
+      "resistencias": "imunidade a encantamento",
+      "ataquescac": "Mordida +17 (4d6+18).",
+      "tesouro": "Nenhum."
+    },
+    "tracos": {
+      "tamanho": "gra",
+      "ic": { "custom": "encantamento" }
+    },
+    "pericias": {
+      "inic": { "treinado": true },
+      "perc": { "treinado": true },
+      "fort": { "outros": 5 },
+      "refl": { "outros": 10 },
+      "vont": { "outros": 3 },
+      "luta": { "treinado": true, "outros": 8 }
+    }
+  },
+  "prototypeToken": { "width": 2, "height": 2 },
+  "items": [
+    {
+      "name": "Mordida",
+      "type": "arma",
+      "img": "icons/creatures/abilities/mouth-teeth-long-red.webp",
+      "system": {
+        "description": { "value": "<section class=\"secret\">Mordida</section>" },
+        "rolls": [
+          { "name": "Ataque", "key": "ataque0", "type": "ataque", "parts": [["1d20", "", ""], ["luta", "", ""], ["0", "", ""]], "versatil": "", "adaptavel": "" },
+          { "name": "Dano", "key": "dano1", "type": "dano", "parts": [["4d6+18", "perfuracao", ""]], "versatil": "", "adaptavel": "" }
+        ]
+      }
+    },
+    {
+      "name": "Agarrar Aprimorado",
+      "type": "poder",
+      "img": "systems/tormenta20/icons/poderes/ameacas/agarrar.webp",
+      "system": {
+        "description": { "value": "<p>Se a abelha-grifo acerta um ataque de mordida, pode fazer a manobra agarrar como uma ação livre (teste +19).</p>" },
+        "ativacao": { "execucao": "free" }
+      }
+    },
+    {
+      "name": "Ferroada",
+      "type": "poder",
+      "img": "icons/creatures/abilities/stinger-poison-green.webp",
+      "system": {
+        "description": { "value": "<p>Se a abelha-grifo começar seu turno agarrada a um inimigo e estiver com 10 pontos de vida ou menos, ela irá desferir sua ferroada. O inimigo sofre 1d8+9 pontos de dano de perfuração e é inoculado com veneno paralisante (perde 2d12 pontos de vida e fica paralisado por 1d4 rodadas, Fort CD 18 reduz a perda de vida à metade e evita a condição).</p><p>Quando é usado dessa forma, o ferrão se solta do corpo da abelha-grifo, o que faz com que ela morra em 1d6 horas.</p>" },
+        "ativacao": { "execucao": "full" },
+        "resistencia": { "txt": "Fortitude CD 18 reduz" },
+        "rolls": [
+          { "name": "Dano", "key": "dano0", "type": "dano", "parts": [["1d8+9", "perfuracao", ""]], "versatil": "", "adaptavel": "" },
+          { "name": "Veneno", "key": "dano1", "type": "dano", "parts": [["2d12", "perda", ""]], "versatil": "", "adaptavel": "" },
+          { "name": "Paralisia (rodadas)", "key": "dano2", "type": "dano", "parts": [["1d4", "", ""]], "versatil": "", "adaptavel": "" }
+        ]
+      }
+    }
+  ]
+}

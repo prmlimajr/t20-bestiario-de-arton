@@ -1,0 +1,11 @@
+{
+  "name": "t20-bestiario-de-arton",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node tools/build.mjs"
+  },
+  "dependencies": {
+    "classic-level": "^1.4.1"
+  }
+}
