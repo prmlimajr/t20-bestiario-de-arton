@@ -1,0 +1,50 @@
+{
+  "nome": "Aspecto de Thwor",
+  "img": "assets/tokens/aspecto-de-thwor.png",
+  "nd": "4",
+  "tipo": "esp",
+  "tamanho": "gra",
+  "papel": "solo",
+  "atributos": { "for": 6, "des": 2, "con": 5, "int": 0, "sab": 3, "car": 2 },
+  "pv": 140,
+  "defesa": 23,
+  "pericias": { "inic": 6, "perc": 7, "fort": 16, "refl": 10, "vont": 4, "atle": 10, "reli": 9 },
+  "deslocamento": { "voo": 15 },
+  "sentidos": ["cegas"],
+  "sentidosExtra": "percepção às cegas (médio)",
+  "resistencias": { "dano": 5 },
+  "imunidadeCondicoes": ["atordoado", "metabolismo", "metamorfose", "medo"],
+  "imunidadeOutras": "acertos críticos",
+  "resistenciasTexto": "evasão, imunidade a acertos críticos, atordoamento, efeitos de metabolismo e metamorfose e medo, redução de dano 5, resistência a magia +2",
+  "corpoACorpo": "Pancada +16 (2d12+11, x3).",
+  "tesouro": "Nenhum.",
+  "notas": "<p><em>A manifestação tem o aspecto inconfundível de um punho fechado, escuro, inteiramente feito de ferro. Grande como um boi, parece perfeitamente capaz de derrubar a mais grossa muralha ou nocautear o maior dos dragões.</em></p><p>Os aspectos são seres de existência breve invocados em batalha por conjuradores divinos, ou surgindo espontaneamente em qualquer parte quando um deus assim deseja. Quase todos têm a aparência da divindade original, às vezes em versão caricata, exagerada. Não é o caso de Thwor.</p><p>O aspecto de Thwor tem a forma de um punho imenso, feito de ferro, remetendo ao próprio símbolo sagrado da divindade.</p>",
+  "ataques": [
+    { "arma": "Pancada", "ataque": 16, "critico": "x3", "dano": [["2d12+11", "impacto"]] }
+  ],
+  "habilidades": [
+    {
+      "poder": "Evasão",
+      "img": "systems/tormenta20/icons/poderes/classes/especialistas/evasao.webp",
+      "descricao": "<p>Quando sofre um efeito que permite um teste de Reflexos para reduzir o dano à metade, o aspecto não sofre dano algum se passar.</p>"
+    },
+    {
+      "poder": "Resistência a Magia",
+      "img": "systems/tormenta20/icons/poderes/ameacas/resistencia-magia.webp",
+      "descricao": "<p>O aspecto de Thwor recebe +2 em testes de resistência contra magias.</p>"
+    },
+    {
+      "poder": "Investida Avassaladora",
+      "acao": "completa",
+      "img": "systems/tormenta20/icons/poderes/ameacas/investida.webp",
+      "danos": [["2d12", "impacto", "Dano adicional"], ["1d6*1.5", "", "Arremesso (metros)"]],
+      "descricao": "<p>O aspecto de Thwor faz uma investida com sua pancada. Se acertar o ataque, causa +2d12 pontos de dano e a vítima é arremessada 1d6 x 1,5m na direção oposta.</p>"
+    },
+    {
+      "poder": "Pancada Atordoante",
+      "img": "systems/tormenta20/icons/poderes/ameacas/pancada.webp",
+      "resistencia": "Fortitude CD 20 evita",
+      "descricao": "<p>Uma criatura atingida pela pancada do aspecto fica atordoada por 1 rodada (Fort CD 20 evita). Uma criatura só pode ser atordoada por esta habilidade uma vez por cena.</p>"
+    }
+  ]
+}

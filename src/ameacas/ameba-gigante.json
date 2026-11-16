@@ -1,0 +1,54 @@
+{
+  "nome": "Ameba Gigante",
+  "img": "assets/tokens/ameba-gigante.png",
+  "nd": "7",
+  "tipo": "mon",
+  "tamanho": "eno",
+  "papel": "solo",
+  "atributos": { "for": 4, "des": 0, "con": 6, "int": -5, "sab": 1, "car": 0 },
+  "pv": 310,
+  "defesa": 25,
+  "pericias": { "inic": 3, "perc": 8, "fort": 18, "refl": 6, "vont": 12, "furt": 2 },
+  "deslocamento": { "deslocamento": 6, "natacao": 6 },
+  "sentidos": ["cegas"],
+  "sentidosExtra": "percepção às cegas (médio)",
+  "resistencias": { "acido": "imune", "eletricidade": "imune", "dano": 5, "fogo": "vulneravel" },
+  "resistenciasTexto": "imunidade a ácido e eletricidade, redução de dano 5, vulnerabilidade a fogo",
+  "corpoACorpo": "Três pseudópodes +24 (2d8+8 mais 1d6 ácido).",
+  "tesouro": "Padrão (apenas material inorgânico), 1d6 doses de ácido (CD 22 para extrair).",
+  "notas": "<p><strong>Perícias:</strong> Furtividade +2 (+12 em aquático e subterrâneo).</p>",
+  "ataques": [
+    { "arma": "Pseudópodes", "descricao": "três pseudópodes", "img": "icons/creatures/tentacles/tentacles-octopus-black-pink.webp", "qtd": 3, "ataque": 24, "dano": [["2d8+8", "impacto"], ["1d6", "acido"]] }
+  ],
+  "habilidades": [
+    {
+      "poder": "Agarrar Aprimorado",
+      "acao": "livre",
+      "img": "systems/tormenta20/icons/poderes/ameacas/agarrar.webp",
+      "descricao": "<p>Se a ameba gigante acerta um ataque de pseudópode, pode fazer a manobra agarrar como uma ação livre (teste +29).</p>"
+    },
+    {
+      "poder": "Engolir",
+      "acao": "padrao",
+      "img": "systems/tormenta20/icons/poderes/ameacas/engolir.webp",
+      "danos": [["2d8+16", "acido"]],
+      "descricao": "<p>No início de cada um dos turnos da ameba gigante, a criatura engolida sofre 2d8+16 pontos de dano de ácido. Ela pode escapar causando um total de 20 pontos de dano ao interior da ameba (Defesa 10).</p>"
+    },
+    {
+      "poder": "Fluidos Paralisantes",
+      "img": "icons/creatures/abilities/stinger-poison-green.webp",
+      "resistencia": "Fortitude CD 24 evita",
+      "descricao": "<p>No início de cada turno da ameba, a criatura engolida por ela deve fazer um teste de Fortitude (CD 24). Se falhar, fica paralisada por 1 rodada.</p>"
+    },
+    {
+      "poder": "Organismo Congelável",
+      "img": "systems/tormenta20/icons/poderes/ameacas/vulnerabilidade.webp",
+      "descricao": "<p>Quando sofre dano de frio, a ameba fica lenta e vulnerável por 1 rodada.</p>"
+    },
+    {
+      "poder": "Núcleo",
+      "img": "systems/tormenta20/icons/poderes/ameacas/imunidade-aberrante.webp",
+      "descricao": "<p>Uma criatura engolida que não esteja paralisada pode tentar destruir o núcleo da ameba em vez de escapar. O núcleo possui Defesa 15, 31 PV e as mesmas características que o interior da ameba. Se for destruído, a ameba gigante morrerá imediatamente.</p>"
+    }
+  ]
+}

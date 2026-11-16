@@ -1,0 +1,27 @@
+{
+  "name": "Parceiro: Aspecto de Hyninn",
+  "type": "poder",
+  "img": "assets/tokens/aspecto-de-hyninn.png",
+  "system": {
+    "description": {
+      "value": "<p>O aspecto de Hyninn é um parceiro veterano que fornece +2 em Jogatina e Ladinagem e permite que você use um poder de Armadilha do caçador (<em>Tormenta20</em>, p. 50), definido pelo aspecto: @UUID[Compendium.tormenta20.poderes.Item.ZWxY8C3xyLMXf3GH]{Armadilha: Arataca}, @UUID[Compendium.tormenta20.poderes.Item.trBGcYqkld7y3QMF]{Armadilha: Espinhos}, @UUID[Compendium.tormenta20.poderes.Item.5OwzZq1hHYmyZRbu]{Armadilha: Laço} ou @UUID[Compendium.tormenta20.poderes.Item.eAkd6IRhQP3clu0D]{Armadilha: Rede}.</p>\n<p>Por ser criada a partir de energia divina, essa armadilha é mágica, pode ser preparada em locais sem os materiais propícios e não é percebida automaticamente por criaturas que a vejam ser preparada. Se você já possuir um poder de Armadilha, a CD para resistir a todas as suas armadilhas aumenta em +2.</p>\n<p>Caso você viole as Obrigações &amp; Restrições de Hyninn, o aspecto deixa de apoiá-lo.</p>"
+    },
+    "source": "Bestiário de Arton",
+    "tipo": "geral",
+    "subtipo": "Parceiros"
+  },
+  "effects": [
+    {
+      "name": "Parceiro: Aspecto de Hyninn",
+      "description": "<p>+2 em Jogatina e Ladinagem.</p><p><strong>Não automatizado:</strong> poder de Armadilha definido pelo aspecto (ou +2 na CD das suas armadilhas, se já possuir um).</p>",
+      "transfer": true,
+      "duration": { "expiry": null },
+      "system": {
+        "changes": [
+          { "key": "system.pericias.joga.bonus", "value": 2, "priority": null, "type": "add", "phase": "initial" },
+          { "key": "system.pericias.ladi.bonus", "value": 2, "priority": null, "type": "add", "phase": "initial" }
+        ]
+      }
+    }
+  ]
+}

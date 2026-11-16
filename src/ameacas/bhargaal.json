@@ -1,0 +1,79 @@
+{
+  "nome": "Bhargaal",
+  "img": "assets/tokens/bhargaal.png",
+  "nd": "19",
+  "tipo": "esp",
+  "raca": "abissal",
+  "tamanho": "eno",
+  "papel": "solo",
+  "atributos": { "for": 7, "des": 3, "con": 5, "int": 5, "sab": 4, "car": 6 },
+  "pv": 1100,
+  "defesa": 58,
+  "pericias": { "inic": 18, "perc": 19, "fort": 32, "refl": 19, "vont": 26, "atle": 24, "enga": 23, "guer": 22, "inti": 23, "intu": 21, "mist": 22 },
+  "deslocamento": { "deslocamento": 12, "voo": 24 },
+  "sentidos": ["escuro"],
+  "resistencias": { "acido": "imune", "frio": "imune", "trevas": "imune", "dano": 20 },
+  "imunidadeCondicoes": ["medo", "veneno"],
+  "resistenciasTexto": "imunidade a ácido, frio, medo, trevas e veneno, redução de dano 20, resistência a magia +5",
+  "corpoACorpo": "Espada de sombras x3 +52 (4d12+10, 18, mais 4d8 frio e 4d8 trevas) e garra +52 (4d6+10 mais 4d8 frio).",
+  "tesouro": "Dobro mais 1d4 almas cristalizadas.",
+  "ataques": [
+    { "arma": "Espada de sombras", "descricao": "espada de sombras x3", "img": "systems/tormenta20/icons/itens/equipamentos/montante.webp", "qtd": 3, "ataque": 52, "critico": "18", "dano": [["4d12+10", "corte"], ["4d8", "frio"], ["4d8", "trevas"]] },
+    { "arma": "Garras", "descricao": "garra", "ataque": 52, "dano": [["4d6+10", "corte"], ["4d8", "frio"]] }
+  ],
+  "habilidades": [
+    {
+      "poder": "Resistência a Magia",
+      "img": "systems/tormenta20/icons/poderes/ameacas/resistencia-magia.webp",
+      "descricao": "<p>O bhargaal recebe +5 em testes de resistência contra magias.</p>"
+    },
+    {
+      "poder": "Agarrar Aprimorado",
+      "acao": "livre",
+      "img": "systems/tormenta20/icons/poderes/ameacas/agarrar.webp",
+      "descricao": "<p>Se o bhargaal acerta um ataque de garra, pode fazer a manobra agarrar como uma ação livre (teste +57).</p>"
+    },
+    {
+      "poder": "Aura Gélida",
+      "img": "systems/tormenta20/icons/poderes/ameacas/aura-aterradora.webp",
+      "descricao": "<p>O bhargaal projeta uma aura de sombras gélidas, de 9m de raio, que obscurece a visão e enfraquece todas as chamas. Essa é uma área de escuridão total (<em>Tormenta20</em>, p. 318) em que habilidades de fogo custam +1 PM para serem usadas e causam –1 ponto de dano por dado.</p>"
+    },
+    {
+      "poder": "Congelar as Trevas",
+      "img": "systems/tormenta20/icons/poderes/ameacas/ataque-trevas.webp",
+      "descricao": "<p>O dano de frio que o bhargaal causa em criaturas que estejam em uma área de escuridão é dobrado.</p>"
+    },
+    {
+      "poder": "Constrição Sombria",
+      "acao": "livre",
+      "img": "systems/tormenta20/icons/poderes/ameacas/sombra-rubra.webp",
+      "danos": [["2d6+10", "impacto"], ["4d8", "frio"]],
+      "descricao": "<p>No início de cada um de seus turnos, o bhargaal causa 2d6+10 pontos de dano de impacto e 4d8 pontos de dano de frio em cada criatura que esteja agarrando. Se a criatura sofrer dano de frio dessa forma, por cada resultado par nos dados desse dano, ela também perde 1 PM.</p>"
+    },
+    {
+      "poder": "Cristalizar Alma",
+      "acao": "reacao",
+      "img": "systems/tormenta20/icons/itens/gerais/gelo-eterno.webp",
+      "danos": [["1d20", "", "Cristalizar Alma"]],
+      "descricao": "<p>Quando mata uma criatura que tenha uma alma, o bhargaal pode tentar cristalizar essa alma. Ele rola 1d20: se o resultado for igual ou maior que a quantidade de PM que a criatura tinha no momento da morte, sua alma é aprisionada em um cristal de gelo mágico. Uma criatura cuja alma tenha sido aprisionada dessa forma só poderá ser trazida de volta à vida se o cristal for quebrado.</p>"
+    },
+    {
+      "poder": "Talho da Alma",
+      "img": "systems/tormenta20/icons/poderes/ameacas/ataque-corte.webp",
+      "descricao": "<p>Quando o bhargaal acerta um ataque com sua <em>espada de sombras</em>, se a criatura sofrer dano de frio desse ataque, por cada resultado par nos dados de dano de frio, ela também perde 1 PM.</p>"
+    },
+    {
+      "poder": "Visão Abissal",
+      "img": "systems/tormenta20/icons/magias/visao-mistica.webp",
+      "descricao": "<p>O bhargaal está permanentemente sob efeito da magia @UUID[Compendium.tormenta20.magias.Item.GDlkTth7oEnb5d0Y]{Visão Mística} com o aprimoramento que permite enxergar criaturas e objetos invisíveis.</p>"
+    },
+    {
+      "poder": "Vulnerabilidade Sagrada",
+      "img": "systems/tormenta20/icons/poderes/ameacas/vulnerabilidade.webp",
+      "descricao": "<p>Uma criatura sob efeito da magia @UUID[Compendium.tormenta20.magias.Item.OTsBw84Ci2IKPStn]{Bênção} ignora 10 pontos da redução de dano do bhargaal.</p>"
+    }
+  ],
+  "itens": [
+    { "ref": "almas-cristalizadas" }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "nome": "Alghari",
+  "img": "assets/tokens/alghari.png",
+  "nd": "4",
+  "tipo": "mon",
+  "tamanho": "gra",
+  "papel": "solo",
+  "atributos": { "for": 5, "des": 2, "con": 4, "int": -1, "sab": 2, "car": 3 },
+  "pv": 140,
+  "defesa": 23,
+  "pericias": { "inic": 6, "perc": 6, "fort": 15, "refl": 3, "vont": 9, "atle": 11, "enga": 12, "furt": 4, "intu": 6, "sobr": 8 },
+  "deslocamento": { "deslocamento": 12, "natacao": 12 },
+  "sentidos": ["escuro"],
+  "resistencias": { "acido": 10, "fogo": 10, "frio": 10, "eletricidade": "vulneravel" },
+  "resistenciasTexto": "redução de ácido, fogo e frio 10, vulnerabilidade a eletricidade",
+  "corpoACorpo": "Chifres +16 (1d8+6) e cascos +16 (2d6+6).",
+  "tesouro": "Padrão.",
+  "notas": "<p><strong>Perícias:</strong> Atletismo +11, Enganação +12, Furtividade +4 (+14 em ambientes aquáticos), Intuição +6, Sobrevivência +8.</p>",
+  "ataques": [
+    { "arma": "Chifres", "ataque": 16, "dano": [["1d8+6", "perfuracao"]] },
+    { "arma": "Cascos", "ataque": 16, "dano": [["2d6+6", "impacto"]] }
+  ],
+  "habilidades": [
+    {
+      "poder": "Afogamento Malévolo",
+      "acao": "livre",
+      "img": "systems/tormenta20/icons/poderes/ameacas/engolir.webp",
+      "danos": [["3d6+6", "impacto"]],
+      "descricao": "<p>Se começar seu turno agarrando uma criatura e ambos estiverem dentro d'água, o alghari submerge a criatura violentamente. A vítima sofre 3d6+6 pontos de dano de impacto e deve fazer um teste de Fortitude para prender a respiração (veja Sufocamento em <em>Tormenta20</em>, p. 319).</p>"
+    },
+    {
+      "poder": "Agarrar Aprimorado",
+      "acao": "livre",
+      "img": "systems/tormenta20/icons/poderes/ameacas/agarrar.webp",
+      "descricao": "<p>Se o alghari acerta um ataque de chifres, pode fazer a manobra agarrar como uma ação livre (teste +18). O alghari só poderá usar esta habilidade se tanto ele quanto a criatura atacada estiverem dentro d'água.</p>"
+    },
+    {
+      "poder": "Corpo Oleoso",
+      "img": "systems/tormenta20/icons/poderes/ameacas/forma.webp",
+      "descricao": "<p>O alghari recebe +5 em testes para resistir a efeitos de movimento (incluindo a manobra agarrar).</p>"
+    },
+    {
+      "poder": "Isca Ilusória",
+      "acao": "padrao",
+      "img": "systems/tormenta20/icons/magias/criar-ilusao.webp",
+      "resistencia": "CD 20",
+      "descricao": "<p>O alghari pode lançar a magia @UUID[Compendium.tormenta20.magias.Item.q6jHyHSI2hWrZGE9]{Criar Ilusão}, como um feiticeiro de 4º nível, sem gastar PM (CD 20, limite de PM 7). Ele só pode criar a ilusão de uma única criatura humanoide por vez, e ela sempre terá um pequeno par de chifres, não importa sua raça.</p>"
+    }
+  ]
+}

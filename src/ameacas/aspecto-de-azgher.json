@@ -1,0 +1,56 @@
+{
+  "nome": "Aspecto de Azgher",
+  "img": "assets/tokens/aspecto-de-azgher.png",
+  "nd": "5",
+  "tipo": "hum",
+  "raca": "humano",
+  "tamanho": "med",
+  "papel": "solo",
+  "atributos": { "for": 4, "des": 3, "con": 2, "int": 1, "sab": 2, "car": 4 },
+  "pv": 190,
+  "defesa": 24,
+  "pericias": { "inic": 7, "perc": 6, "fort": 5, "refl": 11, "vont": 17, "atle": 8, "dipl": 8, "intu": 11, "reli": 6, "sobr": 11 },
+  "deslocamento": { "deslocamento": 9 },
+  "sentidos": ["cegas"],
+  "resistencias": { "luz": 10, "fogo": 10, "frio": 10, "trevas": 10 },
+  "resistenciasTexto": "evasão, redução de dano de luz, fogo, frio e trevas 10",
+  "idiomas": ["comum"],
+  "corpoACorpo": "Cimitarra +17 (4d6+8, 18, mais 4d6 fogo).",
+  "aDistancia": "Arco curto +17 (8d8 luz, x3).",
+  "equipamento": "Arco curto, armadura de couro, cimitarra.",
+  "tesouro": "Padrão.",
+  "ataques": [
+    { "arma": "Cimitarra", "ataque": 17, "critico": "18", "dano": [["4d6+8", "corte"], ["4d6", "fogo"]] },
+    { "arma": "Arco curto", "ataque": 17, "critico": "x3", "alcance": "medium", "dano": [["8d8", "luz"]] }
+  ],
+  "habilidades": [
+    {
+      "poder": "Evasão",
+      "img": "systems/tormenta20/icons/poderes/classes/especialistas/evasao.webp",
+      "descricao": "<p>Quando sofre um efeito que permite um teste de Reflexos para reduzir o dano à metade, o aspecto não sofre dano algum se passar.</p>"
+    },
+    {
+      "poder": "Escaramuça",
+      "img": "systems/tormenta20/icons/poderes/ameacas/investida.webp",
+      "danos": [["1d8", "", "Dano adicional"]],
+      "descricao": "<p>Quando se move 6m ou mais, o aspecto de Azgher recebe +2 na Defesa e em Reflexos, e +1d8 nas rolagens de dano até o início do seu próximo turno.</p>"
+    },
+    {
+      "poder": "Fulgor Solar",
+      "img": "systems/tormenta20/icons/poderes/ameacas/sensibilidade-luz.webp",
+      "resistencia": "Reflexos CD 20 evita",
+      "descricao": "<p>Quando uma criatura em alcance curto ataca o aspecto, ela fica ofuscada por 1 rodada (Ref CD 20 evita e a criatura não pode mais ser ofuscada por esta habilidade até o fim da cena).</p>"
+    },
+    {
+      "poder": "Inimigo dos Mortos",
+      "img": "systems/tormenta20/icons/classes/paladino.webp",
+      "danos": [["2d6", "luz", "Dano contra mortos-vivos"]],
+      "descricao": "<p>Os ataques do aspecto causam +2d6 pontos de dano de luz contra mortos-vivos.</p>"
+    },
+    {
+      "poder": "Olhar Vigilante",
+      "img": "systems/tormenta20/icons/magias/visao-da-verdade.webp",
+      "descricao": "<p>O aspecto de Azgher está permanentemente sob o efeito básico da magia @UUID[Compendium.tormenta20.magias.Item.h98JyQAldmgexmzR]{Visão da Verdade}.</p>"
+    }
+  ]
+}

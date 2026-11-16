@@ -1,0 +1,41 @@
+{
+  "nome": "Aspecto de Megalokk",
+  "img": "assets/tokens/aspecto-de-megalokk.png",
+  "nd": "5",
+  "tipo": "mon",
+  "tamanho": "gra",
+  "papel": "solo",
+  "atributos": { "for": 7, "des": 3, "con": 5, "int": -4, "sab": 3, "car": 1 },
+  "pv": 200,
+  "defesa": 23,
+  "pericias": { "inic": 7, "perc": 7, "fort": 16, "refl": 10, "vont": 4, "atle": 11, "inti": 7, "sobr": 9 },
+  "deslocamento": { "deslocamento": 12, "voo": 15 },
+  "sentidos": ["faro", "escuro"],
+  "imunidadeCondicoes": ["mental", "medo"],
+  "resistenciasTexto": "imunidade a efeitos mentais e medo, resistência a magia +2",
+  "corpoACorpo": "Quatro mordidas +17 (2d8+5, x3).",
+  "tesouro": "Nenhum.",
+  "notas": "<p><em>O monstro quadrúpede parece feito com partes de muitos outros, mas é difícil dizer quais. São tantas cabeças, patas, caudas e asas que não se consegue contar. A única certeza é que ele parece enlouquecido de ódio, como se a própria presença de outros seres fosse intolerável.</em></p><p>Como outros aspectos, esta criatura pode ser invocada por meio de rituais específicos (veja <em>Deuses de Arton</em>, p. 267). Entretanto, o aspecto de Megalokk não pode ser controlado e ataca tudo que encontra, não raras vezes voltando-se contra seu próprio invocador.</p>",
+  "ataques": [
+    { "arma": "Mordida", "descricao": "quatro mordidas", "qtd": 4, "ataque": 17, "critico": "x3", "dano": [["2d8+5", "perfuracao"]] }
+  ],
+  "habilidades": [
+    {
+      "poder": "Resistência a Magia",
+      "img": "systems/tormenta20/icons/poderes/ameacas/resistencia-magia.webp",
+      "descricao": "<p>O aspecto de Megalokk recebe +2 em testes de resistência contra magias.</p>"
+    },
+    {
+      "poder": "Quatro Cabeças Monstruosas",
+      "img": "systems/tormenta20/icons/poderes/ameacas/terceiro-braco.webp",
+      "resistencia": "CD 20",
+      "danos": [["5d6", "acido", "Dragão: cuspe ácido"], ["1d12", "perda", "Sapo Atroz: veneno"], ["1d6", "perda", "Sapo Atroz: veneno (passou)"], ["1d6", "frio", "Verme do Gelo: dano extra"]],
+      "descricao": "<p>O aspecto de Megalokk tem quatro cabeças distintas que concedem habilidades especiais, escolhidas entre as descritas a seguir.</p><ul><li><em>Bulette.</em> Quando acerta um ataque de mordida com esta cabeça, o aspecto pode usar a manobra agarrar como ação livre (teste +19).</li><li><em>Cocatriz.</em> Uma criatura que sofra dano da bicada dessa cabeça fica lenta (Fort CD 20 evita). Se já estiver lenta, fica petrificada permanentemente. Efeitos que removem paralisia revertem a petrificação.</li><li><em>Dragão.</em> No lugar de um de seus ataques de mordida, o aspecto pode cuspir ácido em um cone de 6m. Criaturas na área sofrem 5d6 pontos de dano de ácido (Ref CD 20 reduz à metade). <em>Recarga (movimento)</em>.</li><li><em>Hidra.</em> O aspecto ganha cura acelerada 20/ácido ou fogo.</li><li><em>Mycotann.</em> No lugar de um de seus ataques de mordida, o aspecto pode disparar uma nuvem de esporos que atinge uma criatura em alcance curto. A criatura fica enredada ou, se já estiver enredada por este efeito, em vez disso fica paralisada (Fort CD 20 evita). <em>Veneno</em>.</li><li><em>Razza'kham.</em> Sempre que esta cabeça rola um resultado máximo em um dado de dano, ela rola um dado extra de dano do mesmo tipo.</li><li><em>Sapo Atroz.</em> Uma criatura atingida por uma mordida desta cabeça perde 1d12 PV e fica paralisada por 1 rodada (Fort CD 20 evita a paralisia e reduz a perda de vida para 1d6). Uma criatura só pode ser paralisada por este efeito uma vez por cena. <em>Veneno</em>.</li><li><em>Verme do Gelo.</em> O aspecto ganha imunidade a frio e os ataques com essa cabeça causam +1d6 pontos de dano de frio.</li><li><em>Warg.</em> Se acertar um ataque de mordida com esta cabeça, o aspecto pode usar a manobra derrubar como ação livre (teste +20).</li></ul>"
+    },
+    {
+      "poder": "Mente Quádrupla",
+      "img": "systems/tormenta20/icons/poderes/ameacas/visao-ampla.webp",
+      "descricao": "<p>Quando faz um teste de Percepção ou Vontade, o aspecto de Megalokk joga quatro dados e usa o melhor resultado.</p>"
+    }
+  ]
+}

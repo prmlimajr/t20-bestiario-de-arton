@@ -1,0 +1,28 @@
+{
+  "nome": "Alce",
+  "img": "assets/tokens/alce.png",
+  "nd": "1",
+  "tipo": "ani",
+  "tamanho": "gra",
+  "papel": "solo",
+  "atributos": { "for": 4, "des": 0, "con": 3, "int": -4, "sab": 1, "car": -2 },
+  "pv": 36,
+  "defesa": 15,
+  "pericias": { "inic": 2, "perc": 5, "fort": 8, "refl": 3, "vont": 5, "atle": 7 },
+  "deslocamento": { "deslocamento": 15 },
+  "sentidos": ["faro", "penumbra"],
+  "corpoACorpo": "Chifres +9 (2d6+6).",
+  "tesouro": "Nenhum.",
+  "ataques": [
+    { "arma": "Chifres", "ataque": 9, "dano": [["2d6+6", "perfuracao"]] }
+  ],
+  "habilidades": [
+    {
+      "poder": "Investida Avassaladora",
+      "acao": "completa",
+      "img": "systems/tormenta20/icons/poderes/ameacas/investida.webp",
+      "danos": [["1d6", "perfuracao", "Dano adicional"], ["1d6*1.5", "", "Arremesso (metros)"]],
+      "descricao": "<p>O alce faz uma investida com seus chifres. Se acertar o ataque, causa +1d6 pontos de dano e a vítima é arremessada 1d6 x 1,5m na direção oposta.</p>"
+    }
+  ]
+}

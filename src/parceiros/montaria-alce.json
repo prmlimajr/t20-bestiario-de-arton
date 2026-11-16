@@ -1,0 +1,72 @@
+{
+  "name": "Montaria: Alce",
+  "type": "poder",
+  "img": "assets/tokens/alce-parceiro.png",
+  "system": {
+    "description": {
+      "value": "<p>O alce é um parceiro montaria (Grande) que fornece os benefícios a seguir.</p>\n<p><strong>Iniciante</strong>: seu deslocamento muda para 12m e você recebe +2 em testes de ataque quando faz investidas.</p>\n<p><strong>Veterano</strong>: uma vez por rodada, você recebe +1d6 em uma rolagem de dano corpo a corpo. Se esta rolagem for de uma investida, em vez disso você recebe +2d6.</p>\n<p><strong>Mestre</strong>: quando faz uma investida, você pode usar Ataque Pesado. Caso possua esse poder, você recebe +2 no teste de manobra.</p>"
+    },
+    "source": "Bestiário de Arton",
+    "tipo": "geral",
+    "subtipo": "Montaria"
+  },
+  "effects": [
+    {
+      "name": "Montaria: Alce Iniciante",
+      "description": "<p>Deslocamento 12m.</p><p><strong>Não automatizado:</strong> +2 em testes de ataque quando faz investidas.</p>",
+      "system": {
+        "changes": [
+          { "key": "system.attributes.movement.walk.base", "value": 12, "priority": null, "type": "override", "phase": "initial" }
+        ]
+      }
+    },
+    {
+      "name": "Montaria: Alce Veterano",
+      "description": "<p>Deslocamento 12m.</p><p>Para o dano extra, marque o efeito \"Alce: +1d6 de dano\" (ou \"+2d6 em investida\") na janela de ataque.</p><p><strong>Não automatizado:</strong> +2 em testes de ataque quando faz investidas.</p>",
+      "system": {
+        "changes": [
+          { "key": "system.attributes.movement.walk.base", "value": 12, "priority": null, "type": "override", "phase": "initial" }
+        ]
+      }
+    },
+    {
+      "name": "Montaria: Alce Mestre",
+      "description": "<p>Deslocamento 12m.</p><p>Para o dano extra, marque o efeito \"Alce: +1d6 de dano\" (ou \"+2d6 em investida\") na janela de ataque.</p><p><strong>Não automatizado:</strong> +2 em testes de ataque quando faz investidas; pode usar Ataque Pesado em investidas (se já possui o poder, +2 no teste de manobra).</p>",
+      "system": {
+        "changes": [
+          { "key": "system.attributes.movement.walk.base", "value": 12, "priority": null, "type": "override", "phase": "initial" }
+        ]
+      }
+    },
+    {
+      "name": "Alce: +1d6 de dano",
+      "img": "icons/svg/upgrade.svg",
+      "description": "<p>Veterano ou Mestre: uma vez por rodada, +1d6 em uma rolagem de dano corpo a corpo.</p>",
+      "disabled": true,
+      "transfer": true,
+      "duration": { "expiry": null },
+      "system": {
+        "onuse": true,
+        "abilityUse": { "custo": null, "types": ["attack"] },
+        "changes": [
+          { "key": "dano", "value": "1d6", "priority": 0, "type": "add", "phase": "initial" }
+        ]
+      }
+    },
+    {
+      "name": "Alce: +2d6 de dano em investida",
+      "img": "icons/svg/upgrade.svg",
+      "description": "<p>Veterano ou Mestre: uma vez por rodada, +2d6 em uma rolagem de dano de investida (substitui o +1d6).</p>",
+      "disabled": true,
+      "transfer": true,
+      "duration": { "expiry": null },
+      "system": {
+        "onuse": true,
+        "abilityUse": { "custo": null, "types": ["attack"] },
+        "changes": [
+          { "key": "dano", "value": "2d6", "priority": 0, "type": "add", "phase": "initial" }
+        ]
+      }
+    }
+  ]
+}

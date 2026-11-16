@@ -1,0 +1,13 @@
+{
+  "name": "Parceiro: Aspecto de Megalokk",
+  "type": "poder",
+  "img": "assets/tokens/aspecto-de-megalokk.png",
+  "system": {
+    "description": {
+      "value": "<p>O aspecto de Megalokk é um parceiro veterano que fornece os benefícios de quatro parceiros iniciantes diferentes (exceto montaria) entre os descritos em <em>Tormenta20</em> ou, a critério do mestre, entre outros parceiros monstros iniciantes. Você só pode receber os benefícios de dois dos tipos escolhidos a qualquer momento, mas pode trocar um ou ambos os tipos no início de cada um dos seus turnos como uma ação livre.</p>\n<p>Além disso, quando faz um teste de Percepção, você pode jogar um dado adicional e usar o melhor resultado.</p>\n<p>Caso você viole as Obrigações &amp; Restrições de Megalokk, o aspecto deixa de apoiá-lo.</p>\n<p><strong>Parceiros de <em>Tormenta20</em>:</strong> @UUID[Compendium.tormenta20.parceiros.Item.WP0roXCa40nveA4L]{Adepto}, @UUID[Compendium.tormenta20.parceiros.Item.ROdJSxDCkvamfzX7]{Ajudante}, @UUID[Compendium.tormenta20.parceiros.Item.BNhavlxkPCr8P4Vi]{Assassino}, @UUID[Compendium.tormenta20.parceiros.Item.OvBibhyfED5HKbsz]{Atirador}, @UUID[Compendium.tormenta20.parceiros.Item.nNpGA5SWMj7rtUQR]{Combatente}, @UUID[Compendium.tormenta20.parceiros.Item.FIJfKOIU8dzbvSDG]{Destruidor}, @UUID[Compendium.tormenta20.parceiros.Item.YAcnW6C7ok7xjdg6]{Fortão}, @UUID[Compendium.tormenta20.parceiros.Item.Un1h4jcM8qtf4F8L]{Guardião}, @UUID[Compendium.tormenta20.parceiros.Item.EBDU8TfXg0iVLvCT]{Magivocador}, @UUID[Compendium.tormenta20.parceiros.Item.rntcrujiIc63hKOp]{Médico}, @UUID[Compendium.tormenta20.parceiros.Item.0MvC3jJCv0311Ysr]{Perseguidor}, @UUID[Compendium.tormenta20.parceiros.Item.DpTB2ElpvJ9mK0Bn]{Vigilante}.</p>\n<p><strong>Como usar no Foundry:</strong> arraste para a ficha os quatro parceiros escolhidos e use os efeitos de nível Iniciante de apenas dois deles por vez. A rolagem extra de Percepção não é automatizada.</p>"
+    },
+    "source": "Bestiário de Arton",
+    "tipo": "geral",
+    "subtipo": "Parceiros"
+  }
+}

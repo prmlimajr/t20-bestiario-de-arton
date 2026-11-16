@@ -1,0 +1,26 @@
+{
+  "name": "Parceiro: Aspecto de Tenebra",
+  "type": "poder",
+  "img": "assets/tokens/aspecto-de-tenebra.png",
+  "system": {
+    "description": {
+      "value": "<p>O aspecto de Tenebra é um parceiro veterano que atua como um familiar gato (@UUID[Compendium.tormenta20.poderes.Item.qYT3kMN051taWPY2]{Familiar Gato}, <em>Tormenta20</em>, p. 38) e permite lançar as magias @UUID[Compendium.tormenta20.magias.Item.Bt364TPpNUI1QVPP]{Escuridão} e @UUID[Compendium.tormenta20.magias.Item.6KvwDBikOdbzhRGv]{Toque Vampírico}. Caso você já conheça essas magias, o custo delas diminui em –1 PM (cumulativo com reduções fornecidas por poderes concedidos de Tenebra).</p>\n<p>Se você violar as Obrigações &amp; Restrições de Tenebra, o aspecto deixará de apoiá-lo.</p>"
+    },
+    "source": "Bestiário de Arton",
+    "tipo": "geral",
+    "subtipo": "Parceiros"
+  },
+  "effects": [
+    {
+      "name": "Parceiro: Aspecto de Tenebra",
+      "description": "<p>Familiar gato: +2 em Furtividade.</p><p><strong>Não automatizado:</strong> visão no escuro (do familiar gato); acesso a Escuridão e Toque Vampírico (ou –1 PM no custo, se já as conhece).</p>",
+      "transfer": true,
+      "duration": { "expiry": null },
+      "system": {
+        "changes": [
+          { "key": "system.pericias.furt.bonus", "value": 2, "priority": null, "type": "add", "phase": "initial" }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "Parceiro: Aspecto de Azgher",
+  "type": "poder",
+  "img": "assets/tokens/aspecto-de-azgher.png",
+  "system": {
+    "description": {
+      "value": "<p>O aspecto de Azgher é um parceiro veterano que fornece redução de dano de luz, fogo, frio e trevas 5 e permite usar o poder @UUID[Compendium.tormenta20.poderes.Item.seHht1EYivTWatKh]{Espada Solar} (<em>Tormenta20</em>, p. 133). Caso você já tenha esse poder, em vez disso o dano de fogo fornecido por ele aumenta em mais um dado do mesmo tipo.</p>\n<p>O aspecto apoia apenas personagens devotos de Azgher de nível maior que o dele. Caso você viole as Obrigações &amp; Restrições de Azgher, o aspecto deixa de apoiá-lo.</p>"
+    },
+    "source": "Bestiário de Arton",
+    "tipo": "geral",
+    "subtipo": "Parceiros"
+  },
+  "effects": [
+    {
+      "name": "Parceiro: Aspecto de Azgher",
+      "description": "<p>Redução de dano de luz, fogo, frio e trevas 5.</p><p><strong>Não automatizado:</strong> acesso ao poder Espada Solar (ou +1 dado de fogo, se já o possuir).</p>",
+      "transfer": true,
+      "duration": { "expiry": null },
+      "system": {
+        "changes": [
+          { "key": "system.tracos.resistencias.luz.bonus", "value": 5, "priority": null, "type": "add", "phase": "initial" },
+          { "key": "system.tracos.resistencias.fogo.bonus", "value": 5, "priority": null, "type": "add", "phase": "initial" },
+          { "key": "system.tracos.resistencias.frio.bonus", "value": 5, "priority": null, "type": "add", "phase": "initial" },
+          { "key": "system.tracos.resistencias.trevas.bonus", "value": 5, "priority": null, "type": "add", "phase": "initial" }
+        ]
+      }
+    }
+  ]
+}

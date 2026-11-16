@@ -1,0 +1,72 @@
+{
+  "nome": "Aspecto de Sszzaas",
+  "img": "assets/tokens/aspecto-de-sszzaas.png",
+  "nd": "5",
+  "tipo": "hum",
+  "raca": "duplo",
+  "tamanho": "med",
+  "papel": "special",
+  "atributos": { "for": 2, "des": 6, "con": 2, "int": 5, "sab": 3, "car": 7 },
+  "pv": 165,
+  "defesa": 22,
+  "pericias": { "inic": 10, "perc": 7, "fort": 6, "refl": 16, "vont": 11, "acro": 10, "conh": 11, "dipl": 11, "enga": 16, "furt": 10, "intu": 12, "inve": 9, "ladi": 10, "mist": 9 },
+  "deslocamento": { "deslocamento": 9 },
+  "imunidadeCondicoes": ["mental", "veneno"],
+  "imunidadeOutras": "adivinhação",
+  "resistenciasTexto": "cura acelerada 5, evasão, imunidade a adivinhação, efeitos mentais e veneno",
+  "corpoACorpo": "Garra x2 +15 (1d6+7 mais veneno).",
+  "equipamento": "O aspecto geralmente não usa equipamento, mas pode portar armas, ferramentas e roupas adequadas ao seu disfarce atual.",
+  "tesouro": "Nenhum.",
+  "notas": "<p><em>Com um sorriso largo e olhar inocente, o desconhecido cumprimenta o grupo. Tudo nele é amigável e acolhedor, projetando a imagem de alguém digno de confiança e amizade. Alguém acima de qualquer suspeita.</em></p><p>Aspectos de Sszzaas são duplos, seres capazes de assumir a aparência de indivíduos de qualquer raça, profissão ou classe social. Qualquer que seja a forma que ele adote, ela será sempre adequada à situação e ao momento, cuidadosa e divinamente projetada para não levantar suspeitas e parecer amigável e inofensiva.</p><p>Um aspecto de Sszzaas existe para enganar, descobrir informações e ocultar segredos, e usará todas as suas capacidades para esse objetivo. Isso inclui, frequentemente, aproximar-se de seus alvos com o disfarce mais conveniente, ganhar sua confiança e amizade e escolher o momento mais apropriado e devastador para traí-los.</p>",
+  "ataques": [
+    { "arma": "Garras", "descricao": "garra x2 (mais veneno)", "qtd": 2, "ataque": 15, "dano": [["1d6+7", "corte"]] }
+  ],
+  "habilidades": [
+    {
+      "poder": "Cura Acelerada",
+      "img": "systems/tormenta20/icons/magias/curar-ferimentos.webp",
+      "danos": [["5", "curapv", "Cura acelerada"]],
+      "descricao": "<p>No início de cada um de seus turnos, o aspecto recupera 5 pontos de vida.</p>"
+    },
+    {
+      "poder": "Evasão",
+      "img": "systems/tormenta20/icons/poderes/classes/especialistas/evasao.webp",
+      "descricao": "<p>Quando sofre um efeito que permite um teste de Reflexos para reduzir o dano à metade, o aspecto não sofre dano algum se passar.</p>"
+    },
+    {
+      "poder": "Ataque Furtivo",
+      "img": "systems/tormenta20/icons/poderes/classes/especialistas/ataque-furtivo.webp",
+      "danos": [["3d6", "", "Ataque Furtivo"]],
+      "descricao": "<p>+3d6.</p>"
+    },
+    {
+      "poder": "Aspecto da Serpente",
+      "img": "systems/tormenta20/icons/poderes/ameacas/visao-ampla.webp",
+      "descricao": "<p>Quando faz um teste de Enganação, Furtividade ou Intuição, o aspecto de Sszzaas rola dois dados e usa o melhor resultado.</p>"
+    },
+    {
+      "poder": "Detectar Pensamentos",
+      "img": "systems/tormenta20/icons/poderes/ameacas/percepcao-temporal.webp",
+      "resistencia": "Vontade CD 22 evita",
+      "descricao": "<p>O aspecto detecta constantemente os pensamentos superficiais de todas as criaturas inteligentes em alcance curto. Ele não pode ser surpreendido por criaturas cujos pensamentos esteja detectando dessa forma e recebe +2 na Defesa e em testes de perícia contra elas. Uma criatura ciente desta habilidade pode gastar uma ação de movimento e fazer um teste de Vontade (CD 22). Se passar, esconde seus pensamentos até o fim da cena.</p>"
+    },
+    {
+      "poder": "Falso Amigo",
+      "img": "systems/tormenta20/icons/poderes/ameacas/forma.webp",
+      "descricao": "<p>Quando usa Mudar Forma, o aspecto recebe um bônus adicional de +10 nos testes de Enganação. Alternativamente, se você tiver o suplemento <em>Ameaças de Arton</em>, ele pode agir como um falso amigo veterano de qualquer tipo (p. 327).</p>"
+    },
+    {
+      "poder": "Mudar Forma",
+      "acao": "padrao",
+      "img": "systems/tormenta20/icons/magias/metamorfose.webp",
+      "descricao": "<p>O aspecto assume a forma de qualquer humanoide de tamanho Pequeno a Grande, como no efeito da magia @UUID[Compendium.tormenta20.magias.Item.Mv8Lzi5PEklOW36c]{Metamorfose}. Ele pode permanecer na forma escolhida por tempo indeterminado, mas, se morrer, reverte à forma natural.</p>"
+    },
+    {
+      "poder": "Veneno",
+      "img": "systems/tormenta20/icons/poderes/ameacas/veneno.webp",
+      "resistencia": "Fortitude CD 22 reduz",
+      "danos": [["1d12", "perda", "Peçonha (por rodada)"]],
+      "descricao": "<p>Peçonha concentrada (perde 1d12 pontos de vida durante 3 rodadas, Fort CD 22 reduz a duração para 1 rodada).</p>"
+    }
+  ]
+}

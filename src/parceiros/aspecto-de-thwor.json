@@ -1,0 +1,41 @@
+{
+  "name": "Parceiro: Aspecto de Thwor",
+  "type": "poder",
+  "img": "assets/tokens/aspecto-de-thwor.png",
+  "system": {
+    "description": {
+      "value": "<p>O aspecto de Thwor é um parceiro veterano que fornece +2 na Defesa e em testes para empurrar. Além disso, sempre que faz um ataque corpo a corpo, você pode gastar 1 PM. Se fizer isso e acertar o ataque, você causa +1d12 pontos de dano de impacto e pode fazer uma manobra empurrar contra o alvo como uma ação livre.</p>\n<p>Caso você viole as Obrigações &amp; Restrições de Thwor, o aspecto deixa de apoiá-lo.</p>"
+    },
+    "source": "Bestiário de Arton",
+    "tipo": "geral",
+    "subtipo": "Parceiros"
+  },
+  "effects": [
+    {
+      "name": "Parceiro: Aspecto de Thwor",
+      "description": "<p>+2 na Defesa.</p><p><strong>Não automatizado:</strong> +2 em testes para empurrar.</p>",
+      "transfer": true,
+      "duration": { "expiry": null },
+      "system": {
+        "changes": [
+          { "key": "system.attributes.defesa.bonus", "value": 2, "priority": null, "type": "add", "phase": "initial" }
+        ]
+      }
+    },
+    {
+      "name": "Thwor: +1d12 de impacto (1 PM)",
+      "img": "icons/svg/upgrade.svg",
+      "description": "<p>Ao fazer um ataque corpo a corpo, gaste 1 PM: se acertar, +1d12 de dano de impacto e pode fazer uma manobra empurrar contra o alvo como ação livre (não automatizado).</p>",
+      "disabled": true,
+      "transfer": true,
+      "duration": { "expiry": null },
+      "system": {
+        "onuse": true,
+        "abilityUse": { "custo": 1, "types": ["attack"] },
+        "changes": [
+          { "key": "dano", "value": "1d12", "priority": 0, "type": "add", "phase": "initial" }
+        ]
+      }
+    }
+  ]
+}

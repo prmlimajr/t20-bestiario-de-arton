@@ -10,6 +10,7 @@ import { createHash } from "node:crypto";
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { expandirAmeaca } from "./compacto.mjs";
 
 const RAIZ = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const MODULO = JSON.parse(fs.readFileSync(path.join(RAIZ, "module.json"), "utf8"));
@@ -36,7 +37,16 @@ function mesclar(base, extra) {
 }
 
 /** Caminho relativo ao módulo (assets/...) → caminho servido pelo Foundry. */
-const caminhoImg = (img) => (img && img.startsWith("assets/") ? `modules/${MODULO.id}/${img}` : img);
+const IMG_PROVISORIA = "icons/svg/mystery-man.svg";
+const faltando = new Set();
+function caminhoImg(img) {
+  if (!img?.startsWith("assets/")) return img;
+  if (!fs.existsSync(path.join(RAIZ, img))) {
+    faltando.add(img);
+    return IMG_PROVISORIA;
+  }
+  return `modules/${MODULO.id}/${img}`;
+}
 
 function stats() {
   return { ...SISTEMA, createdTime: AGORA, modifiedTime: AGORA, lastModifiedBy: null, compendiumSource: null, duplicateSource: null, exportSource: null };
@@ -49,7 +59,18 @@ function pastaND(nd) {
   return { _id: gerarId(`pasta:${nome}`), name: nome, type: "Actor", folder: null, sorting: "a", sort: Math.round(valor * 1000), color: null, description: "", flags: {}, _stats: stats() };
 }
 
+/** { "ref": "almas-cristalizadas", ...ajustes } → item de src/itens/<ref>.json com os ajustes mesclados. */
+function resolverItem(it) {
+  if (!it.ref) return it;
+  const { ref, ...ajustes } = it;
+  const base = JSON.parse(fs.readFileSync(path.join(RAIZ, "src/itens", `${ref}.json`), "utf8"));
+  return mesclar(base, ajustes);
+}
+
 function montarAtor(fonte, arquivo) {
+  const extras = (fonte.itens ?? []).map(resolverItem);
+  if (fonte.nd !== undefined) fonte = expandirAmeaca(fonte, modelo("npc")); // formato compacto
+  fonte.items = [...(fonte.items ?? []), ...extras];
   const ator = mesclar(modelo("npc"), { ...fonte, items: [] });
   const id = gerarId(`ator:${fonte.name}`);
   ator._id = id;
@@ -147,3 +168,5 @@ for (const pack of MODULO.packs) {
   else await buildItens(pack.name);
   console.log(`✔ packs/${pack.name}`);
 }
+
+if (faltando.size) console.warn(`\n⚠ Imagens ausentes (usando ${IMG_PROVISORIA}):\n  ${[...faltando].join("\n  ")}`);

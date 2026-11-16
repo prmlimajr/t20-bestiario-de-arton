@@ -1,0 +1,54 @@
+{
+  "nome": "Aranha-Óssea",
+  "img": "assets/tokens/aranha-ossea.png",
+  "nd": "11",
+  "tipo": "mon",
+  "tamanho": "gra",
+  "papel": "solo",
+  "atributos": { "for": 5, "des": 3, "con": 2, "int": -3, "sab": 1, "car": 1 },
+  "pv": 540,
+  "defesa": 41,
+  "pericias": { "inic": 12, "perc": 10, "fort": 18, "refl": 24, "vont": 11, "enga": 12, "furt": 14 },
+  "deslocamento": { "deslocamento": 12, "escalada": 12 },
+  "sentidos": ["escuro"],
+  "resistencias": { "trevas": "imune", "corte": 5, "frio": 5, "perfuracao": 5 },
+  "resistenciasTexto": "evasão, imunidade a trevas, redução de corte, frio e perfuração 5",
+  "corpoACorpo": "Mordida x2 +34 (2d12+30 mais 4d10 trevas mais veneno).",
+  "tesouro": "1d4+1 doses de essência de sombra (CD 26 para extrair).",
+  "ataques": [
+    { "arma": "Mordida", "descricao": "mordida x2 (mais veneno)", "qtd": 2, "ataque": 34, "dano": [["2d12+30", "perfuracao"], ["4d10", "trevas"]] }
+  ],
+  "habilidades": [
+    {
+      "poder": "Evasão",
+      "img": "systems/tormenta20/icons/poderes/classes/especialistas/evasao.webp",
+      "descricao": "<p>Quando sofre um efeito que permite um teste de Reflexos para reduzir o dano à metade, a aranha-óssea não sofre dano algum se passar.</p>"
+    },
+    {
+      "poder": "Armadilha Planejada",
+      "acao": "reacao",
+      "img": "systems/tormenta20/icons/poderes/ameacas/teia.webp",
+      "descricao": "<p>Quando um inimigo em alcance médio se move dentro do covil da aranha-óssea, ela faz surgir uma teia (veja a seguir) em um quadrado de 1,5m de lado ocupado pela criatura. <em>Recarga (padrão)</em>.</p>"
+    },
+    {
+      "poder": "Imitar Presa",
+      "acao": "padrao",
+      "img": "systems/tormenta20/icons/magias/criar-ilusao.webp",
+      "resistencia": "CD 31",
+      "descricao": "<p>A aranha pode criar ilusões sonoras, como o efeito básico da magia @UUID[Compendium.tormenta20.magias.Item.q6jHyHSI2hWrZGE9]{Criar Ilusão} (CD 31), mas apenas para imitar as vozes de indivíduos que ela já tenha ouvido.</p>"
+    },
+    {
+      "poder": "Teia",
+      "acao": "padrao",
+      "img": "systems/tormenta20/icons/poderes/ameacas/teia.webp",
+      "resistencia": "Reflexos CD 31 evita",
+      "descricao": "<p>A aranha dispara teia em um quadrado de 3m de lado em alcance curto. Essa teia é feita de trevas e afeta mesmo criaturas incorpóreas. Criaturas na área ficam enredadas (Ref CD 31 evita) e não podem recuperar pontos de vida enquanto estiverem enredadas dessa forma. Uma criatura enredada pode se soltar com uma ação completa e um teste de Força ou Acrobacia (CD 25) ou cortando a teia (cada espaço de 1,5m de teia tem 10 PV, RD 5 e imunidade a trevas).</p><p>A aranha também pode usar a teia para cobrir uma área quadrada com 6m de lado. Por ser feita de energia sombria, a teia é quase invisível (Percepção CD 25 para enxergá-la). Uma criatura que entre na área fica enredada. A aranha pode andar na própria teia sem se enredar. Ela percebe automaticamente (como se tivesse percepção às cegas) qualquer criatura na teia.</p>"
+    },
+    {
+      "poder": "Veneno",
+      "img": "systems/tormenta20/icons/poderes/ameacas/veneno.webp",
+      "resistencia": "Fortitude CD 31 reduz",
+      "descricao": "<p>Debilitado (Fort CD 31 reduz para fraco por 1 rodada).</p>"
+    }
+  ]
+}

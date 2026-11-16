@@ -1,0 +1,51 @@
+{
+  "nome": "Aspecto de Hyninn",
+  "img": "assets/tokens/aspecto-de-hyninn.png",
+  "nd": "4",
+  "tipo": "con",
+  "tamanho": "med",
+  "papel": "special",
+  "atributos": { "for": 3, "des": 9, "con": 2, "int": 6, "sab": 2, "car": 7 },
+  "pv": 99,
+  "defesa": 21,
+  "pericias": { "inic": 15, "perc": 6, "fort": 4, "refl": 16, "vont": 10, "atle": 7, "acro": 13, "dipl": 11, "enga": 13, "furt": 15, "intu": 6, "joga": 16, "ladi": 18 },
+  "deslocamento": { "deslocamento": 9 },
+  "sentidos": ["escuro"],
+  "resistencias": { "dano": 5 },
+  "resistenciasTexto": "evasão aprimorada, redução de dano 5",
+  "corpoACorpo": "Duas pancadas +14 (2d6+5).",
+  "tesouro": "Padrão.",
+  "ataques": [
+    { "arma": "Pancada", "descricao": "duas pancadas", "qtd": 2, "ataque": 14, "dano": [["2d6+5", "impacto"]] }
+  ],
+  "habilidades": [
+    {
+      "poder": "Evasão Aprimorada",
+      "img": "systems/tormenta20/icons/poderes/classes/especialistas/evasao-aprimorada.webp",
+      "descricao": "<p>Quando sofre um efeito que permite um teste de Reflexos para reduzir o dano à metade, o aspecto não sofre dano algum se passar e sofre apenas metade do dano se falhar.</p>"
+    },
+    {
+      "poder": "Aparência Inócua",
+      "img": "systems/tormenta20/icons/poderes/ameacas/forma.webp",
+      "descricao": "<p>O aspecto de Hyninn não sofre penalidade em testes de Furtividade por se mover ao seu deslocamento normal ou por atacar e fazer outras ações chamativas.</p>"
+    },
+    {
+      "poder": "Armadilha Animada",
+      "img": "systems/tormenta20/icons/classes/cacador.webp",
+      "resistencia": "CD 20",
+      "danos": [["1d12", "perda", "Agulhas Envenenadas (por rodada)"], ["1d4+1", "", "Agulhas Envenenadas (rodadas)"], ["2d12", "eletricidade", "Disparador Elétrico"]],
+      "descricao": "<p>O aspecto possui uma armadilha incorporada em sua forma, escolhida entre as descritas a seguir. Se ele estiver imóvel (veja Imobilidade), a armadilha pode ser acionada por qualquer personagem que tente manuseá-lo ou abri-lo. Para estas armadilhas, a CD dos testes de Investigação e Ladinagem é 25 e a CD do teste de resistência é 20.</p><ul><li><em>Agulhas Envenenadas.</em> Criaturas em alcance curto perdem 1d12 PV por veneno por rodada durante 1d4+1 rodadas (Fort reduz para 1 rodada).</li><li><em>Disparador Elétrico.</em> Criaturas em alcance curto sofrem 2d12 pontos de dano de eletricidade e ficam atordoadas por 1 rodada (Ref reduz o dano à metade e evita a condição).</li><li><em>Gás Sonífero.</em> Criaturas em alcance curto ficam inconscientes, como na magia <em>Sono</em> (Von evita).</li><li><em>Grito Agonizante.</em> Criaturas em alcance curto sofrem dores terríveis, que impõem uma penalidade de –5 em todos os testes até o fim da cena (Fort reduz para 1 rodada).</li></ul>"
+    },
+    {
+      "poder": "Ataque Furtivo",
+      "img": "systems/tormenta20/icons/poderes/classes/especialistas/ataque-furtivo.webp",
+      "danos": [["2d6", "", "Ataque Furtivo"]],
+      "descricao": "<p>+2d6 (o aspecto pode usar esta habilidade duas vezes por rodada).</p>"
+    },
+    {
+      "poder": "Imobilidade",
+      "img": "systems/tormenta20/icons/poderes/ameacas/forma.webp",
+      "descricao": "<p>O aspecto pode permanecer completamente imóvel. Se ele estiver assim, um personagem deve passar num teste de Percepção (CD 35) para perceber que ele é uma criatura e não um objeto.</p>"
+    }
+  ]
+}

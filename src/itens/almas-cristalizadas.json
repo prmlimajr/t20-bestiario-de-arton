@@ -1,0 +1,17 @@
+{
+  "name": "Alma Cristalizada",
+  "type": "consumivel",
+  "img": "systems/tormenta20/icons/itens/gerais/gelo-eterno.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>[Tesouro Especial]</strong></p><p>Encontradas entre os tesouros de bhargaals, almas cristalizadas são pequenos fragmentos de gelo mágico que contêm a alma de alguém derrotado pelo abissal. Uma alma aprisionada dessa forma pode ser convertida em energia pura: um personagem pode gastar uma ação padrão e quebrar uma alma cristalizada para recuperar 4d6 PM. Fazer isso, entretanto, é um ato bastante questionável, pois a alma é consumida e perdida para sempre.</p><p>Grupos mais heroicos que obtenham almas cristalizadas podem tentar restaurar essas almas à vida. A forma exata para isso fica a critério do mestre, mas geralmente vai depender da alma e do estado de seu corpo (se ele ainda existir) e vai exigir o uso de habilidades de ressurreição ou o equivalente.</p>"
+    },
+    "source": "Bestiário de Arton",
+    "tipo": "material",
+    "qtd": 1,
+    "ativacao": { "execucao": "action" },
+    "rolls": [
+      { "name": "Recuperar PM", "key": "dano0", "type": "dano", "parts": [["4d6", "curapm", ""]], "versatil": "", "adaptavel": "" }
+    ]
+  }
+}

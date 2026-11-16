@@ -1,0 +1,41 @@
+{
+  "nome": "Agelfeld",
+  "img": "assets/tokens/agelfeld.png",
+  "nd": "5",
+  "tipo": "esp",
+  "tamanho": "gra",
+  "papel": "special",
+  "atributos": { "for": 3, "des": 5, "con": 1, "int": -2, "sab": 0, "car": 0 },
+  "pv": 145,
+  "defesa": 22,
+  "pericias": { "inic": 9, "perc": 4, "fort": 11, "refl": 17, "vont": 5 },
+  "deslocamento": { "voo": 24 },
+  "sentidos": ["escuro"],
+  "resistencias": { "eletricidade": "imune", "trevas": "imune" },
+  "imunidadeCondicoes": ["atordoado"],
+  "resistenciasTexto": "imunidade a atordoamento, eletricidade e trevas",
+  "corpoACorpo": "Duas garras +15 (2d8+8 mais 1d6 eletricidade).",
+  "tesouro": "Nenhum.",
+  "ataques": [
+    { "arma": "Garras", "descricao": "duas garras", "qtd": 2, "ataque": 15, "dano": [["2d8+8", "corte"], ["1d6", "eletricidade"]] }
+  ],
+  "habilidades": [
+    {
+      "poder": "Aura de Fumaça",
+      "img": "systems/tormenta20/icons/poderes/ameacas/fumos-toxicos.webp",
+      "resistencia": "Fortitude CD 22 evita",
+      "danos": [["1d6", "perda", "Sufocamento"]],
+      "descricao": "<p>O agelfeld é cercado por uma aura de fumaça com 6m de raio. No início de cada turno do agelfeld, cada outra criatura nessa área deve fazer um teste de Fortitude (CD 22, +1 por teste anterior). Se falhar, a criatura fica atordoada por 1 rodada (apenas uma vez por cena) e perde 1d6 pontos de vida por sufocamento. Metabolismo.</p>"
+    },
+    {
+      "poder": "Corpo Difuso",
+      "img": "systems/tormenta20/icons/poderes/ameacas/forma.webp",
+      "descricao": "<p>Qualquer ataque ou habilidade hostil (incluindo efeitos de área) contra o agelfeld tem 20% de chance de erro, devido a seus movimentos serpenteantes.</p>"
+    },
+    {
+      "poder": "Força dos Ventos",
+      "img": "systems/tormenta20/icons/poderes/ameacas/asas.webp",
+      "descricao": "<p>O agelfeld não sofre os efeitos nocivos de vento (veja <em>Tormenta20</em>, p. 267). Além disso, se estiver em uma tempestade, ele recebe +5 em testes de ataque e rolagens de dano com suas garras e, uma vez por rodada, pode executar uma manobra agarrar, derrubar e empurrar como ação livre (teste +22).</p>"
+    }
+  ]
+}

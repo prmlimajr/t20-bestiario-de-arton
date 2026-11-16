@@ -1,0 +1,85 @@
+{
+  "nome": "Aspecto de Tenebra",
+  "img": "assets/tokens/aspecto-de-tenebra.png",
+  "nd": "5",
+  "tipo": "mor",
+  "tamanho": "min",
+  "papel": "special",
+  "atributos": { "for": 0, "des": 8, "con": 2, "int": 7, "sab": 4, "car": 8 },
+  "pv": 140,
+  "pm": 31,
+  "defesa": 24,
+  "pericias": { "inic": 14, "perc": 10, "fort": 5, "refl": 11, "vont": 17, "acro": 14, "atua": 12, "dipl": 14, "enga": 12, "furt": 22, "inti": 12, "mist": 12, "reli": 13 },
+  "deslocamento": { "deslocamento": 12 },
+  "sentidos": ["escuro"],
+  "resistencias": { "luz": "imune", "trevas": "imune" },
+  "imunidadeCondicoes": ["sentidos", "trevas"],
+  "imunidadeOutras": "encantamento",
+  "resistenciasTexto": "evasão, imunidade a efeitos de sentidos, encantamento, escuridão e dano de luz e trevas",
+  "corpoACorpo": "Garra +15 (1d6+8 mais 2d6 trevas).",
+  "tesouro": "Nenhum.",
+  "notas": "<p><em>Em meio à escuridão, dois pontos prateados se tornam visíveis. Logo, eles se revelam ser os olhos de uma pequena gata negra que se aproxima, manhosa e sorrateira. Um observador mais atento pode notar o que parece uma certa malícia na forma de um sorriso astuto, reforçado pelo andar firme e decidido. A natureza mágica da criatura se torna evidente quando ela fala, com uma voz aveludada e quase sensual.</em></p><p>Embora geralmente escolha formas mais imponentes para seu avatar, quando se trata de manifestar um aspecto, Tenebra prefere uma aparência mais sutil e discreta. Sua escolha mais comum é uma gatinha negra, espirituosa, vaidosa e furtiva, muito semelhante, se não em forma, em comportamento, à própria Deusa das Trevas. O aspecto usa suas habilidades felinas e sua magia divina para promover os objetivos de Tenebra, o que pode incluir confrontar seus inimigos ou se aliar a seus devotos. Aqueles que são agraciados com a companhia do aspecto, entretanto, descobrem que, em troca de seu auxílio, terão que conviver com uma verdadeira princesa felina, tão demandante e complexa quanto a própria Deusa.</p>",
+  "ataques": [
+    { "arma": "Garras", "descricao": "garra", "ataque": 15, "dano": [["1d6+8", "corte"], ["2d6", "trevas"]] }
+  ],
+  "habilidades": [
+    {
+      "poder": "Evasão",
+      "img": "systems/tormenta20/icons/poderes/classes/especialistas/evasao.webp",
+      "descricao": "<p>Quando sofre um efeito que permite um teste de Reflexos para reduzir o dano à metade, o aspecto não sofre dano algum se passar.</p>"
+    },
+    {
+      "poder": "Determinação Vaidosa",
+      "acao": "reacao",
+      "img": "systems/tormenta20/icons/poderes/ameacas/odio-puro.webp",
+      "descricao": "<p>Quando o aspecto falha em um teste de resistência, ele pode repetir esse teste usando Vontade (apenas uma vez por teste).</p>"
+    },
+    {
+      "poder": "Presença Manhosa",
+      "img": "systems/tormenta20/icons/poderes/ameacas/aura-aterradora.webp",
+      "resistencia": "Vontade CD 22 evita",
+      "descricao": "<p>Qualquer criatura que tente executar uma ação hostil contra o aspecto deve fazer um teste de Vontade (CD 22). Se falhar, perde a ação (apenas uma vez por cena).</p>"
+    },
+    {
+      "poder": "Visão nas Trevas",
+      "img": "systems/tormenta20/icons/poderes/ameacas/visao-ampla.webp",
+      "descricao": "<p>O aspecto enxerga perfeitamente no escuro, incluindo em magias de escuridão.</p>"
+    },
+    {
+      "poder": "Magias",
+      "img": "systems/tormenta20/icons/poderes/ameacas/magias.webp",
+      "descricao": "<p>Como uma clériga de Tenebra de 5º nível (CD 22; –1 PM no custo de <em>Escuridão</em> e <em>Toque Vampírico</em>, já contabilizado).</p>"
+    },
+    {
+      "poder": "Curar Ferimentos",
+      "acao": "padrao",
+      "custo": 5,
+      "img": "systems/tormenta20/icons/magias/curar-ferimentos.webp",
+      "danos": [["6d8+6", "curapv", "Cura"]],
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.soVAGPRWQmKxOrPm]{Curar Ferimentos} (Padrão, 5 PM). Uma criatura adjacente cura 6d8+6 PV.</p>"
+    },
+    {
+      "poder": "Escuridão",
+      "acao": "padrao",
+      "custo": 4,
+      "img": "systems/tormenta20/icons/magias/escuridao.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.Bt364TPpNUI1QVPP]{Escuridão} (Padrão, 4 PM). Até o fim da cena, um objeto em alcance curto emana escuridão total em um raio de 9m, bloqueando a visão na área e através dela.</p>"
+    },
+    {
+      "poder": "Profanar",
+      "acao": "padrao",
+      "custo": 4,
+      "img": "systems/tormenta20/icons/magias/profanar.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.tJI1ESr2Mcxtx95L]{Profanar} (Padrão, 4 PM). Uma esfera de 9m em alcance longo se enche com energia negativa por 1 dia. Dentro dela, todo dano de trevas é maximizado e mortos-vivos recebem +3 na Defesa e em todos os testes.</p>"
+    },
+    {
+      "poder": "Toque Vampírico",
+      "acao": "padrao",
+      "custo": 4,
+      "img": "systems/tormenta20/icons/magias/toque-vampirico.webp",
+      "resistencia": "Fortitude CD 22 reduz à metade",
+      "danos": [["6d6", "trevas"]],
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.6KvwDBikOdbzhRGv]{Toque Vampírico} (Padrão, 4 PM). O aspecto faz um ataque corpo a corpo. Se acertar, além do dano normal, causa 6d6 pontos de dano de trevas (Fort reduz à metade) e recupera PV iguais à metade do dano de trevas causado.</p>"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "nome": "Ancião das Rochas",
+  "img": "assets/tokens/anciao-das-rochas.png",
+  "nd": "8",
+  "tipo": "esp",
+  "tamanho": "gra",
+  "papel": "special",
+  "atributos": { "for": 5, "des": -2, "con": 5, "int": 2, "sab": 4, "car": 1 },
+  "pv": 220,
+  "defesa": 32,
+  "pericias": { "inic": 2, "perc": 12, "fort": 21, "refl": 8, "vont": 15, "conh": 17, "sobr": 12 },
+  "deslocamento": { "deslocamento": 6, "escavacao": 6 },
+  "sentidos": ["cegas", "escuro"],
+  "sentidosExtra": "percepção às cegas (médio)",
+  "resistencias": { "eletricidade": "imune", "frio": "imune", "dano": 5 },
+  "imunidadeOutras": "encantamento",
+  "resistenciasTexto": "imunidade a encantamento, eletricidade e frio, redução de dano 5",
+  "corpoACorpo": "Duas pancadas +24 (4d12+8).",
+  "tesouro": "Padrão.",
+  "ataques": [
+    { "arma": "Pancada", "descricao": "duas pancadas", "qtd": 2, "ataque": 24, "dano": [["4d12+8", "impacto"]] }
+  ],
+  "habilidades": [
+    {
+      "poder": "Comunhão com a Natureza",
+      "img": "systems/tormenta20/icons/magias/comunhao-com-a-natureza.webp",
+      "descricao": "<p>Uma vez por dia, ao despertar, o ancião das rochas recebe o efeito básico da magia @UUID[Compendium.tormenta20.magias.Item.8byp1gCfdXtmae6D]{Comunhão com a Natureza}.</p>"
+    },
+    {
+      "poder": "Conhecimento das Eras",
+      "img": "systems/tormenta20/icons/poderes/ameacas/percepcao-temporal.webp",
+      "descricao": "<p>Quando faz um teste de Conhecimento, o ancião rola dois dados e usa o melhor resultado.</p>"
+    },
+    {
+      "poder": "Imobilidade",
+      "img": "systems/tormenta20/icons/poderes/ameacas/forma.webp",
+      "descricao": "<p>Um ancião pode permanecer completamente imóvel. Se ele estiver assim, uma criatura deve passar num teste de Percepção (CD 35, +5 se o ancião estiver adjacente a uma formação rochosa Grande ou maior) para perceber que ele é uma criatura e não uma rocha.</p>"
+    },
+    {
+      "poder": "Senhor da Pedra",
+      "acao": "padrao",
+      "img": "systems/tormenta20/icons/magias/controlar-terra.webp",
+      "resistencia": "CD 28",
+      "descricao": "<p>O ancião lança a magia @UUID[Compendium.tormenta20.magias.Item.Zi46sKpwydfQdIJt]{Controlar Terra} sem gastar PM (CD 28, limite de PM 12).</p>"
+    },
+    {
+      "poder": "Toque Pedregoso",
+      "img": "systems/tormenta20/icons/poderes/ameacas/olhar-petrificante.webp",
+      "resistencia": "Fortitude CD 28 evita",
+      "descricao": "<p>Uma criatura atingida por uma pancada do ancião deve fazer um teste de Fortitude (CD 28). Se falhar, fica lenta. Se já estiver lenta, fica petrificada permanentemente. Essa petrificação pode ser removida pelo ancião à vontade, bem como por efeitos que removam paralisia.</p>"
+    }
+  ]
+}

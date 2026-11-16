@@ -1,0 +1,50 @@
+{
+  "nome": "Ankthyr",
+  "img": "assets/tokens/ankthyr.png",
+  "nd": "8",
+  "tipo": "ani",
+  "tamanho": "gra",
+  "papel": "solo",
+  "atributos": { "for": 5, "des": 2, "con": 4, "int": -5, "sab": 0, "car": -3 },
+  "pv": 308,
+  "defesa": 33,
+  "pericias": { "inic": 10, "perc": 8, "fort": 21, "refl": 8, "vont": 15 },
+  "deslocamento": { "deslocamento": 12, "escavacao": 6 },
+  "sentidos": ["escuro"],
+  "sentidosExtra": "sentido sísmico (percepção às cegas em alcance médio, apenas contra o que toca a mesma superfície)",
+  "resistencias": { "acido": 5, "dano": 5 },
+  "resistenciasTexto": "redução de ácido 5, redução de dano 5",
+  "corpoACorpo": "Mordida +26 (4d12+24 mais 4d8 ácido).",
+  "tesouro": "Metade e 1 peça de carapaça de ankthyr (CD 23 para extrair).",
+  "ataques": [
+    { "arma": "Mordida", "ataque": 26, "dano": [["4d12+24", "perfuracao"], ["4d8", "acido"]] }
+  ],
+  "habilidades": [
+    {
+      "poder": "Agarrar Aprimorado",
+      "acao": "livre",
+      "img": "systems/tormenta20/icons/poderes/ameacas/agarrar.webp",
+      "descricao": "<p>Se o ankthyr acerta um ataque de mordida, pode fazer a manobra agarrar como uma ação livre (teste +28).</p>"
+    },
+    {
+      "poder": "Cuspe Ácido",
+      "acao": "padrao",
+      "img": "systems/tormenta20/icons/poderes/ameacas/cospe-chamas.webp",
+      "resistencia": "Reflexos CD 26 reduz",
+      "danos": [["6d8+6", "acido"], ["3d8+3", "acido", "Muco (início do turno)"]],
+      "descricao": "<p>O ankthyr cospe ácido em uma criatura a até 9m. A vítima sofre 6d8+6 pontos de dano de ácido e fica coberta por um muco corrosivo (Ref CD 26 reduz à metade e evita o muco). Uma criatura coberta pelo muco sofre mais 3d8+3 pontos de dano de ácido no início dos seus dois próximos turnos. <em>Recarga (movimento)</em>.</p>"
+    },
+    {
+      "poder": "Espreitador Subterrâneo",
+      "acao": "padrao",
+      "img": "systems/tormenta20/icons/poderes/ameacas/bote.webp",
+      "danos": [["1d12", "perfuracao", "Dano adicional"]],
+      "descricao": "<p>Se estiver completamente soterrado, o ankthyr pode emergir do solo e atacar uma criatura a até 4,5m do seu ponto de saída. Se fizer isso, ele recebe +2 no teste de ataque e causa +1d12 pontos de dano.</p>"
+    },
+    {
+      "poder": "Sentido Sísmico",
+      "img": "systems/tormenta20/icons/poderes/ameacas/visao-ampla.webp",
+      "descricao": "<p>O ankthyr tem percepção às cegas em alcance médio, mas apenas para criaturas e objetos em contato com a mesma superfície que ele.</p>"
+    }
+  ]
+}

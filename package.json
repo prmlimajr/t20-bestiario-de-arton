@@ -3,7 +3,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "node tools/build.mjs"
+    "build": "node tools/build.mjs",
+    "conferir": "node tools/conferir.mjs"
   },
   "dependencies": {
     "classic-level": "^1.4.1"
