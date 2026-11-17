@@ -1,0 +1,64 @@
+{
+  "nome": "Devolvido Andarilho",
+  "img": "assets/tokens/devolvido-andarilho.png",
+  "nd": "1/2",
+  "tipo": "mor",
+  "tamanho": "med",
+  "papel": "lackey",
+  "atributos": {
+    "for": 2,
+    "des": 2,
+    "con": 0,
+    "int": 0,
+    "sab": 0,
+    "car": 0
+  },
+  "pv": 7,
+  "defesa": 15,
+  "pericias": {
+    "inic": 2,
+    "perc": 2,
+    "fort": 3,
+    "refl": 5,
+    "vont": 0,
+    "furt": 4
+  },
+  "deslocamento": {
+    "deslocamento": 9
+  },
+  "sentidos": [
+    "faro",
+    "escuro"
+  ],
+  "corpoACorpo": "Lança +9 (2d6+4).",
+  "equipamento": "Lança.",
+  "tesouro": "Metade.",
+  "notas": "<p><em>Os camponeses de andar trôpego e cobertos de lama se aproximam de forma ameaçadora. O cheiro pungente de terra úmida, os restos de raízes pendendo de seus corpos e a expressão facial desprovida de vida indicam que não são pessoas comuns, mas algo que já cruzou a fronteira da morte.</em></p><p>Nem todos os mortos-vivos são resultado de energias necromânticas ou profanas. Às vezes, a própria terra rejeita aqueles que a tomam como seu último descanso, condenando seus cadáveres a uma tenebrosa não vida. Isso pode acontecer por diversas razões; às vezes a criatura morta é considerada indigna para retornar ao seio da terra ou a natureza está em sofrimento e rejeita aqueles que recebe para seu descanso final. Seja qual for o motivo de seu retorno, esses seres, chamados de devolvidos, erguem-se como cadáveres animados movidos por instintos primitivos e ferais, atacando todos aqueles que encontram pelo caminho.</p><p><strong>Inteligência:</strong> — (sem valor). <strong>Deslocamento:</strong> 9m, sem redução por terreno difícil natural. <strong>Furtividade:</strong> +4 (+9 em ambientes naturais).</p>",
+  "ataques": [
+    {
+      "arma": "Lança",
+      "descricao": "lança",
+      "img": "systems/tormenta20/icons/itens/equipamentos/lanca.webp",
+      "ataque": 9,
+      "dano": [
+        [
+          "2d6+4",
+          "perfuracao"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Golpe Necrótico",
+      "img": "systems/tormenta20/icons/poderes/ameacas/fraqueza-zumbi.webp",
+      "descricao": "<p>Uma criatura atingida por um ataque corpo a corpo d devolvido andarilho deve fazer um teste de Reflexos (CD 13). Se falhar, pelas próximas 24 horas, quaisquer efeitos de cura aplicados na criatura recuperam a quantidade mínima de PV.</p>",
+      "resistencia": "Reflexos CD 13 evita"
+    },
+    {
+      "poder": "Natureza Terrosa",
+      "img": "systems/tormenta20/icons/poderes/ameacas/voz-da-natureza.webp",
+      "descricao": "<p>Se fosse sofrer dano de ácido, em vez disso o devolvido recebe essa mesma quantidade de pontos de vida temporários, até um valor igual aos seus pontos de vida máximos.</p>"
+    }
+  ]
+}

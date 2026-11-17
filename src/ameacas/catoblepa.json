@@ -1,0 +1,84 @@
+{
+  "nome": "Catóblepa",
+  "img": "assets/tokens/catoblepa.png",
+  "nd": "8",
+  "tipo": "mon",
+  "tamanho": "eno",
+  "papel": "solo",
+  "atributos": {
+    "for": 7,
+    "des": -1,
+    "con": 6,
+    "int": -5,
+    "sab": 1,
+    "car": -1
+  },
+  "pv": 320,
+  "defesa": 33,
+  "pericias": {
+    "inic": 7,
+    "perc": 9,
+    "fort": 20,
+    "refl": 9,
+    "vont": 15
+  },
+  "deslocamento": {
+    "deslocamento": 12,
+    "natacao": 6
+  },
+  "sentidos": [
+    "faro",
+    "escuro"
+  ],
+  "resistencias": {
+    "dano": 10
+  },
+  "imunidadeOutras": "encantamento",
+  "resistenciasTexto": "imunidade a encantamento, redução de dano 10/mágica",
+  "corpoACorpo": "Cabeçada +26 (4d10+35 impacto).",
+  "tesouro": "Padrão.",
+  "notas": "<p><em>O estranho ser assemelha-se a um enorme búfalo de pernas grossas e curtas, com uma cauda longa, fina e lisa que termina em uma massa quitinosa e espinhosa. Seu pescoço extremamente longo ostenta uma cabeça de porco com um par de chifres pontiagudos, presas inferiores protuberantes e dois olhos pequenos, negros e sem expressão. O pescoço é fraco demais para sustentar a enorme cabeça, o que faz com que ela em geral fique pendendo rente ao chão. Pelos grossos e nodosos, que misturam lodo e vegetação, descem da testa, pescoço e dorso, dando à criatura uma aparência suja e enlameada.</em></p><p>Com um comportamento tão amalgamado quanto sua aparência, os bizarros catóblepas são, ao mesmo tempo, onívoros pacatos e predadores selvagens. Geralmente, alimentam-se apenas de plantas e carniça. Entretanto, quando experimentam carne fresca de qualquer tipo, seus hábitos mudam e eles passam a querer apenas presas recém-abatidas. Isso desperta no catóblepa um apetite cada vez mais voraz, transformando-o em um predador agressivo e descuidado.</p><p>O habitat natural dos catóblepas consiste em pântanos e áreas alagadiças, embora já tenham sido avistados em lagos e rios de pouca correnteza. Costumam ter covis em áreas secas e ocultas pela vegetação, onde mantêm um ninho de junco e folhas secas. No caso de catóblepas com desejo por carne, entretanto, esses covis podem estar repletos dos restos mortais de suas vítimas.</p><p>O olhar dos catóblepas é capaz de matar qualquer um que encare seus olhos. A origem dessa habilidade é um mistério: há quem diga que se trata do resultado de um experimento mágico. O fato é que essa habilidade está sempre ativa, o que faz com que mesmo indivíduos muito pacatos sejam mortíferos. Além disso, catóblepas possuem também um mugido quase hipnótico, capaz de forçar outras criaturas a olhar seus olhos.</p><p><strong>O Guardião do Pântano dos Juncos</strong></p><p>Segundo alguns boatos, o templo de Inghlblhphollstgt, a Grande Divindade Anfíbia, é protegido por um catóblepa único. Considerado pelos devotos de Inghlblhphollstgt como um enviado do próprio deus, essa criatura ronda a região ao redor do templo e é adorada como uma manifestação divina. Verdade ou não, o fato é que este é um catóblepa único, capaz de transformar suas vítimas em homens-sapo.</p><p>O assim chamado Guardião dos Juncos é um catóblepa único. Ele usa as estatísticas normais de uma criatura desse tipo, com as modificações a seguir.</p><p><strong>Nível de Desafio.</strong> O Guardião dos Juncos tem ND 9: ele recebe +2 em testes de ataque, na Defesa e na CD para resistir às suas habilidades.</p><p><strong>Pontos de Vida.</strong> 360</p><p><strong>Olhar Anurídeo.</strong> Esta habilidade substitui o Olhar Letal e funciona de forma semelhante. Entretanto, em vez de morrer, uma criatura enjoada que falha no teste de Reflexos se transforma em um tabrachi (veja <em>Ameaças de Arton</em>, p. 36) — ela perde todas as memórias e vira um NPC. A transformação é permanente, mas pode ser revertida com uma magia @UUID[Compendium.tormenta20.magias.Item.UIQajfvegC0ptC7O]{Dispersar as Trevas} lançada por um sacerdote de Inghlblhphollstgt.</p><p>Para mais informações sobre Inghlblhphollstgt, veja o <em>Guia de NPCs</em> (p. 23) e o <em>Guia de Deuses Menores</em> (p. 27).</p>",
+  "ataques": [
+    {
+      "arma": "Cabeçada",
+      "descricao": "cabeçada",
+      "img": "systems/tormenta20/icons/poderes/ameacas/marrada.webp",
+      "ataque": 26,
+      "dano": [
+        [
+          "4d10+35",
+          "impacto"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Cabeçada Avassaladora",
+      "img": "systems/tormenta20/icons/poderes/ameacas/marrada.webp",
+      "descricao": "<p>Quando acerta um ataque de cabeçada, o catóblepa arremessa a vítima 1d6 x 1,5m em uma direção à escolha dele (Fort CD 26 evita). A vítima fica caída e, se atingir algum obstáculo, sofre 1d6 pontos de dano de impacto para cada 1,5m que foi arremessada.</p>",
+      "acao": "livre",
+      "danos": [
+        [
+          "1d6",
+          "",
+          "Arremesso (x 1,5m)"
+        ]
+      ],
+      "resistencia": "Fortitude CD 26 evita"
+    },
+    {
+      "poder": "Mugido Enganador",
+      "img": "systems/tormenta20/icons/poderes/ameacas/urro-selvagem.webp",
+      "descricao": "<p>O catóblepa emite um mugido que atrai a atenção de todas as criaturas em um raio de 30m. Criaturas nessa área devem fazer um teste de Vontade (CD 26). Se falharem, são levadas a olhar para a face do catóblepa. A criatura não pode fechar os olhos para evitar esse efeito, mas ainda tem direito ao teste de Reflexos para evitar o Olhar Letal. <em>Encantamento.</em></p>",
+      "acao": "movimento",
+      "resistencia": "Vontade CD 26 evita"
+    },
+    {
+      "poder": "Olhar Letal",
+      "img": "systems/tormenta20/icons/poderes/ameacas/olhar-petrificante.webp",
+      "descricao": "<p>No início de seu turno, cada personagem em alcance curto do catóblepa deve fazer um teste de Reflexos (CD 26). Se passar, desvia o olhar. Se falhar, fica enjoado. Se já estiver enjoado, morre. Um personagem pode fechar os olhos para ficar imune a esta habilidade, mas sofre os efeitos de estar cego. Um personagem morto desta forma pode ser revivido se um dos olhos do catóblepa for esmagado sobre sua testa em até um dia após sua morte. <em>Metabolismo.</em></p>",
+      "resistencia": "Reflexos CD 26 evita"
+    }
+  ]
+}

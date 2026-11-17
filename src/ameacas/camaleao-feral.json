@@ -1,0 +1,112 @@
+{
+  "nome": "Camaleão Feral",
+  "img": "assets/tokens/camaleao-feral.png",
+  "nd": "1",
+  "tipo": "mon",
+  "tamanho": "med",
+  "papel": "solo",
+  "atributos": {
+    "for": 2,
+    "des": 2,
+    "con": 1,
+    "int": -5,
+    "sab": 1,
+    "car": -3
+  },
+  "pv": 36,
+  "defesa": 16,
+  "pericias": {
+    "inic": 4,
+    "perc": 3,
+    "fort": 10,
+    "refl": 6,
+    "vont": 0,
+    "furt": 6
+  },
+  "deslocamento": {
+    "deslocamento": 9,
+    "escalada": 9
+  },
+  "sentidos": [
+    "escuro"
+  ],
+  "resistenciasTexto": "não pode ser flanqueado",
+  "corpoACorpo": "Língua +9 (1d6+4 impacto mais veneno, alcance 3m).",
+  "tesouro": "Nenhum.",
+  "notas": "<p><em>Com movimentos precisos e silenciosos, a figura reptiliana se esgueira pelos galhos da árvore. Em tudo lembra um camaleão, exceto por ter o tamanho de um humano adulto.</em></p><p>Encontrado em regiões de selva fechada e quente, como Galrasia e certas partes das Montanhas Sanguinárias, o camaleão feral é uma versão maior e mais agressiva do camaleão comum. Caçadores solitários, costumam espreitar em lugares altos, como galhos de árvores ou rochedos elevados, valendo-se de seu mimetismo natural para surpreender suas presas. Dali, usam sua longa língua preênsil para inocular veneno e capturar as vítimas — sua língua secreta uma toxina paralisante bastante potente, capaz de imobilizar presas tão grandes quanto um humano.</p>",
+  "ataques": [
+    {
+      "arma": "Língua",
+      "descricao": "língua (mais veneno, alcance 3m)",
+      "img": "systems/tormenta20/icons/poderes/ameacas/bote.webp",
+      "ataque": 9,
+      "dano": [
+        [
+          "1d6+4",
+          "impacto"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Agarrar Aprimorado",
+      "img": "systems/tormenta20/icons/poderes/ameacas/agarrar.webp",
+      "descricao": "<p>Se o camaleão acerta um ataque de língua, pode fazer a manobra agarrar como uma ação livre (teste +11).</p>",
+      "acao": "livre"
+    },
+    {
+      "poder": "Mastigar",
+      "img": "systems/tormenta20/icons/poderes/ameacas/mordida.webp",
+      "descricao": "<p>No início de cada um de seus turnos, o camaleão feral causa 2d6+6 pontos de dano de corte, mais veneno, na criatura que estiver agarrando com sua língua.</p>",
+      "acao": "livre",
+      "danos": [
+        [
+          "2d6+6",
+          "corte"
+        ]
+      ]
+    },
+    {
+      "poder": "Mimetismo",
+      "img": "systems/tormenta20/icons/magias/camuflagem-ilusoria.webp",
+      "descricao": "<p>O camaleão muda a cor de sua pele para se misturar ao ambiente. Nessa condição, ele recebe camuflagem leve e +5 em Furtividade. Essa habilidade dura até o fim da cena ou até o camaleão mudar para um ambiente diferente (a critério do mestre). <em>Recarga (movimento).</em></p>",
+      "acao": "movimento",
+      "efeitos": [
+        {
+          "name": "Mimetismo",
+          "description": "<p>+5 em Furtividade.</p><p><strong>Não automatizado:</strong> camuflagem leve.</p>",
+          "system": {
+            "changes": [
+              {
+                "key": "system.pericias.furt.bonus",
+                "value": 5,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "poder": "Veneno",
+      "img": "systems/tormenta20/icons/poderes/ameacas/veneno.webp",
+      "descricao": "<p>Perde 1d12 PV e fica paralisado por 1 rodada, Fort CD 14 evita a paralisia e reduz a perda de vida para 1d6.</p>",
+      "danos": [
+        [
+          "1d12",
+          "perda",
+          "Veneno"
+        ],
+        [
+          "1d6",
+          "perda",
+          "Veneno (passou)"
+        ]
+      ],
+      "resistencia": "Fortitude CD 14 reduz"
+    }
+  ]
+}

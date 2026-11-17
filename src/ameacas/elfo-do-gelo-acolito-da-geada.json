@@ -1,0 +1,149 @@
+{
+  "nome": "Elfo-do-Gelo Acólito da Geada",
+  "img": "assets/tokens/elfo-do-gelo-acolito-da-geada.png",
+  "nd": "5",
+  "tipo": "hum",
+  "raca": "elfo-do-gelo",
+  "tamanho": "med",
+  "papel": "special",
+  "atributos": {
+    "for": 0,
+    "des": 3,
+    "con": 1,
+    "int": 0,
+    "sab": 6,
+    "car": 2
+  },
+  "pv": 120,
+  "pm": 38,
+  "defesa": 22,
+  "pericias": {
+    "inic": 7,
+    "perc": 12,
+    "fort": 11,
+    "refl": 5,
+    "vont": 17,
+    "cura": 10,
+    "mist": 4,
+    "reli": 10,
+    "sobr": 12
+  },
+  "deslocamento": {
+    "deslocamento": 12
+  },
+  "sentidos": [
+    "penumbra"
+  ],
+  "resistencias": {
+    "frio": 15
+  },
+  "resistenciasTexto": "evasão, redução de frio 15",
+  "corpoACorpo": "Machado de batalha x2 +15 (1d12+5, x3, mais 2d6+2 frio).",
+  "equipamento": "Escudo leve, essência de mana x2, machado de batalha, símbolo sagrado de Beluhga.",
+  "tesouro": "Metade.",
+  "notas": "<p><em>Meu povo descende daqueles que deixaram as asas de Glórienn e encontraram refúgio onde quase ninguém ousava ir: as gélidas Montanhas Uivantes. Lá, aprendemos a sobreviver num mundo de neve eterna, ventos cortantes e caça difícil. Com o tempo, o frio deixou de ser um obstáculo e passou a moldar as pessoas: pele pálida como a geada, cabelos em tons claros ou frios, olhos adaptados à escuridão e corpos marcados por cicatrizes de um ambiente que não perdoa erros. Passamos a viver em pequenos grupos, geralmente em cavernas, sem reis ou chefes: cada aldeia decide seu caminho em conjunto, guiada pela necessidade e pela experiência.</em></p><p>Elfos-do-gelo são descendentes de elfos que migraram para as Montanhas Uivantes após a queda de Glórienn, em busca de uma terra, e de uma divindade, que pudesse lhes oferecer proteção. Nas Uivantes, estes elfos encontraram a proteção de Beluhga; mesmo morta, a Dragoa-Rainha do Gelo zelava pelas montanhas e por seus habitantes. Com o tempo, esses elfos passaram por transformações que os adaptaram à vida em um dos ambientes mais inóspitos de Arton. Teriam sido essas mudanças influência das forças mágicas das Uivantes ou uma bênção secreta da própria Beluhga?</p><p>Ainda existem poucos elfos-do-gelo em Arton e a maioria vive em pequenas aldeias independentes nas Uivantes. Possuem uma relação cultural muito forte com a neve e com a própria Beluhga, embora por vezes cultuem outros deuses. Elfos-do-gelo encontrados fora das Uivantes geralmente são exploradores com uma missão específica ou, mais comumente, aventureiros em busca de explorar o restante de Arton.</p><p><strong>Elfo-do-Gelo: Habilidades de Raça</strong></p><p><strong>Sabedoria +2, Destreza +1, Constituição –1.</strong></p><p><strong>Graça de Beluhga.</strong> Seu deslocamento é 12m (em vez de 9m) e não é reduzido por terreno difícil natural.</p><p><strong>Herança Gélida.</strong> Você recebe redução de frio 10 e, quando causa dano, causa +1d4 pontos de dano de frio.</p><p><strong>Sentidos Glaciais.</strong> Você recebe visão na penumbra e +2 em Percepção e Sobrevivência.</p><p><strong>Longevidade.</strong> x5.</p><p><strong>Devotos.</strong> Allihanna, Beluhga (descrita no <em>Guia de Deuses Menores</em>), Kallyadranoch, Marah, Megalokk.</p><p><strong>Deslocamento:</strong> sem redução por terreno difícil natural.</p>",
+  "ataques": [
+    {
+      "arma": "Machado de batalha",
+      "descricao": "machado de batalha x2",
+      "img": "systems/tormenta20/icons/itens/equipamentos/machado-de-batalha.webp",
+      "qtd": 2,
+      "ataque": 15,
+      "critico": "x3",
+      "dano": [
+        [
+          "1d12+5",
+          "corte"
+        ],
+        [
+          "2d6+2",
+          "frio"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Evasão",
+      "img": "systems/tormenta20/icons/poderes/classes/especialistas/evasao.webp",
+      "descricao": "<p>Quando sofre um efeito que permite um teste de Reflexos para reduzir o dano à metade, o elfo-do-gelo não sofre dano algum se passar.</p>"
+    },
+    {
+      "poder": "Bênção do Frio",
+      "img": "systems/tormenta20/icons/magias/sopro-das-uivantes.webp",
+      "descricao": "<p>Se o elfo-do-gelo acólito da geada terminar seu turno adjacente a um ou mais inimigos, eles ficam enredados por cristais de gelo por 1 rodada. Se já estavam enredados dessa forma, em vez disso ficam imóveis por 1 rodada (Fort CD 22 evita a condição imóvel).</p>",
+      "resistencia": "Fortitude CD 22 evita (imóvel)"
+    },
+    {
+      "poder": "Prece de Combate",
+      "img": "systems/tormenta20/icons/poderes/ameacas/magias.webp",
+      "descricao": "<p>Quando lança uma magia com tempo de conjuração de uma ação padrão em si mesmo, o elfo-do-gelo pode lançá-la como uma ação de movimento.</p>",
+      "custo": 2
+    },
+    {
+      "poder": "Magias",
+      "img": "systems/tormenta20/icons/poderes/ameacas/magias.webp",
+      "descricao": "<p>Como um clérigo de Beluhga de 5º nível (CD 22).</p>"
+    },
+    {
+      "poder": "Arma Espiritual",
+      "acao": "padrao",
+      "custo": 5,
+      "img": "systems/tormenta20/icons/magias/arma-espiritual.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.oyIcPlsAaASUEJpT]{Arma Espiritual} (Padrão, 5 PM, sustentada). Uma vez por rodada, como uma ação livre, o elfo-do-gelo causa 3d6 pontos de dano de corte automaticamente a uma criatura adjacente. Se não fizer isso e sofrer um ataque corpo a corpo nesta rodada, ele pode usar uma reação para causar este dano ao atacante.</p>",
+      "danos": [
+        [
+          "3d6",
+          "corte"
+        ]
+      ]
+    },
+    {
+      "poder": "Curar Ferimentos",
+      "acao": "padrao",
+      "custo": 5,
+      "img": "systems/tormenta20/icons/magias/curar-ferimentos.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.soVAGPRWQmKxOrPm]{Curar Ferimentos} (Padrão, 5 PM). Uma criatura adjacente cura 6d8+6 PV.</p>",
+      "danos": [
+        [
+          "6d8+6",
+          "curapv",
+          "Cura"
+        ]
+      ]
+    },
+    {
+      "poder": "Escudo da Fé",
+      "acao": "reacao",
+      "custo": 1,
+      "img": "systems/tormenta20/icons/magias/escudo-da-fe.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.XJoWTcH8zVtHc2xa]{Escudo da Fé} (Reação, 1 PM). Quando uma criatura em alcance curto sofre um ataque, ela recebe +2 na Defesa por 1 turno.</p>"
+    },
+    {
+      "poder": "Físico Divino",
+      "acao": "padrao",
+      "custo": 3,
+      "img": "systems/tormenta20/icons/magias/fisico-divino.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.cgJPXzVbOQLjyXfe]{Físico Divino} (Padrão, 3 PM). Uma criatura adjacente recebe +2 em Força, Destreza ou Constituição até o fim da cena. Esse aumento não fornece PV ou PM adicionais.</p>"
+    },
+    {
+      "poder": "Sopro das Uivantes",
+      "acao": "padrao",
+      "custo": 5,
+      "img": "systems/tormenta20/icons/magias/sopro-das-uivantes.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.LFz30FCDJrLJwSrW]{Sopro das Uivantes} (Padrão, 5 PM). Criaturas em um cone de 9m sofrem 6d6+2 pontos de dano de frio e, se forem Médias ou menores, ficam caídas e são empurradas 6m na direção oposta. Se houver uma parede ou outro objeto sólido (mas não uma criatura) no caminho, a criatura para de se mover, mas sofre +2d6 pontos de dano de impacto (Fort reduz à metade e evita a condição e o empurrão).</p>",
+      "danos": [
+        [
+          "6d6+2",
+          "frio"
+        ],
+        [
+          "2d6",
+          "impacto",
+          "Colisão"
+        ]
+      ],
+      "resistencia": "Fortitude CD 22 reduz à metade e evita"
+    }
+  ]
+}

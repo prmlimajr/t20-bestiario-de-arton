@@ -1,0 +1,134 @@
+{
+  "nome": "Carniceiro Acorrentado",
+  "img": "assets/tokens/carniceiro-acorrentado.png",
+  "nd": "13",
+  "tipo": "esp",
+  "raca": "abissal",
+  "tamanho": "med",
+  "papel": "solo",
+  "atributos": {
+    "for": 5,
+    "des": 3,
+    "con": 4,
+    "int": -1,
+    "sab": 2,
+    "car": -1
+  },
+  "pv": 666,
+  "defesa": 44,
+  "pericias": {
+    "inic": 13,
+    "perc": 12,
+    "fort": 26,
+    "refl": 13,
+    "vont": 20
+  },
+  "deslocamento": {
+    "deslocamento": 9
+  },
+  "sentidos": [
+    "faro",
+    "cegas"
+  ],
+  "sentidosExtra": "percepção às cegas (longo)",
+  "resistencias": {
+    "fogo": "imune",
+    "dano": 15
+  },
+  "imunidadeCondicoes": [
+    "atordoado",
+    "cego",
+    "mental",
+    "medo",
+    "sangrando",
+    "veneno"
+  ],
+  "resistenciasTexto": "imunidade a atordoamento, cego, efeitos mentais, fogo, medo, sangramento e veneno, redução de dano 15",
+  "corpoACorpo": "Duas correntes +37 (4d6+15 impacto, x3, mais 4d8 trevas, alcance 4,5m) e chifres +37 (4d6+15 mais 4d8 trevas).",
+  "tesouro": "Nenhum.",
+  "notas": "<p><em>Em sua eterna servitude aos deuses malignos de Arton, abissais desempenham os mais variados papéis, de sutis corruptores a monstruosidades assustadoras. Alguns são manipuladores e astutos, enquanto outros se valem de estratégia e força militar para promover os objetivos de seus senhores malignos.</em></p><p>O carniceiro acorrentado não é nada disso.</p><p>Um espírito de fúria, destruição e sanguinolência, o carniceiro acorrentado é um abissal criado nos recantos mais sombrios dos reinos dos deuses. Seu propósito é a carne dos mortais: machucá-la, destruí-la, devorá-la. Suas armas são a selvageria, o ódio pelos mortais e uma voracidade insaciável que o compele a matar constantemente.</p><p>Tamanha maldade e apetite pela violência não são obra do acaso. Carniceiros acorrentados são criados por abissais superiores para servirem como feras de guerra. Para isso, um abissal suficientemente poderoso molda um corpo a partir da carne de mortais sacrificados e o anima com a alma de alguém que, em vida, era movido pela fúria. A criatura resultante é então colocada em correntes e “adestrada” para servir ao seu senhor.</p><p>Carniceiros acorrentados geralmente são encontrados como parte de um bando de guerra abissal. Entretanto, pela natureza violenta de sua existência, não é raro que estes infernais se desgarrem, ou mesmo se voltem contra seu senhor, e passem a vagar livres. Um carniceiro acorrentado que se encontre em Arton sem um senhor geralmente dá início a uma sequência de mortes e sanguinolência que só é interrompida com sua destruição.</p>",
+  "ataques": [
+    {
+      "arma": "Corrente",
+      "descricao": "duas correntes (alcance 4,5m)",
+      "img": "systems/tormenta20/icons/itens/equipamentos/corrente-de-espinhos.webp",
+      "qtd": 2,
+      "ataque": 37,
+      "critico": "x3",
+      "dano": [
+        [
+          "4d6+15",
+          "impacto"
+        ],
+        [
+          "4d8",
+          "trevas"
+        ]
+      ]
+    },
+    {
+      "arma": "Chifres",
+      "descricao": "chifres",
+      "ataque": 37,
+      "dano": [
+        [
+          "4d6+15",
+          "perfuracao"
+        ],
+        [
+          "4d8",
+          "trevas"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Derrubar",
+      "img": "systems/tormenta20/icons/poderes/ameacas/derrubar.webp",
+      "descricao": "<p>Se o carniceiro acerta um ataque de corrente, pode fazer a manobra derrubar como uma ação livre (teste +39).</p>",
+      "acao": "livre"
+    },
+    {
+      "poder": "Explosão de Correntes",
+      "img": "systems/tormenta20/icons/itens/equipamentos/corrente-de-espinhos.webp",
+      "descricao": "<p>Correntes de sangue se projetam momentaneamente do corpo do carniceiro acorrentado, espalhando-se em um raio de 9m ao seu redor. Inimigos nessa área sofrem 2d6+15 pontos de dano de impacto e 2d8 pontos de dano de trevas e ficam enredados (Ref CD 35 reduz à metade e evita a condição). Uma criatura enredada desta forma pode remover essa condição com uma ação completa para se livrar das correntes. <em>Recarga (movimento).</em></p>",
+      "acao": "completa",
+      "danos": [
+        [
+          "2d6+15",
+          "impacto"
+        ],
+        [
+          "2d8",
+          "trevas"
+        ]
+      ],
+      "resistencia": "Reflexos CD 35 reduz à metade e evita"
+    },
+    {
+      "poder": "Êxtase do Sangue",
+      "img": "systems/tormenta20/icons/poderes/ameacas/ataque-trevas.webp",
+      "descricao": "<p>Por cada rodada em que causou dano a pelo menos um inimigo, o dano de trevas dos ataques do carniceiro acorrentado aumenta em +1d8 cumulativo até o fim da cena.</p>",
+      "danos": [
+        [
+          "1d8",
+          "trevas",
+          "+1d8 por rodada"
+        ]
+      ]
+    },
+    {
+      "poder": "Marrada Sanguinária",
+      "img": "systems/tormenta20/icons/poderes/ameacas/marrada.webp",
+      "descricao": "<p>Quando faz uma investida com seus chifres, o carniceiro causa +2d6 pontos de dano de perfuração e, se acertar o ataque, deixa o alvo caído e sangrando.</p>",
+      "danos": [
+        [
+          "2d6",
+          "perfuracao",
+          "Dano extra"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "nome": "Bruxo Rural",
+  "img": "assets/tokens/bruxo-rural.png",
+  "nd": "4",
+  "tipo": "hum",
+  "raca": "humano",
+  "tamanho": "med",
+  "papel": "special",
+  "atributos": {
+    "for": 0,
+    "des": 1,
+    "con": 1,
+    "int": 2,
+    "sab": 4,
+    "car": 2
+  },
+  "pv": 68,
+  "pm": 22,
+  "defesa": 22,
+  "pericias": {
+    "inic": 3,
+    "perc": 8,
+    "fort": 10,
+    "refl": 4,
+    "vont": 17,
+    "ades": 8,
+    "conh": 8,
+    "cura": 10,
+    "intu": 8,
+    "mist": 6,
+    "sobr": 10
+  },
+  "deslocamento": {
+    "deslocamento": 9
+  },
+  "corpoACorpo": "Bordão x2 +13 (1d6+6).",
+  "equipamento": "Bordão, farrapos de ermitão, gorro de ervas.",
+  "tesouro": "Metade.",
+  "notas": "<p><em>A figura na entrada do casebre parece uma camponesa idosa, com o cabelo preso em um lenço simples e um bordão servindo de bengala. Suas mãos exalam o cheiro de ervas medicinais e seus olhos transmitem a sabedoria de quem viveu muitos anos estudando os segredos mágicos da terra.</em></p><p>Apesar dos esforços de Wynna e de seus devotos, a dádiva da magia nem sempre alcança todos os lugares. Em comunidades isoladas, onde por vezes não chegam estradas, tampouco informações, é raro que exista alguém com o dom ou treinamento formal necessários para ser um arcanista. Nesses lugares, muitas vezes o conhecimento arcano está depositado em uma figura que é uma combinação de boticário, curandeiro, vidente e xamã: o bruxo rural.</p><p>Bruxos rurais são figuras folclóricas, cujo conhecimento geralmente é transmitido de mestre para aprendiz em uma tradição oral específica de cada comunidade ou região. Em lugares onde às vezes não existem representantes dos deuses ou conjuradores arcanos, eles ocupam o papel de sábios e curandeiros locais, realizando partos, removendo doenças do gado e desfazendo supostas maldições (sobretudo quando moradores incautos inadvertidamente perturbam espíritos da floresta).</p><p><strong>Deslocamento:</strong> 9m, sem redução por terreno difícil natural.</p>",
+  "ataques": [
+    {
+      "arma": "Bordão",
+      "descricao": "bordão x2",
+      "img": "systems/tormenta20/icons/itens/equipamentos/bordao.webp",
+      "qtd": 2,
+      "ataque": 13,
+      "dano": [
+        [
+          "1d6+6",
+          "impacto"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Bolsa de Ervas",
+      "img": "systems/tormenta20/icons/itens/gerais/gorro-de-ervas.webp",
+      "descricao": "<p>O bruxo rural carrega uma bolsa com ervas preparadas a partir de receitas pessoais. Enquanto tiver essa bolsa, sempre que lança uma magia, ele pode aplicar o efeito de um catalisador à sua escolha dentre os descritos em <em>Tormenta20</em> (pp. 160 a 161).</p>"
+    },
+    {
+      "poder": "Simpatia Preparada",
+      "img": "systems/tormenta20/icons/poderes/ameacas/magias.webp",
+      "descricao": "<p>Em seu primeiro turno em cada cena, quando lança uma magia com execução de ação completa, padrão ou movimento, o bruxo pode mudar a execução dela para livre.</p>",
+      "acao": "livre"
+    },
+    {
+      "poder": "Sussurros das Matas",
+      "img": "systems/tormenta20/icons/poderes/ameacas/voz-da-natureza.webp",
+      "descricao": "<p>Se estiver em um bosque ou outra área de terreno natural, o bruxo recebe +2 na Defesa e em Reflexos e não pode ser surpreendido.</p>",
+      "efeitos": [
+        {
+          "name": "Sussurros das Matas",
+          "description": "<p>Em terreno natural: +2 na Defesa e em Reflexos.</p><p><strong>Não automatizado:</strong> não pode ser surpreendido.</p>",
+          "system": {
+            "changes": [
+              {
+                "key": "system.attributes.defesa.bonus",
+                "value": 2,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              },
+              {
+                "key": "system.pericias.refl.bonus",
+                "value": 2,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "poder": "Magias",
+      "img": "systems/tormenta20/icons/poderes/ameacas/magias.webp",
+      "descricao": "<p>Como um conjurador arcano de 4º nível (CD 22; atributo-chave Sabedoria).</p>"
+    },
+    {
+      "poder": "Adaga Mental",
+      "acao": "padrao",
+      "custo": 3,
+      "img": "systems/tormenta20/icons/magias/adaga-mental.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.xfYTGGsdd81Pa0AN]{Adaga Mental} (Padrão, 3 PM). Uma criatura em alcance curto sofre 3d6 pontos de dano psíquico e fica atordoada por 1 rodada (Von reduz o dano à metade e evita a condição). Uma criatura só pode ser atordoada por esta magia uma vez por cena.</p>",
+      "danos": [
+        [
+          "3d6",
+          "psiquico"
+        ]
+      ],
+      "resistencia": "Vontade CD 22 reduz à metade e evita"
+    },
+    {
+      "poder": "Amedrontar",
+      "acao": "padrao",
+      "custo": 3,
+      "img": "systems/tormenta20/icons/magias/amedrontar.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.m14TgW19d1JTBz8U]{Amedrontar} (Padrão, 3 PM). Um animal ou humanoide em alcance curto fica apavorado por 1d4+1 rodadas e depois abalado (Von reduz para abalado por 1d4 rodadas).</p>",
+      "danos": [
+        [
+          "1d4+1",
+          "",
+          "Rodadas (apavorado)"
+        ]
+      ],
+      "resistencia": "Vontade CD 22 reduz"
+    },
+    {
+      "poder": "Armamento da Natureza",
+      "acao": "movimento",
+      "custo": 4,
+      "img": "systems/tormenta20/icons/magias/armamento-da-natureza.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.mG617USsDrhcj6Tk]{Armamento da Natureza} (Movimento, 4 PM). O bordão do bruxo se torna mágico até o fim da cena; ele fornece +1 em testes de ataque e seu dano aumenta em um passo (de 1d6 para 1d8).</p>"
+    },
+    {
+      "poder": "Controlar Plantas",
+      "acao": "padrao",
+      "custo": 2,
+      "img": "systems/tormenta20/icons/magias/controlar-plantas.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.sSUOYxFZVrthYvfn]{Controlar Plantas} (Padrão, 2 PM). Um quadrado de 9m de vegetação em alcance curto se torna terreno difícil. Criaturas na área quando a magia é lançada ou no início de seus próprios turnos ficam enredadas e imóveis (Fort evita). Uma vítima pode se libertar com uma ação padrão e um teste de Acrobacia ou Atletismo.</p>",
+      "resistencia": "Fortitude CD 22 evita"
+    },
+    {
+      "poder": "Curar Ferimentos",
+      "acao": "padrao",
+      "custo": 4,
+      "img": "systems/tormenta20/icons/magias/curar-ferimentos.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.soVAGPRWQmKxOrPm]{Curar Ferimentos} (Padrão, 4 PM). Uma criatura adjacente cura 5d8+5 PV.</p>",
+      "danos": [
+        [
+          "5d8+5",
+          "curapv",
+          "Cura"
+        ]
+      ]
+    },
+    {
+      "poder": "Orientação",
+      "acao": "padrao",
+      "custo": 1,
+      "img": "systems/tormenta20/icons/magias/orientacao.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.dvq8aLolbWGm7E2Z]{Orientação} (Padrão, 1 PM). Em seu próximo teste de perícia feito até o fim da próxima rodada, uma criatura em alcance curto pode rolar dois dados e ficar com o melhor resultado.</p>"
+    }
+  ]
+}

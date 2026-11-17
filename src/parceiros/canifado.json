@@ -1,0 +1,39 @@
+{
+  "name": "Parceiro: Canifado",
+  "type": "poder",
+  "img": "assets/tokens/canifado-parceiro.png",
+  "system": {
+    "description": {
+      "value": "<p>O canifado é um parceiro especial (vigilante) que fornece os benefícios a seguir.</p>\n<p><strong>Iniciante</strong>: +2 em Percepção e Sobrevivência.</p>\n<p><strong>Veterano</strong>: você pode lançar a magia @UUID[Compendium.tormenta20.magias.Item.g48EeeYhek5Wh5Ll]{Leque Cromático} (atributo-chave Carisma).</p>\n<p><strong>Mestre</strong>: uma vez por rodada, você pode aumentar para curto o alcance de uma de suas habilidades com alcance de toque que tenha como alvo um aliado.</p>\n<p><strong>Familiar</strong>: um canifado familiar permite que você lance @UUID[Compendium.tormenta20.magias.Item.g48EeeYhek5Wh5Ll]{Leque Cromático}. Caso aprenda novamente essa magia, seu custo diminui em –1 PM.</p>"
+    },
+    "source": "Bestiário de Arton",
+    "tipo": "geral",
+    "subtipo": "Parceiros"
+  },
+  "effects": [
+    {
+      "name": "Canifado Iniciante",
+      "description": "<p>+2 em Percepção e Sobrevivência.</p>",
+      "system": { "changes": [
+        { "key": "system.pericias.perc.bonus", "value": 2, "priority": null, "type": "add", "phase": "initial" },
+        { "key": "system.pericias.sobr.bonus", "value": 2, "priority": null, "type": "add", "phase": "initial" }
+      ] }
+    },
+    {
+      "name": "Canifado Veterano",
+      "description": "<p>+2 em Percepção e Sobrevivência.</p><p><strong>Não automatizado:</strong> pode lançar Leque Cromático (atributo-chave Carisma).</p>",
+      "system": { "changes": [
+        { "key": "system.pericias.perc.bonus", "value": 2, "priority": null, "type": "add", "phase": "initial" },
+        { "key": "system.pericias.sobr.bonus", "value": 2, "priority": null, "type": "add", "phase": "initial" }
+      ] }
+    },
+    {
+      "name": "Canifado Mestre",
+      "description": "<p>+2 em Percepção e Sobrevivência.</p><p><strong>Não automatizado:</strong> pode lançar Leque Cromático (atributo-chave Carisma); uma vez por rodada, aumenta para curto o alcance de uma habilidade de toque que tenha como alvo um aliado.</p>",
+      "system": { "changes": [
+        { "key": "system.pericias.perc.bonus", "value": 2, "priority": null, "type": "add", "phase": "initial" },
+        { "key": "system.pericias.sobr.bonus", "value": 2, "priority": null, "type": "add", "phase": "initial" }
+      ] }
+    }
+  ]
+}

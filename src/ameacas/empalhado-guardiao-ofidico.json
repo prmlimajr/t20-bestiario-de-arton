@@ -1,0 +1,112 @@
+{
+  "nome": "Empalhado Guardião Ofídico",
+  "img": "assets/tokens/empalhado-guardiao-ofidico.png",
+  "nd": "6",
+  "tipo": "mor",
+  "tamanho": "med",
+  "papel": "solo",
+  "atributos": {
+    "for": 4,
+    "des": 2,
+    "con": 1,
+    "int": 0,
+    "sab": 0,
+    "car": -5
+  },
+  "pv": 240,
+  "defesa": 26,
+  "pericias": {
+    "inic": 7,
+    "perc": 5,
+    "fort": 6,
+    "refl": 18,
+    "vont": 12,
+    "atle": 9,
+    "furt": 9
+  },
+  "deslocamento": {
+    "deslocamento": 9
+  },
+  "sentidos": [
+    "escuro"
+  ],
+  "resistencias": {
+    "frio": 5,
+    "impacto": 5,
+    "perfuracao": 5
+  },
+  "resistenciasTexto": "evasão, redução de frio, impacto e perfuração 5",
+  "corpoACorpo": "Quatro cimitarras +20 (1d6+4, 18, mais 1d6 trevas) e cauda +10 (1d6+4 mais 1d6 trevas).",
+  "tesouro": "Nenhum.",
+  "notas": "<p><em>As aves de olhos brilhantes e vítreos lembram animais empalhados, do tipo que se encontra em laboratórios ou nos museus de cidades como Valkaria. De fato, poderiam facilmente ser confundidas com o trabalho de um taxidermista, se não fosse pela forma ameaçadora com que se movimentam.</em></p><p>Empalhados são mortos-vivos criados a partir da combinação de taxidermia e necromancia. O processo envolve remover toda a carne do cadáver, preservando apenas o esqueleto e a pele, que é preenchida com palha seca. Os olhos também são removidos, substituídos por contas de vidro ou pedras translúcidas.</p><p>Considerados por muitos necromantes como mortos-vivos rudimentares, empalhados são mais comuns nos ermos, geralmente sob serviço de conjuradores rurais. Costumam ser empregados como guardas e serviçais, embora alguns conjuradores usem essa técnica para preservar mascotes úteis ou queridos, como um gatinho de estimação que esgotou suas vidas cedo demais.</p><p><strong>Inteligência:</strong> — (registrada como 0 na ficha).</p>",
+  "ataques": [
+    {
+      "arma": "Cimitarra",
+      "descricao": "quatro cimitarras",
+      "img": "systems/tormenta20/icons/itens/equipamentos/cimitarra.webp",
+      "qtd": 4,
+      "ataque": 20,
+      "critico": "18",
+      "dano": [
+        [
+          "1d6+4",
+          "corte"
+        ],
+        [
+          "1d6",
+          "trevas"
+        ]
+      ]
+    },
+    {
+      "arma": "Cauda",
+      "descricao": "cauda",
+      "img": "systems/tormenta20/icons/poderes/ameacas/cauda.webp",
+      "ataque": 10,
+      "dano": [
+        [
+          "1d6+4",
+          "impacto"
+        ],
+        [
+          "1d6",
+          "trevas"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Evasão",
+      "img": "systems/tormenta20/icons/poderes/classes/especialistas/evasao.webp",
+      "descricao": "<p>Quando sofre um efeito que permite um teste de Reflexos para reduzir o dano à metade, o empalhado não sofre dano algum se passar.</p>"
+    },
+    {
+      "poder": "Armadilha de Lâminas",
+      "img": "systems/tormenta20/icons/itens/equipamentos/cimitarra.webp",
+      "descricao": "<p>Toda vez que uma criatura erra um ataque corpo a corpo contra o empalhado guardião ofídico, ele causa 1d6 pontos de dano de corte mais 1d6 pontos de dano de trevas a ela (Ref CD 22 evita).</p>",
+      "acao": "reacao",
+      "danos": [
+        [
+          "1d6",
+          "corte"
+        ],
+        [
+          "1d6",
+          "trevas"
+        ]
+      ],
+      "resistencia": "Reflexos CD 22 evita"
+    },
+    {
+      "poder": "Emboscar",
+      "img": "systems/tormenta20/icons/poderes/ameacas/investida.webp",
+      "descricao": "<p>Na primeira rodada de combate, o empalhado pode realizar uma ação padrão adicional.</p>"
+    },
+    {
+      "poder": "Sangrar Palha",
+      "img": "systems/tormenta20/icons/poderes/ameacas/vulnerabilidade.webp",
+      "descricao": "<p>O multiplicador de crítico de ataques com armas de corte contra o empalhado aumenta em +1.</p>"
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "nome": "Elfo-do-Gelo Campeão da Neve",
+  "img": "assets/tokens/elfo-do-gelo-campeao-da-neve.png",
+  "nd": "11",
+  "tipo": "hum",
+  "raca": "elfo-do-gelo",
+  "tamanho": "med",
+  "papel": "solo",
+  "atributos": {
+    "for": 2,
+    "des": 5,
+    "con": 2,
+    "int": 0,
+    "sab": 3,
+    "car": 1
+  },
+  "pv": 320,
+  "defesa": 39,
+  "pericias": {
+    "inic": 14,
+    "perc": 14,
+    "fort": 11,
+    "refl": 24,
+    "vont": 18,
+    "acro": 14,
+    "atle": 11,
+    "furt": 14,
+    "guer": 9,
+    "sobr": 16
+  },
+  "deslocamento": {
+    "deslocamento": 12
+  },
+  "sentidos": [
+    "penumbra"
+  ],
+  "resistencias": {
+    "frio": 15
+  },
+  "resistenciasTexto": "evasão, redução de frio 15",
+  "corpoACorpo": "Machado de batalha x2 +34 (4d12+10, x3, mais 2d6+4 frio) e espada curta +34 (4d6+10, 19, mais 2d6+2 frio).",
+  "aDistancia": "Arco longo x2 +34 (4d8+10, x3, mais 2d6+4 frio).",
+  "equipamento": "Arco longo, armadura de couro, espada curta, flechas de gelo eterno x20, machado de batalha de gelo eterno, símbolo sagrado de Beluhga.",
+  "tesouro": "Metade.",
+  "notas": "<p><em>Meu povo descende daqueles que deixaram as asas de Glórienn e encontraram refúgio onde quase ninguém ousava ir: as gélidas Montanhas Uivantes. Lá, aprendemos a sobreviver num mundo de neve eterna, ventos cortantes e caça difícil. Com o tempo, o frio deixou de ser um obstáculo e passou a moldar as pessoas: pele pálida como a geada, cabelos em tons claros ou frios, olhos adaptados à escuridão e corpos marcados por cicatrizes de um ambiente que não perdoa erros. Passamos a viver em pequenos grupos, geralmente em cavernas, sem reis ou chefes: cada aldeia decide seu caminho em conjunto, guiada pela necessidade e pela experiência.</em></p><p>Elfos-do-gelo são descendentes de elfos que migraram para as Montanhas Uivantes após a queda de Glórienn, em busca de uma terra, e de uma divindade, que pudesse lhes oferecer proteção. Nas Uivantes, estes elfos encontraram a proteção de Beluhga; mesmo morta, a Dragoa-Rainha do Gelo zelava pelas montanhas e por seus habitantes. Com o tempo, esses elfos passaram por transformações que os adaptaram à vida em um dos ambientes mais inóspitos de Arton. Teriam sido essas mudanças influência das forças mágicas das Uivantes ou uma bênção secreta da própria Beluhga?</p><p>Ainda existem poucos elfos-do-gelo em Arton e a maioria vive em pequenas aldeias independentes nas Uivantes. Possuem uma relação cultural muito forte com a neve e com a própria Beluhga, embora por vezes cultuem outros deuses. Elfos-do-gelo encontrados fora das Uivantes geralmente são exploradores com uma missão específica ou, mais comumente, aventureiros em busca de explorar o restante de Arton.</p><p><strong>Elfo-do-Gelo: Habilidades de Raça</strong></p><p><strong>Sabedoria +2, Destreza +1, Constituição –1.</strong></p><p><strong>Graça de Beluhga.</strong> Seu deslocamento é 12m (em vez de 9m) e não é reduzido por terreno difícil natural.</p><p><strong>Herança Gélida.</strong> Você recebe redução de frio 10 e, quando causa dano, causa +1d4 pontos de dano de frio.</p><p><strong>Sentidos Glaciais.</strong> Você recebe visão na penumbra e +2 em Percepção e Sobrevivência.</p><p><strong>Longevidade.</strong> x5.</p><p><strong>Devotos.</strong> Allihanna, Beluhga (descrita no <em>Guia de Deuses Menores</em>), Kallyadranoch, Marah, Megalokk.</p><p><strong>Deslocamento:</strong> sem redução por terreno difícil natural.</p><p><strong>Furtividade:</strong> +14 (+19 em ártico).</p>",
+  "ataques": [
+    {
+      "arma": "Machado de batalha",
+      "descricao": "machado de batalha x2",
+      "img": "systems/tormenta20/icons/itens/equipamentos/machado-de-batalha.webp",
+      "qtd": 2,
+      "ataque": 34,
+      "critico": "x3",
+      "dano": [
+        [
+          "4d12+10",
+          "corte"
+        ],
+        [
+          "2d6+4",
+          "frio"
+        ]
+      ]
+    },
+    {
+      "arma": "Espada curta",
+      "descricao": "espada curta",
+      "img": "systems/tormenta20/icons/itens/equipamentos/espada-curta.webp",
+      "ataque": 34,
+      "critico": "19",
+      "dano": [
+        [
+          "4d6+10",
+          "perfuracao"
+        ],
+        [
+          "2d6+2",
+          "frio"
+        ]
+      ]
+    },
+    {
+      "arma": "Arco longo",
+      "descricao": "arco longo x2",
+      "img": "systems/tormenta20/icons/itens/equipamentos/arco-longo.webp",
+      "qtd": 2,
+      "ataque": 34,
+      "critico": "x3",
+      "alcance": "medium",
+      "dano": [
+        [
+          "4d8+10",
+          "perfuracao"
+        ],
+        [
+          "2d6+4",
+          "frio"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Evasão",
+      "img": "systems/tormenta20/icons/poderes/classes/especialistas/evasao.webp",
+      "descricao": "<p>Quando sofre um efeito que permite um teste de Reflexos para reduzir o dano à metade, o elfo-do-gelo não sofre dano algum se passar.</p>"
+    },
+    {
+      "poder": "Armadura de Neve",
+      "img": "systems/tormenta20/icons/magias/armadura-arcana.webp",
+      "descricao": "<p>O elfo-do-gelo campeão da neve se cobre com uma camada de gelo resistente que fornece 200 pontos de vida temporários até o fim da cena, mas que sofre o dobro de dano de fogo. Enquanto o elfo-do-gelo tiver estes PV temporários, ele recebe camuflagem leve. <em>Recarga (padrão).</em></p>",
+      "acao": "movimento"
+    },
+    {
+      "poder": "Bênção do Frio",
+      "img": "systems/tormenta20/icons/magias/sopro-das-uivantes.webp",
+      "descricao": "<p>Se o elfo-do-gelo terminar seu turno adjacente a um ou mais inimigos, eles ficam enredados por cristais de gelo por 1 rodada. Se já estavam enredados dessa forma, em vez disso ficam imóveis por 1 rodada (Fort CD 31 evita a condição imóvel).</p>",
+      "resistencia": "Fortitude CD 31 evita (imóvel)"
+    },
+    {
+      "poder": "Bote",
+      "img": "systems/tormenta20/icons/poderes/ameacas/bote.webp",
+      "descricao": "<p>O elfo-do-gelo faz uma investida e faz seus dois ataques de machado de batalha e seu ataque de espada curta. Os três ataques recebem o bônus de +2 da investida, mas devem ser feitos contra o mesmo alvo.</p>",
+      "acao": "completa"
+    },
+    {
+      "poder": "Emboscar",
+      "img": "systems/tormenta20/icons/poderes/ameacas/investida.webp",
+      "descricao": "<p>Na primeira rodada de combate, o elfo-do-gelo pode realizar uma ação padrão adicional.</p>"
+    }
+  ]
+}

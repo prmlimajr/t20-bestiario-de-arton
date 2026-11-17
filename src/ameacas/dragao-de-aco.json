@@ -1,0 +1,187 @@
+{
+  "nome": "Dragão-de-Aço",
+  "img": "assets/tokens/dragao-de-aco.png",
+  "nd": "17",
+  "tipo": "con",
+  "tamanho": "eno",
+  "papel": "solo",
+  "atributos": {
+    "for": 15,
+    "des": 2,
+    "con": 16,
+    "int": 2,
+    "sab": 1,
+    "car": 0
+  },
+  "pv": 1050,
+  "defesa": 53,
+  "pericias": {
+    "inic": 16,
+    "perc": 15,
+    "fort": 30,
+    "refl": 23,
+    "vont": 18,
+    "atle": 29,
+    "mist": 21
+  },
+  "deslocamento": {
+    "deslocamento": 21,
+    "escalada": 12
+  },
+  "sentidos": [
+    "cegas",
+    "escuro"
+  ],
+  "resistencias": {
+    "dano": 20
+  },
+  "imunidadeCondicoes": [
+    "atordoado",
+    "metamorfose",
+    "paralisado",
+    "veneno"
+  ],
+  "imunidadeOutras": "acertos críticos",
+  "resistenciasTexto": "imunidade a acertos críticos, atordoamento, efeitos de metamorfose, paralisia e veneno, maior que a morte, redução de dano 20, resistência a magia +5",
+  "corpoACorpo": "Quatro garras +42 (4d8+15, 18) e mordida +42 (3d8+15, x4).",
+  "tesouro": "Padrão mais liga drolem (CD 32 para extrair, reduz em 1 PM o custo para fabricar um item mágico).",
+  "notas": "<p><em>Do meio das trevas, surgem duas intensas luzes vermelhas. Enquanto se aproximam, um terrível rangido metálico ecoa por todo o corredor e um cheiro ferroso vai se tornando cada vez mais intenso. Quando a luz das tochas revela a criatura, sua superfície é brilhante, repleta de escamas. O corpo é ladeado por oito patas, com garras atrozes a arranhar as paredes. O rosto, similar ao de um dragão, está retorcido, em uma expressão que lembra um sorriso cruel.</em></p><p>Em Arton existem diversos golens, dos mais variados tipos, formas e materiais. Inclusive, nos anos mais recentes, cada vez mais construtos com consciência própria vêm surgindo, seja por obra de artífices prodigiosos ou acaso do destino, e não são poucos aqueles que decidem aventurar-se.</p><p>Porém, a história do Dragão-de-Aço serve de lição sobre os perigos de animar e prover vontade própria a um ser artificial. Em um laboratório misterioso, escondido no meio das Montanhas Sanguinárias, um mago poderoso decidiu criar um golem inspirado pelas criaturas mais poderosas de Arton: os dragões. Visualmente, essa criação se assemelhou aos filhos de Kallyadranoch, porém com a cruel diferença de que não tinha asas, sendo incapaz de alçar-se aos céus como os seres que copiava. Apesar disso, foi dotado de intelecto, sendo capaz de pensamento complexo e fala.</p><p>Não se sabe o que aconteceu com o criador, porém a criatura ficou inativa por anos. O laboratório, abandonado e esquecido, ficou perdido em uma de milhares de cavernas escondidas em um dos ambientes mais perigosos de Arton. Infelizmente, isso não durou para sempre.</p><p>Um longo tempo após sua criação, o Dragão-de-Aço foi acidentalmente despertado por um jovem aventureiro chamado Taskan Skylander. Livre, passou a atacar as aldeias da região, começando pelo próprio lar de Taskan, dando início a vários anos de destruição e morte. Incapaz de compreender o propósito de sua existência, o Dragão-de-Aço passou a ser consumido por frustração, ódio e crueldade — sentimentos que canalizou contra todos os seres vivos.</p><p>Anos depois de sua libertação acidental, o Dragão-de-Aço seria novamente aprisionado, pelo próprio Taskan Skylander. Hoje, a criatura jaz cativa em algum lugar de Arton, aguardando que algo, ou alguém, a liberte novamente, para que ela possa continuar sua “missão” de destruir a vida em Arton.</p>",
+  "ataques": [
+    {
+      "arma": "Garras",
+      "descricao": "quatro garras",
+      "qtd": 4,
+      "ataque": 42,
+      "critico": "18",
+      "dano": [
+        [
+          "4d8+15",
+          "corte"
+        ]
+      ]
+    },
+    {
+      "arma": "Mordida",
+      "descricao": "mordida",
+      "img": "icons/creatures/abilities/mouth-teeth-long-red.webp",
+      "ataque": 42,
+      "critico": "x4",
+      "dano": [
+        [
+          "3d8+15",
+          "perfuracao"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Resistência a Magia",
+      "img": "systems/tormenta20/icons/poderes/ameacas/resistencia-magia.webp",
+      "descricao": "<p>o Dragão-de-Aço recebe +5 em testes de resistência contra magias.</p>"
+    },
+    {
+      "poder": "Maior que a Morte",
+      "img": "systems/tormenta20/icons/poderes/ameacas/imunidade-magia.webp",
+      "descricao": "<p>O Dragão-de-Aço possui a habilidade maior que a morte.</p>"
+    },
+    {
+      "poder": "Agarrar Aprimorado",
+      "img": "systems/tormenta20/icons/poderes/ameacas/agarrar.webp",
+      "descricao": "<p>Se o Dragão-de-Aço acerta um ataque de garra, pode fazer a manobra agarrar como uma ação livre (teste +47).</p>",
+      "acao": "livre"
+    },
+    {
+      "poder": "Dilacerar",
+      "img": "systems/tormenta20/icons/poderes/ameacas/dilacerar.webp",
+      "descricao": "<p>Se o Dragão-de-Aço acerta dois ataques de garra em uma mesma criatura no mesmo turno, causa mais 3d8+15 pontos de dano.</p>",
+      "danos": [
+        [
+          "3d8+15",
+          "corte"
+        ]
+      ]
+    },
+    {
+      "poder": "Liga Drolem",
+      "img": "systems/tormenta20/icons/poderes/ameacas/imunidade-magia.webp",
+      "descricao": "<p>Se o Dragão-de-Aço passar em um teste de resistência contra uma magia que o afete, o efeito é revertido contra o conjurador (se a magia tem outros alvos ou afeta uma área, o restante de seu efeito é resolvido normalmente).</p>"
+    },
+    {
+      "poder": "Mandíbula Destruidora",
+      "img": "systems/tormenta20/icons/poderes/ameacas/mordida.webp",
+      "descricao": "<p>Uma criatura atingida pela mordida do Dragão-de-Aço tem sua armadura ou escudo (à sua escolha) avariado. Se não estiver usando armadura ou empunhando um escudo, sofre +4d8 pontos de dano (em ambos os casos, Ref CD 44 evita).</p>",
+      "danos": [
+        [
+          "4d8",
+          "perfuracao"
+        ]
+      ],
+      "resistencia": "Reflexos CD 44 evita"
+    },
+    {
+      "poder": "Ódio à Vida",
+      "img": "systems/tormenta20/icons/poderes/ameacas/odio-puro.webp",
+      "descricao": "<p>Sempre que começa seu turno em alcance curto de um dragão ou humanoide, o Dragão-de-Aço entra em uma fúria que fornece +5 em testes de ataque e +1d8 em rolagens de dano corpo a corpo contra essas criaturas até o fim da cena.</p>",
+      "efeitos": [
+        {
+          "name": "Ódio à Vida",
+          "description": "<p>+5 em testes de ataque e +1d8 em rolagens de dano corpo a corpo contra dragões e humanoides.</p>",
+          "system": {
+            "changes": [
+              {
+                "key": "system.modificadores.ataque.cac",
+                "value": 5,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              },
+              {
+                "key": "system.modificadores.dano.cac",
+                "value": "1d8",
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "poder": "Rangido Aterrador",
+      "img": "systems/tormenta20/icons/poderes/ameacas/aura-aterradora.webp",
+      "descricao": "<p>Quando o Dragão-de-Aço faz uma ação de movimento para se deslocar, todas as criaturas em até 9m dele ficam apavoradas (se tiverem 4 níveis ou menos) ou abaladas (5 níveis ou mais) até o fim da cena (Vontade CD 44 evita). Uma criatura que passe no teste de resistência fica imune a esta habilidade pela cena.</p>",
+      "resistencia": "Vontade CD 44 evita"
+    },
+    {
+      "poder": "Sopro",
+      "img": "systems/tormenta20/icons/poderes/ameacas/veneno.webp",
+      "descricao": "<p>Todas as criaturas em um cone de 15 metros perdem 8d12 pontos de vida por veneno e ficam envenenadas por 1d4 rodadas (Fort CD 44 reduz a perda à metade e evita o envenenamento). Uma criatura envenenada perde 2d12 PV por rodada de envenenamento. <em>Recarga (movimento).</em></p>",
+      "acao": "padrao",
+      "danos": [
+        [
+          "8d12",
+          "perda",
+          "Sopro"
+        ],
+        [
+          "2d12",
+          "perda",
+          "Envenenamento (por rodada)"
+        ],
+        [
+          "1d4",
+          "",
+          "Rodadas"
+        ]
+      ],
+      "resistencia": "Fortitude CD 44 reduz à metade e evita"
+    }
+  ],
+  "itens": [
+    {
+      "ref": "liga-drolem"
+    }
+  ]
+}

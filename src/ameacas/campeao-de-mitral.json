@@ -1,0 +1,137 @@
+{
+  "nome": "Campeão de Mitral",
+  "img": "assets/tokens/campeao-de-mitral.png",
+  "nd": "16",
+  "tipo": "con",
+  "tamanho": "gra",
+  "papel": "solo",
+  "atributos": {
+    "for": 7,
+    "des": 4,
+    "con": 9,
+    "int": 0,
+    "sab": 0,
+    "car": -5
+  },
+  "pv": 750,
+  "defesa": 52,
+  "pericias": {
+    "inic": 20,
+    "perc": 19,
+    "fort": 24,
+    "refl": 30,
+    "vont": 16,
+    "acro": 20,
+    "atle": 21,
+    "intu": 14
+  },
+  "deslocamento": {
+    "deslocamento": 12
+  },
+  "sentidos": [
+    "escuro"
+  ],
+  "resistencias": {
+    "dano": 10
+  },
+  "imunidadeCondicoes": [
+    "movimento",
+    "surpreendido"
+  ],
+  "imunidadeOutras": "ilusão",
+  "resistenciasTexto": "evasão, imunidade a efeitos de movimento, ilusão e surpreendido, redução de dano 10",
+  "corpoACorpo": "Lâmina de mitral x3 +46 (4d10+20 corte, 18, mais 4d8 eletricidade).",
+  "tesouro": "Lascas de mitral (CD 31 para extrair, vale T$ 4.000 para fabricar itens de mitral).",
+  "notas": "<p><em>Um delgado construto humanoide com corpo de mitral e membros alongados. Seus movimentos são ágeis, em contraste com o peso e a lentidão geralmente associados a golens. Carrega um pequeno arsenal, complementado por aparatos de detecção e um sortimento de medicamentos e bandagens mantidos de prontidão em compartimentos espalhados por seu corpo.</em></p><p>Campeões de mitral são construtos de artesanato elaborado, fabricados para atuar como protetores e guarda-costas de indivíduos abastados. Devido aos conhecimentos necessários e recursos envolvidos em sua construção, estes defensores geralmente são comissionados apenas por nobres e pessoas endinheiradas — como a nobreza de Valkaria, mercadores de Ahlen ou membros do alto clero de certas igrejas.</p><p><strong>Inteligência:</strong> — (sem valor). <strong>Deslocamento:</strong> 12m, sem redução por terreno difícil.</p>",
+  "ataques": [
+    {
+      "arma": "Lâmina de mitral",
+      "descricao": "lâmina de mitral x3",
+      "img": "systems/tormenta20/icons/itens/equipamentos/espada-longa.webp",
+      "qtd": 3,
+      "ataque": 46,
+      "critico": "18",
+      "dano": [
+        [
+          "4d10+20",
+          "corte"
+        ],
+        [
+          "4d8",
+          "eletricidade"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Evasão",
+      "img": "systems/tormenta20/icons/poderes/classes/especialistas/evasao.webp",
+      "descricao": "<p>Quando sofre um efeito que permite um teste de Reflexos para reduzir o dano à metade, o campeão não sofre dano algum se passar.</p>"
+    },
+    {
+      "poder": "Ataque Acrobático",
+      "img": "systems/tormenta20/icons/poderes/ameacas/investida.webp",
+      "descricao": "<p>O campeão salta até o limite de seu deslocamento em direção a uma criatura e faz um ataque contra ela. Esse ataque recebe os benefícios de uma carga e, se acertar, causa +2d10 pontos de dano. <em>Recarga (movimento).</em></p>",
+      "acao": "padrao",
+      "danos": [
+        [
+          "2d10",
+          "",
+          "Dano extra"
+        ]
+      ]
+    },
+    {
+      "poder": "Escudo Atento",
+      "img": "systems/tormenta20/icons/itens/equipamentos/escudo-pesado.webp",
+      "descricao": "<p>Uma vez por rodada, se o protegido do campeão estiver adjacente e for alvo de um efeito hostil, o campeão poderá protegê-lo. Se fizer isso, ele se torna o novo alvo do efeito (ele ainda pode fazer quaisquer testes de resistência contra o efeito, e qualquer dano que o efeito cause ao campeão é reduzido à metade).</p>",
+      "acao": "reacao"
+    },
+    {
+      "poder": "Imunidade a Magia",
+      "img": "systems/tormenta20/icons/poderes/ameacas/imunidade-magia.webp",
+      "descricao": "<p>O campeão de mitral é imune a efeitos mágicos, com as seguintes exceções. Efeitos mágicos de frio deixam o campeão lento por 1d6 rodadas. Efeitos mágicos de ácido e eletricidade removem a condição lento e curam 1 PV para cada 3 pontos de dano que causariam.</p>"
+    },
+    {
+      "poder": "Lançador de Granadas",
+      "img": "systems/tormenta20/icons/itens/itens-magicos/pocao-granada.webp",
+      "descricao": "<p>O campeão dispara até duas granadas explosivas contra pontos diferentes em alcance médio. Criaturas a até 3m de cada um desses pontos sofrem 6d6 pontos de dano de impacto e 6d6 pontos de dano de eletricidade (Ref CD 40 reduz à metade). Uma criatura que sofra dano de eletricidade da granada e falhe no teste de resistência também fica vulnerável.</p>",
+      "acao": "padrao",
+      "danos": [
+        [
+          "6d6",
+          "impacto"
+        ],
+        [
+          "6d6",
+          "eletricidade"
+        ]
+      ],
+      "resistencia": "Reflexos CD 40 reduz à metade"
+    },
+    {
+      "poder": "Protegido",
+      "img": "systems/tormenta20/icons/poderes/ameacas/comandar.webp",
+      "descricao": "<p>Cada campeão é encarregado de um “protegido”, um indivíduo que ele deve proteger a todo custo. Um campeão só pode ter um protegido por vez. Atribuir um novo protegido é uma ação completa que só pode ser executada pelo protegido atual ou pelo fabricante do campeão.</p>"
+    },
+    {
+      "poder": "Sensores Defensivos",
+      "img": "systems/tormenta20/icons/poderes/ameacas/visao-ampla.webp",
+      "descricao": "<p>Quando faz um teste de Iniciativa, Intuição ou Percepção, o campeão rola dois dados e usa o melhor resultado.</p>"
+    },
+    {
+      "poder": "Socorro Emergencial",
+      "img": "systems/tormenta20/icons/magias/curar-ferimentos.webp",
+      "descricao": "<p>O campeão pode lançar @UUID[Compendium.tormenta20.magias.Item.soVAGPRWQmKxOrPm]{Curar Ferimentos} como uma magia simulada, que afeta apenas seu protegido, sem gastar PM (limite 16 PM). <em>Recarga (movimento).</em></p>",
+      "acao": "padrao",
+      "danos": [
+        [
+          "17d8+17",
+          "curapv",
+          "Cura (16 PM)"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,206 @@
+{
+  "nome": "Couatl das Trevas",
+  "img": "assets/tokens/couatl-das-trevas.png",
+  "nd": "12",
+  "tipo": "esp",
+  "tamanho": "gra",
+  "papel": "special",
+  "atributos": {
+    "for": 5,
+    "des": 4,
+    "con": 3,
+    "int": 3,
+    "sab": 4,
+    "car": 3
+  },
+  "pv": 425,
+  "pm": 64,
+  "defesa": 37,
+  "deslocamento": {
+    "deslocamento": 6,
+    "voo": 18
+  },
+  "sentidos": [
+    "escuro"
+  ],
+  "tesouro": "Dobro.",
+  "notas": "<p><em>A criatura é uma imensa serpente emplumada, com asas que facilmente fariam sombra a um bazar. Suas penas são negras, com um leve reluzir púrpura. Os olhos, prateados como a lua, evocam grande sabedoria e confiança.</em></p><p>Dizem as lendas que, quando Tenebra e Azgher duelaram para saber quem dominaria Arton, estas criaturas poderosas foram os generais em seus exércitos. Desnecessário dizer, são também inimigos mortais. Atualmente, quase todos os couatl estão adormecidos em seus covis, aguardando o chamado de suas divindades para reiniciar a antiga guerra. Por isso, seus avistamentos são muito raros, a ponto de se acreditar que as grandes serpentes da luz e das trevas sejam apenas lenda.</p><p>No entanto, há ocasiões em que um couatl impaciente interrompe seu sono para tomar parte em algum conflito envolvendo devotos de Azgher e/ou Tenebra. Fala-se também que atuam como guardiões de grandes templos e que alguns sacerdotes poderosos seriam capazes de invocá-los em momentos de necessidade.</p>",
+  "pericias": {
+    "inic": 14,
+    "perc": 14,
+    "fort": 12,
+    "refl": 20,
+    "vont": 25,
+    "dipl": 13,
+    "furt": 12,
+    "intu": 16,
+    "mist": 13,
+    "reli": 19
+  },
+  "resistencias": {
+    "frio": 10,
+    "trevas": 10
+  },
+  "resistenciasTexto": "evasão, redução de frio e trevas 10",
+  "corpoACorpo": "Mordida x2 +34 (4d8+20 mais 4d12 frio mais veneno).",
+  "ataques": [
+    {
+      "arma": "Mordida",
+      "descricao": "mordida x2 (mais veneno)",
+      "img": "icons/creatures/abilities/mouth-teeth-long-red.webp",
+      "qtd": 2,
+      "ataque": 34,
+      "dano": [
+        [
+          "4d8+20",
+          "perfuracao"
+        ],
+        [
+          "4d12",
+          "frio"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Evasão",
+      "img": "systems/tormenta20/icons/poderes/classes/especialistas/evasao.webp",
+      "descricao": "<p>Quando sofre um efeito que permite um teste de Reflexos para reduzir o dano à metade, o couatl não sofre dano algum se passar.</p>"
+    },
+    {
+      "poder": "Representante da Noite",
+      "img": "systems/tormenta20/icons/poderes/ameacas/ataque-trevas.webp",
+      "descricao": "<p>Contra criaturas sem visão no escuro ou visão na penumbra, devotos de deuses que canalizam apenas energia positiva e criaturas bondosas (a critério do mestre), a CD para resistir às habilidades do couatl das trevas aumenta em +2.</p>"
+    },
+    {
+      "poder": "Telepatia",
+      "img": "systems/tormenta20/icons/poderes/ameacas/percepcao-temporal.webp",
+      "descricao": "<p>O couatl pode se comunicar telepaticamente com qualquer criatura inteligente (Int −3 ou maior) em alcance médio.</p>"
+    },
+    {
+      "poder": "Veneno",
+      "img": "systems/tormenta20/icons/poderes/ameacas/veneno.webp",
+      "descricao": "<p>Peçonha potente (perde 2d12 PV por rodada durante 3 rodadas, Fort CD 35 reduz a duração para 1 rodada).</p>",
+      "danos": [
+        [
+          "2d12",
+          "perda",
+          "Peçonha (por rodada)"
+        ]
+      ],
+      "resistencia": "Fortitude CD 35 reduz"
+    },
+    {
+      "poder": "Magias",
+      "img": "systems/tormenta20/icons/poderes/ameacas/magias.webp",
+      "descricao": "<p>Como um clérigo de Tenebra de 12º nível (CD 35).</p>"
+    },
+    {
+      "poder": "Anular a Luz",
+      "acao": "padrao",
+      "custo": 6,
+      "img": "systems/tormenta20/icons/magias/anular-luz.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.Ih5qBTlgQyY2WhiS]{Anular a Luz} (Padrão, 6 PM). O couatl emana escuridão em uma esfera de 6m ao seu redor e faz um teste de Religião. Magias de até 3º círculo na área com CD igual ou menor que o teste são dissipadas, aliados na área recebem +4 na Defesa até o fim da cena e inimigos ficam enjoados por 1d4 rodadas (apenas uma vez por cena).</p>",
+      "danos": [
+        [
+          "1d4",
+          "",
+          "Rodadas (enjoado)"
+        ]
+      ]
+    },
+    {
+      "poder": "Compreensão",
+      "acao": "padrao",
+      "custo": 4,
+      "img": "systems/tormenta20/icons/magias/compreensao.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.eXSBd4j6jFuwbKIc]{Compreensão} (Padrão, 4 PM). O couatl vasculha os pensamentos de um alvo em alcance curto para extrair informações (Von evita).</p>",
+      "resistencia": "Vontade CD 35 evita"
+    },
+    {
+      "poder": "Concentração de Combate",
+      "acao": "padrao",
+      "custo": 8,
+      "img": "systems/tormenta20/icons/magias/concentracao-de-combate.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.lAsj1NrA2J6GbvDi]{Concentração de Combate} (Padrão, 8 PM). Até o fim da cena, quando faz um ataque, o couatl rola dois dados e usa o melhor resultado, e, quando um oponente ataca o couatl, rola dois dados e usa o pior resultado.</p>"
+    },
+    {
+      "poder": "Curar Ferimentos",
+      "acao": "padrao",
+      "custo": 12,
+      "img": "systems/tormenta20/icons/magias/curar-ferimentos.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.soVAGPRWQmKxOrPm]{Curar Ferimentos} (Padrão, 12 PM). Uma criatura adjacente cura 13d8+13 PV.</p>",
+      "danos": [
+        [
+          "13d8+13",
+          "curapv",
+          "Cura"
+        ]
+      ]
+    },
+    {
+      "poder": "Escudo da Fé",
+      "acao": "reacao",
+      "custo": 5,
+      "img": "systems/tormenta20/icons/magias/escudo-da-fe.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.XJoWTcH8zVtHc2xa]{Escudo da Fé} (Reação, 5 PM). Quando uma criatura em alcance curto sofre um ataque, ela recebe +4 na Defesa até seu próximo turno.</p>"
+    },
+    {
+      "poder": "Escuridão",
+      "acao": "padrao",
+      "custo": 6,
+      "img": "systems/tormenta20/icons/magias/escuridao.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.Bt364TPpNUI1QVPP]{Escuridão} (Padrão, 6 PM). Até o fim da cena, o couatl é coberto por sombras que fornecem +10 em Furtividade e camuflagem leve.</p>"
+    },
+    {
+      "poder": "Libertação",
+      "acao": "padrao",
+      "custo": 10,
+      "img": "systems/tormenta20/icons/magias/libertacao.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.ELDmNrdpN7g8M3iJ]{Libertação} (Padrão, 10 PM). Até o fim da cena, uma criatura em alcance curto fica imune a efeitos de movimento, ignora qualquer efeito que impeça ou restrinja seu deslocamento e pode usar habilidades que exigem liberdade de movimentos mesmo se estiver usando armadura ou escudo.</p>"
+    },
+    {
+      "poder": "Raio do Enfraquecimento",
+      "acao": "padrao",
+      "custo": 8,
+      "img": "systems/tormenta20/icons/magias/raio-do-enfraquecimento.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.hikpz9g3jwJoTcRZ]{Raio do Enfraquecimento} (Padrão, 8 PM). Criaturas escolhidas em alcance curto ficam exaustas (Fort muda para fatigado).</p>",
+      "resistencia": "Fortitude CD 35 reduz"
+    },
+    {
+      "poder": "Relâmpago",
+      "acao": "padrao",
+      "custo": 12,
+      "img": "systems/tormenta20/icons/magias/relampago.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.BfYpxjs0NeqhAs8q]{Relâmpago} (Padrão, 12 PM). O couatl causa 12d6 pontos de dano de eletricidade em criaturas à sua escolha em alcance médio (Ref reduz à metade).</p>",
+      "danos": [
+        [
+          "12d6",
+          "eletricidade"
+        ]
+      ],
+      "resistencia": "Reflexos CD 35 reduz à metade"
+    },
+    {
+      "poder": "Resistência à Energia",
+      "acao": "padrao",
+      "custo": 3,
+      "img": "systems/tormenta20/icons/magias/resistencia-a-energia.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.EAGwUyfcL1WRGtuC]{Resistência à Energia} (Padrão, 3 PM). Até o fim da cena, uma criatura adjacente recebe redução de dano 15 contra ácido, eletricidade, fogo, frio, luz ou trevas, à escolha do couatl.</p>"
+    },
+    {
+      "poder": "Toque Vampírico",
+      "acao": "padrao",
+      "custo": 11,
+      "img": "systems/tormenta20/icons/magias/toque-vampirico.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.6KvwDBikOdbzhRGv]{Toque Vampírico} (Padrão, 11 PM). O couatl faz um ataque de mordida. Se acertar, além do dano normal, causa 12d6 pontos de dano de trevas e recupera metade desse dano de trevas em pontos de vida.</p>",
+      "danos": [
+        [
+          "12d6",
+          "trevas"
+        ]
+      ]
+    }
+  ]
+}

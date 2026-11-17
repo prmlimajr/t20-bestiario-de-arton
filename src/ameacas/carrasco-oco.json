@@ -1,0 +1,107 @@
+{
+  "nome": "Carrasco Oco",
+  "img": "assets/tokens/carrasco-oco.png",
+  "nd": "7",
+  "tipo": "con",
+  "tamanho": "med",
+  "papel": "solo",
+  "atributos": {
+    "for": 4,
+    "des": 1,
+    "con": 3,
+    "int": -3,
+    "sab": 2,
+    "car": -1
+  },
+  "pv": 270,
+  "defesa": 29,
+  "pericias": {
+    "inic": 11,
+    "perc": 12,
+    "fort": 14,
+    "refl": 7,
+    "vont": 20
+  },
+  "deslocamento": {
+    "deslocamento": 6
+  },
+  "sentidos": [
+    "escuro"
+  ],
+  "resistencias": {
+    "eletricidade": "imune",
+    "dano": 5
+  },
+  "imunidadeCondicoes": [
+    "atordoado"
+  ],
+  "resistenciasTexto": "imunidade a atordoamento e eletricidade, redução de dano 5",
+  "corpoACorpo": "Duas pancadas +24 (2d8+10, alcance 4,5m) e mordida +24 (2d6+10 mais 2d6 ácido).",
+  "tesouro": "Padrão.",
+  "notas": "<p><em>O objeto é visivelmente algum instrumento de tortura, um invólucro em formato humanoide, grande o suficiente para comportar uma pessoa adulta. Seu exterior é decorado com filigranas e entalhes elaborados, com uma tampa que exibe os contornos de uma figura humanoide com um rosto detalhado e altivo. Seu interior é oco e as paredes internas são forradas por estacas pontiagudas.</em></p><p>Criados em Aslothia como um terrível instrumento de tortura, carrascos ocos são construtos semelhantes às famigeradas donzelas de ferro, mas capazes de se mover e capturar suas presas sozinhos. Para isso, o carrasco usa sua aparência inanimada para atrair as presas — geralmente, caçadores de tesouros em busca de riquezas em seu interior. Quando uma criatura se aproxima, o carrasco abre as abas de sua “tampa” e projeta dois braços para fora, agarrando a vítima e trazendo-a para dentro. A vítima capturada é então macerada pelos espinhos internos e lentamente digerida pelo carrasco.</p>",
+  "ataques": [
+    {
+      "arma": "Pancada",
+      "descricao": "duas pancadas (alcance 4,5m)",
+      "qtd": 2,
+      "ataque": 24,
+      "dano": [
+        [
+          "2d8+10",
+          "impacto"
+        ]
+      ]
+    },
+    {
+      "arma": "Mordida",
+      "descricao": "mordida",
+      "ataque": 24,
+      "dano": [
+        [
+          "2d6+10",
+          "perfuracao"
+        ],
+        [
+          "2d6",
+          "acido"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Agarrar Aprimorado",
+      "img": "systems/tormenta20/icons/poderes/ameacas/agarrar.webp",
+      "descricao": "<p>Se o carrasco acerta um ataque de pancada, pode fazer a manobra agarrar como uma ação livre (teste +24).</p>",
+      "acao": "livre"
+    },
+    {
+      "poder": "Engolir",
+      "img": "systems/tormenta20/icons/poderes/ameacas/engolir.webp",
+      "descricao": "<p>O carrasco oco pode engolir criaturas da sua categoria de tamanho. No início de cada um dos turnos do carrasco, a criatura engolida sofre 2d6+5 pontos de dano de perfuração mais 2d6 pontos de dano de ácido. Ela pode escapar causando um total de 20 pontos de dano a ele (Defesa 10, redução de dano 0).</p>",
+      "acao": "padrao",
+      "danos": [
+        [
+          "2d6+5",
+          "perfuracao"
+        ],
+        [
+          "2d6",
+          "acido"
+        ]
+      ]
+    },
+    {
+      "poder": "Imobilidade",
+      "img": "systems/tormenta20/icons/poderes/ameacas/forma.webp",
+      "descricao": "<p>Um carrasco pode permanecer completamente imóvel. Se ele estiver assim, um personagem deve passar num teste de Percepção (CD 35) para perceber que ele é uma criatura, não um instrumento de tortura.</p>"
+    },
+    {
+      "poder": "Induzir Claustrofobia",
+      "img": "systems/tormenta20/icons/poderes/ameacas/aura-aterradora.webp",
+      "descricao": "<p>Quando engole uma criatura, o carrasco inunda a mente dela com um pavor claustrofóbico sobrenatural. A criatura fica apavorada por 1 rodada e depois abalada enquanto permanecer engolida (Von CD 24 evita e a criatura não pode mais ser afetada por esta habilidade até o fim da cena).</p>",
+      "acao": "livre",
+      "resistencia": "Vontade CD 24 evita"
+    }
+  ]
+}

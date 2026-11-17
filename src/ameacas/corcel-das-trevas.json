@@ -1,0 +1,99 @@
+{
+  "nome": "Corcel das Trevas",
+  "img": "assets/tokens/corcel-das-trevas.png",
+  "nd": "6",
+  "tipo": "esp",
+  "tamanho": "gra",
+  "papel": "special",
+  "atributos": {
+    "for": 6,
+    "des": 2,
+    "con": 2,
+    "int": 0,
+    "sab": 2,
+    "car": -1
+  },
+  "pv": 160,
+  "pm": 22,
+  "defesa": 25,
+  "pericias": {
+    "inic": 7,
+    "perc": 9,
+    "fort": 14,
+    "refl": 11,
+    "vont": 11,
+    "atle": 13,
+    "inti": 11
+  },
+  "deslocamento": {
+    "deslocamento": 15,
+    "voo": 24
+  },
+  "sentidos": [
+    "faro",
+    "escuro"
+  ],
+  "resistencias": {
+    "frio": "imune",
+    "trevas": "imune"
+  },
+  "resistenciasTexto": "imunidade a frio e trevas",
+  "corpoACorpo": "Cascos +18 (4d8+22 mais 2d12 frio).",
+  "tesouro": "Nenhum.",
+  "notas": "<p><em>O enorme corcel ergue a cabeça desafiadoramente. Seu pelo negro emoldurado por crina e cauda feitas de filamentos de ar congelado. Seus olhos são cristalinos, azulados e expressivos, e os cascos e narinas emanam sombras frias e profanas. A cada respiração, uma energia sombria pulsa de seu peito semitranslúcido, revelando o gélido coração de trevas em seu interior.</em></p><p>Corcéis das trevas são poderosos espíritos com a forma de cavalos negros nativos de Sombria. Criados por Tenebra para servir de montaria aos seus mais prestigiosos servos, são criaturas aterrorizantes que exalam frio, poder e maldade.</p><p>Todo corcel das trevas é criado com um propósito: servir a um mestre designado por Tenebra. Tais mestres geralmente são sacerdotes das trevas de alto status, cavaleiros jurados à Deusa das Trevas e outros filhos das sombras igualmente capazes, como vampiros da alta nobreza ou liches. Em certas ocasiões, porém, é possível que o mestre morra antes do corcel. Se tiver sido uma morte trágica, como em batalha, o corcel pode passar a vagar pelo mundo, atormentado pela culpa de perder seu cavaleiro. Tais corcéis acabam espalhando os tormentos que os assolam entre outros seres, muitas vezes usando seus poderes mágicos para assombrar os sonhos dos vivos.</p><p>Existem relatos escassos de seguidores de Tenebra que conseguiram encontrar e conquistar um corcel das trevas cujo antigo mestre pereceu. Se tal façanha é possível, com certeza exige uma grande dose de coragem, determinação e fé.</p><p><strong>Parceiro:</strong> veja o poder “Montaria: Corcel das Trevas” no compêndio de parceiros deste módulo.</p>",
+  "ataques": [
+    {
+      "arma": "Cascos",
+      "descricao": "cascos",
+      "ataque": 18,
+      "dano": [
+        [
+          "4d8+22",
+          "impacto"
+        ],
+        [
+          "2d12",
+          "frio"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Atropelamento",
+      "img": "systems/tormenta20/icons/poderes/ameacas/cascos.webp",
+      "descricao": "<p>O corcel das trevas percorre até o dobro de seu deslocamento. Ele pode passar pelo espaço ocupado de quaisquer inimigos menores que ele, mas não pode passar duas vezes pelo mesmo espaço. Criaturas atropeladas desta forma sofrem 4d8+22 pontos de dano de impacto e 2d12 pontos de dano de frio e ficam caídas e lentas (Ref CD 24 reduz à metade e evita as condições). <em>Recarga (movimento).</em></p>",
+      "acao": "completa",
+      "danos": [
+        [
+          "4d8+22",
+          "impacto"
+        ],
+        [
+          "2d12",
+          "frio"
+        ]
+      ],
+      "resistencia": "Reflexos CD 24 reduz à metade e evita"
+    },
+    {
+      "poder": "Poderes Sombrios",
+      "img": "systems/tormenta20/icons/poderes/ameacas/ataque-trevas.webp",
+      "descricao": "<p>O corcel evoca um dos efeitos a seguir. <em>Recarga (padrão).</em></p><p>• <em>Invocar Sombras.</em> O corcel forma uma nuvem que ocupa um cubo de 6m em alcance curto e dura até o fim da cena. Criaturas a até 5m têm camuflagem leve e criaturas a partir de 3m têm camuflagem total. Um vento forte dispersa a névoa em 4 rodadas e um vendaval a dispersa em 1 rodada. No início dos seus turnos, outras criaturas dentro da nuvem e criaturas com faro em alcance curto ficam enjoadas por 1 rodada (Fort CD 24 evita).</p><p>• <em>Pesadelo.</em> O corcel invade os sonhos de uma criatura viva em alcance longo. Na próxima vez que descansar, a criatura deve fazer um teste de Vontade (CD 24). Se falhar, seu sono é perturbado por pesadelos terríveis; a criatura não recupera PV e PM pela noite, sofre 1d10 pontos de dano de trevas e acorda fatigada.</p><p>• <em>Relincho Congelante.</em> O corcel sopra ar congelado de suas narinas em um cone de 9m. Criaturas nessa área sofrem 8d6+8 pontos de dano de frio e ficam lentas (Ref CD 24 reduz à metade e evita a condição).</p>",
+      "acao": "padrao",
+      "danos": [
+        [
+          "8d6+8",
+          "frio",
+          "Relincho Congelante"
+        ],
+        [
+          "1d10",
+          "trevas",
+          "Pesadelo"
+        ]
+      ],
+      "resistencia": "CD 24"
+    }
+  ]
+}

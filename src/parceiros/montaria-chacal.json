@@ -1,0 +1,102 @@
+{
+  "name": "Montaria: Chacal",
+  "type": "poder",
+  "img": "assets/tokens/chacal.png",
+  "system": {
+    "description": {
+      "value": "<p>O chacal é um parceiro montaria (Pequeno) que fornece os benefícios a seguir.</p>\n<p><strong>Iniciante</strong>: seu deslocamento muda para 12m e você recebe uma ação de movimento extra por turno (apenas para se deslocar).</p>\n<p><strong>Veterano</strong>: como acima, mas você recebe +2 em Furtividade e, uma vez por rodada, recebe +1d6 em uma rolagem de dano corpo a corpo.</p>\n<p><strong>Mestre</strong>: como acima; além disso, uma vez por rodada, quando acerta um ataque corpo a corpo, você pode fazer a manobra derrubar como uma ação livre.</p>"
+    },
+    "source": "Bestiário de Arton",
+    "tipo": "geral",
+    "subtipo": "Montaria"
+  },
+  "effects": [
+    {
+      "name": "Montaria: Chacal Iniciante",
+      "description": "<p>Deslocamento 12m.</p><p><strong>Não automatizado:</strong> ação de movimento extra por turno (apenas para se deslocar).</p>",
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.movement.walk.base",
+            "value": 12,
+            "priority": null,
+            "type": "override",
+            "phase": "initial"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Montaria: Chacal Veterano",
+      "description": "<p>Deslocamento 12m, +2 em Furtividade.</p><p>Para o dano extra, marque o efeito \"Chacal: +1d6 de dano\" na janela de ataque.</p><p><strong>Não automatizado:</strong> ação de movimento extra por turno (apenas para se deslocar).</p>",
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.movement.walk.base",
+            "value": 12,
+            "priority": null,
+            "type": "override",
+            "phase": "initial"
+          },
+          {
+            "key": "system.pericias.furt.bonus",
+            "value": 2,
+            "priority": null,
+            "type": "add",
+            "phase": "initial"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Montaria: Chacal Mestre",
+      "description": "<p>Deslocamento 12m, +2 em Furtividade.</p><p>Para o dano extra, marque o efeito \"Chacal: +1d6 de dano\" na janela de ataque.</p><p><strong>Não automatizado:</strong> ação de movimento extra por turno (apenas para se deslocar); uma vez por rodada, ao acertar um ataque corpo a corpo, derrubar como ação livre.</p>",
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.movement.walk.base",
+            "value": 12,
+            "priority": null,
+            "type": "override",
+            "phase": "initial"
+          },
+          {
+            "key": "system.pericias.furt.bonus",
+            "value": 2,
+            "priority": null,
+            "type": "add",
+            "phase": "initial"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Chacal: +1d6 de dano",
+      "img": "icons/svg/upgrade.svg",
+      "description": "<p>Veterano ou Mestre: uma vez por rodada, +1d6 em uma rolagem de dano corpo a corpo.</p>",
+      "disabled": true,
+      "transfer": true,
+      "duration": {
+        "expiry": null
+      },
+      "system": {
+        "onuse": true,
+        "abilityUse": {
+          "custo": null,
+          "types": [
+            "attack"
+          ]
+        },
+        "changes": [
+          {
+            "key": "dano",
+            "value": "1d6",
+            "priority": 0,
+            "type": "add",
+            "phase": "initial"
+          }
+        ]
+      }
+    }
+  ]
+}

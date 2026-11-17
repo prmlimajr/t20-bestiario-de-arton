@@ -1,0 +1,112 @@
+{
+  "nome": "Empalhado Serviçal",
+  "img": "assets/tokens/empalhado-servical.png",
+  "nd": "1",
+  "tipo": "mor",
+  "tamanho": "med",
+  "papel": "lackey",
+  "atributos": {
+    "for": 2,
+    "des": 0,
+    "con": 2,
+    "int": 0,
+    "sab": 1,
+    "car": -5
+  },
+  "pv": 14,
+  "defesa": 14,
+  "pericias": {
+    "inic": 2,
+    "perc": 3,
+    "fort": 10,
+    "refl": 1,
+    "vont": 5,
+    "atle": 4
+  },
+  "deslocamento": {
+    "deslocamento": 9
+  },
+  "sentidos": [
+    "escuro"
+  ],
+  "resistencias": {
+    "frio": 5,
+    "impacto": 5,
+    "perfuracao": 5
+  },
+  "resistenciasTexto": "redução de frio, impacto e perfuração 5",
+  "corpoACorpo": "Foice +10 (1d6+2, x3, mais 1d6 trevas) e pancada +10 (1d4+2 mais 1d6 trevas).",
+  "tesouro": "Nenhum.",
+  "notas": "<p><em>As aves de olhos brilhantes e vítreos lembram animais empalhados, do tipo que se encontra em laboratórios ou nos museus de cidades como Valkaria. De fato, poderiam facilmente ser confundidas com o trabalho de um taxidermista, se não fosse pela forma ameaçadora com que se movimentam.</em></p><p>Empalhados são mortos-vivos criados a partir da combinação de taxidermia e necromancia. O processo envolve remover toda a carne do cadáver, preservando apenas o esqueleto e a pele, que é preenchida com palha seca. Os olhos também são removidos, substituídos por contas de vidro ou pedras translúcidas.</p><p>Considerados por muitos necromantes como mortos-vivos rudimentares, empalhados são mais comuns nos ermos, geralmente sob serviço de conjuradores rurais. Costumam ser empregados como guardas e serviçais, embora alguns conjuradores usem essa técnica para preservar mascotes úteis ou queridos, como um gatinho de estimação que esgotou suas vidas cedo demais.</p><p><strong>Inteligência:</strong> — (registrada como 0 na ficha).</p>",
+  "ataques": [
+    {
+      "arma": "Foice",
+      "descricao": "foice",
+      "img": "systems/tormenta20/icons/itens/equipamentos/foice.webp",
+      "ataque": 10,
+      "critico": "x3",
+      "dano": [
+        [
+          "1d6+2",
+          "corte"
+        ],
+        [
+          "1d6",
+          "trevas"
+        ]
+      ]
+    },
+    {
+      "arma": "Pancada",
+      "descricao": "pancada",
+      "img": "systems/tormenta20/icons/poderes/ameacas/pancada.webp",
+      "ataque": 10,
+      "dano": [
+        [
+          "1d4+2",
+          "impacto"
+        ],
+        [
+          "1d6",
+          "trevas"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Zelo Sangrento",
+      "img": "systems/tormenta20/icons/poderes/ameacas/odio-puro.webp",
+      "descricao": "<p>Se estiver na presença de seu criador, o empalhado serviçal recebe +2 em testes de ataque e rolagens de dano.</p>",
+      "efeitos": [
+        {
+          "name": "Zelo Sangrento",
+          "description": "<p>Na presença de seu criador: +2 em testes de ataque e rolagens de dano.</p>",
+          "system": {
+            "changes": [
+              {
+                "key": "system.modificadores.ataque.cac",
+                "value": 2,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              },
+              {
+                "key": "system.modificadores.dano.cac",
+                "value": 2,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "poder": "Sangrar Palha",
+      "img": "systems/tormenta20/icons/poderes/ameacas/vulnerabilidade.webp",
+      "descricao": "<p>O multiplicador de crítico de ataques com armas de corte contra o empalhado aumenta em +1.</p>"
+    }
+  ]
+}

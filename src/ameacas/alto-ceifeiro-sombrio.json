@@ -1,0 +1,242 @@
+{
+  "nome": "Alto Ceifeiro Sombrio",
+  "img": "assets/tokens/alto-ceifeiro-sombrio.png",
+  "nd": "12",
+  "tipo": "hum",
+  "raca": "humano",
+  "tamanho": "med",
+  "papel": "special",
+  "atributos": {
+    "for": 3,
+    "des": 0,
+    "con": 2,
+    "int": 2,
+    "sab": 7,
+    "car": 4
+  },
+  "pv": 380,
+  "pm": 73,
+  "defesa": 39,
+  "pericias": {
+    "inic": 10,
+    "perc": 17,
+    "fort": 20,
+    "refl": 12,
+    "vont": 26,
+    "conh": 12,
+    "enga": 16,
+    "inti": 16,
+    "mist": 12,
+    "reli": 19
+  },
+  "deslocamento": {
+    "deslocamento": 9
+  },
+  "sentidos": [
+    "escuro"
+  ],
+  "resistencias": {
+    "dano": 10
+  },
+  "imunidadeCondicoes": [
+    "metabolismo",
+    "trevas"
+  ],
+  "resistenciasTexto": "imunidade a efeitos de metabolismo e trevas, redução de dano 10",
+  "corpoACorpo": "Gadanho da morte +34 (6d4+6, x5, mais 6d8 frio).",
+  "equipamento": "Gadanho macabro maciço, símbolo sagrado de Tenebra.",
+  "tesouro": "Padrão.",
+  "notas": "<p><em>Em seu traje negro de couro, a jovem traz nos olhos fundos uma expressão neutra de apatia e desinteresse. Contudo, quando ergue uma foice muito maior do que parece capaz, ela demonstra estar pronta para enviar novas almas como oferenda a seu deus da morte. Seja ele quem for.</em></p><p>Também conhecidos como sacerdotes negros, estes clérigos sinistros sempre estiveram submersos em mistérios e contradições. No passado, dizia-se que eram devotos de Leen, uma face de Ragnar cultuada por humanoides não duyshidakk. Outros acreditavam que Leen na verdade seria um deus menor, enquanto histórias ainda mais duvidosas afirmavam ser a própria Tenebra. Hoje, com a destruição de Ragnar e a ascensão da Deusa das Trevas como divindade suprema da morte, ninguém sabe responder se Leen/Tenebra sempre foram um só ou se o culto simplesmente abraçou uma nova divindade.</p><p>Ceifeiros sombrios se reúnem em pequenas e restritas sociedades secretas para praticar rituais de tortura, flagelação e invocação de seres abissais. Outrora muito raros, os cultistas diabólicos estão se espalhando — um número cada vez maior de relatos sobre suas atividades chega de vários pontos do Reinado. Tem sido comum para grupos de aventureiros investigar rumores sobre possíveis reuniões destes cultos, bem como acabar com as criaturas que eles eventualmente trazem a este mundo.</p><p>Longe de ser impotentes em combate, ceifeiros sombrios são mestres absolutos no uso da foice de guerra, arma que adquire poderes sobrenaturais em suas mãos. Além disso, devido a seus constantes rituais de autoflagelação, parecem ser imunes a todo tipo de dor.</p>",
+  "ataques": [
+    {
+      "arma": "Gadanho da morte",
+      "descricao": "gadanho da morte",
+      "img": "systems/tormenta20/icons/itens/equipamentos/gadanho.webp",
+      "ataque": 34,
+      "critico": "x5",
+      "dano": [
+        [
+          "6d4+6",
+          "corte"
+        ],
+        [
+          "6d8",
+          "frio"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Armadura de Ossos",
+      "img": "systems/tormenta20/icons/poderes/ameacas/ergam-se.webp",
+      "descricao": "<p>O alto ceifeiro sombrio recebe +2 na Defesa e em Intimidação, e redução de corte e frio 5 até o fim da cena.</p>",
+      "acao": "movimento",
+      "custo": 2,
+      "efeitos": [
+        {
+          "name": "Armadura de Ossos",
+          "description": "<p>+2 na Defesa e em Intimidação, redução de corte e frio 5.</p>",
+          "system": {
+            "changes": [
+              {
+                "key": "system.attributes.defesa.bonus",
+                "value": 2,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              },
+              {
+                "key": "system.pericias.inti.bonus",
+                "value": 2,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              },
+              {
+                "key": "system.tracos.resistencias.corte.bonus",
+                "value": 5,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              },
+              {
+                "key": "system.tracos.resistencias.frio.bonus",
+                "value": 5,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "poder": "Conjuração Inabalável",
+      "img": "systems/tormenta20/icons/poderes/ameacas/magias.webp",
+      "descricao": "<p>Quando faz um teste de Vontade para manter a concentração em uma magia, o alto ceifeiro rola dois dados e usa o melhor resultado.</p>"
+    },
+    {
+      "poder": "Fúria Diabólica",
+      "img": "systems/tormenta20/icons/poderes/classes/combatentes/furia.webp",
+      "descricao": "<p>Uma vez por cena, o alto ceifeiro entra em fúria. Ele recebe +4 em testes de ataque, na CD de suas magias e em suas rolagens de dano. Nesse estado ele não pode fazer nenhuma ação que exija calma e concentração (como usar Furtividade), mas pode lançar magias. A fúria termina se, ao fim da rodada, ele não tiver atacado, lançado uma magia ou sido alvo de um efeito hostil.</p>",
+      "acao": "livre",
+      "efeitos": [
+        {
+          "name": "Fúria Diabólica",
+          "description": "<p>+4 em testes de ataque e em rolagens de dano.</p><p><strong>Não automatizado:</strong> +4 na CD das magias.</p>",
+          "system": {
+            "changes": [
+              {
+                "key": "system.modificadores.ataque.cac",
+                "value": 4,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              },
+              {
+                "key": "system.modificadores.dano.cac",
+                "value": 4,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              },
+              {
+                "key": "system.modificadores.ataque.ad",
+                "value": 4,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              },
+              {
+                "key": "system.modificadores.dano.ad",
+                "value": 4,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "poder": "Gadanho da Morte",
+      "img": "systems/tormenta20/icons/itens/equipamentos/gadanho.webp",
+      "descricao": "<p>Nas mãos do alto ceifeiro, seu gadanho conta como um <em>gadanho formidável lancinante</em> que causa +6d8 pontos de dano de frio (já contabilizados).</p>"
+    },
+    {
+      "poder": "Magia Acelerada",
+      "img": "systems/tormenta20/icons/poderes/ameacas/magias.webp",
+      "descricao": "<p>Uma vez por rodada, quando lança uma magia com execução de ação de movimento, padrão ou completa, o alto ceifeiro muda a execução desta ação para livre.</p>",
+      "acao": "livre",
+      "custo": 4
+    },
+    {
+      "poder": "Segadura das Trevas",
+      "img": "systems/tormenta20/icons/poderes/ameacas/ataque-corte.webp",
+      "descricao": "<p>Quando o alto ceifeiro faz um ataque corpo a corpo com seu gadanho e reduz os pontos de vida do alvo para 0 ou menos, pode realizar um ataque adicional contra outra criatura dentro de seu alcance.</p>",
+      "acao": "livre"
+    },
+    {
+      "poder": "Visão nas Trevas",
+      "img": "systems/tormenta20/icons/poderes/ameacas/visao-ampla.webp",
+      "descricao": "<p>O alto ceifeiro enxerga perfeitamente no escuro, incluindo em magias de escuridão.</p>"
+    },
+    {
+      "poder": "Magias",
+      "img": "systems/tormenta20/icons/poderes/ameacas/magias.webp",
+      "descricao": "<p>Como um clérigo de Tenebra de 12º nível (CD 35, –1 PM para <em>Escuridão</em>, já contabilizado).</p>"
+    },
+    {
+      "poder": "Curar Ferimentos",
+      "acao": "padrao",
+      "custo": 12,
+      "img": "systems/tormenta20/icons/magias/curar-ferimentos.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.soVAGPRWQmKxOrPm]{Curar Ferimentos} (Padrão, 12 PM). Uma criatura adjacente cura 13d8+13 PV.</p>",
+      "danos": [
+        [
+          "13d8+13",
+          "curapv",
+          "Cura"
+        ]
+      ]
+    },
+    {
+      "poder": "Escudo da Fé",
+      "acao": "reacao",
+      "custo": 8,
+      "img": "systems/tormenta20/icons/magias/escudo-da-fe.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.XJoWTcH8zVtHc2xa]{Escudo da Fé} (Reação, 8 PM). Quando uma criatura em alcance curto sofre um ataque, ela recebe camuflagem contra ataques à distância e +5 na Defesa até seu próximo turno.</p>"
+    },
+    {
+      "poder": "Escuridão",
+      "acao": "padrao",
+      "custo": 4,
+      "img": "systems/tormenta20/icons/magias/escuridao.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.Bt364TPpNUI1QVPP]{Escuridão} (Padrão, 4 PM). Até o fim da cena, um objeto em alcance curto emana escuridão total em um raio de 9m, bloqueando a visão na área e através dela.</p>"
+    },
+    {
+      "poder": "Manto de Sombras",
+      "acao": "padrao",
+      "custo": 6,
+      "img": "systems/tormenta20/icons/magias/manto-de-sombras.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.iHOlYjBeNhqDVYbQ]{Manto de Sombras} (Padrão, 6 PM, sustentada). O alto ceifeiro se torna incorpóreo. Ele pode gastar uma ação de movimento e 1 PM para “entrar” em uma sombra de seu tamanho ou maior e se teletransportar para outra sombra, também de seu tamanho ou maior, em alcance médio. Além disso, torna-se vulnerável a luz direta: se for exposto a uma fonte de luz, sofre 1 ponto de dano por rodada.</p>"
+    },
+    {
+      "poder": "Toque Vampírico",
+      "acao": "padrao",
+      "custo": 9,
+      "img": "systems/tormenta20/icons/magias/toque-vampirico.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.6KvwDBikOdbzhRGv]{Toque Vampírico} (Padrão, 9 PM). O ceifeiro faz um ataque corpo a corpo. Se acertar, além do dano normal, causa 10d6 pontos de dano de trevas (Fort reduz à metade) e recupera pontos de vida iguais à metade do dano de trevas causado.</p>",
+      "danos": [
+        [
+          "10d6",
+          "trevas"
+        ]
+      ],
+      "resistencia": "Fortitude CD 35 reduz à metade"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "nome": "Coruja-Gigante",
+  "img": "assets/tokens/coruja-gigante.png",
+  "nd": "3",
+  "tipo": "mon",
+  "tamanho": "gra",
+  "papel": "solo",
+  "atributos": {
+    "for": 3,
+    "des": 3,
+    "con": 1,
+    "int": -2,
+    "sab": 3,
+    "car": 0
+  },
+  "pv": 90,
+  "defesa": 20,
+  "pericias": {
+    "inic": 6,
+    "perc": 8,
+    "fort": 3,
+    "refl": 15,
+    "vont": 9,
+    "furt": 4,
+    "intu": 8
+  },
+  "deslocamento": {
+    "deslocamento": 6,
+    "voo": 24
+  },
+  "sentidos": [
+    "escuro"
+  ],
+  "resistencias": {
+    "impacto": "vulneravel"
+  },
+  "resistenciasTexto": "resistência a magia +2, vulnerabilidade a impacto",
+  "corpoACorpo": "Duas garras +14 (1d8+6).",
+  "tesouro": "Nenhum.",
+  "notas": "<p><em>O ser alado possui a forma e a aparência de uma coruja branca, mas com o tamanho e o porte de um grande grifo. Seus olhos largos e amarelos transmitem uma profunda sabedoria e deixam transparecer sua natureza mística.</em></p><p>Corujas-gigantes são grandes aves mágicas. De hábitos semelhantes aos de suas parentes menores, vivem em ninhos no topo de grandes árvores ou montanhas, de onde saem à noite para caçar e encontrar seus pares. Por sua inteligência, muitas vezes assumem um papel de protetoras das terras onde vivem. É comum que se associem com devotos de Allihanna e outros seres dedicados à defesa dos ermos. Sua natureza tipicamente solitária não impede que essas majestosas criaturas se reúnam em bandos para alcançar um objetivo comum, como enfrentar um perigo ou afastar agressores de suas terras.</p><p>Embora possuam espírito independente, corujas-gigantes podem ser cativadas por aventureiros particularmente heroicos ou dedicados a uma causa em comum. Tais corujas podem acompanhar esses aventureiros como montarias, participando de suas aventuras como valiosas aliadas. Corujas-gigantes possuem um apreço especial por elfos e seres de sangue feérico — no auge de Lenórienn, era comum ver elfos montados em suas fiéis corujas aliadas.</p><p><strong>Furtividade:</strong> +4 (+9 voando).</p><p><strong>Sabedoria Estrígia</strong></p><p>Corujas-gigantes são criaturas de grande saber (o que contribui para a ideia de que esses animais são um símbolo de sabedoria). Com o tempo, vivência e experiência, uma coruja-gigante desenvolve a capacidade de compartilhar magicamente essa sabedoria com aqueles que julga dignos. Isso, entretanto, não é feito levianamente. Em geral, será uma recompensa para aqueles que protegem seu território ou cumprem alguma tarefa importante.</p><p>Um personagem que recebe a sabedoria de uma coruja-gigante pode escolher uma perícia originalmente baseada em Sabedoria. Até o fim da próxima aventura, ele pode usar o poder Foco em Perícia para a perícia escolhida. Uma criatura só pode receber esse benefício de uma coruja-gigante por vez.</p><p><strong>Parceiro:</strong> veja o poder “Montaria: Coruja-Gigante” no compêndio de parceiros deste módulo.</p>",
+  "ataques": [
+    {
+      "arma": "Garras",
+      "descricao": "duas garras",
+      "qtd": 2,
+      "ataque": 14,
+      "dano": [
+        [
+          "1d8+6",
+          "corte"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Resistência a Magia",
+      "img": "systems/tormenta20/icons/poderes/ameacas/resistencia-magia.webp",
+      "descricao": "<p>A coruja-gigante recebe +2 em testes de resistência contra magias.</p>"
+    },
+    {
+      "poder": "Bote",
+      "img": "systems/tormenta20/icons/poderes/ameacas/bote.webp",
+      "descricao": "<p>A coruja-gigante faz uma investida e ataca com suas duas garras. Os dois ataques recebem o bônus de +2 da investida, mas devem ser feitos contra o mesmo alvo.</p>",
+      "acao": "completa"
+    }
+  ]
+}

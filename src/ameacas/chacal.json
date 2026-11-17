@@ -1,0 +1,88 @@
+{
+  "nome": "Chacal",
+  "img": "assets/tokens/chacal.png",
+  "nd": "1/4",
+  "tipo": "ani",
+  "tamanho": "peq",
+  "papel": "solo",
+  "atributos": {
+    "for": 1,
+    "des": 3,
+    "con": 2,
+    "int": -4,
+    "sab": 2,
+    "car": -2
+  },
+  "pv": 7,
+  "defesa": 13,
+  "pericias": {
+    "inic": 5,
+    "perc": 6,
+    "fort": 0,
+    "refl": 3,
+    "vont": -1,
+    "furt": 9,
+    "sobr": 6
+  },
+  "deslocamento": {
+    "deslocamento": 12
+  },
+  "sentidos": [
+    "faro",
+    "penumbra"
+  ],
+  "corpoACorpo": "Mordida +6 (1d4+4).",
+  "tesouro": "Nenhum.",
+  "notas": "<p><em>A alcateia se aproxima em movimentos cautelosos. Parentes menores dos lobos, os chacais partilham de sua astúcia, coragem e instinto de caça — ferramentas que, aliadas ao trabalho em equipe, permitem que vençam presas muito maiores e mais fortes.</em></p><p>Chacais habitam regiões de vegetação rasteira, como a Grande Savana e certas partes de Halak-Tûr. Também podem ser encontrados mais ao sul, em regiões de mata e descampados acidentados. Costumam caçar à noite e são bastante ousados — fazendas em territórios de chacais costumam sofrer com incursões desses predadores. Existem relatos de chacais entrando em aldeias durante a noite para caçar pequenos animais domésticos ou vasculhar restos de comida no lixo.</p><p>Assim como lobos, chacais são tímidos e arredios; evitam o contato com criaturas que não vejam como presas. Ainda assim, é possível treinar um chacal como mascote ou mesmo como montaria para criaturas muito pequenas, como duendes ou sílfides.</p><p><strong>Parceiro:</strong> veja o poder “Montaria: Chacal” no compêndio de parceiros deste módulo.</p>",
+  "ataques": [
+    {
+      "arma": "Mordida",
+      "descricao": "mordida",
+      "img": "icons/creatures/abilities/mouth-teeth-long-red.webp",
+      "ataque": 6,
+      "dano": [
+        [
+          "1d4+4",
+          "perfuracao"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Derrubar",
+      "img": "systems/tormenta20/icons/poderes/ameacas/derrubar.webp",
+      "descricao": "<p>Se o chacal acerta um ataque de mordida, pode fazer a manobra derrubar (teste +6).</p>",
+      "acao": "livre"
+    },
+    {
+      "poder": "Táticas de Alcateia",
+      "img": "systems/tormenta20/icons/poderes/ameacas/taticas-alcateia.webp",
+      "descricao": "<p>Quando flanqueia um inimigo, o chacal recebe +2 no teste de ataque e na rolagem de dano (além do bônus normal por flanquear, para um total de +4 no ataque e +2 no dano).</p>",
+      "efeitos": [
+        {
+          "name": "Táticas de Alcateia",
+          "description": "<p>Flanqueando: +2 no teste de ataque e na rolagem de dano (o bônus normal de flanquear não está incluído).</p>",
+          "system": {
+            "changes": [
+              {
+                "key": "system.modificadores.ataque.cac",
+                "value": 2,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              },
+              {
+                "key": "system.modificadores.dano.cac",
+                "value": 2,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

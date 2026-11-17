@@ -1,0 +1,88 @@
+{
+  "nome": "Elfo-do-Gelo Caçador",
+  "img": "assets/tokens/elfo-do-gelo-cacador.png",
+  "nd": "2",
+  "tipo": "hum",
+  "raca": "elfo-do-gelo",
+  "tamanho": "med",
+  "papel": "lackey",
+  "atributos": {
+    "for": 1,
+    "des": 3,
+    "con": 1,
+    "int": -1,
+    "sab": 2,
+    "car": 0
+  },
+  "pv": 13,
+  "defesa": 18,
+  "pericias": {
+    "inic": 6,
+    "perc": 7,
+    "fort": 7,
+    "refl": 11,
+    "vont": 4,
+    "atle": 4,
+    "furt": 6,
+    "sobr": 7
+  },
+  "deslocamento": {
+    "deslocamento": 12
+  },
+  "sentidos": [
+    "penumbra"
+  ],
+  "resistencias": {
+    "frio": 10
+  },
+  "resistenciasTexto": "redução de frio 10",
+  "corpoACorpo": "Machado de batalha +14 (2d6+5, x3, mais 1d6+2 frio).",
+  "aDistancia": "Arco longo +14 (2d8+3, x3, mais 1d6+2 frio).",
+  "equipamento": "Arco longo, armadura de couro, flechas x20, machado de batalha.",
+  "tesouro": "Metade.",
+  "notas": "<p><em>Meu povo descende daqueles que deixaram as asas de Glórienn e encontraram refúgio onde quase ninguém ousava ir: as gélidas Montanhas Uivantes. Lá, aprendemos a sobreviver num mundo de neve eterna, ventos cortantes e caça difícil. Com o tempo, o frio deixou de ser um obstáculo e passou a moldar as pessoas: pele pálida como a geada, cabelos em tons claros ou frios, olhos adaptados à escuridão e corpos marcados por cicatrizes de um ambiente que não perdoa erros. Passamos a viver em pequenos grupos, geralmente em cavernas, sem reis ou chefes: cada aldeia decide seu caminho em conjunto, guiada pela necessidade e pela experiência.</em></p><p>Elfos-do-gelo são descendentes de elfos que migraram para as Montanhas Uivantes após a queda de Glórienn, em busca de uma terra, e de uma divindade, que pudesse lhes oferecer proteção. Nas Uivantes, estes elfos encontraram a proteção de Beluhga; mesmo morta, a Dragoa-Rainha do Gelo zelava pelas montanhas e por seus habitantes. Com o tempo, esses elfos passaram por transformações que os adaptaram à vida em um dos ambientes mais inóspitos de Arton. Teriam sido essas mudanças influência das forças mágicas das Uivantes ou uma bênção secreta da própria Beluhga?</p><p>Ainda existem poucos elfos-do-gelo em Arton e a maioria vive em pequenas aldeias independentes nas Uivantes. Possuem uma relação cultural muito forte com a neve e com a própria Beluhga, embora por vezes cultuem outros deuses. Elfos-do-gelo encontrados fora das Uivantes geralmente são exploradores com uma missão específica ou, mais comumente, aventureiros em busca de explorar o restante de Arton.</p><p><strong>Elfo-do-Gelo: Habilidades de Raça</strong></p><p><strong>Sabedoria +2, Destreza +1, Constituição –1.</strong></p><p><strong>Graça de Beluhga.</strong> Seu deslocamento é 12m (em vez de 9m) e não é reduzido por terreno difícil natural.</p><p><strong>Herança Gélida.</strong> Você recebe redução de frio 10 e, quando causa dano, causa +1d4 pontos de dano de frio.</p><p><strong>Sentidos Glaciais.</strong> Você recebe visão na penumbra e +2 em Percepção e Sobrevivência.</p><p><strong>Longevidade.</strong> x5.</p><p><strong>Devotos.</strong> Allihanna, Beluhga (descrita no <em>Guia de Deuses Menores</em>), Kallyadranoch, Marah, Megalokk.</p><p><strong>Deslocamento:</strong> sem redução por terreno difícil natural.</p><p><strong>Furtividade:</strong> +6 (+11 em ártico).</p>",
+  "ataques": [
+    {
+      "arma": "Machado de batalha",
+      "descricao": "machado de batalha",
+      "img": "systems/tormenta20/icons/itens/equipamentos/machado-de-batalha.webp",
+      "ataque": 14,
+      "critico": "x3",
+      "dano": [
+        [
+          "2d6+5",
+          "corte"
+        ],
+        [
+          "1d6+2",
+          "frio"
+        ]
+      ]
+    },
+    {
+      "arma": "Arco longo",
+      "descricao": "arco longo",
+      "img": "systems/tormenta20/icons/itens/equipamentos/arco-longo.webp",
+      "ataque": 14,
+      "critico": "x3",
+      "alcance": "medium",
+      "dano": [
+        [
+          "2d8+3",
+          "perfuracao"
+        ],
+        [
+          "1d6+2",
+          "frio"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Emboscar",
+      "img": "systems/tormenta20/icons/poderes/ameacas/investida.webp",
+      "descricao": "<p>Na primeira rodada de combate, o elfo-do-gelo caçador pode realizar uma ação padrão adicional.</p>"
+    }
+  ]
+}

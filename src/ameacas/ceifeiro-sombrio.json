@@ -1,0 +1,183 @@
+{
+  "nome": "Ceifeiro Sombrio",
+  "img": "assets/tokens/ceifeiro-sombrio.png",
+  "nd": "7",
+  "tipo": "hum",
+  "raca": "humano",
+  "tamanho": "med",
+  "papel": "special",
+  "atributos": {
+    "for": 2,
+    "des": 0,
+    "con": 2,
+    "int": 2,
+    "sab": 6,
+    "car": 3
+  },
+  "pv": 170,
+  "pm": 44,
+  "defesa": 25,
+  "pericias": {
+    "inic": 7,
+    "perc": 13,
+    "fort": 14,
+    "refl": 7,
+    "vont": 20,
+    "conh": 9,
+    "enga": 12,
+    "inti": 12,
+    "mist": 9,
+    "reli": 15
+  },
+  "deslocamento": {
+    "deslocamento": 9
+  },
+  "sentidos": [
+    "escuro"
+  ],
+  "resistencias": {
+    "dano": 5
+  },
+  "imunidadeCondicoes": [
+    "metabolismo",
+    "trevas"
+  ],
+  "resistenciasTexto": "imunidade a efeitos de metabolismo e trevas, redução de dano 5",
+  "corpoACorpo": "Gadanho profano +20 (4d4+4, x4, mais 4d8 frio).",
+  "equipamento": "Gadanho macabro, símbolo sagrado de Tenebra.",
+  "tesouro": "Padrão.",
+  "notas": "<p><em>Em seu traje negro de couro, a jovem traz nos olhos fundos uma expressão neutra de apatia e desinteresse. Contudo, quando ergue uma foice muito maior do que parece capaz, ela demonstra estar pronta para enviar novas almas como oferenda a seu deus da morte. Seja ele quem for.</em></p><p>Também conhecidos como sacerdotes negros, estes clérigos sinistros sempre estiveram submersos em mistérios e contradições. No passado, dizia-se que eram devotos de Leen, uma face de Ragnar cultuada por humanoides não duyshidakk. Outros acreditavam que Leen na verdade seria um deus menor, enquanto histórias ainda mais duvidosas afirmavam ser a própria Tenebra. Hoje, com a destruição de Ragnar e a ascensão da Deusa das Trevas como divindade suprema da morte, ninguém sabe responder se Leen/Tenebra sempre foram um só ou se o culto simplesmente abraçou uma nova divindade.</p><p>Ceifeiros sombrios se reúnem em pequenas e restritas sociedades secretas para praticar rituais de tortura, flagelação e invocação de seres abissais. Outrora muito raros, os cultistas diabólicos estão se espalhando — um número cada vez maior de relatos sobre suas atividades chega de vários pontos do Reinado. Tem sido comum para grupos de aventureiros investigar rumores sobre possíveis reuniões destes cultos, bem como acabar com as criaturas que eles eventualmente trazem a este mundo.</p><p>Longe de ser impotentes em combate, ceifeiros sombrios são mestres absolutos no uso da foice de guerra, arma que adquire poderes sobrenaturais em suas mãos. Além disso, devido a seus constantes rituais de autoflagelação, parecem ser imunes a todo tipo de dor.</p>",
+  "ataques": [
+    {
+      "arma": "Gadanho profano",
+      "descricao": "gadanho profano",
+      "img": "systems/tormenta20/icons/itens/equipamentos/gadanho.webp",
+      "ataque": 20,
+      "critico": "x4",
+      "dano": [
+        [
+          "4d4+4",
+          "corte"
+        ],
+        [
+          "4d8",
+          "frio"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Conjuração Inabalável",
+      "img": "systems/tormenta20/icons/poderes/ameacas/magias.webp",
+      "descricao": "<p>Quando faz um teste de Vontade para manter a concentração em uma magia, o ceifeiro sombrio rola dois dados e usa o melhor resultado.</p>"
+    },
+    {
+      "poder": "Fúria Diabólica",
+      "img": "systems/tormenta20/icons/poderes/classes/combatentes/furia.webp",
+      "descricao": "<p>Uma vez por cena, o ceifeiro entra em fúria. Ele recebe +3 em testes de ataque, na CD de suas magias e em suas rolagens de dano. Nesse estado ele não pode fazer nenhuma ação que exija calma e concentração (como usar Furtividade), mas pode lançar magias. A fúria termina se, ao fim da rodada, ele não tiver atacado, lançado uma magia ou sido alvo de um efeito hostil.</p>",
+      "acao": "livre",
+      "efeitos": [
+        {
+          "name": "Fúria Diabólica",
+          "description": "<p>+3 em testes de ataque e em rolagens de dano.</p><p><strong>Não automatizado:</strong> +3 na CD das magias.</p>",
+          "system": {
+            "changes": [
+              {
+                "key": "system.modificadores.ataque.cac",
+                "value": 3,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              },
+              {
+                "key": "system.modificadores.dano.cac",
+                "value": 3,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              },
+              {
+                "key": "system.modificadores.ataque.ad",
+                "value": 3,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              },
+              {
+                "key": "system.modificadores.dano.ad",
+                "value": 3,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "poder": "Gadanho Profano",
+      "img": "systems/tormenta20/icons/itens/equipamentos/gadanho.webp",
+      "descricao": "<p>Nas mãos do ceifeiro, seu gadanho conta como um <em>gadanho formidável</em> que causa +4d8 pontos de dano de frio (já contabilizados).</p>"
+    },
+    {
+      "poder": "Segadura de Sangue",
+      "img": "systems/tormenta20/icons/poderes/ameacas/ataque-corte.webp",
+      "descricao": "<p>Uma vez por rodada, quando o ceifeiro faz um ataque corpo a corpo com seu gadanho e reduz os pontos de vida do alvo para 0 ou menos, pode realizar um ataque adicional contra outra criatura dentro do seu alcance.</p>",
+      "acao": "livre"
+    },
+    {
+      "poder": "Visão nas Trevas",
+      "img": "systems/tormenta20/icons/poderes/ameacas/visao-ampla.webp",
+      "descricao": "<p>O ceifeiro enxerga perfeitamente no escuro, incluindo em magias de escuridão.</p>"
+    },
+    {
+      "poder": "Magias",
+      "img": "systems/tormenta20/icons/poderes/ameacas/magias.webp",
+      "descricao": "<p>Como um clérigo de Tenebra de 7º nível (CD 26, –1 PM para <em>Escuridão</em>, já contabilizado).</p>"
+    },
+    {
+      "poder": "Curar Ferimentos",
+      "acao": "padrao",
+      "custo": 7,
+      "img": "systems/tormenta20/icons/magias/curar-ferimentos.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.soVAGPRWQmKxOrPm]{Curar Ferimentos} (Padrão, 7 PM). Uma criatura adjacente cura 8d8+8 PV.</p>",
+      "danos": [
+        [
+          "8d8+8",
+          "curapv",
+          "Cura"
+        ]
+      ]
+    },
+    {
+      "poder": "Escudo da Fé",
+      "acao": "reacao",
+      "custo": 6,
+      "img": "systems/tormenta20/icons/magias/escudo-da-fe.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.XJoWTcH8zVtHc2xa]{Escudo da Fé} (Reação, 6 PM). Quando uma criatura em alcance curto sofre um ataque, ela recebe camuflagem contra ataques à distância e +4 na Defesa até seu próximo turno.</p>"
+    },
+    {
+      "poder": "Escuridão",
+      "acao": "padrao",
+      "custo": 4,
+      "img": "systems/tormenta20/icons/magias/escuridao.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.Bt364TPpNUI1QVPP]{Escuridão} (Padrão, 4 PM). Até o fim da cena, um objeto em alcance curto emana escuridão total em um raio de 9m, bloqueando a visão na área e através dela.</p>"
+    },
+    {
+      "poder": "Toque Vampírico",
+      "acao": "padrao",
+      "custo": 7,
+      "img": "systems/tormenta20/icons/magias/toque-vampirico.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.6KvwDBikOdbzhRGv]{Toque Vampírico} (Padrão, 7 PM). O ceifeiro faz um ataque corpo a corpo. Se acertar, além do dano normal, causa 8d6 pontos de dano de trevas (Fort reduz à metade) e recupera pontos de vida iguais à metade do dano de trevas causado.</p>",
+      "danos": [
+        [
+          "8d6",
+          "trevas"
+        ]
+      ],
+      "resistencia": "Fortitude CD 26 reduz à metade"
+    }
+  ]
+}

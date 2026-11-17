@@ -1,0 +1,95 @@
+{
+  "nome": "Encantador de Pragas",
+  "img": "assets/tokens/encantador-de-pragas.png",
+  "nd": "4",
+  "tipo": "hum",
+  "raca": "humano",
+  "tamanho": "med",
+  "papel": "special",
+  "atributos": {
+    "for": 0,
+    "des": 4,
+    "con": 1,
+    "int": 3,
+    "sab": 1,
+    "car": 4
+  },
+  "pv": 98,
+  "pm": 22,
+  "defesa": 21,
+  "pericias": {
+    "inic": 8,
+    "perc": 5,
+    "fort": 4,
+    "refl": 10,
+    "vont": 16,
+    "acro": 8,
+    "ades": 10,
+    "atua": 11,
+    "dipl": 8,
+    "enga": 13,
+    "furt": 10,
+    "intu": 5,
+    "mist": 7,
+    "sobr": 5
+  },
+  "deslocamento": {
+    "deslocamento": 9
+  },
+  "corpoACorpo": "Florete +12 (1d6+4, 18).",
+  "equipamento": "Armadura de couro, capa esvoaçante, flauta aprimorada, florete.",
+  "tesouro": "Padrão.",
+  "notas": "<p><em>O som da flauta preenche o ambiente com uma melodia doce e agradável. A responsável é uma mulher, trajando as roupas festivas de uma artista, que avança em passos dançantes enquanto toca. Ela é acompanhada por uma longa fileira de glops, que saltitam alegremente ao ritmo da música.</em></p><p>Não há dúvidas de que há magia na música. Uma magia cativante, capaz de despertar, e controlar, as mais profundas emoções. Aqueles que dominam esse tipo de força podem empregá-la para os mais diversos propósitos. E, dentre estes, poucos são mais estranhos que os músicos que usam sua arte para encantar pragas e pestes como ratos, aranhas e outros pequenos animais.</p><p>Um encantador de pragas é um menestrel especializado em usar sua música para invocar e controlar pequenos seres irracionais. Isso lhes permite convocar e comandar criaturas desse tipo nas redondezas.</p><p>Alguns encantadores de pragas vagam por Arton vendendo seus serviços para castelos e aldeias que enfrentam algum tipo de infestação. Outros são trambiqueiros, que comandam animais para invadir um lugar, apenas para aparecerem logo em seguida, oferecendo seus agora necessários serviços. Também há aqueles que empregam essas pestes em atos mais hediondos, saqueando e aterrorizando abertamente vilas e aldeias isoladas.</p>",
+  "ataques": [
+    {
+      "arma": "Florete",
+      "descricao": "florete",
+      "img": "systems/tormenta20/icons/itens/equipamentos/florete.webp",
+      "ataque": 12,
+      "critico": "18",
+      "dano": [
+        [
+          "1d6+4",
+          "perfuracao"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Empatia com Pragas",
+      "img": "systems/tormenta20/icons/poderes/ameacas/voz-da-natureza.webp",
+      "descricao": "<p>O encantador de pragas recebe +5 em testes de perícia com animais e monstros irracionais (Int –5 ou –4), e pode usar Atuação com essas criaturas para mudar atitude e persuasão (veja <em>Tormenta20</em>, p. 118).</p>"
+    },
+    {
+      "poder": "Encantar Pragas",
+      "img": "systems/tormenta20/icons/itens/gerais/flauta-mistica.webp",
+      "descricao": "<p>O encantador usa sua música para gerar um dos efeitos a seguir.</p><p>• <em>Atrair.</em> O encantador atrai todos os animais e monstros irracionais (Int –5 ou –4) Minúsculos em alcance longo. As criaturas chegam em 1d3 rodadas, ficam prestativas em relação ao encantador e permanecem até o fim da cena ou até ele dispensá-las. Se o encantador usar Enxamear (veja abaixo) enquanto essas criaturas estiverem presentes, ele cria 1d3+1 enxames (em vez de apenas 1).</p><p>• <em>Enxamear.</em> Um enxame de ratos (ou criaturas equivalentes) surge em alcance médio e ocupa um quadrado de 3m. No fim de cada um dos turnos do encantador, o enxame causa 4d12 pontos de dano de corte a qualquer criatura em seu espaço (Fort CD 22 reduz à metade). O encantador pode gastar uma ação livre para mover o enxame 12m (uma vez por rodada por enxame). O enxame se dispersa ao fim da cena.</p>",
+      "acao": "completa",
+      "danos": [
+        [
+          "4d12",
+          "corte",
+          "Enxame"
+        ],
+        [
+          "1d3",
+          "",
+          "Rodadas (Atrair)"
+        ],
+        [
+          "1d3+1",
+          "",
+          "Enxames"
+        ]
+      ],
+      "resistencia": "Fortitude CD 22 reduz à metade"
+    },
+    {
+      "poder": "Escudo de Pestes",
+      "img": "systems/tormenta20/icons/poderes/ameacas/taticas-alcateia.webp",
+      "descricao": "<p>Quando sofre dano, o encantador reduz esse dano à metade. Ele só pode usar esta habilidade uma vez por rodada, e apenas se estiver adjacente a um de seus enxames.</p>",
+      "acao": "reacao"
+    }
+  ]
+}

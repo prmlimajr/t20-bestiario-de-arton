@@ -1,0 +1,67 @@
+{
+  "nome": "Cariátide Mecânica",
+  "img": "assets/tokens/cariatide-mecanica.png",
+  "nd": "5",
+  "tipo": "con",
+  "tamanho": "med",
+  "papel": "solo",
+  "atributos": {
+    "for": 3,
+    "des": 5,
+    "con": 3,
+    "int": 0,
+    "sab": 1,
+    "car": -5
+  },
+  "pv": 190,
+  "defesa": 24,
+  "pericias": {
+    "inic": 9,
+    "perc": 5,
+    "fort": 10,
+    "refl": 17,
+    "vont": 6
+  },
+  "deslocamento": {
+    "deslocamento": 9
+  },
+  "sentidos": [
+    "escuro"
+  ],
+  "resistencias": {
+    "eletricidade": "imune",
+    "dano": 5
+  },
+  "resistenciasTexto": "imunidade a eletricidade, redução de dano 5",
+  "corpoACorpo": "Duas pancadas +17 (2d8+11, x3).",
+  "tesouro": "Nenhum.",
+  "notas": "<p><em>O que à primeira vista parecia uma colunata ornamental ganha vida diante dos seus olhos, revelando ser um construto metálico humanoide. A forma traja uma armadura de placas robusta e ergue ameaçadoramente os punhos que ostentam pesadas manoplas de metal.</em></p><p>Uma cariátide mecânica é um construto sofisticado, fabricado a partir da combinação de mecanismos complexos inseridos em um chassi metálico resistente. Quando em repouso, ela se posiciona de forma a imitar uma intrincada coluna de sustentação — um disfarce que permite empregá-la como um mecanismo de defesa em castelos, mansões e outras construções, mesclando-a à arquitetura do lugar.</p><p>O projeto das cariátides mecânicas segue um estilo pouco comum em Arton. De fato, acredita-se que elas tenham sido criadas em Terápolis por artesãos kliren, feitas sob medida para proteger templos de Tanna-Toh. Com o tempo, acabaram chegando em Arton, onde inicialmente caíram nas graças da rica nobreza valkariana. De lá, foram levadas para além das fronteiras de Deheon, sendo adotadas como defesa dos mais variados lugares.</p><p><strong>Inteligência:</strong> — (sem valor).</p>",
+  "ataques": [
+    {
+      "arma": "Pancada",
+      "descricao": "duas pancadas",
+      "qtd": 2,
+      "ataque": 17,
+      "critico": "x3",
+      "dano": [
+        [
+          "2d8+11",
+          "impacto"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Imobilidade",
+      "img": "systems/tormenta20/icons/poderes/ameacas/forma.webp",
+      "descricao": "<p>Uma cariátide mecânica pode permanecer completamente imóvel. Se ela estiver assim, um personagem deve passar num teste de Percepção (CD 35) para perceber que ela é uma criatura e não uma coluna.</p>"
+    },
+    {
+      "poder": "Pancada Estonteante",
+      "img": "systems/tormenta20/icons/poderes/ameacas/pancada.webp",
+      "descricao": "<p>Uma criatura atingida por uma pancada da cariátide fica atordoada por uma rodada (apenas uma vez por cena, Fort CD 20 evita).</p>",
+      "resistencia": "Fortitude CD 20 evita"
+    }
+  ]
+}

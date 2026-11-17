@@ -1,0 +1,81 @@
+{
+  "nome": "Defensor Rochoso",
+  "img": "assets/tokens/defensor-rochoso.png",
+  "nd": "8",
+  "tipo": "con",
+  "tamanho": "med",
+  "papel": "lackey",
+  "atributos": {
+    "for": 6,
+    "des": 0,
+    "con": 3,
+    "int": 0,
+    "sab": 0,
+    "car": -5
+  },
+  "pv": 72,
+  "defesa": 33,
+  "pericias": {
+    "inic": 8,
+    "perc": 8,
+    "fort": 20,
+    "refl": 9,
+    "vont": 15
+  },
+  "deslocamento": {
+    "deslocamento": 6
+  },
+  "sentidos": [
+    "escuro"
+  ],
+  "resistencias": {
+    "dano": 10
+  },
+  "imunidadeCondicoes": [
+    "atordoado",
+    "petrificado"
+  ],
+  "resistenciasTexto": "imunidade a atordoado e petrificado, redução de dano 10",
+  "corpoACorpo": "Duas pancadas +27 (4d8+19, x3).",
+  "tesouro": "Nenhum.",
+  "notas": "<p><em>A criatura diante de vocês aparenta ser uma estátua cuidadosamente esculpida em pedra. Seus movimentos, entretanto, são naturais e coordenados, como se impelidos pela mente veterana de algum aventureiro do passado.</em></p><p>Defensores rochosos são indivíduos transformados em criaturas de pedra por uma matriarca euríade (veja p. 75). Eles conservam a aparência que tinham no momento da transformação, mas adquirem textura e coloração rochosas (geralmente cinza ou marrom). Seu equipamento, incluindo quaisquer itens que estivessem empunhando, também é transformado, tornando-se permanentemente parte de sua forma. Sua personalidade, contudo, desaparece por completo, substituída pela dominação mágica da matriarca que os criou.</p><p>Matriarcas euríades usam defensores rochosos como guardiões de seus covis ou para desempenhar tarefas braçais. Eventualmente, uma matriarca pode enviar um ou mais defensores para executarem uma tarefa longe do covil, como atacar invasores ou espantar pretensos colonizadores interessados em se estabelecer nas cercanias. A limitação mental desses construtos, no entanto, impede que sejam empregados em tarefas complexas.</p><p>A transformação em defensor rochoso é permanente e dura mesmo após a morte da euríade responsável. Ela só pode ser desfeita por magia capaz de reverter paralisia. Entretanto, é possível que um defensor rochoso recupere parte de suas memórias, ou ao menos um vislumbre de independência mental, após a morte da matriarca que o transformou.</p><p><strong>Inteligência:</strong> — (sem valor).</p>",
+  "ataques": [
+    {
+      "arma": "Pancada",
+      "descricao": "duas pancadas",
+      "qtd": 2,
+      "ataque": 27,
+      "critico": "x3",
+      "dano": [
+        [
+          "4d8+19",
+          "impacto"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Imobilidade",
+      "img": "systems/tormenta20/icons/poderes/ameacas/forma.webp",
+      "descricao": "<p>Um defensor rochoso pode permanecer completamente imóvel. Se ele estiver assim, um personagem deve passar num teste de Percepção (CD 35) para perceber que ele é uma criatura e não uma estátua.</p>"
+    },
+    {
+      "poder": "Natureza Abascanta",
+      "img": "systems/tormenta20/icons/poderes/ameacas/imunidade-magia.webp",
+      "descricao": "<p>O defensor tem 50% de chance de ignorar um efeito mágico (como se fosse imune a ele), com exceção da magia @UUID[Compendium.tormenta20.magias.Item.I177NeKSwiAn8vz5]{Despedaçar}.</p>",
+      "danos": [
+        [
+          "1d100",
+          "",
+          "Chance (51+ ignora)"
+        ]
+      ]
+    },
+    {
+      "poder": "Reverter Transformação",
+      "img": "systems/tormenta20/icons/poderes/ameacas/olhar-petrificante.webp",
+      "descricao": "<p>Se for alvo de um efeito mágico que reverte paralisia, o defensor rochoso deve fazer um teste de Vontade (CD do efeito ou CD Car do usuário do efeito). Se o defensor falhar, sua transformação é revertida e ele volta ao normal, com 1 PV e atordoado por 1 rodada.</p>"
+    }
+  ]
+}

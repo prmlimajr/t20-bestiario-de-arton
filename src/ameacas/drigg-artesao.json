@@ -1,0 +1,64 @@
+{
+  "nome": "Drigg Artesão",
+  "img": "assets/tokens/drigg-artesao.png",
+  "nd": "1/4",
+  "tipo": "hum",
+  "raca": "drigg",
+  "tamanho": "peq",
+  "papel": "special",
+  "atributos": {
+    "for": -1,
+    "des": 2,
+    "con": 1,
+    "int": 0,
+    "sab": 2,
+    "car": 1
+  },
+  "pv": 5,
+  "defesa": 11,
+  "pericias": {
+    "inic": 4,
+    "perc": 3,
+    "fort": -2,
+    "refl": 0,
+    "vont": 3,
+    "furt": 8,
+    "sobr": 3
+  },
+  "deslocamento": {
+    "deslocamento": 6,
+    "natacao": 6
+  },
+  "sentidos": [
+    "faro"
+  ],
+  "resistenciasTexto": "evasão",
+  "tesouro": "Metade mais 1d4 doses de veneno ósseo.",
+  "notas": "<p><em>Os pequenos seres que se esgueiram entre os juncos têm o porte de crianças humanas de corpo esguio e castanho, quase da cor da argila. Suas cabeças são grandes, com cabelo volumoso e espetado, bocas largas com dentes brancos e pontiagudos e sobrancelhas grossas. Vestem roupas simples, em uma combinação de materiais vegetais e trapos que parecem ter pertencido a outras pessoas.</em></p><p>Driggs são seres ribeirinhos, descendentes distantes de fadas. Vivem em pequenas aldeias formadas por habitações de junco e palha, camufladas em meio à vegetação ou por vezes dentro da própria água, de forma semelhante a castores. Agressivos e territorialistas, alimentam-se de carne e tutano, demonstrando uma cruel preferência por presas inteligentes. São capazes de dialogar e negociar, mas costumam fazê-lo apenas quando estão em clara desvantagem.</p><p>Driggs possuem uma predileção por ossos e usam esse material para fabricar utensílios, armas e outros apetrechos. Apesar de serem criaturas primitivas, o artesanato drigg é bastante valorizado por conjuradores, sobretudo necromantes.</p><p><strong>Deslocamento:</strong> sem redução por terreno difícil natural.</p><p><strong>Perícias:</strong> Ofício (artesão) +4.</p>",
+  "habilidades": [
+    {
+      "poder": "Evasão",
+      "img": "systems/tormenta20/icons/poderes/classes/especialistas/evasao.webp",
+      "descricao": "<p>Quando sofre um efeito que permite um teste de Reflexos para reduzir o dano à metade, o drigg não sofre dano algum se passar.</p>"
+    },
+    {
+      "poder": "Bomba Óssea",
+      "img": "systems/tormenta20/icons/itens/gerais/veneno.webp",
+      "descricao": "<p>O drigg artesão arremessa uma bomba de veneno ósseo em um ponto em alcance curto. Criaturas a até 3m desse ponto perdem 4d4 pontos de vida e ficam sangrando (Fort CD 14 reduz a perda à metade e evita a condição). <em>Recarga (movimento).</em></p>",
+      "acao": "padrao",
+      "danos": [
+        [
+          "4d4",
+          "perda",
+          "Veneno ósseo"
+        ]
+      ],
+      "resistencia": "Fortitude CD 14 reduz à metade e evita"
+    }
+  ],
+  "itens": [
+    {
+      "ref": "veneno-osseo"
+    }
+  ]
+}

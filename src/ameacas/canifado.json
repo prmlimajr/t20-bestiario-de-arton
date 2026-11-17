@@ -1,0 +1,76 @@
+{
+  "nome": "Canifado",
+  "img": "assets/tokens/canifado.png",
+  "nd": "1",
+  "tipo": "esp",
+  "tamanho": "min",
+  "papel": "special",
+  "atributos": {
+    "for": 0,
+    "des": 2,
+    "con": 2,
+    "int": -4,
+    "sab": 2,
+    "car": 2
+  },
+  "pv": 22,
+  "defesa": 15,
+  "pericias": {
+    "inic": 4,
+    "perc": 6,
+    "fort": 4,
+    "refl": 7,
+    "vont": 5,
+    "sobr": 6
+  },
+  "deslocamento": {
+    "deslocamento": 12,
+    "voo": 9
+  },
+  "sentidos": [
+    "faro",
+    "escuro"
+  ],
+  "resistenciasTexto": "evasão",
+  "corpoACorpo": "Mordida +7 (1d6+2 mais 2d6 luz).",
+  "tesouro": "Nenhum.",
+  "notas": "<p><em>Simpática e brincalhona, a criatura assemelha-se a um cãozinho de pelo curto e colorido, orelhas caídas e um permanente sorriso do qual pende uma língua babona. Revelando sua natureza feérica, possui patas semelhantes às de um coelho, vistosas asas de borboleta e um cintilante par de antenas na cabeça.</em></p><p>Diz a lenda que, em um dia distante, um nobre escriba e uma talentosa feiticeira decidiram ter um filho. Preocupados com a segurança da criança — eram tempos conturbados no Reinado —, os amorosos pais combinaram suas habilidades para dar a ela um guardião fiel e cuidadoso. O escriba então escolheu entre os filhotes em seu canil aquele que parecia mais atencioso e corajoso, sobre o qual a rainha lançou sua magia feérica. Surgia assim o primeiro canifado, precursor de uma linhagem de criaturinhas mágicas que se tornariam bravos companheiros e dedicados aliados de inúmeros aventureiros em Arton.</p><p>Hoje, canifados podem ser encontrados em alguns recantos de Arton, como companheiros de aventureiros valorosos ou como espíritos livres que protegem bosques e ermos. Brincalhões e dotados de um grande instinto de companheirismo e proteção, são criaturinhas alegres, mas que não temem lutar corajosamente para defender aqueles que consideram parte do bando.</p><p><strong>Familiar:</strong> um canifado familiar permite que você lance @UUID[Compendium.tormenta20.magias.Item.g48EeeYhek5Wh5Ll]{Leque Cromático}. Caso aprenda novamente essa magia, seu custo diminui em –1 PM.</p><p><strong>Parceiro:</strong> veja o poder “Parceiro: Canifado” no compêndio de parceiros deste módulo.</p>",
+  "ataques": [
+    {
+      "arma": "Mordida",
+      "descricao": "mordida",
+      "img": "icons/creatures/abilities/mouth-teeth-long-red.webp",
+      "ataque": 7,
+      "dano": [
+        [
+          "1d6+2",
+          "perfuracao"
+        ],
+        [
+          "2d6",
+          "luz"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Evasão",
+      "img": "systems/tormenta20/icons/poderes/classes/especialistas/evasao.webp",
+      "descricao": "<p>Quando sofre um efeito que permite um teste de Reflexos para reduzir o dano à metade, o canifado não sofre dano algum se passar.</p>"
+    },
+    {
+      "poder": "Aparência Inofensiva",
+      "img": "systems/tormenta20/icons/poderes/ameacas/forma.webp",
+      "descricao": "<p>A primeira criatura inteligente (Int –3 ou maior) que atacar o canifado em uma cena deve fazer um teste de Vontade (CD 17). Se falhar, perderá sua ação. Seres com sangue feérico, como dahllan, duendes, eiradaan, hynne, sátiros e sílfides, sofrem −5 neste teste.</p>",
+      "resistencia": "Vontade CD 17 evita"
+    },
+    {
+      "poder": "Latido Cromático",
+      "img": "systems/tormenta20/icons/magias/leque-cromatico.webp",
+      "descricao": "<p>O canifado lança a magia @UUID[Compendium.tormenta20.magias.Item.g48EeeYhek5Wh5Ll]{Leque Cromático}, com todos os seus aprimoramentos (CD 17). <em>Recarga (movimento).</em></p>",
+      "acao": "padrao",
+      "resistencia": "Vontade CD 17"
+    }
+  ]
+}

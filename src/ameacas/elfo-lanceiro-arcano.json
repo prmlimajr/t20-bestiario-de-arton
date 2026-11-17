@@ -1,0 +1,84 @@
+{
+  "nome": "Elfo Lanceiro Arcano",
+  "img": "assets/tokens/elfo-lanceiro-arcano.png",
+  "nd": "4",
+  "tipo": "hum",
+  "raca": "elfo",
+  "tamanho": "med",
+  "papel": "lackey",
+  "atributos": {
+    "for": 1,
+    "des": 3,
+    "con": 1,
+    "int": 1,
+    "sab": 0,
+    "car": 0
+  },
+  "pv": 30,
+  "pm": 23,
+  "defesa": 20,
+  "pericias": {
+    "inic": 7,
+    "perc": 6,
+    "fort": 5,
+    "refl": 15,
+    "vont": 10,
+    "atle": 5,
+    "mist": 7
+  },
+  "deslocamento": {
+    "deslocamento": 12
+  },
+  "sentidos": [
+    "penumbra"
+  ],
+  "corpoACorpo": "Lança +17 (2d6+12 mais 2d8 essência).",
+  "equipamento": "Lança.",
+  "tesouro": "Metade.",
+  "notas": "<p><em>Sob a liderança de uma mulher de semblante concentrado, o grupo de elfos avança. Seus trajes parecem um dia ter sido uniformes, mas agora são um apanhado de armaduras e vestes obtidas aqui e ali. A precisão de seus movimentos, entretanto, não deixa dúvidas de que outrora foram parte de um poderoso e temido exército.</em></p><p>Durante o auge do Império de Tauron, muitos elfos buscaram guarida sob a proteção do então Deus da Força. Vivendo sob as leis imperiais, vários deles assumiram posições militares em várias áreas das legiões. E, como muitos outros membros das forças tapistanas, viram-se desprovidos tanto de seu deus quanto de seus líderes quando Tauron foi derrotado por Aharadak.</p><p>Com a subsequente queda do Império, muitos destes elfos combatentes abandonaram as legiões. Sem nação ou bandeira, e tendo presenciado a queda de mais uma divindade na qual depositaram sua fé, escolheram se tornar mercenários, colocando suas habilidades à venda sem nenhuma consideração por causa, nação ou divindade.</p><p>Combinando antigas táticas élficas com a disciplina incorporada por seus anos a serviço do Império, estes elfos combatentes são encontrados protegendo caravanas, defendendo fortalezas e executando missões para qualquer um disposto a pagar seu preço.</p>",
+  "ataques": [
+    {
+      "arma": "Lança",
+      "descricao": "lança",
+      "img": "systems/tormenta20/icons/itens/equipamentos/lanca.webp",
+      "ataque": 17,
+      "dano": [
+        [
+          "2d6+12",
+          "perfuracao"
+        ],
+        [
+          "2d8",
+          "essencia"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Magias",
+      "img": "systems/tormenta20/icons/poderes/ameacas/magias.webp",
+      "descricao": "<p>Como um bruxo de 2º nível (CD 18, limite de PM 2). Seu foco arcano é sua lança.</p>"
+    },
+    {
+      "poder": "Armadura Arcana",
+      "acao": "reacao",
+      "custo": 2,
+      "img": "systems/tormenta20/icons/magias/armadura-arcana.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.vUsntyToyQl1TuFZ]{Armadura Arcana} (Reação, 2 PM). O elfo recebe +5 na Defesa contra o próximo ataque que sofrer.</p>"
+    },
+    {
+      "poder": "Primor Atlético",
+      "acao": "movimento",
+      "custo": 2,
+      "img": "systems/tormenta20/icons/magias/primor-atletico.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.k8E2gbV1NwkI0ehs]{Primor Atlético} (Movimento, 2 PM). O elfo salta e pousa em alcance corpo a corpo de uma criatura em alcance curto. Se fizer um ataque corpo a corpo contra essa criatura neste turno, ele recebe os benefícios e penalidades de uma investida e causa um dado extra (d6) de dano do mesmo tipo com este ataque.</p>",
+      "danos": [
+        [
+          "1d6",
+          "perfuracao"
+        ]
+      ]
+    }
+  ]
+}

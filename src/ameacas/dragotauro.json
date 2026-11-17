@@ -1,0 +1,147 @@
+{
+  "nome": "Dragotauro",
+  "img": "assets/tokens/dragotauro.png",
+  "nd": "12",
+  "tipo": "mon",
+  "tamanho": "eno",
+  "papel": "solo",
+  "atributos": {
+    "for": 9,
+    "des": 2,
+    "con": 7,
+    "int": 2,
+    "sab": 1,
+    "car": 2
+  },
+  "pv": 620,
+  "defesa": 43,
+  "pericias": {
+    "inic": 12,
+    "perc": 11,
+    "fort": 26,
+    "refl": 12,
+    "vont": 20,
+    "atle": 21,
+    "inti": 14,
+    "sobr": 11
+  },
+  "deslocamento": {
+    "deslocamento": 12,
+    "voo": 24
+  },
+  "sentidos": [
+    "faro",
+    "cegas",
+    "escuro"
+  ],
+  "resistencias": {
+    "dano": 10
+  },
+  "imunidadeCondicoes": [
+    "atordoado",
+    "cansaco",
+    "metamorfose",
+    "paralisado"
+  ],
+  "resistenciasTexto": "imunidade a atordoamento, cansaço, metamorfose e paralisia, redução de dano 10, resistência a magia +3",
+  "corpoACorpo": "Mordida +36 (4d10+20, 18) e duas garras +36 (3d10+20, 18).",
+  "tesouro": "Padrão e 2 peças de couro de dragão (CD 27 para extrair).",
+  "notas": "<p><em>O monstro tem torso humanoide ligado a um corpo de dragão. A metade humanoide tem cabeça reptiliana e garras nas mãos; a metade dracônica tem quatro patas, grandes asas e uma cauda longa. Ele é revestido por uma armadura de escamas com cores vivas.</em></p><p>Apesar da conhecida virilidade dos dragões, dragotauros não nascem de sua união com humanos (ou centauros). Eles surgem apenas por intervenção de deuses furiosos ou como experimentos de magos loucos. São seres de vida conturbada, temidos e odiados por todos — especialmente dragões verdadeiros, que os consideram repulsivos.</p><p>Dragotauros são solitários e coléricos, refugiando-se em masmorras profundas, onde atacam e matam tudo que venha incomodá-los (sobretudo aventureiros). Há também aqueles que imitam o comportamento dracônico, cerceando aldeias e aterrorizando seus habitantes para exigir tributo.</p>",
+  "ataques": [
+    {
+      "arma": "Mordida",
+      "descricao": "mordida",
+      "img": "icons/creatures/abilities/mouth-teeth-long-red.webp",
+      "ataque": 36,
+      "critico": "18",
+      "dano": [
+        [
+          "4d10+20",
+          "perfuracao"
+        ]
+      ]
+    },
+    {
+      "arma": "Garras",
+      "descricao": "duas garras",
+      "qtd": 2,
+      "ataque": 36,
+      "critico": "18",
+      "dano": [
+        [
+          "3d10+20",
+          "corte"
+        ]
+      ]
+    },
+    {
+      "arma": "Patas dianteiras",
+      "descricao": "patas dianteiras (após acertar as duas garras)",
+      "img": "systems/tormenta20/icons/poderes/ameacas/cascos.webp",
+      "ataque": 36,
+      "critico": "18",
+      "dano": [
+        [
+          "4d10+20",
+          "corte"
+        ]
+      ]
+    },
+    {
+      "arma": "Patas traseiras",
+      "descricao": "patas traseiras (reação)",
+      "img": "systems/tormenta20/icons/poderes/ameacas/cascos.webp",
+      "ataque": 36,
+      "critico": "18",
+      "dano": [
+        [
+          "4d10+20",
+          "corte"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Resistência a Magia",
+      "img": "systems/tormenta20/icons/poderes/ameacas/resistencia-magia.webp",
+      "descricao": "<p>O dragotauro recebe +3 em testes de resistência contra magias.</p>"
+    },
+    {
+      "poder": "Asas Defletoras",
+      "img": "systems/tormenta20/icons/poderes/ameacas/asas.webp",
+      "descricao": "<p>Uma vez por rodada, quando sofre dano, o dragotauro reduz esse dano à metade. Ele não pode usar esta habilidade se estiver voando.</p>",
+      "acao": "reacao"
+    },
+    {
+      "poder": "Bote",
+      "img": "systems/tormenta20/icons/poderes/ameacas/bote.webp",
+      "descricao": "<p>O dragotauro faz uma investida e ataca com sua mordida e suas duas garras. Os três ataques recebem o bônus de +2 da investida, mas devem ser feitos contra o mesmo alvo.</p>",
+      "acao": "completa"
+    },
+    {
+      "poder": "Guincho Dracônico",
+      "img": "systems/tormenta20/icons/poderes/ameacas/urro-selvagem.webp",
+      "descricao": "<p>Todas as criaturas em um cone de 12m sofrem 12d12 pontos de dano psíquico e ficam apavoradas (se tiverem 4 níveis ou menos) ou abaladas (se tiverem 5 níveis ou mais). Em ambos os casos, passar em um teste de Vontade (CD 33) reduz o dano à metade, evita a condição e a criatura não pode mais ser apavorada ou abalada por esta habilidade por um dia. <em>Recarga (movimento).</em></p>",
+      "acao": "padrao",
+      "danos": [
+        [
+          "12d12",
+          "psiquico"
+        ]
+      ],
+      "resistencia": "Vontade CD 33 reduz à metade e evita"
+    },
+    {
+      "poder": "Patas Dianteiras",
+      "img": "systems/tormenta20/icons/poderes/ameacas/cascos.webp",
+      "descricao": "<p>Se o dragotauro acerta os dois ataques de garra em uma mesma criatura no mesmo turno, pode fazer um ataque com suas patas dianteiras (ataque +36, dano 4d10+20 corte, 18).</p>"
+    },
+    {
+      "poder": "Patas Traseiras",
+      "img": "systems/tormenta20/icons/poderes/ameacas/cascos.webp",
+      "descricao": "<p>Uma vez por rodada, quando uma criatura erra um ataque corpo a corpo contra o dragotauro por 5 ou mais, ele faz um ataque com suas patas traseiras (ataque +36, dano 4d10+20 corte, 18) contra essa criatura.</p>",
+      "acao": "reacao"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "name": "Veneno Ósseo",
+  "type": "consumivel",
+  "img": "systems/tormenta20/icons/itens/gerais/veneno.webp",
+  "system": {
+    "description": {
+      "value": "<p>Este veneno de pó ósseo é fabricado a partir de uma combinação de técnicas e habilidades inatas dos driggs, por isso não pode ser produzido por outros alquimistas. A poeira fina de ossos tratados corrói as fossas nasais e causa sangramentos terríveis. <em>Inalação, perde 4d4 PV e fica sangrando (perde 2d4 PV).</em></p><p><strong>Veneno • T$ 20 • 0,5 Espaço</strong></p>"
+    },
+    "source": "Bestiário de Arton",
+    "tipo": "alchemy",
+    "qtd": 1,
+    "preco": 20,
+    "peso": 0.5,
+    "espacos": 0.5,
+    "rolls": [
+      {
+        "name": "Veneno",
+        "key": "dano0",
+        "type": "dano",
+        "parts": [
+          [
+            "4d4",
+            "perda",
+            ""
+          ]
+        ],
+        "versatil": "",
+        "adaptavel": ""
+      },
+      {
+        "name": "Sangramento",
+        "key": "dano1",
+        "type": "dano",
+        "parts": [
+          [
+            "2d4",
+            "perda",
+            ""
+          ]
+        ],
+        "versatil": "",
+        "adaptavel": ""
+      }
+    ]
+  }
+}

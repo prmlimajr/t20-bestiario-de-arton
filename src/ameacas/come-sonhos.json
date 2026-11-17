@@ -1,0 +1,84 @@
+{
+  "nome": "Come-Sonhos",
+  "img": "assets/tokens/come-sonhos.png",
+  "nd": "2",
+  "tipo": "esp",
+  "tamanho": "min",
+  "papel": "lackey",
+  "atributos": {
+    "for": -3,
+    "des": 3,
+    "con": 2,
+    "int": 0,
+    "sab": 2,
+    "car": -1
+  },
+  "pv": 14,
+  "defesa": 18,
+  "pericias": {
+    "inic": 6,
+    "perc": 5,
+    "fort": 3,
+    "refl": 12,
+    "vont": 7,
+    "furt": 13,
+    "intu": 7
+  },
+  "deslocamento": {
+    "deslocamento": 9
+  },
+  "sentidos": [
+    "escuro"
+  ],
+  "resistencias": {
+    "psiquico": "imune",
+    "dano": 5
+  },
+  "imunidadeCondicoes": [
+    "mental",
+    "medo"
+  ],
+  "resistenciasTexto": "imunidade a efeitos mentais, dano psíquico e medo, redução de dano 5/mitral",
+  "corpoACorpo": "Mordida +13 (4d4+4 mais 2d6 psíquico).",
+  "tesouro": "1d4 doses de essência de mana (CD 17 para extrair).",
+  "notas": "<p><em>Da escuridão, primeiro despontam várias bocarras, repletas de pequenos dentes serrilhados. Logo depois, as criaturas se revelam por inteiro — minúsculas fadas humanoides, semelhantes a goblins de orelhas longas e pontudas. Parecem sorrir, mas na verdade estão apenas antecipando a próxima refeição.</em></p><p>Come-sonhos são originários dos ermos, onde vivem alimentando-se dos sonhos das criaturas das matas. Entretanto, algumas destas pequenas fadas descobriram nas cidades uma grande concentração de sonhadores. Estes come-sonhos aprenderam a viver escondidos nos esgotos, nos becos e nos sótãos de grandes casas, tornando-se praticamente pragas urbanas. Geralmente encontrados em grupos de três a cinco indivíduos, nas circunstâncias certas podem se multiplicar às dezenas, infestando quadras inteiras de uma metrópole se não forem impedidos.</p><p>Como seu nome indica, come-sonhos alimentam-se dos sonhos dos mortais, um processo que lentamente enfraquece suas vítimas e as leva à morte. Nos ermos, um bando de come-sonhos pode seguir furtivamente um grupo de viajantes, alimentando-se de seus sonhos a cada noite. Já na cidade, costumam se alimentar dos moradores de uma residência até levá-los à morte, quando então se mudam para outro lugar.</p><p><strong>Redução de dano:</strong> 5/mitral.</p>",
+  "ataques": [
+    {
+      "arma": "Mordida",
+      "descricao": "mordida",
+      "img": "icons/creatures/abilities/mouth-teeth-long-red.webp",
+      "ataque": 13,
+      "dano": [
+        [
+          "4d4+4",
+          "perfuracao"
+        ],
+        [
+          "2d6",
+          "psiquico"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Devorar Sonhos",
+      "img": "systems/tormenta20/icons/poderes/ameacas/percepcao-temporal.webp",
+      "descricao": "<p>O come-sonhos devora os sonhos de uma criatura em alcance curto. A vítima perde 1d4+1 PM (Von CD 16 reduz a perda à metade); para cada PM que a vítima perder dessa forma, o come-sonhos recebe 5 PV temporários cumulativos. Se o come-sonhos usar esta habilidade em uma criatura que esteja inconsciente, a perda de PM é dobrada. <em>Recarga (causar dano psíquico com sua mordida).</em></p>",
+      "acao": "padrao",
+      "danos": [
+        [
+          "1d4+1",
+          "",
+          "PM perdidos"
+        ]
+      ],
+      "resistencia": "Vontade CD 16 reduz à metade"
+    },
+    {
+      "poder": "Êxtase Onírico",
+      "img": "systems/tormenta20/icons/poderes/ameacas/imunidade-aberrante.webp",
+      "descricao": "<p>Se fosse sofrer dano psíquico, em vez disso o come-sonhos cura PV em quantidade igual ao dano que sofreria.</p>"
+    }
+  ]
+}

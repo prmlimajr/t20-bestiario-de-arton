@@ -1,0 +1,151 @@
+{
+  "nome": "Bugbear Conquistador",
+  "img": "assets/tokens/bugbear-conquistador.png",
+  "nd": "14",
+  "tipo": "hum",
+  "raca": "bugbear",
+  "tamanho": "med",
+  "papel": "solo",
+  "atributos": {
+    "for": 6,
+    "des": 3,
+    "con": 4,
+    "int": 0,
+    "sab": 1,
+    "car": 1
+  },
+  "pv": 500,
+  "defesa": 44,
+  "pericias": {
+    "inic": 14,
+    "perc": 12,
+    "fort": 28,
+    "refl": 22,
+    "vont": 14,
+    "atle": 31,
+    "furt": 16,
+    "guer": 11,
+    "inti": 22,
+    "sobr": 14
+  },
+  "deslocamento": {
+    "deslocamento": 12
+  },
+  "sentidos": [
+    "faro",
+    "escuro"
+  ],
+  "resistencias": {
+    "dano": 5
+  },
+  "imunidadeCondicoes": [
+    "medo",
+    "surpreendido"
+  ],
+  "resistenciasTexto": "imunidade a medo e surpreendido, redução de dano 5, resistência a magia +5",
+  "corpoACorpo": "Machado de guerra x3 +37 (4d12+21, x5).",
+  "equipamento": "Machado de guerra maciço aumentado.",
+  "tesouro": "Padrão.",
+  "notas": "<p><em>Um bugbear alto e forte, de músculos salientes e olhar penetrante, empunhando um machado de lâmina larga e pesada. As marcas de incontáveis batalhas são perceptíveis em seu corpo e em seu espírito, cada uma sendo uma comprovação dos desafios superados até aqui.</em></p><p>Mesmo após a ascensão de Thwor Khoshkothruk, a vida dos duyshidakk, e em especial dos bugbears, é cercada de desafios, dificuldades e, frequentemente, violência. Nesse ambiente, de tempos em tempos surgem indivíduos dispostos a repetir a história de Thwor e se tornar grandes conquistadores. Impulsionados por cobiça, vontade ou um senso de grandeza, esses bugbears ascendem das fileiras de seu povo determinados a alcançar uma vida de vitórias.</p><p>A origem de cada bugbear conquistador é única. Muitos vêm de um histórico de violência, tendo sofrido nas mãos de inimigos e se tornado mais fortes e violentos por isso. Outros foram criados como campeões de seu povo ou ouviram profecias dos anciões que descreviam um destino de grandes conquistas. Todos, entretanto, buscaram se tornar mais fortes, mais resistentes e mais determinados que qualquer um, e empregam essa força para derrotar todos aqueles que se colocam no caminho de suas conquistas.</p>",
+  "ataques": [
+    {
+      "arma": "Machado de guerra",
+      "descricao": "machado de guerra x3",
+      "img": "systems/tormenta20/icons/itens/equipamentos/machado-de-guerra.webp",
+      "qtd": 3,
+      "ataque": 37,
+      "critico": "x5",
+      "dano": [
+        [
+          "4d12+21",
+          "corte"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Resistência a Magia",
+      "img": "systems/tormenta20/icons/poderes/ameacas/resistencia-magia.webp",
+      "descricao": "<p>o bugbear recebe +5 em testes de resistência contra magias.</p>"
+    },
+    {
+      "poder": "Brado Apavorante",
+      "img": "systems/tormenta20/icons/poderes/ameacas/urro-selvagem.webp",
+      "descricao": "<p>O bugbear conquistador emite um brado que amedronta seus oponentes. Inimigos a até 9m ficam apavorados por 1 rodada e depois abalados (Von CD 38 reduz para abalado por 1d4 rodadas). <em>Recarga (movimento).</em></p>",
+      "acao": "movimento",
+      "resistencia": "Vontade CD 38 reduz"
+    },
+    {
+      "poder": "Destruidor",
+      "img": "systems/tormenta20/icons/poderes/ameacas/quebrar-tudo.webp",
+      "descricao": "<p>Quando causa dano com uma arma corpo a corpo de duas mãos, o bugbear pode rolar novamente qualquer resultado 1 ou 2 das rolagens de dano da arma.</p>"
+    },
+    {
+      "poder": "Espírito Inquebrável",
+      "img": "systems/tormenta20/icons/poderes/ameacas/odio-puro.webp",
+      "descricao": "<p>Enquanto está em fúria, o bugbear não fica inconsciente por ser reduzido a 0 PV ou menos. Quando é reduzido a –250 PV, ele morre, ou fica inconsciente no caso de dano não letal.</p>"
+    },
+    {
+      "poder": "Êxtase no Medo",
+      "img": "systems/tormenta20/icons/poderes/ameacas/aura-aterradora.webp",
+      "descricao": "<p>O bugbear sofre metade do dano de criaturas sob algum efeito de medo.</p>"
+    },
+    {
+      "poder": "Fúria",
+      "img": "systems/tormenta20/icons/poderes/classes/combatentes/furia.webp",
+      "descricao": "<p>O bugbear recebe +4 em testes de Intimidação e de ataque e em rolagens de dano. Esse efeito se encerra se ele terminar 1 rodada e não tiver atacado nem sido alvo de um efeito hostil. <em>Recarga (movimento).</em></p>",
+      "acao": "livre",
+      "efeitos": [
+        {
+          "name": "Fúria",
+          "description": "<p>+4 em testes de Intimidação e de ataque e em rolagens de dano.</p>",
+          "system": {
+            "changes": [
+              {
+                "key": "system.modificadores.ataque.cac",
+                "value": 4,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              },
+              {
+                "key": "system.modificadores.dano.cac",
+                "value": 4,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              },
+              {
+                "key": "system.modificadores.ataque.ad",
+                "value": 4,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              },
+              {
+                "key": "system.modificadores.dano.ad",
+                "value": 4,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              },
+              {
+                "key": "system.pericias.inti.bonus",
+                "value": 4,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "poder": "Saborear Pavor",
+      "img": "systems/tormenta20/icons/poderes/ameacas/odio-puro.webp",
+      "descricao": "<p>Se o bugbear estiver em alcance curto de outra criatura abalada ou apavorada, ele recebe um bônus em testes de ataque igual à penalidade causada pela condição.</p>"
+    }
+  ]
+}

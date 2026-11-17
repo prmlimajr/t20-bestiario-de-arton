@@ -1,0 +1,106 @@
+{
+  "nome": "Drigg Caçador",
+  "img": "assets/tokens/drigg-cacador.png",
+  "nd": "1/2",
+  "tipo": "hum",
+  "raca": "drigg",
+  "tamanho": "peq",
+  "papel": "solo",
+  "atributos": {
+    "for": -1,
+    "des": 3,
+    "con": 2,
+    "int": 0,
+    "sab": 2,
+    "car": 0
+  },
+  "pv": 15,
+  "defesa": 14,
+  "pericias": {
+    "inic": 5,
+    "perc": 4,
+    "fort": 3,
+    "refl": 6,
+    "vont": -1,
+    "atle": 1,
+    "furt": 9,
+    "sobr": 6
+  },
+  "deslocamento": {
+    "deslocamento": 6,
+    "natacao": 6
+  },
+  "sentidos": [
+    "faro"
+  ],
+  "resistenciasTexto": "evasão",
+  "corpoACorpo": "Clava +7 (1d6).",
+  "aDistancia": "Funda +7 (1d6 mais veneno).",
+  "equipamento": "Clava, funda, pedras x20.",
+  "tesouro": "Metade mais 1d4 doses de veneno ósseo.",
+  "notas": "<p><em>Os pequenos seres que se esgueiram entre os juncos têm o porte de crianças humanas de corpo esguio e castanho, quase da cor da argila. Suas cabeças são grandes, com cabelo volumoso e espetado, bocas largas com dentes brancos e pontiagudos e sobrancelhas grossas. Vestem roupas simples, em uma combinação de materiais vegetais e trapos que parecem ter pertencido a outras pessoas.</em></p><p>Driggs são seres ribeirinhos, descendentes distantes de fadas. Vivem em pequenas aldeias formadas por habitações de junco e palha, camufladas em meio à vegetação ou por vezes dentro da própria água, de forma semelhante a castores. Agressivos e territorialistas, alimentam-se de carne e tutano, demonstrando uma cruel preferência por presas inteligentes. São capazes de dialogar e negociar, mas costumam fazê-lo apenas quando estão em clara desvantagem.</p><p>Driggs possuem uma predileção por ossos e usam esse material para fabricar utensílios, armas e outros apetrechos. Apesar de serem criaturas primitivas, o artesanato drigg é bastante valorizado por conjuradores, sobretudo necromantes.</p><p><strong>Deslocamento:</strong> sem redução por terreno difícil natural.</p>",
+  "ataques": [
+    {
+      "arma": "Clava",
+      "descricao": "clava",
+      "img": "systems/tormenta20/icons/itens/equipamentos/clava.webp",
+      "ataque": 7,
+      "dano": [
+        [
+          "1d6",
+          "impacto"
+        ]
+      ]
+    },
+    {
+      "arma": "Funda",
+      "descricao": "funda (mais veneno)",
+      "img": "systems/tormenta20/icons/itens/equipamentos/funda.webp",
+      "ataque": 7,
+      "alcance": "medium",
+      "dano": [
+        [
+          "1d6",
+          "impacto"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Evasão",
+      "img": "systems/tormenta20/icons/poderes/classes/especialistas/evasao.webp",
+      "descricao": "<p>Quando sofre um efeito que permite um teste de Reflexos para reduzir o dano à metade, o drigg não sofre dano algum se passar.</p>"
+    },
+    {
+      "poder": "Ataque Furtivo",
+      "img": "systems/tormenta20/icons/poderes/classes/especialistas/ataque-furtivo.webp",
+      "descricao": "<p>+2d6.</p>",
+      "danos": [
+        [
+          "2d6",
+          "",
+          "Ataque Furtivo"
+        ]
+      ]
+    },
+    {
+      "poder": "Veneno",
+      "img": "systems/tormenta20/icons/poderes/ameacas/veneno.webp",
+      "descricao": "<p>Veneno ósseo (perde 4d4 pontos de vida e fica sangrando, Fort CD 13 reduz a perda à metade e evita a condição).</p>",
+      "danos": [
+        [
+          "4d4",
+          "perda",
+          "Veneno ósseo"
+        ]
+      ],
+      "resistencia": "Fortitude CD 13 reduz à metade e evita"
+    }
+  ],
+  "itens": [
+    {
+      "ref": "veneno-osseo"
+    }
+  ]
+}

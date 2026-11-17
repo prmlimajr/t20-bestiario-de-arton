@@ -1,0 +1,88 @@
+{
+  "name": "Montaria: Coruja-Gigante",
+  "type": "poder",
+  "img": "assets/tokens/coruja-gigante-parceiro.png",
+  "system": {
+    "description": {
+      "value": "<p>A coruja-gigante é um parceiro montaria (Grande) que fornece os benefícios a seguir.</p>\n<p><strong>Iniciante</strong>: você recebe resistência a magia +2 e +2 em Intuição (uma coruja-gigante iniciante é muito jovem para ser usada como montaria).</p>\n<p><strong>Veterano</strong>: pode ser usada como montaria, mudando seu deslocamento para 9m (voo 12m).</p>\n<p><strong>Mestre</strong>: seu deslocamento de voo muda para 15m, a resistência a magia muda para +5 e o bônus em Intuição muda para +5.</p>"
+    },
+    "source": "Bestiário de Arton",
+    "tipo": "geral",
+    "subtipo": "Montaria"
+  },
+  "effects": [
+    {
+      "name": "Montaria: Coruja-Gigante Iniciante",
+      "description": "<p>+2 em Intuição.</p><p><strong>Não automatizado:</strong> resistência a magia +2.</p>",
+      "system": {
+        "changes": [
+          {
+            "key": "system.pericias.intu.bonus",
+            "value": 2,
+            "priority": null,
+            "type": "add",
+            "phase": "initial"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Montaria: Coruja-Gigante Veterano",
+      "description": "<p>+2 em Intuição, deslocamento 9m, voo 12m.</p><p><strong>Não automatizado:</strong> resistência a magia +2.</p>",
+      "system": {
+        "changes": [
+          {
+            "key": "system.pericias.intu.bonus",
+            "value": 2,
+            "priority": null,
+            "type": "add",
+            "phase": "initial"
+          },
+          {
+            "key": "system.attributes.movement.walk.base",
+            "value": 9,
+            "priority": null,
+            "type": "override",
+            "phase": "initial"
+          },
+          {
+            "key": "system.attributes.movement.fly.base",
+            "value": 12,
+            "priority": null,
+            "type": "override",
+            "phase": "initial"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Montaria: Coruja-Gigante Mestre",
+      "description": "<p>+5 em Intuição, deslocamento 9m, voo 15m.</p><p><strong>Não automatizado:</strong> resistência a magia +5.</p>",
+      "system": {
+        "changes": [
+          {
+            "key": "system.pericias.intu.bonus",
+            "value": 5,
+            "priority": null,
+            "type": "add",
+            "phase": "initial"
+          },
+          {
+            "key": "system.attributes.movement.walk.base",
+            "value": 9,
+            "priority": null,
+            "type": "override",
+            "phase": "initial"
+          },
+          {
+            "key": "system.attributes.movement.fly.base",
+            "value": 15,
+            "priority": null,
+            "type": "override",
+            "phase": "initial"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "nome": "Cavaleiro Desonrado",
+  "img": "assets/tokens/cavaleiro-desonrado.png",
+  "nd": "6",
+  "tipo": "hum",
+  "raca": "humano",
+  "tamanho": "med",
+  "papel": "solo",
+  "atributos": {
+    "for": 3,
+    "des": 1,
+    "con": 3,
+    "int": 1,
+    "sab": 0,
+    "car": 3
+  },
+  "pv": 180,
+  "defesa": 29,
+  "pericias": {
+    "inic": 6,
+    "perc": 5,
+    "fort": 18,
+    "refl": 8,
+    "vont": 10,
+    "atle": 8,
+    "cava": 8,
+    "enga": 12,
+    "guer": 6,
+    "nobr": 6
+  },
+  "deslocamento": {
+    "deslocamento": 6
+  },
+  "resistenciasTexto": "resistência a medo +5",
+  "corpoACorpo": "Lança montada x2 +19 (1d8+12, x3, alcance 3m) ou martelo de guerra x2 +19 (1d10+12, x3, mais veneno).",
+  "equipamento": "Cavalo de guerra, escudo pesado, lança montada, martelo de guerra, meia armadura cravejada de gemas, peçonha comum x1d4.",
+  "tesouro": "Padrão.",
+  "notas": "<p><em>O cavaleiro se parece como muitos outros. Armadura alinhada, armas limpas e um símbolo que evoca tradição, honra e coragem. Este é um cavaleiro digno do título, e não há nada em sua figura que insinue o contrário.</em></p><p>Em Arton, a cavalaria é considerada uma instituição honrada: um bastião da tradição e dos ideais de justiça e lealdade. Cavaleiros, via de regra, são guerreiros de elite que incorporam esses valores e lutam em nome de algo maior, como uma instituição, uma nação ou uma divindade.</p><p>Infelizmente, nem todos aqueles que conquistam o título de cavaleiro são realmente movidos pelos ideais da cavalaria. Alguns são vilões que buscam no status de <em>sir</em> apenas o poder e as honrarias que ele carrega. Outros são indivíduos que outrora acreditaram em honra mas que, em algum momento da vida, passaram a trilhar o caminho oposto.</p><p>Cavaleiros desonrados usam a imagem da cavalaria para ocultar seus objetivos malignos. Muitos continuam servindo a seus senhores, escondendo habilmente suas intenções malignas. Outros abandonam o juramento de cavaleiro e passam a vagar pelos campos como verdadeiros bandidos, por vezes até mesmo liderando outros criminosos. No campo de batalha, cavaleiros desonrados aparentemente lutam como verdadeiros cavaleiros, até que surja uma oportunidade de empregar algum truque sujo — preferencialmente em um momento no qual sua trapaça passe despercebida pelos presentes.</p>",
+  "ataques": [
+    {
+      "arma": "Lança montada",
+      "descricao": "lança montada x2 (alcance 3m)",
+      "img": "systems/tormenta20/icons/itens/equipamentos/lanca-montada.webp",
+      "qtd": 2,
+      "ataque": 19,
+      "critico": "x3",
+      "dano": [
+        [
+          "1d8+12",
+          "perfuracao"
+        ]
+      ]
+    },
+    {
+      "arma": "Martelo de guerra",
+      "descricao": "martelo de guerra x2 (mais veneno)",
+      "img": "systems/tormenta20/icons/itens/equipamentos/martelo-de-guerra.webp",
+      "qtd": 2,
+      "ataque": 19,
+      "critico": "x3",
+      "dano": [
+        [
+          "1d10+12",
+          "impacto"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Ataque Furtivo",
+      "img": "systems/tormenta20/icons/poderes/classes/especialistas/ataque-furtivo.webp",
+      "descricao": "<p>+3d6.</p>",
+      "danos": [
+        [
+          "3d6",
+          "",
+          "Ataque Furtivo"
+        ]
+      ]
+    },
+    {
+      "poder": "Cavaleiro Experiente",
+      "img": "systems/tormenta20/icons/poderes/ameacas/investida.webp",
+      "descricao": "<p>O cavaleiro desonrado passa automaticamente em testes de Cavalgar para não cair da montaria quando sofre dano e não sofre penalidades para atacar à distância enquanto montado. Além disso, quando faz uma investida montada, ele causa +2d8 pontos de dano e pode continuar se movendo depois do ataque. Ele deve se mover em linha reta e seu movimento máximo ainda é o dobro de seu deslocamento.</p>",
+      "danos": [
+        [
+          "2d8",
+          "",
+          "Investida montada"
+        ]
+      ]
+    },
+    {
+      "poder": "Corcel de Batalha",
+      "img": "systems/tormenta20/icons/poderes/ameacas/cascos.webp",
+      "descricao": "<p>O cavaleiro cavalga um cavalo de guerra (veja <em>Tormenta20</em>, p. 262). Enquanto ele estiver montado, seu deslocamento se torna 15m, ele recebe uma ação de movimento extra por turno (apenas para se deslocar) e +2 nos testes de ataque corpo a corpo.</p>",
+      "efeitos": [
+        {
+          "name": "Corcel de Batalha",
+          "description": "<p>Montado: deslocamento 15m e +2 nos testes de ataque corpo a corpo.</p><p><strong>Não automatizado:</strong> ação de movimento extra por turno (apenas para se deslocar).</p>",
+          "system": {
+            "changes": [
+              {
+                "key": "system.modificadores.ataque.cac",
+                "value": 2,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              },
+              {
+                "key": "system.attributes.movement.walk.base",
+                "value": 15,
+                "priority": null,
+                "type": "override",
+                "phase": "initial"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "poder": "Truque Sujo",
+      "img": "systems/tormenta20/icons/poderes/ameacas/adaga-aberrante.webp",
+      "descricao": "<p>O cavaleiro faz um teste de Enganação contra a Percepção de uma criatura adjacente; se ele vencer, essa criatura fica desprevenida contra ele até o fim deste turno (apenas uma vez por cena).</p>",
+      "acao": "movimento"
+    },
+    {
+      "poder": "Veneno",
+      "img": "systems/tormenta20/icons/poderes/ameacas/veneno.webp",
+      "descricao": "<p>Peçonha comum (perde 1d12 PV, Fort CD 20 evita).</p>",
+      "danos": [
+        [
+          "1d12",
+          "perda",
+          "Peçonha"
+        ]
+      ],
+      "resistencia": "Fortitude CD 20 evita"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "Liga Drolem",
+  "type": "consumivel",
+  "img": "systems/tormenta20/icons/itens/gerais/po-de-cristal.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>[Tesouro Especial]</strong></p><p>Liga metálica extraída dos restos do Dragão-de-Aço (CD 32 para extrair). Reduz em 1 PM o custo para fabricar um item mágico.</p>"
+    },
+    "source": "Bestiário de Arton",
+    "tipo": "material",
+    "qtd": 1
+  }
+}

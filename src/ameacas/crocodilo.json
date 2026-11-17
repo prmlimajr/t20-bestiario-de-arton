@@ -1,0 +1,82 @@
+{
+  "nome": "Crocodilo",
+  "img": "assets/tokens/crocodilo.png",
+  "nd": "2",
+  "tipo": "ani",
+  "tamanho": "gra",
+  "papel": "solo",
+  "atributos": {
+    "for": 5,
+    "des": 1,
+    "con": 3,
+    "int": -5,
+    "sab": 1,
+    "car": -4
+  },
+  "pv": 70,
+  "defesa": 17,
+  "pericias": {
+    "inic": 4,
+    "perc": 4,
+    "fort": 11,
+    "refl": 8,
+    "vont": 4,
+    "furt": 4
+  },
+  "deslocamento": {
+    "deslocamento": 6,
+    "natacao": 9
+  },
+  "sentidos": [
+    "penumbra"
+  ],
+  "corpoACorpo": "Mordida +13 (1d8+6) e cauda +13 (1d6+6).",
+  "tesouro": "Couro de crocodilo (CD 17 para extrair, vale T$ 30 para fabricar armaduras superiores).",
+  "notas": "<p><em>Répteis predadores, crocodilos se escondem na água para apanhar quaisquer criaturas que se aproximam para beber.</em></p><p>Quando uma vítima se aproxima, o crocodilo a agarra com sua mordida e tenta arrastá-la para a água. Lá, tenta afogar a vítima ou gira rapidamente o corpo para despedaçá-la.</p><p>Crocodilos podem ser encontrados, com pequenas variações de tamanho e cor, em praticamente todos os rios e lagos de Arton. São frequentes em Ubani, onde espreitam sobretudo em lagos, e nos pontos mais calmos dos rios de Tyrondir.</p><p><strong>Furtividade:</strong> +4 (+9 dentro d’água).</p>",
+  "ataques": [
+    {
+      "arma": "Mordida",
+      "descricao": "mordida",
+      "img": "icons/creatures/abilities/mouth-teeth-long-red.webp",
+      "ataque": 13,
+      "dano": [
+        [
+          "1d8+6",
+          "perfuracao"
+        ]
+      ]
+    },
+    {
+      "arma": "Cauda",
+      "descricao": "cauda",
+      "img": "systems/tormenta20/icons/poderes/ameacas/cauda.webp",
+      "ataque": 13,
+      "dano": [
+        [
+          "1d6+6",
+          "impacto"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Agarrar Aprimorado",
+      "img": "systems/tormenta20/icons/poderes/ameacas/agarrar.webp",
+      "descricao": "<p>Se o crocodilo acerta um ataque de mordida, pode fazer a manobra agarrar como uma ação livre (teste +15).</p>",
+      "acao": "livre"
+    },
+    {
+      "poder": "Giro da Morte",
+      "img": "systems/tormenta20/icons/poderes/ameacas/dilacerar.webp",
+      "descricao": "<p>Se o crocodilo estiver agarrando uma criatura dentro d’água e usar a manobra agarrar novamente para causar dano, causa +2d8 pontos de dano.</p>",
+      "danos": [
+        [
+          "2d8",
+          "",
+          "Dano extra"
+        ]
+      ]
+    }
+  ]
+}

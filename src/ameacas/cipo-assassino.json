@@ -1,0 +1,85 @@
+{
+  "nome": "Cipó Assassino",
+  "img": "assets/tokens/cipo-assassino.png",
+  "nd": "4",
+  "tipo": "mon",
+  "tamanho": "med",
+  "papel": "solo",
+  "atributos": {
+    "for": 3,
+    "des": -2,
+    "con": 2,
+    "int": -5,
+    "sab": 0,
+    "car": -2
+  },
+  "pv": 125,
+  "defesa": 23,
+  "pericias": {
+    "inic": 2,
+    "perc": 4,
+    "fort": 16,
+    "refl": 7,
+    "vont": 7
+  },
+  "deslocamento": {
+    "deslocamento": 3,
+    "escalada": 3,
+    "natacao": 3
+  },
+  "sentidos": [
+    "cegas"
+  ],
+  "sentidosExtra": "percepção às cegas (médio)",
+  "resistencias": {
+    "fogo": "vulneravel",
+    "dano": 5
+  },
+  "imunidadeCondicoes": [
+    "sangrando"
+  ],
+  "resistenciasTexto": "fortificação 25%, imunidade a sangramento, natureza vegetal, redução de dano 5/corte, vulnerabilidade a fogo",
+  "corpoACorpo": "Dois tentáculos +16 (1d12+6).",
+  "tesouro": "Metade.",
+  "notas": "<p><em>O arbusto aparenta ser apenas um emaranhado de vinhas grossas e fibrosas que crescem a partir de um longo caule marrom e áspero. Trata-se, na verdade, de um predador vegetal astuto, capaz de usar sua aparência inofensiva para agarrar e aprisionar uma variedade de presas.</em></p><p>Como parte de sua estratégia de caça, cipós assassinos produzem frutinhas semelhantes a amoras, de gosto e aroma doce e agradável. O cipó as utiliza para atrair pequenos animais e até humanoides incautos; quando uma vítima se aproxima, ele usa as vinhas para aprisioná-la e sufocá-la até a morte. Após isso, projeta suas raízes sobre o corpo da vítima, extraindo dela os nutrientes de que necessita.</p><p>Cipós assassinos conseguem se locomover lentamente, usando as raízes como patas, e empregam essa mobilidade limitada para escolher os melhores locais para surpreender suas vítimas. São inteligentes o suficiente para ocultar as ossadas de suas presas, em geral enterrando-as. Quando uma área fica repleta de ossadas, o cipó se move para outro local apropriado.</p><p>Florestas são o principal habitat dos cipós assassinos, mas eles podem ser encontrados em subterrâneos e, em casos raros, em grandes jardins urbanos. Essas criaturas geralmente permanecem no solo, mas podem se estabelecer na copa das árvores ou no teto de cavernas e masmorras.</p><p><strong>Deslocamento:</strong> 3m, escalar 3m, natação 3m (apenas boia, não mergulha nem respira sob a água). <strong>Redução de dano:</strong> 5/corte.</p>",
+  "ataques": [
+    {
+      "arma": "Tentáculo",
+      "descricao": "dois tentáculos",
+      "img": "icons/creatures/tentacles/tentacles-octopus-black-pink.webp",
+      "qtd": 2,
+      "ataque": 16,
+      "dano": [
+        [
+          "1d12+6",
+          "impacto"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Agarrar Aprimorado",
+      "img": "systems/tormenta20/icons/poderes/ameacas/agarrar.webp",
+      "descricao": "<p>Se o cipó acerta um ataque de tentáculo, pode fazer a manobra agarrar como uma ação livre (teste +18).</p>",
+      "acao": "livre"
+    },
+    {
+      "poder": "Estrangular",
+      "img": "systems/tormenta20/icons/poderes/ameacas/agarrar.webp",
+      "descricao": "<p>No início de cada um de seus turnos, o cipó assassino causa 2d12+6 pontos de dano de impacto em cada criatura que estiver agarrando. Uma criatura agarrada desta forma não pode falar.</p>",
+      "acao": "livre",
+      "danos": [
+        [
+          "2d12+6",
+          "impacto"
+        ]
+      ]
+    },
+    {
+      "poder": "Parte da Paisagem",
+      "img": "systems/tormenta20/icons/poderes/ameacas/voz-da-natureza.webp",
+      "descricao": "<p>Um cipó assassino parece uma trepadeira, um arbusto ou qualquer outra planta inócua, típica do ambiente onde se encontra. Se ele estiver assim, uma criatura deve passar num teste de Sobrevivência (CD 35) para perceber que ele é uma criatura e não um vegetal normal.</p>"
+    }
+  ]
+}

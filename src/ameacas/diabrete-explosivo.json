@@ -1,0 +1,111 @@
+{
+  "nome": "Diabrete Explosivo",
+  "img": "assets/tokens/diabrete-explosivo.png",
+  "nd": "3",
+  "tipo": "esp",
+  "raca": "abissal",
+  "tamanho": "min",
+  "papel": "lackey",
+  "atributos": {
+    "for": -2,
+    "des": 2,
+    "con": 0,
+    "int": 2,
+    "sab": 1,
+    "car": 1
+  },
+  "pv": 27,
+  "defesa": 19,
+  "pericias": {
+    "inic": 5,
+    "perc": 4,
+    "fort": 8,
+    "refl": 14,
+    "vont": 5,
+    "furt": 10,
+    "mist": 7
+  },
+  "deslocamento": {
+    "deslocamento": 6,
+    "voo": 12
+  },
+  "sentidos": [
+    "escuro"
+  ],
+  "resistencias": {
+    "acido": "imune",
+    "fogo": "imune"
+  },
+  "resistenciasTexto": "imunidade a ácido e fogo",
+  "corpoACorpo": "Ferrão +14 (1d6+8).",
+  "tesouro": "1d4 doses de fogo alquímico.",
+  "notas": "<p><em>O diabrete de cor avermelhada exibe um sorriso malicioso. Em uma das mãos, segura uma pequena esfera cerâmica com um pavio. Na outra, produz uma chama diminuta. Seus cintos e cartucheiras, carregados de artefatos explosivos, demonstram seu apreço por detonações flamejantes.</em></p><p>A relação da pólvora com abissais em Arton é bastante conhecida, sobretudo pela influência maligna exercida pelos famigerados demônios da pólvora. Recentemente, entretanto, essa relação tem se aprofundado ainda mais, sobretudo em certos mundos divinos, onde abissais menores têm descoberto como absorver e empregar o poder destrutivo dessa substância explosiva. Entre estes, poucos são mais inconsequentes, malignos e destrutivos que os diabretes explosivos.</p><p>Diabretes explosivos são infernais de castas inferiores, descendentes de diabretes comuns, que viram na pólvora a chave para elevar sua posição na hierarquia abissal. Esses diabretes passaram a se alimentar de pólvora impregnada com energia negativa, um processo literalmente explosivo que resultou em mais mortes de diabretes do que em poder. Apesar disso, alguns diabretes sobreviveram a essa fórmula desastrosa, dando origem a uma nova, e volátil, casta de abissais.</p><p>Um diabrete explosivo tem muitas características que lembram seus antepassados comuns. Como eles, são pequenos e lisos, mas sua pele possui um tom rubro que se torna mais vermelho nas mãos, patas e cauda. Seu olhar é igualmente cruel, mas carrega um toque de loucura e imprevisibilidade. Muitos transportam explosivos, fósforos e pederneiras, carregando-os em cintos e bandoleiras. São apaixonados por incêndios e explosões e se deliciam com o poder destrutivo do fogo e da pólvora.</p><p><strong>Perícias adicionais:</strong> Ofício (alquimista) +7.</p>",
+  "ataques": [
+    {
+      "arma": "Ferrão",
+      "descricao": "ferrão",
+      "img": "systems/tormenta20/icons/poderes/ameacas/ferrao.webp",
+      "ataque": 14,
+      "dano": [
+        [
+          "1d6+8",
+          "perfuracao"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Detonação Final",
+      "img": "systems/tormenta20/icons/poderes/ameacas/queimar.webp",
+      "descricao": "<p>Quando é reduzido a 0 PV, o diabrete explode em chamas. Todas as criaturas adjacentes ao diabrete sofrem 2d6 pontos de dano de fogo e ficam em chamas (Ref CD 17 reduz à metade e evita a condição).</p>",
+      "acao": "reacao",
+      "danos": [
+        [
+          "2d6",
+          "fogo"
+        ]
+      ],
+      "resistencia": "Reflexos CD 17 reduz à metade e evita"
+    },
+    {
+      "poder": "Fogo Infernal",
+      "img": "systems/tormenta20/icons/poderes/ameacas/cospe-chamas.webp",
+      "descricao": "<p>O diabrete explosivo arremessa um frasco de pólvora em uma criatura em alcance curto. Essa criatura sofre 1d6 pontos de dano de fogo e 1d6 pontos de dano de trevas e fica em chamas (Ref CD 17 reduz à metade e evita a condição).</p>",
+      "acao": "padrao",
+      "danos": [
+        [
+          "1d6",
+          "fogo"
+        ],
+        [
+          "1d6",
+          "trevas"
+        ]
+      ],
+      "resistencia": "Reflexos CD 17 reduz à metade e evita"
+    },
+    {
+      "poder": "Inocular Pólvora",
+      "img": "systems/tormenta20/icons/poderes/ameacas/ferrao.webp",
+      "descricao": "<p>Uma criatura atingida pelo ferrão do diabrete explosivo é inoculada com uma dose de pólvora infernal. No início do próximo turno da criatura, ela sofre 1d6 pontos de dano de fogo e 1d6 pontos de dano de trevas e fica sangrando (Fort CD 17 reduz à metade e evita a condição).</p>",
+      "danos": [
+        [
+          "1d6",
+          "fogo"
+        ],
+        [
+          "1d6",
+          "trevas"
+        ]
+      ],
+      "resistencia": "Fortitude CD 17 reduz à metade e evita"
+    },
+    {
+      "poder": "Peste Invisível",
+      "img": "systems/tormenta20/icons/magias/invisibilidade.webp",
+      "descricao": "<p>O diabrete explosivo se torna invisível (como na magia @UUID[Compendium.tormenta20.magias.Item.A3RFvVgOvODWHtvc]{Invisibilidade}) até o fim da cena ou até fazer um ataque.</p>",
+      "acao": "padrao"
+    }
+  ]
+}

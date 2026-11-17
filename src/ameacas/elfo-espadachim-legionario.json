@@ -1,0 +1,120 @@
+{
+  "nome": "Elfo Espadachim Legionário",
+  "img": "assets/tokens/elfo-espadachim-legionario.png",
+  "nd": "13",
+  "tipo": "hum",
+  "raca": "elfo",
+  "tamanho": "med",
+  "papel": "solo",
+  "atributos": {
+    "for": 1,
+    "des": 5,
+    "con": 1,
+    "int": 5,
+    "sab": 0,
+    "car": 3
+  },
+  "pv": 590,
+  "pm": 64,
+  "defesa": 44,
+  "pericias": {
+    "inic": 20,
+    "perc": 12,
+    "fort": 13,
+    "refl": 26,
+    "vont": 20,
+    "acro": 17,
+    "atle": 11,
+    "guer": 17,
+    "mist": 15
+  },
+  "deslocamento": {
+    "deslocamento": 12
+  },
+  "sentidos": [
+    "penumbra"
+  ],
+  "imunidadeOutras": "encantamento",
+  "resistenciasTexto": "evasão, imunidade a encantamento",
+  "corpoACorpo": "Florete x3 +26 (4d6+20, 17, mais 4d8 essência).",
+  "equipamento": "Florete preciso, sapato de camurça aprimorado.",
+  "tesouro": "Dobro.",
+  "notas": "<p><em>Sob a liderança de uma mulher de semblante concentrado, o grupo de elfos avança. Seus trajes parecem um dia ter sido uniformes, mas agora são um apanhado de armaduras e vestes obtidas aqui e ali. A precisão de seus movimentos, entretanto, não deixa dúvidas de que outrora foram parte de um poderoso e temido exército.</em></p><p>Durante o auge do Império de Tauron, muitos elfos buscaram guarida sob a proteção do então Deus da Força. Vivendo sob as leis imperiais, vários deles assumiram posições militares em várias áreas das legiões. E, como muitos outros membros das forças tapistanas, viram-se desprovidos tanto de seu deus quanto de seus líderes quando Tauron foi derrotado por Aharadak.</p><p>Com a subsequente queda do Império, muitos destes elfos combatentes abandonaram as legiões. Sem nação ou bandeira, e tendo presenciado a queda de mais uma divindade na qual depositaram sua fé, escolheram se tornar mercenários, colocando suas habilidades à venda sem nenhuma consideração por causa, nação ou divindade.</p><p>Combinando antigas táticas élficas com a disciplina incorporada por seus anos a serviço do Império, estes elfos combatentes são encontrados protegendo caravanas, defendendo fortalezas e executando missões para qualquer um disposto a pagar seu preço.</p>",
+  "ataques": [
+    {
+      "arma": "Florete",
+      "descricao": "florete x3",
+      "img": "systems/tormenta20/icons/itens/equipamentos/florete.webp",
+      "qtd": 3,
+      "ataque": 26,
+      "critico": "17",
+      "dano": [
+        [
+          "4d6+20",
+          "perfuracao"
+        ],
+        [
+          "4d8",
+          "essencia"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Evasão",
+      "img": "systems/tormenta20/icons/poderes/classes/especialistas/evasao.webp",
+      "descricao": "<p>Quando sofre um efeito que permite um teste de Reflexos para reduzir o dano à metade, o elfo não sofre dano algum se passar.</p>"
+    },
+    {
+      "poder": "Bloqueio Resistente",
+      "img": "systems/tormenta20/icons/itens/equipamentos/florete.webp",
+      "descricao": "<p>Uma vez por rodada, quando é atingido por um ataque, o elfo espadachim legionário pode fazer um teste de ataque com seu florete. O dano desse ataque é reduzido em um valor igual ao resultado do teste de ataque do elfo.</p>",
+      "acao": "reacao"
+    },
+    {
+      "poder": "Prontidão Marcial",
+      "img": "systems/tormenta20/icons/poderes/ameacas/investida.webp",
+      "descricao": "<p>Se o elfo for o primeiro na iniciativa, ele ganha uma ação padrão extra na primeira rodada.</p>"
+    },
+    {
+      "poder": "Ripostar",
+      "img": "systems/tormenta20/icons/itens/equipamentos/florete.webp",
+      "descricao": "<p>Quando usa Bloqueio Resistente e reduz o dano do ataque a 0, o elfo pode fazer um ataque corpo a corpo imediato contra o inimigo que o atacou (se ele estiver em alcance).</p>",
+      "acao": "reacao"
+    },
+    {
+      "poder": "Magias",
+      "img": "systems/tormenta20/icons/poderes/ameacas/magias.webp",
+      "descricao": "<p>Como um bruxo de 5º nível (CD 35, limite de PM 5). Seu foco arcano é seu florete.</p>"
+    },
+    {
+      "poder": "Armadura Arcana",
+      "acao": "reacao",
+      "custo": 2,
+      "img": "systems/tormenta20/icons/magias/armadura-arcana.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.vUsntyToyQl1TuFZ]{Armadura Arcana} (Reação, 2 PM). O elfo recebe +5 na Defesa contra o próximo ataque que sofrer.</p>"
+    },
+    {
+      "poder": "Concentração de Combate",
+      "acao": "padrao",
+      "custo": 3,
+      "img": "systems/tormenta20/icons/magias/concentracao-de-combate.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.lAsj1NrA2J6GbvDi]{Concentração de Combate} (Padrão, 3 PM). Até o fim da cena, sempre que faz um ataque, o elfo rola dois dados e usa o melhor resultado.</p>"
+    },
+    {
+      "poder": "Dissipar Magia",
+      "acao": "padrao",
+      "custo": 3,
+      "img": "systems/tormenta20/icons/magias/dissipar-magia.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.rfTGYwrXLjcIAIP5]{Dissipar Magia} (Padrão, 3 PM). O elfo escolhe uma criatura, objeto ou esfera de 3m em alcance médio e faz um teste de Misticismo. Todas as magias nesse alvo com CD igual ou menor que o resultado do teste são dissipadas.</p>"
+    },
+    {
+      "poder": "Velocidade",
+      "acao": "padrao",
+      "custo": 3,
+      "img": "systems/tormenta20/icons/magias/velocidade.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.XWEJNZMs6Wb9uUHF]{Velocidade} (Padrão, 3 PM, sustentada). O elfo pode executar uma ação padrão adicional por turno, que não pode ser usada para lançar magias.</p>"
+    }
+  ]
+}

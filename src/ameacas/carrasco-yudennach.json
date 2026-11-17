@@ -1,0 +1,104 @@
+{
+  "nome": "Carrasco Yudennach",
+  "img": "assets/tokens/carrasco-yudennach.png",
+  "nd": "6",
+  "tipo": "mon",
+  "tamanho": "gra",
+  "papel": "solo",
+  "atributos": {
+    "for": 7,
+    "des": 1,
+    "con": 5,
+    "int": -5,
+    "sab": 2,
+    "car": -2
+  },
+  "pv": 150,
+  "defesa": 25,
+  "pericias": {
+    "inic": 8,
+    "perc": 9,
+    "fort": 18,
+    "refl": 12,
+    "vont": 6,
+    "atle": 14
+  },
+  "deslocamento": {
+    "deslocamento": 12
+  },
+  "sentidos": [
+    "faro",
+    "escuro"
+  ],
+  "resistencias": {
+    "frio": "vulneravel",
+    "dano": 5
+  },
+  "resistenciasTexto": "redução de dano 5, vulnerabilidade a frio",
+  "corpoACorpo": "Mordida +16 (2d10+10) e duas garras +16 (2d6+10).",
+  "tesouro": "Padrão.",
+  "notas": "<p><em>A criatura reptiliana é semelhante a um lagarto, com um corpanzil musculoso coberto por pequenas escamas esverdeadas, quatro pernas e uma longa cauda. Suas costas são lisas e sem crista, e seu pescoço curto sustenta uma cabeça semelhante à de um urso, mas com um focinho curto e orelhas pequenas e pontudas.</em></p><p>Criado pelo Exército Purista a partir de magia e cruzamentos entre feras reptilianas e grandes ursos, o carrasco yudennach é uma monstruosidade voraz, condicionada para perseguir e matar humanoides, sobretudo não humanos. Inicialmente projetado para servir como guardiões de instalações puristas, alguns carrascos também foram empregados como poderosas armas de batalha experimentais.</p><p>Em combate, um carrasco yudennach ataca com suas garras dianteiras e sua mordida. Quando cercado por vários oponentes, usa sua cauda poderosa para varrer e afastar os inimigos. Além dessas armas, ele pode usar as pernas musculosas para executar grandes saltos, aterrissando sobre os inimigos e esmagando-os sob seu próprio peso.</p><p>Ao longo da guerra, e sobretudo após seu término, vários carrascos yudennachs escaparam do cativeiro, aprendendo a viver nos ermos selvagens. Hoje, há vários carrascos que nasceram em liberdade e jamais conheceram o interior de uma fortaleza purista. Infelizmente, estes indivíduos selvagens conservam o ódio instintivo a não humanos, incutido em sua mente pelos processos mágicos empregados em sua criação.</p>",
+  "ataques": [
+    {
+      "arma": "Mordida",
+      "descricao": "mordida",
+      "ataque": 16,
+      "dano": [
+        [
+          "2d10+10",
+          "perfuracao"
+        ]
+      ]
+    },
+    {
+      "arma": "Garras",
+      "descricao": "duas garras",
+      "qtd": 2,
+      "ataque": 16,
+      "dano": [
+        [
+          "2d6+10",
+          "corte"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Ódio Instintivo",
+      "img": "systems/tormenta20/icons/poderes/ameacas/odio-puro.webp",
+      "descricao": "<p>O carrasco yudennach recebe +2 em testes de Vontade e em rolagens de dano contra humanoides não humanos.</p>"
+    },
+    {
+      "poder": "Salto Esmagador",
+      "img": "systems/tormenta20/icons/poderes/ameacas/investida.webp",
+      "descricao": "<p>O carrasco pula e cai sobre um oponente menor que ele em alcance curto. O alvo fica caído e sofre 4d6+20 pontos de dano de impacto (Ref CD 22 reduz à metade e evita a condição).</p>",
+      "acao": "padrao",
+      "danos": [
+        [
+          "4d6+20",
+          "impacto"
+        ]
+      ],
+      "resistencia": "Reflexos CD 22 reduz à metade e evita"
+    },
+    {
+      "poder": "Varrida de Cauda",
+      "img": "systems/tormenta20/icons/poderes/ameacas/cauda.webp",
+      "descricao": "<p>O carrasco golpeia com sua cauda, atingindo todas as criaturas em um cone de 6m. Cada criatura nessa área sofre 4d6+10 pontos de dano de impacto e é arremessada 1d4 x 1,5m na direção oposta, mas pode executar uma das reações a seguir, à sua própria escolha.</p><p>• <em>Contra-atacar.</em> A criatura faz um ataque corpo a corpo contra o carrasco.<br>• <em>Escapar.</em> A criatura faz um teste de Reflexos (CD 22). Se passar, reduz o dano à metade e não é arremessada.</p>",
+      "acao": "padrao",
+      "danos": [
+        [
+          "4d6+10",
+          "impacto"
+        ],
+        [
+          "1d4",
+          "",
+          "Arremesso (x 1,5m)"
+        ]
+      ],
+      "resistencia": "Reflexos CD 22 reduz à metade"
+    }
+  ]
+}

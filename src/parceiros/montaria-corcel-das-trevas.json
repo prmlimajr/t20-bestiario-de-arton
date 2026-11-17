@@ -1,0 +1,137 @@
+{
+  "name": "Montaria: Corcel das Trevas",
+  "type": "poder",
+  "img": "assets/tokens/corcel-das-trevas.png",
+  "system": {
+    "description": {
+      "value": "<p>O corcel das trevas é um parceiro montaria (Grande) que só segue devotos de Tenebra e fornece os benefícios a seguir.</p>\n<p><strong>Iniciante</strong>: seu deslocamento muda para 12m e você recebe uma ação de movimento extra por turno (apenas para se deslocar).</p>\n<p><strong>Veterano</strong>: como acima, mas seu deslocamento muda para voo 15m e, uma vez por rodada, quando causa dano, você causa +1d6 pontos de dano de frio.</p>\n<p><strong>Mestre</strong>: como acima, mas você recebe redução de frio 10 e o dano de frio adicional aumenta para +1d8.</p>"
+    },
+    "source": "Bestiário de Arton",
+    "tipo": "geral",
+    "subtipo": "Montaria"
+  },
+  "effects": [
+    {
+      "name": "Montaria: Corcel das Trevas Iniciante",
+      "description": "<p>Deslocamento 12m.</p><p><strong>Não automatizado:</strong> ação de movimento extra por turno (apenas para se deslocar).</p>",
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.movement.walk.base",
+            "value": 12,
+            "priority": null,
+            "type": "override",
+            "phase": "initial"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Montaria: Corcel das Trevas Veterano",
+      "description": "<p>Deslocamento 12m, voo 15m.</p><p>Para o dano extra, marque o efeito \"Corcel das Trevas: +1d6 de frio\" na janela de ataque.</p><p><strong>Não automatizado:</strong> ação de movimento extra por turno (apenas para se deslocar).</p>",
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.movement.walk.base",
+            "value": 12,
+            "priority": null,
+            "type": "override",
+            "phase": "initial"
+          },
+          {
+            "key": "system.attributes.movement.fly.base",
+            "value": 15,
+            "priority": null,
+            "type": "override",
+            "phase": "initial"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Montaria: Corcel das Trevas Mestre",
+      "description": "<p>Deslocamento 12m, voo 15m, redução de frio 10.</p><p>Para o dano extra, marque o efeito \"Corcel das Trevas: +1d8 de frio\" na janela de ataque.</p><p><strong>Não automatizado:</strong> ação de movimento extra por turno (apenas para se deslocar).</p>",
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.movement.walk.base",
+            "value": 12,
+            "priority": null,
+            "type": "override",
+            "phase": "initial"
+          },
+          {
+            "key": "system.attributes.movement.fly.base",
+            "value": 15,
+            "priority": null,
+            "type": "override",
+            "phase": "initial"
+          },
+          {
+            "key": "system.tracos.resistencias.frio.bonus",
+            "value": 10,
+            "priority": null,
+            "type": "add",
+            "phase": "initial"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Corcel das Trevas: +1d6 de frio",
+      "img": "icons/svg/upgrade.svg",
+      "description": "<p>Veterano: uma vez por rodada, quando causa dano, +1d6 de dano de frio.</p>",
+      "disabled": true,
+      "transfer": true,
+      "duration": {
+        "expiry": null
+      },
+      "system": {
+        "onuse": true,
+        "abilityUse": {
+          "custo": null,
+          "types": [
+            "attack"
+          ]
+        },
+        "changes": [
+          {
+            "key": "dano",
+            "value": "1d6[frio]",
+            "priority": 0,
+            "type": "add",
+            "phase": "initial"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Corcel das Trevas: +1d8 de frio",
+      "img": "icons/svg/upgrade.svg",
+      "description": "<p>Mestre: uma vez por rodada, quando causa dano, +1d8 de dano de frio (substitui o +1d6).</p>",
+      "disabled": true,
+      "transfer": true,
+      "duration": {
+        "expiry": null
+      },
+      "system": {
+        "onuse": true,
+        "abilityUse": {
+          "custo": null,
+          "types": [
+            "attack"
+          ]
+        },
+        "changes": [
+          {
+            "key": "dano",
+            "value": "1d8[frio]",
+            "priority": 0,
+            "type": "add",
+            "phase": "initial"
+          }
+        ]
+      }
+    }
+  ]
+}
