@@ -1,0 +1,13 @@
+{
+  "name": "Espinhos Putrefatos",
+  "type": "consumivel",
+  "img": "systems/tormenta20/icons/poderes/ameacas/espinhos.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>[Tesouro Especial]</strong></p><p>Extraídos de mantícoras zumbis (CD 18 para extrair). Os espinhos contam como T$ 45 em matéria-prima para fabricar ossos de monstro.</p>"
+    },
+    "source": "Bestiário de Arton",
+    "tipo": "material",
+    "qtd": 1
+  }
+}

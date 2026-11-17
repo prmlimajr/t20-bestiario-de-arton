@@ -1,0 +1,122 @@
+{
+  "nome": "Nagah Pugilista",
+  "img": "assets/tokens/nagah-pugilista.png",
+  "nd": "9",
+  "tipo": "hum",
+  "raca": "nagah",
+  "tamanho": "med",
+  "papel": "solo",
+  "atributos": {
+    "for": 5,
+    "des": 3,
+    "con": 2,
+    "int": 0,
+    "sab": 3,
+    "car": 1
+  },
+  "pv": 230,
+  "defesa": 34,
+  "pericias": {
+    "inic": 11,
+    "perc": 11,
+    "fort": 12,
+    "refl": 18,
+    "vont": 15,
+    "acro": 11,
+    "atle": 13,
+    "enga": 11,
+    "furt": 11
+  },
+  "deslocamento": {
+    "deslocamento": 12
+  },
+  "sentidos": [
+    "penumbra"
+  ],
+  "resistenciasTexto": "evasão, resistência a veneno +5",
+  "corpoACorpo": "Quatro pancadas +27 (1d6+8, 19/x3) e cauda +27 (1d6+8, 19/x3).",
+  "tesouro": "Nenhum.",
+  "notas": "<p><em>O guerreiro nagah assume uma posição defensiva, com seus quatro braços em guarda ao redor do corpo. Ele não porta armas nem traja armaduras, mas as marcas em seus punhos e em suas escamas deixam claro que tais objetos não farão nenhuma falta para ele.</em></p><p>Apesar do estigma como devotos de Sszzaas, nagahs possuem diversas aptidões e muitos membros deste povo escolhem caminhos que não são determinados pelo Deus da Traição. Os machos, em especial, possuem uma inclinação para as mais variadas formas de combate, incluindo luta desarmada e artes marciais vindas de Tamu-ra.</p><p>Nagahs que seguem este caminho muitas vezes tornam-se lutadores profissionais, competindo nas diversas arenas de Arton. Outros embarcam em uma carreira como mercenários, aventureiros ou guarda-costas. E há, ainda, aqueles que empregam suas habilidades marciais na defesa de templos de… Sszzaas.</p>",
+  "ataques": [
+    {
+      "arma": "Pancada",
+      "descricao": "quatro pancadas",
+      "img": "systems/tormenta20/icons/poderes/ameacas/pancada.webp",
+      "qtd": 4,
+      "ataque": 27,
+      "critico": "19/x3",
+      "dano": [
+        [
+          "1d6+8",
+          "impacto"
+        ]
+      ]
+    },
+    {
+      "arma": "Cauda",
+      "descricao": "cauda",
+      "img": "systems/tormenta20/icons/poderes/ameacas/cauda.webp",
+      "ataque": 27,
+      "critico": "19/x3",
+      "dano": [
+        [
+          "1d6+8",
+          "impacto"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Evasão",
+      "img": "systems/tormenta20/icons/poderes/classes/especialistas/evasao.webp",
+      "descricao": "<p>Quando sofre um efeito que permite um teste de Reflexos para reduzir o dano à metade, o nagah não sofre dano algum se passar.</p>"
+    },
+    {
+      "poder": "Resistência a Veneno",
+      "img": "systems/tormenta20/icons/poderes/ameacas/veneno.webp",
+      "descricao": "<p>O nagah recebe +5 em testes de resistência contra veneno.</p>"
+    },
+    {
+      "poder": "Derrubar",
+      "img": "systems/tormenta20/icons/poderes/ameacas/derrubar.webp",
+      "descricao": "<p>Se o nagah pugilista acerta um ataque de cauda, pode fazer a manobra derrubar (teste +27).</p>",
+      "acao": "livre"
+    },
+    {
+      "poder": "Esquiva Elusiva",
+      "img": "systems/tormenta20/icons/poderes/ameacas/forma.webp",
+      "descricao": "<p>Quando é atingido por um ataque, o nagah pode fazer um teste de Enganação e subtrair o resultado desta rolagem do dano causado pelo ataque. Ele pode usar esta habilidade duas vezes por rodada, mas apenas uma vez contra o mesmo ataque.</p>",
+      "acao": "reacao",
+      "danos": [
+        [
+          "1d20+11",
+          "",
+          "Redução (Enganação)"
+        ]
+      ]
+    },
+    {
+      "poder": "Inocência Dissimulada",
+      "img": "systems/tormenta20/icons/poderes/ameacas/visao-ampla.webp",
+      "descricao": "<p>Uma vez por cena, o nagah pode substituir um teste de perícia por um teste de Enganação.</p>"
+    },
+    {
+      "poder": "Sequência Avassaladora",
+      "img": "systems/tormenta20/icons/poderes/ameacas/pancada.webp",
+      "descricao": "<p>Para cada ataque de pancada que acertar em uma criatura, o nagah aumenta em +1d6 o dano de seus próximos ataques de pancada contra aquela criatura neste turno. Além disso, se acertar quatro ataques de pancada em uma mesma criatura no mesmo turno, o nagah deixa essa criatura fraca.</p>",
+      "danos": [
+        [
+          "1d6",
+          "impacto",
+          "+1d6 por acerto anterior"
+        ]
+      ]
+    },
+    {
+      "poder": "Fraquezas Ofídicas",
+      "img": "systems/tormenta20/icons/poderes/ameacas/vulnerabilidade.webp",
+      "descricao": "<p>O nagah sofre 1 ponto de dano adicional para cada dado de dano de frio e –5 em testes de resistência contra Músicas de bardo.</p>"
+    }
+  ]
+}

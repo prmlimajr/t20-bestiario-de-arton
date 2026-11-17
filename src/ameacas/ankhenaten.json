@@ -1,0 +1,190 @@
+{
+  "nome": "Ankhenaten, a Rainha de Antylia",
+  "img": "assets/tokens/ankhenaten.png",
+  "nd": "18",
+  "tipo": "mon",
+  "raca": "lâmia",
+  "tamanho": "gra",
+  "papel": "solo",
+  "atributos": {
+    "for": 3,
+    "des": 3,
+    "con": 3,
+    "int": 4,
+    "sab": 5,
+    "car": 11
+  },
+  "pv": 760,
+  "pm": 135,
+  "defesa": 54,
+  "pericias": {
+    "inic": 18,
+    "perc": 20,
+    "fort": 18,
+    "refl": 26,
+    "vont": 32,
+    "conh": 21,
+    "dipl": 28,
+    "enga": 28,
+    "furt": 18,
+    "guer": 21,
+    "inti": 28,
+    "intu": 22,
+    "mist": 21,
+    "nobr": 21
+  },
+  "deslocamento": {
+    "deslocamento": 12
+  },
+  "sentidos": [
+    "escuro"
+  ],
+  "resistencias": {
+    "psiquico": 10
+  },
+  "imunidadeCondicoes": [
+    "atordoado",
+    "mental"
+  ],
+  "resistenciasTexto": "imunidade a atordoamento e efeitos mentais, redução de psíquico 10, resistência a magia +5",
+  "corpoACorpo": "Cimitarra x2 +47 (4d12+30, 17, mais 6d10 psíquico) e toque +47 (12d10+30 psíquico).",
+  "equipamento": "Bracelete cravejado de gemas, colar banhado a ouro, coroa majestosa, cimitarra formidável precisa.",
+  "tesouro": "Dobro.",
+  "notas": "<p><em>Diante de vocês está uma majestosa lâmia, um ser com corpo de leoa e tronco de mulher. Seu rosto delicado é profundamente belo. Seus olhos transmitem astúcia e nobreza. Seu sorriso é um convite sedutor. Contemplem a lendária e misteriosa Rainha de Antylia.</em></p><p>Oculta nas areias inconstantes de Halak-Tûr, a cidade de Antylia é descrita como um lugar mítico de riquezas e maravilhas inimagináveis. Uma cidade antiga, de imponentes prédios de pedra esculpida e cercada por montanhas rochosas, Antylia é uma cidade de conhecimento e sabedoria incríveis, mas também de prazeres e confortos proibidos.</p><p>Há várias histórias sobre a origem de Antylia. Entre essas, uma diz que ela foi fundada por escravizados sobreviventes da destruição de Zarkhass, enquanto outra fala sobre um sábio de terras do sul que teria encontrado o local em ruínas e dado início a uma nova comunidade. Em comum, todas as histórias concordam que a cidade se tornou um refúgio místico em meio às montanhas, um lugar secreto e cobiçado que alimenta histórias de todos os povos do de Halak-Tûr.</p><p>Atualmente, Antylia é governada pela bela e misteriosa Rainha Ankhenaten. Protagonista de histórias tão fantásticas quanto as que cercam sua cidade, Ankhenaten teria surgido após uma forte tempestade de areia. Exausta e ferida, foi acolhida pelo então regente da cidade, que se maravilhou com sua graça e sabedoria. Ankhenaten não apenas conquistou o coração do regente como, em um cruel golpe de estado, o devorou, assumindo seu cargo e usando seu poder mágico para colocar toda a cidade a seus pés.</p><p>Desde então, Ankhenaten governa de forma incontestável. Uma estudiosa das artes arcanas e dos meandros da vida palaciana, ela combina sabedoria, astúcia e magia com uma crueldade pragmática. Seus opositores são eliminados impiedosamente, e quaisquer aventureiros atraídos pelos tesouros da cidade invariavelmente encontram seu fim nos calabouços do palácio real.</p><p><strong>Magias de Lâmia</strong></p><p>Além das descritas em suas respectivas fichas, as lâmias apresentadas aqui também empregam as magias a seguir.</p><p>• @UUID[Compendium.tormenta20.magias.Item.Yzvo9SdSZX94PPNl]{Aparência Perfeita} (Padrão, 3 PM) A lâmia recebe +2 em Carisma e +5 em Diplomacia e Enganação (esse efeito não fornece PV ou PM adicionais). Ao fim de cada cena, ela pode gastar os PM da magia novamente como uma ação livre para mantê-la ativa.</p><p>• @UUID[Compendium.tormenta20.magias.Item.19donXyns0pliwj9]{Disfarce Ilusório} (Padrão, 3 PM) Até o fim da cena, a lâmia muda a própria aparência, incluindo seu equipamento, e ainda os odores e as sensações que transmite. Isso afeta altura, peso, tom de pele, cor de cabelo, timbre de voz etc. Ela recebe +20 em testes de Enganação para disfarce (Von desacredita).</p><p>• @UUID[Compendium.tormenta20.magias.Item.lJYJQFhk5oai46Ty]{Enfeitiçar} (Padrão, 1 PM) Um humanoide em alcance curto fica enfeitiçado pela lâmia até o fim da cena, ou até a lâmia ou um de seus aliados tomar uma ação hostil contra ele.</p><p>• @UUID[Compendium.tormenta20.magias.Item.vTVcrCjSdnOmcIyi]{Sono} (Padrão, 5 PM) Uma criatura em alcance curto fica inconsciente ou, se estiver envolvida em combate ou outra situação perigosa, fica exausta por 1d4+1 rodadas (nos dois casos, Von reduz para fatigado por 1d4 rodadas).</p><p>• @UUID[Compendium.tormenta20.magias.Item.s9z7z8KtujpICCZw]{Sussurros Insanos} (Padrão, 6 PM) Uma criatura em alcance curto fica confusa (Von evita).</p>",
+  "ataques": [
+    {
+      "arma": "Cimitarra",
+      "descricao": "cimitarra x2",
+      "img": "systems/tormenta20/icons/itens/equipamentos/cimitarra.webp",
+      "qtd": 2,
+      "ataque": 47,
+      "critico": "17",
+      "dano": [
+        [
+          "4d12+30",
+          "corte"
+        ],
+        [
+          "6d10",
+          "psiquico"
+        ]
+      ]
+    },
+    {
+      "arma": "Toque",
+      "descricao": "toque",
+      "img": "systems/tormenta20/icons/magias/adaga-mental.webp",
+      "ataque": 47,
+      "dano": [
+        [
+          "12d10+30",
+          "psiquico"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Resistência a Magia",
+      "img": "systems/tormenta20/icons/poderes/ameacas/resistencia-magia.webp",
+      "descricao": "<p>Ankhenaten recebe +5 em testes de resistência contra magias.</p>"
+    },
+    {
+      "poder": "Contramágica Auspiciosa",
+      "img": "systems/tormenta20/icons/magias/dissipar-magia.webp",
+      "descricao": "<p>Uma vez por rodada, quando vê uma magia ser conjurada, Ankhenaten faz uma contramágica. Se usar @UUID[Compendium.tormenta20.magias.Item.rfTGYwrXLjcIAIP5]{Dissipar Magia} para isso, ela rola dois dados e usa o melhor resultado.</p>",
+      "acao": "reacao"
+    },
+    {
+      "poder": "Drenar Sabedoria",
+      "img": "systems/tormenta20/icons/poderes/ameacas/percepcao-temporal.webp",
+      "descricao": "<p>Uma criatura atingida pelo toque de Ankhenaten fica frustrada (Von CD 49 evita). Se a criatura já estiver frustrada (mesmo por este efeito), fica esmorecida e, se já estiver esmorecida, fica inconsciente.</p>",
+      "acao": "livre",
+      "resistencia": "Vontade CD 49 evita"
+    },
+    {
+      "poder": "Jogo da Corte",
+      "img": "systems/tormenta20/icons/poderes/ameacas/visao-ampla.webp",
+      "descricao": "<p>Quando faz um teste de Diplomacia, Intuição ou Nobreza, Ankhenaten rola dois dados e usa o melhor resultado.</p>"
+    },
+    {
+      "poder": "Magia Acelerada",
+      "img": "systems/tormenta20/icons/poderes/ameacas/magias.webp",
+      "descricao": "<p>Uma vez por rodada, quando lança uma magia com execução de ação de movimento, padrão ou completa, Ankhenaten muda a execução dela para livre.</p>",
+      "acao": "livre",
+      "custo": 4
+    },
+    {
+      "poder": "Presença Opressora",
+      "img": "systems/tormenta20/icons/poderes/ameacas/aura-aterradora.webp",
+      "descricao": "<p>Quando uma criatura com um valor de Inteligência tenta machucar Ankhenaten, essa criatura deve fazer um teste de Vontade (CD 49). Se falhar, não conseguirá machucá-la, perderá a ação e sofrerá 6d12 pontos de dano psíquico. Ankhenaten só pode usar esta habilidade uma vez por criatura na mesma cena.</p>",
+      "acao": "reacao",
+      "danos": [
+        [
+          "6d12",
+          "psiquico"
+        ]
+      ],
+      "resistencia": "Vontade CD 49 evita"
+    },
+    {
+      "poder": "Orgulho",
+      "img": "systems/tormenta20/icons/poderes/ameacas/comandar.webp",
+      "descricao": "<p>Uma vez por cena, quando faz um teste de perícia, Ankhenaten soma o dobro de seu Carisma (+22) nesse teste.</p>",
+      "acao": "reacao"
+    },
+    {
+      "poder": "Magias",
+      "img": "systems/tormenta20/icons/poderes/ameacas/magias.webp",
+      "descricao": "<p>Como uma feiticeira de 18º nível (CD 49).</p>"
+    },
+    {
+      "poder": "Adaga Mental",
+      "acao": "padrao",
+      "custo": 17,
+      "img": "systems/tormenta20/icons/magias/adaga-mental.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.xfYTGGsdd81Pa0AN]{Adaga Mental} (Padrão, 17 PM). Uma criatura em alcance curto sofre 10d6 pontos de dano psíquico e fica atordoada por 1 rodada (Von reduz o dano à metade e evita a condição). Ankhenaten lança a magia sem gesticular ou pronunciar palavras e a adaga é invisível; se o alvo falhar no teste de resistência, não percebe que foi alvo da magia. Uma criatura só pode ser atordoada por esta magia uma vez por cena.</p>",
+      "danos": [
+        [
+          "10d6",
+          "psiquico"
+        ]
+      ],
+      "resistencia": "Vontade CD 49 reduz à metade e evita"
+    },
+    {
+      "poder": "Dissipar Magia",
+      "acao": "padrao",
+      "custo": 3,
+      "img": "systems/tormenta20/icons/magias/dissipar-magia.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.rfTGYwrXLjcIAIP5]{Dissipar Magia} (Padrão, 3 PM). Ankhenaten escolhe uma criatura, objeto ou esfera de 3m em alcance médio e faz um teste de Misticismo. Todas as magias nesse alvo com CD igual ou menor que o resultado do teste são dissipadas.</p>"
+    },
+    {
+      "poder": "Imagem Espelhada",
+      "acao": "padrao",
+      "custo": 11,
+      "img": "systems/tormenta20/icons/magias/imagem-espelhada.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.secWy6zyYamo3Xnx]{Imagem Espelhada} (Padrão, 11 PM). Cinco cópias ilusórias de Ankhenaten surgem ao seu redor, concedendo +14 na Defesa. Cada vez que um ataque erra Ankhenaten, uma das cópias desaparece e o bônus na Defesa diminui em 2, mas a criatura atacante fica ofuscada por 1 rodada.</p>"
+    },
+    {
+      "poder": "Toque Vampírico",
+      "acao": "padrao",
+      "custo": 13,
+      "img": "systems/tormenta20/icons/magias/toque-vampirico.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.6KvwDBikOdbzhRGv]{Toque Vampírico} (Padrão, 13 PM). Ankhenaten faz um ataque corpo a corpo. Se acertar, além do dano normal, causa 14d6 pontos de dano de trevas e recupera pontos de vida em valor igual à metade desse dano de trevas.</p>",
+      "danos": [
+        [
+          "14d6",
+          "trevas"
+        ]
+      ]
+    },
+    {
+      "poder": "Velocidade",
+      "acao": "padrao",
+      "custo": 10,
+      "img": "systems/tormenta20/icons/magias/velocidade.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.XWEJNZMs6Wb9uUHF]{Velocidade} (Padrão, 10 PM, sustentada). Ankhenaten pode executar uma ação padrão adicional por turno.</p>"
+    }
+  ]
+}

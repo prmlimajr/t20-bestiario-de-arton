@@ -1,0 +1,86 @@
+{
+  "nome": "Roca",
+  "img": "assets/tokens/roca.png",
+  "nd": "11",
+  "tipo": "ani",
+  "tamanho": "col",
+  "papel": "solo",
+  "atributos": {
+    "for": 9,
+    "des": 3,
+    "con": 6,
+    "int": -4,
+    "sab": 2,
+    "car": 0
+  },
+  "pv": 550,
+  "defesa": 39,
+  "pericias": {
+    "inic": 12,
+    "perc": 13,
+    "fort": 11,
+    "refl": 24,
+    "vont": 18
+  },
+  "deslocamento": {
+    "deslocamento": 9,
+    "voo": 36
+  },
+  "sentidos": [
+    "penumbra"
+  ],
+  "resistencias": {
+    "eletricidade": 20
+  },
+  "resistenciasTexto": "redução de eletricidade 20",
+  "corpoACorpo": "Mordida +35 (4d8+20) e duas garras +35 (4d10+20).",
+  "tesouro": "Especial (veja Ninhos de Rocas).",
+  "notas": "<p><em>A ave que desponta no horizonte é gigantesca, com a aparência de uma enorme águia de penas castanhas e vermelhas. Seus dedos poderosos terminam em garras longas e afiadas que certamente parecem capazes de erguer presas tão grandes quanto um elefante.</em></p><p>Infelizmente para os artonianos, rocas são aves de rapina capazes de predar praticamente qualquer tipo de criatura. Sua dieta inclui gado, cavalos e até mesmo presas grandes como elefantes. Há relatos de rocas que vivem no litoral e se aventuram em alto-mar para caçar baleias e pequenas embarcações. Qualquer que seja seu tamanho ou natureza, todas essas presas são carregadas até o ninho da roca, onde serão devoradas e seus restos, muitas vezes, incorporados ao próprio ninho.</p><p>Ninhos de rocas são localizados em lugares elevados e amplos — grandes montanhas, como os picos mais altos das Sanguinárias costumam ser seu território preferido. Eles costumam ser amplos e repletos de ossadas, partes de embarcações e carroças, e restos mortais de criaturas menores; muitas vezes acompanhados de seus pertences. Em alguns casos, enxames de pestes ou pequenos predadores podem conviver com a roca em seu ninho; essas criaturas são muito pequenas para servir como presas, mas ajudam a manter o ninho limpo e seguro.</p><p><strong>Ninhos de Rocas</strong></p><p>Embora uma roca seja um desafio para aventureiros muito experientes, explorar seu ninho (principalmente quando a criatura está distante) pode ser um objetivo para aventureiros não tão veteranos.</p><p>Um típico ninho de roca é semelhante a um ninho de passarinho comum — uma grande “cesta” de galhos e folhagens entrelaçadas. A diferença é que ele é gigantesco, podendo ocupar a área de um pequeno castelo. Suas paredes são formadas por troncos, vinhas grossas e destroços de carroças, barcos e até pequenas casas, e seu interior é marcado por ossadas, pedaços de couro e carapaças, enormes bolas de pelo e pilhas de destroços não utilizados. Verdadeiras galerias e corredores se formam pela estrutura do ninho, muitas vezes habitadas por criaturas menores que vivem em comunhão com a roca. Aventureiros que resolvam explorar um desses ninhos podem se ver cercados por um enxame de ratos, insetos gigantes ou mesmo um grupo de humanoides.</p><p>Por todos os riscos envolvidos, um ninho de roca pode guardar vários tesouros, misturados aos restos mortais de suas presas, ou organizados de forma cerimonial por eventuais criaturas inteligentes que co-habitem o ninho.</p><p>Você pode usar as tabelas a seguir para determinar o tipo de tesouro encontrado em um ninho de roca e quais criaturas vivem nele (você pode substituir as criaturas listadas por outras mais adequadas à sua aventura, ou pode criar suas próprias tabelas de ninhos).</p><table><tr><th>1d8</th><th>Habitante</th><th>ND do Encontro</th></tr><tr><td>1</td><td>Orc mutante (<em>Tormenta20</em>, p. 286)</td><td>5</td></tr><tr><td>2</td><td>Serpe (<em>Tormenta20</em>, p. 293)</td><td>5</td></tr><tr><td>3</td><td>Enlouquecido rubro (p. 69)</td><td>6</td></tr><tr><td>4</td><td>Urso coruja x2 (<em>Tormenta20</em>, p. 293)</td><td>6</td></tr><tr><td>5</td><td>Amálgama esqueleto (p. 74)</td><td>7</td></tr><tr><td>6</td><td>Ameba gigante (p. 22)</td><td>7</td></tr><tr><td>7</td><td>Mantícora x2 (<em>Tormenta20</em>, p. 287)</td><td>8</td></tr><tr><td>8</td><td>Ankthyr (p. 24)</td><td>8</td></tr></table><table><tr><th>1d8</th><th>Tesouro</th></tr><tr><td>1</td><td>Metade</td></tr><tr><td>2-3</td><td>Padrão</td></tr><tr><td>4</td><td>Dobro de dinheiro e padrão para itens</td></tr><tr><td>5</td><td>Padrão de dinheiro e dobro para itens</td></tr><tr><td>6</td><td>Dobro</td></tr></table>",
+  "ataques": [
+    {
+      "arma": "Mordida",
+      "descricao": "mordida",
+      "img": "icons/creatures/abilities/mouth-teeth-long-red.webp",
+      "ataque": 35,
+      "dano": [
+        [
+          "4d8+20",
+          "perfuracao"
+        ]
+      ]
+    },
+    {
+      "arma": "Garras",
+      "descricao": "duas garras",
+      "qtd": 2,
+      "ataque": 35,
+      "dano": [
+        [
+          "4d10+20",
+          "corte"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Agarrar Aprimorado",
+      "img": "systems/tormenta20/icons/poderes/ameacas/agarrar.webp",
+      "descricao": "<p>Se a roca acerta um ataque de garra, pode fazer a manobra agarrar como uma ação livre (teste +40).</p>",
+      "acao": "livre"
+    },
+    {
+      "poder": "Investida Aérea",
+      "img": "systems/tormenta20/icons/poderes/ameacas/investida.webp",
+      "descricao": "<p>A roca faz uma investida voando e ataca com suas duas garras. Os dois ataques recebem o bônus de +2 da investida e, se ambos acertarem a mesma criatura, cada um causa +2d10 pontos de dano.</p>",
+      "acao": "completa",
+      "danos": [
+        [
+          "2d10",
+          "corte",
+          "Dano extra (por garra)"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "nome": "Coletor do Pesadelo",
+  "img": "assets/tokens/coletor-do-pesadelo.png",
+  "nd": "6",
+  "tipo": "con",
+  "tamanho": "med",
+  "papel": "solo",
+  "atributos": {
+    "for": 2,
+    "des": 4,
+    "con": 2,
+    "int": -2,
+    "sab": 2,
+    "car": -2
+  },
+  "pv": 160,
+  "defesa": 25,
+  "pericias": {
+    "inic": 9,
+    "perc": 9,
+    "fort": 6,
+    "refl": 18,
+    "vont": 12,
+    "atle": 7,
+    "furt": 9,
+    "sobr": 7
+  },
+  "deslocamento": {
+    "deslocamento": 15
+  },
+  "sentidos": [
+    "faro",
+    "cegas",
+    "escuro"
+  ],
+  "sentidosExtra": "percepção às cegas (médio)",
+  "resistencias": {
+    "acido": "imune",
+    "eletricidade": "imune",
+    "trevas": "imune",
+    "dano": 5
+  },
+  "imunidadeCondicoes": [
+    "mental",
+    "medo"
+  ],
+  "imunidadeOutras": "encantamento",
+  "resistenciasTexto": "cura acelerada 5, imunidade a ácido, efeitos mentais, eletricidade, encantamento, medo e trevas, redução de dano 5/mágico",
+  "corpoACorpo": "Mordida +18 (4d8+10) e cauda-tentáculo +18 (1d8+10 mais 4d6 psíquico).",
+  "tesouro": "Nenhum.",
+  "notas": "<p>Em algum lugar além de Arton, existe um mundo desolado, de vastas planícies metálicas e florestas de troncos calcificados, onde as únicas formas de vida são feitas de metal, ossos e trevas. Neste reino terrível, a paisagem é dominada por inúmeras forjas oníricas, onde são construídos exércitos de criaturas necromecânicas. Seres assustadores, fabricados para um único propósito: colher os sonhos dos mortais e usá-los para ampliar o mundo onde vivem.</p><p>A verdade é que mais especulações do que fatos cercam o Reino dos Pesadelos. Não há relatos de aventureiros e exploradores que tenham conseguido entrar neste lugar sombrio. As poucas informações concretas sobre este domínio foram obtidas por meio do estudo das criaturas do pesadelo ou de vislumbres surgidos mediante poderes divinatórios. Entretanto, nem mesmo estes relatos e descobertas são precisos; aqueles que entram em contato com o Reino dos Pesadelos inevitavelmente têm seus próprios sonhos roubados e substituídos por visões terríveis, que podem levar à insanidade ou mesmo à morte.</p><p>A própria origem do Reino dos Pesadelos e de seus habitantes é um mistério distante de ser desvendado. Textos quase incompreensíveis encontrados no estúdio de um mago valkariano desaparecido citam um suposto acúmulo de energia negativa, ou de resquícios de Drashantyr, liberados quando Kallyadranoch foi punido como fator preponderante. Da mesma forma, não há consenso entre estudiosos, seja na Academia Arcana ou fora, sobre sua localização. Alguns dizem que se trata de uma região isolada dentro de Sombria, o reino de Tenebra, enquanto outros teorizam que estaria em uma dimensão paralela. A hipótese mais ousada estabelece sua localização em um planeta no Éter Divino, oculto no lado escuro de algum outro mundo dos deuses.</p><p>Por trás do surgimento do Reino dos Pesadelos está um fato pouco estudado, mas fundamental: as criações oníricas dos mortais — seus sonhos e pesadelos — não só possuem força, mas, por vezes, também vontade própria. O Reino dos Pesadelos pode ser uma prova fundamental disso; sua formação teria ocorrido lentamente, conforme pesadelos vagavam pelo Éter Divino e se reuniam em um ponto do espaço vazio. Como ou por que isso aconteceu é um mistério que talvez nem mesmo os deuses sejam capazes de elucidar. O fato é que, conforme estes pesadelos se acumulavam, um novo mundo surgiu e deu a eles substância, forma e, finalmente, vida.</p><p><strong>Habitantes do Pesadelo</strong></p><p>Quando o Reino dos Pesadelos surgiu, os primeiros a surgir em seu interior foram os misteriosos Mestres do Pesadelo. Quatro seres de energia onírica encarnada personificavam a natureza dos pesadelos mais comuns entre os mortais: desastre, fracasso, perseguição e morte. Servindo como pilares do Reino dos Pesadelos, passaram a influenciar a forma como o mundo crescia e se desenvolvia. Para auxiliá-los, criaram lacaios, usando a mesma força que formava seus próprios corpos. Mais tarde, esses lacaios viriam a ser chamados em Arton de soldados do pesadelo.</p><p>Cada um desses soldados construídos a partir de energia onírica tem o corpo de um grande cão esquelético, com ossos de aspecto metálico cobertos por pele e carne translúcidas, que mudam de tonalidade conforme o ambiente ao seu redor. A cabeça é semelhante a um crânio humano, o que os torna ainda mais perturbadores. Como armas, os soldados do pesadelo empregam sua poderosa mordida e uma longa cauda flexível como um tentáculo. Existem quatro tipos de soldados do pesadelo. Três deles surgiram pelas mãos dos Mestres do Pesadelo e são criados até hoje. O quarto tipo, os coletores, apareceu apenas após a ascensão de Judara, a Soberana dos Pesadelos, e possuem a capacidade única de roubar os sonhos dos mortais.</p><p>Os soldados mais comuns são os zangões, que funcionam como tropas de infantaria. Cada zangão possui uma cauda com uma função específica, própria para um papel em combate. Estas são também as criaturas do pesadelo mais numerosas, frequentemente encontradas em pequenos grupos de três a oito indivíduos.</p><p>Mais poderosos que os zangões são os ceifadores. Inteligentes, têm a função de liderar outros soldados e organizar a defesa das torres e outras estruturas de seu mundo. Ao contrário dos zangões, possuem apenas um tipo de cauda, que ostenta uma afiadíssima lâmina biometálica.</p><p>O terceiro tipo entre os soldados originais é o dos polivalentes, os brutamontes das tropas do pesadelo. Grandes como cavalos, possuem quatro caudas, cada uma de um dos tipos existentes entre os zangões. Costumam acompanhar grupos de zangões sob a liderança de um ceifador, mas podem ser encontrados sozinhos, protegendo estruturas do Reino dos Pesadelos ou, em certas ocasiões, causando destruição em incursões a Arton.</p><p>Por fim, existem os coletores, soldados que não foram criados pelos Mestres, mas sim por Judara, a Soberana dos Pesadelos. Estes seres possuem uma cauda especializada única, capaz de se conectar à mente de vítimas inconscientes e roubar seus sonhos, deixando para trás apenas os mais terríveis pesadelos que a mente daquela criatura é capaz de criar. Quando participam de uma incursão para roubar sonhos, coletores costumam ser acompanhados por outros tipos de soldados, sobretudo grupos de zangões.</p><p><strong>Seres do Pesadelo em Arton</strong></p><p>O objetivo das incursões é, na falta de uma descrição melhor, caçar sonhos e levá-los de volta para seu mundo, onde servirão de energia para os planos de Judara. Embora as motivações da Soberana sejam claras — aumentar o poder de seu reino —, o motivo exato de seu interesse não é totalmente compreendido. Talvez, por ter sido mortal, ela entenda a importância dos sonhos em um mundo repleto de heróis, assim como a amplitude quase infinita deste poder.</p><p>Criaturas do pesadelo encontradas em Arton geralmente têm atacado povoados isolados. Ao contrário de Ferren, que busca manipular os sonhos de seus súditos de forma sutil, as criaturas do pesadelo empregam uma abordagem mais violenta, semelhante a predadores vorazes. Entretanto, Judara possui a inteligência e racionalidade que faltava aos Mestres do Pesadelo e combina incursões selvagens com missões discretas para reunir informações.</p><p>As consequências do roubo dos sonhos de um mortal são profundas. A vítima perde o desejo de perseguir seus objetivos em vida, tornando-se lentamente um indivíduo sem vontades e ambições. Além disso, o que antes era ocupado pelos sonhos roubados dá espaço a pesadelos terríveis. Estudiosos, mesmo que ainda sem uma compreensão completa do processo, acreditam que os pesadelos incessantes que passam a povoar a mente da vítima são o que resta em uma mente sem sonhos, como ocupantes indesejados de uma casa vazia. Outros postulam que isso faça parte de algum plano ainda mais profundo. Cada pesadelo seria uma ideia sinistra incubada, se desenvolvendo lentamente até o momento de eclodir. Ainda não há provas de que isso possa acontecer, e a maioria das pessoas que tem conhecimento de casos assim torce para que elas jamais venham a existir.</p><p>Há, pelo menos, uma boa notícia (por enquanto): devido à distância e à natureza do Reino dos Pesadelos, o envio de criaturas até Arton é um processo complexo, que não parece poder ser feito com frequência. Por isso, atualmente as incursões de Soldados do Pesadelo são pouco frequentes. Ainda assim, talvez seja apenas uma questão de tempo até que Judara contorne essa dificuldade e transforme Arton em um verdadeiro campo de caça para seus lacaios.</p><p><strong>Natureza do Pesadelo</strong></p><p>Cada soldado do pesadelo foi criado por um dos quatro Mestres do Pesadelo e possui uma habilidade relacionada à natureza desse Mestre. Para determinar essa habilidade, escolha entre as descritas no poder “Natureza do Pesadelo” ou role 1d4 para defini-la aleatoriamente. A CD para resistir a estas habilidades, quando houver, será igual à CD da habilidade Mente Alienígena do pesadelo.</p><p><strong>Sonhos Roubados</strong></p><p>Uma criatura roubada por um coletor perde a capacidade de manifestar seu maior sonho. Isso é algo que vai além do sono da vítima, afetando sua capacidade de desejar e almejar o objeto desse sonho — o mundo onírico não é apenas um refúgio da mente em repouso, mas também a fonte de muitas das forças que impulsionam as pessoas frente aos desafios da vida.</p><p>Quando um personagem perder um sonho desta forma, peça ao jogador que descreva o sonho perdido. Isso pode ser algo já estabelecido na campanha, como um objetivo que ele esteja buscando, ou pode ser uma nova revelação sobre o passado ou as metas do personagem. A partir dessa descrição, decida o tipo de sonho perdido entre os descritos a seguir (ao fazer isso, converse com o jogador e permita que ele participe da escolha).</p><p>Um sonho perdido é esquecido pelo personagem, como se ele nunca tivesse almejado aquilo. O objeto do sonho em si não é esquecido, apenas qualquer interesse que o personagem tivesse nele (alguém que sonha com uma pessoa amada não vai esquecer dela, apenas de seu amor por ela). Além disso, o personagem passa a sofrer com pesadelos recorrentes relacionados ao sonho perdido.</p><p>É possível recuperar um sonho roubado. O primeiro passo é identificar esse sonho. Talvez os demais membros do grupo percebam o que aconteceu com o personagem. Ou o grupo pode consultar um conjurador ou curandeiro para identificar o que há de errado com seu companheiro. Depois disso, o grupo deverá encontrar uma forma de recuperar o sonho. Isso pode envolver levar o personagem até um lugar capaz de despertar suas memórias ou obter o favor de uma criatura que detenha poder suficiente para devolver o que foi perdido. A forma exata para recuperar cada sonho fica a critério do mestre, mas o ideal é que seja o objetivo de uma aventura específica.</p><p>Recuperar um sonho significa o retorno de suas lembranças e o fim do pesadelo associado. Além disso, ao relembrar o sonho, o personagem recebe também uma fração de seu poder. Há força nos sonhos, e resgatá-los os fortalece ainda mais.</p><p><em>Sonho de Amor.</em> Você sonhava em ser amado. Isso pode significar conquistar um grande amor ou receber a aprovação e admiração de um grupo de pessoas, como os membros de uma organização ou os habitantes de uma comunidade. <strong>Pesadelo:</strong> seus sonhos são repletos de momentos de solidão, onde você percebe que não tem ninguém no mundo. Seu total de PM diminui em um valor igual ao seu nível. <strong>Recuperação:</strong> ao recuperar seu sonho de amor, você recebe +1 PM por cada dois níveis.</p><p><em>Sonho de Aprendizado.</em> Você sonhava em aprender uma nova habilidade, como um ofício, técnica de combate ou passatempo. <strong>Pesadelo:</strong> você sofre pesadelos de incompetência, onde suas capacidades nunca parecem ser o suficiente. Escolha três perícias em que seja treinado; você sofre uma penalidade de –2 nas perícias escolhidas. <strong>Recuperação:</strong> ao recuperar seu sonho de aprendizado, você recebe um bônus de +2 nas perícias afetadas pelo pesadelo.</p><p><em>Sonho de Destruição.</em> Você sonhava em destruir algo ou alguém. Talvez seu objetivo fosse eliminar um grande vilão, destruir um item amaldiçoado ou se vingar de um inimigo do passado. <strong>Pesadelo:</strong> em seus pesadelos, o objeto de seu sonho perdido aparece constantemente para trazer sua ruína. Seu total de PV diminui em um valor igual ao seu nível. <strong>Recuperação:</strong> ao recuperar um sonho de destruição, você recebe +1 PV por nível.</p><p><em>Nenhum Sonho.</em> É possível que o personagem não tenha nenhum sonho realmente importante. Nesse caso, o ceifador rouba fragmentos de sonhos menores; o personagem não “esquece” nada, mas seu sono é perturbado por pesadelos recorrentes. Sua recuperação de PV e PM diminui em um passo. Este efeito pode ser removido pela magia Purificação com o aprimoramento que permite soltar um item amaldiçoado ou por qualquer efeito que remova maldições (mas você não ganha nada extra por isso).</p><p><strong>Redução de dano:</strong> 5/mágico.</p>",
+  "ataques": [
+    {
+      "arma": "Mordida",
+      "descricao": "mordida",
+      "img": "icons/creatures/abilities/mouth-teeth-long-red.webp",
+      "ataque": 18,
+      "dano": [
+        [
+          "4d8+10",
+          "perfuracao"
+        ]
+      ]
+    },
+    {
+      "arma": "Cauda-tentáculo",
+      "descricao": "cauda-tentáculo",
+      "img": "icons/creatures/tentacles/tentacles-octopus-black-pink.webp",
+      "ataque": 18,
+      "dano": [
+        [
+          "1d8+10",
+          "impacto"
+        ],
+        [
+          "4d6",
+          "psiquico"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Cura Acelerada",
+      "img": "systems/tormenta20/icons/magias/curar-ferimentos.webp",
+      "descricao": "<p>No início de cada um de seus turnos, o coletor recupera 5 pontos de vida.</p>",
+      "danos": [
+        [
+          "5",
+          "curapv",
+          "Cura acelerada"
+        ]
+      ]
+    },
+    {
+      "poder": "Agarrar Aprimorado",
+      "img": "systems/tormenta20/icons/poderes/ameacas/agarrar.webp",
+      "descricao": "<p>Se o coletor acerta um ataque de cauda-tentáculo, pode fazer a manobra agarrar como uma ação livre (teste +20).</p>",
+      "acao": "livre"
+    },
+    {
+      "poder": "Mente Alienígena",
+      "img": "systems/tormenta20/icons/poderes/ameacas/imunidade-aberrante.webp",
+      "descricao": "<p>Quando uma criatura usa um efeito mental ou de encantamento contra o coletor, ela é atingida por um terrível choque de retorno. A criatura sofre 6d6 pontos de dano psíquico e fica atordoada por 1 rodada e abalada (Von CD 24 reduz à metade e evita as condições).</p>",
+      "acao": "reacao",
+      "danos": [
+        [
+          "6d6",
+          "psiquico"
+        ]
+      ],
+      "resistencia": "Vontade CD 24 reduz à metade e evita"
+    },
+    {
+      "poder": "Roubar Sonhos",
+      "img": "systems/tormenta20/icons/poderes/ameacas/percepcao-temporal.webp",
+      "descricao": "<p>No início de cada um de seus turnos, o coletor do pesadelo drena os sonhos de uma criatura que esteja agarrando. A vítima perde 1d4 PM (ou o dobro disso se estiver inconsciente) e fica alquebrada. Se já estiver alquebrada, em vez disso ela perde um de seus sonhos (veja o quadro Sonhos Roubados na biografia; Von CD 24 reduz a perda à metade e evita a condição ou perda do sonho).</p>",
+      "acao": "livre",
+      "danos": [
+        [
+          "1d4",
+          "",
+          "PM perdidos"
+        ]
+      ],
+      "resistencia": "Vontade CD 24 reduz à metade e evita"
+    },
+    {
+      "poder": "Natureza do Pesadelo",
+      "img": "systems/tormenta20/icons/poderes/ameacas/percepcao-temporal.webp",
+      "descricao": "<p>O coletor possui uma habilidade relacionada à natureza do Mestre do Pesadelo que o criou. Escolha uma das opções abaixo ou role 1d4 (CD 24).</p><p>1) <em>Pesadelo de Desastre.</em> Uma criatura atingida pela mordida fica confusa (Vontade CD 24 evita; uma criatura só pode ficar confusa por esta habilidade uma vez por cena).</p><p>2) <em>Pesadelo de Fracasso.</em> Uma criatura atingida pela mordida perde 1d6 PM e fica esmorecida (Vontade CD 24 evita).</p><p>3) <em>Pesadelo de Perseguição.</em> Uma criatura atingida pela mordida deve fazer um teste de Vontade (CD 24). Se falhar, até o fim da cena ela considera seus aliados como seus inimigos para efeitos de como suas habilidades interagem com eles.</p><p>4) <em>Pesadelo de Morte.</em> Uma criatura atingida pela mordida não pode recuperar pontos de vida por 1 rodada.</p>",
+      "danos": [
+        [
+          "1d4",
+          "",
+          "Natureza (1d4)"
+        ],
+        [
+          "1d6",
+          "",
+          "PM perdidos (Fracasso)"
+        ]
+      ],
+      "resistencia": "Vontade CD 24 evita"
+    }
+  ]
+}

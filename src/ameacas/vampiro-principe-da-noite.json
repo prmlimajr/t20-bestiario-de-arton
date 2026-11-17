@@ -1,0 +1,175 @@
+{
+  "nome": "Vampiro Príncipe da Noite",
+  "img": "assets/tokens/vampiro-principe-da-noite.png",
+  "nd": "16",
+  "tipo": "mor",
+  "raca": "vampiro",
+  "tamanho": "med",
+  "sentidos": [
+    "escuro"
+  ],
+  "papel": "solo",
+  "atributos": {
+    "for": 6,
+    "des": 5,
+    "con": 5,
+    "int": 3,
+    "sab": 3,
+    "car": 7
+  },
+  "pv": 750,
+  "defesa": 54,
+  "pericias": {
+    "inic": 17,
+    "perc": 15,
+    "fort": 16,
+    "refl": 30,
+    "vont": 24,
+    "dipl": 21,
+    "enga": 19,
+    "furt": 27,
+    "nobr": 15
+  },
+  "deslocamento": {
+    "deslocamento": 18,
+    "escalada": 18
+  },
+  "resistencias": {
+    "dano": 10
+  },
+  "resistenciasTexto": "cura acelerada 10, redução de dano 10/luz",
+  "corpoACorpo": "Espada longa x2 +46 (2d8+25, 17, mais 2d10 trevas) e garra x2 +46 (2d6+25 mais 2d10 trevas).",
+  "equipamento": "Armadura completa delicada de mitral, espada longa precisa de mitral, tabardo aprimorado.",
+  "tesouro": "Dobro.",
+  "notas": "<p><em>Cercados por mitos e lendas, vampiros estão entre os mais enigmáticos e, de certa forma, admirados mortos-vivos de Arton.</em></p><p>Sua gênese neste mundo não é inteiramente conhecida; há diversas lendas a respeito do primeiro vampiro de Arton, muitas das quais associam seu surgimento a um evento de traição a Azgher, uma vingança cruel e um juramento de sangue a Tenebra. A verdade, provavelmente, só é conhecida por esse primeiro vampiro, seja ele quem for.</p><p>Vampiros são mortos-vivos que extraem suas forças, e seu poder, do sangue das vítimas. Eles são criados quando um mortal tem o sangue drenado por outro vampiro, até morrer, e é então alimentado com o sangue desse vampiro. Vampiros poderosos fazem isso para estabelecer uma prole sob seu comando, enquanto vampiros inexperientes às vezes o fazem por acidente. Mais de um vampiro recém-transformado matou um ente querido por descuido, transformando-o em outro vampiro em um ato de desespero.</p><p>Vampiros recém-transformados, também chamados de neófitos, muitas vezes carecem da sofisticação e fidalguia daqueles mais experientes. Guiados primariamente por sua fome de sangue, esses indivíduos muitas vezes passam seus primeiros anos, ou décadas, como vampiros vivendo em cavernas e ruínas isoladas, predando em vilarejos e comunidades próximas. Se sobreviverem, poderão aprender o suficiente para se tornar verdadeiros senhores da noite.</p><p>A natureza da transformação de um vampiro guarda também o potencial para inúmeros poderes. Vampiros mais experientes aprendem os segredos de sua condição e, com isso, conseguem desenvolver habilidades sobre-humanas variadas. Isso, entretanto, vem com um preço: conforme se aprofunda em seus poderes sombrios, o vampiro gradualmente perde sua humanidade, tornando-se mais e mais a fera amaldiçoada que reside em seu coração.</p><p>Vampiros são particularmente comuns em Aslothia, onde se apresentam sob um verniz de nobreza e ocupam posições de destaque na aristocracia local. Muitos são senhores de terras, “colhendo” seu alimento entre seus vassalos. De fato, no imaginário artoniano, a figura do vampiro padrão está bastante associada aos fidalgos vampiros aslothianos. Mas esses não são os únicos vampiros a assombrar as noites de Arton. Estes filhos das trevas podem ser encontrados em muitas outras partes do mundo, frequentemente adaptados à cultura e geografia local, muitas vezes até passando-se por cidadãos comuns (ainda que reclusos). No Império de Tauron, por exemplo, há relatos velados de um círculo de nobres minotauros vampiros, enquanto nas Uivantes lendas falam de vampiros que caminham de dia, protegidos do sol pelas inclementes nevascas da região. E até mesmo em Halak-Tur, onde o olhar de Azgher é ainda mais vigilante, existem vampiros habitando as cavernas montanhosas ou vivendo como nômades em caravanas que viajam apenas à noite.</p><p><strong>Redução de dano:</strong> 10/luz.</p><p><strong>Personagens Vampiros</strong></p><p>Vampiros são considerados monstros terríveis, predadores que espreitam à noite em busca do sangue de outras pessoas. E, embora essa descrição possa se aplicar à maioria dessas criaturas, a verdade é que nem todos que sofrem a maldição do vampirismo sucumbem a seus instintos ferais. Alguns, de fato, lutam contra sua nova natureza, apegando-se à sua humanidade e buscando uma existência o mais próximo possível de sua vida anterior.</p><p>Personagens vampiros são indivíduos que foram transformados no início de suas carreiras ou que, por alguma razão, perderam suas memórias como parte da transformação. Alguns buscam uma vida de aventuras como forma de compensar os pecados causados por sua fome, ou como um caminho para dominar sua fera interior ou mesmo encontrar uma cura para sua condição.</p><p><strong>Carisma +1, +1 em dois atributos (exceto Constituição), Constituição –1.</strong></p><p><strong>Bênçãos Vampíricas.</strong> Escolha um dos poderes a seguir. Você pode escolher outros desses poderes no lugar de poderes de classe.</p><p>• <em>Cura Acelerada.</em> No início de cada um dos seus turnos, você pode gastar 1 PM para recuperar 5 PV. A partir do 11º nível a cura aumenta para 10 PV por PM gasto.</p><p>• <em>Dominação Vampírica.</em> Você pode gastar uma ação completa e 3 PM para sussurrar palavras de controle para um humanoide em alcance curto. O alvo fica confuso, enfeitiçado ou fascinado até o final da cena ou perde suas memórias da última hora, à sua escolha (Vontade CD Car evita). Uma criatura só pode ser alvo desta habilidade uma vez por cena. Pré-requisito: Presença Majestosa.</p><p>• <em>Drenar Sangue.</em> Você pode gastar uma ação padrão para drenar sangue de uma criatura viva que esteja agarrando. Você causa 2d6 pontos de dano de perfuração por patamar e recupera a mesma quantidade de PV. Drenar sangue dessa forma não conta como se alimentar.</p><p>• <em>Forma de Lobo.</em> Você pode gastar uma ação padrão e 3 PM para se transformar em um lobo. Isso funciona como o efeito básico da Forma Selvagem Feroz (@UUID[Compendium.tormenta20.poderes.Item.vfR7gweTOfgnna8G]{Forma Selvagem}, <em>Tormenta20</em>, p. 63); exceto que você se torna Médio (se já não for), recebe +3m em seu deslocamento e a arma natural recebida é uma mordida que causa 1d6 pontos de dano (se já tiver uma mordida, em vez disso, o dano dela aumenta em um passo).</p><p>• <em>Forma de Morcego.</em> Você pode gastar uma ação padrão e 3 PM para se transformar em um morcego. Isso funciona como o efeito básico da Forma Selvagem Veloz (<em>Tormenta20</em>, p. 63); exceto que você se torna Minúsculo, seu deslocamento se torna 3m, você recebe deslocamento de voo 12m e não recebe uma arma natural. Por fim, a transformação termina caso você faça um ataque, lance uma magia ou sofra dano.</p><p>• <em>Garras.</em> Suas mãos são duas armas naturais de garras (dano 1d6 cada, crítico x2, corte). Uma vez por rodada, quando usa a ação agredir para atacar com uma arma, você pode gastar 1 PM para fazer um ataque corpo a corpo extra com uma das garras, desde que ela esteja livre e não tenha sido usada para atacar neste turno. Como alternativa, se tiver habilidades que exijam uma arma secundária (como Estilo de Duas Armas), você pode usá-las com suas garras.</p><p>• <em>Manto das Sombras.</em> Você pode lançar @UUID[Compendium.tormenta20.magias.Item.A3RFvVgOvODWHtvc]{Invisibilidade}, mas apenas em você. Caso aprenda novamente essa magia, seu custo diminui em –1 PM. Pré-requisito: 5º nível de personagem.</p><p>• <em>Passo Vampírico.</em> Você recebe +3m em seu deslocamento e deslocamento de escalada igual ao seu deslocamento padrão.</p><p>• <em>Predador Sorrateiro.</em> Você recebe +5 em testes de Furtividade e não sofre penalidade de armadura nesta perícia.</p><p>• <em>Presença Majestosa.</em> Você recebe a habilidade @UUID[Compendium.tormenta20.poderes.Item.OuuBxkiipKEs4ycx]{Presença Aristocrática} (<em>Tormenta20</em>, p. 80). Se já possuir essa habilidade, seu custo diminui em –1 PM e a CD para resistir a ela aumenta em +2.</p><p>• <em>Resiliência Sombria.</em> Você recebe Redução de Dano 5/luz. Pré-requisito: Presença Majestosa, 5º nível de personagem.</p><p><strong>Resquícios da Outra Vida.</strong> Você se torna treinado em uma perícia (não precisa ser da sua classe) ou recebe um poder geral à sua escolha. Como alternativa, você pode ser um vampiro de outra raça humanoide ou monstro que não humano. Neste caso, você ganha uma habilidade dessa raça à sua escolha (e aprovada pelo mestre). Se a raça era de tamanho diferente de Médio, você também possui sua categoria de tamanho.</p><p><strong>Natureza Não Viva.</strong> Você é uma criatura do tipo morto-vivo. Recebe visão no escuro e imunidade a efeitos de cansaço, metabólicos, de trevas e de veneno. Além disso, não precisa respirar, alimenta-se apenas de sangue (veja Sede de Sangue, a seguir) e prefere dormir de dia — você não sofre penalidades por dormir à noite, mas fazer isso não recupera PV e PM. Por fim, efeitos mágicos de cura de luz causam dano a você e você não se beneficia de itens da categoria alimentação, mas dano de trevas recupera seus PV.</p><p><strong>Perda da Humanidade.</strong> Conforme seus poderes vampíricos crescem, sua humanidade vai sucumbindo à monstruosidade em seu interior. Você possui as fraquezas vampíricas descritas a seguir, que se tornam mais severas conforme você recebe novas bênçãos vampíricas.</p><p>• <em>Chamado das Trevas.</em> Você precisa repousar por oito horas dentro da terra (no subterrâneo, em uma cova ou totalmente coberto de terra). Se fizer isso, fica inconsciente e recupera PV e PM por descanso em condições normais (vampiros não são afetados por condições boas ou ruins de descanso). Caso contrário, sofre uma penalidade em perícias de –1 por bênção vampírica que possuir. Essa penalidade desaparece após repousar na terra.</p><p>• <em>Sede de Sangue.</em> Você precisa consumir pelo menos uma dose de sangue por semana (veja Dieta de Sangue). Se não fizer isso, sofre os efeitos de fome (veja Fome e Sede em <em>Tormenta20</em>, p. 319) mesmo sendo imune a efeitos metabólicos. Para cada bênção vampírica que possuir além da primeira, o intervalo entre suas refeições de sangue diminui em um dia (até um mínimo de uma dose por dia).</p><p>• <em>Sensibilidade ao Sol.</em> Quando exposto a luz solar direta, você fica ofuscado e, a cada rodada, perde 1d6 PV por bênção vampírica que possuir.</p><p><strong>Dieta de Sangue</strong></p><p>Para sobreviver, um vampiro precisa consumir sangue de uma criatura viva, preferencialmente um ser inteligente. Isso torna a vida de vampiros heroicos particularmente desafiadora, ainda que muitos encontrem formas de saciar sua fome de formas mais “humanas”.</p><p>Um vampiro precisa de “doses” de sangue para se manter saudável. Uma “dose” é o equivalente a 1 litro de sangue, ou drenar 2d6 pontos de vida de um ser vivo. Fazer isso demora alguns minutos (o equivalente a ingerir uma refeição). A origem do sangue determina seus efeitos sobre o vampiro.</p><p>• <em>Animal.</em> Relativamente abundante, o sangue de animais é consumido por vampiros que não podem ou não querem se alimentar de seres inteligentes. Entretanto, ele é menos nutritivo; um vampiro que se alimenta dessa forma fica fraco e só pode remover essa condição ingerindo sangue de outros tipos de criaturas.</p><p>• <em>Espírito.</em> O mais valioso dos alimentos, esse sangue carrega parte do poder místico da criatura. Quando o vampiro se alimenta de um espírito, pelas próximas 24h seu total de PM aumenta em +2 por patamar do espírito e ele recebe +2 na CD de suas habilidades mágicas.</p><p>• <em>Humanoide.</em> O alimento tradicional de vampiros. Não fornece benefícios nem penalidades adicionais.</p><p>• <em>Monstro.</em> O sangue de monstros carrega uma fração de sua selvageria. Quando se alimenta dessa forma, o vampiro entra em um estado de excitação feral por um dia. Ele recebe +1 em Força mas sofre –2 em testes de perícias baseadas em Carisma (exceto Intimidação).</p><p>Uma criatura pode perder uma quantidade de doses por semana conforme seu tamanho, sem consequências negativas: 1 dose para seres Pequenos, 2 para Médio ou Grande e 5 para Enorme ou Colossal. Cada vez que esse limite é ultrapassado na mesma semana, ela sofre um efeito: fica fatigada, exausta, inconsciente e então morre, mesmo se for imune a efeitos de cansaço. Cada condição só pode ser curada com sete dias de descanso extremos (ela fica acamada o dia todo) e cuidados prolongados diários (veja Cura em <em>Tormenta20</em>, p. 117).</p><p>Alguns vampiros também drenam sangue como forma de criar outros vampiros. Se tal vampiro drenar sangue suficiente de um humanoide ou monstro para matá-lo, a vítima se erguerá como um vampiro na próxima noite e deverá vencer um teste de Vontade oposto contra o vampiro ou ficará sob o controle dele até que ele a liberte ou seja destruído. Essa habilidade representa alguns dos aspectos mais vilanescos dos vampiros, sendo mais apropriada para NPCs.</p><p><strong>Tornando-se um Vampiro</strong></p><p>As regras para personagens vampiros presumem a criação de um vampiro jovem, em início de carreira. Mas mesmo aventureiros veteranos podem ser transformados — geralmente como resultado de um embate malsucedido contra um vampiro mais poderoso. Para transformar um personagem já existente em um vampiro, substitua todas as características raciais do personagem (incluindo modificadores de atributos) pelas características de vampiro. Se o personagem não for humano, escolha uma das habilidades da raça original (aprovada pelo mestre) para sua habilidade Resquícios da Outra Vida. Por fim, para cada patamar do personagem, você pode substituir um de seus poderes de classe por um poder de Bênção Vampírica. Ao substituir esses poderes, tenha em mente poderes que são pré-requisitos de outros poderes do personagem. Você deve continuar cumprindo quaisquer pré-requisitos dos poderes restantes.</p>",
+  "ataques": [
+    {
+      "arma": "Espada longa",
+      "descricao": "espada longa x2",
+      "img": "systems/tormenta20/icons/itens/equipamentos/espada-longa.webp",
+      "qtd": 2,
+      "ataque": 46,
+      "critico": "17",
+      "dano": [
+        [
+          "2d8+25",
+          "corte"
+        ],
+        [
+          "2d10",
+          "trevas"
+        ]
+      ]
+    },
+    {
+      "arma": "Garras",
+      "descricao": "garra x2",
+      "img": "systems/tormenta20/icons/poderes/ameacas/garras.webp",
+      "qtd": 2,
+      "ataque": 46,
+      "dano": [
+        [
+          "2d6+25",
+          "corte"
+        ],
+        [
+          "2d10",
+          "trevas"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Cura Acelerada",
+      "img": "systems/tormenta20/icons/magias/curar-ferimentos.webp",
+      "descricao": "<p>No início de cada um de seus turnos, o vampiro recupera 10 pontos de vida.</p>",
+      "danos": [
+        [
+          "10",
+          "curapv",
+          "Cura acelerada"
+        ]
+      ]
+    },
+    {
+      "poder": "Dominação Vampírica",
+      "img": "systems/tormenta20/icons/poderes/ameacas/comandar.webp",
+      "descricao": "<p>O vampiro sussurra palavras de controle para um humanoide em alcance curto. A vítima fica confusa, enfeitiçada ou fascinada até o final da cena ou perde suas memórias da última hora, à escolha do vampiro (Von CD 42 evita). Uma criatura só pode ser alvo desta habilidade uma vez por cena.</p>",
+      "acao": "padrao",
+      "resistencia": "Vontade CD 42 evita"
+    },
+    {
+      "poder": "Drenar Sangue",
+      "img": "systems/tormenta20/icons/poderes/ameacas/mordida.webp",
+      "descricao": "<p>O vampiro drena sangue de uma criatura viva que esteja agarrando; ele causa 8d6 pontos de dano de perfuração e recupera a mesma quantidade de PV. Uma criatura morta desta forma se erguerá como um vampiro na próxima noite e deverá vencer um teste de Vontade oposto contra o vampiro ou ficará sob o controle dele até que ele a liberte ou seja destruído.</p>",
+      "acao": "padrao",
+      "danos": [
+        [
+          "8d6",
+          "perfuracao"
+        ]
+      ]
+    },
+    {
+      "poder": "Forma de Morcego",
+      "img": "systems/tormenta20/icons/poderes/ameacas/asas.webp",
+      "descricao": "<p>O vampiro se transforma em um morcego. Ele se torna Minúsculo (+5 em Furtividade e –5 em testes de manobra) e recebe deslocamento de voo 12m. Seu equipamento é absorvido (retornando quando ele volta ao normal) e suas outras estatísticas não são alteradas. A transformação dura quanto tempo ele desejar, mas termina caso faça um ataque, lance uma magia ou sofra dano.</p>",
+      "acao": "padrao",
+      "efeitos": [
+        {
+          "name": "Forma de Morcego",
+          "description": "<p>Minúsculo: +5 em Furtividade e voo 12m.</p><p><strong>Não automatizado:</strong> tamanho Minúsculo e –5 em testes de manobra.</p>",
+          "system": {
+            "changes": [
+              {
+                "key": "system.pericias.furt.bonus",
+                "value": 5,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              },
+              {
+                "key": "system.attributes.movement.fly.base",
+                "value": 12,
+                "priority": null,
+                "type": "override",
+                "phase": "initial"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "poder": "Orgulho",
+      "img": "systems/tormenta20/icons/poderes/ameacas/odio-puro.webp",
+      "descricao": "<p>Uma vez por cena, quando faz um teste de perícia, o vampiro soma o dobro de seu Carisma (+14) nesse teste.</p>",
+      "acao": "reacao"
+    },
+    {
+      "poder": "Presença Majestosa",
+      "img": "systems/tormenta20/icons/poderes/ameacas/aura-aterradora.webp",
+      "descricao": "<p>Quando uma criatura ataca o vampiro, deve passar em um teste de Vontade (CD 42) ou não conseguirá machucá-lo e perderá a ação. Uma criatura que passe no teste de Vontade não é mais afetada por esta habilidade até o fim da cena.</p>",
+      "acao": "reacao",
+      "resistencia": "Vontade CD 42 evita"
+    },
+    {
+      "poder": "Séquito Sombrio",
+      "img": "systems/tormenta20/icons/poderes/ameacas/comandar.webp",
+      "descricao": "<p>O vampiro está sempre acompanhado de três vampiros fidalgos (veja a página 161), que não contam para o cálculo de XP e tesouro do encontro.</p>"
+    },
+    {
+      "poder": "Sensibilidade ao Sol",
+      "img": "systems/tormenta20/icons/poderes/ameacas/sensibilidade-luz.webp",
+      "descricao": "<p>Quando exposto à luz solar direta, o vampiro fica ofuscado e perde 8d6 PV por rodada.</p>",
+      "danos": [
+        [
+          "8d6",
+          "perda",
+          "Perda por rodada"
+        ]
+      ]
+    }
+  ]
+}

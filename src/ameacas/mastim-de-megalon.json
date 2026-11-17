@@ -1,0 +1,129 @@
+{
+  "nome": "Mastim-de-Megalon",
+  "img": "assets/tokens/mastim-de-megalon.png",
+  "nd": "7",
+  "tipo": "mon",
+  "tamanho": "gra",
+  "papel": "solo",
+  "atributos": {
+    "for": 6,
+    "des": 3,
+    "con": 6,
+    "int": -4,
+    "sab": 2,
+    "car": -2
+  },
+  "pv": 290,
+  "defesa": 30,
+  "pericias": {
+    "inic": 10,
+    "perc": 11,
+    "fort": 20,
+    "refl": 14,
+    "vont": 7,
+    "atle": 15
+  },
+  "deslocamento": {
+    "deslocamento": 15
+  },
+  "sentidos": [
+    "faro",
+    "escuro"
+  ],
+  "resistencias": {
+    "corte": 10,
+    "frio": 10
+  },
+  "imunidadeCondicoes": [
+    "mental",
+    "medo"
+  ],
+  "imunidadeOutras": "encantamento",
+  "resistenciasTexto": "imunidade a encantamento, medo e efeitos mentais, redução de corte e frio 10",
+  "corpoACorpo": "Mordida +24 (5d12+30).",
+  "tesouro": "Padrão mais glândula salivar (CD para extrair 22, vale T$ 360 para fabricar poções de magias de transmutação).",
+  "notas": "<p><em>O lendário Megalon teria sido um dos maiores arcanistas do passado remoto. Estudioso de monstros poderosos, desenvolveu métodos arcanos para enfurecê-los e transformá-los em feras incontroláveis. Destes estudos teria surgido seu interesse em Megalokk — algo que o levou a abraçar a fé no Deus dos Monstros e a criar uma forma de magia arcana selvagem e única.</em></p><p>Fato ou lenda, as feras conhecidas como megalontes acabariam levando seu nome. Estes seres monstruosos, versões modificadas e aumentadas de criaturas mundanas, existem em estado selvagem nas Sanguinárias e outras áreas semelhantes. Predadores perigosos, são considerados em muitos lugares como arautos da fúria de Megalokk e de seu descontentamento com a civilização. De fato, a presença de um megalonte na região é uma ameaça a todas as demais formas de vida, civilizadas ou não.</p><p><strong>Nova Magia: Megalon</strong> — veja o item “Megalon” no compêndio de itens deste módulo.</p>",
+  "ataques": [
+    {
+      "arma": "Mordida",
+      "descricao": "mordida",
+      "img": "systems/tormenta20/icons/poderes/ameacas/mordida.webp",
+      "ataque": 24,
+      "dano": [
+        [
+          "5d12+30",
+          "perfuracao"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Agarrar Aprimorado",
+      "img": "systems/tormenta20/icons/poderes/ameacas/agarrar.webp",
+      "descricao": "<p>Se o mastim acerta um ataque de mordida, pode fazer a manobra agarrar como uma ação livre (teste +28).</p>",
+      "acao": "livre"
+    },
+    {
+      "poder": "Incontrolável",
+      "img": "systems/tormenta20/icons/poderes/ameacas/odio-puro.webp",
+      "descricao": "<p>O mastim-de-Megalon é imune a encantamento, medo e efeitos mentais. Se sofrer um efeito desse tipo, ele entra em fúria até o fim da cena; nesse estado, ele recebe +3 em testes de ataque e rolagens de dano, e imunidade a dano psíquico.</p>",
+      "efeitos": [
+        {
+          "name": "Incontrolável (fúria)",
+          "description": "<p>Fúria: +3 em testes de ataque e rolagens de dano corpo a corpo e imunidade a dano psíquico (não automatizado).</p>",
+          "system": {
+            "changes": [
+              {
+                "key": "system.modificadores.ataque.cac",
+                "value": 3,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              },
+              {
+                "key": "system.modificadores.dano.cac",
+                "value": 3,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "poder": "Latido Aterrador",
+      "img": "systems/tormenta20/icons/poderes/ameacas/urro-selvagem.webp",
+      "descricao": "<p>Em seu primeiro turno de combate, o mastim-de-Megalon emite um latido assustador. Cada criatura em alcance médio capaz de ouvi-lo fica abalada por 1d4 rodadas (Von CD 24 evita).</p>",
+      "acao": "livre",
+      "danos": [
+        [
+          "1d4",
+          "",
+          "Rodadas (abalado)"
+        ]
+      ],
+      "resistencia": "Vontade CD 24 evita"
+    },
+    {
+      "poder": "Pele Solta",
+      "img": "systems/tormenta20/icons/poderes/ameacas/forma.webp",
+      "descricao": "<p>Quando faz um teste para resistir a uma condição de movimento (incluindo ser agarrado), o mastim-de-Megalon rola dois dados e usa o melhor resultado.</p>"
+    },
+    {
+      "poder": "Sacudir",
+      "img": "systems/tormenta20/icons/poderes/ameacas/dilacerar.webp",
+      "descricao": "<p>No início de cada um de seus turnos, o mastim causa 10d12+30 pontos de dano de corte na criatura que estiver agarrando e a deixa atordoada (Fort CD 24 evita a condição; uma criatura só pode ser atordoada por esta habilidade uma vez por cena).</p>",
+      "acao": "livre",
+      "danos": [
+        [
+          "10d12+30",
+          "corte"
+        ]
+      ],
+      "resistencia": "Fortitude CD 24 evita a condição"
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "nome": "Necro-Hidra",
+  "img": "assets/tokens/necro-hidra.png",
+  "nd": "14",
+  "tipo": "mon",
+  "tamanho": "eno",
+  "papel": "solo",
+  "atributos": {
+    "for": 10,
+    "des": 0,
+    "con": 10,
+    "int": -4,
+    "sab": 1,
+    "car": -1
+  },
+  "pv": 700,
+  "defesa": 40,
+  "pericias": {
+    "inic": 11,
+    "perc": 12,
+    "fort": 28,
+    "refl": 22,
+    "vont": 12,
+    "furt": 6
+  },
+  "deslocamento": {
+    "deslocamento": 9,
+    "natacao": 9
+  },
+  "sentidos": [
+    "faro",
+    "escuro"
+  ],
+  "resistencias": {
+    "trevas": "imune"
+  },
+  "resistenciasTexto": "cura acelerada 130, imunidade a trevas",
+  "corpoACorpo": "Cinco mordidas +39 (4d6+20).",
+  "tesouro": "Padrão.",
+  "notas": "<p><em>O réptil monstruoso tem o corpo coberto por escamas negras e brilhantes, marcadas por listras verticais amarelas. Suas cinco cabeças, igualmente negras, são marcadas por manchas amarelas que complementam sua camuflagem.</em></p><p>Necro-hidras são uma espécie de hidra que possui um apetite peculiar por mortos-vivos e pelas energias necromânticas que os sustentam. Assim como as hidras comuns, vivem em pântanos e outras regiões alagadiças. Desses territórios, costumam se deslocar até cemitérios e outros lugares repletos de mortos-vivos para caçar. Na falta destes, usam suas capacidades necromânticas inatas para erguer corpos como mortos-vivos e assim se alimentar. Esta, inclusive, é a ocasião em que uma necro-hidra se torna uma verdadeira ameaça aos vivos: quando precisa de vítimas para reerguer.</p><p><strong>Furtividade:</strong> +6 (+16 em pântanos).</p><p><strong>Cura acelerada:</strong> 130, conforme impresso no livro.</p>",
+  "ataques": [
+    {
+      "arma": "Mordida",
+      "descricao": "cinco mordidas",
+      "img": "icons/creatures/abilities/mouth-teeth-long-red.webp",
+      "qtd": 5,
+      "ataque": 39,
+      "dano": [
+        [
+          "4d6+20",
+          "perfuracao"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Cura Acelerada",
+      "img": "systems/tormenta20/icons/magias/curar-ferimentos.webp",
+      "descricao": "<p>No início de cada um de seus turnos, a necro-hidra recupera 130 pontos de vida.</p>",
+      "danos": [
+        [
+          "130",
+          "curapv",
+          "Cura acelerada"
+        ]
+      ]
+    },
+    {
+      "poder": "Cortar Cabeças",
+      "img": "systems/tormenta20/icons/poderes/ameacas/vulnerabilidade.webp",
+      "descricao": "<p>As cabeças da necro-hidra são seu ponto fraco e é possível atacá-las diretamente. Atacar uma cabeça impõe uma penalidade de –2 no teste de ataque. Se o ataque acertar e causar pelo menos 35 pontos de dano de corte, a cabeça é decepada e a necro-hidra perde um ataque de mordida. Entretanto, 1d4 rodadas após a cabeça ser decepada, duas novas nascem em seu lugar (a necro-hidra pode ter até dez cabeças). Para impedir o nascimento de novas cabeças, é necessário purificar o pescoço. Isso exige causar 35 pontos de dano de eletricidade ou luz na necro-hidra. Se todas as cabeças da necro-hidra forem decepadas e todos os seus pescoços forem purificados, ela morre.</p>",
+      "danos": [
+        [
+          "1d4",
+          "",
+          "Rodadas para regenerar"
+        ]
+      ]
+    },
+    {
+      "poder": "Erguer os Mortos",
+      "img": "systems/tormenta20/icons/poderes/ameacas/ergam-se.webp",
+      "descricao": "<p>A necro-hidra projeta uma aura necromântica em um raio de 30m. Cadáveres que passem 10 minutos dentro dessa aura são erguidos como zumbis (<em>Tormenta20</em>, p. 297).</p>"
+    },
+    {
+      "poder": "Fome de Trevas",
+      "img": "systems/tormenta20/icons/poderes/ameacas/sombra-rubra.webp",
+      "descricao": "<p>Quando causa dano a um morto-vivo, a necro-hidra recupera uma quantidade de pontos de vida igual à metade do dano causado e o morto-vivo não pode curar esse dano com efeitos de trevas.</p>"
+    },
+    {
+      "poder": "Perceber os Mortos",
+      "img": "systems/tormenta20/icons/poderes/ameacas/visao-ampla.webp",
+      "descricao": "<p>A necro-hidra consegue perceber a presença de mortos-vivos em alcance médio como se tivesse percepção às cegas contra essas criaturas.</p>"
+    }
+  ]
+}

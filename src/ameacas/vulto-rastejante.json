@@ -1,0 +1,255 @@
+{
+  "nome": "Vulto Rastejante",
+  "img": "assets/tokens/vulto-rastejante.png",
+  "nd": "18",
+  "tamanho": "col",
+  "tipo": "mor",
+  "sentidos": [
+    "escuro"
+  ],
+  "papel": "special",
+  "tesouro": "Padrão.",
+  "notas": "<p><em>As criaturas surgem das sombras do mausoléu, como se arrancadas à força da escuridão. Vultos completamente negros, feitos de sombras interrompidas apenas pelos olhos, pequenos e sinistros. Embora suas formas sejam variadas, cada um possui a face de um goblinoide, um traço que talvez seja uma pista de sua origem divina.</em></p><p>Vultos noturnos são mortos-vivos poderosos, criados a partir da união divina de escuridão e malícia. Por sua natureza sombria, muitos sábios e estudiosos atribuem a criação destes seres a Tenebra. A verdade, entretanto, é que eles são obra de Ragnar — uma criação profana que perdurou mesmo após a morte do antigo Deus da Morte.</p><p>Existem três tipos de vultos noturnos: andarilhos, voadores e rastejantes. Voadores são os mais fracos, ainda que poderosos o suficiente para arrasar um castelo; assemelham-se a enormes goblinoides com asas no lugar dos braços, como morcegos. Andarilhos são os mais comuns; assemelham-se à sombra de um enorme bugbear com quatro chifres ao redor da cabeça. Rastejantes são os mais perigosos; assemelham-se a grandes vermes gigantes, possuem uma armadura quitinosa sobre o corpo e uma cabeça vagamente humanoide, com o rosto de um enorme hobgoblin.</p><p>Independentemente do tipo, todos os vultos noturnos são feitos da essência das trevas. Sua pele é completamente negra, lisa e sem pelos, como se estivessem permanentemente banhados em um visco sombrio. Tamanha é sua escuridão, que parecem absorver toda a luz ao redor. Vivem em lugares abandonados e protegidos da luz, preferencialmente aqueles com alguma ligação com a morte e as energias negativas de Arton. Necrópoles, templos abandonados de Ragnar e cemitérios subterrâneos estão entre seus locais preferidos. De lá, tramam igualmente contra os vivos e os não vivos, pois, apesar de suas aparências sombrias, são inteligentes e capazes de preparar e executar planos complexos para espalhar o máximo possível de maldade e dor. Os objetivos exatos dos vultos noturnos são desconhecidos. Teme-se que existam apenas para propagar algum comando de morte proferido por Ragnar — uma sentença contra Arton que, graças à destruição do Deus da Morte, jamais poderá ser revogada.</p><p><strong>Habilidades dos Vultos Noturnos</strong></p><p>Todos os vultos noturnos partilham as seguintes habilidades. <em>Aura Degradante</em> (equivalente a @UUID[Compendium.tormenta20.magias.Item.tJI1ESr2Mcxtx95L]{Profanar}; o +2 na Defesa e em testes já está contabilizado), <em>Defesas Aprimoradas</em> (imunidade a frio, redução de dano 15/adamante mágico e resistência a magia +2) e <em>Aversão ao Sol</em>.</p><p><strong>Redução de dano:</strong> 15/adamante mágico.</p>",
+  "atributos": {
+    "for": 11,
+    "des": 0,
+    "con": 4,
+    "int": 3,
+    "sab": 4,
+    "car": 4
+  },
+  "pv": 798,
+  "pm": 130,
+  "defesa": 52,
+  "pericias": {
+    "inic": 15,
+    "perc": 19,
+    "fort": 22,
+    "refl": 22,
+    "vont": 32,
+    "dipl": 21,
+    "furt": 7,
+    "inti": 21,
+    "intu": 21,
+    "mist": 20,
+    "reli": 21
+  },
+  "deslocamento": {
+    "deslocamento": 9,
+    "escavacao": 18
+  },
+  "resistencias": {
+    "frio": "imune",
+    "dano": 15
+  },
+  "resistenciasTexto": "imunidade a frio, redução de dano 15/adamante mágico, resistência a magia +2",
+  "corpoACorpo": "Mordida +47 (6d12+30, 19, mais 6d6 trevas) e ferrão +47 (6d12+30 mais veneno).",
+  "ataques": [
+    {
+      "arma": "Mordida",
+      "descricao": "mordida",
+      "img": "icons/creatures/abilities/mouth-teeth-long-red.webp",
+      "ataque": 47,
+      "critico": "19",
+      "dano": [
+        [
+          "6d12+30",
+          "perfuracao"
+        ],
+        [
+          "6d6",
+          "trevas"
+        ]
+      ]
+    },
+    {
+      "arma": "Ferrão",
+      "descricao": "ferrão (mais veneno; atinge todas as criaturas em um cone de 6m)",
+      "img": "systems/tormenta20/icons/poderes/ameacas/ferrao.webp",
+      "ataque": 47,
+      "dano": [
+        [
+          "6d12+30",
+          "perfuracao"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Aura Degradante",
+      "img": "systems/tormenta20/icons/poderes/ameacas/aura-aterradora.webp",
+      "descricao": "<p>Um vulto noturno emana uma aura de 9m de raio equivalente à magia @UUID[Compendium.tormenta20.magias.Item.tJI1ESr2Mcxtx95L]{Profanar} (e que se acumula com ela como normal) — nessa área, dano de trevas é maximizado e mortos-vivos recebem +2 na Defesa e em testes (já contabilizado para o vulto). Enquanto o vulto noturno estiver em uma área sob efeito da magia @UUID[Compendium.tormenta20.magias.Item.uAomjSrbq2JpCcz0]{Consagrar}, tanto a magia quanto sua Aura Degradante são suprimidas.</p>"
+    },
+    {
+      "poder": "Defesas Aprimoradas",
+      "img": "systems/tormenta20/icons/poderes/ameacas/resistencia-magia.webp",
+      "descricao": "<p>O vulto noturno tem imunidade a frio, redução de dano 15/adamante mágico e resistência a magia +2 (recebe +2 em testes de resistência contra magias).</p>"
+    },
+    {
+      "poder": "Aversão ao Sol",
+      "img": "systems/tormenta20/icons/poderes/ameacas/sensibilidade-luz.webp",
+      "descricao": "<p>Enquanto exposto à luz do sol (mas não a magias ou efeitos que a simulem), o vulto noturno fica ofuscado e vulnerável.</p>"
+    },
+    {
+      "poder": "Invocar Sombras",
+      "img": "systems/tormenta20/icons/poderes/ameacas/sombra-rubra.webp",
+      "descricao": "<p>Uma vez por cena, o vulto conjura oito sombras capangas em espaços desocupados em alcance médio. Elas agem a partir da próxima rodada do vulto, têm deslocamento voo 12m e podem gastar uma ação padrão para causar 2d10 pontos de dano de trevas em uma criatura adjacente (uma criatura viva atingida por uma sombra perde 1d4 PM; Fort CD 49 evita). As sombras são mortos-vivos incorpóreos, têm For –, Des 4, Defesa 35, 1 PV, falham automaticamente em qualquer teste oposto e deixam de ser incorpóreas enquanto expostas à luz do sol. Elas desaparecem quando mortas ou ao fim da cena.</p>",
+      "acao": "completa",
+      "danos": [
+        [
+          "2d10",
+          "trevas",
+          "Sombra"
+        ],
+        [
+          "1d4",
+          "",
+          "PM perdidos"
+        ]
+      ],
+      "resistencia": "Fortitude CD 49 evita (perda de PM)"
+    },
+    {
+      "poder": "Magia Acelerada",
+      "img": "systems/tormenta20/icons/poderes/ameacas/magias.webp",
+      "descricao": "<p>Uma vez por rodada, quando lança uma magia com execução de ação de movimento, padrão ou completa, o vulto muda a execução dela para livre.</p>",
+      "acao": "livre",
+      "custo": 4
+    },
+    {
+      "poder": "Agarrar Aprimorado",
+      "img": "systems/tormenta20/icons/poderes/ameacas/agarrar.webp",
+      "descricao": "<p>Se o vulto rastejante acerta um ataque de mordida, pode fazer a manobra agarrar como uma ação livre (teste +57).</p>",
+      "acao": "livre"
+    },
+    {
+      "poder": "Engolir",
+      "img": "systems/tormenta20/icons/poderes/ameacas/engolir.webp",
+      "descricao": "<p>No início de cada um dos turnos do vulto rastejante, a criatura engolida sofre 4d8+15 pontos de dano de impacto e mais 4d8+15 pontos de dano de ácido. Ela pode escapar causando um total de 200 pontos de dano a ele (Defesa 25).</p>",
+      "acao": "padrao",
+      "danos": [
+        [
+          "4d8+15",
+          "impacto"
+        ],
+        [
+          "4d8+15",
+          "acido"
+        ]
+      ]
+    },
+    {
+      "poder": "Ferrão Varredor",
+      "img": "systems/tormenta20/icons/poderes/ameacas/ferrao.webp",
+      "descricao": "<p>O ataque de ferrão do vulto atinge todas as criaturas em um cone de 6m (para cada ataque, ele faz um único teste de ataque e compara o resultado com a Defesa de cada inimigo na área).</p>"
+    },
+    {
+      "poder": "Veneno",
+      "img": "systems/tormenta20/icons/poderes/ameacas/veneno.webp",
+      "descricao": "<p>Peçonha potente (perde 2d12 pontos de vida por rodada durante 3 rodadas, Fort CD 49 reduz a duração para 1 rodada).</p>",
+      "danos": [
+        [
+          "2d12",
+          "perda",
+          "Peçonha (por rodada)"
+        ]
+      ],
+      "resistencia": "Fortitude CD 49 reduz"
+    },
+    {
+      "poder": "Magias",
+      "img": "systems/tormenta20/icons/poderes/ameacas/magias.webp",
+      "descricao": "<p>Como um feiticeiro de 18º nível (CD 49).</p>"
+    },
+    {
+      "poder": "Dissipar Magia",
+      "acao": "padrao",
+      "custo": 3,
+      "img": "systems/tormenta20/icons/magias/dissipar-magia.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.rfTGYwrXLjcIAIP5]{Dissipar Magia} (Padrão, 3 PM). O vulto escolhe uma criatura, objeto ou esfera de 3m em alcance médio e faz um teste de Misticismo. Todas as magias nesse alvo com CD igual ou menor que o resultado do teste são dissipadas.</p>"
+    },
+    {
+      "poder": "Erupção Glacial",
+      "acao": "padrao",
+      "custo": 18,
+      "img": "systems/tormenta20/icons/magias/erupcao-glacial.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.FYoig9D5AWpvNOHu]{Erupção Glacial} (Padrão, 18 PM). Estacas de gelo irrompem do chão em uma área de 6m de lado em alcance médio. Criaturas na área sofrem 12d6 pontos de dano de corte e 12d6 pontos de dano de frio e ficam caídas (Ref evita o dano de corte e a condição). As estacas duram pela cena, o que torna a área afetada terreno difícil, e concedem cobertura leve para criaturas dentro da área ou atrás dela, mas são destruídas caso sofram dano de fogo mágico.</p>",
+      "danos": [
+        [
+          "12d6",
+          "corte"
+        ],
+        [
+          "12d6",
+          "frio"
+        ]
+      ],
+      "resistencia": "Reflexos CD 49 evita o corte e a condição"
+    },
+    {
+      "poder": "Escuridão",
+      "acao": "padrao",
+      "custo": 3,
+      "img": "systems/tormenta20/icons/magias/escuridao.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.Bt364TPpNUI1QVPP]{Escuridão} (Padrão, 3 PM). Até o fim da cena, um objeto em alcance curto emana escuridão total em um raio de 6m, bloqueando a visão na área e através dela.</p>"
+    },
+    {
+      "poder": "Invisibilidade",
+      "acao": "padrao",
+      "custo": 13,
+      "img": "systems/tormenta20/icons/magias/invisibilidade.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.A3RFvVgOvODWHtvc]{Invisibilidade} (Padrão, 13 PM). O vulto fica invisível até o fim da cena (recebe camuflagem total, +10 em Furtividade contra ouvir e criaturas que não possam vê-lo ficam desprevenidas contra seus ataques).</p>"
+    },
+    {
+      "poder": "Legião",
+      "acao": "padrao",
+      "custo": 15,
+      "img": "systems/tormenta20/icons/magias/legiao.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.PS9AQUuhxRBnUeS4]{Legião} (Padrão, 15 PM, sustentada). Até 10 criaturas em alcance médio obedecem cegamente aos comandos do vulto, exceto ordens claramente suicidas. Uma criatura tem direito a um teste de Vontade no fim de cada um de seus turnos para se livrar do efeito. Criaturas que passem no teste ficam abaladas por 1 rodada enquanto recuperam a consciência.</p>",
+      "resistencia": "Vontade CD 49 encerra"
+    },
+    {
+      "poder": "Miasma Mefítico",
+      "acao": "padrao",
+      "custo": 18,
+      "img": "systems/tormenta20/icons/magias/miasma-mefitico.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.bs3SycPD7ENusrfH]{Miasma Mefítico} (Padrão, 18 PM). Uma nuvem de 6m de raio se forma em alcance médio. Criaturas na área sofrem 11d6 pontos de dano de trevas e ficam enjoadas por 1 rodada (Fort reduz à metade e evita a condição).</p>",
+      "danos": [
+        [
+          "11d6",
+          "trevas"
+        ]
+      ],
+      "resistencia": "Fortitude CD 49 reduz à metade e evita"
+    },
+    {
+      "poder": "Toque da Morte",
+      "acao": "padrao",
+      "custo": 17,
+      "img": "systems/tormenta20/icons/magias/toque-da-morte.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.rQ44Cz2gJdt86jFL]{Toque da Morte} (Padrão, 17 PM). Uma criatura em alcance curto sofre 10d8+10 pontos de dano de trevas. Se estiver com menos da metade de seus PV, em vez disso ela deve fazer um teste de Fortitude; se passar, sofre o dano normal; caso contrário, seus PV são reduzidos a –10.</p>",
+      "danos": [
+        [
+          "10d8+10",
+          "trevas"
+        ]
+      ],
+      "resistencia": "Fortitude CD 49 parcial"
+    },
+    {
+      "poder": "Velocidade",
+      "acao": "padrao",
+      "custo": 3,
+      "img": "systems/tormenta20/icons/magias/velocidade.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.XWEJNZMs6Wb9uUHF]{Velocidade} (Padrão, 3 PM, sustentada). O vulto pode executar uma ação padrão adicional por turno, que não pode ser usada para lançar magias.</p>"
+    },
+    {
+      "poder": "Viagem Planar",
+      "acao": "padrao",
+      "custo": 10,
+      "img": "systems/tormenta20/icons/magias/viagem-planar.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.3rR4d2fWU6uIqVNv]{Viagem Planar} (Padrão, 10 PM). O vulto viaja para outro Plano.</p>"
+    }
+  ]
+}

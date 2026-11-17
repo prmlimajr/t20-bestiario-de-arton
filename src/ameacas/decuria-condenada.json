@@ -1,0 +1,173 @@
+{
+  "nome": "Decúria Condenada",
+  "img": "assets/tokens/decuria-condenada.png",
+  "nd": "11",
+  "tipo": "mor",
+  "tamanho": "gra",
+  "papel": "solo",
+  "atributos": {
+    "for": 5,
+    "des": 0,
+    "con": 2,
+    "int": 1,
+    "sab": -1,
+    "car": 0
+  },
+  "pv": 165,
+  "defesa": 39,
+  "pericias": {
+    "inic": 10,
+    "perc": 8,
+    "fort": 23,
+    "refl": 13,
+    "vont": 17
+  },
+  "deslocamento": {
+    "deslocamento": 6
+  },
+  "sentidos": [
+    "escuro"
+  ],
+  "resistencias": {
+    "corte": 5,
+    "frio": 5,
+    "perfuracao": 5
+  },
+  "resistenciasTexto": "redução de corte, frio e perfuração 5",
+  "corpoACorpo": "[Bando] Gládio +36 (4d6+24, 19/x3, mais 4d8 trevas) e chifres +36 (4d6+24 mais 4d8 trevas).",
+  "aDistancia": "[Bando] Azagaia +36 (4d6+10 mais 4d8 trevas).",
+  "equipamento": "Azagaia x3, escudo pesado, gládio, loriga segmentada (1d10 de cada).",
+  "tesouro": "Metade.",
+  "notas": "<p><em>Contos de terror são um assunto comum entre aqueles que compartilham a fogueira de um acampamento. Em Tapista, um desses contos em particular, repetido por muitos soldados, descreve a queda da Legio XIII Predestinada e a maldição que a transformou na Legio Precita, a legião dos condenados.</em></p><p>A história da Legio Precita começa em 1414, nos dias que antecederam a queda do Império de Tauron. Nesta época, a Legio XIII Predestinada, uma legião imperial, estava estacionada no Forte de Quordot, encarregada de defender a província de Fortuna. Quando as notícias da rebelião de escravos em Tiberus chegaram à região, o legado da XIII, Saedius Caecilianus decidiu retornar com parte da legião para a capital, deixando metade de suas forças na província, sob o comando de um centurião chamado Tervus.</p><p>Quando a Predestinada chegou em Tiberus, uma área de Tormenta já havia se formado sobre a capital. Hordas lefeu avançavam em todas as direções, matando qualquer um em seu caminho. Vendo a destruição imposta sobre sua capital, a Legio XIII conheceu, pela primeira vez em sua história, o pavor insano da Anticriação. Derrotados em suas mentes e corações, os legionários debandaram, deixando a população e as demais legiões para serem massacradas pelos invasores lefeu.</p><p>A fuga covarde da Legio XIII desencadeou uma poderosa maldição sobre seus membros. Na noite seguinte, os legionários foram tomados por pesadelos sombrios, impregnados não apenas pelos horrores que viram no campo de batalha, mas pelos gritos daqueles que deixaram para trás. Um a um, os legionários despertaram sob a escuridão de um céu sem estrelas, apenas para descobrir que a própria vida havia lhes abandonado. Não mais orgulhosos minotauros, eram agora legionários mortos-vivos, condenados a vagar pela eternidade como punição por sua desonra.</p><p>Hoje, a Legio XIII Predestinada continua rondando as terras do Império, sob comando do legado Caecilianus. Seus planos e objetivos, até o momento, são desconhecidos. Há quem diga que Caecilianus está em busca de uma cura para a maldição, enquanto outros acreditam que a legião enlouqueceu e ataca qualquer um em seu caminho por acreditar que está diante de “inimigos do Império”. Qualquer que seja sua motivação, entretanto, a Legio XIII mantém a organização, disciplina e eficiência militar que ostentava em vida.</p><p><strong>O Status da Legio Precita</strong></p><p>Apesar do nome, a Legio Precita não é uma legião completa. Quando Caecilianus partiu rumo à capital, ele dividiu suas forças, deixando metade de seus legionários guarnecendo a província de Fortuna. Da mesma forma, para chegar rapidamente a Tiberus, ele deixou para trás também armas de cerco e suprimentos não essenciais.</p><p>Após caírem em desgraça e retornarem como mortos-vivos, os legionários da Legio XIII, continuaram agindo como os soldados que eram em vida. Eles mantêm suas armas, armaduras e equipamento em excelentes condições. Apesar de não terem mais uma base de operações, construíram novas armas de cerco usando madeira dos ermos e ferro obtido de inimigos derrotados. E, ainda que não precisem mais dormir ou se alimentar, continuam estabelecendo acampamentos organizados, com tendas alinhadas, torres de vigia e todas as defesas típicas de uma legião.</p><p>Como parte de sua maldição, os membros da Legio Precita não podem ser verdadeiramente mortos. Quaisquer legionários derrotados retornarão na noite seguinte à sua morte. Alguns sábios tapistanos especulam que seria possível romper este ciclo derrotando toda a Legião antes do anoitecer. Até o momento, entretanto, provar esta teoria tem se mostrado uma empreitada impossível.</p>",
+  "ataques": [
+    {
+      "arma": "Gládio",
+      "descricao": "[Bando] gládio",
+      "img": "systems/tormenta20/icons/itens/equipamentos/espada-curta.webp",
+      "ataque": 36,
+      "critico": "19/x3",
+      "dano": [
+        [
+          "4d6+24",
+          "perfuracao"
+        ],
+        [
+          "4d8",
+          "trevas"
+        ]
+      ]
+    },
+    {
+      "arma": "Chifres",
+      "descricao": "[Bando] chifres",
+      "img": "systems/tormenta20/icons/poderes/ameacas/chifres.webp",
+      "ataque": 36,
+      "dano": [
+        [
+          "4d6+24",
+          "perfuracao"
+        ],
+        [
+          "4d8",
+          "trevas"
+        ]
+      ]
+    },
+    {
+      "arma": "Azagaia",
+      "descricao": "[Bando] azagaia",
+      "img": "systems/tormenta20/icons/itens/equipamentos/azagaia.webp",
+      "ataque": 36,
+      "alcance": "short",
+      "dano": [
+        [
+          "4d6+10",
+          "perfuracao"
+        ],
+        [
+          "4d8",
+          "trevas"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Disciplina Militar",
+      "img": "systems/tormenta20/icons/poderes/ameacas/comandar.webp",
+      "descricao": "<p>Quando usa a ação agredir dentro de uma área de Estandarte Profano (veja Centurião Condenado), a decúria condenada pode fazer um ataque adicional.</p>"
+    },
+    {
+      "poder": "Falange",
+      "img": "systems/tormenta20/icons/itens/equipamentos/escudo-pesado.webp",
+      "descricao": "<p>A decúria assume uma formação defensiva. Enquanto tiver pelo menos metade de seus PV, ela recebe +2 na Defesa e em testes de resistência.</p>",
+      "acao": "movimento",
+      "efeitos": [
+        {
+          "name": "Falange",
+          "description": "<p>Enquanto tiver pelo menos metade de seus PV: +2 na Defesa e em testes de resistência.</p>",
+          "system": {
+            "changes": [
+              {
+                "key": "system.attributes.defesa.bonus",
+                "value": 2,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              },
+              {
+                "key": "system.pericias.fort.bonus",
+                "value": 2,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              },
+              {
+                "key": "system.pericias.refl.bonus",
+                "value": 2,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              },
+              {
+                "key": "system.pericias.vont.bonus",
+                "value": 2,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "poder": "Azagaia Impura",
+      "img": "systems/tormenta20/icons/itens/equipamentos/azagaia.webp",
+      "descricao": "<p>Uma criatura que sofra dano de trevas de uma azagaia do membro da Legião não pode recuperar pontos de vida por 1d4 rodadas.</p>",
+      "danos": [
+        [
+          "1d4",
+          "",
+          "Rodadas sem cura"
+        ]
+      ]
+    },
+    {
+      "poder": "Pela XIII",
+      "img": "systems/tormenta20/icons/poderes/ameacas/investida.webp",
+      "descricao": "<p>O membro da Legião pode executar uma ação padrão adicional em seu primeiro turno de combate.</p>",
+      "acao": "livre"
+    },
+    {
+      "poder": "Lembrança Vergonhosa",
+      "img": "systems/tormenta20/icons/poderes/ameacas/insanidade-tormenta.webp",
+      "descricao": "<p>Se estiver em alcance curto de uma área de Tormenta, de criaturas da Tormenta ou de devotos de Aharadak, o membro da Legião fica abalado.</p>"
+    }
+  ],
+  "itens": [
+    {
+      "ref": "gladio"
+    }
+  ]
+}

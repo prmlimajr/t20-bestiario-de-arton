@@ -1,0 +1,84 @@
+{
+  "nome": "Mastim-das-Sombras",
+  "img": "assets/tokens/mastim-das-sombras.png",
+  "nd": "7",
+  "tipo": "esp",
+  "tamanho": "med",
+  "papel": "solo",
+  "atributos": {
+    "for": 4,
+    "des": 2,
+    "con": 3,
+    "int": -3,
+    "sab": 1,
+    "car": 1
+  },
+  "pv": 270,
+  "defesa": 30,
+  "pericias": {
+    "inic": 8,
+    "perc": 9,
+    "fort": 18,
+    "refl": 9,
+    "vont": 14,
+    "atle": 11,
+    "sobr": 10
+  },
+  "deslocamento": {
+    "deslocamento": 15
+  },
+  "sentidos": [
+    "faro",
+    "escuro"
+  ],
+  "resistencias": {
+    "trevas": "imune",
+    "dano": 5
+  },
+  "imunidadeOutras": "encantamento",
+  "resistenciasTexto": "imunidade a encantamento e trevas, redução de dano 5/adamante, resistência a magia +2",
+  "corpoACorpo": "Mordida +25 (4d8+20 mais 6d6 trevas).",
+  "tesouro": "Nenhum.",
+  "notas": "<p><em>Semelhante a um grande cão molosso, a criatura à sua frente é um espírito de trevas de 1 metro de altura e mais de 100 quilos. Sua cabeça é quadrada e feroz, e abriga uma bocarra visivelmente poderosa. Sua pelagem é negra e opaca, e parece ser capaz de absorver toda a luz ao seu redor.</em></p><p>Predadores dedicados e determinados, mastins-das-sombras podem atacar qualquer criatura, sendo capazes de perseguir incansavelmente uma presa por horas a fio. Inteligentes, preferem lutar no escuro ou em outras condições de baixa luminosidade, e sempre buscam se afastar de focos de luz — sejam tochas ou magia —, procurando a proteção das sombras. Alguns são até mesmo capazes de agarrar uma fonte de luz e levá-la para longe antes de voltar para continuar o combate.</p><p>Mastins-das-sombras são naturais de Sombria, o mundo divino de Tenebra. São caçadores natos e vivem pela satisfação e emoção da caçada. É esse impulso que faz com que essas criaturas venham para Arton, onde podem experimentar uma variedade de presas e campos de caça. Embora sejam normalmente caçadores solitários, são inteligentes o suficiente para se reunir em bandos quando decidem perseguir uma presa particularmente poderosa.</p><p>Mas não são apenas as incursões de caça que podem atrair mastins-das-sombras para Arton. Sacerdotes de Tenebra por vezes conjuram esses espíritos para servir como guardiões ou para caçar inimigos da igreja. Além disso, há estranhos casos de amizade entre esses mastins e fadas de vários tipos (incluindo fadas não malignas). Em tais casos, os mastins se tornam protetores delas, defendendo seus territórios e servindo como batedores e caçadores.</p><p><strong>Redução de dano:</strong> 5/adamante. <strong>Sobrevivência:</strong> +10 (+20 para rastrear).</p>",
+  "ataques": [
+    {
+      "arma": "Mordida",
+      "descricao": "mordida",
+      "img": "systems/tormenta20/icons/poderes/ameacas/mordida.webp",
+      "ataque": 25,
+      "dano": [
+        [
+          "4d8+20",
+          "perfuracao"
+        ],
+        [
+          "6d6",
+          "trevas"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Resistência a Magia",
+      "img": "systems/tormenta20/icons/poderes/ameacas/resistencia-magia.webp",
+      "descricao": "<p>O mastim-das-sombras recebe +2 em testes de resistência contra magias.</p>"
+    },
+    {
+      "poder": "Derrubar",
+      "img": "systems/tormenta20/icons/poderes/ameacas/derrubar.webp",
+      "descricao": "<p>Se o mastim-das-sombras acerta um ataque de mordida, pode fazer a manobra derrubar (teste +25).</p>",
+      "acao": "livre"
+    },
+    {
+      "poder": "Faro Supremo",
+      "img": "systems/tormenta20/icons/poderes/ameacas/visao-ampla.webp",
+      "descricao": "<p>O mastim é conhecido por seu faro, tido como o melhor entre as criaturas de Arton e dos mundos divinos. Ele consegue farejar qualquer coisa, desde criaturas até objetos e emoções, com alcance ilimitado no mesmo Plano. Quando é apresentado a uma destas coisas como referência, ele pode começar a rastrear o que quer que seja, desde que se encontre no mesmo Plano onde ele está. Por exemplo, ao farejar um chapéu, o mastim pode ir atrás do dono, em qualquer lugar do mesmo Plano. Mastins-das-sombras raramente usam seu faro para algo além de rastrear sua presa.</p>"
+    },
+    {
+      "poder": "Pelagem Tenebrosa",
+      "img": "systems/tormenta20/icons/poderes/ameacas/ataque-trevas.webp",
+      "descricao": "<p>Enquanto o mastim estiver recebendo camuflagem por escuridão, a chance de falha contra ele aumentará em 10% (ou seja, 30% para camuflagem leve e 60% para camuflagem total).</p>"
+    }
+  ]
+}

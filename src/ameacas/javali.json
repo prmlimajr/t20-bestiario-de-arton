@@ -1,0 +1,80 @@
+{
+  "nome": "Javali",
+  "img": "assets/tokens/javali.png",
+  "nd": "1/2",
+  "tipo": "ani",
+  "tamanho": "med",
+  "papel": "solo",
+  "atributos": {
+    "for": 2,
+    "des": 0,
+    "con": 3,
+    "int": -4,
+    "sab": 1,
+    "car": -2
+  },
+  "pv": 16,
+  "defesa": 14,
+  "pericias": {
+    "inic": 2,
+    "perc": 3,
+    "fort": 6,
+    "refl": -2,
+    "vont": 3
+  },
+  "deslocamento": {
+    "deslocamento": 12
+  },
+  "sentidos": [
+    "faro",
+    "penumbra"
+  ],
+  "corpoACorpo": "Mordida +5 (2d6+3).",
+  "tesouro": "Nenhum.",
+  "notas": "<p><em>O animal diante de vocês é um porco selvagem de corpo robusto e peludo, com uma cabeça grande e presas proeminentes e afiadas. Ele exibe as presas ameaçadoramente, deixando transparecer toda a sua agressividade.</em></p><p>Javalis são animais que adaptam-se facilmente a praticamente qualquer região, podendo ser encontrados em quase todos os cantos de Arton. No Reinado, é uma das caças mais tradicionais da nobreza — mas sua ferocidade faz com que, às vezes, o dia seja da caça, e não do caçador.</p>",
+  "ataques": [
+    {
+      "arma": "Mordida",
+      "descricao": "mordida",
+      "img": "icons/creatures/abilities/mouth-teeth-long-red.webp",
+      "ataque": 5,
+      "dano": [
+        [
+          "2d6+3",
+          "perfuracao"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Ímpeto Feroz",
+      "img": "systems/tormenta20/icons/poderes/ameacas/odio-puro.webp",
+      "descricao": "<p>O javali não fica inconsciente quando é reduzido a 0 PV ou menos e, nessa condição, recebe +2 em testes de ataque e rolagens de dano. Quando é reduzido a –8 PV, ele morre, ou fica inconsciente no caso de dano não letal.</p>",
+      "efeitos": [
+        {
+          "name": "Ímpeto Feroz",
+          "description": "<p>Com 0 PV ou menos: +2 em testes de ataque e rolagens de dano.</p>",
+          "system": {
+            "changes": [
+              {
+                "key": "system.modificadores.ataque.cac",
+                "value": 2,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              },
+              {
+                "key": "system.modificadores.dano.cac",
+                "value": 2,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

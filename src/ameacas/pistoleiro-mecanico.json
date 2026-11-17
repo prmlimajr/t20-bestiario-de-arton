@@ -1,0 +1,132 @@
+{
+  "nome": "Pistoleiro Mecânico",
+  "img": "assets/tokens/pistoleiro-mecanico.png",
+  "nd": "11",
+  "tipo": "con",
+  "tamanho": "med",
+  "papel": "solo",
+  "atributos": {
+    "for": 3,
+    "des": 6,
+    "con": 4,
+    "int": 0,
+    "sab": 0,
+    "car": -5
+  },
+  "pv": 540,
+  "defesa": 40,
+  "pericias": {
+    "inic": 17,
+    "perc": 11,
+    "fort": 18,
+    "refl": 24,
+    "vont": 11
+  },
+  "deslocamento": {
+    "deslocamento": 9
+  },
+  "sentidos": [
+    "escuro"
+  ],
+  "resistencias": {
+    "eletricidade": "imune",
+    "fogo": "imune",
+    "dano": 5
+  },
+  "resistenciasTexto": "imunidade a eletricidade e fogo, redução de dano 5",
+  "corpoACorpo": "Duas pancadas +34 (2d8+20).",
+  "aDistancia": "Duas pistolas x2 +34 (4d8+15, 18/x3, alcance médio).",
+  "tesouro": "Duas pistolas certeiras precisas (CD 26 para extrair) e peças reaproveitáveis (valem T$ 1.000 para fabricar engenhocas).",
+  "notas": "<p><em>O forasteiro se parece como muitos outros andarilhos vindos de Smokestone. Ostenta um chapéu de aba larga, um casacão longo e largo, e cartucheiras de pólvora e munição ao redor do corpo. Seu caminhar é seguro, quase mecânico, e em suas mãos brilham duas pistolas preparadas para atirar.</em></p><p>Como muitos outros conflitos, a Guerra Artoniana foi um verdadeiro laboratório bélico. Em particular, a Supremacia Purista dedicou-se a desenvolver uma variedade de invenções com aplicação militar, sobretudo a partir das criações mecânicas de goblins e outros inventores, voluntários ou não. Durante os anos da guerra, os puristas derramaram sobre os campos de batalha inúmeras armas, veículos e construtos experimentais, em um esforço para colocar sua tecnologia a serviço de suas crenças odiosas.</p><p>Dentre as várias invenções puristas, uma em especial se revelou bastante promissora, ainda que tenha surgido apenas ao final do conflito. Construtos bélicos, chamados de pistoleiros mecânicos, equipados com poderosas pistolas que podiam ser carregadas de forma automática, assegurando um poder de fogo constante e devastador. Felizmente para os defensores do Reinado, estes soldados artificiais não chegaram ao campo de batalha a tempo de mudar o destino da guerra. Por outro lado, várias das unidades produzidas, bem como cópias de seus esquemas de fabricação, acabaram sendo desviadas dos arsenais puristas e se espalhando por Arton, onde acabaram sendo empregadas para os mais diversos propósitos.</p><p><strong>Inteligência:</strong> — (registrada como 0 na ficha).</p>",
+  "ataques": [
+    {
+      "arma": "Pancada",
+      "descricao": "duas pancadas",
+      "img": "systems/tormenta20/icons/poderes/ameacas/pancada.webp",
+      "qtd": 2,
+      "ataque": 34,
+      "dano": [
+        [
+          "2d8+20",
+          "impacto"
+        ]
+      ]
+    },
+    {
+      "arma": "Pistola",
+      "descricao": "duas pistolas x2",
+      "img": "systems/tormenta20/icons/itens/equipamentos/pistola.webp",
+      "qtd": 4,
+      "ataque": 34,
+      "critico": "18/x3",
+      "alcance": "medium",
+      "dano": [
+        [
+          "4d8+15",
+          "perfuracao"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Armamento Embutido",
+      "img": "systems/tormenta20/icons/itens/equipamentos/pistola.webp",
+      "descricao": "<p>As pistolas do pistoleiro mecânico não podem ser desarmadas e são recarregadas automaticamente. Além disso, ele recebe +5 em testes para resistir à manobra quebrar.</p>"
+    },
+    {
+      "poder": "Grudar o Cano",
+      "img": "systems/tormenta20/icons/itens/equipamentos/pistola.webp",
+      "descricao": "<p>O pistoleiro causa +1d8 pontos de dano com suas pistolas contra alvos adjacentes.</p>",
+      "efeitos": [
+        {
+          "name": "Grudar o Cano",
+          "description": "<p>Contra alvo adjacente: +1d8 de dano com as pistolas.</p>",
+          "system": {
+            "changes": [
+              {
+                "key": "system.modificadores.dano.ad",
+                "value": "1d8",
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "poder": "Pontaria Mecanizada",
+      "img": "systems/tormenta20/icons/poderes/ameacas/visao-ampla.webp",
+      "descricao": "<p>O pistoleiro não sofre a penalidade padrão de –5 em ataques por disparar contra oponentes envolvidos em combate corpo a corpo e, quando ataca com suas pistolas, rola dois dados e usa o melhor resultado.</p>"
+    },
+    {
+      "poder": "Ódio Programado",
+      "img": "systems/tormenta20/icons/poderes/ameacas/odio-puro.webp",
+      "descricao": "<p>O pistoleiro mecânico recebe +1d8 em rolagens de dano contra humanoides não humanos.</p>",
+      "efeitos": [
+        {
+          "name": "Ódio Programado",
+          "description": "<p>Contra humanoides não humanos: +1d8 em rolagens de dano.</p>",
+          "system": {
+            "changes": [
+              {
+                "key": "system.modificadores.dano.geral",
+                "value": "1d8",
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "poder": "Sensores Térmicos",
+      "img": "systems/tormenta20/icons/poderes/ameacas/percepcao-temporal.webp",
+      "descricao": "<p>O pistoleiro pode enxergar criaturas vivas invisíveis.</p>"
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "nome": "Lagarto-de-Megalon",
+  "img": "assets/tokens/lagarto-de-megalon.png",
+  "nd": "16",
+  "tipo": "mon",
+  "tamanho": "col",
+  "papel": "solo",
+  "atributos": {
+    "for": 13,
+    "des": 3,
+    "con": 8,
+    "int": -5,
+    "sab": 2,
+    "car": -2
+  },
+  "pv": 820,
+  "defesa": 53,
+  "pericias": {
+    "inic": 17,
+    "perc": 12,
+    "fort": 30,
+    "refl": 24,
+    "vont": 16,
+    "atle": 29
+  },
+  "deslocamento": {
+    "deslocamento": 15,
+    "escalada": 9,
+    "natacao": 12
+  },
+  "sentidos": [
+    "faro",
+    "escuro"
+  ],
+  "resistencias": {
+    "acido": 10,
+    "eletricidade": 10,
+    "dano": 15
+  },
+  "imunidadeCondicoes": [
+    "mental",
+    "medo"
+  ],
+  "imunidadeOutras": "encantamento",
+  "resistenciasTexto": "cura acelerada 10, fortificação 25%, imunidade a encantamento, medo e efeitos mentais, redução de dano 15, redução de ácido e eletricidade 10",
+  "corpoACorpo": "Mordida +46 (6d12+30 mais 6d12 ácido) e cauda +46 (4d12+30).",
+  "tesouro": "Padrão mais glândula salivar monstruosa (CD para extrair 31, vale T$ 2.560 para fabricar poções de magias de transmutação).",
+  "notas": "<p><em>O lendário Megalon teria sido um dos maiores arcanistas do passado remoto. Estudioso de monstros poderosos, desenvolveu métodos arcanos para enfurecê-los e transformá-los em feras incontroláveis. Destes estudos teria surgido seu interesse em Megalokk — algo que o levou a abraçar a fé no Deus dos Monstros e a criar uma forma de magia arcana selvagem e única.</em></p><p>Fato ou lenda, as feras conhecidas como megalontes acabariam levando seu nome. Estes seres monstruosos, versões modificadas e aumentadas de criaturas mundanas, existem em estado selvagem nas Sanguinárias e outras áreas semelhantes. Predadores perigosos, são considerados em muitos lugares como arautos da fúria de Megalokk e de seu descontentamento com a civilização. De fato, a presença de um megalonte na região é uma ameaça a todas as demais formas de vida, civilizadas ou não.</p><p><strong>Nova Magia: Megalon</strong> — veja o item “Megalon” no compêndio de itens deste módulo.</p>",
+  "ataques": [
+    {
+      "arma": "Mordida",
+      "descricao": "mordida",
+      "img": "systems/tormenta20/icons/poderes/ameacas/mordida.webp",
+      "ataque": 46,
+      "dano": [
+        [
+          "6d12+30",
+          "perfuracao"
+        ],
+        [
+          "6d12",
+          "acido"
+        ]
+      ]
+    },
+    {
+      "arma": "Cauda",
+      "descricao": "cauda (cone de 6m)",
+      "img": "systems/tormenta20/icons/poderes/ameacas/cauda.webp",
+      "ataque": 46,
+      "dano": [
+        [
+          "4d12+30",
+          "impacto"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Cura Acelerada",
+      "img": "systems/tormenta20/icons/magias/curar-ferimentos.webp",
+      "descricao": "<p>No início de cada um de seus turnos, o lagarto-de-Megalon recupera 10 pontos de vida.</p>",
+      "danos": [
+        [
+          "10",
+          "curapv",
+          "Cura acelerada"
+        ]
+      ]
+    },
+    {
+      "poder": "Agarrar Aprimorado",
+      "img": "systems/tormenta20/icons/poderes/ameacas/agarrar.webp",
+      "descricao": "<p>Se o lagarto acerta um ataque de mordida, pode fazer a manobra agarrar como uma ação livre (teste +51).</p>",
+      "acao": "livre"
+    },
+    {
+      "poder": "Engolir",
+      "img": "systems/tormenta20/icons/poderes/ameacas/engolir.webp",
+      "descricao": "<p>No início de cada um dos turnos do lagarto, a criatura engolida sofre 2d12+15 pontos de dano de impacto mais 2d12+15 pontos de dano de ácido. Ela pode escapar causando um total de 100 pontos de dano a ele (Defesa 20, redução de dano 0).</p>",
+      "acao": "livre",
+      "danos": [
+        [
+          "2d12+15",
+          "impacto"
+        ],
+        [
+          "2d12+15",
+          "acido"
+        ]
+      ]
+    },
+    {
+      "poder": "Incontrolável",
+      "img": "systems/tormenta20/icons/poderes/ameacas/odio-puro.webp",
+      "descricao": "<p>O lagarto-de-Megalon é imune a encantamento, medo e efeitos mentais. Se sofrer um efeito desse tipo, ele entra em fúria até o fim da cena; nesse estado, ele recebe +5 em testes de ataque e rolagens de dano, e imunidade a dano psíquico.</p>",
+      "efeitos": [
+        {
+          "name": "Incontrolável (fúria)",
+          "description": "<p>Fúria: +5 em testes de ataque e rolagens de dano corpo a corpo e imunidade a dano psíquico (não automatizado).</p>",
+          "system": {
+            "changes": [
+              {
+                "key": "system.modificadores.ataque.cac",
+                "value": 5,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              },
+              {
+                "key": "system.modificadores.dano.cac",
+                "value": 5,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "poder": "Sopro Corrosivo",
+      "img": "systems/tormenta20/icons/poderes/ameacas/sopro.webp",
+      "descricao": "<p>Todas as criaturas em um cone de 12m sofrem 5d20 pontos de dano de ácido e ficam vulneráveis (Ref CD 42 reduz o dano à metade e evita a condição). <em>Recarga (movimento).</em></p>",
+      "acao": "padrao",
+      "danos": [
+        [
+          "5d20",
+          "acido"
+        ]
+      ],
+      "resistencia": "Reflexos CD 42 reduz à metade e evita"
+    },
+    {
+      "poder": "Varrida de Cauda",
+      "img": "systems/tormenta20/icons/poderes/ameacas/varrer.webp",
+      "descricao": "<p>Os ataques de cauda do lagarto atingem todas as criaturas em um cone de 6m (para cada ataque, ele faz um único teste de ataque e compara o resultado com a Defesa de cada inimigo na área).</p>"
+    }
+  ]
+}

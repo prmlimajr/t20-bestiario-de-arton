@@ -1,0 +1,183 @@
+{
+  "nome": "Saedius Caecilianus, Legado da XIII",
+  "img": "assets/tokens/saedius-caecilianus.png",
+  "nd": "16",
+  "tipo": "mor",
+  "tamanho": "med",
+  "papel": "solo",
+  "atributos": {
+    "for": 8,
+    "des": 0,
+    "con": 4,
+    "int": 4,
+    "sab": 0,
+    "car": 3
+  },
+  "pv": 1200,
+  "defesa": 54,
+  "pericias": {
+    "inic": 16,
+    "perc": 16,
+    "fort": 30,
+    "refl": 17,
+    "vont": 23,
+    "atle": 24,
+    "guer": 20,
+    "inti": 19,
+    "nobr": 20,
+    "sobr": 16
+  },
+  "deslocamento": {
+    "deslocamento": 6
+  },
+  "sentidos": [
+    "escuro"
+  ],
+  "resistencias": {
+    "corte": 5,
+    "frio": 5,
+    "perfuracao": 5,
+    "dano": 10
+  },
+  "imunidadeCondicoes": [
+    "mental"
+  ],
+  "imunidadeOutras": "encantamento",
+  "resistenciasTexto": "fortificação 50%, imunidade a efeitos mentais e encantamento, redução de dano 10, redução de corte, frio e perfuração 5",
+  "corpoACorpo": "Gládio x3 +48 (2d12+22, 19/x3, mais 4d8 trevas) e chifres +46 (2d12+20 mais 4d8 trevas).",
+  "equipamento": "Azagaia x3, escudo pesado, gládio certeiro formidável sanguinário, loriga segmentada reforçada defensora fortificada.",
+  "tesouro": "Padrão.",
+  "notas": "<p><em>O primogênito de uma família com uma longa história de serviços militares, Saedius Caecilianus foi um jovem minotauro definido por seu destino: comandar uma legião. E sua família não poupou esforços e tibares para dar-lhe a educação e o treinamento necessários para garantir que esse destino fosse cumprido.</em></p><p>De fato, Caecilianus foi bem-sucedido em se tornar um legado. Mas sua carreira esteve longe de ser considerada brilhante ou de destaque. Seja por acreditar que seu destino estava traçado, ou porque talvez lhe faltasse o ímpeto por poder, Caecilianus teve uma trajetória mediana; seu nome nunca esteve associado a nenhum grande fracasso, mas também nunca batizou nenhum sucesso digno de menção. Talvez por isso ele tenha sido designado para a Predestinada; uma legião destacada para guarnecer Fortuna, uma província relativamente tranquila cuja proteção não representava nenhum desafio.</p><p>Entretanto, o destino de Caecilianus, e da própria Predestinada, mudaria radicalmente no ano de 1414, com a decisão do legado em retornar à capital para combater a revolta dos escravos. Estudiosos questionam o que teria levado um legado sem grandes aspirações políticas ou militares a correr tamanho risco. De fato, Caecilianus não era movido por grandes ambições, mas possuía um profundo senso de dever e honra, que jamais permitiria deixar a capital de sua nação desguarnecida.</p><p>A atuação vergonhosa da Predestinada e a maldição que se seguiu ressoam profundamente na honra de Caecilianus, guiando seu comportamento atual. Seu principal objetivo é encontrar alguma forma de redenção para si e para seus legionários. Infelizmente, a combinação da maldição e da insanidade causada pelo contato com a Tormenta nubla seu julgamento e faz com que a Legio Precita enxergue inimigos do Império de Tauron em todos os cantos.</p><p>Em vida, Caecilianus era uma figura fisicamente imponente, mas com um comportamento por vezes hesitante e exageradamente analítico. Após sua morte, o legado se tornou mais assertivo, mas ainda mantém o hábito de ponderar antes de qualquer decisão complexa. Assim como os demais legionários condenados, seus olhos possuem um brilho rubro e sua pelagem é opaca, fria e sem brilho. Ele mantém seu traje e sua armadura de legado em condições impecáveis, aplicando a si próprio o mesmo padrão que exige de seus legionários.</p><p><strong>Legio Precita:</strong> veja o histórico da legião nas fichas de Legionário, Decúria e Centurião Condenados.</p>",
+  "ataques": [
+    {
+      "arma": "Gládio",
+      "descricao": "gládio x3",
+      "img": "systems/tormenta20/icons/itens/equipamentos/espada-curta.webp",
+      "qtd": 3,
+      "ataque": 48,
+      "critico": "19/x3",
+      "dano": [
+        [
+          "2d12+22",
+          "perfuracao"
+        ],
+        [
+          "4d8",
+          "trevas"
+        ]
+      ]
+    },
+    {
+      "arma": "Chifres",
+      "descricao": "chifres",
+      "img": "systems/tormenta20/icons/poderes/ameacas/chifres.webp",
+      "ataque": 46,
+      "dano": [
+        [
+          "2d12+20",
+          "perfuracao"
+        ],
+        [
+          "4d8",
+          "trevas"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Bloqueio com Escudo",
+      "img": "systems/tormenta20/icons/itens/equipamentos/escudo-pesado.webp",
+      "descricao": "<p>Quando sofre dano pela primeira vez em cada rodada, Saedius Caecilianus recebe redução de dano 20 contra esse dano. Ele só pode usar esta habilidade se estiver empunhando um escudo.</p>",
+      "acao": "reacao"
+    },
+    {
+      "poder": "Falange",
+      "img": "systems/tormenta20/icons/itens/equipamentos/escudo-pesado.webp",
+      "descricao": "<p>Se Caecilianus estiver usando um escudo e estiver adjacente a um aliado com esta habilidade, pode formar uma falange com esse aliado. Enquanto estiverem adjacentes um ao outro, os participantes da falange recebem +2 na Defesa e em testes de resistência.</p>",
+      "acao": "movimento",
+      "efeitos": [
+        {
+          "name": "Falange",
+          "description": "<p>+2 na Defesa e em testes de resistência enquanto estiver adjacente a outro participante da falange.</p>",
+          "system": {
+            "changes": [
+              {
+                "key": "system.attributes.defesa.bonus",
+                "value": 2,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              },
+              {
+                "key": "system.pericias.fort.bonus",
+                "value": 2,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              },
+              {
+                "key": "system.pericias.refl.bonus",
+                "value": 2,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              },
+              {
+                "key": "system.pericias.vont.bonus",
+                "value": 2,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "poder": "Gládio Sanguinário",
+      "img": "systems/tormenta20/icons/itens/equipamentos/espada-curta.webp",
+      "descricao": "<p>Uma criatura viva atingida pelo gládio de Caecilianus fica sangrando. Essa perda de PV é cumulativa — uma criatura atingida duas vezes perde 2d6 PV por sangramento por rodada.</p>"
+    },
+    {
+      "poder": "Legado Condenado",
+      "img": "systems/tormenta20/icons/poderes/ameacas/aura-aterradora.webp",
+      "descricao": "<p>Caecilianus emana uma aura de energia negativa com 30m de raio. Dentro dessa área, dano de trevas e PV curados por trevas são maximizados, e, quando um membro da Legião faz um teste, rola dois dados e usa o melhor resultado.</p>"
+    },
+    {
+      "poder": "Resoluto",
+      "img": "systems/tormenta20/icons/poderes/ameacas/imunidade-magia.webp",
+      "descricao": "<p>Uma vez por rodada, Caecilianus refaz um teste de resistência contra uma condição (como enfeitiçado, paralisado etc.) que o esteja afetando. O segundo teste recebe um bônus de +5 e, se ele passar, cancela o efeito. Caecilianus só pode usar esta habilidade uma vez por efeito.</p>",
+      "acao": "livre"
+    },
+    {
+      "poder": "Azagaia Impura",
+      "img": "systems/tormenta20/icons/itens/equipamentos/azagaia.webp",
+      "descricao": "<p>Uma criatura que sofra dano de trevas de uma azagaia do membro da Legião não pode recuperar pontos de vida por 1d4 rodadas.</p>",
+      "danos": [
+        [
+          "1d4",
+          "",
+          "Rodadas sem cura"
+        ]
+      ]
+    },
+    {
+      "poder": "Pela XIII",
+      "img": "systems/tormenta20/icons/poderes/ameacas/investida.webp",
+      "descricao": "<p>O membro da Legião pode executar uma ação padrão adicional em seu primeiro turno de combate.</p>",
+      "acao": "livre"
+    },
+    {
+      "poder": "Lembrança Vergonhosa",
+      "img": "systems/tormenta20/icons/poderes/ameacas/insanidade-tormenta.webp",
+      "descricao": "<p>Se estiver em alcance curto de uma área de Tormenta, de criaturas da Tormenta ou de devotos de Aharadak, o membro da Legião fica abalado.</p>"
+    }
+  ],
+  "itens": [
+    {
+      "ref": "gladio"
+    }
+  ]
+}

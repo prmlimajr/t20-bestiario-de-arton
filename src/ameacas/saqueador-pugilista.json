@@ -1,0 +1,105 @@
+{
+  "nome": "Saqueador Pugilista",
+  "img": "assets/tokens/saqueador-pugilista.png",
+  "nd": "1",
+  "papel": "solo",
+  "tipo": "hum",
+  "raca": "humano",
+  "tamanho": "med",
+  "deslocamento": {
+    "deslocamento": 9
+  },
+  "notas": "<p><em>Os guerreiros descem a montanha com roupas leves, tatuagens e adereços típicos dos povos das Sanguinárias. Têm o andar decidido de quem está acostumado a caminhar rumo ao perigo e o olhar de caçadores acostumados a abater todo tipo de presa.</em></p><p>Conhecidas por sua população de monstros selvagens, as Sanguinárias estão entre um dos mais desafiadores territórios de Arton. Seus habitantes, habituados a resistir aos rigores da geografia e aos perigos de predadores, aprenderam a valorizar a força e violência, e muitas vezes, fazer delas seu meio de vida.</p><p>Estes saqueadores são grupos de combatentes que vivem espalhados nesta região. Vivem da caça aos monstros, da extração de recursos naturais e, sobretudo, de saques, tanto entre si quanto de outros povos fronteiriços às montanhas. Alguns formam bandos nômades, outros se estabelecem em aldeias e cidades. Destas, a mais famosa é Katiaskh, o maior povoado humano conhecido nas Sanguinárias.</p><p>Embora façam das montanhas seu lar e território de caça, é possível encontrar estes saqueadores em outras partes de Arton. Alguns grupos, em raras ocasiões, viajam além de seu lar para realizar uma missão ou até tentar a sorte atuando como mercenários.</p>",
+  "atributos": {
+    "for": 3,
+    "des": 1,
+    "con": 2,
+    "int": -1,
+    "sab": 1,
+    "car": -1
+  },
+  "pv": 36,
+  "defesa": 15,
+  "pericias": {
+    "inic": 3,
+    "perc": 3,
+    "fort": 10,
+    "refl": 2,
+    "vont": 4,
+    "atle": 6,
+    "sobr": 5
+  },
+  "resistenciasTexto": "evasão",
+  "corpoACorpo": "Ataque desarmado x2 +10 (1d8+4).",
+  "equipamento": "Manopla.",
+  "tesouro": "Metade.",
+  "ataques": [
+    {
+      "arma": "Ataque desarmado",
+      "descricao": "ataque desarmado x2",
+      "img": "systems/tormenta20/icons/itens/equipamentos/manopla.webp",
+      "qtd": 2,
+      "ataque": 10,
+      "dano": [
+        [
+          "1d8+4",
+          "impacto"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Evasão",
+      "img": "systems/tormenta20/icons/poderes/classes/especialistas/evasao.webp",
+      "descricao": "<p>Quando sofre um efeito que permite um teste de Reflexos para reduzir o dano à metade, o saqueador não sofre dano algum se passar.</p>"
+    },
+    {
+      "poder": "Agarrar Aprimorado",
+      "img": "systems/tormenta20/icons/poderes/ameacas/agarrar.webp",
+      "descricao": "<p>Se o saqueador pugilista acerta um ataque desarmado, pode fazer a manobra agarrar como uma ação livre (teste +12).</p>",
+      "acao": "livre"
+    },
+    {
+      "poder": "Cabeçada Brutal",
+      "img": "systems/tormenta20/icons/poderes/ameacas/pancada.webp",
+      "descricao": "<p>Se fizer um ataque desarmado contra uma criatura que está agarrando, o saqueador pugilista causa +1d8 pontos de dano e deixa a criatura atordoada (Fort CD 14 evita). Uma criatura só pode ser atordoada por esta habilidade uma vez por cena.</p>",
+      "danos": [
+        [
+          "1d8",
+          "impacto"
+        ]
+      ],
+      "resistencia": "Fortitude CD 14 evita (atordoado)"
+    },
+    {
+      "poder": "Nativo das Sanguinárias",
+      "img": "systems/tormenta20/icons/poderes/ameacas/odio-puro.webp",
+      "descricao": "<p>O saqueador recebe +2 em testes e rolagens de dano contra monstros.</p>",
+      "efeitos": [
+        {
+          "name": "Nativo das Sanguinárias",
+          "description": "<p>Contra monstros: +2 em testes de ataque e rolagens de dano corpo a corpo.</p><p><strong>Não automatizado:</strong> +2 em outros testes contra monstros.</p>",
+          "system": {
+            "changes": [
+              {
+                "key": "system.modificadores.ataque.cac",
+                "value": 2,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              },
+              {
+                "key": "system.modificadores.dano.cac",
+                "value": 2,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

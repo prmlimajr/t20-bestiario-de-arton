@@ -1,0 +1,114 @@
+{
+  "nome": "Orquídea-Carnívora Vermelha",
+  "img": "assets/tokens/orquidea-carnivora-vermelha.png",
+  "nd": "10",
+  "tipo": "mon",
+  "tamanho": "gra",
+  "papel": "solo",
+  "atributos": {
+    "for": 7,
+    "des": -1,
+    "con": 4,
+    "int": -4,
+    "sab": 0,
+    "car": -2
+  },
+  "pv": 400,
+  "defesa": 36,
+  "pericias": {
+    "inic": 8,
+    "perc": 5,
+    "fort": 21,
+    "refl": 14,
+    "vont": 13
+  },
+  "deslocamento": {
+    "deslocamento": 6
+  },
+  "sentidos": [
+    "penumbra"
+  ],
+  "resistencias": {
+    "fogo": "imune",
+    "impacto": 10
+  },
+  "resistenciasTexto": "imunidade a fogo, natureza vegetal, redução de impacto 10",
+  "corpoACorpo": "Mordida +29 (2d10+9, x3) e três tentáculos +29 (3d6+9).",
+  "tesouro": "Nenhum.",
+  "notas": "<p><em>Esta grande planta é formada por um longo caule grosso, com mais de dois metros de altura, dotado de folhas largas e longas vinhas. Sua base termina em um feixe de raízes poderosas, enquanto a extremidade ostenta uma flor de pétalas largas, ornamentadas com cílios rígidos e afiados.</em></p><p>Contudo, sob a aparência desta flor enorme e bela, esconde-se um perigoso predador vegetal. Diferentemente de plantas normais, a orquídea-carnívora pode erguer suas raízes da terra e se deslocar como se estivesse caminhando. Suas longas vinhas funcionam como poderosos tentáculos, capazes de golpear e agarrar suas presas. Por fim, sua flor é uma bocarra capaz de desferir mordidas destruidoras. Como se essas ferramentas não fossem suficientes, a orquídea é capaz de expelir seu pólen em descargas elementais devastadoras e surpreendentes.</p><p>Orquídeas-carnívoras são capazes de extrair nutrientes do solo e do sol, mas possuem uma forte predileção por carne. Para caçar, permanecem em um mesmo lugar, valendo-se de sua aparência vegetal para atrair suas presas. Uma orquídea só costuma se erguer do solo e caminhar durante a noite, geralmente para procurar um local de caça mais eficiente. Em alguns casos, entretanto, a criatura pode ser mais proativa e atacar acampamentos ou pequenos vilarejos em busca de vítimas.</p><p>Existem três tipos de orquídeas-carnívoras, identificadas pela cor de suas pétalas: vermelha, azul e verde. Cada uma possui características elementais que afetam suas resistências e o efeito de seu pólen. Isso leva alguns estudiosos a crer que essas criaturas são fruto de mutações místicas causadas por energias mágicas residuais em seu lugar de origem. Se isso for verdade, é possível que existam outros tipos mais raros — e talvez ainda mais mortíferos — dessas plantas carnívoras.</p><p><strong>Ficha:</strong> o livro traz uma única ficha (ND 10) com a cor definindo imunidade e pólen; este módulo separa as três cores em fichas próprias.</p>",
+  "ataques": [
+    {
+      "arma": "Mordida",
+      "descricao": "mordida",
+      "img": "icons/creatures/abilities/mouth-teeth-long-red.webp",
+      "ataque": 29,
+      "critico": "x3",
+      "dano": [
+        [
+          "2d10+9",
+          "perfuracao"
+        ]
+      ]
+    },
+    {
+      "arma": "Tentáculo",
+      "descricao": "três tentáculos",
+      "img": "icons/creatures/tentacles/tentacles-octopus-black-pink.webp",
+      "qtd": 3,
+      "ataque": 29,
+      "dano": [
+        [
+          "3d6+9",
+          "impacto"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Agarrar Aprimorado",
+      "img": "systems/tormenta20/icons/poderes/ameacas/agarrar.webp",
+      "descricao": "<p>Se a orquídea acerta um ataque de tentáculo, pode fazer a manobra agarrar como uma ação livre (teste +31).</p>",
+      "acao": "livre"
+    },
+    {
+      "poder": "Camuflagem Vegetal",
+      "img": "systems/tormenta20/icons/poderes/ameacas/voz-da-natureza.webp",
+      "descricao": "<p>Uma orquídea-carnívora pode permanecer completamente imóvel. Se ela estiver assim, um personagem deve passar num teste de Percepção (CD 35) para perceber que ela é um monstro e não uma planta inanimada.</p>"
+    },
+    {
+      "poder": "Engolir",
+      "img": "systems/tormenta20/icons/poderes/ameacas/engolir.webp",
+      "descricao": "<p>No início de cada um dos turnos da orquídea, a criatura engolida sofre 2d8+6 pontos de dano de impacto e 2d8+6 pontos de dano de fogo. Ela pode escapar causando um total de 25 pontos de dano ao interior da orquídea (Defesa 15).</p>",
+      "acao": "padrao",
+      "danos": [
+        [
+          "2d8+6",
+          "impacto"
+        ],
+        [
+          "2d8+6",
+          "fogo"
+        ]
+      ]
+    },
+    {
+      "poder": "Imunidade Elemental",
+      "img": "systems/tormenta20/icons/poderes/ameacas/imunidade-magia.webp",
+      "descricao": "<p>Cada orquídea é imune a um tipo de dano, determinado pela cor de sua flor: vermelha (fogo), azul (frio) ou verde (ácido). Esta é vermelha (imune a fogo).</p>"
+    },
+    {
+      "poder": "Sopro de Pólen (Vermelha)",
+      "img": "systems/tormenta20/icons/magias/bola-de-fogo.webp",
+      "descricao": "<p>A orquídea projeta uma esfera flamejante de pólen que explode em uma esfera de 6m de raio em alcance médio. Criaturas na área sofrem 15d6+5 pontos de dano de fogo e ficam em chamas (Ref CD 30 reduz à metade e evita a condição). <em>Recarga (movimento).</em></p>",
+      "acao": "padrao",
+      "danos": [
+        [
+          "15d6+5",
+          "fogo"
+        ]
+      ],
+      "resistencia": "Reflexos CD 30 reduz à metade e evita"
+    }
+  ]
+}

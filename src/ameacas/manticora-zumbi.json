@@ -1,0 +1,86 @@
+{
+  "nome": "Mantícora Zumbi",
+  "img": "assets/tokens/manticora-zumbi.png",
+  "nd": "3",
+  "tipo": "mor",
+  "tamanho": "gra",
+  "papel": "lackey",
+  "atributos": {
+    "for": 6,
+    "des": 0,
+    "con": 4,
+    "int": 0,
+    "sab": -1,
+    "car": 0
+  },
+  "pv": 28,
+  "defesa": 20,
+  "pericias": {
+    "inic": 4,
+    "perc": 3,
+    "fort": 14,
+    "refl": 4,
+    "vont": 9
+  },
+  "deslocamento": {
+    "deslocamento": 6,
+    "voo": 9
+  },
+  "sentidos": [
+    "escuro"
+  ],
+  "corpoACorpo": "Duas garras +16 (1d8+8).",
+  "tesouro": "Espinhos putrefatos (CD 18 para extrair). Os espinhos contam como T$ 45 em matéria-prima para fabricar ossos de monstro.",
+  "notas": "<p><em>Mesmo sob a escuridão, é possível perceber que a monstruosidade se move de forma trôpega. Um gemido ressoa de seus pulmões, entrecortado por murmúrios quase humanos. Seus olhos opacos são os primeiros a encontrar a luz, transparecendo a completa ausência de vida em sua existência profana.</em></p><p>Zumbis estão entre os mortos-vivos mais comuns. Cadáveres reanimados por necromancia que podem surgir tanto como resultado de acidentes quanto por maldições, essas criaturas estão também entre os primeiros tipos de mortos-vivos criados por necromantes iniciantes.</p><p>Embora humanoides sejam as criaturas mais comumente transformadas em zumbis, esses mortos-vivos podem ser criados a partir de vários tipos de criaturas, incluindo monstros. Esta seção descreve alguns destes monstros zumbis, que podem surgir da prática de necromantes mais experientes ou a partir de cadáveres de monstros derrotados e deixados para trás, tais como aqueles enfrentados por muitos grupos de aventureiros.</p><p><strong>Inteligência:</strong> — (registrada como 0 na ficha).</p>",
+  "ataques": [
+    {
+      "arma": "Garras",
+      "descricao": "duas garras",
+      "img": "systems/tormenta20/icons/poderes/ameacas/garras.webp",
+      "qtd": 2,
+      "ataque": 16,
+      "dano": [
+        [
+          "1d8+8",
+          "corte"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Espinhos Putrefatos",
+      "img": "systems/tormenta20/icons/poderes/ameacas/espinhos.webp",
+      "descricao": "<p>Uma vez por cena, a mantícora zumbi dispara 1d4 espinhos de sua cauda. Cada espinho atinge uma criatura em alcance médio, causando 1d6+3 pontos de dano de perfuração e 1d6 pontos de dano de trevas (Ref CD 17 reduz à metade).</p>",
+      "acao": "padrao",
+      "danos": [
+        [
+          "1d4",
+          "",
+          "Espinhos"
+        ],
+        [
+          "1d6+3",
+          "perfuracao",
+          "Espinho"
+        ],
+        [
+          "1d6",
+          "trevas",
+          "Espinho (trevas)"
+        ]
+      ],
+      "resistencia": "Reflexos CD 17 reduz à metade"
+    },
+    {
+      "poder": "Fraqueza Zumbi",
+      "img": "systems/tormenta20/icons/poderes/ameacas/fraqueza-zumbi.webp",
+      "descricao": "<p>A mantícora sofre o dobro de dano de acertos críticos ou de ataques feitos contra seu cérebro (Defesa 30).</p>"
+    }
+  ],
+  "itens": [
+    {
+      "ref": "espinhos-putrefatos"
+    }
+  ]
+}

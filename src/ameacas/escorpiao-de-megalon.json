@@ -1,0 +1,136 @@
+{
+  "nome": "Escorpião-de-Megalon",
+  "img": "assets/tokens/escorpiao-de-megalon.png",
+  "nd": "3",
+  "tipo": "mon",
+  "tamanho": "gra",
+  "papel": "solo",
+  "atributos": {
+    "for": 6,
+    "des": 2,
+    "con": 4,
+    "int": -5,
+    "sab": 1,
+    "car": -2
+  },
+  "pv": 108,
+  "defesa": 22,
+  "pericias": {
+    "inic": 5,
+    "perc": 6,
+    "fort": 15,
+    "refl": 9,
+    "vont": 3
+  },
+  "deslocamento": {
+    "deslocamento": 12,
+    "escalada": 12
+  },
+  "sentidos": [
+    "escuro"
+  ],
+  "imunidadeCondicoes": [
+    "mental",
+    "medo",
+    "veneno"
+  ],
+  "imunidadeOutras": "encantamento",
+  "resistenciasTexto": "fortificação 50%, imunidade a encantamento, medo, efeitos mentais e veneno",
+  "corpoACorpo": "Pinças +14 (2d6+6) e ferrão +14 (1d10+3 mais veneno).",
+  "tesouro": "1d4+1 doses de peçonha comum (CD 18 para extrair).",
+  "notas": "<p><em>O lendário Megalon teria sido um dos maiores arcanistas do passado remoto. Estudioso de monstros poderosos, desenvolveu métodos arcanos para enfurecê-los e transformá-los em feras incontroláveis. Destes estudos teria surgido seu interesse em Megalokk — algo que o levou a abraçar a fé no Deus dos Monstros e a criar uma forma de magia arcana selvagem e única.</em></p><p>Fato ou lenda, as feras conhecidas como megalontes acabariam levando seu nome. Estes seres monstruosos, versões modificadas e aumentadas de criaturas mundanas, existem em estado selvagem nas Sanguinárias e outras áreas semelhantes. Predadores perigosos, são considerados em muitos lugares como arautos da fúria de Megalokk e de seu descontentamento com a civilização. De fato, a presença de um megalonte na região é uma ameaça a todas as demais formas de vida, civilizadas ou não.</p><p><strong>Nova Magia: Megalon</strong> — veja o item “Megalon” no compêndio de itens deste módulo.</p>",
+  "ataques": [
+    {
+      "arma": "Pinças",
+      "descricao": "pinças",
+      "img": "systems/tormenta20/icons/poderes/ameacas/pincas.webp",
+      "ataque": 14,
+      "dano": [
+        [
+          "2d6+6",
+          "corte"
+        ]
+      ]
+    },
+    {
+      "arma": "Ferrão",
+      "descricao": "ferrão (mais veneno)",
+      "img": "systems/tormenta20/icons/poderes/ameacas/ferrao.webp",
+      "ataque": 14,
+      "dano": [
+        [
+          "1d10+3",
+          "perfuracao"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Agarrar Aprimorado",
+      "img": "systems/tormenta20/icons/poderes/ameacas/agarrar.webp",
+      "descricao": "<p>Se o escorpião acerta um ataque de pinças, pode fazer a manobra agarrar como uma ação livre (teste +16).</p>",
+      "acao": "livre"
+    },
+    {
+      "poder": "Ferroada Instintiva",
+      "img": "systems/tormenta20/icons/poderes/ameacas/ferrao.webp",
+      "descricao": "<p>Na primeira vez em cada cena em que é atingido por um ataque corpo a corpo, o escorpião-de-Megalon faz um ataque de ferrão contra o atacante, com um bônus de +5 no teste de ataque.</p>",
+      "acao": "reacao"
+    },
+    {
+      "poder": "Incontrolável",
+      "img": "systems/tormenta20/icons/poderes/ameacas/odio-puro.webp",
+      "descricao": "<p>O escorpião-de-Megalon é imune a encantamento, medo e efeitos mentais. Se sofrer um efeito desse tipo, ele entra em fúria até o fim da cena; nesse estado, ele recebe +2 em testes de ataque e rolagens de dano, e imunidade a dano psíquico.</p>",
+      "efeitos": [
+        {
+          "name": "Incontrolável (fúria)",
+          "description": "<p>Fúria: +2 em testes de ataque e rolagens de dano corpo a corpo e imunidade a dano psíquico (não automatizado).</p>",
+          "system": {
+            "changes": [
+              {
+                "key": "system.modificadores.ataque.cac",
+                "value": 2,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              },
+              {
+                "key": "system.modificadores.dano.cac",
+                "value": 2,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "poder": "Pressionar",
+      "img": "systems/tormenta20/icons/poderes/ameacas/pincas.webp",
+      "descricao": "<p>No início de cada um de seus turnos, o escorpião causa 4d6+10 pontos de dano de corte na criatura que estiver agarrando com suas pinças. Sempre que rolar o resultado máximo em um desses dados de dano, o escorpião rola um dado extra, repetindo o processo a cada resultado máximo.</p>",
+      "acao": "livre",
+      "danos": [
+        [
+          "4d6+10",
+          "corte"
+        ]
+      ]
+    },
+    {
+      "poder": "Veneno",
+      "img": "systems/tormenta20/icons/poderes/ameacas/veneno.webp",
+      "descricao": "<p>Peçonha comum (perde 1d12 pontos de vida, Fort CD 17 evita).</p>",
+      "danos": [
+        [
+          "1d12",
+          "perda",
+          "Peçonha"
+        ]
+      ],
+      "resistencia": "Fortitude CD 17 evita"
+    }
+  ]
+}

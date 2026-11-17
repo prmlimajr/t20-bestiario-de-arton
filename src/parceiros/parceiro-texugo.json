@@ -1,0 +1,106 @@
+{
+  "name": "Parceiro: Texugo",
+  "type": "poder",
+  "img": "assets/tokens/texugo.png",
+  "system": {
+    "description": {
+      "value": "<p>O texugo é um parceiro especial (combatente) que fornece os benefícios a seguir.</p>\n<p><strong>Iniciante</strong>: uma vez por rodada você recebe +1d4 em um teste de ataque corpo a corpo.</p>\n<p><strong>Veterano</strong>: sua margem de ameaça com armas corpo a corpo aumenta em +1.</p>\n<p><strong>Mestre</strong>: quando sofre dano, você recebe +2 em testes de ataque e rolagens de dano até o fim de seu próximo turno.</p>\n<p>Os bônus aparecem como opções na janela de ataque; ative apenas os que o nível do parceiro permite.</p>"
+    },
+    "source": "Bestiário de Arton",
+    "tipo": "geral",
+    "subtipo": "Parceiros"
+  },
+  "effects": [
+    {
+      "name": "Texugo: +1d4 no ataque",
+      "img": "icons/svg/upgrade.svg",
+      "description": "<p>Iniciante: uma vez por rodada, +1d4 em um teste de ataque corpo a corpo.</p>",
+      "disabled": true,
+      "transfer": true,
+      "duration": {
+        "expiry": null
+      },
+      "system": {
+        "onuse": true,
+        "abilityUse": {
+          "custo": null,
+          "types": [
+            "attack"
+          ]
+        },
+        "changes": [
+          {
+            "key": "ataque",
+            "value": "1d4",
+            "priority": 0,
+            "type": "add",
+            "phase": "initial"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Texugo: margem de ameaça +1",
+      "img": "icons/svg/upgrade.svg",
+      "description": "<p>Veterano: margem de ameaça +1 com armas corpo a corpo.</p>",
+      "disabled": true,
+      "transfer": true,
+      "duration": {
+        "expiry": null
+      },
+      "system": {
+        "onuse": true,
+        "abilityUse": {
+          "custo": null,
+          "types": [
+            "attack"
+          ]
+        },
+        "changes": [
+          {
+            "key": "criticoM",
+            "value": -1,
+            "priority": 0,
+            "type": "add",
+            "phase": "initial"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Texugo: Retalhação Furiosa (+2)",
+      "img": "icons/svg/upgrade.svg",
+      "description": "<p>Mestre: após sofrer dano, +2 em testes de ataque e rolagens de dano até o fim de seu próximo turno.</p>",
+      "disabled": true,
+      "transfer": true,
+      "duration": {
+        "expiry": null
+      },
+      "system": {
+        "onuse": true,
+        "abilityUse": {
+          "custo": null,
+          "types": [
+            "attack"
+          ]
+        },
+        "changes": [
+          {
+            "key": "ataque",
+            "value": 2,
+            "priority": 0,
+            "type": "add",
+            "phase": "initial"
+          },
+          {
+            "key": "dano",
+            "value": 2,
+            "priority": 0,
+            "type": "add",
+            "phase": "initial"
+          }
+        ]
+      }
+    }
+  ]
+}

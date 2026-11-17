@@ -1,0 +1,82 @@
+{
+  "nome": "Falso Vidente",
+  "img": "assets/tokens/falso-vidente.png",
+  "nd": "3",
+  "tipo": "hum",
+  "raca": "elfo",
+  "tamanho": "med",
+  "papel": "solo",
+  "atributos": {
+    "for": -1,
+    "des": 3,
+    "con": -1,
+    "int": 3,
+    "sab": 0,
+    "car": 4
+  },
+  "pv": 25,
+  "defesa": 14,
+  "pericias": {
+    "inic": 6,
+    "perc": 5,
+    "fort": 4,
+    "refl": 10,
+    "vont": 16,
+    "atua": 7,
+    "dipl": 7,
+    "enga": 11,
+    "furt": 8,
+    "inti": 7,
+    "ladi": 8
+  },
+  "deslocamento": {
+    "deslocamento": 12
+  },
+  "sentidos": [
+    "penumbra"
+  ],
+  "corpoACorpo": "Ataque desarmado +7 (1d3+2).",
+  "equipamento": "Adaga, capa esvoaçante aprimorada, gazua.",
+  "tesouro": "Padrão.",
+  "notas": "<p><em>Tavernas como esta são reconhecidas universalmente como ambientes seguros, onde aventureiros vão para descobrir aventuras, relaxar, obter informações e encontrar velhos amigos.</em></p><p>Entretanto, nem todos os estabelecimentos desse tipo são lugares inofensivos. Em alguns, uma variedade de trambiqueiros, golpistas e encrenqueiros aguarda uma oportunidade de obter alguns tibares de forma ilícita, extorquir informações secretas ou simplesmente praticar um pouco da boa e velha violência movida a álcool.</p><p>As ameaças descritas aqui são, em sua maioria, golpistas mais interessados em obter alguns tibares de forma ilícita do que se envolver em combates mortais. Se desmascarados, tentarão se safar através da lábia ou de uma fuga ousada (levando quaisquer ganhos obtidos), apelando para violência apenas como último recurso.</p>",
+  "ataques": [
+    {
+      "arma": "Ataque desarmado",
+      "descricao": "ataque desarmado",
+      "img": "systems/tormenta20/icons/itens/equipamentos/ataque-desarmado.webp",
+      "ataque": 7,
+      "dano": [
+        [
+          "1d3+2",
+          "impacto"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Aparência Inofensiva",
+      "img": "systems/tormenta20/icons/poderes/ameacas/forma.webp",
+      "descricao": "<p>A primeira criatura inteligente (Int –3 ou maior) que atacar o falso vidente em uma cena deve fazer um teste de Vontade (CD 20). Se falhar, perderá sua ação.</p>",
+      "resistencia": "Vontade CD 20 evita"
+    },
+    {
+      "poder": "Leitura Falsa",
+      "img": "systems/tormenta20/icons/poderes/ameacas/percepcao-temporal.webp",
+      "descricao": "<p>O vidente faz uma falsa leitura da sorte para uma criatura disposta e adjacente. Ele faz um teste de Enganação oposto à Intuição dessa criatura e, se vencer, descobre alguma informação valiosa que poderá ser negociada com algum oponente dos aventureiros. O mestre recebe 4d8 dados de auxílio. Até o fim da aventura, quando um NPC inteligente (Int –3 ou maior) faz um teste, o mestre pode gastar 1d8 e adicionar o resultado rolado como um bônus no teste. O vidente não pode usar esta habilidade em combate.</p>",
+      "acao": "completa",
+      "danos": [
+        [
+          "1d8",
+          "",
+          "Dado de auxílio"
+        ]
+      ]
+    },
+    {
+      "poder": "Golpista Habilidoso",
+      "img": "systems/tormenta20/icons/poderes/ameacas/visao-ampla.webp",
+      "descricao": "<p>Quando faz um teste de Enganação ou Ladinagem, o vidente rola dois dados e usa o melhor resultado.</p>"
+    }
+  ]
+}

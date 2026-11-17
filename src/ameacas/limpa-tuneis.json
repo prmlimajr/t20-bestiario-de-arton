@@ -1,0 +1,99 @@
+{
+  "nome": "Limpa-Túneis",
+  "img": "assets/tokens/limpa-tuneis.png",
+  "nd": "9",
+  "tipo": "con",
+  "tamanho": "gra",
+  "papel": "solo",
+  "atributos": {
+    "for": 7,
+    "des": 0,
+    "con": 6,
+    "int": 0,
+    "sab": 0,
+    "car": -5
+  },
+  "pv": 380,
+  "defesa": 34,
+  "pericias": {
+    "inic": 8,
+    "perc": 8,
+    "fort": 21,
+    "refl": 9,
+    "vont": 15
+  },
+  "deslocamento": {
+    "deslocamento": 6
+  },
+  "sentidos": [
+    "escuro"
+  ],
+  "resistencias": {
+    "acido": "imune",
+    "eletricidade": "imune",
+    "fogo": "imune",
+    "dano": 5
+  },
+  "resistenciasTexto": "imunidade a ácido, eletricidade e fogo, redução de dano 5, resistência a movimento +5",
+  "corpoACorpo": "Perfuratriz +27 (4d12+10 perfuração) e serra giratória +27 (6d8+10 corte).",
+  "tesouro": "Nenhum.",
+  "notas": "<p><em>Em um primeiro momento, vocês ouvem uma sucessão de rangidos metálicos e o bater ritmado de engrenagens. Os ruídos ecoam pelos túneis, claramente se aproximando pelo corredor principal. Até que, emergindo da escuridão, uma grande geringonça metálica preenche toda a largura do túnel. Uma profusão de ferramentas, como serras, pás e perfuratrizes, se agita freneticamente na parte dianteira do mecanismo, que avança limpando tudo em seu caminho.</em></p><p>Um limpa-túneis é um grande construto projetado para limpar túneis e corredores de grandes estruturas, sobretudo subterrâneas. Os primeiros projetos dessas máquinas foram criados por anões em uma inesperada parceria com engenhoqueiros goblins. O objetivo era desenvolver um equipamento robusto, capaz de lidar com todos os detritos (naturais ou não) que poderiam se acumular nos túneis menos usados dos complexos dos anões. A partir daí, os goblins passaram a oferecer seu “projeto” para outros povos e comunidades. Por serem robustos e resistentes, limpa-túneis passaram a ser usados também como defesa, tanto contra perigos naturais, como glops e outros limos, como contra invasores e aventureiros “indesejados”.</p><p>Fisicamente, um limpa-túneis é um vagão metálico que se move sobre um par de lagartas. Sua parte dianteira é formada por uma placa blindada e articulada, que se ajusta para ocupar o espaço por onde ele está passando. Essa placa também serve como suporte para várias ferramentas especializadas em lidar com os diversos tipos de detritos que podem ser encontrados em túneis. No corpo do vagão ficam seu motor e os demais mecanismos que operam as ferramentas automaticamente. Apesar de possuir uma programação rudimentar, um limpa-túneis possui capacidade de tomar decisões em combate, pois não é raro encontrar criaturas perigosas em suas missões de limpeza.</p><p><strong>Deslocamento:</strong> sem redução por terreno difícil. <strong>Resistência a movimento:</strong> +5. <strong>Inteligência:</strong> — (registrada como 0 na ficha).</p>",
+  "ataques": [
+    {
+      "arma": "Perfuratriz",
+      "descricao": "perfuratriz",
+      "img": "systems/tormenta20/icons/itens/equipamentos/picareta.webp",
+      "ataque": 27,
+      "dano": [
+        [
+          "4d12+10",
+          "perfuracao"
+        ]
+      ]
+    },
+    {
+      "arma": "Serra giratória",
+      "descricao": "serra giratória",
+      "img": "systems/tormenta20/icons/poderes/ameacas/ataque-corte.webp",
+      "ataque": 27,
+      "dano": [
+        [
+          "6d8+10",
+          "corte"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Arsenal de Limpeza",
+      "img": "systems/tormenta20/icons/poderes/ameacas/quebrar-tudo.webp",
+      "descricao": "<p>As armas do limpa-túneis ignoram até 10 pontos da redução de dano de criaturas e objetos. Uma criatura atingida pela perfuratriz do limpa-túneis fica sangrando e uma criatura atingida pela serra giratória sofre +1d8 pontos de dano para cada resultado 8 nos dados de dano da arma.</p>",
+      "danos": [
+        [
+          "1d8",
+          "corte",
+          "Por resultado 8 da serra"
+        ]
+      ]
+    },
+    {
+      "poder": "Atropelamento",
+      "img": "systems/tormenta20/icons/poderes/ameacas/investida.webp",
+      "descricao": "<p>O limpa-túneis percorre até o dobro de seu deslocamento. Ele pode passar pelo espaço ocupado de quaisquer inimigos menores que ele, mas não pode passar duas vezes pelo mesmo espaço. Criaturas atropeladas desta forma sofrem 4d12+10 pontos de dano de impacto, ficam caídas (Ref CD 28 reduz à metade e evita a condição) e são empurradas até o fim do movimento do limpa-túneis. <em>Recarga (movimento).</em></p>",
+      "acao": "completa",
+      "danos": [
+        [
+          "4d12+10",
+          "impacto"
+        ]
+      ],
+      "resistencia": "Reflexos CD 28 reduz à metade e evita"
+    },
+    {
+      "poder": "Placa Frontal",
+      "img": "systems/tormenta20/icons/itens/equipamentos/escudo-pesado.webp",
+      "descricao": "<p>A placa frontal do limpa-túneis forma uma parede de 3m de lado que oferece camuflagem total para ele. A parede só pode ser transposta por criaturas incorpóreas ou Minúsculas.</p>"
+    }
+  ]
+}

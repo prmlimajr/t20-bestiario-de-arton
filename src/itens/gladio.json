@@ -1,0 +1,71 @@
+{
+  "name": "Gládio",
+  "type": "arma",
+  "img": "systems/tormenta20/icons/itens/equipamentos/espada-curta.webp",
+  "system": {
+    "description": {
+      "value": "<p>Uma espada de lâmina curta, mas pesada e sem guarda. O gládio tem uma ponta muito afiada, capaz de infligir ferimentos precisos e letais. É uma das armas padrão dos legionários do Império de Tauron.</p><p><strong>Arma Marcial • Corpo a Corpo • Uma Mão • T$ 12 • Dano 1d6 • Crítico 19/x3 • Perfuração • 1 Espaço</strong></p>"
+    },
+    "source": "Bestiário de Arton",
+    "peso": 1,
+    "espacos": 1,
+    "qtd": 1,
+    "preco": 12,
+    "rolls": [
+      {
+        "name": "Ataque",
+        "key": "ataque0",
+        "type": "ataque",
+        "parts": [
+          [
+            "1d20",
+            "",
+            ""
+          ],
+          [
+            "luta",
+            "",
+            ""
+          ],
+          [
+            "0",
+            "",
+            ""
+          ]
+        ],
+        "adaptavel": "",
+        "versatil": ""
+      },
+      {
+        "name": "Dano",
+        "key": "dano1",
+        "type": "dano",
+        "parts": [
+          [
+            "1d6",
+            "perfuracao",
+            ""
+          ],
+          [
+            "@for",
+            "",
+            ""
+          ]
+        ],
+        "adaptavel": "",
+        "versatil": ""
+      }
+    ],
+    "criticoM": 19,
+    "criticoX": 3,
+    "alcance": "",
+    "proficiencia": "marcial",
+    "proposito": "corpo-a-corpo",
+    "empunhadura": "uma",
+    "equipado2": {
+      "slot": 0,
+      "type": "hand"
+    },
+    "tipoUso": "sim"
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "nome": "Manotauro Selvagem",
+  "img": "assets/tokens/manotauro-selvagem.png",
+  "nd": "12",
+  "tipo": "hum",
+  "raca": "manotauro",
+  "tamanho": "gra",
+  "papel": "solo",
+  "atributos": {
+    "for": 6,
+    "des": 1,
+    "con": 3,
+    "int": -1,
+    "sab": 0,
+    "car": 0
+  },
+  "pv": 600,
+  "defesa": 43,
+  "pericias": {
+    "inic": 11,
+    "perc": 12,
+    "fort": 26,
+    "refl": 12,
+    "vont": 20,
+    "atle": 16,
+    "inti": 16,
+    "sobr": 10
+  },
+  "deslocamento": {
+    "deslocamento": 12
+  },
+  "resistencias": {
+    "dano": 5
+  },
+  "resistenciasTexto": "redução de dano 5",
+  "corpoACorpo": "Chifres +36 (2d10+25, x3), machado de guerra +36 (4d12+25, x4) e cascos +36 (2d10+25, x3).",
+  "equipamento": "Machado de guerra aumentado cruel.",
+  "tesouro": "Metade.",
+  "notas": "<p><em>A criatura, que poderia lembrar um centauro comum à distância, revela-se como algo diferente e bizarro. Tem torso humanoide e corpo quadrúpede, mas a cabeça pertence a um touro. Os olhos vermelhos parecem cheios de ódio por todos os seres.</em></p><p>O manotauro é um monstro que combina as características de um centauro clássico e um minotauro; tem cabeça de touro, torso humano e corpo de cavalo. São maiores, mais fortes e musculosos que centauros comuns — e também muito mais agressivos.</p><p>A lenda de sua origem fala de um conflito entre uma tribo de centauros violentos e um bando de minotauros fugitivos dos gigantes das Lannestull. Ambos os grupos teriam rogado a Megalokk por poder para esmagar seus oponentes. Irritado com as lamúrias daqueles fracos, o Deus dos Monstros amaldiçoou todos a viver para sempre com seus inimigos, fundindo centauros e minotauros em criaturas únicas, cheias de rancor.</p><p>Assim, manotauros formam bandos errantes que atacam e destroem povoados de outras raças. São truculentos, fanfarrões e pouco espertos. Apesar de sua grande força e hostilidade, alguém que conheça sua história ou psicologia pode usar o ódio antigo para enganá-los; com as palavras certas, levar um manotauro a voltar-se contra seus semelhantes não é muito difícil. Pelos mesmos motivos, algumas vezes um xamã de Megalokk será capaz de comandar o grupo, provendo curas mágicas enquanto os utiliza como soldados.</p><p>Dizem existir manotauros que desafiam a maldição de Megalokk, escolhendo lutar com honra ou mesmo viver pacificamente entre aqueles que os aceitam. Uns poucos teriam até mesmo conquistado posições de valor no Império de Tauron, antes de sua queda. Contudo, são exceções raríssimas.</p><p><strong>Manotauro: Habilidades de Raça</strong></p><p><strong>Força +2, Constituição +1, Inteligência –1, Sabedoria –2.</strong></p><p><strong>Cascos.</strong> Você possui uma arma natural de cascos (dano 1d8, crítico x2, impacto). Uma vez por rodada, quando usa a ação agredir para atacar com outra arma, pode gastar 1 PM para fazer um ataque corpo a corpo extra com os cascos.</p><p><strong>Chifres.</strong> Você possui uma arma natural de chifres (dano 1d8, crítico x2, perfuração). Uma vez por rodada, quando usa a ação agredir para atacar com outra arma, pode gastar 1 PM para fazer um ataque corpo a corpo extra com os chifres.</p><p><strong>Corpulento.</strong> Seu tamanho é Grande e seu deslocamento é 12m. Entretanto, você não pode se beneficiar de uma montaria e, se estiver carregando um cavaleiro, sofre −2 em testes (além das penalidades de sobrecarga, se houver) e é considerado em condição ruim para lançar magias.</p><p><strong>Medo de Altura.</strong> Se estiver adjacente a uma queda de 3m ou mais (como um buraco ou penhasco), você fica abalado.</p><p><strong>Longevidade.</strong> Normal.</p><p><strong>Devotos.</strong> Allihanna, Deus do Medo*, Hippion, Keenn**, Lamashtu*, Megalokk, Sszzaas, Tauron**. <em>*Descritos no Guia de Deuses Menores. **Descritos em Guerra Artoniana e A Libertação de Valkaria.</em></p>",
+  "ataques": [
+    {
+      "arma": "Chifres",
+      "descricao": "chifres",
+      "img": "systems/tormenta20/icons/poderes/ameacas/chifres.webp",
+      "ataque": 36,
+      "critico": "x3",
+      "dano": [
+        [
+          "2d10+25",
+          "perfuracao"
+        ]
+      ]
+    },
+    {
+      "arma": "Machado de guerra",
+      "descricao": "machado de guerra",
+      "img": "systems/tormenta20/icons/itens/equipamentos/machado-de-guerra.webp",
+      "ataque": 36,
+      "critico": "x4",
+      "dano": [
+        [
+          "4d12+25",
+          "corte"
+        ]
+      ]
+    },
+    {
+      "arma": "Cascos",
+      "descricao": "cascos",
+      "img": "systems/tormenta20/icons/poderes/ameacas/cascos.webp",
+      "ataque": 36,
+      "critico": "x3",
+      "dano": [
+        [
+          "2d10+25",
+          "impacto"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Chifrada Revidante",
+      "img": "systems/tormenta20/icons/poderes/ameacas/chifres.webp",
+      "descricao": "<p>Uma vez por rodada, quando sofre dano de um ataque corpo a corpo enquanto está em fúria, o manotauro selvagem pode fazer um ataque de chifres contra a criatura que o atacou.</p>",
+      "acao": "reacao"
+    },
+    {
+      "poder": "Fúria Táurica",
+      "img": "systems/tormenta20/icons/poderes/classes/combatentes/furia.webp",
+      "descricao": "<p>Uma vez por cena, o manotauro entra em fúria. Ele recebe +4 em testes de ataque e em rolagens de dano corpo a corpo e, quando um de seus ataques excede a Defesa do alvo por 5 ou mais, causa dois dados extras de dano do mesmo tipo. Nesse estado, ele não pode fazer nenhuma ação que exija calma e concentração (como usar Furtividade). A fúria termina se, ao fim da rodada, ele não tiver atacado nem sido alvo de um efeito hostil.</p>",
+      "acao": "livre",
+      "efeitos": [
+        {
+          "name": "Fúria Táurica",
+          "description": "<p>+4 em testes de ataque e rolagens de dano corpo a corpo.</p><p><strong>Não automatizado:</strong> dois dados extras de dano quando excede a Defesa do alvo por 5 ou mais.</p>",
+          "system": {
+            "changes": [
+              {
+                "key": "system.modificadores.ataque.cac",
+                "value": 4,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              },
+              {
+                "key": "system.modificadores.dano.cac",
+                "value": 4,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "poder": "Sede Sanguinária",
+      "img": "systems/tormenta20/icons/poderes/ameacas/odio-puro.webp",
+      "descricao": "<p>Enquanto o manotauro está em fúria, quando faz um acerto crítico ou reduz um inimigo a 0 PV ou menos, ele recupera 10 PV e recebe um bônus cumulativo de +2 em testes de ataque e rolagens de dano, limitado pelo nível dele, até o fim da cena.</p>",
+      "danos": [
+        [
+          "10",
+          "curapv",
+          "Recupera PV"
+        ]
+      ],
+      "efeitos": [
+        {
+          "name": "Sede Sanguinária (+2)",
+          "description": "<p>+2 em testes de ataque e rolagens de dano (cumulativo; aplique uma vez por acúmulo).</p>",
+          "system": {
+            "changes": [
+              {
+                "key": "system.modificadores.ataque.cac",
+                "value": 2,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              },
+              {
+                "key": "system.modificadores.dano.cac",
+                "value": 2,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "poder": "Medo de Altura",
+      "img": "systems/tormenta20/icons/poderes/ameacas/medo-de-altura.webp",
+      "descricao": "<p>Se estiver adjacente a uma queda de 3m ou mais de altura, o manotauro fica abalado.</p>"
+    }
+  ]
+}

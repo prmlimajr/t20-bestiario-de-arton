@@ -1,0 +1,86 @@
+{
+  "nome": "Saqueador Bruto",
+  "img": "assets/tokens/saqueador-bruto.png",
+  "nd": "1/2",
+  "papel": "lackey",
+  "tipo": "hum",
+  "raca": "humano",
+  "tamanho": "med",
+  "deslocamento": {
+    "deslocamento": 9
+  },
+  "notas": "<p><em>Os guerreiros descem a montanha com roupas leves, tatuagens e adereços típicos dos povos das Sanguinárias. Têm o andar decidido de quem está acostumado a caminhar rumo ao perigo e o olhar de caçadores acostumados a abater todo tipo de presa.</em></p><p>Conhecidas por sua população de monstros selvagens, as Sanguinárias estão entre um dos mais desafiadores territórios de Arton. Seus habitantes, habituados a resistir aos rigores da geografia e aos perigos de predadores, aprenderam a valorizar a força e violência, e muitas vezes, fazer delas seu meio de vida.</p><p>Estes saqueadores são grupos de combatentes que vivem espalhados nesta região. Vivem da caça aos monstros, da extração de recursos naturais e, sobretudo, de saques, tanto entre si quanto de outros povos fronteiriços às montanhas. Alguns formam bandos nômades, outros se estabelecem em aldeias e cidades. Destas, a mais famosa é Katiaskh, o maior povoado humano conhecido nas Sanguinárias.</p><p>Embora façam das montanhas seu lar e território de caça, é possível encontrar estes saqueadores em outras partes de Arton. Alguns grupos, em raras ocasiões, viajam além de seu lar para realizar uma missão ou até tentar a sorte atuando como mercenários.</p>",
+  "atributos": {
+    "for": 3,
+    "des": 0,
+    "con": 2,
+    "int": -1,
+    "sab": 1,
+    "car": -1
+  },
+  "pv": 9,
+  "defesa": 12,
+  "pericias": {
+    "inic": 2,
+    "perc": 3,
+    "fort": 5,
+    "refl": 1,
+    "vont": 2,
+    "atle": 5,
+    "sobr": 5
+  },
+  "corpoACorpo": "Tacape +10 (1d10+5).",
+  "equipamento": "Tacape.",
+  "tesouro": "Metade.",
+  "ataques": [
+    {
+      "arma": "Tacape",
+      "descricao": "tacape",
+      "img": "systems/tormenta20/icons/itens/equipamentos/tacape.webp",
+      "ataque": 10,
+      "dano": [
+        [
+          "1d10+5",
+          "impacto"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Nativo das Sanguinárias",
+      "img": "systems/tormenta20/icons/poderes/ameacas/odio-puro.webp",
+      "descricao": "<p>O saqueador bruto recebe +2 em testes e rolagens de dano contra monstros.</p>",
+      "efeitos": [
+        {
+          "name": "Nativo das Sanguinárias",
+          "description": "<p>Contra monstros: +2 em testes de ataque e rolagens de dano corpo a corpo.</p><p><strong>Não automatizado:</strong> +2 em outros testes contra monstros.</p>",
+          "system": {
+            "changes": [
+              {
+                "key": "system.modificadores.ataque.cac",
+                "value": 2,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              },
+              {
+                "key": "system.modificadores.dano.cac",
+                "value": 2,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "poder": "Retaliação Brutal",
+      "img": "systems/tormenta20/icons/itens/equipamentos/tacape.webp",
+      "descricao": "<p>Quando é reduzido a 0 PV ou menos por uma criatura adjacente, o saqueador faz um ataque de tacape contra essa criatura.</p>",
+      "acao": "reacao"
+    }
+  ]
+}

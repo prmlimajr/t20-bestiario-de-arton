@@ -1,0 +1,13 @@
+{
+  "name": "Âmbar Dourado",
+  "type": "consumivel",
+  "img": "systems/tormenta20/icons/itens/gerais/seixo-de-ambar.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>[Tesouro Especial]</strong></p><p>Âmbar extraído de um rodrocentar (CD 32 para extrair). Vale 1 PM para fabricar um item mágico que forneça bônus em Constituição ou cure pontos de vida.</p>"
+    },
+    "source": "Bestiário de Arton",
+    "tipo": "material",
+    "qtd": 1
+  }
+}

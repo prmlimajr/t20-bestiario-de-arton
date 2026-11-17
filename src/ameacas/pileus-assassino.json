@@ -1,0 +1,125 @@
+{
+  "nome": "Pileus Assassino",
+  "img": "assets/tokens/pileus-assassino.png",
+  "nd": "20",
+  "tipo": "mor",
+  "tamanho": "med",
+  "papel": "solo",
+  "atributos": {
+    "for": 7,
+    "des": 8,
+    "con": 4,
+    "int": 4,
+    "sab": 3,
+    "car": 4
+  },
+  "pv": 1200,
+  "defesa": 60,
+  "pericias": {
+    "inic": 26,
+    "perc": 19,
+    "fort": 28,
+    "refl": 33,
+    "vont": 21,
+    "acro": 26,
+    "atle": 25,
+    "conh": 22,
+    "dipl": 22,
+    "inti": 22,
+    "intu": 21,
+    "mist": 22,
+    "reli": 21
+  },
+  "deslocamento": {
+    "deslocamento": 18
+  },
+  "sentidos": [
+    "escuro"
+  ],
+  "resistencias": {
+    "frio": "imune",
+    "dano": 10
+  },
+  "imunidadeCondicoes": [
+    "movimento",
+    "metamorfose",
+    "surpreendido"
+  ],
+  "resistenciasTexto": "evasão aprimorada, imunidade a efeitos de movimento, frio, metamorfose e surpreendido, redução de dano 10/impacto mágico, resistência a magia +5",
+  "corpoACorpo": "Duas adagas sombrias x2 +56 (4d12+25, 16, mais 4d8 trevas).",
+  "tesouro": "Nenhum.",
+  "notas": "<p><em>A criatura que surge diante de vocês tem a aparência de um humanoide grande, forte e levemente corcunda, como um ogro, trajando uma armadura pesada repleta de espinhos pontiagudos. Apesar da aparência abrutalhada, o brilho em seus olhos transparece inteligência superior e maldade sem igual.</em></p><p>Pileus são mortos-vivos poderosos que mudam de forma ao longo de uma batalha, transformando-se e assumindo novas habilidades a cada vez que são derrotados. Além de sua forma inicial de colosso, em que surge como um grande guerreiro de armadura, quando é derrotado pela primeira vez, um pileus se transforma em um assassino: um esqueleto de proporções humanas, trajando armadura leve e empunhando duas armas. A diminuição de tamanho, porém, não o torna menos perigoso — como assassino, ele é rápido, ágil e extremamente mortífero. Por fim, ao ser derrotado pela segunda vez, ele retorna como mago: uma sombra incorpórea trajando um manto e capuz. Nessa forma, ele é mais fraco e lento, mas seu intelecto atinge o ápice e ele é capaz de empregar poderosas magias arcanas.</p><p>A mudança de estágio de um pileus é um processo temporário. Depois de evoluir, o pileus “retrocede” um estágio por semana, até voltar à forma de colosso. Como as habilidades de cada estágio são diferentes, existem casos de pileus que se autodestruiriam para assumir momentaneamente um de seus estágios mais avançados. Essa é uma estratégia que estas criaturas empregam com parcimônia, pois, a cada estágio que evolui, o pileus fica mais próximo de sua morte final — se for destruído como mago, ele morre para sempre.</p><p>Ninguém sabe exatamente qual a origem dos pileus. Especula-se que não sejam criados como mortos-vivos tradicionais, mas que seu surgimento seja resultado de um ritual ao qual indivíduos se submetem em busca de poder — algo semelhante à transformação de arcanistas em liches. O fato de a criatura passar por sucessivas transformações quando é derrotada indica alguma ligação com magias ou poderes de transformação e metamorfose, mas qualquer coisa além disso é pura especulação dos sábios artonianos.</p><p>Em todas as formas, pileus são astutos e inteligentes. Sua existência geralmente é motivada pela busca por poder, mas cada um tem seus próprios planos e objetivos. Alguns querem se tornar líderes de grandes exércitos para conquistar determinado território, enquanto outros levam uma vida de pesquisa e estudo em busca de caminhos para alcançar ainda mais poder físico ou mágico. Em comum, todos têm ambição desmedida e crueldade ilimitada.</p><p><strong>Estágios:</strong> Pileus Colosso (estágio um) → Pileus Assassino (estágio dois) → Pileus Mago (estágio três). Ao ser reduzido a 0 PV, cada estágio usa Evolução Sombria e surge como o estágio seguinte (substitua o token pela ficha do próximo estágio). Destruído como mago, o pileus morre para sempre.</p><p><strong>Enfrentando Todos os Estágios</strong></p><p>Os encontros mais comuns com um pileus envolvem confrontar a criatura como um colosso e ir enfrentando cada um de seus estágios. Isso pode ser bastante desafiador, pois significa enfrentar três criaturas de ND 20 em sequência. Se fizer isso, considere este um encontro de ND 22 para efeitos de experiência.</p><p>Por outro lado, você também pode querer usar apenas dois estágios do pileus em um mesmo encontro. Como esta criatura demora alguns dias para “retroceder” aos estágios anteriores, seria possível encontrar um pileus que ainda está na forma assassino, e que precisa ser derrotado “apenas” duas vezes. Nesse caso, considere o encontro, para fins de XP, como ND 21.</p><p>Por fim, um encontro contra qualquer um dos estágios do pileus tem ND 20, como normal para a criatura.</p><p>Estágio dois. Ao ser reduzido a 0 PV, torna-se o <strong>Pileus Mago</strong>.</p><p><strong>Redução de dano:</strong> 10/impacto mágico (na ficha, 10 contra todo dano).</p>",
+  "ataques": [
+    {
+      "arma": "Adaga sombria",
+      "descricao": "duas adagas sombrias x2",
+      "img": "systems/tormenta20/icons/itens/equipamentos/adaga.webp",
+      "qtd": 4,
+      "ataque": 56,
+      "critico": "16",
+      "dano": [
+        [
+          "4d12+25",
+          "perfuracao"
+        ],
+        [
+          "4d8",
+          "trevas"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Resistência a Magia",
+      "img": "systems/tormenta20/icons/poderes/ameacas/resistencia-magia.webp",
+      "descricao": "<p>O pileus recebe +5 em testes de resistência contra magias.</p>"
+    },
+    {
+      "poder": "Evasão Aprimorada",
+      "img": "systems/tormenta20/icons/poderes/classes/especialistas/evasao.webp",
+      "descricao": "<p>Quando sofre um efeito que permite um teste de Reflexos para reduzir o dano à metade, o pileus não sofre dano algum se passar e sofre apenas metade do dano se falhar.</p>"
+    },
+    {
+      "poder": "Ataque Furtivo",
+      "img": "systems/tormenta20/icons/poderes/classes/especialistas/ataque-furtivo.webp",
+      "descricao": "<p>+10d8.</p>",
+      "danos": [
+        [
+          "10d8",
+          "",
+          "Ataque Furtivo"
+        ]
+      ]
+    },
+    {
+      "poder": "Evolução Sombria",
+      "img": "systems/tormenta20/icons/poderes/ameacas/ataque-trevas.webp",
+      "descricao": "<p>Quando o pileus é reduzido a 0 PV, ele explode em uma onda de energia negativa, causando 5d20 pontos de dano de trevas a todas as criaturas vivas em um raio de 30m (Fort CD 49 reduz à metade). Ele então surge em sua terceira forma (veja Pileus Mago) e age normalmente a partir de seu próximo turno.</p>",
+      "acao": "reacao",
+      "danos": [
+        [
+          "5d20",
+          "trevas"
+        ]
+      ],
+      "resistencia": "Fortitude CD 49 reduz à metade"
+    },
+    {
+      "poder": "Porta Dimensional Sombria",
+      "img": "systems/tormenta20/icons/magias/salto-dimensional.webp",
+      "descricao": "<p>O pileus se teletransporta para um espaço livre que ele possa ver em alcance médio. Se este espaço for adjacente a um inimigo, este inimigo fica desprevenido contra o pileus por 1 rodada. O pileus só pode usar esta habilidade uma vez por rodada, e apenas a partir de seu segundo turno após assumir este estágio.</p>",
+      "acao": "livre"
+    },
+    {
+      "poder": "Punhais da Morte",
+      "img": "systems/tormenta20/icons/itens/equipamentos/adaga.webp",
+      "descricao": "<p>As adagas do pileus são feitas da própria energia sombria que o alimenta. Elas são consideradas adagas ameaçadoras dilacerantes sanguinárias, não podem ser desarmadas e se desfazem quando ele muda de estágio.</p>"
+    },
+    {
+      "poder": "Visão Arcana",
+      "img": "systems/tormenta20/icons/magias/visao-mistica.webp",
+      "descricao": "<p>O pileus está permanentemente sob efeito da magia @UUID[Compendium.tormenta20.magias.Item.GDlkTth7oEnb5d0Y]{Visão Mística} com o aprimoramento que permite enxergar criaturas e objetos invisíveis.</p>"
+    }
+  ]
+}

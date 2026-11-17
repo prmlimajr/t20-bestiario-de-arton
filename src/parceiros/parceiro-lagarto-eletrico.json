@@ -1,0 +1,64 @@
+{
+  "name": "Parceiro: Lagarto-Elétrico",
+  "type": "poder",
+  "img": "assets/tokens/lagarto-eletrico.png",
+  "system": {
+    "description": {
+      "value": "<p>O lagarto-elétrico é um parceiro especial (destruidor) que fornece os benefícios a seguir.</p>\n<p><strong>Iniciante</strong>: uma vez por rodada, você pode gastar 1 PM para causar 2d6 pontos de dano de eletricidade em uma criatura em alcance curto.</p>\n<p><strong>Veterano</strong>: você pode lançar @UUID[Compendium.tormenta20.magias.Item.Q2zkHtJ1h5o725IR]{Toque Chocante}. Se você já conhece essa magia, seu custo diminui em –1 PM.</p>\n<p><strong>Mestre</strong>: você recebe redução de eletricidade 20.</p>\n<p><strong>Familiar</strong>: um lagarto-elétrico familiar fornece +1 PM para gastar em aprimoramentos sempre que você lança uma magia de eletricidade.</p>\n<p><strong>Não automatizado:</strong> a descarga do Iniciante (use a rolagem deste poder), Toque Chocante (Veterano) e o PM extra do familiar.</p>"
+    },
+    "source": "Bestiário de Arton",
+    "tipo": "geral",
+    "subtipo": "Parceiros",
+    "ativacao": {
+      "execucao": "free",
+      "custo": 1
+    },
+    "rolls": [
+      {
+        "name": "Descarga (Iniciante)",
+        "key": "dano0",
+        "type": "dano",
+        "parts": [
+          [
+            "2d6",
+            "eletricidade",
+            ""
+          ]
+        ],
+        "versatil": "",
+        "adaptavel": ""
+      }
+    ]
+  },
+  "effects": [
+    {
+      "name": "Parceiro: Lagarto-Elétrico Iniciante",
+      "description": "<p>Uma vez por rodada, 1 PM: 2d6 de dano de eletricidade em uma criatura em alcance curto (rolagem do poder).</p>",
+      "system": {
+        "changes": []
+      }
+    },
+    {
+      "name": "Parceiro: Lagarto-Elétrico Veterano",
+      "description": "<p>Como Iniciante; pode lançar Toque Chocante (–1 PM se já a conhece).</p>",
+      "system": {
+        "changes": []
+      }
+    },
+    {
+      "name": "Parceiro: Lagarto-Elétrico Mestre",
+      "description": "<p>Como Veterano e redução de eletricidade 20.</p>",
+      "system": {
+        "changes": [
+          {
+            "key": "system.tracos.resistencias.eletricidade.bonus",
+            "value": 20,
+            "priority": null,
+            "type": "add",
+            "phase": "initial"
+          }
+        ]
+      }
+    }
+  ]
+}

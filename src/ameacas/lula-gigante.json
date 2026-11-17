@@ -1,0 +1,100 @@
+{
+  "nome": "Lula-Gigante",
+  "img": "assets/tokens/lula-gigante.png",
+  "nd": "7",
+  "tipo": "ani",
+  "tamanho": "eno",
+  "papel": "solo",
+  "atributos": {
+    "for": 6,
+    "des": 2,
+    "con": 2,
+    "int": -5,
+    "sab": 1,
+    "car": -3
+  },
+  "pv": 290,
+  "defesa": 27,
+  "pericias": {
+    "inic": 9,
+    "perc": 8,
+    "fort": 20,
+    "refl": 14,
+    "vont": 7,
+    "atle": 13,
+    "furt": 4
+  },
+  "deslocamento": {
+    "deslocamento": 6,
+    "natacao": 18
+  },
+  "sentidos": [
+    "escuro"
+  ],
+  "resistencias": {
+    "impacto": 5,
+    "frio": 5
+  },
+  "resistenciasTexto": "redução de impacto e frio 5",
+  "corpoACorpo": "Quatro tentáculos +24 (2d8+9).",
+  "tesouro": "Nenhum.",
+  "notas": "<p><em>O animal que emerge das águas em tudo lembra uma lula marinha, exceto por seu tamanho. A criatura diante de vocês tem vários metros de comprimento, rivalizando em tamanho com sua embarcação. Seus longos tentáculos vasculham freneticamente ao redor, em busca de presas para capturar.</em></p><p>Encontrada nas profundezas de mares e grandes lagos de Arton, a lula-gigante é um predador invertebrado, conhecido principalmente por seus dez longos tentáculos dotados de poderosas ventosas. Protagonista de várias histórias de pescadores, nas quais ataca embarcações para arrastar seus ocupantes para as profundezas, a lula-gigante é na verdade um animal relativamente dócil, que passa a maior parte do tempo em águas profundas, raramente atacando criaturas na superfície.</p><p>Apesar de sua natureza, entretanto, lulas-gigantes eventualmente sobem à superfície e de fato atacam embarcações e seus ocupantes. Isso geralmente é resultado de algum desequilíbrio natural na região. Em outros casos, conjuradores malignos podem controlar essas criaturas, incitando-as a atacar pescadores e mercadores que navegam em suas águas.</p>",
+  "ataques": [
+    {
+      "arma": "Tentáculo",
+      "descricao": "quatro tentáculos",
+      "img": "icons/creatures/tentacles/tentacles-octopus-black-pink.webp",
+      "qtd": 4,
+      "ataque": 24,
+      "dano": [
+        [
+          "2d8+9",
+          "impacto"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Agarrar Aprimorado",
+      "img": "systems/tormenta20/icons/poderes/ameacas/agarrar.webp",
+      "descricao": "<p>Se a lula acerta um ataque de tentáculo, pode fazer a manobra agarrar como uma ação livre (teste +31).</p>",
+      "acao": "livre"
+    },
+    {
+      "poder": "Bicada",
+      "img": "systems/tormenta20/icons/poderes/ameacas/mordida.webp",
+      "descricao": "<p>Uma vez por rodada, a lula-gigante morde uma criatura que esteja agarrando, causando 2d6+5 pontos de dano de corte.</p>",
+      "acao": "movimento",
+      "danos": [
+        [
+          "2d6+5",
+          "corte"
+        ]
+      ]
+    },
+    {
+      "poder": "Constrição",
+      "img": "systems/tormenta20/icons/poderes/ameacas/agarrar.webp",
+      "descricao": "<p>No início de cada um de seus turnos, a lula causa 4d8+9 pontos de dano de impacto em cada criatura que estiver agarrando.</p>",
+      "acao": "livre",
+      "danos": [
+        [
+          "4d8+9",
+          "impacto"
+        ]
+      ]
+    },
+    {
+      "poder": "Nuvem de Tinta",
+      "img": "systems/tormenta20/icons/magias/nevoa.webp",
+      "descricao": "<p>A lula expele uma nuvem de tinta num cone de 18m. Dentro dessa nuvem, criaturas a até 1,5m têm camuflagem leve e criaturas a partir de 3m têm camuflagem total, e todas as criaturas têm seu deslocamento reduzido para 3m e sofrem –5 em testes de ataque e rolagens de dano. A lula é imune aos efeitos da nuvem. <em>Recarga (movimento).</em></p>",
+      "acao": "movimento"
+    },
+    {
+      "poder": "Decápode",
+      "img": "icons/creatures/tentacles/tentacles-octopus-black-pink.webp",
+      "descricao": "<p>A lula tem dez tentáculos, mas só consegue atacar com quatro deles por rodada. Se estiver fora d’água (em terra firme ou abordando uma embarcação, por exemplo), ela usa os demais tentáculos para locomoção. Se estiver completamente dentro d’água, pode usar esses tentáculos para manter criaturas adicionais agarradas (ela pode manter até dez criaturas agarradas).</p>"
+    }
+  ]
+}

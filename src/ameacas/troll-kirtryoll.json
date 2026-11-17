@@ -1,0 +1,194 @@
+{
+  "nome": "Troll Kirtryoll",
+  "img": "assets/tokens/troll-kirtryoll.png",
+  "nd": "15",
+  "tipo": "mon",
+  "tamanho": "gra",
+  "papel": "solo",
+  "atributos": {
+    "for": 7,
+    "des": 3,
+    "con": 6,
+    "int": 1,
+    "sab": 2,
+    "car": -1
+  },
+  "pv": 730,
+  "defesa": 43,
+  "pericias": {
+    "inic": 18,
+    "perc": 17,
+    "fort": 22,
+    "refl": 28,
+    "vont": 15,
+    "acro": 16,
+    "atle": 20,
+    "furt": 18,
+    "guer": 14,
+    "inti": 14,
+    "sobr": 15
+  },
+  "deslocamento": {
+    "deslocamento": 12,
+    "natacao": 9
+  },
+  "sentidos": [
+    "faro",
+    "cegas",
+    "escuro"
+  ],
+  "resistencias": {
+    "frio": "imune",
+    "dano": 5
+  },
+  "resistenciasTexto": "cura acelerada 30/ácido ou fogo, imunidade a frio, redução de dano 5",
+  "corpoACorpo": "Mordida +43 (4d8+28) e duas garras +43 (2d12+28, 19).",
+  "aDistancia": "Arco longo x2 +39 (4d8+38, x3, mais veneno).",
+  "equipamento": "Arco longo, flechas x20, peçonha potente x4.",
+  "tesouro": "Padrão.",
+  "notas": "<p><em>O virote parece surgir em pleno ar, disparado de lugar nenhum. Ao procurarem o atacante, vocês finalmente encontram um troll de pele pele azulada e cristalina, camuflado em meio à vegetação. A criatura tem olhos completamente brancos e sem pupilas, membranas entre os dedos, e carrega um pequeno arsenal. Sua expressão não possui a ferocidade bestial de outros trolls, mas a astúcia de um caçador paciente e habilidoso.</em></p><p>Na sofisticada sociedade finntroll, trolls comuns são considerados criaturas inferiores; bestas indignas geralmente escravizadas ou usadas como montarias. Assim, é natural que sejam usados como cobaias dos mais variados experimentos. E foi a partir de um desses experimentos que surgiram os kirtryolls.</p><p>Kirtryolls são soldados trolls especializados em infiltração, capazes de se mover furtivamente em qualquer terreno, se infiltrar em qualquer tipo de fortificação e abater qualquer tipo de inimigo. Criados a partir da combinação alquímica de sangue de glaciolls, vrakolls e trolls normais, possuem capacidades mágicas de invisibilidade e um senso de estratégia aguçado e mortífero.</p><p>Kirtryolls, na maioria, são controlados pela alta nobreza finntroll, que os emprega como assassinos, espiões e guarda-costas. Alguns, entretanto, libertaram-se do controle finntroll e se espalharam por Arton. Alguns desses kirtryolls libertos vivem como saqueadores, enquanto outros tornaram-se mercenários altamente valorizados. E há aqueles que buscaram o convívio com outros trolls, muitas vezes assumindo sua liderança. Existem até rumores de que alguns kirtryolls estariam buscando uma forma de replicar o experimento que os originou, em uma tentativa de aumentar seus números e seu poder.</p><p><strong>Furtividade:</strong> +28 na ficha do livro, que já inclui o +10 do Campo de Invisibilidade. Na ficha do Foundry está +18; o botão de efeito do Campo de Invisibilidade soma os +10.</p><p><strong>Cura acelerada:</strong> 30/ácido ou fogo.</p>",
+  "ataques": [
+    {
+      "arma": "Mordida",
+      "descricao": "mordida",
+      "img": "icons/creatures/abilities/mouth-teeth-long-red.webp",
+      "ataque": 43,
+      "dano": [
+        [
+          "4d8+28",
+          "perfuracao"
+        ]
+      ]
+    },
+    {
+      "arma": "Garras",
+      "descricao": "duas garras",
+      "img": "systems/tormenta20/icons/poderes/ameacas/garras.webp",
+      "qtd": 2,
+      "ataque": 43,
+      "critico": "19",
+      "dano": [
+        [
+          "2d12+28",
+          "corte"
+        ]
+      ]
+    },
+    {
+      "arma": "Arco longo",
+      "descricao": "arco longo x2 (mais veneno)",
+      "img": "systems/tormenta20/icons/itens/equipamentos/arco-longo.webp",
+      "qtd": 2,
+      "ataque": 39,
+      "critico": "x3",
+      "alcance": "medium",
+      "dano": [
+        [
+          "4d8+38",
+          "perfuracao"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Cura Acelerada",
+      "img": "systems/tormenta20/icons/magias/curar-ferimentos.webp",
+      "descricao": "<p>No início de cada um de seus turnos, o kirtryoll recupera 30 pontos de vida. Dano de ácido ou fogo interrompe a cura acelerada na rodada seguinte.</p>",
+      "danos": [
+        [
+          "30",
+          "curapv",
+          "Cura acelerada"
+        ]
+      ]
+    },
+    {
+      "poder": "Absorver Energia",
+      "img": "systems/tormenta20/icons/poderes/ameacas/imunidade-aberrante.webp",
+      "descricao": "<p>Se o troll kirtryoll fosse sofrer dano de frio, em vez disso ele recebe uma quantidade de PV temporários igual ao dano que sofreria. Para cada 10 PV temporários recebidos desta forma, ele recebe +1 em testes de ataque e rolagens de dano até o fim da cena. Se o kirtryoll estiver sob efeito de seu Campo de Invisibilidade, esta habilidade também se aplica a dano de luz.</p>"
+    },
+    {
+      "poder": "Campo de Invisibilidade",
+      "img": "systems/tormenta20/icons/magias/invisibilidade.webp",
+      "descricao": "<p>O kirtryoll fica invisível (recebe camuflagem total e +10 em Furtividade, já contabilizado, e criaturas que não possam percebê-lo ficam desprevenidas) até o fim da cena ou até sofrer um acerto crítico. <em>Recarga (padrão).</em></p>",
+      "acao": "movimento",
+      "efeitos": [
+        {
+          "name": "Campo de Invisibilidade",
+          "description": "<p>Invisível: camuflagem total e +10 em Furtividade; criaturas que não possam percebê-lo ficam desprevenidas. Até o fim da cena ou até sofrer um acerto crítico.</p>",
+          "system": {
+            "changes": [
+              {
+                "key": "system.pericias.furt.bonus",
+                "value": 10,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "poder": "Condicionamento de Predador",
+      "img": "systems/tormenta20/icons/poderes/ameacas/visao-ampla.webp",
+      "descricao": "<p>O kirtryoll pode se esconder mesmo sem camuflagem ou cobertura disponíveis, não sofre penalidade em testes de Furtividade por se mover ao seu deslocamento normal e reduz a penalidade em Furtividade por atacar e fazer outras ações chamativas para –5.</p>"
+    },
+    {
+      "poder": "Dilacerar",
+      "img": "systems/tormenta20/icons/poderes/ameacas/dilacerar.webp",
+      "descricao": "<p>Se o kirtryoll acerta os dois ataques de garra em uma mesma criatura na mesma rodada, causa mais 4d12+28 pontos de dano.</p>",
+      "danos": [
+        [
+          "4d12+28",
+          "corte"
+        ]
+      ]
+    },
+    {
+      "poder": "Marca da Presa",
+      "img": "systems/tormenta20/icons/poderes/ameacas/percepcao-temporal.webp",
+      "descricao": "<p>O kirtryoll analisa uma criatura em alcance curto. Até o fim da cena, ele recebe +2d10 em rolagens de dano contra essa criatura. Esse dano adicional é dobrado contra criaturas desprevenidas.</p>",
+      "acao": "movimento",
+      "danos": [
+        [
+          "2d10",
+          "",
+          "Dano extra"
+        ]
+      ],
+      "efeitos": [
+        {
+          "name": "Marca da Presa",
+          "description": "<p>Contra a presa marcada: +2d10 em rolagens de dano (dobrado contra criaturas desprevenidas — não automatizado).</p>",
+          "system": {
+            "changes": [
+              {
+                "key": "system.modificadores.dano.geral",
+                "value": "2d10",
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "poder": "Veneno",
+      "img": "systems/tormenta20/icons/poderes/ameacas/veneno.webp",
+      "descricao": "<p>Peçonha potente (perde 2d12 pontos de vida durante 3 rodadas, Fort CD 40 reduz a duração para 1 rodada).</p>",
+      "danos": [
+        [
+          "2d12",
+          "perda",
+          "Peçonha (por rodada)"
+        ]
+      ],
+      "resistencia": "Fortitude CD 40 reduz"
+    }
+  ]
+}

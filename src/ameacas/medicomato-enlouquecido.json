@@ -1,0 +1,112 @@
+{
+  "nome": "Medicômato Enlouquecido",
+  "img": "assets/tokens/medicomato-enlouquecido.png",
+  "nd": "12",
+  "tipo": "con",
+  "tamanho": "med",
+  "papel": "solo",
+  "atributos": {
+    "for": 2,
+    "des": 1,
+    "con": 3,
+    "int": 0,
+    "sab": 2,
+    "car": 1
+  },
+  "pv": 380,
+  "defesa": 39,
+  "pericias": {
+    "inic": 11,
+    "perc": 12,
+    "fort": 26,
+    "refl": 12,
+    "vont": 20,
+    "cura": 20,
+    "intu": 12
+  },
+  "deslocamento": {
+    "deslocamento": 9
+  },
+  "sentidos": [
+    "escuro"
+  ],
+  "corpoACorpo": "Bisturi x2 +34 (4d8+13 corte) e seringa +34 (5d4+13 perfuração).",
+  "tesouro": "Instrumentos cirúrgicos (CD 27, equivalem a uma maleta de medicamentos aprimorada) mais 2d4 bálsamos restauradores.",
+  "notas": "<p><em>Das ruínas do hospital ecoam ruídos metálicos. Logo, o responsável pelos sons se revela: um construto humanoide feito de metal e engrenagens, trajando roupas e acessórios que lembram os médicos de Salistick. Diversos instrumentos médicos despontam de suas mãos e bolsas com bandagens e medicamentos balançam em seu tronco.</em></p><p>Em seus estudos para aprimorar a medicina sem a necessidade das bênçãos dos deuses, alguns médicos de Salistick dedicaram-se ao desenvolvimento de equipamentos hospitalares inovadores. Dentre estas criações, destacam-se os medicômatos, construtos desenvolvidos para auxiliar cirurgiões e executar procedimentos médicos básicos, e que prometiam revolucionar as práticas hospitalares de Salistick.</p><p>Embora de fato tenham sido muito úteis em seus primeiros anos, com o tempo alguns medicômatos começaram a apresentar problemas de comportamento. Desenvolvidos para curar seus pacientes, alguns destes construtos se tornaram excessivamente protetores e intrusivos. Outros tiveram problemas em lidar com as inevitáveis mortes de pacientes, passando a adotar protocolos demasiadamente zelosos ou que incluíam procedimentos médicos desnecessários ou prejudiciais.</p><p>As consequências deste processo de “enlouquecimento” foram as mais diversas. Alguns foram desativados e armazenados para futuros estudos; outros fugiram de seus hospitais e passaram a vagar por Salistick ou pelas regiões vizinhas, promovendo suas “curas” em vítimas inocentes. E há casos de medicômatos operando em clínicas isoladas que mataram ou aprisionaram os demais funcionários do local e assumiram o controle do estabelecimento. Mais de um aventureiro ferido visitou um desses lugares em busca de atendimento apenas para ser transformado em cobaia dos experimentos de um medicômato.</p><p><strong>Perícias:</strong> Ofício (alquimista) +10.</p>",
+  "ataques": [
+    {
+      "arma": "Bisturi",
+      "descricao": "bisturi x2",
+      "img": "systems/tormenta20/icons/itens/equipamentos/adaga.webp",
+      "qtd": 2,
+      "ataque": 34,
+      "dano": [
+        [
+          "4d8+13",
+          "corte"
+        ]
+      ]
+    },
+    {
+      "arma": "Seringa",
+      "descricao": "seringa",
+      "img": "systems/tormenta20/icons/poderes/ameacas/ferrao.webp",
+      "ataque": 34,
+      "dano": [
+        [
+          "5d4+13",
+          "perfuracao"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Conhecimento Anatômico",
+      "img": "systems/tormenta20/icons/itens/gerais/maleta-de-medicamentos.webp",
+      "descricao": "<p>Os ataques corpo a corpo do medicômato enlouquecido causam +5d6 pontos de dano em animais, monstros e humanoides.</p>",
+      "danos": [
+        [
+          "5d6",
+          "",
+          "Dano extra"
+        ]
+      ]
+    },
+    {
+      "poder": "Farmacologia Insana",
+      "img": "systems/tormenta20/icons/poderes/ameacas/veneno.webp",
+      "descricao": "<p>Uma criatura atingida pela seringa do medicômato é inoculada com um preparado alquímico que ferve seu sangue. Quando é atingida, e no início de cada um de seus turnos, ela sofre 6d8 pontos de dano de fogo e fica enjoada por uma rodada (Fort CD 35 reduz o dano à metade e evita a condição). Se a criatura passar em dois testes de Fortitude seguidos, este efeito se encerra. Se a vítima for reduzida a 0 PV pelo dano desta habilidade, seu corpo explode, matando-a e causando 8d6 pontos de dano de fogo em todas as criaturas a até 3m (Reflexos CD 35 reduz à metade). Essa habilidade não afeta criaturas sem sangue, como construtos ou mortos-vivos.</p>",
+      "danos": [
+        [
+          "6d8",
+          "fogo",
+          "Sangue fervente"
+        ],
+        [
+          "8d6",
+          "fogo",
+          "Explosão"
+        ]
+      ],
+      "resistencia": "Fortitude CD 35 reduz à metade e evita"
+    },
+    {
+      "poder": "Incisão Precisa",
+      "img": "systems/tormenta20/icons/poderes/ameacas/ataque-corte.webp",
+      "descricao": "<p>Uma criatura atingida pelo bisturi do medicômato fica sangrando. Se ela já estiver sangrando, a perda de vida pelo sangramento aumenta em um passo cumulativo (de d6 para d8 e de d8 para d10, por exemplo).</p>"
+    },
+    {
+      "poder": "Intervenção Emergencial",
+      "img": "systems/tormenta20/icons/itens/gerais/maleta-de-medicamentos.webp",
+      "descricao": "<p>Se o medicômato acerta o ataque de bisturi e o ataque de seringa na mesma criatura na mesma rodada, ele faz um teste de Cura. A vítima perde uma quantidade de pontos de vida igual ao resultado desse teste e fica vulnerável.</p>",
+      "danos": [
+        [
+          "1d20+20",
+          "perda",
+          "Teste de Cura (perda de vida)"
+        ]
+      ]
+    }
+  ]
+}

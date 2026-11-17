@@ -1,0 +1,13 @@
+{
+  "name": "Coração Ressecado de Quimera",
+  "type": "consumivel",
+  "img": "systems/tormenta20/icons/itens/gerais/componentes-materiais.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>[Tesouro Especial]</strong></p><p>Extraído de quimeras zumbis (CD 20 para extrair). Vale T$ 100 para fabricar uma dose de elixir quimérico.</p>"
+    },
+    "source": "Bestiário de Arton",
+    "tipo": "material",
+    "qtd": 1
+  }
+}

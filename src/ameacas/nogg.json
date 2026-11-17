@@ -1,0 +1,95 @@
+{
+  "nome": "Nogg",
+  "img": "assets/tokens/nogg.png",
+  "nd": "1",
+  "tipo": "mon",
+  "tamanho": "med",
+  "papel": "lackey",
+  "atributos": {
+    "for": 3,
+    "des": 1,
+    "con": 2,
+    "int": -1,
+    "sab": 0,
+    "car": -4
+  },
+  "pv": 11,
+  "defesa": 15,
+  "pericias": {
+    "inic": 3,
+    "perc": 3,
+    "fort": 11,
+    "refl": 6,
+    "vont": 2
+  },
+  "deslocamento": {
+    "deslocamento": 9
+  },
+  "sentidos": [
+    "penumbra"
+  ],
+  "resistencias": {
+    "acido": "imune",
+    "corte": 5,
+    "perfuracao": 5
+  },
+  "resistenciasTexto": "imunidade a ácido, redução de corte e perfuração 5",
+  "corpoACorpo": "Mordida +12 (2d8+8).",
+  "tesouro": "Nenhum.",
+  "notas": "<p><em>O grupo diante de vocês é formado por humanoides baixinhos e atarracados, cada um com três dedos em cada mão, uma carranca bestial, chifres de pedra recurvados e uma cauda rochosa.</em></p><p><em>“Eu me lembro muito nitidamente de pelo menos uma ocasião em que meus “inúteis” noggs foram fundamentais para que você não tombasse em missão.”</em> — Lux, elfo arcanista</p><p>Embora existam várias magias em Arton capazes de invocar criaturas, de tempos em tempos surgem conjuradores empenhados em criar novas formas de invocação — e diferentes tipos de criaturas para invocar. Foi assim que surgiram os noggs, construtos humanoides criados a partir de terra e magia arcana.</p><p>Noggs geralmente são encontrados a serviço de arcanistas, que os invocam por meio de magias específicas. Contudo, desde sua criação, vários deles escaparam de seus mestres e passaram a viver em liberdade. Não se sabe ao certo como essas criaturas se reproduzem, mas o crescimento de seus números é indício de que elas não dependem mais de conjuradores para serem criadas.</p><p>Seja em liberdade ou a serviço de alguém, noggs se valem da força dos números para sobrepujar seus inimigos. Sua natureza rochosa e sua força os tornam fisicamente perigosos, mas suas mentes um tanto simplórias dependem de uma liderança competente para que eles sejam realmente ameaçadores.</p><p><strong>Nova magia:</strong> veja “Conjurar Noggs” no compêndio de itens deste módulo.</p>",
+  "ataques": [
+    {
+      "arma": "Mordida",
+      "descricao": "mordida",
+      "img": "icons/creatures/abilities/mouth-teeth-long-red.webp",
+      "ataque": 12,
+      "dano": [
+        [
+          "2d8+8",
+          "perfuracao"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Amontoar",
+      "img": "systems/tormenta20/icons/poderes/ameacas/taticas-alcateia.webp",
+      "descricao": "<p>Quando flanqueia um inimigo, o nogg recebe +1 no teste de ataque e na rolagem de dano para cada outro nogg que também esteja flanqueando aquele inimigo.</p>",
+      "efeitos": [
+        {
+          "name": "Amontoar (+1 por nogg)",
+          "description": "<p>+1 no teste de ataque e na rolagem de dano para cada outro nogg flanqueando o mesmo inimigo (aplique uma vez por nogg).</p>",
+          "system": {
+            "changes": [
+              {
+                "key": "system.modificadores.ataque.cac",
+                "value": 1,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              },
+              {
+                "key": "system.modificadores.dano.cac",
+                "value": 1,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "poder": "Dependência Estratégica",
+      "img": "systems/tormenta20/icons/poderes/ameacas/comandar.webp",
+      "descricao": "<p>Se não estiver a pelo menos alcance médio de uma criatura capaz de liderá-lo (um aliado solo ou especial), o nogg sofre –2 em testes de perícia.</p>"
+    }
+  ],
+  "itens": [
+    {
+      "ref": "conjurar-noggs"
+    }
+  ]
+}

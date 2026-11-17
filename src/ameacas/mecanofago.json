@@ -1,0 +1,122 @@
+{
+  "nome": "Mecanófago",
+  "img": "assets/tokens/mecanofago.png",
+  "nd": "14",
+  "tipo": "con",
+  "tamanho": "eno",
+  "papel": "solo",
+  "atributos": {
+    "for": 12,
+    "des": 0,
+    "con": 9,
+    "int": 0,
+    "sab": 0,
+    "car": -5
+  },
+  "pv": 700,
+  "defesa": 46,
+  "pericias": {
+    "inic": 11,
+    "perc": 11,
+    "fort": 28,
+    "refl": 14,
+    "vont": 22,
+    "atle": 23,
+    "sobr": 11
+  },
+  "deslocamento": {
+    "deslocamento": 9
+  },
+  "sentidos": [
+    "escuro"
+  ],
+  "resistencias": {
+    "dano": 20
+  },
+  "resistenciasTexto": "redução de dano 20/mágico",
+  "corpoACorpo": "Duas pancadas +39 (4d10+8 mais 6d8 eletricidade).",
+  "tesouro": "Destroços recicláveis (CD 29, valem T$ 3.000 para fabricar armas e armaduras superiores).",
+  "notas": "<p><em>O construto diante de vocês parece uma espécie de golem de ferro: uma figura humanoide formada por uma grande armadura de placas. A principal diferença, entretanto, são os vários suportes e encaixes espalhados em seu corpo, alguns dos quais carregam armas e o que parecem ser partes de outros seres artificiais.</em></p><p>Um mecanófago é um construto especialmente criado para enfrentar e assimilar outros construtos. Desenvolvido por goblins (sempre eles) rebeldes para enfrentar as máquinas de guerra puristas, estes autômatos bélicos acabaram se espalhando pelo reinado com o fim do conflito. Alguns caíram nas mãos de grupos de mercenários ou senhores da guerra desgarrados, enquanto outros adquiriram autonomia de alguma forma, passando a percorrer os ermos em busca de construtos e outros mecanismos para se fortalecer.</p><p>Em combate, o mecanófago concentra-se em quaisquer construtos presentes. Na ausência destes, ele se volta contra as armas dos demais adversários, buscando assimilá-las. Isso não apenas priva seus inimigos de seu armamento, como também fortalece as próprias armas do mecanófago.</p><p><strong>Redução de dano:</strong> 20/mágico. <strong>Inteligência:</strong> — (registrada como 0 na ficha).</p>",
+  "ataques": [
+    {
+      "arma": "Pancada",
+      "descricao": "duas pancadas",
+      "img": "systems/tormenta20/icons/poderes/ameacas/pancada.webp",
+      "qtd": 2,
+      "ataque": 39,
+      "dano": [
+        [
+          "4d10+8",
+          "impacto"
+        ],
+        [
+          "6d8",
+          "eletricidade"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Assimilar Armamento",
+      "img": "systems/tormenta20/icons/poderes/ameacas/quebrar-tudo.webp",
+      "descricao": "<p>Se começar seu turno empunhando uma arma, o mecanófago a assimila. Se fizer isso, ele soma o dano e as habilidades da arma a uma de suas pancadas (cada pancada pode ter até três armas assimiladas). Uma arma assimilada dessa forma só pode ser recuperada com a destruição do mecanófago.</p>",
+      "acao": "movimento"
+    },
+    {
+      "poder": "Caçador de Mecanismos",
+      "img": "systems/tormenta20/icons/poderes/ameacas/visao-ampla.webp",
+      "descricao": "<p>O mecanófago recebe +5 em testes contra construtos e engenhocas.</p>",
+      "efeitos": [
+        {
+          "name": "Caçador de Mecanismos",
+          "description": "<p>Contra construtos e engenhocas: +5 em testes (apenas o ataque é automatizado).</p>",
+          "system": {
+            "changes": [
+              {
+                "key": "system.modificadores.ataque.cac",
+                "value": 5,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "poder": "Desarmar",
+      "img": "systems/tormenta20/icons/poderes/ameacas/pancada.webp",
+      "descricao": "<p>Se o mecanófago acerta um ataque de pancada, pode fazer a manobra desarmar (teste +44).</p>",
+      "acao": "livre"
+    },
+    {
+      "poder": "Onda Despedaçadora",
+      "img": "systems/tormenta20/icons/magias/despedacar.webp",
+      "descricao": "<p>O mecanófago emite uma onda sonora em um cone de 18m. Criaturas nessa área sofrem 8d8+16 pontos de dano de impacto e ficam atordoadas; construtos e objetos mundanos Médios ou menores sofrem o dobro desse dano sem aplicar RD (em ambos os casos, Fort CD 38 reduz o dano à metade e evita a condição). Uma criatura só pode ser atordoada por esta habilidade uma vez por cena. <em>Recarga (movimento).</em></p>",
+      "acao": "padrao",
+      "danos": [
+        [
+          "8d8+16",
+          "impacto"
+        ]
+      ],
+      "resistencia": "Fortitude CD 38 reduz à metade e evita"
+    },
+    {
+      "poder": "Saquear Construto",
+      "img": "systems/tormenta20/icons/poderes/ameacas/dilacerar.webp",
+      "descricao": "<p>Se começar seu turno adjacente a um construto atordoado, inconsciente, morto ou pasmo, o mecanófago saqueia uma de suas partes. O construto perde 6d10+12 pontos de vida e fica fraco, mesmo que seja imune a esta condição (condições causadas por esta habilidade são cumulativas; Fort CD 38 reduz a perda de vida à metade e evita a condição). O mecanófago recebe pontos de vida temporários cumulativos iguais aos PV perdidos pelo construto e, para cada condição causada desta forma, recebe um bônus cumulativo de +2 em testes até o fim da cena.</p>",
+      "acao": "padrao",
+      "danos": [
+        [
+          "6d10+12",
+          "perda",
+          "Perda de vida"
+        ]
+      ],
+      "resistencia": "Fortitude CD 38 reduz à metade e evita"
+    }
+  ]
+}

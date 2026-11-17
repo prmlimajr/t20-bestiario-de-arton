@@ -1,0 +1,94 @@
+{
+  "nome": "Megapeia",
+  "img": "assets/tokens/megapeia.png",
+  "nd": "16",
+  "tipo": "mon",
+  "tamanho": "col",
+  "papel": "solo",
+  "atributos": {
+    "for": 7,
+    "des": 2,
+    "con": 4,
+    "int": -5,
+    "sab": 2,
+    "car": -4
+  },
+  "pv": 800,
+  "defesa": 52,
+  "pericias": {
+    "inic": 16,
+    "perc": 16,
+    "fort": 30,
+    "refl": 24,
+    "vont": 16,
+    "atle": 26
+  },
+  "deslocamento": {
+    "deslocamento": 18
+  },
+  "sentidos": [
+    "faro",
+    "cegas",
+    "escuro"
+  ],
+  "sentidosExtra": "percepção às cegas (médio)",
+  "resistencias": {
+    "dano": 10
+  },
+  "resistenciasTexto": "redução de dano 10",
+  "corpoACorpo": "Mordida +47 (6d20+40 mais veneno).",
+  "tesouro": "Padrão, mais 2d4 doses de peçonha potente (CD 31 para extrair).",
+  "notas": "<p><em>De trás da montanha, surge uma centopeia colossal e monstruosa. Seu corpo alongado, que ultrapassa 30 metros de comprimento, é formado por dezenas de segmentos inchados e bulbosos, protegidos por carapaças alaranjadas. Possui centenas de pares de patas, além de um par de longos espinhos pontiagudos em sua extremidade posterior.</em></p><p>Tão apavorante quanto seu tamanho descomunal é a enorme mandíbula da megapeia. Suas quelíceras longas e afiadas se abrem e fecham involuntariamente, em um movimento que parece estar em constante busca de presas. Duas longas antenas se projetam da parte superior da cabeça da criatura, movendo-se de forma independente, explorando o ambiente ao seu redor e procurando rastros de sua próxima refeição.</p><p>Devido ao tamanho, megapeias podem predar uma grande variedade de criaturas. De elefantes a camponeses, passando por outros predadores menores que ela, o cardápio dessa monstruosidade é vasto e mortal. Felizmente, essas criaturas ocupam apenas algumas regiões isoladas de Arton — habitam principalmente Halak-Tûr, mas podem ser encontradas em outras áreas rochosas de clima quente, principalmente nas cercanias de vulcões.</p><p>Apesar do tamanho, megapeias são capazes de surpreender suas presas. Embora não sejam capazes de andar sob a terra, desenvolveram a capacidade de se enterrar no solo (sobretudo em terrenos macios, como areia), de onde aguardam pacientemente que as vítimas se aproximem.</p><p><strong>Deslocamento:</strong> sem redução por terreno difícil.</p>",
+  "ataques": [
+    {
+      "arma": "Mordida",
+      "descricao": "mordida (mais veneno; quadrado de 4,5m)",
+      "img": "systems/tormenta20/icons/poderes/ameacas/mordida.webp",
+      "ataque": 47,
+      "dano": [
+        [
+          "6d20+40",
+          "perfuracao"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Atropelamento",
+      "img": "systems/tormenta20/icons/poderes/ameacas/investida.webp",
+      "descricao": "<p>A megapeia percorre até o dobro de seu deslocamento. Ela pode passar pelo espaço ocupado de quaisquer inimigos menores que ela, mas não pode passar duas vezes pelo mesmo espaço. Criaturas atropeladas desta forma sofrem 4d20+25 pontos de dano de impacto e ficam caídas (Ref CD 42 reduz à metade e evita a condição). <em>Recarga (movimento).</em></p>",
+      "acao": "completa",
+      "danos": [
+        [
+          "4d20+25",
+          "impacto"
+        ]
+      ],
+      "resistencia": "Reflexos CD 42 reduz à metade e evita"
+    },
+    {
+      "poder": "Mil Pernas",
+      "img": "systems/tormenta20/icons/poderes/ameacas/derrubar.webp",
+      "descricao": "<p>A megapeia recebe +10 em testes contra efeitos que tentem derrubá-la ou empurrá-la.</p>"
+    },
+    {
+      "poder": "Quelíceras Alongadas",
+      "img": "systems/tormenta20/icons/poderes/ameacas/mordida.webp",
+      "descricao": "<p>A mordida da megapeia ignora 10 pontos da redução de dano dos alvos e atinge todas as criaturas em um quadrado de 4,5m (para cada ataque, ela faz um único teste de ataque e compara o resultado com a Defesa de cada inimigo na área).</p>"
+    },
+    {
+      "poder": "Veneno",
+      "img": "systems/tormenta20/icons/poderes/ameacas/veneno.webp",
+      "descricao": "<p>Duas doses de peçonha potente (para cada dose, perde 2d12 PV por rodada durante 3 rodadas, Fort CD 42 reduz para 1 rodada).</p>",
+      "danos": [
+        [
+          "2d12",
+          "perda",
+          "Peçonha potente (por dose, por rodada)"
+        ]
+      ],
+      "resistencia": "Fortitude CD 42 reduz para 1 rodada"
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "nome": "Khovantir",
+  "img": "assets/tokens/khovantir.png",
+  "nd": "8",
+  "tipo": "mon",
+  "tamanho": "eno",
+  "papel": "solo",
+  "atributos": {
+    "for": 6,
+    "des": 2,
+    "con": 3,
+    "int": -5,
+    "sab": 1,
+    "car": -2
+  },
+  "pv": 300,
+  "defesa": 31,
+  "pericias": {
+    "inic": 10,
+    "perc": 9,
+    "fort": 15,
+    "refl": 21,
+    "vont": 8
+  },
+  "deslocamento": {
+    "deslocamento": 9
+  },
+  "sentidos": [
+    "cegas"
+  ],
+  "sentidosExtra": "percepção às cegas (longo)",
+  "resistencias": {
+    "fogo": "vulneravel",
+    "dano": 5
+  },
+  "resistenciasTexto": "fortificação 25%, natureza vegetal, redução de dano 5/corte, resistência a veneno +5, vulnerabilidade a fogo",
+  "corpoACorpo": "Quatro tentáculos +27 (2d10+8).",
+  "tesouro": "Padrão.",
+  "notas": "<p><em>A densa vegetação adiante subitamente começa a se mexer. Dela, surge uma enorme criatura vegetal, com um corpo alongado esverdeado, coberto de espinhos no dorso. Ela se sustenta sobre vários pares de pernas curtas e finas e exibe uma cabeça com três grandes flores, semelhantes às de plantas carnívoras, e quatro longos tentáculos fibrosos.</em></p><p>Naturais de Lamnor Sul, khovantirs são predadores vegetais que lentamente se espalharam pelo norte de Arton, sendo hoje encontrados em praticamente qualquer região, com exceção de terras excessivamente áridas ou geladas, como Halak-Tûr ou as Uivantes. Estas criaturas preferem viver em bosques e florestas, mas já foram vistas caçando em planícies, descampados e até mesmo próximo a grandes rios.</p><p>Khovantirs são criaturas solitárias, e raramente são encontrados em grupos. Suas pernas finas são, de fato, raízes móveis — quando em repouso, a criatura as enterra no solo, de onde absorve umidade. Sua alimentação, entretanto, é exclusivamente carnívora — sua voracidade, aliada à sua selvageria, faz com que ataque praticamente qualquer coisa à frente, de rebanhos a caravanas, passando até mesmo por pequenos vilarejos.</p><p><strong>Redução de dano:</strong> 5/corte. <strong>Resistência a veneno:</strong> +5.</p>",
+  "ataques": [
+    {
+      "arma": "Tentáculo",
+      "descricao": "quatro tentáculos",
+      "img": "icons/creatures/tentacles/tentacles-octopus-black-pink.webp",
+      "qtd": 4,
+      "ataque": 27,
+      "dano": [
+        [
+          "2d10+8",
+          "impacto"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Agarrar Aprimorado",
+      "img": "systems/tormenta20/icons/poderes/ameacas/agarrar.webp",
+      "descricao": "<p>Se o khovantir acerta um ataque de tentáculo, pode fazer a manobra agarrar como uma ação livre (teste +32).</p>",
+      "acao": "livre"
+    },
+    {
+      "poder": "Arremessar",
+      "img": "systems/tormenta20/icons/poderes/ameacas/derrubar.webp",
+      "descricao": "<p>Se começar seu turno agarrando uma criatura Média ou menor, o khovantir arremessa a vítima 1d6 x 1,5m em uma direção à escolha dele. A vítima sofre 2d6 pontos de dano de impacto, fica caída e, se atingir algum obstáculo, sofre +2d6 pontos de dano (Ref CD 28 reduz à metade e evita a condição). <em>Recarga (movimento).</em></p>",
+      "acao": "movimento",
+      "danos": [
+        [
+          "2d6",
+          "impacto"
+        ],
+        [
+          "2d6",
+          "impacto",
+          "Obstáculo"
+        ],
+        [
+          "1d6",
+          "",
+          "Distância (x 1,5m)"
+        ]
+      ],
+      "resistencia": "Reflexos CD 28 reduz à metade e evita"
+    },
+    {
+      "poder": "Chuva de Espinhos",
+      "img": "systems/tormenta20/icons/poderes/ameacas/espinhos.webp",
+      "descricao": "<p>O khovantir projeta uma chuva de espinhos que cai sobre uma área de 6m de raio em alcance médio. Criaturas nessa área sofrem 5d10+5 pontos de dano de perfuração (Ref CD 28 reduz à metade). <em>Recarga (movimento).</em></p>",
+      "acao": "completa",
+      "danos": [
+        [
+          "5d10+5",
+          "perfuracao"
+        ]
+      ],
+      "resistencia": "Reflexos CD 28 reduz à metade"
+    },
+    {
+      "poder": "Esporos Venenosos",
+      "img": "systems/tormenta20/icons/poderes/ameacas/fumos-toxicos.webp",
+      "descricao": "<p>Na primeira vez em cada cena em que é reduzido a 100 PV ou menos, o khovantir expele esporos venenosos em um raio de 9m ao seu redor. Outras criaturas nessa área perdem 6d12 pontos de vida e ficam fracas e vulneráveis (Fort CD 28 reduz a perda de vida à metade e evita as condições). Veneno.</p>",
+      "acao": "reacao",
+      "danos": [
+        [
+          "6d12",
+          "perda",
+          "Esporos"
+        ]
+      ],
+      "resistencia": "Fortitude CD 28 reduz à metade e evita"
+    }
+  ]
+}

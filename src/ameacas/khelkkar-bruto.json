@@ -1,0 +1,113 @@
+{
+  "nome": "Khelk’kar Bruto",
+  "img": "assets/tokens/khelkkar-bruto.png",
+  "nd": "7",
+  "tipo": "mon",
+  "tamanho": "gra",
+  "papel": "lackey",
+  "atributos": {
+    "for": 5,
+    "des": 2,
+    "con": 3,
+    "int": 0,
+    "sab": 0,
+    "car": -2
+  },
+  "pv": 58,
+  "defesa": 30,
+  "pericias": {
+    "inic": 9,
+    "perc": 7,
+    "fort": 19,
+    "refl": 14,
+    "vont": 8,
+    "atle": 12
+  },
+  "deslocamento": {
+    "deslocamento": 12,
+    "escalada": 12
+  },
+  "sentidos": [
+    "escuro"
+  ],
+  "imunidadeCondicoes": [
+    "veneno"
+  ],
+  "resistenciasTexto": "fortificação 50%, imunidade a veneno",
+  "corpoACorpo": "Alabarda +25 (2d6+10, x3), pinças +25 (2d6+10) e ferrão +25 (1d10+10 mais veneno).",
+  "equipamento": "Alabarda aumentada.",
+  "tesouro": "Metade.",
+  "notas": "<p><em>O monstro macabro tem um torso humano ligado ao corpo de um escorpião gigante. Em vez de mãos, ostenta duas pinças enormes. A pele quitinosa lembra uma armadura de partes amarelas e negras. A imensa cauda balouça ameaçadora com seu ferrão venenoso. Os olhos brilham fúria vermelha.</em></p><p>A fronteira entre humanoide e monstro nem sempre é clara. Talvez os seres inteligentes mais próximos da selvageria completa de Megalokk sejam os apavorantes khelk’kar, mais conhecidos como homens-escorpiões. Não sem motivo, este é também o povo mais devotado a cultuá-lo; não muito tempo atrás, o próximo sumo-sacerdote do Deus dos Monstros era um membro desta raça horrenda.</p><p>Nações khelk’kar dominam vastos territórios nas Sanguinárias; no passado havia uma interdição divina imposta por Khalmyr, restringindo-os às montanhas, mas a destituição do Deus da Justiça como líder parece ter enfraquecido essa barreira. Hoje, grupos nômades podem ser encontrados por toda Arton.</p><p>Khelk’kar não praticam qualquer forma de agricultura ou pecuária, vivendo apenas da caça — mas, diferentemente de outros povos caçadores, matam tudo aquilo que encontram na região, mesmo sem necessidade, por puro prazer violento. Quando todas as criaturas da área fogem ou se esgotam, eles apenas mudam-se para outro lugar. Esse modo de vida coloca os homens-escorpiões em constante conflito com outros povos, desde escaramuças localizadas a grandes batalhas campais.</p><p>Existem casos raros de khelk’kar que rejeitam os modos violentos de Megalokk e abandonam (ou são banidos de) suas tribos, buscando caminhos menos inclementes. Entre estes, quase todos acabam se tornando aventureiros.</p>",
+  "ataques": [
+    {
+      "arma": "Alabarda",
+      "descricao": "alabarda",
+      "img": "systems/tormenta20/icons/itens/equipamentos/alabarda.webp",
+      "ataque": 25,
+      "critico": "x3",
+      "dano": [
+        [
+          "2d6+10",
+          "corte"
+        ]
+      ]
+    },
+    {
+      "arma": "Pinças",
+      "descricao": "pinças",
+      "img": "systems/tormenta20/icons/poderes/ameacas/pincas.webp",
+      "ataque": 25,
+      "dano": [
+        [
+          "2d6+10",
+          "corte"
+        ]
+      ]
+    },
+    {
+      "arma": "Ferrão",
+      "descricao": "ferrão (mais veneno)",
+      "img": "systems/tormenta20/icons/poderes/ameacas/ferrao.webp",
+      "ataque": 25,
+      "dano": [
+        [
+          "1d10+10",
+          "perfuracao"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Agarrar Aprimorado",
+      "img": "systems/tormenta20/icons/poderes/ameacas/agarrar.webp",
+      "descricao": "<p>Se o khelk’kar acerta um ataque de pinças, pode fazer a manobra agarrar como uma ação livre (teste +27).</p>",
+      "acao": "livre"
+    },
+    {
+      "poder": "Pressionar",
+      "img": "systems/tormenta20/icons/poderes/ameacas/pincas.webp",
+      "descricao": "<p>No início de cada um de seus turnos, o khelk’kar bruto causa 4d6+10 pontos de dano de corte na criatura que estiver agarrando com suas pinças. Sempre que rolar o resultado máximo em um desses dados de dano, o khelk’kar rola um dado extra, repetindo o processo a cada resultado máximo.</p>",
+      "acao": "livre",
+      "danos": [
+        [
+          "4d6+10",
+          "corte"
+        ]
+      ]
+    },
+    {
+      "poder": "Veneno",
+      "img": "systems/tormenta20/icons/poderes/ameacas/veneno.webp",
+      "descricao": "<p>Peçonha concentrada (perde 2d12 pontos de vida por rodada durante 3 rodadas, Fort CD 24 reduz a duração para uma rodada).</p>",
+      "danos": [
+        [
+          "2d12",
+          "perda",
+          "Peçonha (por rodada)"
+        ]
+      ],
+      "resistencia": "Fortitude CD 24 reduz"
+    }
+  ]
+}

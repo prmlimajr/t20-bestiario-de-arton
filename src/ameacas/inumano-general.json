@@ -1,0 +1,120 @@
+{
+  "nome": "Inumano General",
+  "img": "assets/tokens/inumano-general.png",
+  "nd": "11",
+  "tipo": "mor",
+  "tamanho": "med",
+  "papel": "solo",
+  "atributos": {
+    "for": 4,
+    "des": 2,
+    "con": 2,
+    "int": 2,
+    "sab": 1,
+    "car": 0
+  },
+  "pv": 490,
+  "defesa": 41,
+  "pericias": {
+    "inic": 11,
+    "perc": 10,
+    "fort": 24,
+    "refl": 18,
+    "vont": 11,
+    "atle": 13,
+    "furt": 5,
+    "guer": 13,
+    "inti": 13
+  },
+  "deslocamento": {
+    "deslocamento": 9
+  },
+  "sentidos": [
+    "escuro"
+  ],
+  "resistencias": {
+    "frio": "imune",
+    "dano": 5
+  },
+  "resistenciasTexto": "imunidade a frio, redução de dano 5",
+  "corpoACorpo": "Machado anão x2 +32 (2d10+26, x3, mais 4d12 trevas).",
+  "equipamento": "Armadura completa macabra, escudo pesado reforçado, machado anão atroz.",
+  "tesouro": "Padrão.",
+  "notas": "<p><em>Os guerreiros de aparência cadavérica têm a pele pálida e áspera, parecendo forçosamente esticada sobre os ossos. Seus cabelos são cinzentos e desgrenhados, seus olhos são amarelados e esmaecidos e sua boca exibe um constante esgar de raiva. Suas armas e armaduras parecem ter pertencido a um campo de batalha de um passado longínquo.</em></p><p>Por vezes confundidos com zumbis, inumanos são mortos-vivos dotados de inteligência, surgidos a partir de combatentes caídos, como bandoleiros, saqueadores, mercenários ou soldados. Seus cadáveres não são reanimados pela magia de outros, como necromantes ou sacerdotes de Tenebra, mas sim pela crueldade e desejo por violência que mantinham em vida. Animados por estes sentimentos de agressividade, inumanos mantêm, na morte, a mesma sanguinolência que exibiam em vida.</p><p>Os sentimentos que dão origem a um inumano também fazem com que ele se sinta atraído por lugares permeados pela morte. Assim, inumanos tendem a procurar cemitérios, catacumbas, campos de grandes batalhas e outros lugares impregnados por uma aura de morte. Lá, naturalmente formam bandos de inumanos cujo propósito é derrotar quaisquer seres vivos que adentrem seu território.</p><p>O processo que dá origem a inumanos combatentes também pode ocorrer com grandes líderes militares. Em especial, quando um senhor da guerra particularmente cruel ou violento morre, a força de seu ódio também pode reanimá-lo. A criatura resultante será um inumano general, um morto-vivo que combina suas memórias e conhecimento militar com a crueldade e desejo de violência capazes de mantê-lo em Arton mesmo após a morte.</p><p>Inumanos generais sentem os mesmos impulsos que os demais inumanos e, quando encontram um grupo desses combatentes, naturalmente assumem sua liderança. Sob o comando de um general, bandos de guerra de inumanos são capazes até de vencer sua compulsão por locais de morte, vagando por outras terras em busca de vítimas vivas para saciar seu desejo por violência.</p>",
+  "ataques": [
+    {
+      "arma": "Machado anão",
+      "descricao": "machado anão x2",
+      "img": "systems/tormenta20/icons/itens/equipamentos/machado-anao.webp",
+      "qtd": 2,
+      "ataque": 32,
+      "critico": "x3",
+      "dano": [
+        [
+          "2d10+26",
+          "corte"
+        ],
+        [
+          "4d12",
+          "trevas"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Drenar Energia",
+      "img": "systems/tormenta20/icons/poderes/ameacas/sombra-rubra.webp",
+      "descricao": "<p>Uma criatura viva que sofra dano de trevas do inumano general sofre uma penalidade cumulativa de −1 em testes de perícia (Fort CD 31 evita). Se acumular uma penalidade igual ou maior que seu próprio nível, a criatura morre e se transforma em um inumano sob controle do mestre. Essa penalidade pode ser removida de uma criatura viva com descanso ou com efeitos mágicos capazes de remover qualquer condição de metabolismo (cada dia de descanso ou efeito mágico diminui a penalidade em 1).</p>",
+      "resistencia": "Fortitude CD 31 evita"
+    },
+    {
+      "poder": "Fornalha do Ódio",
+      "img": "systems/tormenta20/icons/poderes/ameacas/odio-puro.webp",
+      "descricao": "<p>Sempre que acerta um ataque corpo a corpo, o inumano recupera 5 PV e recebe um bônus cumulativo de +2 em testes de ataque e rolagens de dano durante seu próximo turno.</p>",
+      "danos": [
+        [
+          "5",
+          "curapv",
+          "Recupera PV"
+        ]
+      ],
+      "efeitos": [
+        {
+          "name": "Fornalha do Ódio (+2)",
+          "description": "<p>+2 em testes de ataque e rolagens de dano durante o próximo turno (cumulativo: aplique novamente para cada acerto).</p>",
+          "system": {
+            "changes": [
+              {
+                "key": "system.modificadores.ataque.cac",
+                "value": 2,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              },
+              {
+                "key": "system.modificadores.dano.cac",
+                "value": 2,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "poder": "Ordens",
+      "img": "systems/tormenta20/icons/poderes/ameacas/comandar.webp",
+      "descricao": "<p>O inumano grita ordens para seus aliados em alcance médio. Eles recebem +2 em testes de perícia até o fim da cena.</p>",
+      "acao": "movimento"
+    },
+    {
+      "poder": "Varrer",
+      "img": "systems/tormenta20/icons/poderes/ameacas/varrer.webp",
+      "descricao": "<p>Uma vez por rodada, quando o inumano faz um ataque corpo a corpo e reduz os pontos de vida do alvo para 0 ou menos, pode realizar um ataque adicional contra outra criatura dentro de seu alcance.</p>",
+      "acao": "livre"
+    }
+  ]
+}

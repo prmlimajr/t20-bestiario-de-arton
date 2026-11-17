@@ -1,0 +1,13 @@
+{
+  "name": "Familiar: Vestígio da Encruzilhada",
+  "type": "poder",
+  "img": "assets/tokens/vestigio-da-encruzilhada.png",
+  "system": {
+    "description": {
+      "value": "<p>O vestígio da encruzilhada é um familiar.</p><p><strong>Familiar</strong>: Um vestígio da encruzilhada familiar reduz em –1 PM o custo de habilidades que permitem rolar dois dados ao fazer um teste e usar o melhor resultado (como a magia @UUID[Compendium.tormenta20.magias.Item.dvq8aLolbWGm7E2Z]{Orientação}).</p><p><strong>Vestígios como Familiares</strong></p><p>Vestígios são familiares cobiçados por conjuradores interessados em uma fração do poder mágico feérico. Entretanto, convocar uma destas criaturas não é tarefa simples, mesmo para alguém experiente nos caminhos da magia.</p><p>Para estabelecer o laço necessário para transformar um vestígio em familiar, primeiramente o personagem deve localizar um vestígio. A critério do mestre, isso pode envolver desde uma ou mais cenas de investigação ou interpretação em busca de informações sobre a localização dessas criaturas até uma busca completa (veja <em>Tormenta20</em>, p. 278). Uma vez que tenha localizado um vestígio, o personagem deverá fazer amizade com ele. Novamente, pode ser uma cena de interpretação ou pode envolver outras ações, como cumprir uma missão para as fadas da região. Por fim, o personagem deve realizar um ritual de ligação com o vestígio, que exige um dia e T$ 100 em ingredientes. Isso cria o vínculo mágico necessário para que o vestígio se torne um familiar.</p><p>Obviamente, vilões e outros personagens malignos interessados em um familiar vestígio irão recorrer a outros subterfúgios, que podem até envolver transformar o vestígio em familiar contra sua vontade. Salvar um vestígio nessa situação pode inclusive ser uma forma de incluir uma dessas criaturinhas em sua campanha.</p>"
+    },
+    "source": "Bestiário de Arton",
+    "tipo": "geral",
+    "subtipo": "Parceiros"
+  }
+}

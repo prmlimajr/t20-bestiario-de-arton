@@ -1,0 +1,157 @@
+{
+  "nome": "Troll da Ponte",
+  "img": "assets/tokens/troll-da-ponte.png",
+  "nd": "7",
+  "tipo": "mon",
+  "tamanho": "gra",
+  "papel": "solo",
+  "atributos": {
+    "for": 6,
+    "des": 2,
+    "con": 6,
+    "int": -1,
+    "sab": 0,
+    "car": -2
+  },
+  "pv": 225,
+  "defesa": 29,
+  "pericias": {
+    "inic": 4,
+    "perc": 4,
+    "fort": 17,
+    "refl": 13,
+    "vont": 8,
+    "dipl": 7,
+    "inti": 13
+  },
+  "deslocamento": {
+    "deslocamento": 9
+  },
+  "sentidos": [
+    "escuro"
+  ],
+  "resistenciasTexto": "cura acelerada 15/ácido ou fogo",
+  "corpoACorpo": "Tacape +24 (3d6+19) e mordida +24 (2d8+19).",
+  "equipamento": "Tacape aumentado.",
+  "tesouro": "Padrão.",
+  "notas": "<p><em>Tão logo se aproximam da ponte de pedra, vocês veem um troll surgir de uma cabana contígua. Apesar da aparência feroz típica de sua espécie, ele veste um avental de couro e carrega uma clava trabalhada. De maneira firme, mas não tão agressiva, ele aponta para uma placa de madeira onde se lê: “Pedágio do Troll.”</em></p><p>Trolls são monstros brutos e quase ferais, movidos por um apetite voraz, especialmente por humanoides e outros seres inteligentes. Até são capazes de conversar e negociar, mas raramente o fazem, preferindo a sanguinolência a qualquer forma de diplomacia. Justamente por todas essas características, causa espanto o comportamento quase civilizado de certos trolls que assumem, por conta própria, o papel de zeladores de pontes, túneis e passagens semelhantes. Chamados de trolls da ponte, estes indivíduos são um verdadeiro contraste ao arquétipo selvagem de sua raça.</p><p>Um troll da ponte é um troll normal que, por algum motivo, se mudou para uma passagem e ali fez sua morada. Embora pontes sejam a escolha mais comum, outros tipos de passagens, como desfiladeiros e túneis, também são apreciados. Ali, o troll passa a zelar pelo lugar, mas cobra pedágio de todos aqueles que queiram utilizá-lo. A exata abordagem dessa cobrança varia conforme o troll, mas todos eles respeitam sua própria tradição: um viajante que pague o pedágio terá passagem livre sem ser importunado. Negar-se a pagar, entretanto, resulta em uma reação do troll, que pode ser desde negar a passagem até um surto de violência desmedida.</p><p><strong>Cura acelerada:</strong> 15/ácido ou fogo (30 na ponte).</p>",
+  "ataques": [
+    {
+      "arma": "Tacape",
+      "descricao": "tacape aumentado",
+      "img": "systems/tormenta20/icons/itens/equipamentos/tacape.webp",
+      "ataque": 24,
+      "dano": [
+        [
+          "3d6+19",
+          "impacto"
+        ]
+      ]
+    },
+    {
+      "arma": "Mordida",
+      "descricao": "mordida",
+      "img": "icons/creatures/abilities/mouth-teeth-long-red.webp",
+      "ataque": 24,
+      "dano": [
+        [
+          "2d8+19",
+          "perfuracao"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Cura Acelerada",
+      "img": "systems/tormenta20/icons/magias/curar-ferimentos.webp",
+      "descricao": "<p>No início de cada um de seus turnos, o troll da ponte recupera 15 pontos de vida. Dano de ácido ou fogo interrompe a cura acelerada na rodada seguinte. Na ponte (ou a até 9m dela), a cura acelerada aumenta para 30.</p>",
+      "danos": [
+        [
+          "15",
+          "curapv",
+          "Cura acelerada"
+        ]
+      ]
+    },
+    {
+      "poder": "Expulsão Violenta",
+      "img": "systems/tormenta20/icons/itens/equipamentos/tacape.webp",
+      "descricao": "<p>Quando acerta um ataque de tacape, o troll da ponte arremessa a vítima 1d4 x 1,5m (ou o dobro disso se ele estiver em sua ponte) em uma direção à escolha dele (Fort CD 24 evita). A vítima fica caída e, se atingir algum obstáculo, sofre 1d6 pontos de dano de impacto para cada 1,5m que foi arremessada.</p>",
+      "acao": "livre",
+      "danos": [
+        [
+          "1d4",
+          "",
+          "Arremesso (x 1,5m)"
+        ]
+      ],
+      "resistencia": "Fortitude CD 24 evita"
+    },
+    {
+      "poder": "Pedágio do Troll",
+      "img": "systems/tormenta20/icons/itens/gerais/joia-familia.webp",
+      "descricao": "<p>O troll cobra um pedágio por criatura equivalente a 1d4 x T$ 100 (role uma vez para cada troll); pagar permite atravessar em segurança. É possível reduzir o pedágio pela metade com um teste estendido de Diplomacia (CD 24, 3 sucessos). Uma falha, entretanto, enfurece o troll; ele cobra o dobro do pedágio e recebe +3 em testes de ataque e rolagens de dano até o fim da cena.</p>",
+      "danos": [
+        [
+          "1d4",
+          "",
+          "Pedágio (x T$ 100)"
+        ]
+      ],
+      "efeitos": [
+        {
+          "name": "Troll Enfurecido",
+          "description": "<p>Pedágio negado: +3 em testes de ataque e rolagens de dano até o fim da cena.</p>",
+          "system": {
+            "changes": [
+              {
+                "key": "system.modificadores.ataque.cac",
+                "value": 3,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              },
+              {
+                "key": "system.modificadores.dano.cac",
+                "value": 3,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "poder": "Ponte",
+      "img": "systems/tormenta20/icons/poderes/ameacas/imunidade-magia.webp",
+      "descricao": "<p>O troll possui uma ponte, ou passagem semelhante, que funciona como seu covil. Se estiver dentro dessa ponte, ou a até 9m dela, ele recebe +3 na Defesa e sua cura acelerada aumenta para 30.</p>",
+      "danos": [
+        [
+          "30",
+          "curapv",
+          "Cura acelerada (ponte)"
+        ]
+      ],
+      "efeitos": [
+        {
+          "name": "Na Ponte",
+          "description": "<p>Na ponte ou a até 9m dela: +3 na Defesa (cura acelerada 30).</p>",
+          "system": {
+            "changes": [
+              {
+                "key": "system.attributes.defesa.bonus",
+                "value": 3,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

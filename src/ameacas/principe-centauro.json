@@ -1,0 +1,245 @@
+{
+  "nome": "Príncipe Centauro",
+  "img": "assets/tokens/principe-centauro.png",
+  "nd": "16",
+  "tipo": "hum",
+  "raca": "centauro",
+  "tamanho": "gra",
+  "papel": "special",
+  "atributos": {
+    "for": 6,
+    "des": 2,
+    "con": 5,
+    "int": 0,
+    "sab": 6,
+    "car": 1
+  },
+  "pv": 790,
+  "pm": 78,
+  "defesa": 53,
+  "pericias": {
+    "inic": 16,
+    "perc": 20,
+    "fort": 30,
+    "refl": 16,
+    "vont": 24,
+    "ades": 20,
+    "atle": 20,
+    "inti": 15,
+    "reli": 20,
+    "sobr": 22
+  },
+  "deslocamento": {
+    "deslocamento": 15
+  },
+  "resistencias": {
+    "dano": 10
+  },
+  "imunidadeCondicoes": [
+    "medo",
+    "veneno"
+  ],
+  "resistenciasTexto": "imunidade a medo e veneno, redução de dano 10",
+  "corpoACorpo": "Gadanho x2 +46 (4d12+30, 19/x5, mais 4d8 luz) e cascos +46 (2d12+30, 18, mais 4d8 luz).",
+  "equipamento": "Gadanho maciço ameaçador dilacerante formidável aumentado, símbolo sagrado de Allihanna.",
+  "tesouro": "Nenhum.",
+  "notas": "<p><em>Ainda que tenha a aparência de um centauro normal, nada poderia estar mais distante da verdade. Seu corpo musculoso irradia luz brilhante, divina, como o sol entre as copas das árvores. Empunha uma foice imensa, tão grande que poderia decapitar o maior dos dragões.</em></p><p>Uma profecia diz que um centauro já nascido adulto, portador de uma foice mágica miraculosa, governaria todas as tribos do mundo. Quinze anos atrás, um poderoso e selvagem centauro chamado Trebane — que também seria aliado de Orion Drake, um dos maiores cavaleiros de Arton — recusou esse posto, preferindo seguir ao lado do amigo humano.</p><p>Até hoje, nenhum outro príncipe teria se revelado. Clérigos de Allihanna suspeitam que, caso ele exista, encontra-se percorrendo o mundo em segredo, atuando para enfrentar os mais poderosos inimigos dos centauros, ou mesmo planejando o fim da civilização como conhecemos.</p><p>Existe a crença de que, quando um grande perigo ameaça uma aldeia (sejam vilões ou aventureiros poderosos, mas arrogantes), um xamã será capaz de celebrar um ritual e invocar o príncipe para destruir os intrusos.</p><p><strong>Deslocamento:</strong> sem redução por terreno difícil natural.</p>",
+  "ataques": [
+    {
+      "arma": "Gadanho",
+      "descricao": "gadanho x2",
+      "img": "systems/tormenta20/icons/itens/equipamentos/gadanho.webp",
+      "qtd": 2,
+      "ataque": 46,
+      "critico": "19/x5",
+      "dano": [
+        [
+          "4d12+30",
+          "corte"
+        ],
+        [
+          "4d8",
+          "luz"
+        ]
+      ]
+    },
+    {
+      "arma": "Cascos",
+      "descricao": "cascos",
+      "img": "systems/tormenta20/icons/poderes/ameacas/cascos.webp",
+      "ataque": 46,
+      "critico": "18",
+      "dano": [
+        [
+          "2d12+30",
+          "impacto"
+        ],
+        [
+          "4d8",
+          "luz"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Coice Oportuno",
+      "img": "systems/tormenta20/icons/poderes/ameacas/cascos.webp",
+      "descricao": "<p>Uma vez por rodada, quando uma criatura erra um ataque corpo a corpo contra o príncipe centauro por 5 ou mais, ele faz um ataque de cascos contra essa criatura.</p>",
+      "acao": "reacao"
+    },
+    {
+      "poder": "Conjuração Rocinante",
+      "img": "systems/tormenta20/icons/poderes/ameacas/cascos.webp",
+      "descricao": "<p>Uma vez por rodada, quando lança uma magia, o príncipe faz um ataque de cascos.</p>",
+      "acao": "reacao",
+      "custo": 1
+    },
+    {
+      "poder": "Liberdade da Pradaria",
+      "img": "systems/tormenta20/icons/poderes/ameacas/voz-da-natureza.webp",
+      "descricao": "<p>Quando lança uma magia ao ar livre, o príncipe aumenta o alcance dela em um passo (de toque para curto, de curto para médio ou de médio para longo).</p>",
+      "acao": "reacao",
+      "custo": 1
+    },
+    {
+      "poder": "Segar",
+      "img": "systems/tormenta20/icons/itens/equipamentos/gadanho.webp",
+      "descricao": "<p>O príncipe faz um único ataque de gadanho e o compara com a Defesa de cada inimigo adjacente a ele. Cada criatura atingida sofre o dano do ataque e fica caída e sangrando. <em>Recarga (movimento).</em></p>",
+      "acao": "completa",
+      "danos": [
+        [
+          "4d12+30",
+          "corte"
+        ],
+        [
+          "4d8",
+          "luz"
+        ]
+      ]
+    },
+    {
+      "poder": "Voz da Natureza",
+      "img": "systems/tormenta20/icons/poderes/ameacas/voz-da-natureza.webp",
+      "descricao": "<p>O príncipe pode falar com animais (como o efeito da magia @UUID[Compendium.tormenta20.magias.Item.ahIU6trHt6MuMTS7]{Voz Divina}).</p>"
+    },
+    {
+      "poder": "Medo de Altura",
+      "img": "systems/tormenta20/icons/poderes/ameacas/medo-de-altura.webp",
+      "descricao": "<p>Se estiver adjacente a uma queda de 3m ou mais de altura, o príncipe fica abalado.</p>"
+    },
+    {
+      "poder": "Magias",
+      "img": "systems/tormenta20/icons/poderes/ameacas/magias.webp",
+      "descricao": "<p>Como um druida de Allihanna de 16º nível (CD 42).</p>"
+    },
+    {
+      "poder": "Coluna de Chamas",
+      "acao": "padrao",
+      "custo": 16,
+      "img": "systems/tormenta20/icons/magias/coluna-de-chamas.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.2SmpEwV7DibaAd6t]{Coluna de Chamas} (Padrão, 16 PM). Um cilindro de fogo sagrado com 3m de raio e 30m de altura desce dos céus em alcance longo, causando 11d6 pontos de dano de fogo mais 11d6 pontos de dano de luz nas criaturas e objetos livres na área (Ref reduz à metade).</p>",
+      "danos": [
+        [
+          "11d6",
+          "fogo"
+        ],
+        [
+          "11d6",
+          "luz"
+        ]
+      ],
+      "resistencia": "Reflexos CD 42 reduz à metade"
+    },
+    {
+      "poder": "Comunhão com a Natureza",
+      "acao": "completa",
+      "custo": 6,
+      "img": "systems/tormenta20/icons/magias/comunhao-com-a-natureza.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.8byp1gCfdXtmae6D]{Comunhão com a Natureza} (Completa, 6 PM). O príncipe recebe 6d4 dados de auxílio que duram pelo dia ou até serem gastos. Sempre que faz um teste de perícia na natureza, ele pode gastar dois desses dados para receber +2d4 no teste.</p>",
+      "danos": [
+        [
+          "2d4",
+          "",
+          "Auxílio"
+        ]
+      ]
+    },
+    {
+      "poder": "Concentração de Combate",
+      "acao": "padrao",
+      "custo": 8,
+      "img": "systems/tormenta20/icons/magias/concentracao-de-combate.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.lAsj1NrA2J6GbvDi]{Concentração de Combate} (Padrão, 8 PM). Até o fim da cena, quando faz um ataque, o príncipe rola dois dados e usa o melhor resultado, e, quando um oponente ataca o príncipe, rola dois dados e usa o pior resultado.</p>"
+    },
+    {
+      "poder": "Curar Ferimentos",
+      "acao": "padrao",
+      "custo": 16,
+      "img": "systems/tormenta20/icons/magias/curar-ferimentos.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.soVAGPRWQmKxOrPm]{Curar Ferimentos} (Padrão, 16 PM). Uma criatura em alcance curto cura 17d8+17 pontos de vida.</p>",
+      "danos": [
+        [
+          "17d8+17",
+          "curapv",
+          "Cura"
+        ]
+      ]
+    },
+    {
+      "poder": "Pele de Pedra",
+      "acao": "padrao",
+      "custo": 10,
+      "img": "systems/tormenta20/icons/magias/pele-de-pedra.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.ji7Bn9t7lk8zyNN1]{Pele de Pedra} (Padrão, 10 PM). Aumenta a redução de dano do príncipe em +10 até o fim da cena.</p>",
+      "efeitos": [
+        {
+          "name": "Pele de Pedra",
+          "description": "<p>+10 na redução de dano até o fim da cena.</p>",
+          "system": {
+            "changes": [
+              {
+                "key": "system.tracos.resistencias.dano.bonus",
+                "value": 10,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "poder": "Primor Atlético",
+      "acao": "padrao",
+      "custo": 4,
+      "img": "systems/tormenta20/icons/magias/primor-atletico.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.k8E2gbV1NwkI0ehs]{Primor Atlético} (Padrão, 4 PM). Até o fim da cena, o príncipe recebe deslocamento +9m, +10 em Atletismo e, quando faz um teste de uma perícia baseada em Força, Destreza ou Constituição, exceto de ataque ou resistência, rola dois dados e usa o melhor.</p>",
+      "efeitos": [
+        {
+          "name": "Primor Atlético",
+          "description": "<p>+9m de deslocamento e +10 em Atletismo até o fim da cena.</p>",
+          "system": {
+            "changes": [
+              {
+                "key": "system.pericias.atle.bonus",
+                "value": 10,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              },
+              {
+                "key": "system.attributes.movement.walk.bonus",
+                "value": 9,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

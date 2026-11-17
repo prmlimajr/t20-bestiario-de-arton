@@ -1,0 +1,17 @@
+{
+  "name": "",
+  "type": "equipamento",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": {
+      "value": "",
+      "unidentified": ""
+    },
+    "source": ""
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

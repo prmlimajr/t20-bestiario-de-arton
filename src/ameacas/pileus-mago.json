@@ -1,0 +1,233 @@
+{
+  "nome": "Pileus Mago",
+  "img": "assets/tokens/pileus-mago.png",
+  "nd": "20",
+  "tipo": "mor",
+  "tamanho": "med",
+  "papel": "special",
+  "atributos": {
+    "for": 0,
+    "des": 8,
+    "con": 5,
+    "int": 10,
+    "sab": 5,
+    "car": 6
+  },
+  "pv": 840,
+  "pm": 170,
+  "defesa": 60,
+  "pericias": {
+    "inic": 26,
+    "perc": 21,
+    "fort": 21,
+    "refl": 28,
+    "vont": 33,
+    "acro": 26,
+    "conh": 28,
+    "dipl": 24,
+    "inti": 27,
+    "intu": 23,
+    "mist": 28,
+    "reli": 23
+  },
+  "deslocamento": {
+    "deslocamento": 0,
+    "voo": 18
+  },
+  "sentidos": [
+    "escuro"
+  ],
+  "resistencias": {
+    "eletricidade": "imune",
+    "dano": 10
+  },
+  "imunidadeCondicoes": [
+    "metamorfose"
+  ],
+  "resistenciasTexto": "imunidade a eletricidade e metamorfose, incorpóreo, redução de dano 10, resistência a magia +5",
+  "corpoACorpo": "Toque sombrio +55 (10d6+10 trevas).",
+  "tesouro": "Dobro.",
+  "notas": "<p><em>A criatura que surge diante de vocês tem a aparência de um humanoide grande, forte e levemente corcunda, como um ogro, trajando uma armadura pesada repleta de espinhos pontiagudos. Apesar da aparência abrutalhada, o brilho em seus olhos transparece inteligência superior e maldade sem igual.</em></p><p>Pileus são mortos-vivos poderosos que mudam de forma ao longo de uma batalha, transformando-se e assumindo novas habilidades a cada vez que são derrotados. Além de sua forma inicial de colosso, em que surge como um grande guerreiro de armadura, quando é derrotado pela primeira vez, um pileus se transforma em um assassino: um esqueleto de proporções humanas, trajando armadura leve e empunhando duas armas. A diminuição de tamanho, porém, não o torna menos perigoso — como assassino, ele é rápido, ágil e extremamente mortífero. Por fim, ao ser derrotado pela segunda vez, ele retorna como mago: uma sombra incorpórea trajando um manto e capuz. Nessa forma, ele é mais fraco e lento, mas seu intelecto atinge o ápice e ele é capaz de empregar poderosas magias arcanas.</p><p>A mudança de estágio de um pileus é um processo temporário. Depois de evoluir, o pileus “retrocede” um estágio por semana, até voltar à forma de colosso. Como as habilidades de cada estágio são diferentes, existem casos de pileus que se autodestruiriam para assumir momentaneamente um de seus estágios mais avançados. Essa é uma estratégia que estas criaturas empregam com parcimônia, pois, a cada estágio que evolui, o pileus fica mais próximo de sua morte final — se for destruído como mago, ele morre para sempre.</p><p>Ninguém sabe exatamente qual a origem dos pileus. Especula-se que não sejam criados como mortos-vivos tradicionais, mas que seu surgimento seja resultado de um ritual ao qual indivíduos se submetem em busca de poder — algo semelhante à transformação de arcanistas em liches. O fato de a criatura passar por sucessivas transformações quando é derrotada indica alguma ligação com magias ou poderes de transformação e metamorfose, mas qualquer coisa além disso é pura especulação dos sábios artonianos.</p><p>Em todas as formas, pileus são astutos e inteligentes. Sua existência geralmente é motivada pela busca por poder, mas cada um tem seus próprios planos e objetivos. Alguns querem se tornar líderes de grandes exércitos para conquistar determinado território, enquanto outros levam uma vida de pesquisa e estudo em busca de caminhos para alcançar ainda mais poder físico ou mágico. Em comum, todos têm ambição desmedida e crueldade ilimitada.</p><p><strong>Estágios:</strong> Pileus Colosso (estágio um) → Pileus Assassino (estágio dois) → Pileus Mago (estágio três). Ao ser reduzido a 0 PV, cada estágio usa Evolução Sombria e surge como o estágio seguinte (substitua o token pela ficha do próximo estágio). Destruído como mago, o pileus morre para sempre.</p><p><strong>Enfrentando Todos os Estágios</strong></p><p>Os encontros mais comuns com um pileus envolvem confrontar a criatura como um colosso e ir enfrentando cada um de seus estágios. Isso pode ser bastante desafiador, pois significa enfrentar três criaturas de ND 20 em sequência. Se fizer isso, considere este um encontro de ND 22 para efeitos de experiência.</p><p>Por outro lado, você também pode querer usar apenas dois estágios do pileus em um mesmo encontro. Como esta criatura demora alguns dias para “retroceder” aos estágios anteriores, seria possível encontrar um pileus que ainda está na forma assassino, e que precisa ser derrotado “apenas” duas vezes. Nesse caso, considere o encontro, para fins de XP, como ND 21.</p><p>Por fim, um encontro contra qualquer um dos estágios do pileus tem ND 20, como normal para a criatura.</p><p>Estágio três. Se for destruído nesta forma, o pileus morre para sempre.</p><p><strong>Força:</strong> — (incorpóreo; registrada como 0 na ficha).</p>",
+  "ataques": [
+    {
+      "arma": "Toque sombrio",
+      "descricao": "toque sombrio",
+      "img": "systems/tormenta20/icons/magias/toque-vampirico.webp",
+      "ataque": 55,
+      "dano": [
+        [
+          "10d6+10",
+          "trevas"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Resistência a Magia",
+      "img": "systems/tormenta20/icons/poderes/ameacas/resistencia-magia.webp",
+      "descricao": "<p>O pileus recebe +5 em testes de resistência contra magias.</p>"
+    },
+    {
+      "poder": "Incorpóreo",
+      "img": "systems/tormenta20/icons/poderes/ameacas/forma.webp",
+      "descricao": "<p>O pileus mago é incorpóreo.</p>"
+    },
+    {
+      "poder": "Arcano de Batalha",
+      "img": "systems/tormenta20/icons/poderes/ameacas/magias.webp",
+      "descricao": "<p>O pileus mago soma sua Inteligência nas rolagens de dano quando lança magias (já contabilizado).</p>"
+    },
+    {
+      "poder": "Contramágica Superior",
+      "img": "systems/tormenta20/icons/magias/dissipar-magia.webp",
+      "descricao": "<p>Uma vez por rodada, quando vê uma magia ser conjurada, o pileus faz uma contramágica. Se usar Dissipar Magia para isso, ele rola dois dados e usa o melhor resultado.</p>",
+      "acao": "reacao"
+    },
+    {
+      "poder": "Drenar Existência",
+      "img": "systems/tormenta20/icons/poderes/ameacas/sombra-rubra.webp",
+      "descricao": "<p>Uma criatura atingida pelo toque drenante do pileus tem seus PV máximos reduzidos em 20 e seus PM máximos reduzidos em 3, ambos por 1 dia, cumulativamente (Fort CD 51 evita). Caso os PV máximos da criatura sejam reduzidos a 0 desta forma, ela fica inconsciente até que eles sejam restabelecidos. Sempre que reduz os PV e PM máximos de uma criatura desta forma, o pileus recupera essa mesma quantidade de PV e PM.</p>",
+      "danos": [
+        [
+          "20",
+          "curapv",
+          "Recupera PV"
+        ],
+        [
+          "3",
+          "curapm",
+          "Recupera PM"
+        ]
+      ],
+      "resistencia": "Fortitude CD 51 evita"
+    },
+    {
+      "poder": "Extinguir a Vida",
+      "img": "systems/tormenta20/icons/poderes/ameacas/ataque-trevas.webp",
+      "descricao": "<p>Uma criatura que sofra dano de trevas do pileus não pode recuperar pontos de vida por 1 rodada.</p>"
+    },
+    {
+      "poder": "Fluxo de Mana",
+      "img": "systems/tormenta20/icons/poderes/ameacas/magias.webp",
+      "descricao": "<p>O pileus pode manter dois efeitos sustentados simultaneamente com apenas uma ação livre (mas pagando o custo de cada um).</p>"
+    },
+    {
+      "poder": "Magia Acelerada",
+      "img": "systems/tormenta20/icons/poderes/ameacas/magias.webp",
+      "descricao": "<p>Uma vez por rodada, quando lança uma magia com execução de ação de movimento, padrão ou completa, o pileus muda a execução dela para livre.</p>",
+      "acao": "livre",
+      "custo": 4
+    },
+    {
+      "poder": "Pacto Além das Trevas",
+      "img": "systems/tormenta20/icons/poderes/ameacas/ataque-trevas.webp",
+      "descricao": "<p>Criaturas imunes a dano de trevas sofrem metade do dano de trevas do pileus e mortos-vivos não recuperam pontos de vida com esse dano.</p>"
+    },
+    {
+      "poder": "Visão Arcana",
+      "img": "systems/tormenta20/icons/magias/visao-mistica.webp",
+      "descricao": "<p>O pileus está permanentemente sob efeito da magia @UUID[Compendium.tormenta20.magias.Item.GDlkTth7oEnb5d0Y]{Visão Mística} com o aprimoramento que permite enxergar criaturas e objetos invisíveis.</p>"
+    },
+    {
+      "poder": "Magias",
+      "img": "systems/tormenta20/icons/poderes/ameacas/magias.webp",
+      "descricao": "<p>Como um mago de 20º nível (CD 51).</p>"
+    },
+    {
+      "poder": "Desespero Esmagador",
+      "acao": "padrao",
+      "custo": 8,
+      "img": "systems/tormenta20/icons/magias/desespero-esmagador.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.u2Yo7BCg7xOrQJyF]{Desespero Esmagador} (Padrão, 8 PM). Criaturas num cone de 6m ficam debilitadas e esmorecidas pela cena (Von reduz para 1 rodada).</p>",
+      "resistencia": "Vontade CD 51 reduz"
+    },
+    {
+      "poder": "Dissipar Magia",
+      "acao": "padrao",
+      "custo": 3,
+      "img": "systems/tormenta20/icons/magias/dissipar-magia.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.rfTGYwrXLjcIAIP5]{Dissipar Magia} (Padrão, 3 PM). O pileus escolhe uma criatura, objeto ou esfera de 3m em alcance médio e faz um teste de Misticismo. Todas as magias nesse alvo com CD igual ou menor que o resultado do teste são dissipadas.</p>"
+    },
+    {
+      "poder": "Ferver Sangue",
+      "acao": "padrao",
+      "custo": 19,
+      "img": "systems/tormenta20/icons/magias/ferver-sangue.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.tVxVarpB0GaAoCp5]{Ferver Sangue} (Padrão, 19 PM, sustentada). O sangue de criaturas escolhidas em alcance curto começa a ferver. Quando a magia é lançada, e no início de cada um de seus turnos, cada criatura sofre 6d8+10 pontos de dano de fogo e fica enjoada por 1 rodada (Fort reduz à metade e evita a condição). Se uma criatura passar em dois testes de Fortitude seguidos, dissipa a magia sobre si. Se um alvo for reduzido a 0 PV pelo dano desta magia, seu corpo explode, matando-o e causando 6d6 pontos de dano de fogo em todas as criaturas a até 3m (Ref reduz à metade). Esta magia não afeta criaturas sem sangue, como construtos ou mortos-vivos.</p>",
+      "danos": [
+        [
+          "6d8+10",
+          "fogo"
+        ],
+        [
+          "6d6",
+          "fogo",
+          "Explosão"
+        ]
+      ],
+      "resistencia": "Fortitude CD 51 reduz à metade e evita"
+    },
+    {
+      "poder": "Relâmpago",
+      "acao": "padrao",
+      "custo": 16,
+      "img": "systems/tormenta20/icons/magias/relampago.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.BfYpxjs0NeqhAs8q]{Relâmpago} (Padrão, 16 PM). O pileus lança um relâmpago em cada criatura escolhida em alcance médio, causando 16d6+10 pontos de dano de eletricidade (Ref reduz à metade).</p>",
+      "danos": [
+        [
+          "16d6+10",
+          "eletricidade"
+        ]
+      ],
+      "resistencia": "Reflexos CD 51 reduz à metade"
+    },
+    {
+      "poder": "Tentáculos de Trevas",
+      "acao": "padrao",
+      "custo": 14,
+      "img": "systems/tormenta20/icons/magias/tentaculos-de-trevas.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.IYB0YK1zLune1fs0]{Tentáculos de Trevas} (Padrão, 14 PM). Até o fim da cena, tentáculos surgem em uma esfera de 9m em alcance médio e tentam agarrar todas as criaturas na área. Ao lançar a magia, e no início de cada um de seus turnos, o pileus faz um teste da manobra agarrar (usando Misticismo) contra cada criatura na área. Se ele passar, a criatura é agarrada; se a vítima já está agarrada, é esmagada, sofrendo 10d6 pontos de dano de trevas (cada tentáculo recebe +10 em sua primeira rolagem de dano). A área conta como terreno difícil e os tentáculos são imunes a dano.</p>",
+      "danos": [
+        [
+          "10d6",
+          "trevas"
+        ]
+      ]
+    },
+    {
+      "poder": "Toque da Morte",
+      "acao": "padrao",
+      "custo": 17,
+      "img": "systems/tormenta20/icons/magias/toque-da-morte.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.rQ44Cz2gJdt86jFL]{Toque da Morte} (Padrão, 17 PM). Uma criatura em alcance curto sofre 10d8+20 pontos de dano de trevas. Um inimigo com menos da metade de seus PV, em vez disso, deve fazer um teste de Fortitude. Se passar, sofre o dano normal. Se falhar, seus PV são reduzidos a –10.</p>",
+      "danos": [
+        [
+          "10d8+20",
+          "trevas"
+        ]
+      ],
+      "resistencia": "Fortitude CD 51"
+    },
+    {
+      "poder": "Toque Vampírico",
+      "acao": "padrao",
+      "custo": 9,
+      "img": "systems/tormenta20/icons/magias/toque-vampirico.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.6KvwDBikOdbzhRGv]{Toque Vampírico} (Padrão, 9 PM). O pileus faz um ataque corpo a corpo. Se acertar, além do dano normal, causa 10d6+10 pontos de dano de trevas e recupera metade desse dano de trevas em pontos de vida.</p>",
+      "danos": [
+        [
+          "10d6+10",
+          "trevas"
+        ]
+      ]
+    },
+    {
+      "poder": "Velocidade",
+      "acao": "padrao",
+      "custo": 10,
+      "img": "systems/tormenta20/icons/magias/velocidade.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.XWEJNZMs6Wb9uUHF]{Velocidade} (Padrão, 10 PM, sustentada). O pileus pode executar uma ação padrão adicional por turno.</p>"
+    }
+  ]
+}

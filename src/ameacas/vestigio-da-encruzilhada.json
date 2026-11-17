@@ -1,0 +1,62 @@
+{
+  "nome": "Vestígio da Encruzilhada",
+  "img": "assets/tokens/vestigio-da-encruzilhada.png",
+  "nd": "1/2",
+  "tipo": "esp",
+  "tamanho": "min",
+  "papel": "solo",
+  "pv": 11,
+  "defesa": 12,
+  "deslocamento": {
+    "deslocamento": 6
+  },
+  "tesouro": "Nenhum.",
+  "atributos": {
+    "for": -2,
+    "des": 3,
+    "con": 1,
+    "int": 0,
+    "sab": 2,
+    "car": 2
+  },
+  "pericias": {
+    "inic": 5,
+    "perc": 6,
+    "fort": -1,
+    "refl": 3,
+    "vont": 6,
+    "furt": 10,
+    "intu": 6,
+    "sobr": 6
+  },
+  "sentidos": [
+    "cegas",
+    "escuro"
+  ],
+  "imunidadeCondicoes": [
+    "surpreendido"
+  ],
+  "resistenciasTexto": "imunidade a surpreendido",
+  "notas": "<p><em>Conforme adentram a clareira, vocês percebem pequenos indícios da presença recente de fadas e se perguntam se elas estiveram por aqui. Qualquer dúvida a esse respeito desaparece quando uma pequena criatura, formada por folhas e terra, surge de trás de uma árvore. O pequeno ser caminha pela clareira, transformando magicamente as plantas por onde passa.</em></p><p>Um vestígio feérico é um pequeno espírito que se forma a partir de restos de magia deixada em locais de celebração feérica. Sua criação quase sempre é acidental e se baseia em algum fragmento de poder mágico, como uma música cantada por um menestrel duende, mas que não foi ouvida por mais ninguém, ou um frasco de vinho encantado aberto e não consumido. Esquecidos nesses lugares, tais fragmentos de magia ganham vida, moldados pela natureza do local onde foram deixados. Existem três tipos de vestígios, conforme o tipo de local onde foram criados: limiares, encruzilhadas e transformações.</p><p>Limiares são lugares onde dois ou mais elementos do mundo se encontram, como a margem de um rio, a tênue linha entre a escuridão de uma sombra e a luz dos raios de sol ou o breve instante entre o sonho e o despertar. Fadas são atraídas por esses lugares porque elas próprias também representam o encontro de dois elementos — o poder da magia de Wynna e a força do caos de Nimb. Vestígios criados nesses lugares são seres divididos, que mesclam características dos dois elementos que formam o limiar onde nasceram.</p><p>Encruzilhadas são espaços onde dois caminhos da mesma natureza se unem ou se separam, seja de forma concreta, como uma bifurcação em uma estrada, ou metafórica, como uma árvore onde dois jovens apaixonados confessaram seu amor. Encruzilhadas possuem um significado especial para as fadas, pois elas também trilham dois caminhos em Arton: o mundano e o mágico. À primeira vista, vestígios criados em uma encruzilhada parecem sempre indecisos, mas isso porque são capazes de observar as ramificações de suas decisões, muitas vezes ponderando com uma calma incomum (para uma fada) sobre o melhor caminho a seguir.</p><p>Por fim, transformações são locais onde elementos do mundo sofrem uma mudança significativa, como um pomar, onde a terra se transforma em fruto, um vulcão, no qual a rocha vira fogo, ou mesmo uma escola, onde a curiosidade se transforma em conhecimento. Vestígios de tais lugares expressam ao máximo a natureza multifacetada das fadas por meio de seus poderes de metamorfose.</p><p>Como a maioria das fadas, vestígios não são inerentemente bons ou maus. Sua personalidade é influenciada por sua natureza, mas eles são, sobretudo, curiosos a respeito do mundo e de seu povo. Vestígios podem ser agressivos com invasores de seu território, mas também podem estar abertos à amizade e talvez até fornecer informações e conselhos úteis sobre as cercanias.</p><p><strong>Deslocamento:</strong> sem redução por terreno difícil natural.</p><p><strong>Familiar:</strong> Um vestígio da encruzilhada familiar reduz em –1 PM o custo de habilidades que permitem rolar dois dados ao fazer um teste e usar o melhor resultado (como a magia @UUID[Compendium.tormenta20.magias.Item.dvq8aLolbWGm7E2Z]{Orientação}).</p><p><strong>Vestígios como Familiares</strong></p><p>Vestígios são familiares cobiçados por conjuradores interessados em uma fração do poder mágico feérico. Entretanto, convocar uma destas criaturas não é tarefa simples, mesmo para alguém experiente nos caminhos da magia.</p><p>Para estabelecer o laço necessário para transformar um vestígio em familiar, primeiramente o personagem deve localizar um vestígio. A critério do mestre, isso pode envolver desde uma ou mais cenas de investigação ou interpretação em busca de informações sobre a localização dessas criaturas até uma busca completa (veja <em>Tormenta20</em>, p. 278). Uma vez que tenha localizado um vestígio, o personagem deverá fazer amizade com ele. Novamente, pode ser uma cena de interpretação ou pode envolver outras ações, como cumprir uma missão para as fadas da região. Por fim, o personagem deve realizar um ritual de ligação com o vestígio, que exige um dia e T$ 100 em ingredientes. Isso cria o vínculo mágico necessário para que o vestígio se torne um familiar.</p><p>Obviamente, vilões e outros personagens malignos interessados em um familiar vestígio irão recorrer a outros subterfúgios, que podem até envolver transformar o vestígio em familiar contra sua vontade. Salvar um vestígio nessa situação pode inclusive ser uma forma de incluir uma dessas criaturinhas em sua campanha.</p>",
+  "habilidades": [
+    {
+      "poder": "Enxurrada de Possibilidades",
+      "img": "systems/tormenta20/icons/poderes/ameacas/percepcao-temporal.webp",
+      "descricao": "<p>O vestígio da encruzilhada inunda de possibilidades a mente de uma criatura em alcance curto. A vítima sofre 2d6+3 pontos de dano psíquico e fica confusa por 1 rodada (Von CD 15 reduz à metade e evita a condição). Uma criatura só pode ficar confusa por esta habilidade uma vez por cena.</p>",
+      "acao": "padrao",
+      "danos": [
+        [
+          "2d6+3",
+          "psiquico"
+        ]
+      ],
+      "resistencia": "Vontade CD 15 reduz à metade e evita"
+    },
+    {
+      "poder": "Vislumbrar as Ramificações",
+      "img": "systems/tormenta20/icons/magias/orientacao.webp",
+      "descricao": "<p>O vestígio obtém um vislumbre de seu futuro próximo. Até o início de seu próximo turno, quando faz um teste de perícia, ele pode gastar este vislumbre para rolar dois dados e usar o melhor resultado.</p>",
+      "acao": "movimento"
+    }
+  ]
+}

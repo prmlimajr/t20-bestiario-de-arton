@@ -1,0 +1,51 @@
+{
+  "name": "Megalon",
+  "type": "magia",
+  "img": "systems/tormenta20/icons/magias/fisico-divino.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Universal 3 (Encantamento)</strong></p><p><strong>Execução:</strong> padrão; <strong>Alcance:</strong> toque; <strong>Alvo:</strong> 1 animal ou monstro; <strong>Duração:</strong> cena; <strong>Resistência:</strong> Vontade evita.</p><p>Esta magia afeta apenas criaturas irracionais (Int –5 ou –4). Ela aumenta o tamanho do alvo em uma categoria e fornece Força +4 e redução de dano 5. Se o alvo for um parceiro, ele passa a fornecer +2 na Defesa e, uma vez por rodada, +1d12 em uma rolagem de dano corpo a corpo. Estes benefícios se acumulam com quaisquer outros fornecidos pelo parceiro.</p><p><strong>+2 PM:</strong> muda o bônus de dano fornecido pelo parceiro para +2d8.</p><p><strong>+2 PM:</strong> muda o bônus na Defesa fornecido pelo parceiro para +5.</p><p><strong>+4 PM:</strong> além do normal, o parceiro fornece redução de dano 5.</p><p><strong>+4 PM:</strong> muda o aumento de tamanho para duas categorias e o bônus em Força para +6. Requer 4º círculo.</p>"
+    },
+    "source": "Bestiário de Arton, p. 117",
+    "ativacao": {
+      "execucao": "action",
+      "custo": 6,
+      "qtd": "",
+      "condicao": "",
+      "special": ""
+    },
+    "duracao": {
+      "value": 0,
+      "units": "scene",
+      "special": ""
+    },
+    "alcance": "touch",
+    "alvo": "1 animal ou monstro",
+    "area": "",
+    "resistencia": {
+      "pericia": "",
+      "atributo": "int",
+      "bonus": 0,
+      "txt": "Vontade evita"
+    },
+    "tipo": "uni",
+    "circulo": 3,
+    "escola": "enc",
+    "rolls": [
+      {
+        "name": "Bônus de dano do parceiro",
+        "key": "dano0",
+        "type": "dano",
+        "parts": [
+          [
+            "1d12",
+            "",
+            ""
+          ]
+        ],
+        "versatil": "",
+        "adaptavel": ""
+      }
+    ]
+  }
+}

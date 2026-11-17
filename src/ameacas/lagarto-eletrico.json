@@ -1,0 +1,93 @@
+{
+  "nome": "Lagarto-Elétrico",
+  "img": "assets/tokens/lagarto-eletrico.png",
+  "nd": "1",
+  "tamanho": "peq",
+  "tipo": "mon",
+  "papel": "solo",
+  "atributos": {
+    "for": 0,
+    "des": 3,
+    "con": 1,
+    "int": -5,
+    "sab": 1,
+    "car": -2
+  },
+  "deslocamento": {
+    "deslocamento": 12,
+    "natacao": 9
+  },
+  "sentidos": [
+    "faro",
+    "penumbra"
+  ],
+  "resistencias": {
+    "eletricidade": "imune"
+  },
+  "resistenciasTexto": "evasão, imunidade a eletricidade",
+  "tesouro": "Metade.",
+  "pv": 24,
+  "defesa": 15,
+  "pericias": {
+    "inic": 5,
+    "perc": 5,
+    "fort": 5,
+    "refl": 10,
+    "vont": 1,
+    "furt": 9
+  },
+  "corpoACorpo": "Mordida +7 (1d6+3).",
+  "notas": "<p><em>Às margens do pântano, é possível perceber diminutos lagartos de uma coloração azul bastante viva. Suas cabeças são triangulares, como as de serpentes, com um par de chifres pontiagudos voltados para trás.</em></p><p>Pequenos predadores furtivos, lagartos-elétricos são répteis capazes de gerar poderosas descargas de eletricidade, geralmente utilizadas para atordoar ou debilitar suas presas. Costumam habitar pântanos, cavernas alagadas e as margens de lagos e rios tranquilos. Entretanto, podem ser encontrados em outros locais úmidos e quentes, como os esgotos e saídas de água de castelos, cidades e masmorras.</p><p>Apesar de suas descargas elétricas, esses lagartos não são naturalmente agressivos. A menos que estejam famintos, evitam enfrentar criaturas maiores; sua dieta se baseia em seres menores que eles, os quais abatem com sua eletricidade. Apesar do comportamento cauteloso, entretanto, lagartos-elétricos sempre lutam para proteger suas crias e seu ninho.</p><p>Na maior parte de suas vidas, lagartos-elétricos vivem sozinhos, ou com um parceiro. Entretanto, em circunstâncias ainda não completamente compreendidas, essas criaturas podem se reunir em pequenos bandos que permanecem reunidos por dias ou semanas. Quando um desses bandos se reúne, descargas elétricas constantes se formam entre as criaturas, criando um risco adicional para suas presas e qualquer um que tente enfrentá-las.</p><p><strong>Parceiro:</strong> veja o poder “Parceiro: Lagarto-Elétrico” no compêndio de parceiros deste módulo. <strong>Familiar:</strong> um lagarto-elétrico familiar fornece +1 PM para gastar em aprimoramentos sempre que você lança uma magia de eletricidade.</p>",
+  "ataques": [
+    {
+      "arma": "Mordida",
+      "descricao": "mordida",
+      "img": "icons/creatures/abilities/mouth-teeth-long-red.webp",
+      "ataque": 7,
+      "dano": [
+        [
+          "1d6+3",
+          "perfuracao"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Evasão",
+      "img": "systems/tormenta20/icons/poderes/classes/especialistas/evasao.webp",
+      "descricao": "<p>Quando sofre um efeito que permite um teste de Reflexos para reduzir o dano à metade, o lagarto-elétrico não sofre dano algum se passar.</p>"
+    },
+    {
+      "poder": "Choque",
+      "img": "systems/tormenta20/icons/magias/toque-chocante.webp",
+      "descricao": "<p>O lagarto-elétrico dispara uma descarga elétrica em uma criatura em alcance curto. O alvo fica atordoado por 1 rodada (apenas uma vez por cena) e sofre 3d6+3 pontos de dano de eletricidade (Ref CD 16 reduz à metade e evita a condição).</p>",
+      "acao": "padrao",
+      "danos": [
+        [
+          "3d6+3",
+          "eletricidade"
+        ]
+      ],
+      "resistencia": "Reflexos CD 16 reduz à metade e evita"
+    },
+    {
+      "poder": "Relâmpago Conjunto",
+      "img": "systems/tormenta20/icons/magias/relampago.webp",
+      "descricao": "<p>Se dois ou mais lagartos-elétricos estiverem adjacentes, todos podem usar essa habilidade para descarregar eletricidade em uma linha de 30m. Criaturas na área ficam atordoadas por 1 rodada (apenas uma vez por cena) e sofrem 6d6+6 pontos de dano de eletricidade, mais 1d6+1 para cada lagarto-elétrico além do segundo (Ref CD 16 reduz à metade e evita a condição). <em>Recarga (movimento).</em></p>",
+      "acao": "completa",
+      "danos": [
+        [
+          "6d6+6",
+          "eletricidade"
+        ],
+        [
+          "1d6+1",
+          "eletricidade",
+          "Por lagarto além do segundo"
+        ]
+      ],
+      "resistencia": "Reflexos CD 16 reduz à metade e evita"
+    }
+  ]
+}

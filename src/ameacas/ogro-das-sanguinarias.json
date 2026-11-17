@@ -1,0 +1,160 @@
+{
+  "nome": "Ogro das Sanguinárias",
+  "img": "assets/tokens/ogro-das-sanguinarias.png",
+  "nd": "8",
+  "tipo": "hum",
+  "raca": "gigante",
+  "tamanho": "gra",
+  "papel": "solo",
+  "atributos": {
+    "for": 9,
+    "des": 0,
+    "con": 5,
+    "int": -3,
+    "sab": 0,
+    "car": -2
+  },
+  "pv": 360,
+  "defesa": 31,
+  "pericias": {
+    "inic": 8,
+    "perc": 4,
+    "fort": 21,
+    "refl": 15,
+    "vont": 3,
+    "atle": 17,
+    "intu": -1,
+    "sobr": 8
+  },
+  "deslocamento": {
+    "deslocamento": 9,
+    "escalada": 6
+  },
+  "sentidos": [
+    "penumbra"
+  ],
+  "resistencias": {
+    "fogo": 5,
+    "frio": 5
+  },
+  "imunidadeCondicoes": [
+    "ofuscado"
+  ],
+  "resistenciasTexto": "imunidade a ofuscado, redução de fogo e frio 5",
+  "corpoACorpo": "Machado de guerra x2 +26 (3d6+22, x3).",
+  "aDistancia": "Azagaia x2 +26 (1d8+22).",
+  "equipamento": "Azagaia aumentada x4, gibão de peles, machado de guerra aumentado.",
+  "tesouro": "Padrão.",
+  "notas": "<p><em>O ogro que se revela diante de vocês traja peles apropriadas para o clima gélido daqui e empunha um pesado machado de duas mãos. Sua expressão é ainda mais embrutecida e feroz que a de outros ogros. Um legítimo filho das Sanguinárias, este guerreiro foi moldado por um dos lugares mais inóspitos de Arton.</em></p><p>Os ogros das Sanguinárias são ogros normais, e não uma espécie separada, que desenvolveram as técnicas e a resistência necessárias para viver nesta cadeia de montanhas geladas. As exigências deste habitat forçaram esses indivíduos a se tornar mais astutos, mais tolerantes ao frio das neves e ao fulgor do sol e, assustadoramente, ainda mais selvagens e furiosos que seus primos de outras regiões.</p><p>Embora possam ser encontrados sozinhos, ogros das Sanguinárias costumam viver em pequenos bandos, formados por indivíduos que compartilham laços de sangue e, eventualmente, um ou outro ogro desgarrado que foi aceito pelo bando. Costumam se importar mais com equipamento que outros ogros: frequentemente trajam algum tipo de armadura, além de peles e outras roupas apropriadas ao frio. Muitos ostentam adereços que remetem à sua ferocidade, como crânios e pedaços de armas de inimigos derrotados, além de outros pequenos troféus de suas vitórias e saques. Ogros das Sanguinárias enxergam todas as criaturas menores como potenciais presas, mas não é completamente impossível que sejam convencidos a conversar e, eventualmente, até a negociar.</p><p><strong>…Para Morrer!:</strong> a redução à metade do dano de corte, impacto e perfuração não é automatizada.</p>",
+  "ataques": [
+    {
+      "arma": "Machado de guerra",
+      "descricao": "machado de guerra x2",
+      "img": "systems/tormenta20/icons/itens/equipamentos/machado-de-guerra.webp",
+      "qtd": 2,
+      "ataque": 26,
+      "critico": "x3",
+      "dano": [
+        [
+          "3d6+22",
+          "corte"
+        ]
+      ]
+    },
+    {
+      "arma": "Azagaia",
+      "descricao": "azagaia x2",
+      "img": "systems/tormenta20/icons/itens/equipamentos/azagaia.webp",
+      "qtd": 2,
+      "ataque": 26,
+      "alcance": "medium",
+      "dano": [
+        [
+          "1d8+22",
+          "perfuracao"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Fúria Sanguinária",
+      "img": "systems/tormenta20/icons/poderes/classes/combatentes/furia.webp",
+      "descricao": "<p>Uma vez por cena, o ogro das Sanguinárias entra em um frenesi transformador. Ele recebe +3 em testes de ataque e rolagens de dano corpo a corpo e com armas de arremesso e seu tamanho conta como uma categoria maior para efeitos de manobras de combate e para resistir a habilidades relacionadas a tamanho (como o aprimoramento da magia Tempestade Divina).</p>",
+      "acao": "livre",
+      "efeitos": [
+        {
+          "name": "Fúria Sanguinária",
+          "description": "<p>+3 em testes de ataque e rolagens de dano corpo a corpo e com armas de arremesso; tamanho conta como uma categoria maior para manobras e efeitos de tamanho (não automatizado).</p>",
+          "system": {
+            "changes": [
+              {
+                "key": "system.modificadores.ataque.cac",
+                "value": 3,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              },
+              {
+                "key": "system.modificadores.dano.cac",
+                "value": 3,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              },
+              {
+                "key": "system.modificadores.ataque.ad",
+                "value": 3,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              },
+              {
+                "key": "system.modificadores.dano.ad",
+                "value": 3,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "poder": "Investida Inclemente",
+      "img": "systems/tormenta20/icons/poderes/ameacas/investida.webp",
+      "descricao": "<p>Quando faz uma investida, o ogro sofre uma penalidade de –5 na Defesa (em vez de –2), mas seu ataque causa três dados extras de dano.</p>",
+      "danos": [
+        [
+          "3d6",
+          "corte",
+          "Dados extras (machado)"
+        ]
+      ]
+    },
+    {
+      "poder": "Obtuso Demais…",
+      "img": "systems/tormenta20/icons/poderes/ameacas/vulnerabilidade.webp",
+      "descricao": "<p>O ogro sofre –5 em testes de Intuição e Vontade (já contabilizados).</p>"
+    },
+    {
+      "poder": "…Para Morrer!",
+      "img": "systems/tormenta20/icons/poderes/ameacas/odio-puro.webp",
+      "descricao": "<p>Todo o dano de corte, impacto e perfuração que o ogro sofre é reduzido à metade. Além disso, sempre que reduz os PV de um inimigo a 0 ou menos, o ogro recupera 20 PV.</p>",
+      "danos": [
+        [
+          "20",
+          "curapv",
+          "Recupera PV"
+        ]
+      ]
+    },
+    {
+      "poder": "Varrer",
+      "img": "systems/tormenta20/icons/poderes/ameacas/varrer.webp",
+      "descricao": "<p>Uma vez por rodada, quando o ogro faz um ataque corpo a corpo e reduz os pontos de vida do alvo para 0 ou menos, pode realizar um ataque adicional contra outra criatura dentro de seu alcance.</p>",
+      "acao": "livre"
+    }
+  ]
+}

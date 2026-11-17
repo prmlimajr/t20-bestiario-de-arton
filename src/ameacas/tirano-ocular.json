@@ -1,0 +1,148 @@
+{
+  "nome": "Tirano Ocular",
+  "img": "assets/tokens/tirano-ocular.png",
+  "nd": "13",
+  "tipo": "mon",
+  "tamanho": "gra",
+  "papel": "solo",
+  "atributos": {
+    "for": 0,
+    "des": 2,
+    "con": 4,
+    "int": 3,
+    "sab": 2,
+    "car": 3
+  },
+  "pv": 440,
+  "defesa": 42,
+  "pericias": {
+    "inic": 8,
+    "perc": 17,
+    "fort": 20,
+    "refl": 13,
+    "vont": 26,
+    "mist": 18,
+    "sobr": 14
+  },
+  "deslocamento": {
+    "deslocamento": 0,
+    "voo": 9
+  },
+  "sentidos": [
+    "escuro"
+  ],
+  "resistenciasTexto": "resistência a magia +3",
+  "corpoACorpo": "Mordida +35 (4d6+30 mais 2d12 ácido).",
+  "tesouro": "Padrão.",
+  "notas": "<p><em>A criatura grotesca surge de trás de uma estátua, flutuando silenciosamente. Ela é uma grande esfera de couro, de aproximadamente dois metros de diâmetro, com três olhos dispostos como um triângulo no centro de seu corpo. O restante de sua pele é marcada por dezenas de olhos menores, enquanto de seu ventre pendem diversos tentáculos. Oculta por estes tentáculos, há uma bocarra grotesca repleta de dentes longos, finos e pontiagudos.</em></p><p>Tão bizarra quanto a aparência dos tiranos oculares é sua relação com a magia. Seus olhos são capazes de gerar vários efeitos místicos, enquanto a própria criatura parece se alimentar das energias mágicas ao seu redor. Entretanto, a magia não é seu único alimento, e essas monstruosidades são conhecidas por devorar qualquer tipo de presa, sobretudo seres de natureza mágica.</p><p>A origem dessas criaturas bizarras é desconhecida, embora existam canções e histórias antigas que relacionam sua origem a uma aposta entre Nimb e Wynna pela forma de vida mais extraordinária possível. Há diversas versões dessas narrativas, mas em todas a contribuição mútua do Deus do Caos e da Deusa da Magia resultou em uma aberração que personifica do caos mágico.</p><p>Tiranos oculares são mais comuns na Mata dos Cem Olhos, em Collen. Entretanto, há avistamentos de tiranos em outros lugares de Arton, ainda que sejam raros.</p><p>Tiranos são seres inteligentes, mas de grande crueldade e sadismo. Assim, não é de estranhar que alguns indivíduos tenham encontrado formas de sair de Collen e explorar outras partes do mundo. A crueldade e o egoísmo instintivos dos tiranos geralmente os impedem de trabalhar com outros seres, mas sabe-se de alguns que conseguiram superar seus instintos e se tornar líderes de algumas regiões, subjugando ou convencendo outras criaturas a servirem como seus lacaios. Tais tiranos em geral são particularmente inteligentes, o que os torna ainda mais perigosos.</p>",
+  "ataques": [
+    {
+      "arma": "Mordida",
+      "descricao": "mordida",
+      "img": "icons/creatures/abilities/mouth-teeth-long-red.webp",
+      "ataque": 35,
+      "dano": [
+        [
+          "4d6+30",
+          "perfuracao"
+        ],
+        [
+          "2d12",
+          "acido"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Resistência a Magia",
+      "img": "systems/tormenta20/icons/poderes/ameacas/resistencia-magia.webp",
+      "descricao": "<p>O tirano ocular recebe +3 em testes de resistência contra magias.</p>"
+    },
+    {
+      "poder": "Aura Devoradora",
+      "img": "systems/tormenta20/icons/poderes/ameacas/imunidade-magia.webp",
+      "descricao": "<p>O tirano ocular projeta uma aura constante de fome mágica de 18m. Dentro dessa aura, as habilidades mágicas das outras criaturas custam +1 PM.</p>"
+    },
+    {
+      "poder": "Mil Olhos",
+      "img": "systems/tormenta20/icons/poderes/ameacas/visao-ampla.webp",
+      "descricao": "<p>O tirano dispara 1d4 olhos menores, que emitem os efeitos a seguir (role 1d6 para cada olho; o mesmo efeito pode ser usado mais de uma vez na mesma ação). <em>Recarga (movimento).</em></p><p><strong>1. Olhar Enervante.</strong> Uma criatura em alcance médio fica apavorada por 1 rodada e depois abalada até o fim da cena (Von CD 37 reduz para abalado por 1d4 rodadas).</p><p><strong>2. Olhar Cativante.</strong> Uma criatura em alcance médio sofre o efeito básico da magia @UUID[Compendium.tormenta20.magias.Item.lJYJQFhk5oai46Ty]{Enfeitiçar} (Von CD 37 evita).</p><p><strong>3. Olhar Corrosivo.</strong> O tirano projeta energia corrosiva em um cone de 9m. Criaturas nessa área sofrem 6d12 pontos de dano de ácido e são cobertas por muco (Ref CD 37 reduz à metade e evita o muco). Uma criatura coberta por muco sofre 2d12 pontos de dano de ácido no início de cada um dos dois próximos turnos do tirano.</p><p><strong>4. Olhar Debilitante.</strong> Uma criatura em alcance médio fica exausta por 1 rodada e caída (Fort CD 37 reduz para fatigada por 1d4 rodadas).</p><p><strong>5. Olhar Energético.</strong> Criaturas à escolha do tirano em alcance médio sofrem 4d12+4 pontos de dano de essência e ficam ofuscadas por 1d4 rodadas (Ref CD 37 reduz à metade e evita a condição).</p><p><strong>6. Olhar Retardador.</strong> Uma criatura em alcance médio fica paralisada por 1 rodada e depois lenta (Fort CD 37 reduz para lento por 1d4 rodadas).</p>",
+      "acao": "movimento",
+      "danos": [
+        [
+          "1d4",
+          "",
+          "Olhos disparados"
+        ],
+        [
+          "1d6",
+          "",
+          "Efeito (por olho)"
+        ],
+        [
+          "6d12",
+          "acido",
+          "Olhar Corrosivo"
+        ],
+        [
+          "2d12",
+          "acido",
+          "Muco (por turno)"
+        ],
+        [
+          "4d12+4",
+          "essencia",
+          "Olhar Energético"
+        ],
+        [
+          "1d4",
+          "",
+          "Rodadas"
+        ]
+      ],
+      "resistencia": "CD 37"
+    },
+    {
+      "poder": "Mordida Descendente",
+      "img": "systems/tormenta20/icons/poderes/ameacas/mordida.webp",
+      "descricao": "<p>O tirano faz um ataque de mordida contra uma criatura caída.</p>",
+      "acao": "movimento"
+    },
+    {
+      "poder": "Tentáculos Cruéis",
+      "img": "systems/tormenta20/icons/poderes/ameacas/agarrar.webp",
+      "descricao": "<p>O tirano ocular pode agarrar uma criatura em alcance curto e arrastá-la para sua boca (teste +40). Se fizer isso, o alvo fica agarrado e caído adjacente ao tirano.</p>",
+      "acao": "padrao"
+    },
+    {
+      "poder": "Triolhos Místicos",
+      "img": "systems/tormenta20/icons/poderes/ameacas/olhar-petrificante.webp",
+      "descricao": "<p>O tirano dispara um de seus olhos principais. Ele não pode disparar o mesmo olho duas vezes em sequência.</p><p>• <em>Monóculo Abascanto.</em> O tirano projeta o efeito básico de @UUID[Compendium.tormenta20.magias.Item.rfTGYwrXLjcIAIP5]{Dissipar Magia} em uma esfera de 3m de raio em alcance médio.</p><p>• <em>Monóculo Desintegrador.</em> O tirano dispara um raio fino e esverdeado que causa 10d12 pontos de dano de essência em uma criatura ou objeto em alcance médio (Fort CD 37 reduz para 2d12 pontos de dano). Independentemente do resultado do teste de Fortitude, se os PV do alvo forem reduzidos a 0 ou menos, ele será completamente desintegrado.</p><p>• <em>Monóculo Petrificante.</em> O tirano projeta ondas petrificantes em um cone de 9m. Criaturas nessa área ficam lentas (Fort CD 37 evita). Se já estiver lenta, a criatura fica petrificada permanentemente. Efeitos que removem paralisia revertem a petrificação. Metamorfose.</p>",
+      "acao": "padrao",
+      "danos": [
+        [
+          "10d12",
+          "essencia",
+          "Desintegrador"
+        ],
+        [
+          "2d12",
+          "essencia",
+          "Desintegrador (passou)"
+        ]
+      ],
+      "resistencia": "Fortitude CD 37"
+    },
+    {
+      "poder": "Ver Através",
+      "img": "systems/tormenta20/icons/magias/visao-da-verdade.webp",
+      "descricao": "<p>O tirano ocular está permanentemente sob o efeito da magia @UUID[Compendium.tormenta20.magias.Item.h98JyQAldmgexmzR]{Visão da Verdade}, com todos os aprimoramentos.</p>"
+    },
+    {
+      "poder": "Visão Total",
+      "img": "systems/tormenta20/icons/poderes/ameacas/visao-ampla.webp",
+      "descricao": "<p>O tirano consegue enxergar em todas as direções e não pode ser flanqueado.</p>"
+    }
+  ]
+}

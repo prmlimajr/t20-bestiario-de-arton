@@ -1,0 +1,101 @@
+{
+  "nome": "Saqueador Líder de Bando",
+  "img": "assets/tokens/saqueador-lider-de-bando.png",
+  "nd": "3",
+  "papel": "solo",
+  "tipo": "hum",
+  "raca": "humano",
+  "tamanho": "med",
+  "deslocamento": {
+    "deslocamento": 9
+  },
+  "notas": "<p><em>Os guerreiros descem a montanha com roupas leves, tatuagens e adereços típicos dos povos das Sanguinárias. Têm o andar decidido de quem está acostumado a caminhar rumo ao perigo e o olhar de caçadores acostumados a abater todo tipo de presa.</em></p><p>Conhecidas por sua população de monstros selvagens, as Sanguinárias estão entre um dos mais desafiadores territórios de Arton. Seus habitantes, habituados a resistir aos rigores da geografia e aos perigos de predadores, aprenderam a valorizar a força e violência, e muitas vezes, fazer delas seu meio de vida.</p><p>Estes saqueadores são grupos de combatentes que vivem espalhados nesta região. Vivem da caça aos monstros, da extração de recursos naturais e, sobretudo, de saques, tanto entre si quanto de outros povos fronteiriços às montanhas. Alguns formam bandos nômades, outros se estabelecem em aldeias e cidades. Destas, a mais famosa é Katiaskh, o maior povoado humano conhecido nas Sanguinárias.</p><p>Embora façam das montanhas seu lar e território de caça, é possível encontrar estes saqueadores em outras partes de Arton. Alguns grupos, em raras ocasiões, viajam além de seu lar para realizar uma missão ou até tentar a sorte atuando como mercenários.</p>",
+  "atributos": {
+    "for": 4,
+    "des": 1,
+    "con": 3,
+    "int": -1,
+    "sab": 2,
+    "car": 1
+  },
+  "pv": 105,
+  "defesa": 21,
+  "pericias": {
+    "inic": 4,
+    "perc": 5,
+    "fort": 13,
+    "refl": 5,
+    "vont": 9,
+    "atle": 7,
+    "guer": 2,
+    "inti": 8,
+    "sobr": 7
+  },
+  "resistenciasTexto": "evasão",
+  "corpoACorpo": "Machado de batalha +14 (2d10+10, x3).",
+  "equipamento": "Armadura de couro macabra, machado de batalha.",
+  "tesouro": "Padrão.",
+  "ataques": [
+    {
+      "arma": "Machado de batalha",
+      "descricao": "machado de batalha",
+      "img": "systems/tormenta20/icons/itens/equipamentos/machado-de-batalha.webp",
+      "ataque": 14,
+      "critico": "x3",
+      "dano": [
+        [
+          "2d10+10",
+          "corte"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Evasão",
+      "img": "systems/tormenta20/icons/poderes/classes/especialistas/evasao.webp",
+      "descricao": "<p>Quando sofre um efeito que permite um teste de Reflexos para reduzir o dano à metade, o saqueador não sofre dano algum se passar.</p>"
+    },
+    {
+      "poder": "Incitar o Bando",
+      "img": "systems/tormenta20/icons/poderes/ameacas/comandar.webp",
+      "descricao": "<p>O saqueador líder de bando grita ordens para seus aliados em alcance médio. Eles recebem +2 em testes de perícia até o fim da cena e 10 pontos de vida temporários (apenas uma vez por cena).</p>",
+      "acao": "movimento"
+    },
+    {
+      "poder": "Nativo das Sanguinárias",
+      "img": "systems/tormenta20/icons/poderes/ameacas/odio-puro.webp",
+      "descricao": "<p>O saqueador recebe +3 em testes e rolagens de dano contra monstros.</p>",
+      "efeitos": [
+        {
+          "name": "Nativo das Sanguinárias",
+          "description": "<p>Contra monstros: +3 em testes de ataque e rolagens de dano corpo a corpo.</p><p><strong>Não automatizado:</strong> +3 em outros testes contra monstros.</p>",
+          "system": {
+            "changes": [
+              {
+                "key": "system.modificadores.ataque.cac",
+                "value": 3,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              },
+              {
+                "key": "system.modificadores.dano.cac",
+                "value": 3,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "poder": "Perseverança Brutal",
+      "img": "systems/tormenta20/icons/poderes/ameacas/odio-puro.webp",
+      "descricao": "<p>Uma vez por cena, quando sofre dano, o saqueador evita esse dano.</p>",
+      "acao": "reacao"
+    }
+  ]
+}

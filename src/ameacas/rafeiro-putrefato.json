@@ -1,0 +1,63 @@
+{
+  "nome": "Rafeiro Putrefato",
+  "img": "assets/tokens/rafeiro-putrefato.png",
+  "nd": "1/2",
+  "tipo": "mor",
+  "tamanho": "med",
+  "papel": "lackey",
+  "atributos": {
+    "for": 2,
+    "des": 2,
+    "con": 3,
+    "int": -4,
+    "sab": 1,
+    "car": -2
+  },
+  "pv": 7,
+  "defesa": 13,
+  "pericias": {
+    "inic": 4,
+    "perc": 5,
+    "fort": 5,
+    "refl": 3,
+    "vont": 0,
+    "sobr": 5
+  },
+  "deslocamento": {
+    "deslocamento": 12
+  },
+  "sentidos": [
+    "escuro"
+  ],
+  "corpoACorpo": "Mordida +9 (2d6+4 mais doença).",
+  "tesouro": "Nenhum.",
+  "notas": "<p><em>Ao adentrar o beco, vocês se deparam com um grupo de cachorros de rua. Esses animais, entretanto, têm olhos vermelhos e brilhantes, pelos sebosos e várias feridas abertas pelo corpo, algumas das quais deveriam ser fatais. Uma aura de podridão cerca essas criaturas, deixando claro que não são animais normais.</em></p><p>Um rafeiro, ou cão de rua, putrefato é um cachorro, geralmente mestiço, que morreu e foi reanimado por algum fenômeno profano acidental, como um ritual ou experimento envolvendo energias negativas. Esses cães mortos-vivos também podem surgir quando vira-latas escavam covas clandestinas ou se alimentam de partes de outros mortos-vivos.</p><p>Rafeiros putrefatos são mais comuns em lugares onde existam cães de rua. Em vilas e aldeias, podem ser encontrados próximo a cemitérios, sobretudo aqueles afastados do centro da comunidade. Já em grandes cidades, como Valkaria, podem espreitar em becos, galerias de esgoto e até mesmo em grandes parques. Apesar de serem mortos-vivos, estes cães mantêm seus instintos predadores, levando perigo mortal aos moradores e demais animais das áreas onde se instalam.</p>",
+  "ataques": [
+    {
+      "arma": "Mordida",
+      "descricao": "mordida (mais doença)",
+      "img": "icons/creatures/abilities/mouth-teeth-long-red.webp",
+      "ataque": 9,
+      "dano": [
+        [
+          "2d6+4",
+          "perfuracao"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Derrubar",
+      "img": "systems/tormenta20/icons/poderes/ameacas/derrubar.webp",
+      "descricao": "<p>Se o rafeiro putrefato acerta um ataque de mordida, pode fazer a manobra derrubar (teste +9).</p>",
+      "acao": "livre"
+    },
+    {
+      "poder": "Doença",
+      "img": "systems/tormenta20/icons/poderes/ameacas/doenca.webp",
+      "descricao": "<p>Uma criatura mordida pelo rafeiro contrai a doença infecção do esgoto (Fort CD 13 evita).</p>",
+      "resistencia": "Fortitude CD 13 evita"
+    }
+  ]
+}

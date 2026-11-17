@@ -1,0 +1,90 @@
+{
+  "nome": "Quimera Zumbi",
+  "img": "assets/tokens/quimera-zumbi.png",
+  "nd": "5",
+  "tipo": "mor",
+  "tamanho": "gra",
+  "papel": "lackey",
+  "atributos": {
+    "for": 4,
+    "des": 0,
+    "con": 2,
+    "int": 0,
+    "sab": -1,
+    "car": 0
+  },
+  "pv": 48,
+  "defesa": 23,
+  "pericias": {
+    "inic": 4,
+    "perc": 3,
+    "fort": 16,
+    "refl": 6,
+    "vont": 11
+  },
+  "deslocamento": {
+    "deslocamento": 6,
+    "voo": 9
+  },
+  "sentidos": [
+    "escuro"
+  ],
+  "corpoACorpo": "Três mordidas +20 (3d6+10).",
+  "tesouro": "Coração ressecado de quimera (CD 20 para extrair, vale T$ 100 para fabricar uma dose de elixir quimérico).",
+  "notas": "<p><em>Mesmo sob a escuridão, é possível perceber que a monstruosidade se move de forma trôpega. Um gemido ressoa de seus pulmões, entrecortado por murmúrios quase humanos. Seus olhos opacos são os primeiros a encontrar a luz, transparecendo a completa ausência de vida em sua existência profana.</em></p><p>Zumbis estão entre os mortos-vivos mais comuns. Cadáveres reanimados por necromancia que podem surgir tanto como resultado de acidentes quanto por maldições, essas criaturas estão também entre os primeiros tipos de mortos-vivos criados por necromantes iniciantes.</p><p>Embora humanoides sejam as criaturas mais comumente transformadas em zumbis, esses mortos-vivos podem ser criados a partir de vários tipos de criaturas, incluindo monstros. Esta seção descreve alguns destes monstros zumbis, que podem surgir da prática de necromantes mais experientes ou a partir de cadáveres de monstros derrotados e deixados para trás, tais como aqueles enfrentados por muitos grupos de aventureiros.</p><p><strong>Inteligência:</strong> — (registrada como 0 na ficha).</p>",
+  "ataques": [
+    {
+      "arma": "Mordida",
+      "descricao": "três mordidas",
+      "img": "icons/creatures/abilities/mouth-teeth-long-red.webp",
+      "qtd": 3,
+      "ataque": 20,
+      "dano": [
+        [
+          "3d6+10",
+          "perfuracao"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Três Cabeças Zumbificadas",
+      "img": "systems/tormenta20/icons/poderes/ameacas/terceiro-braco.webp",
+      "descricao": "<p>Uma quimera zumbi tem três cabeças distintas, que concedem habilidades especiais, escolhidas entre as descritas a seguir.</p><p>• <em>Águia.</em> Uma criatura atingida por uma mordida dessa cabeça fica cega (Ref CD 20 evita).</p><p>• <em>Bode.</em> Uma das mordidas da quimera muda para marrada e causa dano de impacto. Quando faz uma investida com esta cabeça e acerta o ataque, a quimera arremessa a vítima 1d6 x 1,5m em uma direção à escolha dela (Fort CD 20 evita). A vítima fica caída e, se atingir algum obstáculo, sofre 1d6 pontos de dano de impacto para cada 1,5m que foi arremessada.</p><p>• <em>Dragão.</em> A quimera pode gastar uma ação padrão para cuspir trevas em um cone de 6m. Criaturas na área sofrem 10d6+10 pontos de dano de trevas (Ref CD 20 reduz à metade). <em>Recarga (movimento).</em></p><p>• <em>Gorlogg.</em> Se acertar um ataque de mordida com esta cabeça, a quimera pode usar a manobra derrubar como ação livre (teste +22).</p><p>• <em>Hidra.</em> Uma das cabeças da quimera é dividida em duas cabeças de hidra. Ela ganha um quarto ataque de mordida, mas o bônus na margem de ameaça fornecido por sua habilidade Três Cérebros diminui em –1.</p><p>• <em>Leão.</em> Quando acerta um ataque de mordida com esta cabeça, a quimera pode usar a manobra agarrar como ação livre (teste +22).</p><p>• <em>Javali.</em> A quimera recebe fortificação 25%.</p><p>• <em>Serpente.</em> Uma criatura atingida por uma mordida desta cabeça é exposta à doença maldição pegajosa (<em>Tormenta20</em>, p. 318).</p><p>• <em>Tigre.</em> O dano dessa mordida aumenta em +1d6.</p><p>• <em>Tubarão.</em> A quimera ganha deslocamento de natação 9m. Além disso, uma criatura atingida por uma mordida desta cabeça fica sangrando (Fort CD 20 evita).</p>",
+      "danos": [
+        [
+          "10d6+10",
+          "trevas",
+          "Cuspe de trevas (Dragão)"
+        ],
+        [
+          "1d6",
+          "",
+          "Arremesso x1,5m (Bode)"
+        ],
+        [
+          "1d6",
+          "",
+          "Mordida extra (Tigre)"
+        ]
+      ],
+      "resistencia": "CD 20"
+    },
+    {
+      "poder": "Fraqueza Zumbi",
+      "img": "systems/tormenta20/icons/poderes/ameacas/fraqueza-zumbi.webp",
+      "descricao": "<p>A quimera sofre o dobro de dano de acertos críticos ou de ataques feitos contra qualquer um de seus três cérebros (Defesa 33).</p>"
+    },
+    {
+      "poder": "Três Cérebros",
+      "img": "systems/tormenta20/icons/poderes/ameacas/vulnerabilidade.webp",
+      "descricao": "<p>Ataques corpo a corpo contra a quimera recebem um bônus de +2 na margem de ameaça.</p>"
+    }
+  ],
+  "itens": [
+    {
+      "ref": "coracao-ressecado-de-quimera"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "nome": "Varghar",
+  "img": "assets/tokens/varghar.png",
+  "nd": "2",
+  "tipo": "mor",
+  "tamanho": "med",
+  "papel": "solo",
+  "atributos": {
+    "for": -2,
+    "des": 5,
+    "con": 1,
+    "int": -2,
+    "sab": -1,
+    "car": -2
+  },
+  "pv": 70,
+  "defesa": 19,
+  "pericias": {
+    "inic": 8,
+    "perc": 2,
+    "fort": 5,
+    "refl": 12,
+    "vont": 5
+  },
+  "deslocamento": {
+    "deslocamento": 0,
+    "voo": 18
+  },
+  "sentidos": [
+    "escuro"
+  ],
+  "resistenciasTexto": "evasão, não pode ser flanqueado",
+  "corpoACorpo": "Mordida +12 (2d6+11 mais veneno).",
+  "tesouro": "Nenhum.",
+  "notas": "<p><em>As criaturas que alçam voo diante de vocês são formadas por uma cabeça semidecomposta, sem corpo nem membros. Seu rosto possui uma aparência feral, com uma bocarra repleta de dentes afiados que se abre de forma não natural. Tentáculos de quase meio metro de comprimento se projetam de todos os espaços ao redor de seu rosto e um par de asas membranosas se abre logo atrás de suas orelhas pontiagudas. Seus olhos possuem um intenso brilho alaranjado, que intensifica ainda mais sua aparência bizarra e apavorante.</em></p><p>A origem dos varghars é tão tétrica quanto sua existência. Estes seres repugnantes surgem quando criminosos sofrem uma morte violenta e não recebem os devidos sacramentos antes de ser enterrados. Alimentadas pela fúria e maldade que tinham em vida, as cabeças desses condenados sofrem uma mutação sombria e se erguem como mortos-vivos capazes de voar. A partir daí, passam a espreitar em ruínas, cemitérios e outros lugares normalmente associados com a morte e a podridão.</p><p>Muitos varghars são oriundos de capangas e lacaios — vilões que são mortos às dezenas e muitas vezes deixados ao léu, sem receber os ritos fúnebres adequados. Esses varghars possuem uma compulsão por servir e acabam tornando-se asseclas de outros vilões poderosos. Tais asseclas podem ser encontrados voando ao redor da fortaleza de seu senhor ou atuando como batedores, mensageiros e até espiões.</p>",
+  "ataques": [
+    {
+      "arma": "Mordida",
+      "descricao": "mordida (mais veneno)",
+      "img": "icons/creatures/abilities/mouth-teeth-long-red.webp",
+      "ataque": 12,
+      "dano": [
+        [
+          "2d6+11",
+          "perfuracao"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Evasão",
+      "img": "systems/tormenta20/icons/poderes/classes/especialistas/evasao.webp",
+      "descricao": "<p>Quando sofre um efeito que permite um teste de Reflexos para reduzir o dano à metade, o varghar não sofre dano algum se passar.</p>"
+    },
+    {
+      "poder": "Não Pode Ser Flanqueado",
+      "img": "systems/tormenta20/icons/poderes/ameacas/visao-ampla.webp",
+      "descricao": "<p>O varghar não pode ser flanqueado.</p>"
+    },
+    {
+      "poder": "Veneno Anticicatrizante",
+      "img": "systems/tormenta20/icons/poderes/ameacas/veneno.webp",
+      "descricao": "<p>A vítima não pode recuperar pontos de vida de nenhuma forma (incluindo efeitos mágicos e descanso) por 1d4+1 dias (Fort CD 16 reduz para 1 dia). Efeitos que curam venenos anulam esse efeito. <em>Veneno.</em></p>",
+      "danos": [
+        [
+          "1d4+1",
+          "",
+          "Dias"
+        ]
+      ],
+      "resistencia": "Fortitude CD 16 reduz"
+    }
+  ]
+}

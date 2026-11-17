@@ -1,0 +1,133 @@
+{
+  "nome": "Rodrocentar",
+  "img": "assets/tokens/rodrocentar.png",
+  "nd": "17",
+  "tipo": "ani",
+  "tamanho": "eno",
+  "papel": "solo",
+  "atributos": {
+    "for": 6,
+    "des": 1,
+    "con": 5,
+    "int": -4,
+    "sab": 2,
+    "car": -2
+  },
+  "pv": 1000,
+  "defesa": 52,
+  "pericias": {
+    "inic": 15,
+    "perc": 16,
+    "fort": 30,
+    "refl": 17,
+    "vont": 24,
+    "atle": 20
+  },
+  "deslocamento": {
+    "deslocamento": 6,
+    "natacao": 18
+  },
+  "sentidos": [
+    "cegas",
+    "penumbra"
+  ],
+  "sentidosExtra": "percepção às cegas (longo, apenas dentro d’água)",
+  "resistencias": {
+    "acido": 10,
+    "frio": 10,
+    "dano": 10
+  },
+  "resistenciasTexto": "redução de dano 10, redução de ácido e frio 10",
+  "corpoACorpo": "Mordida +47 (6d20+90 mais 8d8 impacto).",
+  "tesouro": "Âmbar dourado (CD 32 para extrair, vale 1 PM para fabricar um item mágico que forneça bônus em Constituição ou cure pontos de vida).",
+  "notas": "<p><em>Galrasia, o paraíso selvagem impregnado pela vida, é o berço de diversas criaturas exuberantes e poderosas. E, ainda que sua fauna nativa geralmente esteja restrita ao território da ilha, a influência de sua força vital é capaz de atingir até as águas ao seu redor, gerando verdadeiros titãs marinhos.</em></p><p>Um rodrocentar é um grande mamífero aquático nativo das águas ao redor de Galrasia. Parente das baleias, possui pequenas pernas com nadadeiras entre os dedos, capazes de carregá-lo por terra por curtos períodos de tempo. Sua cauda alongada e achatada forma uma nadadeira única, mas poderosa, responsável por sua velocidade dentro da água. Seu focinho, semelhante ao de golfinhos, é alongado e resistente, e abriga uma boca repleta de dentes serrilhados. Vive em pequenas manadas que passam a maior parte de sua vida na água, mas que eventualmente andam por terra para se banhar ao sol.</p><p>Rodrocentares são carnívoros e alimentam-se de peixes e outros mamíferos aquáticos. Entretanto, quando há poucas presas, podem se reunir para afundar embarcações e outras estruturas flutuantes. Inteligentes como orcas, esses seres há muito compreenderam que tripulações são iguarias únicas.</p>",
+  "ataques": [
+    {
+      "arma": "Mordida",
+      "descricao": "mordida",
+      "img": "icons/creatures/abilities/mouth-teeth-long-red.webp",
+      "ataque": 47,
+      "dano": [
+        [
+          "6d20+90",
+          "perfuracao"
+        ],
+        [
+          "8d8",
+          "impacto"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Agarrar Aprimorado",
+      "img": "systems/tormenta20/icons/poderes/ameacas/agarrar.webp",
+      "descricao": "<p>Se o rodrocentar acerta um ataque de mordida, pode fazer a manobra agarrar como uma ação livre (teste +52).</p>",
+      "acao": "livre"
+    },
+    {
+      "poder": "Emergir",
+      "img": "systems/tormenta20/icons/poderes/ameacas/investida.webp",
+      "descricao": "<p>O rodrocentar emerge à superfície da água, atingindo todas as criaturas em um quadrado de 6m imediatamente acima dele. Criaturas nessa área sofrem 6d12 pontos de dano de impacto e são arremessadas 1d4 x 1,5m em direção oposta ao peixe (Fort CD 44 reduz à metade e evita o arremesso). Cada vítima fica caída e, se atingir algum obstáculo, sofre 1d6 pontos de dano de impacto para cada 1,5m que foi arremessada.</p>",
+      "acao": "completa",
+      "danos": [
+        [
+          "6d12",
+          "impacto"
+        ],
+        [
+          "1d4",
+          "",
+          "Arremesso (x 1,5m)"
+        ]
+      ],
+      "resistencia": "Fortitude CD 44 reduz à metade e evita"
+    },
+    {
+      "poder": "Engolir",
+      "img": "systems/tormenta20/icons/poderes/ameacas/engolir.webp",
+      "descricao": "<p>No início de cada um dos turnos do rodrocentar, a criatura engolida sofre 6d6+25 pontos de dano de impacto mais 6d6+25 pontos de dano de ácido. Ela pode escapar causando um total de 200 pontos de dano a ele (Defesa 25, redução de dano 0).</p>",
+      "acao": "padrao",
+      "danos": [
+        [
+          "6d6+25",
+          "impacto"
+        ],
+        [
+          "6d6+25",
+          "acido"
+        ]
+      ]
+    },
+    {
+      "poder": "Soçobrar",
+      "img": "systems/tormenta20/icons/poderes/ameacas/quebrar-tudo.webp",
+      "descricao": "<p>O rodrocentar atira seu corpanzil contra uma embarcação (ou outro objeto semelhante), fazendo com que ele balance violentamente. Todas as criaturas na embarcação sofrem 6d10+20 pontos de dano de impacto e ficam atordoadas por 1 rodada e caídas (Ref CD 44 reduz o dano à metade e evita as condições). Uma criatura só pode ser atordoada dessa forma uma vez por cena.</p>",
+      "acao": "padrao",
+      "danos": [
+        [
+          "6d10+20",
+          "impacto"
+        ]
+      ],
+      "resistencia": "Reflexos CD 44 reduz à metade e evita"
+    },
+    {
+      "poder": "Táticas de Caça",
+      "img": "systems/tormenta20/icons/poderes/ameacas/taticas-alcateia.webp",
+      "descricao": "<p>Quando flanqueia um inimigo, o rodrocentar causa +2d8 pontos de dano de impacto com sua mordida.</p>",
+      "danos": [
+        [
+          "2d8",
+          "impacto"
+        ]
+      ]
+    }
+  ],
+  "itens": [
+    {
+      "ref": "ambar-dourado"
+    }
+  ]
+}

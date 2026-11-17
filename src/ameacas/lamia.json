@@ -1,0 +1,98 @@
+{
+  "nome": "Lâmia",
+  "img": "assets/tokens/lamia.png",
+  "nd": "6",
+  "tipo": "mon",
+  "raca": "lâmia",
+  "tamanho": "gra",
+  "papel": "special",
+  "atributos": {
+    "for": 4,
+    "des": 2,
+    "con": 1,
+    "int": 1,
+    "sab": 2,
+    "car": 4
+  },
+  "pv": 160,
+  "pm": 40,
+  "defesa": 25,
+  "pericias": {
+    "inic": 7,
+    "perc": 7,
+    "fort": 6,
+    "refl": 12,
+    "vont": 18,
+    "dipl": 13,
+    "enga": 16,
+    "furt": 7,
+    "intu": 9,
+    "mist": 6
+  },
+  "deslocamento": {
+    "deslocamento": 12
+  },
+  "sentidos": [
+    "escuro"
+  ],
+  "corpoACorpo": "Cimitarra +18 (2d8+14, 17) e toque +18 (6d6+12 psíquico).",
+  "equipamento": "Bracelete cravejado de gemas, colar banhado a ouro, cimitarra precisa.",
+  "tesouro": "Padrão.",
+  "notas": "<p><em>Quando aceitam o convite e adentram a tenda, vocês são confrontados com a verdade. A bela mulher, semioculta em véus, revela-se como um monstro — um torso humano no corpo poderoso de um leão, as garras afiadas armadas em bote.</em></p><p>Seres táuricos de corpo leonino, lâmias são mais comuns em áreas desérticas como Ubani e Halak-Tûr, mas podem ser encontradas em outras regiões — especialmente lugares áridos, onde usam ilusões para atrair viajantes com promessas de comida, abrigo, romance ou informação. Seus covis são grandes tendas coloridas e luxuosas, quase pequenos palácios; contém tesouros e objetos de arte como tapetes, vasos, jarras, cálices, narguilés, pinturas e candelabros.</p><p>Estas criaturas costumam vagar nas proximidades do seu covil em busca de presas. Quando encontram viajantes, usam suas ilusões para se disfarçar como odaliscas humanas ou qareen, convidando forasteiros para suas tendas. Também podem tentar abordagens mais elaboradas, como encenar uma situação de ameaça, fingindo ser uma “donzela em perigo”.</p><p>Lâmias agem sozinhas ou em pequenos bandos que compartilham o mesmo covil. Uma lâmia também pode liderar um bando de leões, que permanecem de tocaia por perto ou atuam em encenações, fingindo atacá-la.</p><p>Entre os povos do deserto, lâmias são consideradas demônios que devoram a carne e bebem o sangue de suas vítimas. De fato, as criaturas acasalam com humanoides antes de devorá-los, também recolhendo os pertences da vítima. Acredita-se que existam apenas lâmias fêmeas — na verdade, o nascimento de machos é extremamente raro, e muitos são devorados pelas próprias mães, pois seus corações carregam um grande poder mágico.</p><p>Lâmias que abandonam seus modos predatórios para integrar grupos de aventureiros são raras, mas não impossíveis. As que o fazem muitas vezes abandonam sua terra natal, em busca de um lugar onde a fama de sua espécie não seja conhecida.</p><p><strong>Magias de Lâmia</strong></p><p>Além das descritas em suas respectivas fichas, as lâmias apresentadas aqui também empregam as magias a seguir.</p><p>• @UUID[Compendium.tormenta20.magias.Item.Yzvo9SdSZX94PPNl]{Aparência Perfeita} (Padrão, 3 PM) A lâmia recebe +2 em Carisma e +5 em Diplomacia e Enganação (esse efeito não fornece PV ou PM adicionais). Ao fim de cada cena, ela pode gastar os PM da magia novamente como uma ação livre para mantê-la ativa.</p><p>• @UUID[Compendium.tormenta20.magias.Item.19donXyns0pliwj9]{Disfarce Ilusório} (Padrão, 3 PM) Até o fim da cena, a lâmia muda a própria aparência, incluindo seu equipamento, e ainda os odores e as sensações que transmite. Isso afeta altura, peso, tom de pele, cor de cabelo, timbre de voz etc. Ela recebe +20 em testes de Enganação para disfarce (Von desacredita).</p><p>• @UUID[Compendium.tormenta20.magias.Item.lJYJQFhk5oai46Ty]{Enfeitiçar} (Padrão, 1 PM) Um humanoide em alcance curto fica enfeitiçado pela lâmia até o fim da cena, ou até a lâmia ou um de seus aliados tomar uma ação hostil contra ele.</p><p>• @UUID[Compendium.tormenta20.magias.Item.vTVcrCjSdnOmcIyi]{Sono} (Padrão, 5 PM) Uma criatura em alcance curto fica inconsciente ou, se estiver envolvida em combate ou outra situação perigosa, fica exausta por 1d4+1 rodadas (nos dois casos, Von reduz para fatigado por 1d4 rodadas).</p><p>• @UUID[Compendium.tormenta20.magias.Item.s9z7z8KtujpICCZw]{Sussurros Insanos} (Padrão, 6 PM) Uma criatura em alcance curto fica confusa (Von evita).</p><p><strong>Lâmia: Habilidades de Raça</strong></p><p><strong>Carisma +2, Sabedoria +1, Constituição –1.</strong></p><p><strong>Corpo Felino.</strong> Seu tamanho é Grande e seu deslocamento é 12m. Entretanto, devido ao porte de sua metade humanoide, você conta como Média para fins das armas que usa.</p><p><strong>Magia das Lâmias.</strong> Você pode lançar duas das magias a seguir (atributo-chave Carisma): @UUID[Compendium.tormenta20.magias.Item.q6jHyHSI2hWrZGE9]{Criar Ilusão}, @UUID[Compendium.tormenta20.magias.Item.eXSBd4j6jFuwbKIc]{Compreensão}, @UUID[Compendium.tormenta20.magias.Item.19donXyns0pliwj9]{Disfarce Ilusório} ou @UUID[Compendium.tormenta20.magias.Item.GDlkTth7oEnb5d0Y]{Visão Mística}. Caso aprenda novamente essa magia, seu custo diminui em –1 PM.</p><p><strong>Natureza Predadora.</strong> Você é uma criatura do tipo monstro e recebe visão no escuro e +2 em Enganação e Furtividade.</p><p><strong>Toque Psíquico.</strong> Você possui uma arma natural de toque psíquico (dano 1d6, crítico x2, psíquico). Uma vez por rodada, quando usa a ação agredir para atacar com outra arma, pode gastar 1 PM para fazer um ataque corpo a corpo extra com o toque psíquico, desde que tenha uma mão livre e ela não tenha sido usada para atacar neste turno.</p><p><strong>Longevidade.</strong> x2.</p><p><strong>Devotos.</strong> Canastra*, Hyninn, Irione*, Kallyadranoch, Sszzaas. <em>*Descritos no Guia de Deuses Menores.</em></p>",
+  "ataques": [
+    {
+      "arma": "Cimitarra",
+      "descricao": "cimitarra",
+      "img": "systems/tormenta20/icons/itens/equipamentos/cimitarra.webp",
+      "ataque": 18,
+      "critico": "17",
+      "dano": [
+        [
+          "2d8+14",
+          "corte"
+        ]
+      ]
+    },
+    {
+      "arma": "Toque",
+      "descricao": "toque",
+      "img": "systems/tormenta20/icons/magias/adaga-mental.webp",
+      "ataque": 18,
+      "dano": [
+        [
+          "6d6+12",
+          "psiquico"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Drenar Sabedoria",
+      "img": "systems/tormenta20/icons/poderes/ameacas/percepcao-temporal.webp",
+      "descricao": "<p>Uma criatura atingida pelo toque da lâmia fica frustrada (Von CD 24 evita). Se a criatura já estiver frustrada (mesmo por este efeito), fica esmorecida e, se já estiver esmorecida, fica inconsciente.</p>",
+      "acao": "livre",
+      "resistencia": "Vontade CD 24 evita"
+    },
+    {
+      "poder": "Magias",
+      "img": "systems/tormenta20/icons/poderes/ameacas/magias.webp",
+      "descricao": "<p>Como uma feiticeira de 6º nível (CD 24).</p>"
+    },
+    {
+      "poder": "Criar Ilusão",
+      "acao": "padrao",
+      "custo": 2,
+      "img": "systems/tormenta20/icons/magias/criar-ilusao.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.q6jHyHSI2hWrZGE9]{Criar Ilusão} (Padrão, 2 PM). A lâmia pode criar ilusões com sons complexos (equivalente a 5 pessoas por cubo) em alcance médio, ocupando até 4 cubos de 1,5m. As ilusões são incapazes de causar e sofrer dano (Von desacredita).</p>",
+      "resistencia": "Vontade CD 24 desacredita"
+    },
+    {
+      "poder": "Imagem Espelhada",
+      "acao": "padrao",
+      "custo": 5,
+      "img": "systems/tormenta20/icons/magias/imagem-espelhada.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.secWy6zyYamo3Xnx]{Imagem Espelhada} (Padrão, 5 PM). Cinco cópias ilusórias da lâmia surgem ao seu redor, concedendo +10 na Defesa. Cada vez que um ataque erra a lâmia, uma das cópias desaparece e o bônus na Defesa diminui em 2.</p>"
+    }
+  ]
+}

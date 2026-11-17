@@ -1,0 +1,209 @@
+{
+  "nome": "Judara, Soberana do Pesadelo",
+  "img": "assets/tokens/judara.png",
+  "nd": "19",
+  "tipo": "con",
+  "tamanho": "med",
+  "papel": "solo",
+  "atributos": {
+    "for": 0,
+    "des": 5,
+    "con": 2,
+    "int": 6,
+    "sab": 4,
+    "car": 8
+  },
+  "pv": 720,
+  "defesa": 51,
+  "pericias": {
+    "inic": 19,
+    "perc": 20,
+    "fort": 17,
+    "refl": 24,
+    "vont": 30,
+    "conh": 20,
+    "cura": 18,
+    "dipl": 22,
+    "furt": 24,
+    "inti": 24,
+    "intu": 18,
+    "mist": 22
+  },
+  "deslocamento": {
+    "deslocamento": 0,
+    "voo": 18
+  },
+  "sentidos": [
+    "cegas",
+    "escuro"
+  ],
+  "sentidosExtra": "percepção às cegas (longo)",
+  "resistencias": {
+    "acido": "imune",
+    "eletricidade": "imune",
+    "trevas": "imune",
+    "dano": 30
+  },
+  "imunidadeCondicoes": [
+    "mental",
+    "medo"
+  ],
+  "imunidadeOutras": "encantamento",
+  "resistenciasTexto": "cura acelerada 20, imunidade a ácido, efeitos mentais, eletricidade, encantamento, medo e trevas, incorpórea, maior que a morte, redução de dano 30",
+  "corpoACorpo": "Quatro tentáculos oníricos +44 (6d12+28 psíquico).",
+  "tesouro": "Centelha onírica real (CD 32 para extrair). Se absorvida, a centelha permite lançar duas magias, de encantamento e ilusão, de até 2º círculo, escolhidas ao receber esta habilidade (atributo-chave Carisma).",
+  "notas": "<p><strong>Judara, Soberana do Pesadelo</strong></p><p>Nascida em Tallban, uma das maiores cidades de Sambúrdia, a jovem Judara Gigger manifestou, desde cedo, uma aptidão para a erudição e o misticismo. Rejeitando um convite para se unir ao clero de Tanna-Toh, Judara dedicou-se desde jovem ao estudo das artes arcanas, sendo aceita, aos 14 anos, como aprendiz de um dos maiores magos da cidade. Aos 16, já igualava seu mestre em habilidade e conhecimento. Judara poderia ser aceita facilmente na Academia Arcana de Valkaria, mas, infelizmente, o destino levou-a em outra direção.</p><p>Através de uma série de eventos fortuitos, Judara obteve um vislumbre do Reino dos Pesadelos. Intrigada e, de certa forma, maravilhada, com essa descoberta, ela passou a pesquisar mais e mais sobre esse mundo misterioso. Entretanto, conforme descobria mais sobre o Reino, mais e mais seus próprios sonhos eram invadidos pelo mundo dos pesadelos.</p><p>Neste meio tempo, a família Gigger se mudou para uma pequena aldeia na fronteira com Trebuck. Lá, entretanto, Judara prosseguiu com seus estudos sobre o Reino dos Pesadelos, alheia à existência dos perigosos Mestres do Pesadelo e, sobretudo, sem saber que um desses mestres em especial a observava.</p><p>Quando o momento apropriado chegou, Arquean, Mestre do Pesadelo do Desastre, se revelou para Judara em pesadelos profundos. Dali, ele comandou a garota a abrir um portal para o Reino dos Pesadelos, usando a si mesmo como sacrifício. Entretanto, embora seu corpo físico tenha perecido no ritual, o espírito da jovem permaneceu como um fantasma onírico, uma criatura única ligada magicamente ao Reino dos Pesadelos. Nessa forma, ela conseguiu pedir ajuda a um grupo de aventureiros e, juntos, impediram os soldados do pesadelo de Arquean e fecharam o portal.</p><p>Este, entretanto, não seria o fim da história de Judara. Para impedir as criaturas do pesadelo, ela precisou se sacrificar mais uma vez, atravessando o portal e o fechando pelo outro lado. Isso manteve a forma fantasmagórica da jovem presa daquele lado.</p><p>Não se sabe ao certo como isso ocorreu, mas de alguma maneira Judara absorveu uma quantidade impressionante de poder do Reino dos Pesadelos. Isso, combinado com sua forma única e seus conhecimentos arcanos, permitiu que ela sobrepujasse os quatro Mestres do Pesadelo, tornando-se sua rainha e soberana.</p><p>Um amálgama de sua natureza imaterial e do poder dos pesadelos, Judara agora possui uma forma fantasmagórica que lembra seu semblante em vida. Entretanto, sob sua pele translúcida, é possível ver ossos metálicos também incorpóreos e, da cintura para baixo, seu corpo se transforma em um emaranhado de gavinhas oníricas que podem ser projetadas como perigosos tentáculos espirituais.</p><p>Receber tanto poder onírico, entretanto, também afetou a própria mente de Judara. Não mais a jovem estudiosa e bondosa de Arton, ela agora é a encarnação de seu Reino e uma manifestação indecifrável do poder dos sonhos e dos pesadelos.</p><p><strong>Neruíte, a Inimiga dos Pesadelos</strong></p><p>Neruíte, a Deusa Menor do Sono, é a guardiã do repouso dos artonianos. Como tal, ela e seus devotos se opõem aos seres do pesadelo e a qualquer tentativa de perturbar o sono dos mortais.</p><p>Quando Neruíte ascendeu como deusa menor, uma fração de sua energia divina se transformou em um conjunto de pingentes protetores chamados Amuletos de Neruíte. Capazes de proteger seu usuário contra ataques mentais, esses itens fornecem uma poderosa defesa contra os seres do pesadelo. Infelizmente, os Amuletos foram espalhados por Arton e o paradeiro de vários deles atualmente é desconhecido. Reencontrá-los é o objetivo de vários devotos e seguidores da Deusa do Sono. Veja o item “Amuleto de Neruíte” no compêndio de itens deste módulo.</p><p><strong>Força:</strong> — (incorpórea; registrada como 0 na ficha). <strong>Vilã modular:</strong> cada parte tem 288 PV, a controlar à parte (não somados aos 720 PV da ficha).</p><p><strong>A Primeira Visita a Arton</strong></p><p>A primeira aparição de seres do pesadelo de que se tem registro em Arton ocorreu entre 1398 e 1400, em uma pequena vila na fronteira entre Sambúrdia e Trebuck formada ao redor de uma das antigas torres de vigia, ainda da época em que essas nações viviam um período de tensão e conflitos. Ali, a jovem Judara Gigger, uma humana dotada de excepcionais capacidades mágicas, inadvertidamente entrou em contato com Arquean, o Mestre do Pesadelo do Desastre. Este contato fez com que a mente da jovem fosse invadida por pesadelos terríveis e debilitantes, que a atormentaram por meses. Em uma desesperada busca pela cura, Judara acabou abrindo uma passagem para o Reino dos Pesadelos, transformando a torre de sua vila natal em um portal. Através dele, Arquean e seus soldados se estabeleceram no lugar.</p><p>Judara foi morta nos primeiros momentos da invasão, mas seu espírito se manteve preso à vila na forma de um fantasma de energia mental. Nesta condição, ela conseguiu contatar um grupo de aventureiros que veio em auxílio à vila e enfrentou os invasores. Mas a vitória não foi o suficiente para romper a conexão com o Reino dos Pesadelos. Assim, em um sacrifício final, Judara atravessou o portal e, do outro lado, conseguiu fechar a passagem permanentemente.</p><p><strong>A Ascensão da Soberana</strong></p><p>Até a incursão de Arquean a Arton, o Reino dos Pesadelos crescia passivamente, dependendo apenas da chegada de mais pesadelos perdidos. Os Mestres do Pesadelo, embora sedentos por poder, se contentavam com isso, pois desconheciam outra forma de aumentar suas forças.</p><p>Com Judara, tudo isso mudou. Enquanto os Mestres conheciam apenas a força dos pesadelos, Judara estava familiarizada também com o outro lado dessa energia: os sonhos. Com a fusão inevitável de sua forma fantasmagórica à energia dos pesadelos, Judara se tornou uma nova entidade, mais poderosa que qualquer outra criatura do reino e eternamente ligada à sua nova morada. Rapidamente, ela sobrepujou os Mestres do Pesadelo, transformando-os em seus subordinados e assumindo a liderança daquele mundo. Não mais Judara Gigger, de Arton, ela agora se tornaria Judara, a Soberana dos Pesadelos.</p><p>Com o início de seu reinado, Judara passou a buscar outra fonte de poder para seu mundo. Algo maior que qualquer pesadelo. Algo sem limites. Agora, seus soldados deveriam roubar os sonhos dos mortais. Começaram assim as incursões de soldados do pesadelo a Arton.</p><p><strong>Natureza do Pesadelo</strong></p><p>Cada soldado do pesadelo foi criado por um dos quatro Mestres do Pesadelo e possui uma habilidade relacionada à natureza desse Mestre. Para determinar essa habilidade, escolha entre as descritas no poder “Natureza do Pesadelo” ou role 1d4 para defini-la aleatoriamente. A CD para resistir a estas habilidades, quando houver, será igual à CD da habilidade Mente Alienígena do pesadelo.</p>",
+  "ataques": [
+    {
+      "arma": "Tentáculo onírico",
+      "descricao": "quatro tentáculos oníricos",
+      "img": "icons/creatures/tentacles/tentacles-octopus-black-pink.webp",
+      "qtd": 4,
+      "ataque": 44,
+      "dano": [
+        [
+          "6d12+28",
+          "psiquico"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Incorpórea",
+      "img": "systems/tormenta20/icons/poderes/ameacas/forma.webp",
+      "descricao": "<p>Judara é incorpórea.</p>"
+    },
+    {
+      "poder": "Maior que a Morte",
+      "img": "systems/tormenta20/icons/poderes/ameacas/imunidade-magia.webp",
+      "descricao": "<p>Judara possui a habilidade maior que a morte.</p>"
+    },
+    {
+      "poder": "Cura Acelerada",
+      "img": "systems/tormenta20/icons/magias/curar-ferimentos.webp",
+      "descricao": "<p>No início de cada um de seus turnos, Judara recupera 20 pontos de vida.</p>",
+      "danos": [
+        [
+          "20",
+          "curapv",
+          "Cura acelerada"
+        ]
+      ]
+    },
+    {
+      "poder": "Manifestar Pesadelo",
+      "img": "systems/tormenta20/icons/magias/sonho.webp",
+      "descricao": "<p>Judara pode lançar a magia @UUID[Compendium.tormenta20.magias.Item.u8Drz7nb84o5LIKG]{Sonho}, bem como qualquer magia de encantamento e ilusão, como uma feiticeira de 17º nível sem gastar PM (CD 46, limite de PM 17). Uma vez por rodada, ela pode lançar uma dessas magias como uma ação livre.</p>",
+      "acao": "padrao",
+      "resistencia": "CD 46"
+    },
+    {
+      "poder": "Mente Alienígena",
+      "img": "systems/tormenta20/icons/poderes/ameacas/imunidade-aberrante.webp",
+      "descricao": "<p>Quando uma criatura usa um efeito mental ou de encantamento contra Judara, ela é atingida por um terrível choque de retorno. A criatura sofre 15d6 pontos de dano psíquico e fica atordoada por 1 rodada e abalada (Von CD 46 reduz à metade e evita as condições).</p>",
+      "acao": "reacao",
+      "danos": [
+        [
+          "15d6",
+          "psiquico"
+        ]
+      ],
+      "resistencia": "Vontade CD 46 reduz à metade e evita"
+    },
+    {
+      "poder": "Partilhar Pesadelos",
+      "img": "systems/tormenta20/icons/poderes/ameacas/aura-aterradora.webp",
+      "descricao": "<p>Judara emana uma aura com 30m de raio. Outras criaturas do pesadelo dentro dessa área podem usar as habilidades Natureza do Pesadelo dela.</p>"
+    },
+    {
+      "poder": "Epítome do Pesadelo",
+      "img": "systems/tormenta20/icons/poderes/ameacas/percepcao-temporal.webp",
+      "descricao": "<p><em>Epítome do Pesadelo.</em> Judara possui todas as habilidades Natureza do Pesadelo. Ela pode usar cada uma dessas habilidades uma vez por rodada com um ataque de tentáculo onírico diferente (CD 46).</p><p>1) <em>Pesadelo de Desastre.</em> Uma criatura atingida pela mordida fica confusa (Vontade CD 46 evita; uma criatura só pode ficar confusa por esta habilidade uma vez por cena).</p><p>2) <em>Pesadelo de Fracasso.</em> Uma criatura atingida pela mordida perde 1d6 PM e fica esmorecida (Vontade CD 46 evita).</p><p>3) <em>Pesadelo de Perseguição.</em> Uma criatura atingida pela mordida deve fazer um teste de Vontade (CD 46). Se falhar, até o fim da cena ela considera seus aliados como seus inimigos para efeitos de como suas habilidades interagem com eles.</p><p>4) <em>Pesadelo de Morte.</em> Uma criatura atingida pela mordida não pode recuperar pontos de vida por 1 rodada.</p>",
+      "danos": [
+        [
+          "1d4",
+          "",
+          "Natureza (1d4)"
+        ],
+        [
+          "1d6",
+          "",
+          "PM perdidos (Fracasso)"
+        ]
+      ],
+      "resistencia": "Vontade CD 46 evita"
+    },
+    {
+      "poder": "Vilã Modular",
+      "img": "systems/tormenta20/icons/poderes/ameacas/comandar.webp",
+      "descricao": "<p>Judara é uma vilã modular (veja p. 179) com três partes, cada uma representando uma esfera de energia onírica que ela manifesta em combate. Cada parte tem 288 PV e usa a Defesa, testes de resistência, imunidades e redução de dano de Judara. Além disso, a cada rodada, para cada parte que não esteja desabilitada, Judara recebe um turno extra (respectivamente em sua contagem de iniciativa –5, –10 e –15), em que ela usa as habilidades de uma parte que ainda não tenha usado nessa rodada.</p>"
+    },
+    {
+      "poder": "Parte: Emaranhado Tentacular",
+      "img": "icons/creatures/tentacles/tentacles-octopus-black-pink.webp",
+      "descricao": "<p>Energia onírica amplia o alcance dos tentáculos de Judara (288 PV).</p><p>• <em>Tentáculos Disruptivos.</em> Uma área de 9m de raio ao redor de Judara é considerada terreno difícil.</p><p>• <em>Agarrar Aprimorado (Movimento).</em> Judara faz a manobra agarrar contra uma criatura em alcance curto (teste +44). Ela pode manter até quatro criaturas agarradas dessa forma.</p><p>• <em>Arremesso Tentacular (Padrão).</em> Se começar o turno desta parte agarrando uma criatura menor que ela com seus tentáculos, Judara a arremessa 1d6 x 1,5m em uma direção à sua escolha. A vítima fica caída e, se atingir algum obstáculo, sofre 1d6 pontos de dano de impacto para cada 1,5m que foi arremessada.</p>",
+      "danos": [
+        [
+          "1d6",
+          "",
+          "Distância (x 1,5m)"
+        ],
+        [
+          "1d6",
+          "impacto",
+          "Impacto (por 1,5m)"
+        ]
+      ]
+    },
+    {
+      "poder": "Parte: Escudo Mental",
+      "img": "systems/tormenta20/icons/magias/adaga-mental.webp",
+      "descricao": "<p>Um redemoinho de sonhos protege a mente de Judara (288 PV).</p><p>• <em>Mente Protegida.</em> Judara recebe +5 em Vontade e imunidade a dano psíquico.</p><p>• <em>Erguer Defesas (Reação).</em> Uma vez por rodada, quando faz um teste de Vontade, Judara rola dois dados e usa o melhor resultado. Se passar nesse teste, ela acumula uma carga psíquica.</p><p>• <em>Rajada Mental (Padrão).</em> Judara dispara energia psíquica de seu escudo contra uma criatura em alcance médio. Isso funciona como a magia @UUID[Compendium.tormenta20.magias.Item.xfYTGGsdd81Pa0AN]{Adaga Mental}, exceto que ela não gasta PM (CD 35, limite de PM 17). Quando usa esta habilidade, ela gasta quaisquer cargas psíquicas que tenha acumulado. Para cada carga gasta desta forma, ela causa +2d6 pontos de dano com a rajada. <em>Recarga (movimento).</em></p>",
+      "danos": [
+        [
+          "2d6",
+          "psiquico",
+          "Por carga psíquica"
+        ]
+      ],
+      "resistencia": "Vontade CD 35",
+      "efeitos": [
+        {
+          "name": "Mente Protegida",
+          "description": "<p>Enquanto a parte Escudo Mental não estiver desabilitada: +5 em Vontade e imunidade a dano psíquico (não automatizada).</p>",
+          "system": {
+            "changes": [
+              {
+                "key": "system.pericias.vont.bonus",
+                "value": 5,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "poder": "Parte: Gerador de Aura",
+      "img": "systems/tormenta20/icons/poderes/ameacas/aura-aterradora.webp",
+      "descricao": "<p>Ampliando seu domínio sobre sonhos e pesadelos, Judara gera uma aura psíquica de 9m ao seu redor (288 PV).</p><p>• <em>Aura Obscurecente.</em> Todas as criaturas dentro da aura psíquica têm camuflagem leve (Judara pode perceber normalmente dentro da própria aura).</p><p>• <em>Pulso Agressivo (Padrão).</em> A aura causa 10d6 pontos de dano de essência em todos os inimigos em seu interior (Von CD 35 reduz à metade).</p>",
+      "acao": "padrao",
+      "danos": [
+        [
+          "10d6",
+          "essencia",
+          "Pulso Agressivo"
+        ]
+      ],
+      "resistencia": "Vontade CD 35 reduz à metade"
+    }
+  ],
+  "itens": [
+    {
+      "ref": "amuleto-de-neruite"
+    }
+  ]
+}

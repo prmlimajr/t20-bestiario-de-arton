@@ -1,0 +1,104 @@
+{
+  "nome": "Vórtice de Mana",
+  "img": "assets/tokens/vortice-de-mana.png",
+  "nd": "16",
+  "tipo": "esp",
+  "tamanho": "gra",
+  "papel": "solo",
+  "atributos": {
+    "for": 4,
+    "des": 5,
+    "con": 3,
+    "int": -5,
+    "sab": 1,
+    "car": -3
+  },
+  "pv": 560,
+  "defesa": 49,
+  "pericias": {
+    "inic": 19,
+    "perc": 15,
+    "fort": 16,
+    "refl": 30,
+    "vont": 24,
+    "atle": 9
+  },
+  "deslocamento": {
+    "deslocamento": 0,
+    "voo": 12
+  },
+  "sentidos": [
+    "cegas",
+    "escuro"
+  ],
+  "sentidosExtra": "percepção às cegas (médio)",
+  "resistencias": {
+    "dano": 10
+  },
+  "imunidadeCondicoes": [
+    "atordoado",
+    "metabolismo",
+    "paralisado"
+  ],
+  "resistenciasTexto": "evasão, imunidade a efeitos de atordoamento, metabolismo e paralisia, redução de dano 10/prata, resistência a magia +3",
+  "corpoACorpo": "Três chicotes de mana +44 (6d12+26 essência).",
+  "tesouro": "1d3 orbes de essência (CD 31 para extrair; cada orbe reduz em 1 PM o custo para fabricar um item mágico).",
+  "notas": "<p><em>O ar à sua frente começa a se agitar rapidamente, conforme raios de energia azulada surgem de súbito. Em instantes, esses feixes luminosos assumem a forma de um grande vórtice de energia que rodopia acima do solo. Não um mero fenômeno arcano, ele se mostra como uma criatura formada de energia mágica pura, bruta e crepitante.</em></p><p>Muitas vezes confundido com um elemental do ar, um vórtice de mana assemelha-se a um grande redemoinho de energia azulada com pequenos lampejos mágicos visíveis em seu interior. Nativos de Magika, vórtices de mana raramente visitam Arton por sua própria escolha. Entretanto, acidentes mágicos, como rituais de evocação malsucedidos ou distúrbios místicos, como um desequilíbrio da magia em uma região, podem “sugar” uma dessas criaturas para Arton. Um vórtice trazido contra sua vontade geralmente será agressivo e buscará desfazer ou reparar o que quer que tenha sido responsável por trazê-lo. Em alguns casos raros, o acidente ou distúrbio que trouxe o vórtice pode afetá-lo negativamente; dependendo da natureza desse efeito, o vórtice pode entrar em fúria, buscando consumir toda a magia ao seu alcance.</p><p>Até recentemente, vórtices de mana eram pouco conhecidos ou estudados, muito devido à sua raridade em Arton. Foi apenas após o incidente na Academia Arcana, em que um desses espíritos esteve ligado ao desaparecimento temporário de Talude, que essas criaturas ganharam notoriedade.</p><p><strong>Redução de dano:</strong> 10/prata.</p>",
+  "ataques": [
+    {
+      "arma": "Chicote de mana",
+      "descricao": "três chicotes de mana",
+      "img": "systems/tormenta20/icons/magias/dissipar-magia.webp",
+      "qtd": 3,
+      "ataque": 44,
+      "dano": [
+        [
+          "6d12+26",
+          "essencia"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Evasão",
+      "img": "systems/tormenta20/icons/poderes/classes/especialistas/evasao.webp",
+      "descricao": "<p>Quando sofre um efeito que permite um teste de Reflexos para reduzir o dano à metade, o vórtice de mana não sofre dano algum se passar.</p>"
+    },
+    {
+      "poder": "Resistência a Magia",
+      "img": "systems/tormenta20/icons/poderes/ameacas/resistencia-magia.webp",
+      "descricao": "<p>O vórtice de mana recebe +3 em testes de resistência contra magias.</p>"
+    },
+    {
+      "poder": "Absorver Mana",
+      "img": "systems/tormenta20/icons/poderes/ameacas/imunidade-magia.webp",
+      "descricao": "<p>Toda vez que passa em um teste de resistência contra um efeito mágico, o vórtice de mana recupera 5 PV por cada PM gasto no efeito.</p>",
+      "acao": "reacao"
+    },
+    {
+      "poder": "Redemoinho Arcano",
+      "img": "systems/tormenta20/icons/poderes/ameacas/varrer.webp",
+      "descricao": "<p>O vórtice percorre até o dobro de seu deslocamento. Ele pode passar por espaços ocupados por outras criaturas, mas não pode passar duas vezes pelo mesmo espaço. Cada criatura no caminho do vórtice sofre 8d12 pontos de dano de essência e fica enjoada por 1 rodada (Ref CD 44 reduz à metade e evita a condição). A condição causada por esta habilidade não é um efeito de metabolismo. <em>Recarga (acertar 3 chicotadas de mana).</em></p>",
+      "acao": "completa",
+      "danos": [
+        [
+          "8d12",
+          "essencia"
+        ]
+      ],
+      "resistencia": "Reflexos CD 44 reduz à metade e evita"
+    },
+    {
+      "poder": "Toque de Disjunção",
+      "img": "systems/tormenta20/icons/magias/dissipar-magia.webp",
+      "descricao": "<p>Uma criatura atingida por um chicote de mana do vórtice deve fazer um teste de resistência de Vontade (CD 44). Se falhar, deve escolher um de seus próprios itens mágicos, ou um efeito mágico que o esteja afetando. O item ou efeito escolhido é dissipado como se tivesse sido afetado por @UUID[Compendium.tormenta20.magias.Item.rfTGYwrXLjcIAIP5]{Dissipar Magia}.</p>",
+      "resistencia": "Vontade CD 44 evita"
+    }
+  ],
+  "itens": [
+    {
+      "ref": "orbe-de-essencia"
+    }
+  ]
+}

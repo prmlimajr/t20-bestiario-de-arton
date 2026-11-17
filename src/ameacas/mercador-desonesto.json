@@ -1,0 +1,75 @@
+{
+  "nome": "Mercador Desonesto",
+  "img": "assets/tokens/mercador-desonesto.png",
+  "nd": "1",
+  "tipo": "hum",
+  "raca": "hynne",
+  "tamanho": "peq",
+  "papel": "solo",
+  "atributos": {
+    "for": -1,
+    "des": 2,
+    "con": 0,
+    "int": 1,
+    "sab": 1,
+    "car": 2
+  },
+  "pv": 11,
+  "defesa": 13,
+  "pericias": {
+    "inic": 4,
+    "perc": 3,
+    "fort": 0,
+    "refl": 11,
+    "vont": 5,
+    "atle": 4,
+    "dipl": 2,
+    "enga": 9,
+    "furt": 6,
+    "ladi": 4
+  },
+  "deslocamento": {
+    "deslocamento": 6
+  },
+  "corpoACorpo": "Adaga +5 (1d4+2, 19).",
+  "equipamento": "Adaga, capa esvoaçante.",
+  "tesouro": "Padrão.",
+  "notas": "<p><em>Tavernas como esta são reconhecidas universalmente como ambientes seguros, onde aventureiros vão para descobrir aventuras, relaxar, obter informações e encontrar velhos amigos.</em></p><p>Entretanto, nem todos os estabelecimentos desse tipo são lugares inofensivos. Em alguns, uma variedade de trambiqueiros, golpistas e encrenqueiros aguarda uma oportunidade de obter alguns tibares de forma ilícita, extorquir informações secretas ou simplesmente praticar um pouco da boa e velha violência movida a álcool.</p><p>As ameaças descritas aqui são, em sua maioria, golpistas mais interessados em obter alguns tibares de forma ilícita do que se envolver em combates mortais. Se desmascarados, tentarão se safar através da lábia ou de uma fuga ousada (levando quaisquer ganhos obtidos), apelando para violência apenas como último recurso.</p>",
+  "ataques": [
+    {
+      "arma": "Adaga",
+      "descricao": "adaga",
+      "img": "systems/tormenta20/icons/itens/equipamentos/adaga.webp",
+      "ataque": 5,
+      "critico": "19",
+      "dano": [
+        [
+          "1d4+2",
+          "perfuracao"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Lábia Marota",
+      "img": "systems/tormenta20/icons/poderes/ameacas/visao-ampla.webp",
+      "descricao": "<p>Quando faz um teste de Diplomacia ou Enganação, o mercador desonesto rola dois dados e usa o melhor resultado.</p>"
+    },
+    {
+      "poder": "Mercadorias Falsificadas",
+      "img": "systems/tormenta20/icons/itens/gerais/bolsa-de-po.webp",
+      "descricao": "<p>O mercador possui um estoque de mercadorias falsas ou defeituosas, mas que parecem ser de excelente qualidade. Perceber a falsificação exige que um personagem passe em um teste oposto de Percepção ou do Ofício apropriado contra a Enganação do mercador. Para definir esse estoque, escolha itens comuns e aplique as “qualidades” a seguir.</p><p>• <em>Arma Quebradiça.</em> Esta arma certeira custa metade do preço. Entretanto, com um acerto crítico, ela se estilhaça além de qualquer conserto.</p><p>• <em>Armadura de Papelão.</em> Esta réplica perfeita de uma armadura delicada é feita com materiais de terceira qualidade. Vendida pela metade do preço, irá se desmanchar ao ser imersa em qualquer líquido (ou debaixo de uma chuva forte).</p><p>• <em>Ferramenta de Brinquedo.</em> Estas ferramentas aprimoradas, originalmente produzidas para crianças, são pintadas de forma a parecer o item real. Vendidas pela metade do preço, vão se quebrar além de qualquer conserto quando seu usuário falhar em um teste com elas por uma margem de 5 ou mais (ou rolar um 1 natural no teste).</p><p>• <em>Pergaminho com Erros Gramaticais.</em> Esses pergaminhos de magias de 1º ou 2º círculo são vendidos com 20% de desconto, mas são cópias baratas feitas por escribas pouco letrados. Ao usar o pergaminho, o personagem precisa fazer um teste de Conhecimento ou Ofício (escriba) com CD 20. Se passar, a magia funciona normalmente. Mas, se falhar, não percebe os erros e lê o que quer que esteja escrito ali; a magia é lançada, mas tem o efeito oposto (cura se torna perda de vida, bônus são aplicados como penalidades etc.). Outros efeitos dessa qualidade ficam a critério do mestre.</p><p>• <em>Poção Aguada.</em> Essas poções de magias de 1º ou 2º círculo são vendidas com 20% de desconto, mas contêm apenas metade do princípio ativo. Quaisquer efeitos numéricos da poção são reduzidos à metade e sua duração diminui em um passo (de um dia para uma cena e de uma cena para uma rodada). O efeito dessa qualidade em outras poções fica a critério do mestre.</p>"
+    },
+    {
+      "poder": "Pernas Pra Que Te Quero",
+      "img": "systems/tormenta20/icons/poderes/ameacas/investida.webp",
+      "descricao": "<p>Acostumado a correr de assaltantes para salvar sua pele e mercadorias, quando o mercador se move na direção oposta de um inimigo, seu deslocamento aumenta em +6m até o fim do turno.</p>"
+    },
+    {
+      "poder": "Sorte Salvadora",
+      "img": "systems/tormenta20/icons/poderes/ameacas/imunidade-magia.webp",
+      "descricao": "<p>Quando o mercador faz um teste de resistência, ele rola dois dados e usa o melhor resultado.</p>"
+    }
+  ]
+}

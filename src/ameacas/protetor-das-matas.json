@@ -1,0 +1,160 @@
+{
+  "nome": "Protetor das Matas",
+  "img": "assets/tokens/protetor-das-matas.png",
+  "nd": "15",
+  "tipo": "esp",
+  "raca": "sátiro",
+  "tamanho": "med",
+  "papel": "solo",
+  "atributos": {
+    "for": 2,
+    "des": 6,
+    "con": 3,
+    "int": 1,
+    "sab": 0,
+    "car": 6
+  },
+  "pv": 750,
+  "defesa": 50,
+  "pericias": {
+    "inic": 19,
+    "perc": 13,
+    "fort": 17,
+    "refl": 28,
+    "vont": 22,
+    "ades": 19,
+    "atle": 19,
+    "atua": 22,
+    "cava": 21,
+    "enga": 19,
+    "furt": 16,
+    "sobr": 13
+  },
+  "deslocamento": {
+    "deslocamento": 12
+  },
+  "sentidos": [
+    "penumbra"
+  ],
+  "resistencias": {
+    "dano": 10
+  },
+  "imunidadeCondicoes": [
+    "confuso"
+  ],
+  "resistenciasTexto": "evasão, imunidade a confusão, redução de dano 10/mágico",
+  "corpoACorpo": "Espada longa x2 +44 (6d8+16, 19, mais 6d6 psíquico) e marrada +42 (6d6+16 mais 6d6 psíquico).",
+  "equipamento": "Couraça delicada sob medida, escudo leve ajustado, espada longa formidável, instrumento musical (flauta) aprimorado.",
+  "tesouro": "Metade.",
+  "notas": "<p><em>No centro da encruzilhada, um sátiro altivo aguarda a aproximação de vocês. Ele traja uma couraça delicada e um pequeno escudo, ambos claramente de artesanato feérico, e de sua cintura pendem uma bainha com uma espada longa e uma flauta finamente decorada. Ao seu lado, um enorme alce aguarda, vigilante, preparado para lutar ao lado de seu cavaleiro.</em></p><p>Por trás da aparência caótica e muitas vezes incompreensível do mundo feérico, existe uma conexão profunda com as forças do mundo natural, sobretudo aquelas que se relacionam com a magia de Arton. E uma das representações dessa conexão está nos protetores das matas, cavaleiros feéricos dedicados a proteger santuários, encruzilhadas e outros pontos particularmente importantes para esse povo.</p><p>Protetores das matas são campeões e defensores do mundo das fadas, o que inclui a nobre Corte da Rainha Thantalla-Dhaedelin e a sombria Sylarwy-Ciuthnach, além de terras mágicas além das fronteiras da Pondsmânia. Assim, não é de todo incomum que mesmo um grupo de aventureiros bondosos se veja enfrentando um desses cavaleiros feéricos.</p><p><strong>Deslocamento:</strong> sem redução por terreno difícil natural. <strong>Redução de dano:</strong> 10/mágico (na ficha, 10 contra todo dano).</p>",
+  "ataques": [
+    {
+      "arma": "Espada longa",
+      "descricao": "espada longa x2",
+      "img": "systems/tormenta20/icons/itens/equipamentos/espada-longa.webp",
+      "qtd": 2,
+      "ataque": 44,
+      "critico": "19",
+      "dano": [
+        [
+          "6d8+16",
+          "corte"
+        ],
+        [
+          "6d6",
+          "psiquico"
+        ]
+      ]
+    },
+    {
+      "arma": "Marrada",
+      "descricao": "marrada",
+      "img": "systems/tormenta20/icons/poderes/ameacas/marrada.webp",
+      "ataque": 42,
+      "dano": [
+        [
+          "6d6+16",
+          "impacto"
+        ],
+        [
+          "6d6",
+          "psiquico"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Evasão",
+      "img": "systems/tormenta20/icons/poderes/classes/especialistas/evasao.webp",
+      "descricao": "<p>Quando sofre um efeito que permite um teste de Reflexos para reduzir o dano à metade, o protetor não sofre dano algum se passar.</p>"
+    },
+    {
+      "poder": "Aura de Vinhas",
+      "img": "systems/tormenta20/icons/poderes/ameacas/voz-da-natureza.webp",
+      "descricao": "<p>O protetor das matas emana uma aura que anima a vegetação em um raio de 9m. Nessa área, terreno natural se torna difícil.</p>"
+    },
+    {
+      "poder": "Instrumentista Mágico",
+      "img": "systems/tormenta20/icons/itens/gerais/flauta-mistica.webp",
+      "descricao": "<p>O protetor lança uma magia entre @UUID[Compendium.tormenta20.magias.Item.m14TgW19d1JTBz8U]{Amedrontar}, @UUID[Compendium.tormenta20.magias.Item.lJYJQFhk5oai46Ty]{Enfeitiçar}, @UUID[Compendium.tormenta20.magias.Item.N1xVfw9A8TiYeLae]{Hipnotismo} e @UUID[Compendium.tormenta20.magias.Item.vTVcrCjSdnOmcIyi]{Sono} sem gastar PM (CD 40, limite de PM 15). Ele pode lançar cada uma dessas magias uma vez por cena.</p>",
+      "acao": "padrao",
+      "resistencia": "CD 40"
+    },
+    {
+      "poder": "Lança Natural",
+      "img": "systems/tormenta20/icons/poderes/ameacas/espinhos.webp",
+      "descricao": "<p>O protetor cria uma lança de vinhas e a arremessa contra uma criatura em alcance curto. O alvo sofre 8d12+16 pontos de dano de perfuração e fica enredado (Ref CD 40 reduz à metade e evita a condição). Uma criatura enredada dessa forma pode remover essa condição gastando uma ação completa.</p>",
+      "acao": "padrao",
+      "danos": [
+        [
+          "8d12+16",
+          "perfuracao"
+        ]
+      ],
+      "resistencia": "Reflexos CD 40 reduz à metade e evita"
+    },
+    {
+      "poder": "Montaria Feérica",
+      "img": "systems/tormenta20/icons/poderes/ameacas/investida.webp",
+      "descricao": "<p>O protetor cavalga um alce, um parceiro montaria (Grande) que não reduz sua Furtividade. Enquanto está montado, o protetor recebe +1d6 em rolagens de dano corpo a corpo e, quando faz uma investida, recebe +2 no teste de ataque, e, se acertar, pode fazer a manobra derrubar ou empurrar contra o alvo como uma ação livre (teste +49).</p>",
+      "efeitos": [
+        {
+          "name": "Montaria Feérica",
+          "description": "<p>Montado: +1d6 em rolagens de dano corpo a corpo. Investida montada: +2 no ataque (além do bônus normal, não automatizado).</p>",
+          "system": {
+            "changes": [
+              {
+                "key": "system.modificadores.dano.cac",
+                "value": "1d6",
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "poder": "Passo da Floresta",
+      "img": "systems/tormenta20/icons/magias/salto-dimensional.webp",
+      "descricao": "<p>O protetor (e sua montaria, se ele estiver montado) se teleporta para um espaço desocupado que ele possa ver em alcance médio. Criaturas adjacentes a esse espaço ficam desprevenidas contra o protetor até o início do próximo turno dele. O protetor só pode usar esta habilidade em terrenos naturais. <em>Recarga (movimento).</em></p>",
+      "acao": "movimento"
+    },
+    {
+      "poder": "Vozes da Pondsmânia",
+      "img": "systems/tormenta20/icons/poderes/ameacas/urro-selvagem.webp",
+      "descricao": "<p>Na primeira vez em cada cena em que é reduzido a 375 PV ou menos, o protetor invoca o poder das terras feéricas. Todos os inimigos em alcance médio perdem 2d8 PM e ficam confusos (Von CD 40 reduz a perda à metade e evita a condição).</p>",
+      "acao": "reacao",
+      "danos": [
+        [
+          "2d8",
+          "",
+          "PM perdidos"
+        ]
+      ],
+      "resistencia": "Vontade CD 40 reduz à metade e evita"
+    }
+  ]
+}

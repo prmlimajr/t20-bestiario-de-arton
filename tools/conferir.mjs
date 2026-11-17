@@ -7,7 +7,7 @@ const docs = {}; for await (const [k, v] of db.iterator()) docs[k] = v; await db
 const sg = n => (n >= 0 ? "+" : "") + n;
 for (const [k, a] of Object.entries(docs)) {
   if (!k.startsWith("!actors!")) continue;
-  const s = a.system, nv = Number(s.attributes.nd) || 1, meio = Math.floor(nv / 2), treino = nv > 14 ? 6 : nv > 6 ? 4 : 2;
+  const s = a.system, nv = ["S","S+"].includes(s.attributes.nd) ? 20 : (Number(s.attributes.nd) || 1), meio = Math.floor(nv / 2), treino = nv > 14 ? 6 : nv > 6 ? 4 : 2;
   const at = x => s.atributos[x].base;
   const per = x => { const p = s.pericias[x]; return meio + at(p.atributo) + (p.treinado ? treino : 0) + p.outros; };
   const outras = Object.entries(s.pericias).filter(([x, p]) => !["inic","perc","fort","refl","vont","luta","pont"].includes(x) && (p.treinado || p.outros)).map(([x]) => `${x} ${sg(per(x))}`);
@@ -19,6 +19,6 @@ for (const [k, a] of Object.entries(docs)) {
   for (const id of a.items) {
     const i = docs[`!actors.items!${a._id}.${id}`], r = i.system.rolls;
     if (i.type === "arma") { const p = r[0].parts; console.log(`  ⚔ ${i.name} x${i.system.qtd || 1} ${sg(per(p[1][0]) + Number(p[2][0]))} (${r[1].parts.map(q => q.slice(0,2).join(" ")).join(" + ")}) crit ${i.system.criticoM}/x${i.system.criticoX} ${i.system.alcance}`); }
-    else console.log(`  • ${i.name} [${i.system.ativacao.execucao}] ${i.system.resistencia.txt} ${r.map(x => x.name + ":" + x.parts[0][0] + " " + x.parts[0][1]).join("; ")}`);
+    else console.log(`  • ${i.name} [${i.system.ativacao?.execucao ?? i.type}] ${i.system.resistencia?.txt ?? ""} ${(r ?? []).map(x => x.name + ":" + x.parts[0][0] + " " + x.parts[0][1]).join("; ")}`);
   }
 }

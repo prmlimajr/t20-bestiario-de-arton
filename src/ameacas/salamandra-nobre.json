@@ -1,0 +1,157 @@
+{
+  "nome": "Salamandra Nobre",
+  "img": "assets/tokens/salamandra-nobre.png",
+  "nd": "8",
+  "papel": "solo",
+  "tipo": "esp",
+  "tamanho": "med",
+  "deslocamento": {
+    "deslocamento": 9
+  },
+  "sentidos": [
+    "escuro"
+  ],
+  "atributos": {
+    "for": 5,
+    "des": 3,
+    "con": 4,
+    "int": 2,
+    "sab": 0,
+    "car": 1
+  },
+  "pv": 320,
+  "defesa": 33,
+  "pericias": {
+    "inic": 11,
+    "perc": 7,
+    "fort": 21,
+    "refl": 15,
+    "vont": 8,
+    "guer": 12,
+    "inti": 13,
+    "nobr": 12
+  },
+  "resistencias": {
+    "fogo": "imune",
+    "dano": 10
+  },
+  "resistenciasTexto": "imunidade a fogo, redução de dano 10",
+  "corpoACorpo": "Tridente +26 (2d8+20, 19/x3, mais 2d6 fogo) e cauda +26 (2d6+20 mais 2d6 fogo).",
+  "aDistancia": "Tridente +26 (2d8+20, 19/x3, mais 2d6 fogo).",
+  "equipamento": "Couraça reforçada, tridente maciço de mitral.",
+  "tesouro": "Dobro.",
+  "notas": "<p><em>Os guardas à beira do poço de magma são seres reptilianos, semelhantes às nagahs, com tronco, braço e cabeça humanoides, mas com corpo de serpente no lugar do quadril e das pernas. Sua metade serpente é coberta por escamas em um belo padrão amarelo, dourado, negro e vermelho. Seus rostos são angulosos e pontiagudos, mais reptilianos e menos “humanos”. No lugar de cabelos, possuem escamas sobressaltadas que lembram as placas dorsais de certos dinossauros. Escamas semelhantes se projetam de seus ombros e cotovelos.</em></p><p>Nativas de Solaris e Pyra, respectivamente os mundos divinos de Azgher e Thyatis, salamandras são espíritos ligados ao fogo e às chamas — seus corpos exalam um calor intenso que se transforma em perigosas labaredas quando necessário. Mesmo quando suas chamas não estão ativas, salamandras emanam um suave brilho flamejante.</p><p>Por sua ligação e afinidade com o fogo, salamandras desenvolveram diversas formas de trabalhar com metais. Capazes de adentrar as mais intensas das fornalhas, salamandras ferreiras conseguem moldar metais em brasa com as próprias mãos, criando assim armas e armaduras de qualidade poucas vezes vista em Arton. Dizem que sua habilidade é capaz de rivalizar até mesmo com a dos anões, ainda que seu artesanato não tenha a mesma sofisticação artística.</p><p>As cidadelas das salamandras são grandes zigurates de metal, forjados e moldados usando as mesmas técnicas que empregam em suas armas. Em seu interior, corredores e galerias conectam aposentos, depósitos, áreas funcionais e espaços de lazer, complementados por terraços decorados com esculturas metálicas representando a nobreza local. Por todos os lugares, é possível encontrar grandes fornalhas e caldeirões de lava incandescente, que mantêm o interior da cidadela em um calor insuportável para outros seres. Em Arton, essas cidadelas são localizadas em regiões particularmente quentes, como Ubani e Halak-Tûr, ou próximas a fontes de calor intenso, como vulcões ativos.</p><p>A sociedade das salamandras é profundamente estratificada, dividida em uma casta de plebeus trabalhadores, uma segunda casta acima, de soldados, e, acima de ambas, uma nobreza movida por uma insaciável fome por poder e riqueza. Oficialmente, estas castas são imutáveis, mas na prática golpes e traições são comuns, com plebeus se tornando guerreiros através da força e guerreiros depondo nobres e assumindo seus tronos. Por mais traiçoeiras que sejam essas manobras, são consideradas naturais e esperadas entre as salamandras, devido ao caráter sádico e mesquinho de sua natureza.</p><p>Independentemente de sua casta, todas as salamandras são movidas por um sadismo natural, que se sacia apenas com o sofrimento de outros seres. Elas não escravizam, mas mantêm cativos de outras raças para uso em seus jogos e experimentos doentios.</p><p>Salamandras de fogo se reproduzem de forma assexuada, gerando uma única larva em intervalos de mais ou menos dez anos. Os filhotes são incubados em poços de chamas até atingirem a maturidade.</p><p><strong>Salamandra: Habilidades de Raça</strong></p><p><strong>Constituição +2, Destreza +1, Carisma –1.</strong></p><p><strong>Calor Natural.</strong> Você recebe +2 em Ofício (ferreiro) e pode gastar 2 PM para causar +1d6 pontos de dano de fogo com seus ataques até o fim da cena.</p><p><strong>Cauda.</strong> Você possui uma arma natural de cauda (dano 1d6, crítico x2, perfuração). Uma vez por rodada, quando usa a ação agredir para atacar com outra arma, pode gastar 1 PM para fazer um ataque corpo a corpo extra com a cauda.</p><p><strong>Cria das Chamas.</strong> Você é uma criatura do tipo espírito e recebe redução de fogo 10 e visão no escuro.</p><p><strong>Fraqueza Glacial.</strong> Você sofre −5 em testes contra efeitos de frio e sofre 1 ponto de dano adicional por dado de dano de frio.</p><p><strong>Longevidade.</strong> x2.</p><p><strong>Devotos.</strong> Azgher, Kallyadranoch, Klangor*, Kurur Lianth*, Rhond*, Sckhar*, Thyatis. <em>*Descritos no Guia de Deuses Menores.</em></p><p><strong>Alma da Fornalha (Poder de Raça de Salamandra).</strong> Sua redução de fogo se torna imunidade a fogo e, quando usa Calor Natural, você pode pagar +2 PM para aumentar o dano de fogo dos ataques para +2d6. <em>Pré-requisito:</em> 7º nível de personagem.</p><p><strong>Perícias:</strong> Ofício (ferreiro) +12.</p>",
+  "ataques": [
+    {
+      "arma": "Tridente",
+      "descricao": "tridente",
+      "img": "systems/tormenta20/icons/itens/equipamentos/tridente.webp",
+      "ataque": 26,
+      "critico": "19/x3",
+      "dano": [
+        [
+          "2d8+20",
+          "perfuracao"
+        ],
+        [
+          "2d6",
+          "fogo"
+        ]
+      ]
+    },
+    {
+      "arma": "Cauda",
+      "descricao": "cauda",
+      "img": "systems/tormenta20/icons/poderes/ameacas/cauda.webp",
+      "ataque": 26,
+      "dano": [
+        [
+          "2d6+20",
+          "perfuracao"
+        ],
+        [
+          "2d6",
+          "fogo"
+        ]
+      ]
+    },
+    {
+      "arma": "Tridente (arremesso)",
+      "descricao": "tridente arremessado",
+      "img": "systems/tormenta20/icons/itens/equipamentos/tridente.webp",
+      "ataque": 26,
+      "critico": "19/x3",
+      "alcance": "short",
+      "dano": [
+        [
+          "2d8+20",
+          "perfuracao"
+        ],
+        [
+          "2d6",
+          "fogo"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Calor Natural",
+      "img": "systems/tormenta20/icons/poderes/ameacas/aura-de-calor.webp",
+      "descricao": "<p>A salamandra nobre causa +2d6 pontos de dano de fogo com seus ataques (já contabilizado).</p>"
+    },
+    {
+      "poder": "Onda de Chamas",
+      "img": "systems/tormenta20/icons/poderes/ameacas/cospe-chamas.webp",
+      "descricao": "<p>A salamandra invoca uma onda de chamas de 12m de largura e 3m de altura que percorre 30m em linha reta. Criaturas nessa área sofrem 8d6 pontos de dano de fogo e ficam em chamas (Ref CD 26 reduz à metade e evita a condição). <em>Recarga (movimento).</em></p>",
+      "acao": "completa",
+      "danos": [
+        [
+          "8d6",
+          "fogo"
+        ]
+      ],
+      "resistencia": "Reflexos CD 26 reduz à metade e evita"
+    },
+    {
+      "poder": "Realeza Flamejante",
+      "img": "systems/tormenta20/icons/poderes/ameacas/aura-de-calor.webp",
+      "descricao": "<p>No início de cada turno da salamandra, todas as criaturas adjacentes sofrem 2d6 pontos de dano de fogo.</p>",
+      "danos": [
+        [
+          "2d6",
+          "fogo"
+        ]
+      ]
+    },
+    {
+      "poder": "Tridente Ardente",
+      "img": "systems/tormenta20/icons/itens/equipamentos/tridente.webp",
+      "descricao": "<p>A salamandra dispara três raios de chamas de seu tridente contra uma criatura em alcance curto. Cada raio causa 5d6 pontos de dano de fogo (Ref CD 26 evita; um teste por raio). <em>Recarga (movimento).</em></p>",
+      "acao": "padrao",
+      "danos": [
+        [
+          "5d6",
+          "fogo",
+          "Raio 1"
+        ],
+        [
+          "5d6",
+          "fogo",
+          "Raio 2"
+        ],
+        [
+          "5d6",
+          "fogo",
+          "Raio 3"
+        ]
+      ],
+      "resistencia": "Reflexos CD 26 evita (por raio)"
+    },
+    {
+      "poder": "Sensibilidade ao Frio",
+      "img": "systems/tormenta20/icons/poderes/ameacas/vulnerabilidade.webp",
+      "descricao": "<p>A salamandra sofre −5 em testes contra efeitos de frio e sofre 1 ponto de dano adicional por dado de dano de frio.</p>"
+    }
+  ]
+}

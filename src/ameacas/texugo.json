@@ -1,0 +1,98 @@
+{
+  "nome": "Texugo",
+  "img": "assets/tokens/texugo.png",
+  "nd": "1/2",
+  "tipo": "ani",
+  "tamanho": "peq",
+  "papel": "solo",
+  "atributos": {
+    "for": -1,
+    "des": 3,
+    "con": 2,
+    "int": -4,
+    "sab": 1,
+    "car": 0
+  },
+  "pv": 16,
+  "defesa": 14,
+  "pericias": {
+    "inic": 5,
+    "perc": 5,
+    "fort": 3,
+    "refl": 5,
+    "vont": 0,
+    "acro": 7,
+    "atle": 5,
+    "furt": 9,
+    "sobr": 5
+  },
+  "deslocamento": {
+    "deslocamento": 12,
+    "escavacao": 3
+  },
+  "sentidos": [
+    "faro",
+    "penumbra"
+  ],
+  "resistenciasTexto": "resistência a efeitos de movimento +5",
+  "corpoACorpo": "Garras +6 (1d6+1) e mordida +6 (1d4+1).",
+  "tesouro": "Nenhum.",
+  "notas": "<p><em>A criaturinha de pelos curtos e escuros exibe as garras dianteiras e a boca repleta de dentes. Apesar do tamanho diminuto, não parece nem um pouco intimidada pela presença de vocês.</em></p><p>Texugos são pequenos animais de pernas curtas e atarracadas, pelagem em tons de preto, cinza e branco e dotados de garras curtas, mas poderosas. Vivem em pequenas cavernas, tocas sob as raízes de árvores ou frestas de ruínas abandonadas. Exímios caçadores, são conhecidos por sua coragem e fúria, bem como pela capacidade de se desvencilhar de oponentes muito maiores. Um texugo treinado é um aliado inestimável para qualquer combatente.</p><p><strong>Resistência:</strong> +5 em testes contra efeitos de movimento (não automatizado).</p><p><strong>Parceiro:</strong> veja o poder “Parceiro: Texugo” no compêndio de parceiros deste módulo.</p>",
+  "ataques": [
+    {
+      "arma": "Garras",
+      "descricao": "garras",
+      "img": "systems/tormenta20/icons/poderes/ameacas/garras.webp",
+      "ataque": 6,
+      "dano": [
+        [
+          "1d6+1",
+          "corte"
+        ]
+      ]
+    },
+    {
+      "arma": "Mordida",
+      "descricao": "mordida",
+      "img": "icons/creatures/abilities/mouth-teeth-long-red.webp",
+      "ataque": 6,
+      "dano": [
+        [
+          "1d4+1",
+          "perfuracao"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Retalhação Furiosa",
+      "img": "systems/tormenta20/icons/poderes/ameacas/odio-puro.webp",
+      "descricao": "<p>Quando sofre dano, o texugo recebe +2 em testes de ataque e rolagens de dano até o fim de seu próximo turno.</p>",
+      "efeitos": [
+        {
+          "name": "Retalhação Furiosa",
+          "description": "<p>Após sofrer dano: +2 em testes de ataque e rolagens de dano até o fim do próximo turno.</p>",
+          "system": {
+            "changes": [
+              {
+                "key": "system.modificadores.ataque.cac",
+                "value": 2,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              },
+              {
+                "key": "system.modificadores.dano.cac",
+                "value": 2,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

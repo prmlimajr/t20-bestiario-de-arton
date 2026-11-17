@@ -1,0 +1,90 @@
+{
+  "nome": "Anão Brigão",
+  "img": "assets/tokens/anao-brigao.png",
+  "nd": "2",
+  "tipo": "hum",
+  "raca": "anão",
+  "tamanho": "med",
+  "papel": "solo",
+  "atributos": {
+    "for": 2,
+    "des": 0,
+    "con": 2,
+    "int": 0,
+    "sab": 1,
+    "car": 1
+  },
+  "pv": 48,
+  "defesa": 17,
+  "pericias": {
+    "inic": 3,
+    "perc": 4,
+    "fort": 13,
+    "refl": 2,
+    "vont": 7,
+    "atle": 5,
+    "enga": 6,
+    "inti": 4,
+    "ladi": 5
+  },
+  "deslocamento": {
+    "deslocamento": 6
+  },
+  "sentidos": [
+    "escuro"
+  ],
+  "corpoACorpo": "Dois ataques desarmados +10 (1d8+5).",
+  "tesouro": "Padrão.",
+  "notas": "<p><em>Tavernas como esta são reconhecidas universalmente como ambientes seguros, onde aventureiros vão para descobrir aventuras, relaxar, obter informações e encontrar velhos amigos.</em></p><p>Entretanto, nem todos os estabelecimentos desse tipo são lugares inofensivos. Em alguns, uma variedade de trambiqueiros, golpistas e encrenqueiros aguarda uma oportunidade de obter alguns tibares de forma ilícita, extorquir informações secretas ou simplesmente praticar um pouco da boa e velha violência movida a álcool.</p><p>As ameaças descritas aqui são, em sua maioria, golpistas mais interessados em obter alguns tibares de forma ilícita do que se envolver em combates mortais. Se desmascarados, tentarão se safar através da lábia ou de uma fuga ousada (levando quaisquer ganhos obtidos), apelando para violência apenas como último recurso.</p><p><strong>Percepção:</strong> +4 (+6 em subterrâneo).</p><p><strong>Briga de Taverna</strong></p><p>Se você tiver o suplemento <em>Ameaças de Arton</em>, pode substituir os efeitos da habilidade Puxar Briga do anão brigão pelo perigo complexo Briga de Taverna (p. 363). Nesse caso, o anão não é afetado pelo perigo complexo e pode usar seu Soco Larápio uma vez por rodada contra qualquer personagem que tenha falhado em seu teste de perícia naquela rodada.</p>",
+  "ataques": [
+    {
+      "arma": "Ataque desarmado",
+      "descricao": "dois ataques desarmados",
+      "img": "systems/tormenta20/icons/itens/equipamentos/ataque-desarmado.webp",
+      "qtd": 2,
+      "ataque": 10,
+      "dano": [
+        [
+          "1d8+5",
+          "impacto"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Puxar Briga",
+      "img": "systems/tormenta20/icons/poderes/ameacas/quebrar-tudo.webp",
+      "descricao": "<p>O anão brigão incita uma briga na taverna. A briga é um teste estendido em grupo de Luta (CD 20, 5 sucessos). Para cada falha no teste estendido, todos os personagens sofrem 1d4 pontos de dano de impacto não letal e o anão brigão usa seu Soco Larápio contra aquele personagem. Em uma falha total, o grupo é desacordado e desperta 1d4 horas depois em um beco qualquer. O anão pode incitar uma briga uma vez por cena.</p>",
+      "acao": "completa",
+      "danos": [
+        [
+          "1d4",
+          "impacto",
+          "Dano não letal"
+        ]
+      ]
+    },
+    {
+      "poder": "Parô, Parô!",
+      "img": "systems/tormenta20/icons/poderes/ameacas/comandar.webp",
+      "descricao": "<p>Quando sofre um efeito que iria reduzir seus PV a 0 ou menos, o anão finge uma rendição dramática. A criatura que gerou o efeito deve fazer um teste de Vontade (CD 16); se falhar, em vez de sofrer o efeito, o anão fica com 1 PV. O anão pode usar esta habilidade uma vez por cena.</p>",
+      "acao": "reacao",
+      "resistencia": "Vontade CD 16 evita"
+    },
+    {
+      "poder": "Soco Larápio",
+      "img": "systems/tormenta20/icons/itens/equipamentos/ataque-desarmado.webp",
+      "descricao": "<p>O anão faz um ataque desarmado. Se acertar, em vez de causar dano, ele rouba 1d8+5 tibares do alvo (Percepção CD 16 evita).</p>",
+      "acao": "padrao",
+      "danos": [
+        [
+          "1d8+5",
+          "",
+          "Tibares roubados"
+        ]
+      ],
+      "resistencia": "Percepção CD 16 evita"
+    }
+  ]
+}

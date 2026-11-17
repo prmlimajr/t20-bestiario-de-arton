@@ -1,0 +1,75 @@
+{
+  "nome": "Sarcodio",
+  "img": "assets/tokens/sarcodio.png",
+  "nd": "3",
+  "tipo": "mor",
+  "tamanho": "med",
+  "papel": "solo",
+  "atributos": {
+    "for": 4,
+    "des": -1,
+    "con": 2,
+    "int": -5,
+    "sab": -2,
+    "car": -4
+  },
+  "pv": 98,
+  "defesa": 20,
+  "pericias": {
+    "inic": 0,
+    "perc": -1,
+    "fort": 15,
+    "refl": 3,
+    "vont": 9
+  },
+  "deslocamento": {
+    "deslocamento": 6
+  },
+  "sentidos": [
+    "faro",
+    "escuro"
+  ],
+  "corpoACorpo": "Mordida +14 (2d6+3) e pancada +14 (2d6+3).",
+  "tesouro": "Nenhum.",
+  "notas": "<p><em>O mausoléu parece repleto de cadáveres remendados de forma tosca, como se algum aprendiz de necromante estivesse praticando com partes de corpos diferentes. Quando a luz de suas tochas preenchem o lugar, entretanto, essas aberrações mortas-vivas se erguem trôpegas e começam a andar desajeitadamente em sua direção.</em></p><p>Sarcodios são mortos-vivos humanoides formados por partes de corpos diversos, como golens de carne muito toscos. Por trás da formação desses seres, entretanto, não existe nenhuma vontade inteligente, como um necromante ou artesão da carne. Esses mortos-vivos rudimentares surgem espontaneamente quando restos de cadáveres e sobras de criações necromânticas são deixados por muito tempo sob influência de energias negativas. Sob efeito dessas forças mágicas, esses restos cadavéricos lentamente se reúnem, se conectam e adquirem uma não-vida sombria.</p><p>Uma vez formado, um sarcodio passa a ser movido por um amálgama dos sentimentos mais sombrios dos antigos “donos” de suas partes. Isso geralmente significa vingança contra quem os matou, uma vontade de resolver uma questão mal-resolvida em vida ou mesmo um desejo por melhores partes para seu corpo. Quaisquer que sejam suas motivações, sarcodios se comportam como zumbis predadores, vagando pelas sombras em busca de vítimas para saciar seus desejos sombrios.</p>",
+  "ataques": [
+    {
+      "arma": "Mordida",
+      "descricao": "mordida",
+      "img": "icons/creatures/abilities/mouth-teeth-long-red.webp",
+      "ataque": 14,
+      "dano": [
+        [
+          "2d6+3",
+          "perfuracao"
+        ]
+      ]
+    },
+    {
+      "arma": "Pancada",
+      "descricao": "pancada",
+      "img": "systems/tormenta20/icons/poderes/ameacas/pancada.webp",
+      "ataque": 14,
+      "dano": [
+        [
+          "2d6+3",
+          "impacto"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Anatomia Insana Acidental",
+      "img": "systems/tormenta20/icons/poderes/ameacas/fraqueza-zumbi.webp",
+      "descricao": "<p>O sarcodio tem 25% de chance de ignorar qualquer dano. A área atingida não era exatamente necessária para o funcionamento do morto-vivo… (role 1d100: 1 a 25 ignora o dano).</p>",
+      "danos": [
+        [
+          "1d100",
+          "",
+          "Chance (1–25 ignora)"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "nome": "Lobisomem Fidalgo",
+  "img": "assets/tokens/lobisomem-fidalgo.png",
+  "nd": "13",
+  "tipo": "hum",
+  "raca": "humano",
+  "tamanho": "med",
+  "papel": "solo",
+  "atributos": {
+    "for": 3,
+    "des": 2,
+    "con": 3,
+    "int": 2,
+    "sab": 0,
+    "car": 5
+  },
+  "pv": 590,
+  "defesa": 45,
+  "pericias": {
+    "inic": 12,
+    "perc": 12,
+    "fort": 13,
+    "refl": 26,
+    "vont": 20,
+    "ades": 15,
+    "atle": 13,
+    "dipl": 19,
+    "enga": 17,
+    "inti": 17,
+    "intu": 10,
+    "nobr": 14
+  },
+  "deslocamento": {
+    "deslocamento": 12
+  },
+  "sentidos": [
+    "faro",
+    "penumbra"
+  ],
+  "resistencias": {
+    "dano": 10
+  },
+  "imunidadeOutras": "encantamento",
+  "resistenciasTexto": "imunidade a encantamento, redução de dano 10/mitral",
+  "corpoACorpo": "Conforme sua forma. Humanoide: espada bastarda x2 +36 (4d10+16, 19). Híbrida: espada bastarda x2 +38 (4d10+18, 19), garra +38 (3d12+18) e mordida +38 (3d12+18) ou duas garras +38 (3d12+18) e mordida +38 (3d12+18). Lobo: mordida +36 (3d12+16).",
+  "equipamento": "Couraça banhada a ouro, espada bastarda de batalha certeira.",
+  "tesouro": "Padrão.",
+  "notas": "<p><em>Diante da grave acusação, o conde sorri calmamente enquanto desata o laço que mantém presa sua elegante capa de seda. Então, antes que vocês consigam fazer qualquer coisa, seu corpo torna-se enorme e coberto de uma grossa pelagem cinzenta. Agora, com a face de um lobo enraivecido, ele arreganha a boca cheia de presas enquanto exibe as garras afiadas que brilham ameaçadoras ao luar.</em></p><p>Lobisomens são humanoides capazes de se transformar em feras animalescas. O que à primeira vista poderia ser considerado uma dádiva, entretanto, é na verdade um castigo de natureza divina. Décadas atrás, Megalokk decidiu criar uma maldição capaz de despertar a selvageria dos monstros nos seres civilizados. Para isso, ele pediu ajuda a Tenebra, acreditando que ela tinha o conhecimento necessário para auxiliá-lo nessa tarefa. A Deusa das Trevas, entretanto, alterou a maldição em segredo, fazendo com que ela se manifestasse apenas sob o manto da noite. Assim, Tenebra poderia vigiar, e até mesmo controlar, os monstros criados dessa maneira.</p><p>A primeira vítima da maldição criada por Megalokk e Tenebra se transformava em um monstruoso híbrido de lobo e humano — o primeiro lobisomem de Arton. Depois dele, entretanto, vieram muitos outros, amaldiçoados a se transformar em híbridos de diversas outras feras. Com o tempo, essa maldição viria a ser chamada de licantropia, e seus portadores, de licantropos.</p><p>A licantropia afeta apenas humanoides e é transmitida por outros licantropos, geralmente pela mordida. Uma vez contraída, ela se manifesta sempre que a vítima presencia situações de grande violência; isso desperta lentamente a fera em seu interior até que, ao cair da noite, ela se transforma em um híbrido animalesco e parte em uma caçada selvagem, matando tantas vítimas quanto puder, com preferência por seres inteligentes. Ela então volta à forma normal ao amanhecer, sem lembranças do que fez. De todos os licantropos, os mais comuns são os lobisomens — híbridos de humanoide e lobo.</p><p>Cada licantropo encara sua própria maldição de uma maneira diferente. Há aqueles que não se importam com seus surtos assassinos, enquanto alguns, mais nobres, tomam medidas para impedir que os efeitos mais trágicos da maldição aconteçam, chegando a trancar ou acorrentar a si mesmos durante a noite. Os mais experientes em geral buscam formas de controlar essa maldição, aprendendo a dominar sua fera interior para seu próprio benefício, ou de outros. Licantropos que decidem se isolar da civilização não são tão raros quanto se imagina, mas o perigo maior está naqueles que decidem procurar outros seres acometidos pela maldição, formando bandos de homens-fera.</p><p><strong>Licantropia</strong></p><p>A licantropia é uma maldição mágica que afeta apenas humanoides. Uma criatura que a contrai não apresenta nenhum sintoma inicial. Entretanto, sempre que presencia alguma forma de violência física (qualquer situação em que uma criatura cause dano letal em outra), ela é acometida pelos efeitos de sua condição. Na próxima noite, ela se transformará em sua forma híbrida, partindo em um surto de violência que vai durar até o amanhecer. Ao amanhecer, ela voltará à sua forma normal, sem nenhuma lembrança da selvageria que promoveu.</p><p>Uma vítima de licantropia que esteja ciente de sua condição pode fazer um teste de Vontade (CD 25, +5 por teste anterior). Se passar, evitará a transformação naquela noite. Caso falhe, se transforma e a CD dos testes de Vontade volta para 25. Se ela participou ativamente do ato de violência (por exemplo, ao atacar ou ser atacada por alguém), sofre −5 no teste de Vontade daquela noite.</p><p>Licantropia pode ser curada com a magia @UUID[Compendium.tormenta20.magias.Item.m9jubp5PK3j2nCFC]{Purificação}, com o aprimoramento que também dissipa magias e efeitos prejudiciais de encantamento, necromancia e transmutação, ou por qualquer outro efeito capaz de remover uma maldição.</p><p><strong>Formas de Lobisomem</strong></p><p>Um lobisomem transformado involuntariamente por sua maldição assume sempre a forma híbrida. Se puder controlar a transformação (como pelo poder Controlar Licantropia), ele pode escolher entre a forma híbrida ou de lobo a cada transformação. Em todos os casos, um lobisomem morto ou inconsciente reverte à forma humanoide.</p><p><em>Forma Híbrida.</em> O lobisomem se transforma em um lobo humanoide, com o corpo coberto de pelos, cauda, garras e uma cabeça de lobo. Nessa forma, seu equipamento vestido desaparece, mas ele mantém seus efeitos. Além disso, ele recebe +2 na Força, uma arma natural de mordida (dano 1d6) e duas armas naturais de garra (dano 1d6 cada). Uma vez por rodada, quando usa a ação agredir para atacar com outra arma, ele pode gastar 1 PM para fazer um ataque corpo a corpo extra com a mordida e, além disso, também pode gastar 1 PM para fazer um ataque corpo a corpo extra com uma das garras, desde que esta garra esteja livre e não tenha sido usada para atacar neste turno. Como alternativa, se tiver habilidades que exijam uma arma secundária (como Estilo de Duas Armas), ele pode usá-las com suas garras.</p><p><em>Forma de Lobo.</em> O lobisomem assume a forma de um lobo comum. Nessa forma, ele não pode falar, empunhar itens ou lançar magias. Seu equipamento desaparece, mas ele mantém os efeitos de quaisquer itens vestidos. Seu tamanho se torna Médio, seu deslocamento se torna 15m, ele recebe +2 na Força e uma arma natural de mordida (dano 1d6). Uma vez por rodada, quando usa a ação agredir para atacar com outra arma, ele pode gastar 1 PM para fazer um ataque corpo a corpo extra com a mordida. Além disso, quando acerta um ataque com sua mordida, ele pode gastar 1 PM para fazer a manobra derrubar contra o alvo desse ataque. Por fim, outras criaturas podem fazer um teste de Percepção oposto pelo seu teste de Enganação para perceber que ele não é um animal comum (ele recebe +10 nesse teste).</p><p><strong>Personagens Licantropos</strong></p><p>Um humanoide acometido por licantropia recebe certas habilidades, conforme o tipo de licantropo de quem contraiu a maldição. As habilidades a seguir refletem um lobisomem; outros licantropos recebem habilidades diferentes.</p><p><em>Aversão a Mitral.</em> Você sofre 1 ponto de dano adicional por dado de dano de ataques com armas de mitral e perde 1d6 pontos de vida por rodada se estiver empunhando ou vestindo um item de mitral.</p><p><em>Empatia com Lobos.</em> Você recebe +5 em testes de Adestramento com lobos e lobos-das-cavernas e pode usar esta perícia para mudar atitude e persuasão com estas criaturas.</p><p><em>Maldição da Licantropia.</em> Um humanoide que sofra dano da sua mordida contrai licantropia (Fort CD Con evita).</p><p><em>Sentidos Aguçados.</em> Você recebe faro e visão na penumbra.</p><p><em>Transformação Incontrolável.</em> Você sofre os efeitos de licantropia (veja Licantropia). Durante uma transformação involuntária, você se torna um personagem sob controle do mestre.</p><p><strong>Controlar Licantropia (Poder de Destino).</strong> Você aprendeu uma forma de controlar sua licantropia. Você ainda é afetado quando presencia algum tipo de violência, mas, quando faz um teste de Vontade para impedir a transformação, rola dois dados e usa o melhor resultado. Se não estiver transformado pela maldição, você pode gastar uma ação completa e 3 PM para assumir sua forma híbrida ou de animal, mantendo o controle sobre suas ações. Cada transformação dura pelo tempo que você quiser, mas você reverte à forma normal se ficar inconsciente ou morrer. Por fim, habilidades e efeitos que afetam a Forma Selvagem de um druida se aplicam às suas formas de licantropo. <em>Pré-requisito:</em> saber que contraiu licantropia.</p><p><strong>Redução de dano:</strong> 10/mitral. <strong>Adestramento:</strong> +15 (+20 com lobos).</p>",
+  "ataques": [
+    {
+      "arma": "Espada bastarda",
+      "descricao": "espada bastarda x2 (humanoide)",
+      "img": "systems/tormenta20/icons/itens/equipamentos/espada-bastarda.webp",
+      "qtd": 2,
+      "ataque": 36,
+      "critico": "19",
+      "dano": [
+        [
+          "4d10+16",
+          "corte"
+        ]
+      ]
+    },
+    {
+      "arma": "Espada bastarda (híbrida)",
+      "descricao": "espada bastarda x2 (forma híbrida)",
+      "img": "systems/tormenta20/icons/itens/equipamentos/espada-bastarda.webp",
+      "qtd": 2,
+      "ataque": 38,
+      "critico": "19",
+      "dano": [
+        [
+          "4d10+18",
+          "corte"
+        ]
+      ]
+    },
+    {
+      "arma": "Garra (híbrida)",
+      "descricao": "garra (forma híbrida)",
+      "img": "systems/tormenta20/icons/poderes/ameacas/garra.webp",
+      "ataque": 38,
+      "dano": [
+        [
+          "3d12+18",
+          "corte"
+        ]
+      ]
+    },
+    {
+      "arma": "Mordida (híbrida)",
+      "descricao": "mordida (forma híbrida)",
+      "img": "systems/tormenta20/icons/poderes/ameacas/mordida.webp",
+      "ataque": 38,
+      "dano": [
+        [
+          "3d12+18",
+          "perfuracao"
+        ]
+      ]
+    },
+    {
+      "arma": "Mordida (lobo)",
+      "descricao": "mordida (forma de lobo)",
+      "img": "systems/tormenta20/icons/poderes/ameacas/mordida.webp",
+      "ataque": 36,
+      "dano": [
+        [
+          "3d12+16",
+          "perfuracao"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Empatia com Lobos",
+      "img": "systems/tormenta20/icons/poderes/ameacas/voz-da-natureza.webp",
+      "descricao": "<p>O lobisomem fidalgo pode usar Adestramento para mudar atitude e persuasão com lobos e lobos-das-cavernas.</p>"
+    },
+    {
+      "poder": "Jogo da Corte",
+      "img": "systems/tormenta20/icons/poderes/ameacas/visao-ampla.webp",
+      "descricao": "<p>Quando faz um teste de Diplomacia, Intuição ou Nobreza, o lobisomem rola dois dados e usa o melhor resultado.</p>"
+    },
+    {
+      "poder": "Maldição da Licantropia",
+      "img": "systems/tormenta20/icons/poderes/ameacas/mordida.webp",
+      "descricao": "<p>Um humanoide que sofra dano da mordida do lobisomem fidalgo contrai licantropia (Fort CD 35 evita; veja Licantropia na biografia).</p>",
+      "resistencia": "Fortitude CD 35 evita"
+    },
+    {
+      "poder": "Mudança de Forma",
+      "img": "systems/tormenta20/icons/poderes/ameacas/forma.webp",
+      "descricao": "<p>O lobisomem fidalgo muda de forma, entre humanoide, híbrida ou lobo (as estatísticas padrão são para humanoide). Para mais detalhes, veja Personagens Licantropos na biografia.</p><p>• <em>Forma Híbrida.</em> O lobisomem recebe +2 em Força (já contabilizado nos ataques) e os ataques listados como “(híbrida)”.</p><p>• <em>Forma de Lobo.</em> O lobisomem recebe +2 em Força (já contabilizado nos ataques) e o ataque listado como “(lobo)” e seu deslocamento se torna 15m. Além disso, sempre que acerta um ataque de mordida, ele pode fazer a manobra derrubar (teste +36) como uma ação livre.</p>",
+      "acao": "completa"
+    },
+    {
+      "poder": "Orgulho",
+      "img": "systems/tormenta20/icons/poderes/ameacas/comandar.webp",
+      "descricao": "<p>Uma vez por cena, quando faz um teste de perícia, o lobisomem soma o dobro do Carisma (+10) nesse teste.</p>",
+      "acao": "reacao"
+    },
+    {
+      "poder": "Uivo Afiado",
+      "img": "systems/tormenta20/icons/poderes/ameacas/urro-selvagem.webp",
+      "descricao": "<p>Quando assume a forma de lobo ou híbrida, o lobisomem faz um teste de Intimidação oposto ao teste de Vontade de cada inimigo em alcance médio. Se vencer, ele causa 6d8 pontos de dano psíquico não letal à criatura. Se perder, causa metade desse dano. Se uma criatura for reduzida a 0 PV ou menos, em vez de cair inconsciente, ela fica apavorada e foge da maneira mais eficiente possível.</p>",
+      "acao": "reacao",
+      "danos": [
+        [
+          "6d8",
+          "psiquico",
+          "Uivo (não letal)"
+        ]
+      ],
+      "resistencia": "Intimidação oposta à Vontade"
+    },
+    {
+      "poder": "Aversão a Mitral",
+      "img": "systems/tormenta20/icons/poderes/ameacas/vulnerabilidade.webp",
+      "descricao": "<p>O lobisomem fidalgo sofre 1 ponto de dano adicional por dado de dano de ataques com armas de mitral e perde 1d6 pontos de vida por rodada se estiver empunhando ou vestindo um item de mitral.</p>",
+      "danos": [
+        [
+          "1d6",
+          "perda",
+          "Perda por rodada (mitral)"
+        ]
+      ]
+    }
+  ]
+}

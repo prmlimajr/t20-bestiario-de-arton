@@ -1,0 +1,154 @@
+{
+  "nome": "Veleiro de Piratas Condenados",
+  "img": "assets/tokens/veleiro-de-piratas-condenados.png",
+  "nd": "15",
+  "tipo": "mor",
+  "tamanho": "col",
+  "papel": "special",
+  "atributos": {
+    "for": 0,
+    "des": 2,
+    "con": 3,
+    "int": 3,
+    "sab": 4,
+    "car": 6
+  },
+  "pv": 0,
+  "defesa": 48,
+  "pericias": {
+    "inic": 15,
+    "perc": 19,
+    "fort": 22,
+    "refl": 15,
+    "vont": 28,
+    "inti": 21,
+    "pilo": 25
+  },
+  "deslocamento": {
+    "deslocamento": 0,
+    "natacao": 15
+  },
+  "sentidos": [
+    "escuro"
+  ],
+  "imunidadeCondicoes": [
+    "mental",
+    "movimento"
+  ],
+  "resistenciasTexto": "imunidade a efeitos mentais e de movimento, incorpóreo",
+  "aDistancia": "Canhão +41 (4d12+15 trevas mais 4d12+15 frio, 19/x3, alcance longo).",
+  "tesouro": "Dobro.",
+  "notas": "<p><em>Perigosas e muitas vezes traiçoeiras, as águas navegáveis de Arton são o descanso final de inúmeras embarcações e suas tripulações. De navios mercantes a veleiros militares, passando por piratas, criminosos e aventureiros, muitos são os barcos que pereceram sob as águas. Nem todos, entretanto, permanecem lá.</em></p><p>Navios fantasmas são embarcações que sofreram um destino trágico enquanto singravam as águas de Arton e que, por algum motivo, permaneceram espiritualmente presas ao mundo material. Isso pode ocorrer quando um navio naufraga enquanto executa uma missão importante ou quando a embarcação e seus tripulantes são alvo de uma poderosa maldição. Em outros casos a própria tripulação, em seus momentos finais, evoca as forças das trevas para se manter em Arton, talvez para se vingar de seus algozes ou concluir algum objetivo profano.</p><p>Qualquer que seja o motivo que mantém o navio e sua tripulação em Arton, eles permanecem aqui em suas formas fantasmagóricas; uma reprodução espectral da embarcação e dos tripulantes em seus instantes finais. Movidos por um desprezo pelos vivos e pelo desejo deturpado de resolver os assuntos que os prendem ao mundo físico, estes fantasmas permanecem nas águas que navegavam em vida, atacando quaisquer embarcações que cruzam seu território.</p><p>Embora seja possível rechaçar o ataque de um navio fantasma, dar um fim definitivo à embarcação e aos tripulantes é uma tarefa complexa. Isso geralmente envolve investigar as circunstâncias que criaram o navio fantasma e resolver qualquer assunto pendente ou maldição que o mantenha neste mundo. Um navio fantasma, entretanto, tentará ao máximo impedir qualquer tentativa de destruí-lo desta forma.</p><p><em>“Esqueçam a guerra com os tritões. Esta é a verdadeira ameaça ao nosso povo.” — Atlan, elfo-do-mar nobre</em></p><p><strong>Pontos de Vida:</strong> — (o navio é imune a dano; registrado como 0 na ficha). <strong>Força:</strong> — (registrada como 0 na ficha).</p>",
+  "ataques": [
+    {
+      "arma": "Canhão",
+      "descricao": "canhão (alcance longo)",
+      "img": "systems/tormenta20/icons/itens/equipamentos/mosquete.webp",
+      "ataque": 41,
+      "critico": "19/x3",
+      "alcance": "long",
+      "dano": [
+        [
+          "4d12+15",
+          "trevas"
+        ],
+        [
+          "4d12+15",
+          "frio"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Incorpóreo",
+      "img": "systems/tormenta20/icons/poderes/ameacas/forma.webp",
+      "descricao": "<p>O navio fantasma é incorpóreo.</p>"
+    },
+    {
+      "poder": "Abordagem Apavorante",
+      "img": "systems/tormenta20/icons/poderes/ameacas/aura-aterradora.webp",
+      "descricao": "<p>Na primeira vez em cada cena em que o navio fantasma usa Tripulação Fantasmagórica, cada criatura capaz de ver os capangas fica abalada (Vontade CD 42 evita). Se falhar no teste de Vontade por 5 ou mais, a criatura fica apavorada e, se falhar por 10 ou mais, também envelhece 2d4 anos. Medo.</p>",
+      "acao": "livre",
+      "danos": [
+        [
+          "2d4",
+          "",
+          "Anos envelhecidos"
+        ]
+      ],
+      "resistencia": "Vontade CD 42 evita"
+    },
+    {
+      "poder": "Atropelamento Etéreo",
+      "img": "systems/tormenta20/icons/poderes/ameacas/investida.webp",
+      "descricao": "<p>O navio fantasma percorre até o dobro de seu deslocamento. Ele pode passar pelo espaço ocupado de outras embarcações e de quaisquer inimigos menores que ele, mas não pode passar duas vezes pelo mesmo espaço. Cada criatura atropelada desta forma sofre 8d6 pontos de dano de trevas mais 8d6 pontos de dano de frio e fica pasma (Fort CD 42 reduz à metade e evita a condição). Uma criatura só pode ficar pasma por esta habilidade uma vez por cena. <em>Recarga (movimento).</em></p>",
+      "acao": "completa",
+      "danos": [
+        [
+          "8d6",
+          "trevas"
+        ],
+        [
+          "8d6",
+          "frio"
+        ]
+      ],
+      "resistencia": "Fortitude CD 42 reduz à metade e evita"
+    },
+    {
+      "poder": "Drenar Vida",
+      "img": "systems/tormenta20/icons/magias/toque-vampirico.webp",
+      "descricao": "<p>Uma criatura que sofra dano de trevas do navio fantasma (mas não de sua tripulação fantasmagórica) tem seus PV máximos reduzidos em 10 por 1 dia, cumulativamente (Fortitude CD 42 evita). Caso os PV máximos da criatura sejam reduzidos a 0 desta forma, ela fica inconsciente até que eles sejam restabelecidos.</p>",
+      "resistencia": "Fortitude CD 42 evita"
+    },
+    {
+      "poder": "Memento",
+      "img": "systems/tormenta20/icons/poderes/ameacas/ergam-se.webp",
+      "descricao": "<p>Embora sua tripulação possa sofrer dano, o navio fantasma em si é imune a dano e perda de vida. Além disso, caso toda a sua tripulação fantasmagórica seja derrotada, ele desaparece e ressurge 1d4 dias depois. Para derrotá-lo permanentemente, é necessário concluir o assunto que o mantém preso a este mundo. Isso pode ser localizar seus destroços e purificá-los, encontrar sua carga perdida e entregá-la ao destinatário ou concluir uma missão que tenha sido interrompida. Quando isso acontece, o navio fantasma será destruído automaticamente.</p>",
+      "danos": [
+        [
+          "1d4",
+          "",
+          "Dias para ressurgir"
+        ]
+      ]
+    },
+    {
+      "poder": "Nau Etérea",
+      "img": "systems/tormenta20/icons/magias/nevoa.webp",
+      "descricao": "<p>O navio fantasma só pode se deslocar pela superfície da água. Entretanto, ele não é afetado por condições climáticas ou por terreno aquático difícil.</p>"
+    },
+    {
+      "poder": "Tripulação Fantasmagórica",
+      "img": "systems/tormenta20/icons/poderes/ameacas/ergam-se.webp",
+      "descricao": "<p>Uma vez por rodada, se estiver adjacente a uma embarcação, o navio fantasma invoca 2d4+2 capangas piratas condenados em espaços desocupados em alcance curto (20 capangas por cena). Esses capangas agem a partir da próxima rodada do navio, podem gastar uma ação padrão para causar o dano listado e usam as estatísticas de seu navio fantasma para seus próprios testes opostos e de resistência.</p><p>Cada pirata é um morto-vivo incorpóreo com deslocamento 9m, Defesa 43, 120 PV e dano 3d8+5 de trevas.</p>",
+      "acao": "livre",
+      "danos": [
+        [
+          "2d4+2",
+          "",
+          "Capangas invocados"
+        ],
+        [
+          "3d8+5",
+          "trevas",
+          "Dano do capanga"
+        ]
+      ]
+    },
+    {
+      "poder": "Trespassar Alma",
+      "img": "systems/tormenta20/icons/poderes/ameacas/sombra-rubra.webp",
+      "descricao": "<p>Quando uma criatura sofre dano de trevas do canhão do veleiro de piratas condenados, sua alma é momentaneamente arrancada do corpo. A criatura fica atordoada por 1 rodada e perde 2d8 PM; se já foi atordoada por esta habilidade nesta cena, em vez disso fica debilitada por 1 rodada (Von CD 42 reduz a perda à metade e evita a condição).</p>",
+      "danos": [
+        [
+          "2d8",
+          "",
+          "PM perdidos"
+        ]
+      ],
+      "resistencia": "Vontade CD 42 reduz à metade e evita"
+    }
+  ]
+}

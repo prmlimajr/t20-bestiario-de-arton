@@ -1,0 +1,110 @@
+{
+  "nome": "Zumbi Fantasmagórico",
+  "img": "assets/tokens/zumbi-fantasmagorico.png",
+  "nd": "4",
+  "tipo": "mor",
+  "tamanho": "med",
+  "papel": "solo",
+  "atributos": {
+    "for": 3,
+    "des": 4,
+    "con": 0,
+    "int": -2,
+    "sab": 0,
+    "car": 2
+  },
+  "pv": 120,
+  "defesa": 22,
+  "pericias": {
+    "inic": 8,
+    "perc": 4,
+    "fort": 4,
+    "refl": 16,
+    "vont": 10,
+    "furt": 10,
+    "inti": 8
+  },
+  "deslocamento": {
+    "deslocamento": 9
+  },
+  "sentidos": [
+    "escuro"
+  ],
+  "sentidosExtra": "detectar vida (30m, como percepção às cegas)",
+  "resistencias": {
+    "dano": 5
+  },
+  "resistenciasTexto": "redução de dano 5",
+  "corpoACorpo": "Mordida +16 (1d6+5) e duas garras +16 (1d6+5).",
+  "tesouro": "Nenhum.",
+  "notas": "<p><em>A criatura diante de vocês assemelha-se a um zumbi comum recém-saído da cova. Entretanto, ela é cercada por uma aura fantasmagórica, como se estivesse “vestindo” um fantasma sobre sua pele putrefata. As diferenças se tornam ainda mais evidentes quando o estranho ser se move — seus movimentos são coordenados e rápidos como eram em vida, e não lentos e trôpegos como os de um zumbi normal.</em></p><p>Zumbis fantasmagóricos são mortos-vivos peculiares, formados por cadáveres animados pela energia espectral de seu próprio fantasma. Essa combinação gera uma criatura singular, que possui uma fração das capacidades mentais que tinha em vida, é parcialmente incorpóreo e possui força e resistência físicas consideráveis.</p><p>Os primeiros relatos da existência de zumbis fantasmagóricos vieram de Sckharshantallas, mais especificamente dos vilarejos de Hazonnd e Wondaronn. Destruídos durante a guerra de formação dessa nação, estes vilarejos foram afetados por uma força misteriosa e seus moradores se transformaram em seres fantasmagóricos. Durante o dia, viviam suas rotinas normalmente, como se estivessem vivos, embora fossem claramente fantasmas. Chegavam até a receber forasteiros, como um vilarejo normal — e muitos até se hospedavam nas estalagens locais.</p><p>À noite, entretanto, estes fantasmas animavam seus próprios cadáveres, que se erguiam do solo, famintos pela carne dos vivos. Estes zumbis fantasmagóricos atacavam os visitantes da cidade e, na falta destes, vagavam pelas regiões ao redor em busca de “vítimas”. Ao amanhecer, retornavam para suas covas e um novo dia “normal” se iniciava nos vilarejos.</p><p>Embora as circunstâncias que criaram os zumbis fantasmagóricos de Hazonnd e Wondaronn sejam bastante específicas, elas podem se repetir em outros lugares de Arton. Energias semelhantes às geradas em Sckharshantallas podem se abater sobre outras comunidades, ou mesmo sobre grupos menores, como uma família de camponeses ou um ermitão que vive isolado nos ermos. O fantasma de um druida que acolhe um grupo de aventureiros em sua choupana pode muito bem se revelar um zumbi fantasmagórico durante a noite, determinado a se alimentar da carne de seus hóspedes.</p>",
+  "ataques": [
+    {
+      "arma": "Mordida",
+      "descricao": "mordida",
+      "img": "icons/creatures/abilities/mouth-teeth-long-red.webp",
+      "ataque": 16,
+      "dano": [
+        [
+          "1d6+5",
+          "perfuracao"
+        ]
+      ]
+    },
+    {
+      "arma": "Garras",
+      "descricao": "duas garras",
+      "img": "systems/tormenta20/icons/poderes/ameacas/garras.webp",
+      "qtd": 2,
+      "ataque": 16,
+      "dano": [
+        [
+          "1d6+5",
+          "corte"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Detectar Vida",
+      "img": "systems/tormenta20/icons/poderes/ameacas/visao-ampla.webp",
+      "descricao": "<p>O zumbi fantasmagórico pode detectar a presença de seres vivos em um raio de 30m como se tivesse percepção às cegas.</p>"
+    },
+    {
+      "poder": "Lembrança Melancólica",
+      "img": "systems/tormenta20/icons/poderes/ameacas/aura-aterradora.webp",
+      "descricao": "<p>A energia fantasmal que cria o zumbi se manifesta como uma aura psíquica de 9m de raio ao redor dele. Qualquer criatura que entre nessa área deve fazer um teste de Vontade (CD 18). Se passar, fica imune a esta habilidade por um dia. Se falhar, fica atordoada por 1d6 rodadas (apenas uma vez por cena), assombrada por visões de um futuro que podia ter tido. Outro personagem pode gastar uma ação completa para fazer um teste de Diplomacia (CD 20) para “acordá-la” desse transe.</p>",
+      "danos": [
+        [
+          "1d6",
+          "",
+          "Rodadas (atordoado)"
+        ]
+      ],
+      "resistencia": "Vontade CD 18 evita"
+    },
+    {
+      "poder": "Imortalidade Fantasmagórica",
+      "img": "systems/tormenta20/icons/poderes/ameacas/ergam-se.webp",
+      "descricao": "<p>O zumbi é verdadeiramente imortal. Se for reduzido a 0 PV, sua forma fantasmagórica desaparece e seu corpo físico se decompõe. Ambos serão reformados respectivamente no próximo amanhecer e no próximo anoitecer.</p>"
+    },
+    {
+      "poder": "Semimaterial",
+      "img": "systems/tormenta20/icons/poderes/ameacas/forma.webp",
+      "descricao": "<p>O zumbi tem 25% de chance de ignorar o dano causado por uma fonte mundana e seus ataques contam como armas mágicas.</p>",
+      "danos": [
+        [
+          "1d100",
+          "",
+          "Chance (76+ ignora)"
+        ]
+      ]
+    },
+    {
+      "poder": "Fraqueza Zumbi",
+      "img": "systems/tormenta20/icons/poderes/ameacas/fraqueza-zumbi.webp",
+      "descricao": "<p>O zumbi sofre o dobro de dano de acertos críticos ou de ataques feitos contra seu cérebro (Defesa 32).</p>"
+    }
+  ]
+}

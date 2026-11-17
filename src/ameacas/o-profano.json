@@ -1,0 +1,189 @@
+{
+  "nome": "O Profano",
+  "img": "assets/tokens/o-profano.png",
+  "nd": "S",
+  "tipo": "mor",
+  "tamanho": "col",
+  "papel": "solo",
+  "atributos": {
+    "for": 0,
+    "des": 1,
+    "con": 4,
+    "int": 4,
+    "sab": 3,
+    "car": 8
+  },
+  "pv": 0,
+  "defesa": 63,
+  "pericias": {
+    "inic": 17,
+    "perc": 21,
+    "fort": 22,
+    "refl": 30,
+    "vont": 36,
+    "inti": 26,
+    "pilo": 30
+  },
+  "deslocamento": {
+    "deslocamento": 0,
+    "natacao": 18
+  },
+  "sentidos": [
+    "escuro"
+  ],
+  "imunidadeCondicoes": [
+    "mental",
+    "movimento"
+  ],
+  "imunidadeOutras": "dano e perda de vida (Memento)",
+  "resistenciasTexto": "imunidade a efeitos mentais e de movimento, incorpóreo",
+  "aDistancia": "Dois canhões +55 (4d12+15 trevas mais 4d12+15 frio, 19/x3, alcance longo).",
+  "tesouro": "Dobro mais essência espectral (vale 3 PM para fabricar itens mágicos).",
+  "notas": "<p><em>Uma névoa sinistra surge no horizonte, aproximando-se da embarcação com velocidade sobrenatural. Os marinheiros mais experientes se agitam, sabendo que o fenômeno diante de seus olhos não é mera manifestação climática. Algo perigoso se aproxima. Algo que odeia os vivos e anseia por sua destruição.</em></p><p>O Profano é, talvez, o mais conhecido e temido dos navios fantasmas a singrar os mares de Arton. Outrora uma embarcação de Hongari chamada Mergulhão Audaz, este majestoso veleiro mercante era comandado pelo capitão hynne Filork Olho Vivo. Surpreendido em um porto hongari durante a Noite da Ascensão Profana, o Mergulhão Audaz tentou escapar da maldição, levando consigo um grande número de refugiados hynne. Entretanto, ao contrário de outras embarcações, que seguiram um plano de fuga estabelecido por uma aventureira chamada Angelya Braço Forte, o capitão Filork optou por uma rota alternativa que deixou o Mergulhão muito próximo da costa de Aslothia. Como resultado, o navio foi colhido pelas energias sombrias do ritual de Ferren, sucumbindo aos seus efeitos malditos.</p><p>Rebatizado de O Profano, o galeão do capitão Filork agora navega pelo Grande Oceano. Atormentados pela maldição, o capitão e sua tripulação se ressentem dos vivos, sobretudo de outros hynne e da população de Bielefeld e das Repúblicas Livres de Sambúrdia; os fantasmas do Profano culpam estas nações pela ascensão de Ferren e pela maldição que se abateu sobre eles. Estranhamente, o Profano não ataca embarcações de Aslothia, talvez pela influência maldita do próprio Ferren Asloth.</p><p>Dar um descanso final ao Profano e à sua tripulação é uma tarefa desafiadora. Ninguém sabe ao certo como desfazer a maldição do navio, então o primeiro passo é descobrir o que é necessário. Aqueles que forem bem-sucedidos em obter essas informações vão descobrir que precisam recuperar os restos mortais do capitão Filork, que se encontram magicamente protegidos nos destroços naufragados do Mergulhão Audaz. Depois, deverão levar estes restos até a cidade natal do capitão, no interior de Hongari, e realizar um ritual de purificação para que sua alma possa enfim se libertar da maldição de Ferren. Um ritual deste porte, entretanto, se opõe diretamente ao poder do próprio Ferren e exige magias igualmente poderosas.</p><p><em>“Esqueçam a guerra com os tritões. Esta é a verdadeira ameaça ao nosso povo.”</em> — Atlan, elfo-do-mar nobre</p><p><strong>Ficha:</strong> ND S (calculado como nível 20). Pontos de Vida “—”: o navio é imune a dano e perda de vida (veja Memento); registrado como 0 na ficha. Força “—” registrada como 0.</p>",
+  "ataques": [
+    {
+      "arma": "Canhão",
+      "descricao": "dois canhões",
+      "img": "systems/tormenta20/icons/poderes/ameacas/sopro.webp",
+      "qtd": 2,
+      "ataque": 55,
+      "critico": "19/x3",
+      "alcance": "long",
+      "dano": [
+        [
+          "4d12+15",
+          "trevas"
+        ],
+        [
+          "4d12+15",
+          "frio"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Incorpóreo",
+      "img": "systems/tormenta20/icons/poderes/ameacas/forma.webp",
+      "descricao": "<p>O Profano é incorpóreo.</p>"
+    },
+    {
+      "poder": "Abordagem Apavorante",
+      "img": "systems/tormenta20/icons/poderes/ameacas/aura-aterradora.webp",
+      "descricao": "<p>Na primeira vez em cada cena em que o navio fantasma usa Tripulação Fantasmagórica, cada criatura capaz de ver os capangas fica abalada (Vontade CD 55 evita). Se falhar no teste de Vontade por 5 ou mais, a criatura fica apavorada e, se falhar por 10 ou mais, também envelhece 2d4 anos. Medo.</p>",
+      "acao": "livre",
+      "danos": [
+        [
+          "2d4",
+          "",
+          "Anos envelhecidos"
+        ]
+      ],
+      "resistencia": "Vontade CD 55 evita"
+    },
+    {
+      "poder": "Atropelamento Etéreo",
+      "img": "systems/tormenta20/icons/poderes/ameacas/investida.webp",
+      "descricao": "<p>O navio fantasma percorre até o dobro de seu deslocamento. Ele pode passar pelo espaço ocupado de outras embarcações e de quaisquer inimigos menores que ele, mas não pode passar duas vezes pelo mesmo espaço. Cada criatura atropelada desta forma sofre 8d12 pontos de dano de trevas mais 8d12 pontos de dano de frio e fica pasma (Fort CD 55 reduz à metade e evita a condição). Uma criatura só pode ficar pasma por esta habilidade uma vez por cena. <em>Recarga (movimento).</em></p>",
+      "acao": "completa",
+      "danos": [
+        [
+          "8d12",
+          "trevas"
+        ],
+        [
+          "8d12",
+          "frio"
+        ]
+      ],
+      "resistencia": "Fortitude CD 55 reduz à metade e evita"
+    },
+    {
+      "poder": "Drenar Vida",
+      "img": "systems/tormenta20/icons/poderes/ameacas/sombra-rubra.webp",
+      "descricao": "<p>Uma criatura que sofra dano de trevas do navio fantasma (mas não de sua tripulação fantasmagórica) tem seus PV máximos reduzidos em 10 por 1 dia, cumulativamente (Fort CD 55 evita). Caso os PV máximos da criatura sejam reduzidos a 0 desta forma, ela fica inconsciente até que eles sejam restabelecidos.</p>",
+      "resistencia": "Fortitude CD 55 evita"
+    },
+    {
+      "poder": "Memento",
+      "img": "systems/tormenta20/icons/poderes/ameacas/imunidade-magia.webp",
+      "descricao": "<p>Embora sua tripulação possa sofrer dano, o navio fantasma em si é imune a dano e perda de vida. Além disso, caso toda a sua tripulação fantasmagórica seja derrotada, ele desaparece e ressurge 1d4 dias depois. Para derrotá-lo permanentemente, é necessário concluir o assunto que o mantém preso a este mundo. Isso pode ser localizar seus destroços e purificá-los, encontrar sua carga perdida e entregá-la ao destinatário ou concluir uma missão que tenha sido interrompida. Quando isso acontece, o navio fantasma será destruído automaticamente.</p>"
+    },
+    {
+      "poder": "Nau Etérea",
+      "img": "systems/tormenta20/icons/poderes/ameacas/forma.webp",
+      "descricao": "<p>O navio fantasma só pode se deslocar pela superfície da água. Entretanto, ele não é afetado por condições climáticas ou por terreno aquático difícil.</p>"
+    },
+    {
+      "poder": "Tripulação Fantasmagórica",
+      "img": "systems/tormenta20/icons/magias/conjurar-mortos-vivos.webp",
+      "descricao": "<p>Uma vez por rodada, se estiver adjacente a uma embarcação, o navio fantasma invoca uma quantidade de capangas em espaços desocupados em alcance curto (a quantidade máxima de capangas que ele pode invocar a cada cena é indicada na habilidade). Esses capangas agem a partir da próxima rodada do navio, podem gastar uma ação padrão para causar o dano listado e usam as estatísticas de seu navio fantasma para seus próprios testes opostos e de resistência.</p><p><em>O Profano:</em> 2d6+2 capangas marujos hynne (30 capangas por cena). Cada marujo é um morto-vivo incorpóreo com deslocamento 6m, Defesa 55, 160 PV e dano 2d12+5 de trevas mais 2d12+5 de frio. Quando faz um teste de resistência, o marujo rola dois dados e usa o melhor resultado.</p>",
+      "acao": "livre",
+      "danos": [
+        [
+          "2d6+2",
+          "",
+          "Marujos invocados"
+        ],
+        [
+          "2d12+5",
+          "trevas",
+          "Dano do marujo"
+        ],
+        [
+          "2d12+5",
+          "frio",
+          "Dano do marujo (frio)"
+        ]
+      ]
+    },
+    {
+      "poder": "Capitão Filork Olho Vivo",
+      "img": "systems/tormenta20/icons/poderes/ameacas/comandar.webp",
+      "descricao": "<p>Quando pelo menos 20 capangas marujos hynne são invocados pelo Profano, o Capitão Filork surge em um espaço desocupado em alcance curto. Ele age como um capanga marujo hynne mas tem Defesa 58, 220 PV e dano 3d12+5 de trevas mais 3d12+5 de frio.</p>",
+      "acao": "reacao",
+      "danos": [
+        [
+          "3d12+5",
+          "trevas",
+          "Dano de Filork"
+        ],
+        [
+          "3d12+5",
+          "frio",
+          "Dano de Filork (frio)"
+        ]
+      ]
+    },
+    {
+      "poder": "Lamento dos Refugiados",
+      "img": "systems/tormenta20/icons/poderes/ameacas/urro-selvagem.webp",
+      "descricao": "<p>Quando 15 capangas marujos hynne do Profano são destruídos, um coro de espíritos dos refugiados hynne passa a emitir uma violenta aura de energia negativa com 30m de raio. Cada criatura que comece seu turno nesta área sofre 5d12 pontos de dano de trevas e 5d12 pontos de dano psíquico e fica debilitada e esmorecida (Von CD 55 reduz para fraca e frustrada).</p>",
+      "acao": "reacao",
+      "danos": [
+        [
+          "5d12",
+          "trevas"
+        ],
+        [
+          "5d12",
+          "psiquico"
+        ]
+      ],
+      "resistencia": "Vontade CD 55 reduz"
+    },
+    {
+      "poder": "Trespassar Alma",
+      "img": "systems/tormenta20/icons/poderes/ameacas/ataque-trevas.webp",
+      "descricao": "<p>Quando uma criatura sofre dano de trevas do canhão do Profano, sua alma é momentaneamente arrancada do corpo. A criatura fica atordoada por 1 rodada e perde 4d8 PM; se já foi atordoada por esta habilidade nesta cena, em vez disso fica debilitada por 1 rodada (Von CD 55 reduz a perda à metade e evita a condição).</p>",
+      "danos": [
+        [
+          "4d8",
+          "",
+          "PM perdidos"
+        ]
+      ],
+      "resistencia": "Vontade CD 55 reduz à metade e evita"
+    }
+  ]
+}

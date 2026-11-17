@@ -1,0 +1,221 @@
+{
+  "nome": "Troll Xamã",
+  "img": "assets/tokens/troll-xama.png",
+  "nd": "13",
+  "tipo": "mon",
+  "tamanho": "gra",
+  "papel": "special",
+  "atributos": {
+    "for": 6,
+    "des": 2,
+    "con": 6,
+    "int": 1,
+    "sab": 4,
+    "car": 1
+  },
+  "pv": 455,
+  "pm": 69,
+  "defesa": 41,
+  "pericias": {
+    "inic": 12,
+    "perc": 14,
+    "fort": 20,
+    "refl": 13,
+    "vont": 26,
+    "inti": 11,
+    "mist": 11,
+    "sobr": 16
+  },
+  "deslocamento": {
+    "deslocamento": 9
+  },
+  "sentidos": [
+    "faro",
+    "escuro"
+  ],
+  "resistenciasTexto": "cura acelerada 20/ácido ou fogo",
+  "corpoACorpo": "Bordão x2 +35 (2d8+30 mais 4d6 ácido) e mordida +35 (1d8+30 mais 6d6 ácido).",
+  "equipamento": "Bordão, instrumentos de ofício (alquimista e cozinheiro).",
+  "tesouro": "Padrão mais 1d4+1 poções.",
+  "notas": "<p><em>O ser humanoide, alto como um ogro, veste uma túnica da qual pendem símbolos místicos, raízes e crânios de pequenos animais. Sobre sua cabeça, usa um chapéu feito de ramos, penas e tiras de couro. Sua mão esquerda balança um cajado enquanto a outra mão traça símbolos divinos no ar. Toda a parafernália mágica torna difícil perceber que a criatura é, na verdade, um troll.</em></p><p>Apesar de sua aparência feral e selvagem, trolls são dotados de inteligência e possuem uma conexão instintiva com o mundo natural. Graças a isso, é possível que uma dessas monstruosidades desenvolva uma aptidão para aprender e lançar magias, tornando-se um troll xamã.</p><p>As circunstâncias exatas de como um troll se torna um xamã variam de indivíduo para indivíduo — alguns têm a sorte de encontrar mestres dispostos a ensiná-los, enquanto outros são modificados por fontes de magia ou espíritos mágicos. E tão variado quanto suas origens é seu comportamento. Alguns são indivíduos reclusos, dedicados aos seus estudos místicos, enquanto outros tornam-se líderes em sua espécie, reunindo outros trolls sob seu comando. Em comum, todos os trolls xamãs exibem um sadismo exacerbado, ainda maior que o de seus parentes comuns. Costumam torturar suas vítimas, submetendo-as a cruéis experimentos arcanos ou culinários antes de devorá-las.</p><p>Por dominarem o poder da magia, trolls xamãs são particularmente odiados pelos finntroll, que os consideram uma abominação a ser destruída. De fato, caçar e capturar trolls xamãs é um dos motivos que pode levar um finntroll a deixar a segurança de seus domínios subterrâneos e viajar até a superfície.</p><p><strong>Perícias:</strong> Ofício (alquimista) +11, Ofício (cozinheiro) +11.</p><p><strong>Cura acelerada:</strong> 20/ácido ou fogo.</p>",
+  "ataques": [
+    {
+      "arma": "Bordão",
+      "descricao": "bordão x2",
+      "img": "systems/tormenta20/icons/itens/equipamentos/bordao.webp",
+      "qtd": 2,
+      "ataque": 35,
+      "dano": [
+        [
+          "2d8+30",
+          "impacto"
+        ],
+        [
+          "4d6",
+          "acido"
+        ]
+      ]
+    },
+    {
+      "arma": "Mordida",
+      "descricao": "mordida",
+      "img": "icons/creatures/abilities/mouth-teeth-long-red.webp",
+      "ataque": 35,
+      "dano": [
+        [
+          "1d8+30",
+          "perfuracao"
+        ],
+        [
+          "6d6",
+          "acido"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Cura Acelerada",
+      "img": "systems/tormenta20/icons/magias/curar-ferimentos.webp",
+      "descricao": "<p>No início de cada um de seus turnos, o troll xamã recupera 20 pontos de vida. Dano de ácido ou fogo interrompe a cura acelerada na rodada seguinte.</p>",
+      "danos": [
+        [
+          "20",
+          "curapv",
+          "Cura acelerada"
+        ]
+      ]
+    },
+    {
+      "poder": "Elo com a Natureza",
+      "img": "systems/tormenta20/icons/poderes/ameacas/voz-da-natureza.webp",
+      "descricao": "<p>Se estiver a pelo menos 30 metros de seu covil, o troll xamã recupera 5 PM no início de cada um dos seus turnos.</p>",
+      "danos": [
+        [
+          "5",
+          "curapm",
+          "Recupera PM"
+        ]
+      ]
+    },
+    {
+      "poder": "Lacaios Arbustos",
+      "img": "systems/tormenta20/icons/poderes/ameacas/voz-da-natureza.webp",
+      "descricao": "<p>O troll xamã está sempre acompanhado por 2d4+2 lacaios arbustos animados. Cada arbusto tem deslocamento 9m (sem redução por terreno difícil natural) e pode gastar uma ação padrão para causar 2d6+4 pontos de dano de corte em uma criatura a até 3m. Os arbustos têm For 3, Des 1, Defesa 27 e 1 PV e falham automaticamente em qualquer teste oposto ou de resistência. Se perder um lacaio arbusto, o troll pode criar um novo com 1 dia de trabalho.</p>",
+      "danos": [
+        [
+          "2d4+2",
+          "",
+          "Arbustos"
+        ],
+        [
+          "2d6+4",
+          "corte",
+          "Ataque do arbusto"
+        ]
+      ]
+    },
+    {
+      "poder": "Magias",
+      "img": "systems/tormenta20/icons/poderes/ameacas/magias.webp",
+      "descricao": "<p>Como um conjurador divino de 13º nível (CD 37).</p>"
+    },
+    {
+      "poder": "Coluna de Chamas",
+      "acao": "padrao",
+      "custo": 13,
+      "img": "systems/tormenta20/icons/magias/coluna-de-chamas.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.2SmpEwV7DibaAd6t]{Coluna de Chamas} (Padrão, 13 PM). Um cilindro de fogo sagrado com 3m de raio e 30m de altura desce dos céus em alcance longo, causando 13d6 pontos de dano de fogo mais 6d6 pontos de dano de luz nas criaturas e objetos livres na área (Ref reduz à metade).</p>",
+      "danos": [
+        [
+          "13d6",
+          "fogo"
+        ],
+        [
+          "6d6",
+          "luz"
+        ]
+      ],
+      "resistencia": "Reflexos CD 37 reduz à metade"
+    },
+    {
+      "poder": "Curar Ferimentos",
+      "acao": "padrao",
+      "custo": 13,
+      "img": "systems/tormenta20/icons/magias/curar-ferimentos.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.soVAGPRWQmKxOrPm]{Curar Ferimentos} (Padrão, 13 PM). Uma criatura adjacente cura 14d8+14 PV.</p>",
+      "danos": [
+        [
+          "14d8+14",
+          "curapv",
+          "Cura"
+        ]
+      ]
+    },
+    {
+      "poder": "Desintegrar",
+      "acao": "padrao",
+      "custo": 10,
+      "img": "systems/tormenta20/icons/magias/desintegrar.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.oFPOvZqHlPTyj4XD]{Desintegrar} (Padrão, 10 PM). Uma criatura ou objeto em alcance médio sofre 10d12 pontos de dano de essência (Fort reduz para 2d12). Se reduzido a 0 PV, o alvo vira pó.</p>",
+      "danos": [
+        [
+          "10d12",
+          "essencia"
+        ],
+        [
+          "2d12",
+          "essencia",
+          "Passou na Fortitude"
+        ]
+      ],
+      "resistencia": "Fortitude CD 37 reduz"
+    },
+    {
+      "poder": "Imobilizar",
+      "acao": "padrao",
+      "custo": 9,
+      "img": "systems/tormenta20/icons/magias/imobilizar.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.vwpjRRdyR0iHI1TH]{Imobilizar} (Padrão, 9 PM). Uma criatura em alcance curto fica paralisada (Von reduz para lenta). A cada rodada, a vítima pode gastar uma ação completa para fazer um novo teste de Vontade. Se passar, ela se liberta do efeito.</p>",
+      "resistencia": "Vontade CD 37 reduz"
+    },
+    {
+      "poder": "Potência Divina",
+      "acao": "padrao",
+      "custo": 13,
+      "img": "systems/tormenta20/icons/magias/potencia-divina.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.MbArAZo487Yb3hdl]{Potência Divina} (Padrão, 13 PM, sustentada). O tamanho do troll xamã aumenta uma categoria e ele recebe Força +5 e RD 15. Isso aumenta seus ataques para: bordão x2 +40 (2d10+35 mais 4d6 ácido) e mordida +40 (1d10+35 mais 6d6 ácido). Ele não pode lançar magias enquanto estiver sob efeito de Potência Divina.</p>",
+      "efeitos": [
+        {
+          "name": "Potência Divina",
+          "description": "<p>+5 em testes de ataque e rolagens de dano corpo a corpo e redução de dano 15.</p><p><strong>Não automatizado:</strong> aumento de tamanho e dos dados de dano (bordão 2d10, mordida 1d10); não pode lançar magias.</p>",
+          "system": {
+            "changes": [
+              {
+                "key": "system.modificadores.ataque.cac",
+                "value": 5,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              },
+              {
+                "key": "system.modificadores.dano.cac",
+                "value": 5,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              },
+              {
+                "key": "system.tracos.resistencias.dano.bonus",
+                "value": 15,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

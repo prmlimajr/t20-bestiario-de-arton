@@ -1,0 +1,93 @@
+{
+  "nome": "Rhayrachay",
+  "img": "assets/tokens/rhayrachay.png",
+  "nd": "11",
+  "tipo": "esp",
+  "tamanho": "gra",
+  "papel": "solo",
+  "atributos": {
+    "for": 7,
+    "des": 3,
+    "con": 5,
+    "int": -2,
+    "sab": 1,
+    "car": -2
+  },
+  "pv": 535,
+  "defesa": 41,
+  "pericias": {
+    "inic": 12,
+    "perc": 10,
+    "fort": 20,
+    "refl": 18,
+    "vont": 15,
+    "atle": 15
+  },
+  "deslocamento": {
+    "deslocamento": 12
+  },
+  "sentidos": [
+    "faro",
+    "escuro"
+  ],
+  "resistencias": {
+    "fogo": "imune",
+    "frio": "vulneravel",
+    "dano": 10
+  },
+  "resistenciasTexto": "imunidade a fogo, redução de dano 10/mágico, vulnerabilidade a frio",
+  "corpoACorpo": "Duas mordidas +34 (6d6+23 mais 6d6 fogo).",
+  "equipamento": "Cota de malha espinhosa.",
+  "tesouro": "2d4 doses de essência abissal (CD 26 para extrair).",
+  "notas": "<p><em>As criaturas que guardam o portão abissal são uma espécie de cães infernais, enormes e musculosos. Sua pelagem é castanho-avermelhada como ferrugem e suas presas, garras e língua são negras como carvão. Trajam cotas de malha negra, cobertas por espinhos, ornamentadas por pavorosos símbolos diabólicos.</em></p><p>Rhayrachay são o resultado do cruzamento de inúmeras gerações de cães do inferno em busca de uma raça aprimorada de feras de combate. Tão ferozes quanto seus descendentes, mas ainda mais fortes, resistentes e mortíferos, rhayrachay possuem um profundo instinto de luta, aprimorado por um rigoroso e intensivo adestramento de guerra. Seu treinamento inclui táticas de matilha aprimoradas e o uso de pesadas cotas de malha abissais.</p><p>Cães do inferno rhayrachay costumam ser criados e mantidos nos mundos dos deuses. Raramente são trazidos ou invocados para Arton. Quando isso ocorre, ou é por obra de algum abissal ou conjurador poderoso, ou é como resultado de uma invocação que deu terrivelmente errada.</p><p><strong>Redução de dano:</strong> 10/mágico.</p>",
+  "ataques": [
+    {
+      "arma": "Mordida",
+      "descricao": "duas mordidas",
+      "img": "icons/creatures/abilities/mouth-teeth-long-red.webp",
+      "qtd": 2,
+      "ataque": 34,
+      "dano": [
+        [
+          "6d6+23",
+          "perfuracao"
+        ],
+        [
+          "6d6",
+          "fogo"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Armadura Espinhosa",
+      "img": "systems/tormenta20/icons/poderes/ameacas/espinhos.webp",
+      "descricao": "<p>Se o rhayrachay agarrar ou for agarrado por uma criatura enquanto estiver trajando sua armadura, ele causa dano igual a sua Força (7) na criatura envolvida na manobra. Esse dano é causado quando a manobra é feita e no início de cada turno do rhayrachay, enquanto ela for mantida.</p>",
+      "danos": [
+        [
+          "7",
+          "perfuracao"
+        ]
+      ]
+    },
+    {
+      "poder": "Saliva Incendiária",
+      "img": "systems/tormenta20/icons/poderes/ameacas/queimar.webp",
+      "descricao": "<p>Uma criatura atingida pela mordida do rhayrachay fica em chamas. Se a criatura já está em chamas, em vez disso o dado de dano da condição aumenta em um passo.</p>"
+    },
+    {
+      "poder": "Sopro",
+      "img": "systems/tormenta20/icons/poderes/ameacas/cospe-chamas.webp",
+      "descricao": "<p>O rhayrachay cospe fogo em um cone de 6m. Criaturas na área sofrem 12d6+12 pontos de dano de fogo (Ref CD 31 reduz à metade). <em>Recarga (movimento).</em></p>",
+      "acao": "padrao",
+      "danos": [
+        [
+          "12d6+12",
+          "fogo"
+        ]
+      ],
+      "resistencia": "Reflexos CD 31 reduz à metade"
+    }
+  ]
+}

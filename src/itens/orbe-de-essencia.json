@@ -1,0 +1,13 @@
+{
+  "name": "Orbe de Essência",
+  "type": "consumivel",
+  "img": "systems/tormenta20/icons/itens/gerais/po-de-cristal.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>[Tesouro Especial]</strong></p><p>Encontrado nos restos de vórtices de mana (CD 31 para extrair). Cada orbe reduz em 1 PM o custo para fabricar um item mágico.</p>"
+    },
+    "source": "Bestiário de Arton",
+    "tipo": "material",
+    "qtd": 1
+  }
+}

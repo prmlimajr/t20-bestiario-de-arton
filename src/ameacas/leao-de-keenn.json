@@ -1,0 +1,123 @@
+{
+  "nome": "Leão-de-Keenn",
+  "img": "assets/tokens/leao-de-keenn.png",
+  "nd": "14",
+  "tipo": "mon",
+  "tamanho": "eno",
+  "papel": "solo",
+  "atributos": {
+    "for": 7,
+    "des": 2,
+    "con": 5,
+    "int": -4,
+    "sab": 1,
+    "car": -2
+  },
+  "pv": 700,
+  "defesa": 46,
+  "pericias": {
+    "inic": 15,
+    "perc": 14,
+    "fort": 28,
+    "refl": 22,
+    "vont": 14,
+    "atle": 20,
+    "furt": 15
+  },
+  "deslocamento": {
+    "deslocamento": 15
+  },
+  "sentidos": [
+    "faro",
+    "cegas"
+  ],
+  "sentidosExtra": "percepção às cegas (médio)",
+  "resistencias": {
+    "dano": 20
+  },
+  "imunidadeCondicoes": [
+    "atordoado",
+    "cansaco",
+    "metabolismo",
+    "veneno"
+  ],
+  "resistenciasTexto": "imunidade a atordoamento, cansaço, metabolismo e veneno, redução de dano 20/adamante",
+  "corpoACorpo": "Mordida +39 (6d6+27) e duas garras +39 (4d6+27).",
+  "tesouro": "Nenhum.",
+  "notas": "<p><em>A fera tem a forma de um enorme leão com quase 4 metros de comprimento. Seu dorso é marcado por longos espinhos e sua pele sem pelos é vermelha e reluzente, como se estivesse coberta de sangue. A cabeça não tem olhos ou ouvidos visíveis; apenas um focinho animalesco e uma bocarra repleta de dentes metálicos, brilhantes como as estrelas em uma noite escura.</em></p><p>Nativo de certos mundos dos deuses, o leão-de-Keenn é um caçador astuto, forte e ágil, adaptado aos rigores do Éter Divino. Além de ser resistente ao vácuo, não respira, não sente sede e nunca se cansa. Movido por um apetite insaciável, é capaz de predar e consumir praticamente qualquer criatura ou objeto existente. Apesar disso, entretanto, tem uma predileção por presas vivas e pela emoção da caça que elas propiciam.</p><p>Por sua resistência natural e apetite voraz, leões-de-Keenn acabaram se espalhando por diversos lugares e mundos. Hoje em dia, esses predadores podem ser encontrados nos mundos dos deuses de Chacina, Drashantyr, Skerry e Werra, bem como em asteroides desgarrados no Éter Divino. Em Arton, vivem principalmente nas Montanhas Sanguinárias, mas alguns poucos indivíduos já foram avistados em outras regiões.</p><p><strong>Redução de dano:</strong> 20/adamante.</p>",
+  "ataques": [
+    {
+      "arma": "Mordida",
+      "descricao": "mordida",
+      "img": "icons/creatures/abilities/mouth-teeth-long-red.webp",
+      "ataque": 39,
+      "dano": [
+        [
+          "6d6+27",
+          "perfuracao"
+        ]
+      ]
+    },
+    {
+      "arma": "Garras",
+      "descricao": "duas garras",
+      "img": "systems/tormenta20/icons/poderes/ameacas/garras.webp",
+      "qtd": 2,
+      "ataque": 39,
+      "dano": [
+        [
+          "4d6+27",
+          "corte"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Agarrar Aprimorado",
+      "img": "systems/tormenta20/icons/poderes/ameacas/agarrar.webp",
+      "descricao": "<p>Se o leão-de-Keenn acerta um ataque de mordida, pode fazer a manobra agarrar como uma ação livre (teste +44).</p>",
+      "acao": "livre"
+    },
+    {
+      "poder": "Bote",
+      "img": "systems/tormenta20/icons/poderes/ameacas/bote.webp",
+      "descricao": "<p>O leão-de-Keenn faz uma investida e ataca com sua mordida e suas duas garras. Os três ataques recebem o bônus de +2 da investida, mas devem ser feitos contra o mesmo alvo.</p>",
+      "acao": "completa"
+    },
+    {
+      "poder": "Dilacerar",
+      "img": "systems/tormenta20/icons/poderes/ameacas/dilacerar.webp",
+      "descricao": "<p>Se o leão-de-Keenn acerta os dois ataques de garra em uma mesma criatura no mesmo turno, causa mais 4d6+27 pontos de dano.</p>",
+      "danos": [
+        [
+          "4d6+27",
+          "corte"
+        ]
+      ]
+    },
+    {
+      "poder": "Engolir",
+      "img": "systems/tormenta20/icons/poderes/ameacas/engolir.webp",
+      "descricao": "<p>No início de cada um dos turnos do leão-de-Keenn, a criatura engolida sofre 4d8+18 pontos de dano de impacto mais 4d8+18 pontos de dano de ácido. Ela pode escapar causando um total de 75 pontos de dano a ele (Defesa 20).</p>",
+      "acao": "padrao",
+      "danos": [
+        [
+          "4d8+18",
+          "impacto"
+        ],
+        [
+          "4d8+18",
+          "acido"
+        ]
+      ]
+    },
+    {
+      "poder": "Rugido Aterrorizante",
+      "img": "systems/tormenta20/icons/poderes/ameacas/urro-selvagem.webp",
+      "descricao": "<p>Todas as criaturas em alcance longo ficam apavoradas (Von CD 38 muda para abaladas). <em>Recarga (movimento).</em></p>",
+      "acao": "padrao",
+      "resistencia": "Vontade CD 38 reduz"
+    }
+  ]
+}
