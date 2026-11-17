@@ -1,0 +1,81 @@
+{
+  "nome": "Grifilho",
+  "img": "assets/tokens/grifilho.png",
+  "nd": "1",
+  "tipo": "mon",
+  "tamanho": "min",
+  "papel": "solo",
+  "atributos": {
+    "for": -1,
+    "des": 2,
+    "con": 2,
+    "int": -4,
+    "sab": 2,
+    "car": 0
+  },
+  "pv": 28,
+  "defesa": 16,
+  "pericias": {
+    "inic": 6,
+    "perc": 6,
+    "fort": 2,
+    "refl": 10,
+    "vont": 4,
+    "furt": 11
+  },
+  "deslocamento": {
+    "deslocamento": 9,
+    "voo": 9
+  },
+  "sentidos": [
+    "escuro"
+  ],
+  "resistenciasTexto": "evasão, resistência a medo +2",
+  "corpoACorpo": "Mordida +9 (1d4+2) e duas garras +9 (1d4+2).",
+  "tesouro": "Nenhum.",
+  "notas": "<p><em>Inicialmente, a simpática criaturinha parece um filhote de grifo. Observando com mais atenção, porém, fica claro que se trata de outra espécie — em vez de traços de leão e águia, ela tem o corpo e as patas traseiras de um gato doméstico e as patas dianteiras, asas e cabeça de uma curiosa corujinha.</em></p><p>Assim como grifos, grifilhos combinam características físicas e comportamentais de dois hábeis predadores. Entretanto, são menos agressivos e possuem uma natureza muito mais curiosa e brincalhona que seus primos maiores, um traço que muitas vezes os coloca em apuros, mas que os leva a explorar as margens da civilização.</p><p>Em alguns casos, isso resulta em um grifilho “adotando” uma residência de forma muito semelhante ao que gatos domésticos fazem.</p><p>De fato, tal qual com gatos, é possível conquistar a amizade de um grifilho. Esses seres alados são muito valorizados como caçadores de pequenas pestes, vigias ou animais de estimação. Ganhar o coração de um deles, entretanto, não é tarefa fácil. Grifilhos prezam por liberdade e sua curiosidade instintiva frequentemente os leva a alçar voo e passar horas, ou dias, explorando as cercanias e além. No entanto, se bem tratados, sempre retornam para aqueles que consideram sua família.</p><p><strong>Familiar:</strong> o grifilho permite gastar 1 PM, quando você lança uma magia com alcance de toque, para receber +2 na CD dessa magia.</p><p><strong>Parceiro:</strong> veja o poder “Parceiro: Grifilho” no compêndio de parceiros deste módulo.</p>",
+  "ataques": [
+    {
+      "arma": "Mordida",
+      "descricao": "mordida",
+      "img": "icons/creatures/abilities/mouth-teeth-long-red.webp",
+      "ataque": 9,
+      "dano": [
+        [
+          "1d4+2",
+          "perfuracao"
+        ]
+      ]
+    },
+    {
+      "arma": "Garras",
+      "descricao": "duas garras",
+      "qtd": 2,
+      "ataque": 9,
+      "dano": [
+        [
+          "1d4+2",
+          "corte"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Evasão",
+      "img": "systems/tormenta20/icons/poderes/classes/especialistas/evasao.webp",
+      "descricao": "<p>Quando sofre um efeito que permite um teste de Reflexos para reduzir o dano à metade, o grifilho não sofre dano algum se passar.</p>"
+    },
+    {
+      "poder": "Resistência a Medo",
+      "img": "systems/tormenta20/icons/poderes/ameacas/resistencia-magia.webp",
+      "descricao": "<p>O grifilho recebe +2 em testes de resistência contra medo.</p>"
+    },
+    {
+      "poder": "Bote",
+      "img": "systems/tormenta20/icons/poderes/ameacas/bote.webp",
+      "descricao": "<p>O grifilho faz uma investida e ataca com sua mordida e suas duas garras. Os três ataques recebem o bônus de +2 da investida, mas devem ser feitos contra o mesmo alvo.</p>",
+      "acao": "completa"
+    }
+  ]
+}

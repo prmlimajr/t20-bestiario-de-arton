@@ -1,0 +1,87 @@
+{
+  "nome": "Gárgula de Topiária Grande",
+  "img": "assets/tokens/gargula-de-topiaria-grande.png",
+  "nd": "6",
+  "tipo": "con",
+  "tamanho": "gra",
+  "papel": "lackey",
+  "atributos": {
+    "for": 7,
+    "des": 2,
+    "con": 3,
+    "int": 0,
+    "sab": 1,
+    "car": -5
+  },
+  "pv": 50,
+  "defesa": 26,
+  "pericias": {
+    "inic": 7,
+    "perc": 6,
+    "fort": 12,
+    "refl": 17,
+    "vont": 7,
+    "furt": 7
+  },
+  "deslocamento": {
+    "deslocamento": 9,
+    "escalada": 9
+  },
+  "sentidos": [
+    "escuro"
+  ],
+  "resistencias": {
+    "fogo": "vulneravel"
+  },
+  "imunidadeCondicoes": [
+    "sangrando"
+  ],
+  "resistenciasTexto": "fortificação 25%, imunidade a sangramento, natureza vegetal, vulnerabilidade a fogo",
+  "corpoACorpo": "Duas pancadas +24 (4d6+18).",
+  "aDistancia": "Espinhos x2 +24 (2d6+9 perfuração, alcance curto).",
+  "tesouro": "Nenhum.",
+  "notas": "<p><em>O enorme arbusto foi moldado e podado cuidadosamente para assumir a forma de um imponente grifo. Uma escultura viva, impressiona pela beleza e esmero. Mas ela se torna ainda mais impressionante quando começa a se mover ameaçadoramente em direção aos invasores do jardim.</em></p><p>Nos jardins dos nobres e ricos de Arton, é possível encontrar elaboradas esculturas vegetais chamadas de topiárias. Jardineiros versados nessa arte cultivam, podam e trabalham arbustos e árvores para que assumam formas belas e requintadas. Nos jardins dos verdadeiramente abastados e poderosos, entretanto, essas esculturas podem ser mais do que simples vegetais esculpidos: são construtos mágicos projetados para defender a propriedade e atacar invasores.</p><p>Gárgulas de topiária podem ter várias formas e tamanhos, desde arbustos esculpidos em formatos geométricos até réplicas vegetais de grandes animais. Sua forma, entretanto, sempre será adequada à estética do jardim onde foram criadas: uma característica importante para que contribuam com a beleza do local e, ao mesmo tempo, surpreendam quaisquer invasores.</p><p>Cada gárgula de topiária é magicamente vinculada ao jardim no qual foi criada. Assim, é extremamente improvável encontrar uma dessas criaturas vagando por aí. Por outro lado, há inúmeros casos de jardins abandonados por seus donos, por qualquer motivo, e que continuam sendo protegidos por suas gárgulas.</p><p><strong>Furtividade:</strong> +7 (+12 em áreas de vegetação, como jardins). <strong>Inteligência:</strong> — (registrada como 0 na ficha).</p>",
+  "ataques": [
+    {
+      "arma": "Pancada",
+      "descricao": "duas pancadas",
+      "img": "systems/tormenta20/icons/poderes/ameacas/pancada.webp",
+      "qtd": 2,
+      "ataque": 24,
+      "dano": [
+        [
+          "4d6+18",
+          "impacto"
+        ]
+      ]
+    },
+    {
+      "arma": "Espinhos",
+      "descricao": "espinhos x2",
+      "img": "systems/tormenta20/icons/poderes/ameacas/espinhos.webp",
+      "qtd": 2,
+      "ataque": 24,
+      "alcance": "short",
+      "dano": [
+        [
+          "2d6+9",
+          "perfuracao"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Amontoado Vegetal",
+      "img": "systems/tormenta20/icons/poderes/ameacas/voz-da-natureza.webp",
+      "descricao": "<p>Quando a gárgula de topiária grande sofre um ataque corpo a corpo, o atacante deve fazer um teste de Luta ou Reflexos (CD 22). Se falhar, o ataque não causa dano e parte do corpo da gárgula se enrosca na arma usada: se o atacante usou uma arma empunhada, ela é desarmada e tragada pela gárgula; se usou um ataque desarmado ou uma arma natural, o atacante é agarrado pela gárgula (a gárgula pode manter apenas uma criatura agarrada dessa forma por vez). Uma criatura pode recuperar uma arma tragada dessa forma vencendo uma manobra desarmar contra a gárgula.</p>",
+      "acao": "reacao",
+      "resistencia": "Luta ou Reflexos CD 22 evita"
+    },
+    {
+      "poder": "Imobilidade",
+      "img": "systems/tormenta20/icons/poderes/ameacas/forma.webp",
+      "descricao": "<p>Uma gárgula de topiária pode permanecer completamente imóvel. Se ela estiver assim, um personagem deve passar num teste de Percepção (CD 35) para perceber que ela é uma criatura e não uma escultura vegetal.</p>"
+    }
+  ]
+}

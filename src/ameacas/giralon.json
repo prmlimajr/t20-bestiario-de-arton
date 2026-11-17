@@ -1,0 +1,65 @@
+{
+  "nome": "Giralon",
+  "img": "assets/tokens/giralon.png",
+  "nd": "5",
+  "tipo": "ani",
+  "tamanho": "gra",
+  "papel": "solo",
+  "atributos": {
+    "for": 6,
+    "des": 2,
+    "con": 3,
+    "int": -4,
+    "sab": 1,
+    "car": -2
+  },
+  "pv": 160,
+  "defesa": 23,
+  "pericias": {
+    "inic": 6,
+    "perc": 7,
+    "fort": 16,
+    "refl": 10,
+    "vont": 4,
+    "atle": 12,
+    "furt": 4
+  },
+  "deslocamento": {
+    "deslocamento": 9,
+    "escalada": 6
+  },
+  "sentidos": [
+    "penumbra"
+  ],
+  "corpoACorpo": "Quatro pancadas +17 (1d6+6).",
+  "tesouro": "Nenhum.",
+  "notas": "<p><em>Os arbustos se abrem violentamente, revelando a chegada do que parece ser um grande gorila de pelagem vermelha e espessa. A criatura, entretanto, ostenta dois pares de braços, que bate contra o peito ferozmente para exibir sua poderosa musculatura e deixar clara sua dominância sobre a região.</em></p><p>Ao contrário de muitos primatas, giralons são criaturas solitárias e territorialistas. Não toleram nenhuma outra criatura de grande porte em seu território de caça; mesmo outros giralons são expulsos de forma violenta — somente durante a época de acasalamento eles aceitam a presença de outros de sua espécie.</p><p>Embora esse instinto territorialista contribua para manter a população de giralons reduzida, também faz com que qualquer encontro com uma dessas feras seja agressivo. Não são poucos os viajantes e exploradores que adentraram sem saber o território de um giralon, apenas para serem recebidos com uma violenta chuva de golpes.</p><p>Apesar de sua selvageria, giralons são combatentes astutos. Quando percebem um “intruso” em seu território, aproximam-se furtivamente, tentando emboscar o inimigo. Quando enfrentam vários oponentes, tentam agarrar aquele que parece mais fraco, arrastando a vítima para longe para matá-la com seus golpes potentes. Se forçado a lutar contra vários oponentes ao mesmo tempo, o giralon se concentra em um oponente por vez.</p><p>Giralons habitam florestas e regiões montanhosas, onde o terreno pode servir de abrigo e camuflagem. No passado, foram muito apreciados como oponentes nas arenas tapistanas, e diversos indivíduos foram capturados e levados para o Império de Tauron. Alguns conseguiram escapar, enquanto outros foram soltos após sua ferocidade se mostrar incontrolável. Graças a isso, hoje giralons podem ser encontrados pelos ermos do Império.</p>",
+  "ataques": [
+    {
+      "arma": "Pancada",
+      "descricao": "quatro pancadas",
+      "img": "systems/tormenta20/icons/poderes/ameacas/pancada.webp",
+      "qtd": 4,
+      "ataque": 17,
+      "dano": [
+        [
+          "1d6+6",
+          "impacto"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Agarrar Aprimorado",
+      "img": "systems/tormenta20/icons/poderes/ameacas/agarrar.webp",
+      "descricao": "<p>Se o giralon acerta um ataque de pancada, pode fazer a manobra agarrar como uma ação livre (teste +19).</p>",
+      "acao": "livre"
+    },
+    {
+      "poder": "Pancadas Sequenciais",
+      "img": "systems/tormenta20/icons/poderes/ameacas/pancada.webp",
+      "descricao": "<p>Para cada ataque de pancada que o giralon acerta em uma criatura, o dano de seus próximos ataques de pancada contra essa mesma criatura neste turno aumenta em um passo.</p>"
+    }
+  ]
+}

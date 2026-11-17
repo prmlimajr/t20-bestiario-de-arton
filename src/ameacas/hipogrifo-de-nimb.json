@@ -1,0 +1,205 @@
+{
+  "nome": "Hipogrifo de Nimb",
+  "img": "assets/tokens/hipogrifo-de-nimb.png",
+  "nd": "15",
+  "tipo": "esp",
+  "raca": "celestial",
+  "tamanho": "gra",
+  "papel": "solo",
+  "atributos": {
+    "for": 7,
+    "des": 5,
+    "con": 5,
+    "int": 2,
+    "sab": 2,
+    "car": 5
+  },
+  "pv": 750,
+  "pm": 52,
+  "defesa": 50,
+  "pericias": {
+    "inic": 20,
+    "perc": 17,
+    "fort": 15,
+    "refl": 28,
+    "vont": 22,
+    "acro": 20,
+    "atle": 22,
+    "enga": 20,
+    "reli": 17
+  },
+  "deslocamento": {
+    "deslocamento": 15,
+    "voo": 36
+  },
+  "sentidos": [
+    "escuro"
+  ],
+  "resistencias": {
+    "dano": 10
+  },
+  "imunidadeCondicoes": [
+    "mental",
+    "metamorfose",
+    "movimento"
+  ],
+  "imunidadeOutras": "adivinhação, encantamento",
+  "resistenciasTexto": "imunidade a efeitos de adivinhação, encantamento, metamorfose, mentais e movimento, redução de dano 10, resistência a magia +5",
+  "corpoACorpo": "Mordida +39 (4d10+25) e duas garras +39 (2d8+25) ou cascos +39 (4d8+25).",
+  "tesouro": "Nenhum.",
+  "notas": "<p><em>O animal lembra um grande garanhão selvagem, mas com cabeça, asas e garras dianteiras de águia. Tem pelagem castanho-escura, com asas e patas negras. A cauda e crina selvagens, revoltas, parecem se agitar com vida própria.</em></p><p>Por toda a existência de Arton, pégasos e hipogrifos não eram seres nativos do mundo. Pelo contrário, havia apenas uma de cada dessas criaturas: o Pégaso, corcel sagrado de Khalmyr, e o Hipogrifo, montaria divina de Nimb.</p><p>Depois que Khalmyr perdeu a liderança do Panteão, entretanto, começaram a surgir em Arton pégasos “normais”. Não se sabe ao certo qual a relação entre os dois eventos, mas é evidente que o Pégaso de Khalmyr está de alguma forma conectado a isso.</p><p>Logo depois, vieram os hipogrifos.</p><p>Os sábios discutem várias teorias sobre o surgimento de hipogrifos em Arton. Alguns acreditam que exista uma ligação ainda mais forte entre Khalmyr e Nimb, que teria feito com que as montarias de ambos os deuses fossem afetadas da mesma forma. Outros teorizam que as mudanças recentes no Panteão criaram uma breve janela durante a qual o Hipogrifo original espalhou seus descendentes pelo mundo. Há também aqueles que enxergam certo equilíbrio cósmico nesse evento — uma crença reforçada pelo surgimento simultâneo de hipogrifos abissais, versões espirituais sombrias de hipogrifos que seriam a contraparte dos pégasos celestiais. Por fim, há quem acredite que tudo não passa de mais uma decisão aleatória (ou não) de Nimb.</p><p>Qualquer que seja a razão, o fato é que agora existem hipogrifos em Arton. Estes seres alados lembram um pouco os grifos, mas sua cabeça é mais afinada, como a de um falcão, e seu corpo possui as características de um cavalo. Hipogrifos são levemente mais fracos e um pouco mais rápidos que grifos, mas partilham o mesmo apetite voraz.</p><p>Como criaturas recém-introduzidas em Arton, hipogrifos ainda estão em busca de seu lugar. Muitos têm procurado se estabelecer em lugares elevados, como montanhas e florestas de árvores gigantes. Nestes locais, entretanto, disputam espaço com grifos e águias gigantes. Outros têm sido vistos, paradoxalmente, assumindo a liderança de manadas de cavalos, transformando suas antigas presas em aliados e companhias.</p><p>Assim como no mundo selvagem, os hipogrifos ainda não foram completamente assimilados pelo mundo civilizado. Povos e organizações que costumeiramente domam montarias aladas, como certas tribos das Montanhas Sanguinárias e algumas ordens de cavalaria, estão aos poucos aprendendo a domesticar e treinar hipogrifos. Por isso, ainda é raro ver esses poderosos animais empregados como montaria.</p><p>O Hipogrifo original, a montaria sagrada de Nimb, continua servindo a seu mestre. De tempos em tempos, ele surge em Arton para cumprir algum desígnio do Deus do Caos, como na ocasião em que serviu de montaria para Dee.</p><p><strong>Pontos de Mana:</strong> 5d20 (rolados a cada aparição; a ficha usa a média, 52). Use o poder “Pontos de Mana (5d20)” para rolar.</p><p><strong>Parceiro:</strong> veja o poder “Montaria: Hipogrifo de Nimb” no compêndio de parceiros deste módulo.</p>",
+  "ataques": [
+    {
+      "arma": "Mordida",
+      "descricao": "mordida",
+      "img": "icons/creatures/abilities/mouth-teeth-long-red.webp",
+      "ataque": 39,
+      "dano": [
+        [
+          "4d10+25",
+          "perfuracao"
+        ]
+      ]
+    },
+    {
+      "arma": "Garras",
+      "descricao": "duas garras",
+      "qtd": 2,
+      "ataque": 39,
+      "dano": [
+        [
+          "2d8+25",
+          "corte"
+        ]
+      ]
+    },
+    {
+      "arma": "Cascos",
+      "descricao": "cascos (em vez de mordida e garras)",
+      "img": "systems/tormenta20/icons/poderes/ameacas/cascos.webp",
+      "ataque": 39,
+      "dano": [
+        [
+          "4d8+25",
+          "impacto"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Resistência a Magia",
+      "img": "systems/tormenta20/icons/poderes/ameacas/resistencia-magia.webp",
+      "descricao": "<p>o Hipogrifo recebe +5 em testes de resistência contra magias.</p>"
+    },
+    {
+      "poder": "Pontos de Mana (5d20)",
+      "img": "systems/tormenta20/icons/poderes/ameacas/magias.webp",
+      "descricao": "<p>Os PM do Hipogrifo de Nimb são 5d20. Role ao início do encontro e ajuste os PM da ficha.</p>",
+      "danos": [
+        [
+          "5d20",
+          "",
+          "PM"
+        ]
+      ]
+    },
+    {
+      "poder": "Alterar Forma",
+      "img": "systems/tormenta20/icons/magias/metamorfose.webp",
+      "descricao": "<p>O Hipogrifo de Nimb assume a forma de um humano com vestes leves e coloridas, como a magia @UUID[Compendium.tormenta20.magias.Item.Mv8Lzi5PEklOW36c]{Metamorfose} (mas apenas para essa forma e tamanho). Nessa forma ele perde seu deslocamento de voo, mas mantém suas outras habilidades. Ele pode voltar a sua forma normal com uma ação padrão.</p>",
+      "acao": "padrao"
+    },
+    {
+      "poder": "Armas da Desordem",
+      "img": "systems/tormenta20/icons/poderes/ameacas/ataque-corte.webp",
+      "descricao": "<p>As armas naturais do Hipogrifo são armas mágicas que causam +2d6 pontos de dano contra criaturas que <em>não</em> estejam sob algum efeito de metamorfose.</p>",
+      "danos": [
+        [
+          "2d6",
+          "",
+          "Armas da Desordem"
+        ]
+      ]
+    },
+    {
+      "poder": "Coice",
+      "img": "systems/tormenta20/icons/poderes/ameacas/cascos.webp",
+      "descricao": "<p>Se estiver flanqueado, o Hipogrifo faz um ataque com seus cascos.</p>",
+      "acao": "movimento"
+    },
+    {
+      "poder": "Imortal",
+      "img": "systems/tormenta20/icons/poderes/ameacas/ergam-se.webp",
+      "descricao": "<p>Caso o Hipogrifo seja morto ou destruído de qualquer forma, Nimb irá ressuscitá-lo em 1d4 dias. Apenas Nimb pode destruí-lo permanentemente.</p>"
+    },
+    {
+      "poder": "Magia Acelerada",
+      "img": "systems/tormenta20/icons/poderes/ameacas/magias.webp",
+      "descricao": "<p>Uma vez por rodada, quando lança uma magia com execução de ação de movimento, padrão ou completa, o Hipogrifo muda a execução dela para livre.</p>",
+      "acao": "livre",
+      "custo": 4
+    },
+    {
+      "poder": "Maldição da Insanidade",
+      "img": "systems/tormenta20/icons/magias/sussurros-insanos.webp",
+      "descricao": "<p>Caso uma criatura monte o Hipogrifo, sofrerá os efeitos da magia @UUID[Compendium.tormenta20.magias.Item.s9z7z8KtujpICCZw]{Sussurros Insanos} (Von CD 40 evita; devotos de Khalmyr sofrem –5 nesse teste). O Hipogrifo pode anular esse efeito para criaturas que ele aceite como cavaleiros.</p>",
+      "resistencia": "Vontade CD 40 evita"
+    },
+    {
+      "poder": "Sorte dos Loucos",
+      "img": "systems/tormenta20/icons/poderes/ameacas/percepcao-temporal.webp",
+      "descricao": "<p>Quando faz um teste, o Hipogrifo pode rolá-lo novamente (ele pode fazer isso mais de uma vez por teste). Se ainda assim falhar, ele perde 1d6 PM para cada vez que utilizou este poder neste teste.</p>",
+      "acao": "livre",
+      "custo": 1,
+      "danos": [
+        [
+          "1d6",
+          "",
+          "PM perdidos (por uso)"
+        ]
+      ]
+    },
+    {
+      "poder": "Magias",
+      "img": "systems/tormenta20/icons/poderes/ameacas/magias.webp",
+      "descricao": "<p>Como um clérigo de Nimb de 15º nível (CD 40).</p>"
+    },
+    {
+      "poder": "Despedaçar",
+      "acao": "padrao",
+      "custo": 15,
+      "img": "systems/tormenta20/icons/magias/despedacar.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.I177NeKSwiAn8vz5]{Despedaçar} (Padrão, 15 PM). Um alvo em alcance curto sofre 8d8+16 pontos de dano de impacto se for uma criatura, ou o dobro disso sem aplicar RD se for um construto ou um objeto mundano Pequeno, e fica atordoado (Fort reduz à metade e evita a condição). Uma criatura só pode ficar atordoada por esta magia uma vez por cena.</p>",
+      "danos": [
+        [
+          "8d8+16",
+          "impacto"
+        ]
+      ],
+      "resistencia": "Fortitude CD 40 reduz à metade e evita"
+    },
+    {
+      "poder": "Dificultar Detecção",
+      "acao": "padrao",
+      "custo": 1,
+      "img": "systems/tormenta20/icons/magias/dificultar-deteccao.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.9XKOzJxNtF5dPH6B]{Dificultar Detecção} (Padrão, 1 PM). Uma criatura (incluindo seu equipamento) ou objeto em alcance de toque é ocultado contra qualquer meio mágico de detecção, inclusive detectar magia, por 1 dia. Um conjurador que lance uma magia de adivinhação para detectar a presença ou localização do alvo deve fazer um teste de Vontade. Se falhar, a magia não funciona, mas os PM são gastos mesmo assim.</p>"
+    },
+    {
+      "poder": "Sussurros Insanos",
+      "acao": "padrao",
+      "custo": 12,
+      "img": "systems/tormenta20/icons/magias/sussurros-insanos.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.s9z7z8KtujpICCZw]{Sussurros Insanos} (Padrão, 12 PM). Até 4 criaturas em alcance curto ficam confusas (Von evita).</p>",
+      "resistencia": "Vontade CD 40 evita"
+    },
+    {
+      "poder": "Viagem Planar",
+      "acao": "padrao",
+      "custo": 12,
+      "img": "systems/tormenta20/icons/magias/viagem-planar.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.3rR4d2fWU6uIqVNv]{Viagem Planar} (Padrão, 12 PM). O Hipogrifo e até 5 criaturas voluntárias que ele esteja tocando viajam para outro Plano.</p>"
+    }
+  ]
+}

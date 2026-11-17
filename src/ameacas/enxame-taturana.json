@@ -1,0 +1,78 @@
+{
+  "nome": "Enxame Taturana",
+  "img": "assets/tokens/enxame-taturana.png",
+  "nd": "4",
+  "tipo": "mon",
+  "tamanho": "eno",
+  "papel": "solo",
+  "atributos": {
+    "for": 3,
+    "des": 1,
+    "con": 2,
+    "int": -5,
+    "sab": 1,
+    "car": -4
+  },
+  "pv": 140,
+  "defesa": 23,
+  "pericias": {
+    "inic": 5,
+    "perc": 5,
+    "fort": 10,
+    "refl": 16,
+    "vont": 4
+  },
+  "deslocamento": {
+    "deslocamento": 6,
+    "voo": 9
+  },
+  "sentidos": [
+    "escuro"
+  ],
+  "resistenciasTexto": "vulnerabilidade a veneno",
+  "corpoACorpo": "Enxame 4d6 pontos de dano de perfuração.",
+  "tesouro": "Padrão.",
+  "notas": "<p><em>Os pequenos insetos felpudos com asas aveludadas, semelhantes às de uma mariposa, parecem inofensivos. De certa forma, até simpáticos. Basta que um deles seja ameaçado, entretanto, para que inúmeros outros sejam atraídos, formando um enxame enorme que ataca agressivamente qualquer outra criatura ao seu redor.</em></p><p>Individualmente, besouros taturana são praticamente inofensivos — alimentam-se de fungos e carniça. Em Doherimm, as crianças anãs apreciam brincar com esses bichinhos devido à sua aparência um tanto fofinha e certa paciência em ser manuseados. Essa paciência, contudo, termina ao menor sinal de risco. Em especial, matar um desses insetos coloca todos os demais em um frenesi defensivo — quando isso ocorre, todos os besouros taturana nas cercanias se reúnem e assumem a forma de um enxame agressivo que ataca todas as demais criaturas próximas. O tamanho do enxame e o perigo que ele representa dependem de quantos besouros há na região. Há relatos de um enxame com centenas de milhares desses insetos que teria se formado no Império Trollkyrka e destruído uma comunidade inteira, devorando até mesmo os trolls em seu caminho.</p><p><strong>Vulnerabilidade a veneno:</strong> o sistema não tem dano de veneno; aplique manualmente.</p>",
+  "habilidades": [
+    {
+      "poder": "Enxame",
+      "img": "systems/tormenta20/icons/poderes/ameacas/ferrao.webp",
+      "descricao": "<p>No fim de cada um de seus turnos, o enxame causa 4d6 pontos de dano de perfuração a qualquer criatura em seu espaço. Some +1 no dano para cada 10 PV totais do enxame (Força dos Números).</p>",
+      "danos": [
+        [
+          "4d6",
+          "perfuracao",
+          "Enxame"
+        ]
+      ]
+    },
+    {
+      "poder": "Convergência de Besouros",
+      "img": "systems/tormenta20/icons/poderes/ameacas/ergam-se.webp",
+      "descricao": "<p>Quando sofre dano, o enxame taturana atrai outros besouros taturana das cercanias. Pelas próximas 2d4 rodadas, o enxame recebe +10 PV no início de cada um dos seus turnos. O enxame só pode usar esta habilidade uma vez por cena.</p>",
+      "acao": "reacao",
+      "danos": [
+        [
+          "2d4",
+          "",
+          "Rodadas"
+        ],
+        [
+          "10",
+          "curapv",
+          "PV por turno"
+        ]
+      ]
+    },
+    {
+      "poder": "Entrar nas Roupas",
+      "img": "systems/tormenta20/icons/poderes/ameacas/ferrao.webp",
+      "descricao": "<p>Quando uma criatura sai do espaço do enxame taturana, alguns besouros ficam alojados em suas vestes. A criatura continua sofrendo metade do dano de Enxame até gastar uma ação de movimento por item que estiver vestindo para se livrar dos besouros.</p>"
+    },
+    {
+      "poder": "Força dos Números",
+      "img": "systems/tormenta20/icons/poderes/ameacas/taticas-alcateia.webp",
+      "descricao": "<p>O enxame recebe +1 em rolagens de dano para cada 10 PV totais que possui.</p>"
+    }
+  ]
+}

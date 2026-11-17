@@ -1,0 +1,16 @@
+{
+  "name": "Língua Amaldiçoada",
+  "type": "consumivel",
+  "img": "systems/tormenta20/icons/itens/gerais/componentes-materiais.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>[Catalisador]</strong></p><p>Estas línguas esbranquiçadas só podem ser obtidas do cadáver de uma fera-da-desgraça e não podem ser fabricadas normalmente. Uma língua amaldiçoada fornece +2 na CD de magias de necromancia e, se usada para lançar @UUID[Compendium.tormenta20.magias.Item.fmGirvluTr0RMZvE]{Rogar Maldição}, também diminui seu custo em –2 PM.</p><p><strong>Catalisador • T$ 150 • 0,5 Espaço</strong></p>"
+    },
+    "source": "Bestiário de Arton",
+    "tipo": "material",
+    "qtd": 1,
+    "preco": 150,
+    "peso": 0.5,
+    "espacos": 0.5
+  }
+}

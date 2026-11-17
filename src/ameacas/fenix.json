@@ -1,0 +1,138 @@
+{
+  "nome": "Fênix",
+  "img": "assets/tokens/fenix.png",
+  "nd": "10",
+  "tipo": "esp",
+  "tamanho": "peq",
+  "papel": "solo",
+  "atributos": {
+    "for": 0,
+    "des": 3,
+    "con": 3,
+    "int": 2,
+    "sab": 3,
+    "car": 5
+  },
+  "pv": 390,
+  "defesa": 35,
+  "pericias": {
+    "inic": 12,
+    "perc": 12,
+    "fort": 14,
+    "refl": 18,
+    "vont": 16,
+    "conh": 11,
+    "dipl": 14,
+    "intu": 12,
+    "mist": 11,
+    "reli": 12
+  },
+  "deslocamento": {
+    "deslocamento": 6,
+    "voo": 18
+  },
+  "sentidos": [
+    "escuro"
+  ],
+  "resistencias": {
+    "fogo": "imune",
+    "dano": 10
+  },
+  "imunidadeCondicoes": [
+    "medo"
+  ],
+  "imunidadeOutras": "doenças",
+  "resistenciasTexto": "evasão, redução de dano 10/trevas, imunidade a doenças, fogo e medo",
+  "corpoACorpo": "Mordida +28 (2d10+15 mais 2d6 fogo) e duas garras +28 (2d8+15).",
+  "tesouro": "Uma porção de cinzas de fênix (CD 25 para extrair, vale 1 PM para fabricar um item mágico relacionado a fogo, como uma arma com o encanto <em>flamejante</em> ou uma <em>besta explosiva</em>) e 1d3 penas de fênix (CD 25 para extrair; só podem ser extraídas por um personagem que esteja adjacente à fênix quando ela morrer e que abra mão do teste de resistência contra o sacrifício dela).",
+  "notas": "<p><em>O pássaro de fogo abre suas asas flamejantes, emanando calor sagrado ao seu redor. Mesmo sob as chamas, é possível ver que a criatura se assemelha a uma águia, mas com penas vermelhas, amarelas e alaranjadas, e olhos brilhantes como rubis.</em></p><p>Símbolo dos principais preceitos de Thyatis — segundas chances e ressurreição —, fênix são aves lendárias nativas de Pyra que atuam como ferrenhas defensoras do bem e da ordem. Raramente vêm para Arton, mas, quando o fazem, geralmente são movidas pela presença de criaturas malignas. Fênix são espíritos valentes e poderosos, que não temem nenhum adversário e não medem esforços em sua luta contra o mal. Se necessário, vão sacrificar a própria vida para proteger os inocentes e bondosos e derrotar seus inimigos.</p><p>Para uma fênix, a morte não é o fim, mas sim um recomeço — uma dádiva do Deus da Ressurreição. De fato, as fênix só conseguem se reproduzir através de sacrifícios heroicos. Quando uma dessas criaturas morre, ela explode em chamas que dão origem a filhotes de fênix. Essas criaturas nascem com todas as memórias de sua genitora, prontas para dar continuidade ao legado de suas antecessoras.</p><p>Embora sejam campeãs do bem, fênix são perseguidas por caçadores inescrupulosos, motivados pelo potencial mágico de suas penas. Tais componentes carregam uma porção da essência flamejante da ave, que pode ser empregada na fabricação de diversos itens mágicos relacionados ao fogo.</p><p><strong>Redução de dano:</strong> 10/trevas.</p>",
+  "ataques": [
+    {
+      "arma": "Mordida",
+      "descricao": "mordida",
+      "img": "icons/creatures/abilities/mouth-teeth-long-red.webp",
+      "ataque": 28,
+      "dano": [
+        [
+          "2d10+15",
+          "perfuracao"
+        ],
+        [
+          "2d6",
+          "fogo"
+        ]
+      ]
+    },
+    {
+      "arma": "Garras",
+      "descricao": "duas garras",
+      "qtd": 2,
+      "ataque": 28,
+      "dano": [
+        [
+          "2d8+15",
+          "corte"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Evasão",
+      "img": "systems/tormenta20/icons/poderes/classes/especialistas/evasao.webp",
+      "descricao": "<p>Quando sofre um efeito que permite um teste de Reflexos para reduzir o dano à metade, a fênix não sofre dano algum se passar.</p>"
+    },
+    {
+      "poder": "Armas Abençoadas",
+      "img": "systems/tormenta20/icons/poderes/ameacas/aura-de-calor.webp",
+      "descricao": "<p>As armas naturais da fênix são consideradas mágicas e sagradas; elas causam +2d8 pontos de dano contra devotos de deuses que canalizam apenas energia negativa e criaturas malignas (a critério do mestre).</p>",
+      "danos": [
+        [
+          "2d8",
+          "",
+          "Contra malignos"
+        ]
+      ]
+    },
+    {
+      "poder": "Ressurreição",
+      "img": "systems/tormenta20/icons/poderes/ameacas/ergam-se.webp",
+      "descricao": "<p>Após a explosão causada pelo sacrifício da fênix, de seus restos mortais surgem 1d4+1 filhotes de fênix, que possuem todas as lembranças de sua “mãe”.</p>",
+      "danos": [
+        [
+          "1d4+1",
+          "",
+          "Filhotes"
+        ]
+      ]
+    },
+    {
+      "poder": "Sacrifício",
+      "img": "systems/tormenta20/icons/poderes/ameacas/cospe-chamas.webp",
+      "descricao": "<p>Quando a fênix é reduzida a 0 PV, ela explode em uma imensa bola de fogo que atinge um raio de 6m. Criaturas nessa área sofrem 14d6+14 pontos de dano de fogo (Ref CD 30 reduz à metade).</p>",
+      "acao": "reacao",
+      "danos": [
+        [
+          "14d6+14",
+          "fogo"
+        ]
+      ],
+      "resistencia": "Reflexos CD 30 reduz à metade"
+    },
+    {
+      "poder": "Telepatia Inata",
+      "img": "systems/tormenta20/icons/poderes/ameacas/percepcao-temporal.webp",
+      "descricao": "<p>A fênix pode se comunicar telepaticamente com qualquer criatura a até 9m de distância.</p>"
+    },
+    {
+      "poder": "Visão Flamejante",
+      "img": "systems/tormenta20/icons/magias/visao-mistica.webp",
+      "descricao": "<p>A fênix está permanentemente sob efeito da magia @UUID[Compendium.tormenta20.magias.Item.GDlkTth7oEnb5d0Y]{Visão Mística} com o aprimoramento que permite enxergar criaturas e objetos invisíveis.</p>"
+    }
+  ],
+  "itens": [
+    {
+      "ref": "penas-de-fenix"
+    }
+  ]
+}

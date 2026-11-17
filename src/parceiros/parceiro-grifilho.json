@@ -1,0 +1,109 @@
+{
+  "name": "Parceiro: Grifilho",
+  "type": "poder",
+  "img": "assets/tokens/grifilho.png",
+  "system": {
+    "description": {
+      "value": "<p>O grifilho é um parceiro especial (perseguidor) que fornece os benefícios a seguir.</p>\n<p><strong>Iniciante</strong>: você recebe +2 em Furtividade e Percepção.</p>\n<p><strong>Veterano</strong>: você pode usar @UUID[Compendium.tormenta20.poderes.Item.3EiA3eznoTFyi0pP]{Esquiva} (se já possuir esse poder, em vez disso o bônus fornecido por ele aumenta em +1).</p>\n<p><strong>Mestre</strong>: quando faz uma investida, você causa +3d4 pontos de dano.</p>\n<p><strong>Familiar</strong>: o grifilho permite gastar 1 PM, quando você lança uma magia com alcance de toque, para receber +2 na CD dessa magia.</p>"
+    },
+    "source": "Bestiário de Arton",
+    "tipo": "geral",
+    "subtipo": "Parceiros"
+  },
+  "effects": [
+    {
+      "name": "Parceiro: Grifilho Iniciante",
+      "description": "<p>+2 em Furtividade e Percepção.</p>",
+      "system": {
+        "changes": [
+          {
+            "key": "system.pericias.furt.bonus",
+            "value": 2,
+            "priority": null,
+            "type": "add",
+            "phase": "initial"
+          },
+          {
+            "key": "system.pericias.perc.bonus",
+            "value": 2,
+            "priority": null,
+            "type": "add",
+            "phase": "initial"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Parceiro: Grifilho Veterano",
+      "description": "<p>+2 em Furtividade e Percepção.</p><p><strong>Não automatizado:</strong> Esquiva (ou +1 no bônus de Esquiva).</p>",
+      "system": {
+        "changes": [
+          {
+            "key": "system.pericias.furt.bonus",
+            "value": 2,
+            "priority": null,
+            "type": "add",
+            "phase": "initial"
+          },
+          {
+            "key": "system.pericias.perc.bonus",
+            "value": 2,
+            "priority": null,
+            "type": "add",
+            "phase": "initial"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Parceiro: Grifilho Mestre",
+      "description": "<p>+2 em Furtividade e Percepção.</p><p>Na investida, marque o efeito \"Grifilho: +3d4 em investida\" na janela de ataque.</p><p><strong>Não automatizado:</strong> Esquiva (ou +1 no bônus de Esquiva).</p>",
+      "system": {
+        "changes": [
+          {
+            "key": "system.pericias.furt.bonus",
+            "value": 2,
+            "priority": null,
+            "type": "add",
+            "phase": "initial"
+          },
+          {
+            "key": "system.pericias.perc.bonus",
+            "value": 2,
+            "priority": null,
+            "type": "add",
+            "phase": "initial"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Grifilho: +3d4 em investida",
+      "img": "icons/svg/upgrade.svg",
+      "description": "<p>Mestre: quando faz uma investida, +3d4 pontos de dano.</p>",
+      "disabled": true,
+      "transfer": true,
+      "duration": {
+        "expiry": null
+      },
+      "system": {
+        "onuse": true,
+        "abilityUse": {
+          "custo": null,
+          "types": [
+            "attack"
+          ]
+        },
+        "changes": [
+          {
+            "key": "dano",
+            "value": "3d4",
+            "priority": 0,
+            "type": "add",
+            "phase": "initial"
+          }
+        ]
+      }
+    }
+  ]
+}

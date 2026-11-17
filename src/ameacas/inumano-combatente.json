@@ -1,0 +1,89 @@
+{
+  "nome": "Inumano Combatente",
+  "img": "assets/tokens/inumano-combatente.png",
+  "nd": "6",
+  "tipo": "mor",
+  "tamanho": "med",
+  "papel": "lackey",
+  "atributos": {
+    "for": 3,
+    "des": 2,
+    "con": 1,
+    "int": 0,
+    "sab": 1,
+    "car": -1
+  },
+  "pv": 56,
+  "defesa": 26,
+  "pericias": {
+    "inic": 7,
+    "perc": 6,
+    "fort": 17,
+    "refl": 12,
+    "vont": 7,
+    "atle": 8,
+    "furt": 4,
+    "guer": 5,
+    "inti": 6
+  },
+  "deslocamento": {
+    "deslocamento": 9
+  },
+  "sentidos": [
+    "escuro"
+  ],
+  "resistencias": {
+    "frio": "imune"
+  },
+  "resistenciasTexto": "imunidade a frio",
+  "corpoACorpo": "Espada longa x2 +24 (2d8+9, 19, mais 2d12 trevas).",
+  "aDistancia": "Azagaia +24 (2d6+9, mais 2d12 trevas).",
+  "equipamento": "Azagaia x3, escudo pesado, espada longa, gibão de peles.",
+  "tesouro": "Metade.",
+  "notas": "<p><em>Os guerreiros de aparência cadavérica têm a pele pálida e áspera, parecendo forçosamente esticada sobre os ossos. Seus cabelos são cinzentos e desgrenhados, seus olhos são amarelados e esmaecidos e sua boca exibe um constante esgar de raiva. Suas armas e armaduras parecem ter pertencido a um campo de batalha de um passado longínquo.</em></p><p>Por vezes confundidos com zumbis, inumanos são mortos-vivos dotados de inteligência, surgidos a partir de combatentes caídos, como bandoleiros, saqueadores, mercenários ou soldados. Seus cadáveres não são reanimados pela magia de outros, como necromantes ou sacerdotes de Tenebra, mas sim pela crueldade e desejo por violência que mantinham em vida. Animados por estes sentimentos de agressividade, inumanos mantêm, na morte, a mesma sanguinolência que exibiam em vida.</p><p>Os sentimentos que dão origem a um inumano também fazem com que ele se sinta atraído por lugares permeados pela morte. Assim, inumanos tendem a procurar cemitérios, catacumbas, campos de grandes batalhas e outros lugares impregnados por uma aura de morte. Lá, naturalmente formam bandos de inumanos cujo propósito é derrotar quaisquer seres vivos que adentrem seu território.</p><p>O processo que dá origem a inumanos combatentes também pode ocorrer com grandes líderes militares. Em especial, quando um senhor da guerra particularmente cruel ou violento morre, a força de seu ódio também pode reanimá-lo. A criatura resultante será um inumano general, um morto-vivo que combina suas memórias e conhecimento militar com a crueldade e desejo de violência capazes de mantê-lo em Arton mesmo após a morte. Inumanos generais sentem os mesmos impulsos que os demais inumanos e, quando encontram um grupo desses combatentes, naturalmente assumem sua liderança. Sob o comando de um general, bandos de guerra de inumanos são capazes até de vencer sua compulsão por locais de morte, vagando por outras terras em busca de vítimas vivas para saciar seu desejo por violência.</p>",
+  "ataques": [
+    {
+      "arma": "Espada longa",
+      "descricao": "espada longa x2",
+      "img": "systems/tormenta20/icons/itens/equipamentos/espada-longa.webp",
+      "qtd": 2,
+      "ataque": 24,
+      "critico": "19",
+      "dano": [
+        [
+          "2d8+9",
+          "corte"
+        ],
+        [
+          "2d12",
+          "trevas"
+        ]
+      ]
+    },
+    {
+      "arma": "Azagaia",
+      "descricao": "azagaia",
+      "img": "systems/tormenta20/icons/itens/equipamentos/lanca.webp",
+      "ataque": 24,
+      "alcance": "short",
+      "dano": [
+        [
+          "2d6+9",
+          "perfuracao"
+        ],
+        [
+          "2d12",
+          "trevas"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Drenar Energia",
+      "img": "systems/tormenta20/icons/poderes/ameacas/sombra-rubra.webp",
+      "descricao": "<p>Uma criatura viva que sofra dano de trevas do inumano combatente sofre uma penalidade cumulativa de −1 em testes de perícia (Fort CD 22 evita). Se acumular uma penalidade igual ou maior que seu próprio nível, a criatura morre e se transforma em um inumano sob controle do mestre. Essa penalidade pode ser removida de uma criatura viva com descanso ou com efeitos mágicos capazes de remover qualquer condição de metabolismo (cada dia de descanso ou efeito mágico diminui a penalidade em 1).</p>",
+      "resistencia": "Fortitude CD 22 evita"
+    }
+  ]
+}

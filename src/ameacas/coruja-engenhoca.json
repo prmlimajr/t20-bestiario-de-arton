@@ -1,0 +1,68 @@
+{
+  "nome": "Coruja Engenhoca",
+  "img": "assets/tokens/coruja-engenhoca.png",
+  "nd": "1/2",
+  "tipo": "con",
+  "tamanho": "min",
+  "papel": "solo",
+  "atributos": {
+    "for": -2,
+    "des": 3,
+    "con": 2,
+    "int": 0,
+    "sab": 0,
+    "car": -5
+  },
+  "pv": 15,
+  "defesa": 14,
+  "pericias": {
+    "inic": 5,
+    "perc": 4,
+    "fort": -1,
+    "refl": 6,
+    "vont": 3,
+    "furt": 12
+  },
+  "deslocamento": {
+    "deslocamento": 3,
+    "voo": 18
+  },
+  "sentidos": [
+    "escuro"
+  ],
+  "resistencias": {
+    "eletricidade": 5,
+    "fogo": 5
+  },
+  "resistenciasTexto": "redução de eletricidade e fogo 5",
+  "corpoACorpo": "Garras +7 (2d4+5).",
+  "tesouro": "Nenhum.",
+  "notas": "<p><em>O que à primeira vista parece um cachorrinho de brinquedo revela-se um elaborado construto metálico. Seus movimentos, mecânicos mas coordenados, são acompanhados pelo zumbido de suas engrenagens internas. Seu rosto, em vez de inexpressividade, exibe uma personalidade singular, reforçada pelo brilho vivaz de pequenos olhos luminosos.</em></p><p>Embora em sua maioria os inventores sejam associados a grandes maravilhas mecânicas, como armaduras reforçadas, veículos voadores ou mesmo golens de trabalho ou guerra, existem aqueles que se dedicam a invenções de menor porte, mas nem por isso menos maravilhosas. Entre estas criações, estão os pequenos e simpáticos engenhômatos.</p><p>Engenhômatos são construtos fabricados a partir de engrenagens, molas e cristais energéticos, capazes de se mover e agir por contra própria. Fabricados à semelhança de outras criaturas, são pequenas obras-primas de automação e miniaturização, capazes de executar uma grande variedade de tarefas. Alguns são fabricados para diversão, como brinquedos animados ou pássaros decorativos capazes de cantar, enquanto outros são desenvolvidos com propósitos mais práticos, como auxiliar seu criador em seu ofício ou acompanhá-lo em suas aventuras.</p><p>Embora geralmente estejam acompanhando seu criador, engenhômatos podem ser encontrados como sentinelas ou guardiões de um lugar importante (como um laboratório secreto) ou mesmo desempenhando uma missão. Engenhômatos cujo mestre tenha desaparecido podem continuar executando suas últimas ordens ou podem se desgarrar, tornando-se um perigo para aventureiros e exploradores.</p><p><strong>Inteligência:</strong> — (registrada como 0 na ficha).</p><p><strong>Parceiro:</strong> veja o poder “Parceiro: Coruja Engenhoca” no compêndio de parceiros deste módulo.</p>",
+  "ataques": [
+    {
+      "arma": "Garras",
+      "descricao": "garras",
+      "img": "systems/tormenta20/icons/poderes/ameacas/garras.webp",
+      "ataque": 7,
+      "dano": [
+        [
+          "2d4+5",
+          "corte"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Mergulho",
+      "img": "systems/tormenta20/icons/poderes/ameacas/asas.webp",
+      "descricao": "<p>Quando faz uma investida alada, a coruja engenhoca pode continuar se movendo depois do ataque. Ela deve se mover em linha reta e seu movimento máximo ainda é limitado ao dobro do seu deslocamento.</p>"
+    },
+    {
+      "poder": "Programação Orientada",
+      "img": "systems/tormenta20/icons/magias/orientacao.webp",
+      "descricao": "<p>Uma vez por rodada, quando faz um teste de perícia, a coruja rola dois dados e usa o melhor resultado.</p>",
+      "acao": "reacao"
+    }
+  ]
+}

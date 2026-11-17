@@ -1,0 +1,86 @@
+{
+  "nome": "Hipogrifo",
+  "img": "assets/tokens/hipogrifo.png",
+  "nd": "2",
+  "tipo": "mon",
+  "tamanho": "gra",
+  "papel": "solo",
+  "atributos": {
+    "for": 4,
+    "des": 4,
+    "con": 3,
+    "int": -4,
+    "sab": 1,
+    "car": -1
+  },
+  "pv": 75,
+  "defesa": 18,
+  "pericias": {
+    "inic": 9,
+    "perc": 6,
+    "fort": 7,
+    "refl": 13,
+    "vont": 3,
+    "atle": 9
+  },
+  "deslocamento": {
+    "deslocamento": 15,
+    "voo": 30
+  },
+  "sentidos": [
+    "escuro"
+  ],
+  "imunidadeCondicoes": [
+    "confuso"
+  ],
+  "resistenciasTexto": "imunidade a confusão",
+  "corpoACorpo": "Mordida +12 (1d8+4) e duas garras +12 (1d4+4) ou cascos +12 (2d4+4).",
+  "tesouro": "Metade.",
+  "notas": "<p><em>O animal lembra um grande garanhão selvagem, mas com cabeça, asas e garras dianteiras de águia. Tem pelagem castanho-escura, com asas e patas negras. A cauda e crina selvagens, revoltas, parecem se agitar com vida própria.</em></p><p>Por toda a existência de Arton, pégasos e hipogrifos não eram seres nativos do mundo. Pelo contrário, havia apenas uma de cada dessas criaturas: o Pégaso, corcel sagrado de Khalmyr, e o Hipogrifo, montaria divina de Nimb.</p><p>Depois que Khalmyr perdeu a liderança do Panteão, entretanto, começaram a surgir em Arton pégasos “normais”. Não se sabe ao certo qual a relação entre os dois eventos, mas é evidente que o Pégaso de Khalmyr está de alguma forma conectado a isso.</p><p>Logo depois, vieram os hipogrifos.</p><p>Os sábios discutem várias teorias sobre o surgimento de hipogrifos em Arton. Alguns acreditam que exista uma ligação ainda mais forte entre Khalmyr e Nimb, que teria feito com que as montarias de ambos os deuses fossem afetadas da mesma forma. Outros teorizam que as mudanças recentes no Panteão criaram uma breve janela durante a qual o Hipogrifo original espalhou seus descendentes pelo mundo. Há também aqueles que enxergam certo equilíbrio cósmico nesse evento — uma crença reforçada pelo surgimento simultâneo de hipogrifos abissais, versões espirituais sombrias de hipogrifos que seriam a contraparte dos pégasos celestiais. Por fim, há quem acredite que tudo não passa de mais uma decisão aleatória (ou não) de Nimb.</p><p>Qualquer que seja a razão, o fato é que agora existem hipogrifos em Arton. Estes seres alados lembram um pouco os grifos, mas sua cabeça é mais afinada, como a de um falcão, e seu corpo possui as características de um cavalo. Hipogrifos são levemente mais fracos e um pouco mais rápidos que grifos, mas partilham o mesmo apetite voraz.</p><p>Como criaturas recém-introduzidas em Arton, hipogrifos ainda estão em busca de seu lugar. Muitos têm procurado se estabelecer em lugares elevados, como montanhas e florestas de árvores gigantes. Nestes locais, entretanto, disputam espaço com grifos e águias gigantes. Outros têm sido vistos, paradoxalmente, assumindo a liderança de manadas de cavalos, transformando suas antigas presas em aliados e companhias.</p><p>Assim como no mundo selvagem, os hipogrifos ainda não foram completamente assimilados pelo mundo civilizado. Povos e organizações que costumeiramente domam montarias aladas, como certas tribos das Montanhas Sanguinárias e algumas ordens de cavalaria, estão aos poucos aprendendo a domesticar e treinar hipogrifos. Por isso, ainda é raro ver esses poderosos animais empregados como montaria.</p><p>O Hipogrifo original, a montaria sagrada de Nimb, continua servindo a seu mestre. De tempos em tempos, ele surge em Arton para cumprir algum desígnio do Deus do Caos, como na ocasião em que serviu de montaria para Dee.</p><p><strong>Parceiro:</strong> veja o poder “Montaria: Hipogrifo” no compêndio de parceiros deste módulo.</p>",
+  "ataques": [
+    {
+      "arma": "Mordida",
+      "descricao": "mordida",
+      "img": "icons/creatures/abilities/mouth-teeth-long-red.webp",
+      "ataque": 12,
+      "dano": [
+        [
+          "1d8+4",
+          "perfuracao"
+        ]
+      ]
+    },
+    {
+      "arma": "Garras",
+      "descricao": "duas garras",
+      "qtd": 2,
+      "ataque": 12,
+      "dano": [
+        [
+          "1d4+4",
+          "corte"
+        ]
+      ]
+    },
+    {
+      "arma": "Cascos",
+      "descricao": "cascos (em vez de mordida e garras)",
+      "img": "systems/tormenta20/icons/poderes/ameacas/cascos.webp",
+      "ataque": 12,
+      "dano": [
+        [
+          "2d4+4",
+          "impacto"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Coice",
+      "img": "systems/tormenta20/icons/poderes/ameacas/cascos.webp",
+      "descricao": "<p>Se estiver flanqueado, o hipogrifo faz um ataque com seus cascos.</p>",
+      "acao": "movimento"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "nome": "Cão Engenhoca",
+  "img": "assets/tokens/cao-engenhoca.png",
+  "nd": "1",
+  "tipo": "con",
+  "tamanho": "peq",
+  "papel": "solo",
+  "atributos": {
+    "for": 1,
+    "des": 3,
+    "con": 2,
+    "int": 0,
+    "sab": 0,
+    "car": -5
+  },
+  "pv": 35,
+  "defesa": 16,
+  "pericias": {
+    "inic": 5,
+    "perc": 4,
+    "fort": 11,
+    "refl": 5,
+    "vont": 0,
+    "sobr": 4
+  },
+  "deslocamento": {
+    "deslocamento": 12
+  },
+  "sentidos": [
+    "faro",
+    "escuro"
+  ],
+  "resistencias": {
+    "eletricidade": 5,
+    "fogo": 5
+  },
+  "resistenciasTexto": "redução de eletricidade e fogo 5",
+  "corpoACorpo": "Mordida +9 (1d8+4 mais 2d6 eletricidade).",
+  "tesouro": "Nenhum.",
+  "notas": "<p><em>O que à primeira vista parece um cachorrinho de brinquedo revela-se um elaborado construto metálico. Seus movimentos, mecânicos mas coordenados, são acompanhados pelo zumbido de suas engrenagens internas. Seu rosto, em vez de inexpressividade, exibe uma personalidade singular, reforçada pelo brilho vivaz de pequenos olhos luminosos.</em></p><p>Embora em sua maioria os inventores sejam associados a grandes maravilhas mecânicas, como armaduras reforçadas, veículos voadores ou mesmo golens de trabalho ou guerra, existem aqueles que se dedicam a invenções de menor porte, mas nem por isso menos maravilhosas. Entre estas criações, estão os pequenos e simpáticos engenhômatos.</p><p>Engenhômatos são construtos fabricados a partir de engrenagens, molas e cristais energéticos, capazes de se mover e agir por contra própria. Fabricados à semelhança de outras criaturas, são pequenas obras-primas de automação e miniaturização, capazes de executar uma grande variedade de tarefas. Alguns são fabricados para diversão, como brinquedos animados ou pássaros decorativos capazes de cantar, enquanto outros são desenvolvidos com propósitos mais práticos, como auxiliar seu criador em seu ofício ou acompanhá-lo em suas aventuras.</p><p>Embora geralmente estejam acompanhando seu criador, engenhômatos podem ser encontrados como sentinelas ou guardiões de um lugar importante (como um laboratório secreto) ou mesmo desempenhando uma missão. Engenhômatos cujo mestre tenha desaparecido podem continuar executando suas últimas ordens ou podem se desgarrar, tornando-se um perigo para aventureiros e exploradores.</p><p><strong>Inteligência:</strong> — (registrada como 0 na ficha).</p><p><strong>Parceiro:</strong> veja o poder “Parceiro: Cão Engenhoca” no compêndio de parceiros deste módulo.</p>",
+  "ataques": [
+    {
+      "arma": "Mordida",
+      "descricao": "mordida",
+      "img": "icons/creatures/abilities/mouth-teeth-long-red.webp",
+      "ataque": 9,
+      "dano": [
+        [
+          "1d8+4",
+          "perfuracao"
+        ],
+        [
+          "2d6",
+          "eletricidade"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Chamado da Matilha",
+      "img": "systems/tormenta20/icons/magias/arma-espiritual.webp",
+      "descricao": "<p>Uma vez por cena, o cão engenhoca cria uma cópia sua feita de eletricidade que dura até o fim da cena ou até ele morrer. Uma vez por rodada, quando o cão sofre um ataque corpo a corpo, ele pode usar uma reação para que a cópia cause automaticamente 2d6 pontos de dano de eletricidade no oponente que fez o ataque.</p>",
+      "acao": "padrao",
+      "danos": [
+        [
+          "2d6",
+          "eletricidade",
+          "Cópia (reação)"
+        ]
+      ]
+    },
+    {
+      "poder": "Derrubar",
+      "img": "systems/tormenta20/icons/poderes/ameacas/derrubar.webp",
+      "descricao": "<p>Se o cão acerta um ataque de mordida, pode fazer a manobra derrubar (teste +7).</p>",
+      "acao": "livre"
+    }
+  ]
+}

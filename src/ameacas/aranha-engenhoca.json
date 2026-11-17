@@ -1,0 +1,64 @@
+{
+  "nome": "Aranha Engenhoca",
+  "img": "assets/tokens/aranha-engenhoca.png",
+  "nd": "1/4",
+  "tipo": "con",
+  "tamanho": "min",
+  "papel": "special",
+  "atributos": {
+    "for": -1,
+    "des": 2,
+    "con": 2,
+    "int": 0,
+    "sab": 0,
+    "car": -5
+  },
+  "pv": 7,
+  "defesa": 11,
+  "pericias": {
+    "inic": 4,
+    "perc": 2,
+    "fort": 0,
+    "refl": 3,
+    "vont": -2,
+    "furt": 9
+  },
+  "deslocamento": {
+    "deslocamento": 6,
+    "escalada": 6
+  },
+  "sentidos": [
+    "escuro"
+  ],
+  "resistencias": {
+    "eletricidade": 5,
+    "fogo": 5
+  },
+  "resistenciasTexto": "redução de eletricidade e fogo 5",
+  "corpoACorpo": "Mordida +4 (1d4+2).",
+  "tesouro": "Nenhum.",
+  "notas": "<p><em>O que à primeira vista parece um cachorrinho de brinquedo revela-se um elaborado construto metálico. Seus movimentos, mecânicos mas coordenados, são acompanhados pelo zumbido de suas engrenagens internas. Seu rosto, em vez de inexpressividade, exibe uma personalidade singular, reforçada pelo brilho vivaz de pequenos olhos luminosos.</em></p><p>Embora em sua maioria os inventores sejam associados a grandes maravilhas mecânicas, como armaduras reforçadas, veículos voadores ou mesmo golens de trabalho ou guerra, existem aqueles que se dedicam a invenções de menor porte, mas nem por isso menos maravilhosas. Entre estas criações, estão os pequenos e simpáticos engenhômatos.</p><p>Engenhômatos são construtos fabricados a partir de engrenagens, molas e cristais energéticos, capazes de se mover e agir por contra própria. Fabricados à semelhança de outras criaturas, são pequenas obras-primas de automação e miniaturização, capazes de executar uma grande variedade de tarefas. Alguns são fabricados para diversão, como brinquedos animados ou pássaros decorativos capazes de cantar, enquanto outros são desenvolvidos com propósitos mais práticos, como auxiliar seu criador em seu ofício ou acompanhá-lo em suas aventuras.</p><p>Embora geralmente estejam acompanhando seu criador, engenhômatos podem ser encontrados como sentinelas ou guardiões de um lugar importante (como um laboratório secreto) ou mesmo desempenhando uma missão. Engenhômatos cujo mestre tenha desaparecido podem continuar executando suas últimas ordens ou podem se desgarrar, tornando-se um perigo para aventureiros e exploradores.</p><p><strong>Inteligência:</strong> — (registrada como 0 na ficha).</p><p><strong>Parceiro:</strong> veja o poder “Parceiro: Aranha Engenhoca” no compêndio de parceiros deste módulo.</p>",
+  "ataques": [
+    {
+      "arma": "Mordida",
+      "descricao": "mordida",
+      "img": "icons/creatures/abilities/mouth-teeth-long-red.webp",
+      "ataque": 4,
+      "dano": [
+        [
+          "1d4+2",
+          "perfuracao"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Teia",
+      "img": "systems/tormenta20/icons/poderes/ameacas/teia.webp",
+      "descricao": "<p>A aranha engenhoca dispara teia em um cubo com 6m de lado em alcance curto. Criaturas na área ficam enredadas (Ref CD 14 evita). Uma criatura enredada pode se soltar com uma ação padrão e um teste de Força ou Acrobacia (CD 14). A área ocupada pela teia é terreno difícil e a teia é inflamável; qualquer ataque que cause dano de fogo destrói as teias por onde passar, libertando as criaturas enredadas mas deixando-as em chamas. A aranha pode andar na própria teia sem se enredar.</p>",
+      "acao": "padrao",
+      "resistencia": "Reflexos CD 14 evita"
+    }
+  ]
+}

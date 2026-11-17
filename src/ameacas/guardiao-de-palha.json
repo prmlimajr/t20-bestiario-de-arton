@@ -1,0 +1,64 @@
+{
+  "nome": "Guardião de Palha",
+  "img": "assets/tokens/guardiao-de-palha.png",
+  "nd": "2",
+  "tipo": "con",
+  "tamanho": "med",
+  "papel": "solo",
+  "atributos": {
+    "for": 4,
+    "des": 1,
+    "con": 2,
+    "int": 0,
+    "sab": 0,
+    "car": -5
+  },
+  "pv": 70,
+  "defesa": 19,
+  "pericias": {
+    "inic": 4,
+    "perc": 3,
+    "fort": 13,
+    "refl": 2,
+    "vont": 7,
+    "atle": 7,
+    "furt": 4
+  },
+  "deslocamento": {
+    "deslocamento": 9
+  },
+  "sentidos": [
+    "escuro"
+  ],
+  "resistencias": {
+    "dano": 5
+  },
+  "resistenciasTexto": "redução de dano 5/corte ou fogo",
+  "corpoACorpo": "Duas pancadas +12 (2d4+4).",
+  "tesouro": "Nenhum.",
+  "notas": "<p><em>O que à primeira vista parece ser um espantalho ainda sem roupas subitamente começa a se mexer. Do tamanho de um humano adulto, a criatura é feita de longos feixes de vime e capim seco, unidos com tiras de cipó e vinhas. Seus braços terminam em dedos secos que se fecham na forma de punhos, antecipando suas intenções hostis.</em></p><p>A criação de construtos costuma ser associada a inventores e conjuradores sofisticados. Entretanto, a ciência, ou arte, de criar seres artificiais é mais ampla, e encontra praticantes mesmo em meio aos ermos mais distantes de Arton.</p><p>Guardiões de palha são construtos simples, criados com materiais vegetais como palha, cipós, e animados com a magia @UUID[Compendium.tormenta20.magias.Item.sSUOYxFZVrthYvfn]{Controlar Plantas}. Geralmente são humanoides, mas podem ser fabricados em outros formatos — sua forma é essencialmente cosmética e não afeta significativamente suas habilidades. Seu comportamento depende muito das ordens dadas por seu criador; aqueles designados para defender um local, por exemplo, fazem isso com ferocidade e determinação. Druidas, em particular, costumam criar guardiões de palha para proteger lugares sagrados.</p><p><strong>Redução de dano:</strong> 5/corte ou fogo. <strong>Deslocamento:</strong> sem redução por terreno difícil. <strong>Furtividade:</strong> +4 (+9 em florestas). <strong>Inteligência:</strong> — (registrada como 0 na ficha).</p>",
+  "ataques": [
+    {
+      "arma": "Pancada",
+      "descricao": "duas pancadas",
+      "img": "systems/tormenta20/icons/poderes/ameacas/pancada.webp",
+      "qtd": 2,
+      "ataque": 12,
+      "dano": [
+        [
+          "2d4+4",
+          "impacto"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Controlar Plantas",
+      "img": "systems/tormenta20/icons/magias/controlar-plantas.webp",
+      "descricao": "<p>O guardião de palha transforma um quadrado de 9m de vegetação em alcance curto em terreno difícil (como @UUID[Compendium.tormenta20.magias.Item.sSUOYxFZVrthYvfn]{Controlar Plantas}). Criaturas na área quando essa habilidade é usada, ou no início de seus próprios turnos, ficam enredadas e imóveis (Fort CD 16 evita). Uma vítima pode se libertar com uma ação padrão e um teste de Acrobacia ou Atletismo (CD 16).</p>",
+      "acao": "padrao",
+      "resistencia": "Fortitude CD 16 evita"
+    }
+  ]
+}

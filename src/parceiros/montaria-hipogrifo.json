@@ -1,0 +1,116 @@
+{
+  "name": "Montaria: Hipogrifo",
+  "type": "poder",
+  "img": "assets/tokens/hipogrifo.png",
+  "system": {
+    "description": {
+      "value": "<p>O hipogrifo é um parceiro montaria (Grande) que fornece os benefícios a seguir.</p>\n<p><strong>Iniciante</strong>: você recebe +1 em Iniciativa, Reflexos e na Defesa (um hipogrifo iniciante é um filhote e não pode ser usado como montaria).</p>\n<p><strong>Veterano</strong>: como acima, mas pode ser usado como montaria, mudando seu deslocamento para voo 18m.</p>\n<p><strong>Mestre</strong>: como acima, mas você recebe uma ação de movimento extra por turno (apenas para se deslocar).</p>"
+    },
+    "source": "Bestiário de Arton",
+    "tipo": "geral",
+    "subtipo": "Montaria"
+  },
+  "effects": [
+    {
+      "name": "Montaria: Hipogrifo Iniciante",
+      "description": "<p>+1 em Iniciativa, Reflexos e na Defesa (filhote; não pode ser montado).</p>",
+      "system": {
+        "changes": [
+          {
+            "key": "system.pericias.inic.bonus",
+            "value": 1,
+            "priority": null,
+            "type": "add",
+            "phase": "initial"
+          },
+          {
+            "key": "system.pericias.refl.bonus",
+            "value": 1,
+            "priority": null,
+            "type": "add",
+            "phase": "initial"
+          },
+          {
+            "key": "system.attributes.defesa.bonus",
+            "value": 1,
+            "priority": null,
+            "type": "add",
+            "phase": "initial"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Montaria: Hipogrifo Veterano",
+      "description": "<p>+1 em Iniciativa, Reflexos e na Defesa; voo 18m.</p>",
+      "system": {
+        "changes": [
+          {
+            "key": "system.pericias.inic.bonus",
+            "value": 1,
+            "priority": null,
+            "type": "add",
+            "phase": "initial"
+          },
+          {
+            "key": "system.pericias.refl.bonus",
+            "value": 1,
+            "priority": null,
+            "type": "add",
+            "phase": "initial"
+          },
+          {
+            "key": "system.attributes.defesa.bonus",
+            "value": 1,
+            "priority": null,
+            "type": "add",
+            "phase": "initial"
+          },
+          {
+            "key": "system.attributes.movement.fly.base",
+            "value": 18,
+            "priority": null,
+            "type": "override",
+            "phase": "initial"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Montaria: Hipogrifo Mestre",
+      "description": "<p>+1 em Iniciativa, Reflexos e na Defesa; voo 18m.</p><p><strong>Não automatizado:</strong> ação de movimento extra por turno (apenas para se deslocar).</p>",
+      "system": {
+        "changes": [
+          {
+            "key": "system.pericias.inic.bonus",
+            "value": 1,
+            "priority": null,
+            "type": "add",
+            "phase": "initial"
+          },
+          {
+            "key": "system.pericias.refl.bonus",
+            "value": 1,
+            "priority": null,
+            "type": "add",
+            "phase": "initial"
+          },
+          {
+            "key": "system.attributes.defesa.bonus",
+            "value": 1,
+            "priority": null,
+            "type": "add",
+            "phase": "initial"
+          },
+          {
+            "key": "system.attributes.movement.fly.base",
+            "value": 18,
+            "priority": null,
+            "type": "override",
+            "phase": "initial"
+          }
+        ]
+      }
+    }
+  ]
+}

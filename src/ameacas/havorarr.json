@@ -1,0 +1,84 @@
+{
+  "nome": "Havorarr",
+  "img": "assets/tokens/havorarr.png",
+  "nd": "4",
+  "tipo": "mon",
+  "tamanho": "gra",
+  "papel": "special",
+  "atributos": {
+    "for": 2,
+    "des": 2,
+    "con": 4,
+    "int": -4,
+    "sab": 2,
+    "car": -2
+  },
+  "pv": 98,
+  "defesa": 21,
+  "pericias": {
+    "inic": 6,
+    "perc": 6,
+    "fort": 16,
+    "refl": 4,
+    "vont": 10
+  },
+  "deslocamento": {
+    "deslocamento": 0,
+    "voo": 12
+  },
+  "sentidos": [
+    "escuro"
+  ],
+  "resistencias": {
+    "acido": "imune",
+    "dano": 5
+  },
+  "imunidadeCondicoes": [
+    "veneno"
+  ],
+  "resistenciasTexto": "imunidade a ácido e veneno, redução de dano 5/armas primitivas",
+  "corpoACorpo": "Mordida +14 (2d12+10).",
+  "tesouro": "Nenhum.",
+  "notas": "<p><em>Grande e roliço como um porco malformado, o animal cego e verruguento parece muito pesado, mas flutua levemente acima do chão como um balão goblin. Suas pústulas brilham com alguma energia esverdeada. Conforme se aproxima, uma espécie de chiado profundo preenche o lugar. Súbito, quando empunham suas armas, vocês percebem sinais avançados de corrosão — como se elas tivessem sido encontradas em alguma masmorra esquecida há séculos!</em></p><p>O surgimento desta criatura em Arton é recente, ou ela ainda não havia sido descoberta, mas notícias de suas aparições estão trazendo pânico a artífices, inventores e especialmente golens! Nomeado havorarr (palavra kliren para “destruidor”), este monstro emana uma aura sobrenatural capaz de danificar qualquer item manufaturado. Armas superiores perdem suas qualidades, armaduras desmoronam, inventos desistem de funcionar, construtos ficam atordoados.</p><p>Solitários ou em pequenos bandos, havorarr rondam masmorras, túneis, ruínas e outros lugares frequentados por aventureiros. Embora incapazes de causar muito dano a seres vivos, são bastante difíceis de matar; armas utilizadas para atingi-los sofrem mais dano do que causam. Embora não se aventure em terras povoadas, o monstro parece justamente atraído pela presença de objetos fabricados por seres inteligentes, como que se alimentando de sua destruição.</p><p>Por seu ódio aos seres civilizados e seus instrumentos, parece consenso geral que Megalokk é responsável por trazer estas pestes a Arton. Assim sendo, seus devotos reconhecem os havorarr como animais sagrados, ou presentes divinos, trazendo um ou mais deles consigo quando esperam enfrentar heróis bem equipados.</p><p><strong>Redução de dano:</strong> 5/armas primitivas (itens sem custo em T$, como bordões e clavas, ignoram essa redução).</p>",
+  "ataques": [
+    {
+      "arma": "Mordida",
+      "descricao": "mordida",
+      "img": "icons/creatures/abilities/mouth-teeth-long-red.webp",
+      "ataque": 14,
+      "dano": [
+        [
+          "2d12+10",
+          "perfuracao"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Aura Desmanteladora",
+      "img": "systems/tormenta20/icons/poderes/ameacas/aura-aterradora.webp",
+      "descricao": "<p>No início de cada turno do havorarr, todos os itens e construtos em um raio de 9m são afetados por um efeito desmantelador. Armas, armaduras, ferramentas e engenhocas são avariadas (uma engenhoca avariada tem sua CD de ativação aumentada em +5); itens mágicos têm direito a um teste de resistência (CD 20) para evitar a condição. Construtos perdem 2d12 pontos de vida (Fort CD 20 evita). Itens primitivos (aqueles sem custo em T$, como bordões e clavas) não são afetados pela aura.</p>",
+      "danos": [
+        [
+          "2d12",
+          "perda",
+          "Construtos"
+        ]
+      ],
+      "resistencia": "CD 20 evita"
+    },
+    {
+      "poder": "Pústulas Corrosivas",
+      "img": "systems/tormenta20/icons/poderes/ameacas/espinhos.webp",
+      "descricao": "<p>Sempre que uma criatura adjacente ao havorarr causa dano a ele, ela sofre 2d6 pontos de dano de ácido (Ref CD 20 evita).</p>",
+      "danos": [
+        [
+          "2d6",
+          "acido"
+        ]
+      ],
+      "resistencia": "Reflexos CD 20 evita"
+    }
+  ]
+}

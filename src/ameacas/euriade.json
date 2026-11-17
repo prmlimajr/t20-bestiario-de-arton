@@ -1,0 +1,106 @@
+{
+  "nome": "Euríade",
+  "img": "assets/tokens/euriade.png",
+  "nd": "11",
+  "tipo": "mon",
+  "tamanho": "gra",
+  "papel": "solo",
+  "atributos": {
+    "for": 3,
+    "des": 4,
+    "con": 2,
+    "int": 0,
+    "sab": 2,
+    "car": 2
+  },
+  "pv": 540,
+  "defesa": 41,
+  "pericias": {
+    "inic": 13,
+    "perc": 11,
+    "fort": 24,
+    "refl": 11,
+    "vont": 18,
+    "furt": 11,
+    "inti": 11,
+    "sobr": 13
+  },
+  "deslocamento": {
+    "deslocamento": 9,
+    "escalada": 6
+  },
+  "sentidos": [
+    "escuro"
+  ],
+  "imunidadeCondicoes": [
+    "metamorfose"
+  ],
+  "resistenciasTexto": "cura acelerada 20/ácido ou fogo, resistência a veneno +5, imunidade a metamorfose",
+  "corpoACorpo": "Duas garras +34 (2d12+25).",
+  "tesouro": "Padrão. Além disso, o covil de uma euríade tem 25% de chance de conter 1 ovo de euríade no valor de T$ 5.000.",
+  "notas": "<p><em>A criatura assemelha-se a um centauro, mas tem o corpo de um grande lagarto com quatro patas e a cabeça e parte superior do tronco de uma medusa. Uma crista escamosa percorre seu dorso, desde a nuca até a ponta de sua longa cauda. Sua porção medusa é coberta de pele, mas suas mãos são dotadas de poderosas garras. Seu olhar penetrante combina astúcia, inteligência e ferocidade.</em></p><p>A origem das euríades é motivo de orgulho para essas criaturas e, por ser ensinada de mãe para filha, foi preservada até os dias de hoje. Em 1209, durante a Guerra dos Trolls, em Doherimm, um grupo de medusas devotas de Megalokk capturou arcanistas finntroll que pesquisavam uma fórmula de transformação como parte do esforço de guerra. Essas medusas buscavam se aproximar ainda mais da selvageria do Deus dos Monstros e forçaram os arcanistas capturados a empregar sua fórmula para transformá-las em seres ferais. Originalmente projetada para ser usada em trolls, essa fórmula amplificou as características monstruosas das medusas, além de conceder a elas algumas das capacidades regenerativas daqueles monstros. Satisfeitas com o sucesso de seu plano, essas medusas transformadas, que chamaram a si mesmas de euríades, deram fim aos arcanistas finntroll e partiram do subterrâneo, prontas para espalhar a fúria de Megalokk por Arton.</p><p>Os anos se passaram e novas gerações de euríades sucederam as originais. Muitas seguiram a fé de suas antepassadas, dedicando-se à devoção a Megalokk. Outras trilharam caminhos diferentes, mas sempre influenciadas pela selvageria incontrolável que, graças à fórmula de transformação, tornou-se parte de sua natureza. Independentemente de sua fé ou propósito, euríades são criaturas reclusas, geralmente encontradas em regiões ermas ou distantes da civilização.</p><p>Muitas vivem como predadoras selvagens, caçando sobretudo criaturas sencientes e civilizadas. Outras dedicam-se à magia ou alquimia, sendo muitas vezes confundidas com bruxas dos ermos.</p><p>Euríades raramente criam laços com outras criaturas, mesmo da sua espécie. Como parte da transformação que as criou, elas tornaram-se capazes de se reproduzir de forma assexuada: uma vez a cada cinco anos, a euríade coloca um único ovo esverdeado que, após 13 semanas, dará origem a uma filha. A bebê então permanece sob os cuidados da mãe por 1 ano, quando então é expulsa por ela da região.</p><p>Ovos de euríades são valorizados por suas capacidades místicas. Em particular, é dito que, se um desses ovos for purificado antes de chocar, no lugar da euríade nascerá uma medusa com grandes poderes mágicos, mas livre tanto física quanto mentalmente da influência da fórmula finntroll.</p><p><strong>Cura acelerada:</strong> 20/ácido ou fogo. <strong>Resistência a veneno:</strong> +5.</p>",
+  "ataques": [
+    {
+      "arma": "Garras",
+      "descricao": "duas garras",
+      "qtd": 2,
+      "ataque": 34,
+      "dano": [
+        [
+          "2d12+25",
+          "corte"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Cura Acelerada",
+      "img": "systems/tormenta20/icons/magias/curar-ferimentos.webp",
+      "descricao": "<p>No início de cada um de seus turnos, a euríade recupera 20 pontos de vida. Esta habilidade não funciona se a euríade sofreu dano de ácido ou fogo desde o seu último turno.</p>",
+      "danos": [
+        [
+          "20",
+          "curapv",
+          "Cura acelerada"
+        ]
+      ]
+    },
+    {
+      "poder": "Resistência a Veneno",
+      "img": "systems/tormenta20/icons/poderes/ameacas/veneno.webp",
+      "descricao": "<p>A euríade recebe +5 em testes de resistência contra veneno.</p>"
+    },
+    {
+      "poder": "Dilacerar",
+      "img": "systems/tormenta20/icons/poderes/ameacas/dilacerar.webp",
+      "descricao": "<p>Se a euríade acerta os dois ataques de garra em uma mesma criatura na mesma rodada, causa mais 4d12+25 pontos de dano.</p>",
+      "danos": [
+        [
+          "4d12+25",
+          "corte"
+        ]
+      ]
+    },
+    {
+      "poder": "Jato de Veneno",
+      "img": "systems/tormenta20/icons/poderes/ameacas/veneno.webp",
+      "descricao": "<p>Uma vez por rodada, as serpentes na cabeça da euríade cospem veneno em um cone de 6m. Criaturas na área perdem 4d12 pontos de vida (Fort CD 31 reduz a perda à metade). <em>Veneno.</em></p>",
+      "acao": "movimento",
+      "danos": [
+        [
+          "4d12",
+          "perda",
+          "Veneno"
+        ]
+      ],
+      "resistencia": "Fortitude CD 31 reduz à metade"
+    },
+    {
+      "poder": "Olhar Petrificante",
+      "img": "systems/tormenta20/icons/poderes/ameacas/olhar-petrificante.webp",
+      "descricao": "<p>No início de seu turno, cada personagem em alcance curto da euríade deve fazer um teste de Reflexos (CD 31). Se passar, desvia o olhar. Se falhar, fica lento. Se já estiver lento, fica petrificado permanentemente. Um personagem pode fechar os olhos como uma reação para ficar imune a esta habilidade, mas sofre os efeitos de estar cego por 1 rodada. Efeitos que removem paralisia revertem a petrificação. <em>Metamorfose.</em></p>",
+      "resistencia": "Reflexos CD 31 evita"
+    }
+  ]
+}

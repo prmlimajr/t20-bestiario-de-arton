@@ -1,0 +1,196 @@
+{
+  "nome": "Guardião do Equilíbrio",
+  "img": "assets/tokens/guardiao-do-equilibrio.png",
+  "nd": "18",
+  "tipo": "esp",
+  "tamanho": "med",
+  "papel": "special",
+  "atributos": {
+    "for": 8,
+    "des": 1,
+    "con": 7,
+    "int": 3,
+    "sab": 10,
+    "car": 6
+  },
+  "pv": 750,
+  "pm": 117,
+  "defesa": 54,
+  "pericias": {
+    "inic": 16,
+    "perc": 25,
+    "fort": 26,
+    "refl": 18,
+    "vont": 32,
+    "ades": 23,
+    "cura": 25,
+    "dipl": 21,
+    "furt": 11,
+    "inti": 25,
+    "intu": 25,
+    "mist": 19,
+    "reli": 25,
+    "sobr": 30
+  },
+  "deslocamento": {
+    "deslocamento": 12
+  },
+  "sentidos": [
+    "escuro"
+  ],
+  "resistencias": {
+    "acido": "imune",
+    "eletricidade": "imune",
+    "fogo": "imune",
+    "frio": "imune",
+    "dano": 20
+  },
+  "imunidadeCondicoes": [
+    "atordoado",
+    "cansaco",
+    "metabolismo",
+    "paralisado"
+  ],
+  "imunidadeOutras": "acertos críticos",
+  "resistenciasTexto": "redução de dano 20, imunidade a acertos críticos, atordoado, cansaço, efeitos de metabolismo e paralisia; absorver elementos (ácido, eletricidade, fogo, frio)",
+  "corpoACorpo": "Cajado x2 +47 (4d12+20 mais 10d4 ácido, 8d6 eletricidade, 6d8 fogo, 4d10 frio).",
+  "tesouro": "Centelha elemental (CD 33 para extrair, vale 1 PM para fabricar um item mágico que cause dano de ácido, eletricidade, fogo ou frio).",
+  "notas": "<p><em>A figura no centro da clareira é um ancião — provavelmente um ermitão ou talvez o druida local. Sua túnica tingida de vermelho simples é adornada com ossos e outras partes de animais, e seus braços ostentam tatuagens antigas, esmaecidas pelo tempo. A idade parece não pesar sobre seus movimentos, e seu semblante transparece uma sabedoria ancestral.</em></p><p>Para além do eterno conflito entre Allihanna e Megalokk, existe um credo druídico que prega o respeito a todas as formas de vida e o equilíbrio entre os aspectos que compõem o mundo. Representado e defendido pelos druidas de Arton, este credo se opõe a toda forma de ameaça gratuita à vida — aceitam matar por subsistência ou autodefesa, mas combatem extermínios ou assassinatos sem sentido.</p><p>Guardiões do equilíbrio são espíritos elementais que personificam esta crença no equilíbrio, representado pelos elementos mais básicos da criação: água, ar, fogo e terra. Manifestam-se com a aparência de um ancião de uma raça humanoide típica da região, em trajes simples com adornos feitos de materiais naturais. Seu corpo exibe tatuagens com símbolos ancestrais — alguém versado em misticismo pode identificá-las como runas de poder que usam uma linguagem muito antiga.</p><p>Vivendo em meio à natureza mais selvagem, estes protetores observam o ciclo da vida à distância, manifestando-se apenas quando uma grave perturbação ameaça o delicado balanço que governa as forças do mundo natural. Como defensores da natureza, os guardiões do equilíbrio não se importam com conceitos morais como bem e mal. Eles podem tanto combater um vilão disposto a destruir um bosque em busca de recursos mágicos quanto heróis que, ao atravessar uma floresta, demonstram agressividade excessiva contra seus habitantes.</p><p><strong>Deslocamento:</strong> sem redução por terreno difícil natural. <strong>Furtividade:</strong> +11 (+21 em terrenos naturais).</p>",
+  "ataques": [
+    {
+      "arma": "Cajado",
+      "descricao": "cajado x2",
+      "img": "systems/tormenta20/icons/itens/equipamentos/bordao.webp",
+      "qtd": 2,
+      "ataque": 47,
+      "dano": [
+        [
+          "4d12+20",
+          "impacto"
+        ],
+        [
+          "10d4",
+          "acido"
+        ],
+        [
+          "8d6",
+          "eletricidade"
+        ],
+        [
+          "6d8",
+          "fogo"
+        ],
+        [
+          "4d10",
+          "frio"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Absorver Elementos",
+      "img": "systems/tormenta20/icons/poderes/ameacas/imunidade-magia.webp",
+      "descricao": "<p>O guardião do equilíbrio é imune a ácido, eletricidade, fogo ou frio. Se fosse sofrer dano de uma fonte desses tipos (exceto de suas próprias habilidades), em vez disso ele recebe um benefício conforme o tipo de dano que sofreria: <em>Ácido</em>: até o fim da cena, seus efeitos que causam dano de ácido causam +1 ponto de dano por dado. <em>Eletricidade</em>: seu deslocamento aumenta em +6m até o fim da cena. <em>Fogo</em>: pode executar uma ação padrão adicional em seu próximo turno. <em>Frio</em>: recebe 50 PV temporários.</p>"
+    },
+    {
+      "poder": "Gênese Elemental",
+      "img": "systems/tormenta20/icons/poderes/ameacas/ergam-se.webp",
+      "descricao": "<p>Quando o guardião lança uma magia de ácido, eletricidade, fogo ou frio, ele cria 1d4 capangas elementais Médios em espaços desocupados adjacentes ao alvo ou dentro da área de efeito da magia. Eles agem a partir da próxima rodada do guardião, têm deslocamento 9m e podem gastar uma ação padrão para causar 4d12 pontos de dano do tipo da magia. Os elementais têm Defesa 35, 80 PV, imunidade a atordoamento, cansaço, dano do seu elemento, dano não letal, efeitos de metabolismo e paralisia, falham automaticamente em qualquer teste oposto ou de resistência e desaparecem quando são reduzidos a 0 PV ou no fim da cena.</p>",
+      "danos": [
+        [
+          "1d4",
+          "",
+          "Elementais"
+        ],
+        [
+          "4d12",
+          "",
+          "Ataque do elemental"
+        ]
+      ]
+    },
+    {
+      "poder": "Manifestar Elementos",
+      "img": "systems/tormenta20/icons/poderes/ameacas/magias.webp",
+      "descricao": "<p>Uma vez por rodada, quando lança uma magia de ácido, eletricidade, fogo ou frio com execução de ação de movimento, padrão ou completa, o guardião muda a execução dela para livre.</p>",
+      "acao": "livre"
+    },
+    {
+      "poder": "Punição Elemental",
+      "img": "systems/tormenta20/icons/poderes/ameacas/magias.webp",
+      "descricao": "<p>Quando o guardião lança uma magia de ácido, eletricidade, fogo ou frio que permite um teste de resistência, ele aplica uma condição adicional em todas as criaturas que falharem nesse teste, conforme o tipo de dano da magia. <em>Ácido</em>: enjoado por 1 rodada. <em>Eletricidade</em>: surdo por 1 rodada e caído. <em>Fogo</em>: ofuscado por 1 rodada. <em>Frio</em>: enredado por 1 rodada.</p>"
+    },
+    {
+      "poder": "Magias",
+      "img": "systems/tormenta20/icons/poderes/ameacas/magias.webp",
+      "descricao": "<p>Como um druida de Arton de 18º nível (CD 49).</p>"
+    },
+    {
+      "poder": "Bola de Fogo",
+      "acao": "padrao",
+      "custo": 17,
+      "img": "systems/tormenta20/icons/magias/bola-de-fogo.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.gcjCsjzpk2OtClSt]{Bola de Fogo} (Padrão, 17 PM). O guardião cria uma poderosa explosão em alcance médio que causa 20d6 pontos de dano de fogo em todas as criaturas em um raio de 6m (Ref reduz à metade).</p>",
+      "danos": [
+        [
+          "20d6",
+          "fogo"
+        ]
+      ],
+      "resistencia": "Reflexos CD 49 reduz à metade"
+    },
+    {
+      "poder": "Flecha Ácida",
+      "acao": "padrao",
+      "custo": 18,
+      "img": "systems/tormenta20/icons/magias/flecha-acida.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.C2TqT4GXlsNiJPxb]{Flecha Ácida} (Padrão, 18 PM). O guardião dispara um projétil em uma criatura ou objeto em alcance médio. O alvo sofre 10d6 pontos de dano de ácido e fica coberto por muco corrosivo que causa 8d6 pontos de dano de ácido no início de cada um de seus dois próximos turnos. Além disso, se o alvo estiver usando armadura ou escudo, o muco corrói o item, reduzindo seu bônus na Defesa em 2 pontos permanentemente (Ref reduz à metade e evita o muco).</p>",
+      "danos": [
+        [
+          "10d6",
+          "acido"
+        ],
+        [
+          "8d6",
+          "acido",
+          "Muco (por turno)"
+        ]
+      ],
+      "resistencia": "Reflexos CD 49 reduz à metade e evita o muco"
+    },
+    {
+      "poder": "Relâmpago",
+      "acao": "padrao",
+      "custo": 18,
+      "img": "systems/tormenta20/icons/magias/relampago.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.BfYpxjs0NeqhAs8q]{Relâmpago} (Padrão, 18 PM). O guardião lança um relâmpago em cada criatura escolhida em alcance médio, causando 18d6 pontos de dano de eletricidade (Ref reduz à metade).</p>",
+      "danos": [
+        [
+          "18d6",
+          "eletricidade"
+        ]
+      ],
+      "resistencia": "Reflexos CD 49 reduz à metade"
+    },
+    {
+      "poder": "Sopro das Uivantes",
+      "acao": "padrao",
+      "custo": 18,
+      "img": "systems/tormenta20/icons/magias/sopro-das-uivantes.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.LFz30FCDJrLJwSrW]{Sopro das Uivantes} (Padrão, 18 PM). Criaturas em um cone de 9m sofrem 16d6 pontos de dano de frio e, se forem Grandes ou menores, ficam caídas e são empurradas 6m na direção oposta. Se houver uma parede ou outro objeto sólido (mas não uma criatura) no caminho, a criatura para de se mover, mas sofre +2d6 pontos de dano de impacto (Fort reduz à metade e evita a condição e o empurrão).</p>",
+      "danos": [
+        [
+          "16d6",
+          "frio"
+        ],
+        [
+          "2d6",
+          "impacto",
+          "Colisão"
+        ]
+      ],
+      "resistencia": "Fortitude CD 49 reduz à metade e evita"
+    }
+  ]
+}

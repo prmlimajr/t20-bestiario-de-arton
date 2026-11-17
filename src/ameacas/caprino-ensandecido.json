@@ -1,0 +1,129 @@
+{
+  "nome": "Caprino Ensandecido",
+  "img": "assets/tokens/caprino-ensandecido.png",
+  "nd": "1/2",
+  "tipo": "mon",
+  "tamanho": "med",
+  "papel": "lackey",
+  "atributos": {
+    "for": 2,
+    "des": 1,
+    "con": 2,
+    "int": -1,
+    "sab": 1,
+    "car": -2
+  },
+  "pv": 7,
+  "defesa": 13,
+  "pericias": {
+    "inic": 3,
+    "perc": 3,
+    "fort": 3,
+    "refl": 5,
+    "vont": 0,
+    "atle": 7,
+    "sobr": 5
+  },
+  "deslocamento": {
+    "deslocamento": 12
+  },
+  "sentidos": [
+    "faro",
+    "penumbra"
+  ],
+  "imunidadeCondicoes": [
+    "mental"
+  ],
+  "resistenciasTexto": "imunidade a efeitos mentais",
+  "corpoACorpo": "Foice +8 (1d6+2, x3) e chifres +8 (1d6+2).",
+  "equipamento": "Foice.",
+  "tesouro": "Metade.",
+  "notas": "<p><em>O que um dia foi uma fazenda isolada agora é um açougue improvisado. Os animais antes criados aqui agora operam o lugar, andando em duas patas e vestindo andrajos cobertos de sangue e vísceras. Em vez de gado, abatem humanos e outros prisioneiros, executando seu ofício com um olhar claramente consumido pela loucura.</em></p><p>Ensandecidos são animais afetados pela sutil corrupção da Tormenta que recai sobre uma região. Geralmente, são animais de criação, como rebanhos de fazendas ou aldeias isoladas, que adquirem uma consciência primitiva e sanguinária. Estas criaturas, então, se voltam contra seus antigos donos, muitas vezes assumindo o controle do lugar. O resultado é um reflexo macabro do que existia ali anteriormente. Movidos pela corrupção da Tormenta, esses animais ensandecidos passam a caçar outros seres racionais, que aprisionam como animais para sua própria alimentação.</p><p>Fisicamente, ensandecidos são seres humanoides com cabeça e características dos animais que eram antes de sua transformação.</p><p>Em uma tentativa de imitar seus antigos senhores, alguns trajam roupas desajustadas, frequentemente manchadas com o sangue de suas vítimas, e empunham ferramentas variadas que, inevitavelmente, são brandidas como armas. Agressivos e carnívoros, atacam outros seres racionais à primeira vista, raramente dando espaço para diplomacia.</p>",
+  "ataques": [
+    {
+      "arma": "Foice",
+      "descricao": "foice",
+      "img": "systems/tormenta20/icons/itens/equipamentos/foice.webp",
+      "ataque": 8,
+      "critico": "x3",
+      "dano": [
+        [
+          "1d6+2",
+          "corte"
+        ]
+      ]
+    },
+    {
+      "arma": "Chifres",
+      "descricao": "chifres",
+      "img": "systems/tormenta20/icons/poderes/ameacas/chifres.webp",
+      "ataque": 8,
+      "dano": [
+        [
+          "1d6+2",
+          "perfuracao"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Frenesi Ensandecido",
+      "img": "systems/tormenta20/icons/poderes/ameacas/odio-puro.webp",
+      "descricao": "<p>Quando uma criatura viva a até 9m do caprino ensandecido sofre dano de corte ou perfuração, ele entra em um frenesi até o fim da cena. Nesse estado, ele recebe +2 em testes de ataque, rolagens de dano e testes de resistência, mas não pode realizar ações que exigem calma e concentração, e deve sempre atacar o inimigo mais próximo que ele possa atacar.</p>",
+      "acao": "reacao",
+      "efeitos": [
+        {
+          "name": "Frenesi Ensandecido",
+          "description": "<p>+2 em testes de ataque, rolagens de dano e testes de resistência até o fim da cena.</p>",
+          "system": {
+            "changes": [
+              {
+                "key": "system.modificadores.ataque.cac",
+                "value": 2,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              },
+              {
+                "key": "system.modificadores.dano.cac",
+                "value": 2,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              },
+              {
+                "key": "system.pericias.fort.bonus",
+                "value": 2,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              },
+              {
+                "key": "system.pericias.refl.bonus",
+                "value": 2,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              },
+              {
+                "key": "system.pericias.vont.bonus",
+                "value": 2,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "poder": "Marrada Atordoante",
+      "img": "systems/tormenta20/icons/poderes/ameacas/marrada.webp",
+      "descricao": "<p>O caprino faz uma investida e ataca com seus chifres. Se ele acertar o ataque, a vítima fica atordoada por uma rodada (Fort CD 13 evita). Uma criatura só pode ser atordoada por esta habilidade uma vez por cena.</p>",
+      "acao": "completa",
+      "resistencia": "Fortitude CD 13 evita"
+    }
+  ]
+}

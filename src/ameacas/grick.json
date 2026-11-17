@@ -1,0 +1,71 @@
+{
+  "nome": "Grick",
+  "img": "assets/tokens/grick.png",
+  "nd": "2",
+  "tipo": "mon",
+  "tamanho": "med",
+  "papel": "solo",
+  "atributos": {
+    "for": 2,
+    "des": 2,
+    "con": 2,
+    "int": -2,
+    "sab": 0,
+    "car": -2
+  },
+  "pv": 40,
+  "defesa": 19,
+  "pericias": {
+    "inic": 5,
+    "perc": 3,
+    "fort": 2,
+    "refl": 13,
+    "vont": 7,
+    "furt": 5
+  },
+  "deslocamento": {
+    "deslocamento": 12,
+    "escalada": 12
+  },
+  "sentidos": [
+    "escuro"
+  ],
+  "corpoACorpo": "Quatro tentáculos +12 (1d4+2) e mordida +12 (1d4+2).",
+  "tesouro": "Metade.",
+  "notas": "<p><em>Eles surgem silenciosamente de uma curva do túnel. Vermes com mais de 2 metros de comprimento e cerca de 200 quilos. Seus corpos alongados são segmentados, com o dorso verde e o ventre levemente mais claro. A cabeça ostenta um pequeno par de olhos negros, um bico rubro e curvo e quatro tentáculos longos e musculosos.</em></p><p>Habitantes das profundezas, gricks podem ser encontrados em qualquer tipo de terreno subterrâneo, desde cavernas e túneis até sistemas de esgoto urbanos, como aqueles sob grandes cidades e fortalezas. Também podem ser encontrados na superfície, mas isso é bastante incomum; gricks só se aventuram para fora de seus túneis quando há pouca caça ou quando algum perigo os afugenta de seu território.</p><p>Apesar da aparência feral, gricks são dotados de uma inteligência básica — possuem um idioma próprio e uma organização social rudimentar. Gregários, vivem em pequenas comunidades que se organizam em torno de objetivos coletivos, como caça, patrulhamento do território e defesa do grupo. Em combate, exibem táticas básicas mas eficientes, fruto da combinação de seu intelecto rudimentar e seus instintos predadores. Não são poucos os grupos de aventureiros inexperientes que subestimaram a inteligência dos gricks, apenas para serem vítimas de sua capacidade de lutar em equipe.</p><p>Mais marcante que a inteligência dos gricks, entretanto, é sua maldade. Estes vermes monstruosos são movidos por uma combinação de crueldade e sadismo que direcionam a outros povos inteligentes. Especula-se que isso seja alimentado pela inveja; gricks são inteligentes o suficiente para perceber suas próprias limitações e acreditam que jamais serão capazes de erguer uma sociedade tão bem-sucedida quanto anões, humanos e outros povos de Arton. Em especial, gricks nutrem um profundo desdém pelos povos do subterrâneo e sentem um prazer especial em atacá-los e destruir suas construções.</p><p><strong>Percepção:</strong> +3 (+8 em subterrâneo). <strong>Furtividade:</strong> +5 (+15 em subterrâneo).</p>",
+  "ataques": [
+    {
+      "arma": "Tentáculo",
+      "descricao": "quatro tentáculos",
+      "img": "icons/creatures/tentacles/tentacles-octopus-black-pink.webp",
+      "qtd": 4,
+      "ataque": 12,
+      "dano": [
+        [
+          "1d4+2",
+          "impacto"
+        ]
+      ]
+    },
+    {
+      "arma": "Mordida",
+      "descricao": "mordida",
+      "img": "icons/creatures/abilities/mouth-teeth-long-red.webp",
+      "ataque": 12,
+      "dano": [
+        [
+          "1d4+2",
+          "perfuracao"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Punição Inescapável",
+      "img": "systems/tormenta20/icons/poderes/ameacas/taticas-alcateia.webp",
+      "descricao": "<p>Quando um inimigo erra um ataque contra o grick, se o grick estiver flanqueando esse inimigo, poderá fazer um ataque de tentáculo contra ele. O grick pode usar essa habilidade uma vez por rodada.</p>",
+      "acao": "reacao"
+    }
+  ]
+}

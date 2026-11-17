@@ -1,0 +1,107 @@
+{
+  "nome": "Ferani Lanceiro",
+  "img": "assets/tokens/ferani-lanceiro.png",
+  "nd": "3",
+  "tipo": "mon",
+  "raca": "trog",
+  "tamanho": "med",
+  "papel": "lackey",
+  "atributos": {
+    "for": 1,
+    "des": 3,
+    "con": 3,
+    "int": -1,
+    "sab": 2,
+    "car": 0
+  },
+  "pv": 21,
+  "defesa": 20,
+  "pericias": {
+    "inic": 6,
+    "perc": 5,
+    "fort": 9,
+    "refl": 14,
+    "vont": 4,
+    "atle": 4,
+    "furt": 12,
+    "sobr": 5
+  },
+  "deslocamento": {
+    "deslocamento": 9
+  },
+  "sentidos": [
+    "escuro"
+  ],
+  "corpoACorpo": "Lança +16 (2d6+7) e mordida +16 (1d6+7).",
+  "aDistancia": "Arco curto x2 +16 (1d6+5, x3).",
+  "equipamento": "Arco curto, escudo leve, flechas x20, lança, manto camuflado (deserto).",
+  "tesouro": "Metade.",
+  "notas": "<p><em>Embora claramente um trog, o lanceiro à sua frente pouco lembra aqueles que habitam o Reinado. Sua pele amarelada parece adaptada aos rigores do deserto. Suas vestes em tom de areia complementam sua camuflagem natural. Seus movimentos, suaves e ritmados, assemelham-se a uma hipnótica dança de combate.</em></p><p>Um dos primeiros povos a ocupar Halak-Tûr após a queda dos zarkhassianos, os ferani são um grupo de trogs que veio de terras distantes do oeste. Guiados pela Canção das Pedras, uma crença mística que dá a eles o poder de se comunicar com os espíritos da terra, os ferani se espalharam pelo Deserto da Perdição. Aqui, se estabeleceram como nômades que extraem seu sustento da caça, coleta de raízes e eventuais saques a viajantes e comunidades de outros povos.</p><p>Como parte de sua adaptação à vida no deserto escaldante, os ferani desenvolveram técnicas de luta únicas, propícias para combater em um ambiente de areias e rochas. Empregando lança, escudo e furtividade, lanceiros ferani defendem suas tribos, combatem monstros do deserto e executam saques ousados contra caravanas e entrepostos comerciais.</p><p>Além de seus famosos lanceiros do deserto, os ferani também contam com uma ordem de guerreiros de elite, os miragens. Combatentes sagrados, eles aprendem versos específicos da Canção das Rochas, que usam para complementar suas habilidades marciais. Miragens são defensores do povo ferani e muitas vezes podem ser encontrados liderando grupos de lanceiros em missões importantes para suas tribos.</p><p><strong>Furtividade:</strong> +12 (+14 em deserto).</p>",
+  "ataques": [
+    {
+      "arma": "Lança",
+      "descricao": "lança",
+      "img": "systems/tormenta20/icons/itens/equipamentos/lanca.webp",
+      "ataque": 16,
+      "dano": [
+        [
+          "2d6+7",
+          "perfuracao"
+        ]
+      ]
+    },
+    {
+      "arma": "Mordida",
+      "descricao": "mordida",
+      "img": "icons/creatures/abilities/mouth-teeth-long-red.webp",
+      "ataque": 16,
+      "dano": [
+        [
+          "1d6+7",
+          "perfuracao"
+        ]
+      ]
+    },
+    {
+      "arma": "Arco curto",
+      "descricao": "arco curto x2",
+      "img": "systems/tormenta20/icons/itens/equipamentos/arco-curto.webp",
+      "qtd": 2,
+      "ataque": 16,
+      "critico": "x3",
+      "alcance": "medium",
+      "dano": [
+        [
+          "1d6+5",
+          "perfuracao"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Emboscar",
+      "img": "systems/tormenta20/icons/poderes/ameacas/investida.webp",
+      "descricao": "<p>Na primeira rodada de combate, o ferani lanceiro pode realizar uma ação padrão adicional.</p>"
+    },
+    {
+      "poder": "Mau Cheiro",
+      "img": "systems/tormenta20/icons/poderes/ameacas/veneno.webp",
+      "descricao": "<p>Todas as criaturas (exceto trogs) em alcance curto ficam enjoadas por 1d6 rodadas (Fort CD 17 evita). Uma criatura que passe no teste de resistência fica imune a esta habilidade por um dia. <em>Veneno.</em></p>",
+      "acao": "padrao",
+      "danos": [
+        [
+          "1d6",
+          "",
+          "Rodadas (enjoado)"
+        ]
+      ],
+      "resistencia": "Fortitude CD 17 evita"
+    },
+    {
+      "poder": "Sangue Frio",
+      "img": "systems/tormenta20/icons/poderes/ameacas/vulnerabilidade.webp",
+      "descricao": "<p>O ferani sofre 1 ponto de dano adicional por dado de dano de frio.</p>"
+    }
+  ]
+}

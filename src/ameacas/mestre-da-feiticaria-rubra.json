@@ -1,0 +1,233 @@
+{
+  "nome": "Mestre da Feitiçaria Rubra",
+  "img": "assets/tokens/mestre-da-feiticaria-rubra.png",
+  "nd": "13",
+  "tipo": "mon",
+  "raca": "lefou",
+  "tamanho": "med",
+  "papel": "special",
+  "atributos": {
+    "for": 3,
+    "des": 0,
+    "con": 1,
+    "int": 1,
+    "sab": -3,
+    "car": 8
+  },
+  "pv": 390,
+  "pm": 119,
+  "defesa": 42,
+  "pericias": {
+    "inic": 14,
+    "perc": 11,
+    "fort": 26,
+    "refl": 13,
+    "vont": 20,
+    "atle": 14,
+    "conh": 11,
+    "inti": 22,
+    "mist": 13
+  },
+  "deslocamento": {
+    "deslocamento": 12
+  },
+  "sentidos": [
+    "escuro"
+  ],
+  "resistencias": {
+    "acido": "imune",
+    "dano": 5
+  },
+  "resistenciasTexto": "fortificação 25%, imunidade a ácido, redução de dano 5, resistência a efeitos lefeu e da Tormenta +5",
+  "corpoACorpo": "Mordida +35 (4d6+8 mais 4d12 ácido) e duas garras +35 (4d8+8 mais 4d12 ácido).",
+  "tesouro": "Padrão.",
+  "notas": "<p><em>Como muitos lefou, o individuo diante de vocês exibe mutações, provavelmente causadas pela Tormenta. Mas a influência da Tempestade Rubra não se limita a alterações corporais: quando o estranho profere as primeiras palavras arcanas, fica claro que a corrupção está presente também em seus poderes mágicos.</em></p><p>Feiticeiros rubros são feiticeiros cujo sangue foi corrompido pela Tormenta e que escolheram abraçar profundamente esse poder. Eles aceitam não apenas a magia que a Tempestade Rubra propicia, mas também as transformações em seu corpo e sua mente. Para eles, a insanidade não é um preço a se pagar, mas uma dádiva, uma transformação que expande suas capacidades mentais assim como as alterações em seus corpos elevam suas habilidades físicas. Mais do que trilhar um caminho como arcanistas, estes indivíduos buscam uma transformação mágica, almejando serem mais do que meros mortais. Eles buscam ser lefeu.</p>",
+  "ataques": [
+    {
+      "arma": "Mordida",
+      "descricao": "mordida",
+      "img": "icons/creatures/abilities/mouth-teeth-long-red.webp",
+      "ataque": 35,
+      "dano": [
+        [
+          "4d6+8",
+          "perfuracao"
+        ],
+        [
+          "4d12",
+          "acido"
+        ]
+      ]
+    },
+    {
+      "arma": "Garras",
+      "descricao": "duas garras",
+      "qtd": 2,
+      "ataque": 35,
+      "dano": [
+        [
+          "4d8+8",
+          "corte"
+        ],
+        [
+          "4d12",
+          "acido"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Resistência a Efeitos Lefeu e da Tormenta",
+      "img": "systems/tormenta20/icons/poderes/ameacas/imunidade-aberrante.webp",
+      "descricao": "<p>O mestre recebe +5 em testes de resistência contra efeitos lefeu e da Tormenta.</p>"
+    },
+    {
+      "poder": "Desprezar a Realidade",
+      "img": "systems/tormenta20/icons/poderes/ameacas/forma.webp",
+      "descricao": "<p>Até o início do seu próximo turno, o mestre da feitiçaria rubra ignora terreno difícil e causa 40% de chance de falha em efeitos usados contra ele.</p>",
+      "acao": "livre",
+      "custo": 2,
+      "danos": [
+        [
+          "1d100",
+          "",
+          "Chance de falha (1–40 falha)"
+        ]
+      ]
+    },
+    {
+      "poder": "Linhagem Rubra",
+      "img": "systems/tormenta20/icons/poderes/ameacas/magias.webp",
+      "descricao": "<p>O custo das magias <em>Amedrontar</em>, <em>Armadura Arcana</em>, <em>Concentração de Combate</em>, <em>Enxame Rubro de Ichabod</em> e <em>Flecha Ácida</em> do mestre diminui em –1 PM (já contabilizado).</p>"
+    },
+    {
+      "poder": "Reação Corrosiva",
+      "img": "systems/tormenta20/icons/poderes/ameacas/sombra-rubra.webp",
+      "descricao": "<p>Se o mestre acerta os dois ataques de garra em uma mesma criatura na mesma rodada, ele injeta ácido no sangue dela. No início de cada um dos turnos da criatura, ela deve fazer um teste de Fortitude (CD 37). Se falhar, sofre 8d4 pontos de dano de ácido. Se passar, evita o dano nessa rodada e, se passar duas vezes em sequência, elimina o ácido. Se a criatura for reduzida a 0 PV por este dano de ácido, seu corpo explode, matando-a e causando 8d4 pontos de dano de ácido em todas as criaturas a até 3m (Ref CD 37 reduz à metade). Essa habilidade não afeta criaturas sem sangue, como construtos ou mortos-vivos.</p>",
+      "acao": "livre",
+      "danos": [
+        [
+          "8d4",
+          "acido"
+        ]
+      ],
+      "resistencia": "Fortitude CD 37 evita"
+    },
+    {
+      "poder": "Sangue Ácido",
+      "img": "systems/tormenta20/icons/poderes/ameacas/espinhos.webp",
+      "descricao": "<p>Quando o mestre sofre dano por um ataque corpo a corpo, o atacante sofre 5 pontos de dano de ácido.</p>",
+      "danos": [
+        [
+          "5",
+          "acido"
+        ]
+      ]
+    },
+    {
+      "poder": "Tempo Místico",
+      "img": "systems/tormenta20/icons/poderes/ameacas/percepcao-temporal.webp",
+      "descricao": "<p>Uma vez por rodada, quando lança uma magia com execução de ação de movimento, padrão ou completa, o mestre pode perder 1d6, 1d8 ou 1d12 PV para diminuir o tempo de execução da magia em um, dois ou três passos, respectivamente (até um mínimo de ação livre). Essa perda de vida só pode ser curada com descanso.</p>",
+      "acao": "livre",
+      "custo": 2,
+      "danos": [
+        [
+          "1d6",
+          "perda",
+          "Um passo"
+        ],
+        [
+          "1d8",
+          "perda",
+          "Dois passos"
+        ],
+        [
+          "1d12",
+          "perda",
+          "Três passos"
+        ]
+      ]
+    },
+    {
+      "poder": "Magias",
+      "img": "systems/tormenta20/icons/poderes/ameacas/magias.webp",
+      "descricao": "<p>Como um feiticeiro de linhagem rubra de 13º nível (CD 37).</p>"
+    },
+    {
+      "poder": "Amedrontar",
+      "acao": "padrao",
+      "custo": 5,
+      "img": "systems/tormenta20/icons/magias/amedrontar.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.m14TgW19d1JTBz8U]{Amedrontar} (Padrão, 5 PM). Animais e humanoides em alcance curto à escolha do iniciado ficam apavorados por 1 rodada e depois abalados (Von reduz para abalado por 1d4 rodadas).</p>",
+      "danos": [
+        [
+          "1d4",
+          "",
+          "Rodadas (abalado)"
+        ]
+      ],
+      "resistencia": "Vontade CD 37 reduz"
+    },
+    {
+      "poder": "Armadura Arcana",
+      "acao": "reacao",
+      "custo": 1,
+      "img": "systems/tormenta20/icons/magias/armadura-arcana.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.vUsntyToyQl1TuFZ]{Armadura Arcana} (Reação, 1 PM). O mestre recebe +5 na Defesa contra o próximo ataque que sofrer.</p>"
+    },
+    {
+      "poder": "Concentração de Combate",
+      "acao": "padrao",
+      "custo": 7,
+      "img": "systems/tormenta20/icons/magias/concentracao-de-combate.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.lAsj1NrA2J6GbvDi]{Concentração de Combate} (Padrão, 7 PM). Até o fim da cena, quando faz um ataque, o mestre rola dois dados e usa o melhor resultado, e quando um oponente ataca o mestre, rola dois dados e usa o pior resultado.</p>"
+    },
+    {
+      "poder": "Enxame Rubro de Ichabod",
+      "img": "systems/tormenta20/icons/poderes/ameacas/magias.webp",
+      "descricao": "<p><em>Enxame Rubro de Ichabod</em> (Padrão, 13 PM, sustentada). Um enxame de pequenos parasitas da Tormenta surge em alcance médio e ocupa uma área de 3m. No fim de cada turno do mestre, o enxame causa 6d12 pontos de dano de ácido a qualquer criatura em seu espaço (Ref reduz à metade). No início de cada um de seus turnos, o mestre rola 1d6. Em um resultado 5 ou 6, um novo enxame surge adjacente a um já existente à sua escolha. O mestre pode gastar uma ação de movimento para mover todos os enxames com deslocamento de 12m, mas eles não podem ocupar o mesmo espaço.</p>",
+      "acao": "padrao",
+      "custo": 13,
+      "danos": [
+        [
+          "6d12",
+          "acido",
+          "Enxame"
+        ],
+        [
+          "1d6",
+          "",
+          "Novo enxame (5–6)"
+        ]
+      ],
+      "resistencia": "Reflexos CD 37 reduz à metade"
+    },
+    {
+      "poder": "Flecha Ácida",
+      "acao": "padrao",
+      "custo": 13,
+      "img": "systems/tormenta20/icons/magias/flecha-acida.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.C2TqT4GXlsNiJPxb]{Flecha Ácida} (Padrão, 13 PM). O mestre dispara um projétil em uma criatura ou objeto em alcance médio. O alvo sofre 9d6 pontos de dano de ácido e fica coberto por muco corrosivo que causa 7d6 pontos de dano de ácido no início de cada um de seus dois próximos turnos. Além disso, se o alvo estiver usando armadura ou escudo, o muco corrói o item, reduzindo seu bônus na Defesa em 1 ponto permanentemente (Ref reduz à metade e evita o muco).</p>",
+      "danos": [
+        [
+          "9d6",
+          "acido"
+        ],
+        [
+          "7d6",
+          "acido",
+          "Muco (por turno)"
+        ]
+      ],
+      "resistencia": "Reflexos CD 37 reduz à metade e evita o muco"
+    },
+    {
+      "poder": "Libertação",
+      "acao": "padrao",
+      "custo": 10,
+      "img": "systems/tormenta20/icons/magias/libertacao.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.ELDmNrdpN7g8M3iJ]{Libertação} (Padrão, 10 PM). Até o fim da cena, o mestre fica imune a efeitos de movimento e ignora qualquer efeito que impeça ou restrinja seu deslocamento.</p>"
+    }
+  ]
+}

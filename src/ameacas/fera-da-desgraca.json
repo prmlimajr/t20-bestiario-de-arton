@@ -1,0 +1,113 @@
+{
+  "nome": "Fera-da-Desgraça",
+  "img": "assets/tokens/fera-da-desgraca.png",
+  "nd": "12",
+  "tipo": "mon",
+  "tamanho": "eno",
+  "papel": "special",
+  "atributos": {
+    "for": 6,
+    "des": 2,
+    "con": 6,
+    "int": -4,
+    "sab": 2,
+    "car": 0
+  },
+  "pv": 420,
+  "defesa": 41,
+  "pericias": {
+    "inic": 12,
+    "perc": 12,
+    "fort": 26,
+    "refl": 12,
+    "vont": 20,
+    "atle": 16,
+    "furt": 12
+  },
+  "deslocamento": {
+    "deslocamento": 12
+  },
+  "sentidos": [
+    "faro",
+    "penumbra"
+  ],
+  "resistencias": {
+    "dano": 15
+  },
+  "resistenciasTexto": "redução de dano 15/mitral",
+  "corpoACorpo": "Mordida +37 (3d10+24 mais 2d8 trevas) e duas garras +37 (3d8+24, 19, mais 2d8 trevas).",
+  "tesouro": "Padrão mais 1d6 línguas amaldiçoadas (CD 27 para extrair).",
+  "notas": "<p><em>A fera assemelha-se a um grande urso das cavernas, com presas longas e marcadas por finas linhas negras, bem como orelhas alongadas, pontudas e projetadas para cima. Seu corpo, coberto por uma pelagem marrom com listras verticais escuras, é marcado por dezenas de bocas de vários tamanhos e formatos — algumas lembram bocas humanas, enquanto outras possuem dentes, línguas ou cores que remontam a outras criaturas.</em></p><p>Feras-da-desgraça são monstruosidades impregnadas por magia amaldiçoada, que vivem em grandes florestas e regiões rochosas, como os sopés e vales das Montanhas Sanguinárias e as partes mais profundas da Floresta de Tollon. São predadores corajosos que não temem atacar presas maiores ou mais numerosas. Têm uma predileção por criaturas envoltas em magia, mas felizmente não possuem um apetite muito voraz, o que torna seus ataques pouco frequentes.</p><p>Mais do que uma característica anatômica, as várias bocas que cobrem o corpo de uma fera-da-desgraça são uma de suas principais armas. Elas conseguem imitar qualquer som que tenham ouvido e são capazes de rogar maldições variadas, que se tornam ainda mais potentes quando lançadas contra aqueles que foram enganados por suas imitações sonoras. Quando caça, a fera-da-desgraça usa suas bocas para atrair a presa até um lugar isolado e então usa suas maldições para enfraquecê-la. Depois disso, usa suas poderosas garras e sua mandíbula para abatê-la.</p><p><strong>Redução de dano:</strong> 15/mitral.</p>",
+  "ataques": [
+    {
+      "arma": "Mordida",
+      "descricao": "mordida",
+      "img": "icons/creatures/abilities/mouth-teeth-long-red.webp",
+      "ataque": 37,
+      "dano": [
+        [
+          "3d10+24",
+          "perfuracao"
+        ],
+        [
+          "2d8",
+          "trevas"
+        ]
+      ]
+    },
+    {
+      "arma": "Garras",
+      "descricao": "duas garras",
+      "qtd": 2,
+      "ataque": 37,
+      "critico": "19",
+      "dano": [
+        [
+          "3d8+24",
+          "corte"
+        ],
+        [
+          "2d8",
+          "trevas"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Agarrar Aprimorado",
+      "img": "systems/tormenta20/icons/poderes/ameacas/agarrar.webp",
+      "descricao": "<p>Se a fera acerta um ataque de mordida, pode fazer a manobra agarrar como uma ação livre (teste +42).</p>",
+      "acao": "livre"
+    },
+    {
+      "poder": "Bocas Imitadoras",
+      "img": "systems/tormenta20/icons/poderes/ameacas/engolir.webp",
+      "descricao": "<p>A fera-da-desgraça pode imitar qualquer som que tenha ouvido, incluindo vozes. Uma criatura que ouça um som produzido pela fera pode fazer um teste de Intuição (CD 35). Se passar, percebe que é uma imitação.</p>",
+      "resistencia": "Intuição CD 35"
+    },
+    {
+      "poder": "Farejar Magia",
+      "img": "systems/tormenta20/icons/poderes/ameacas/visao-ampla.webp",
+      "descricao": "<p>A fera fareja a presença de magia em alcance médio automaticamente, como se tivesse passado em um teste para detectar magia (veja <em>Tormenta20</em>, p. 121).</p>"
+    },
+    {
+      "poder": "Mordida Dissipante",
+      "img": "systems/tormenta20/icons/magias/dissipar-magia.webp",
+      "descricao": "<p>Quando acerta um ataque de mordida, a fera causa um efeito semelhante à magia @UUID[Compendium.tormenta20.magias.Item.rfTGYwrXLjcIAIP5]{Dissipar Magia} sobre o alvo, usando sua Vontade no lugar de Misticismo. Para cada efeito dissipado dessa forma, a fera recebe 10 PV temporários cumulativos.</p>",
+      "acao": "livre"
+    },
+    {
+      "poder": "Rogar Maldição",
+      "img": "systems/tormenta20/icons/magias/rogar-maldicao.webp",
+      "descricao": "<p>A fera roga uma das maldições a seguir sobre uma criatura em alcance curto (Fort CD 35 evita; uma criatura que tenha falhado em um teste de Intuição contra as Bocas Imitadoras da fera nesta cena sofre –5 nesse teste). A fera pode usar essa habilidade mais de uma vez por rodada, mas apenas uma vez contra a mesma criatura em cada rodada.</p><p>• <em>Debilidade.</em> A criatura fica esmorecida e não pode se comunicar ou lançar magias. Ainda reconhece seus aliados e pode segui-los e ajudá-los, mas sempre de maneira simplória.</p><p>• <em>Doença.</em> A criatura contrai uma doença à escolha da fera, que a afeta imediatamente (sem período de incubação).</p><p>• <em>Fraqueza.</em> A criatura fica debilitada e lenta.</p><p>• <em>Isolamento.</em> A criatura perde o uso de um de seus cinco sentidos à sua escolha. Se perder a visão, fica cega. Se perder a audição, fica surda. Se perder o olfato ou paladar, não pode usar a habilidade faro. Se perder o tato, fica caída e não pode se levantar.</p>",
+      "acao": "livre",
+      "resistencia": "Fortitude CD 35 evita"
+    }
+  ],
+  "itens": [
+    {
+      "ref": "linguas-amaldicoadas"
+    }
+  ]
+}

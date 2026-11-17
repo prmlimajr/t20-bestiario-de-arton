@@ -1,0 +1,43 @@
+{
+  "name": "Parceiro: Golfinho",
+  "type": "poder",
+  "img": "assets/tokens/golfinho-parceiro.png",
+  "system": {
+    "description": {
+      "value": "<p>O golfinho é um parceiro especial (combatente) que fornece os benefícios a seguir.</p>\n<p><strong>Iniciante</strong>: uma vez por rodada, você recebe +1d8 em uma rolagem de dano corpo a corpo.</p>\n<p><strong>Veterano</strong>: você pode usar o poder Ímpeto. Se já tiver esse poder, o bônus em deslocamento fornecido por ele aumenta para 9m.</p>\n<p><strong>Mestre</strong>: uma vez por rodada, você pode gastar 1 PM para emitir um raio sônico em uma criatura em alcance curto. Ela fica atordoada por 1 rodada (apenas uma vez por cena) e sofre 4d6 pontos de dano mental (Fort CD Car reduz o dano à metade e evita a condição). Você só pode usar esta habilidade se você e o alvo estiverem no mesmo corpo d’água.</p>\n<p><strong>Não automatizado:</strong> Ímpeto (Veterano) e o raio sônico (Mestre).</p>"
+    },
+    "source": "Bestiário de Arton",
+    "tipo": "geral",
+    "subtipo": "Parceiros"
+  },
+  "effects": [
+    {
+      "name": "Golfinho: +1d8 de dano",
+      "img": "icons/svg/upgrade.svg",
+      "description": "<p>Uma vez por rodada, +1d8 em uma rolagem de dano corpo a corpo.</p>",
+      "disabled": true,
+      "transfer": true,
+      "duration": {
+        "expiry": null
+      },
+      "system": {
+        "onuse": true,
+        "abilityUse": {
+          "custo": null,
+          "types": [
+            "attack"
+          ]
+        },
+        "changes": [
+          {
+            "key": "dano",
+            "value": "1d8",
+            "priority": 0,
+            "type": "add",
+            "phase": "initial"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "nome": "Urso Engenhoca",
+  "img": "assets/tokens/urso-engenhoca.png",
+  "nd": "3",
+  "tipo": "con",
+  "tamanho": "gra",
+  "papel": "solo",
+  "atributos": {
+    "for": 5,
+    "des": 1,
+    "con": 6,
+    "int": 0,
+    "sab": 0,
+    "car": -5
+  },
+  "pv": 105,
+  "defesa": 21,
+  "pericias": {
+    "inic": 4,
+    "perc": 5,
+    "fort": 15,
+    "refl": 9,
+    "vont": 3,
+    "atle": 10
+  },
+  "deslocamento": {
+    "deslocamento": 12
+  },
+  "sentidos": [
+    "escuro"
+  ],
+  "resistencias": {
+    "eletricidade": 5,
+    "fogo": 5,
+    "dano": 5
+  },
+  "resistenciasTexto": "redução de dano 5, redução de eletricidade e fogo 5",
+  "corpoACorpo": "Duas garras +14 (2d6+4).",
+  "tesouro": "Nenhum.",
+  "notas": "<p><em>O que à primeira vista parece um cachorrinho de brinquedo revela-se um elaborado construto metálico. Seus movimentos, mecânicos mas coordenados, são acompanhados pelo zumbido de suas engrenagens internas. Seu rosto, em vez de inexpressividade, exibe uma personalidade singular, reforçada pelo brilho vivaz de pequenos olhos luminosos.</em></p><p>Embora em sua maioria os inventores sejam associados a grandes maravilhas mecânicas, como armaduras reforçadas, veículos voadores ou mesmo golens de trabalho ou guerra, existem aqueles que se dedicam a invenções de menor porte, mas nem por isso menos maravilhosas. Entre estas criações, estão os pequenos e simpáticos engenhômatos.</p><p>Engenhômatos são construtos fabricados a partir de engrenagens, molas e cristais energéticos, capazes de se mover e agir por contra própria. Fabricados à semelhança de outras criaturas, são pequenas obras-primas de automação e miniaturização, capazes de executar uma grande variedade de tarefas. Alguns são fabricados para diversão, como brinquedos animados ou pássaros decorativos capazes de cantar, enquanto outros são desenvolvidos com propósitos mais práticos, como auxiliar seu criador em seu ofício ou acompanhá-lo em suas aventuras.</p><p>Embora geralmente estejam acompanhando seu criador, engenhômatos podem ser encontrados como sentinelas ou guardiões de um lugar importante (como um laboratório secreto) ou mesmo desempenhando uma missão. Engenhômatos cujo mestre tenha desaparecido podem continuar executando suas últimas ordens ou podem se desgarrar, tornando-se um perigo para aventureiros e exploradores.</p><p><strong>Inteligência:</strong> — (registrada como 0 na ficha).</p><p><strong>Parceiro:</strong> veja o poder “Montaria: Urso Engenhoca” no compêndio de parceiros deste módulo.</p>",
+  "ataques": [
+    {
+      "arma": "Garras",
+      "descricao": "duas garras",
+      "img": "systems/tormenta20/icons/poderes/ameacas/garras.webp",
+      "qtd": 2,
+      "ataque": 14,
+      "dano": [
+        [
+          "2d6+4",
+          "corte"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Salto Defensivo",
+      "img": "systems/tormenta20/icons/magias/salto-dimensional.webp",
+      "descricao": "<p>Uma vez por rodada, o urso engenhoca recebe +5 na Defesa e em testes de Reflexos contra um ataque ou efeito que esteja prestes a atingi-lo. Após a resolução do efeito, ele salta para um espaço adjacente desocupado.</p>",
+      "acao": "reacao",
+      "efeitos": [
+        {
+          "name": "Salto Defensivo",
+          "description": "<p>+5 na Defesa e em Reflexos contra um ataque ou efeito.</p>",
+          "system": {
+            "changes": [
+              {
+                "key": "system.attributes.defesa.bonus",
+                "value": 5,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              },
+              {
+                "key": "system.pericias.refl.bonus",
+                "value": 5,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

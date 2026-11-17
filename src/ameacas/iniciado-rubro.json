@@ -1,0 +1,170 @@
+{
+  "nome": "Iniciado Rubro",
+  "img": "assets/tokens/iniciado-rubro.png",
+  "nd": "5",
+  "tipo": "mon",
+  "raca": "lefou",
+  "tamanho": "med",
+  "papel": "special",
+  "atributos": {
+    "for": 2,
+    "des": 0,
+    "con": 2,
+    "int": 1,
+    "sab": -2,
+    "car": 6
+  },
+  "pv": 110,
+  "pm": 41,
+  "defesa": 22,
+  "pericias": {
+    "inic": 6,
+    "perc": 4,
+    "fort": 17,
+    "refl": 5,
+    "vont": 11,
+    "atle": 8,
+    "conh": 5,
+    "inti": 12,
+    "mist": 7
+  },
+  "deslocamento": {
+    "deslocamento": 9
+  },
+  "sentidos": [
+    "escuro"
+  ],
+  "resistencias": {
+    "acido": 5
+  },
+  "resistenciasTexto": "redução de ácido 5, resistência a efeitos lefeu e da Tormenta +5",
+  "corpoACorpo": "Duas garras +15 (2d6+3 mais 4d4 ácido).",
+  "tesouro": "Padrão.",
+  "notas": "<p><em>Como muitos lefou, o individuo diante de vocês exibe mutações, provavelmente causadas pela Tormenta. Mas a influência da Tempestade Rubra não se limita a alterações corporais: quando o estranho profere as primeiras palavras arcanas, fica claro que a corrupção está presente também em seus poderes mágicos.</em></p><p>Feiticeiros rubros são feiticeiros cujo sangue foi corrompido pela Tormenta e que escolheram abraçar profundamente esse poder. Eles aceitam não apenas a magia que a Tempestade Rubra propicia, mas também as transformações em seu corpo e sua mente. Para eles, a insanidade não é um preço a se pagar, mas uma dádiva, uma transformação que expande suas capacidades mentais assim como as alterações em seus corpos elevam suas habilidades físicas. Mais do que trilhar um caminho como arcanistas, estes indivíduos buscam uma transformação mágica, almejando serem mais do que meros mortais. Eles buscam ser lefeu.</p>",
+  "ataques": [
+    {
+      "arma": "Garras",
+      "descricao": "duas garras",
+      "qtd": 2,
+      "ataque": 15,
+      "dano": [
+        [
+          "2d6+3",
+          "corte"
+        ],
+        [
+          "4d4",
+          "acido"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Resistência a Efeitos Lefeu e da Tormenta",
+      "img": "systems/tormenta20/icons/poderes/ameacas/imunidade-aberrante.webp",
+      "descricao": "<p>O iniciado recebe +5 em testes de resistência contra efeitos lefeu e da Tormenta.</p>"
+    },
+    {
+      "poder": "Reação Corrosiva",
+      "img": "systems/tormenta20/icons/poderes/ameacas/sombra-rubra.webp",
+      "descricao": "<p>Se o iniciado acerta os dois ataques de garra em uma mesma criatura na mesma rodada, ele injeta ácido no sangue dela. No início de cada um dos turnos da criatura, ela deve fazer um teste de Fortitude (CD 22). Se falhar, sofre 4d4 pontos de dano de ácido. Se passar, evita o dano nessa rodada e, se passar duas vezes em sequência, elimina o ácido. Se a criatura for reduzida a 0 PV por este dano de ácido, seu corpo explode, matando-a e causando 4d4 pontos de dano de ácido em todas as criaturas a até 3m (Ref CD 22 reduz à metade). Essa habilidade não afeta criaturas sem sangue, como construtos ou mortos-vivos.</p>",
+      "acao": "livre",
+      "danos": [
+        [
+          "4d4",
+          "acido"
+        ]
+      ],
+      "resistencia": "Fortitude CD 22 evita"
+    },
+    {
+      "poder": "Sangue Ácido",
+      "img": "systems/tormenta20/icons/poderes/ameacas/espinhos.webp",
+      "descricao": "<p>Quando o iniciado sofre dano por um ataque corpo a corpo, o atacante sofre 3 pontos de dano de ácido.</p>",
+      "danos": [
+        [
+          "3",
+          "acido"
+        ]
+      ]
+    },
+    {
+      "poder": "Tempo Místico",
+      "img": "systems/tormenta20/icons/poderes/ameacas/percepcao-temporal.webp",
+      "descricao": "<p>Uma vez por rodada, quando lança uma magia com execução de ação de movimento, padrão ou completa, o iniciado pode perder 1d6, 1d8 ou 1d12 PV para diminuir o tempo de execução da magia em um, dois ou três passos, respectivamente (até um mínimo de ação livre). Essa perda de vida só pode ser curada com descanso.</p>",
+      "acao": "livre",
+      "custo": 2,
+      "danos": [
+        [
+          "1d6",
+          "perda",
+          "Um passo"
+        ],
+        [
+          "1d8",
+          "perda",
+          "Dois passos"
+        ],
+        [
+          "1d12",
+          "perda",
+          "Três passos"
+        ]
+      ]
+    },
+    {
+      "poder": "Magias",
+      "img": "systems/tormenta20/icons/poderes/ameacas/magias.webp",
+      "descricao": "<p>Como um feiticeiro de linhagem rubra de 5º nível (CD 22).</p>"
+    },
+    {
+      "poder": "Amedrontar",
+      "acao": "padrao",
+      "custo": 3,
+      "img": "systems/tormenta20/icons/magias/amedrontar.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.m14TgW19d1JTBz8U]{Amedrontar} (Padrão, 3 PM). Uma criatura em alcance curto fica apavorada por 1 rodada e depois abalada (Von reduz para abalada por 1d4 rodadas).</p>",
+      "danos": [
+        [
+          "1d4",
+          "",
+          "Rodadas (abalada)"
+        ]
+      ],
+      "resistencia": "Vontade CD 22 reduz"
+    },
+    {
+      "poder": "Armadura Arcana",
+      "acao": "reacao",
+      "custo": 2,
+      "img": "systems/tormenta20/icons/magias/armadura-arcana.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.vUsntyToyQl1TuFZ]{Armadura Arcana} (Reação, 2 PM). O iniciado recebe +5 na Defesa contra o próximo ataque que sofrer.</p>"
+    },
+    {
+      "poder": "Concentração de Combate",
+      "acao": "padrao",
+      "custo": 3,
+      "img": "systems/tormenta20/icons/magias/concentracao-de-combate.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.lAsj1NrA2J6GbvDi]{Concentração de Combate} (Padrão, 3 PM). Até o fim da cena, sempre que faz um ataque, o iniciado rola dois dados e usa o melhor resultado.</p>"
+    },
+    {
+      "poder": "Flecha Ácida",
+      "acao": "padrao",
+      "custo": 4,
+      "img": "systems/tormenta20/icons/magias/flecha-acida.webp",
+      "descricao": "<p>@UUID[Compendium.tormenta20.magias.Item.C2TqT4GXlsNiJPxb]{Flecha Ácida} (Padrão, 4 PM). O iniciado dispara um projétil em uma criatura ou objeto em alcance médio. O alvo sofre 4d6 pontos de dano de ácido e fica coberto por muco corrosivo que causa 2d6 pontos de dano de ácido no início de cada um dos seus dois próximos turnos. Além disso, se o alvo estiver usando armadura ou escudo, o muco corrói o item, reduzindo seu bônus na Defesa em 1 ponto permanentemente (Ref reduz à metade e evita o muco).</p>",
+      "danos": [
+        [
+          "4d6",
+          "acido"
+        ],
+        [
+          "2d6",
+          "acido",
+          "Muco (por turno)"
+        ]
+      ],
+      "resistencia": "Reflexos CD 22 reduz à metade e evita o muco"
+    }
+  ]
+}

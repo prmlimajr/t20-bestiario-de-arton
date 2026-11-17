@@ -1,0 +1,80 @@
+{
+  "nome": "Golfinho",
+  "img": "assets/tokens/golfinho.png",
+  "nd": "1",
+  "tipo": "ani",
+  "tamanho": "med",
+  "papel": "solo",
+  "atributos": {
+    "for": 0,
+    "des": 3,
+    "con": 1,
+    "int": -4,
+    "sab": 1,
+    "car": -2
+  },
+  "pv": 32,
+  "defesa": 15,
+  "pericias": {
+    "inic": 5,
+    "perc": 5,
+    "fort": 5,
+    "refl": 8,
+    "vont": 3,
+    "acro": 5,
+    "atle": 5
+  },
+  "deslocamento": {
+    "deslocamento": 0,
+    "natacao": 18
+  },
+  "sentidos": [
+    "cegas",
+    "penumbra"
+  ],
+  "sentidosExtra": "percepção às cegas (médio)",
+  "corpoACorpo": "Pancada +9 (1d6+3).",
+  "tesouro": "Nenhum.",
+  "notas": "<p><em>Subitamente, várias cabeças acinzentadas de focinho alongado e liso surgem na superfície do mar. São golfinhos, que batem suas caudas com força na água, avisando que alguma ameaça está por vir.</em></p><p>Encontrados em todos os mares e oceanos de Arton, estes mamíferos marinhos são mansos, sociáveis e muito inteligentes. Gostam da presença de humanoides, acompanhando suas embarcações enquanto saltam e fazem piruetas. Alguns bandos vivem próximos a comunidades costeiras, acompanhando barcos de pesca e indicando os maiores cardumes em troca de peixes e outros petiscos. Também é comum que se aproximem de povos subaquáticos. Muitas tribos de elfos-do-mar inclusive consideram os golfinhos seus semelhantes, vivendo em perfeita harmonia — e vingando seus amigos quando os invasores da superfície os atacam.</p><p>Apesar do temperamento amigável, os golfinhos artonianos não são inofensivos; são caçadores astutos e corajosos, capazes de desferir poderosas pancadas com o focinho e usar o sonar para emitir uma rajada sônica atordoante. Por sua bravura e capacidades, são considerados valiosos companheiros de aventureiros e exploradores subaquáticos.</p><p><strong>Parceiro:</strong> veja o poder “Parceiro: Golfinho” no compêndio de parceiros deste módulo.</p>",
+  "ataques": [
+    {
+      "arma": "Pancada",
+      "descricao": "pancada",
+      "img": "systems/tormenta20/icons/poderes/ameacas/pancada.webp",
+      "ataque": 9,
+      "dano": [
+        [
+          "1d6+3",
+          "impacto"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Investida Aquática",
+      "img": "systems/tormenta20/icons/poderes/ameacas/investida.webp",
+      "descricao": "<p>Quando faz uma investida, o golfinho causa +2d6 pontos de dano.</p>",
+      "danos": [
+        [
+          "2d6",
+          "impacto",
+          "Investida"
+        ]
+      ]
+    },
+    {
+      "poder": "Raio Sônico",
+      "img": "systems/tormenta20/icons/poderes/ameacas/urro-selvagem.webp",
+      "descricao": "<p>O golfinho emite um raio sônico contra uma criatura em alcance médio. A criatura fica atordoada por 1 rodada (apenas uma vez por cena) e sofre 4d6 pontos de dano mental (Fort CD 14 reduz o dano à metade e evita a condição). O golfinho só pode usar esta habilidade se ele e o alvo estiverem no mesmo corpo d’água. <em>Recarga (movimento).</em></p>",
+      "acao": "padrao",
+      "danos": [
+        [
+          "4d6",
+          "psiquico"
+        ]
+      ],
+      "resistencia": "Fortitude CD 14 reduz à metade e evita"
+    }
+  ]
+}

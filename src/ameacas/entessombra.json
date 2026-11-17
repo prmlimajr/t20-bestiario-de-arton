@@ -1,0 +1,112 @@
+{
+  "nome": "Entessombra",
+  "img": "assets/tokens/entessombra.png",
+  "nd": "14",
+  "tipo": "mor",
+  "tamanho": "eno",
+  "papel": "solo",
+  "atributos": {
+    "for": 9,
+    "des": -1,
+    "con": 5,
+    "int": 0,
+    "sab": 3,
+    "car": 2
+  },
+  "pv": 690,
+  "defesa": 46,
+  "pericias": {
+    "inic": 10,
+    "perc": 14,
+    "fort": 28,
+    "refl": 12,
+    "vont": 24,
+    "furt": 5,
+    "sobr": 19
+  },
+  "deslocamento": {
+    "deslocamento": 9
+  },
+  "sentidos": [
+    "escuro"
+  ],
+  "resistencias": {
+    "fogo": "vulneravel",
+    "dano": 20
+  },
+  "resistenciasTexto": "fortificação 25%, incorpóreo, redução de dano 20/luz, vulnerabilidade a fogo",
+  "corpoACorpo": "Duas pancadas gélidas +39 (4d8+20 frio mais 4d8+20 trevas).",
+  "tesouro": "Padrão mais 1 dose de terra de cemitério (CD 29 para extrair).",
+  "notas": "<p><em>A enorme árvore no centro da clareira parece ser feita de sombra viva. Seus galhos e folhas movem-se por vontade própria, e de seu tronco emana o fulgor discreto de dois olhos opacos. Mesmo à distância, é possível sentir o controle que a criatura exerce sobre a terra e os mortos que ela abriga.</em></p><p>Entes são considerados importantes guardiões de bosques e florestas, Entretanto, sob circunstâncias específicas e malignas, um ente pode se transformar em uma sombra de seu próprio ser; uma criatura espectral tomada pelas trevas, que passa a vagar pelas regiões mais sombrias e escuras dos ermos, conhecida como entessombra.</p><p>Entessombras são uma aberração do mundo natural. Assemelham-se a grandes árvores, mas feitas de uma escuridão quebrada apenas por seus olhos, que brilham em um roxo opaco, mal percebido à distância. Como seus parentes vivos, tornam-se pastores e guardiões, mas seu rebanho é formado por mortos erguidos por seus poderes sombrios e o solo que protegem é a terra conspurcada em que foram transformados. Um entessombra está sempre em busca de novos corpos para reerguer e irá atacar qualquer ser vivo que entrar em seu território.</p><p><strong>Redução de dano:</strong> 20/luz. <strong>Furtividade:</strong> +5 (+15 em florestas). <strong>Deslocamento:</strong> sem redução por terreno difícil.</p>",
+  "ataques": [
+    {
+      "arma": "Pancada gélida",
+      "descricao": "duas pancadas gélidas",
+      "img": "systems/tormenta20/icons/poderes/ameacas/pancada.webp",
+      "qtd": 2,
+      "ataque": 39,
+      "dano": [
+        [
+          "4d8+20",
+          "frio"
+        ],
+        [
+          "4d8+20",
+          "trevas"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Incorpóreo",
+      "img": "systems/tormenta20/icons/poderes/ameacas/forma.webp",
+      "descricao": "<p>O entessombra é incorpóreo.</p>"
+    },
+    {
+      "poder": "Drenar Vitalidade",
+      "img": "systems/tormenta20/icons/poderes/ameacas/sombra-rubra.webp",
+      "descricao": "<p>Uma criatura viva atingida por uma pancada gélida do entessombra deve fazer um teste de Fortitude (CD 38). Se falhar, fica fraca e o entessombra recebe 30 PV temporários cumulativos.</p>",
+      "resistencia": "Fortitude CD 38 evita"
+    },
+    {
+      "poder": "Pastor dos Mortos",
+      "img": "systems/tormenta20/icons/poderes/ameacas/ergam-se.webp",
+      "descricao": "<p>O entessombra invoca mãos espectrais que se projetam do chão em um raio de 30m. Quando esta habilidade é usada, e no início de cada turno do ente, todas as criaturas na área em contato com o solo sofrem 4d8 pontos de dano de corte e 4d8 pontos de dano de trevas, e ficam enredadas por 1 rodada (Ref CD 38 reduz à metade e evita a condição). As mãos permanecem na área até o fim da cena ou até o entessombra usar esta habilidade novamente. <em>Recarga (movimento).</em></p>",
+      "acao": "completa",
+      "danos": [
+        [
+          "4d8",
+          "corte"
+        ],
+        [
+          "4d8",
+          "trevas"
+        ]
+      ],
+      "resistencia": "Reflexos CD 38 reduz à metade e evita"
+    },
+    {
+      "poder": "Travessia Sombria",
+      "img": "systems/tormenta20/icons/poderes/ameacas/ataque-trevas.webp",
+      "descricao": "<p>O entessombra percorre até o dobro do seu deslocamento. Ele pode passar pelo espaço ocupado de quaisquer inimigos menores que ele, mas não pode passar duas vezes pelo mesmo espaço. Criaturas atravessadas desta forma sofrem 4d8+10 pontos de dano de frio, mais 4d8+10 pontos de dano de trevas, e ficam abaladas (Ref CD 38 reduz à metade e evita a condição). <em>Recarga (movimento).</em></p>",
+      "acao": "completa",
+      "danos": [
+        [
+          "4d8+10",
+          "frio"
+        ],
+        [
+          "4d8+10",
+          "trevas"
+        ]
+      ],
+      "resistencia": "Reflexos CD 38 reduz à metade e evita"
+    },
+    {
+      "poder": "Fraqueza Solar",
+      "img": "systems/tormenta20/icons/poderes/ameacas/sensibilidade-luz.webp",
+      "descricao": "<p>Enquanto estiver exposto à luz solar natural, o entessombra fica debilitado.</p>"
+    }
+  ]
+}

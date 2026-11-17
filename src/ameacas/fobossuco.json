@@ -1,0 +1,88 @@
+{
+  "nome": "Fobossuco",
+  "img": "assets/tokens/fobossuco.png",
+  "nd": "6",
+  "tipo": "ani",
+  "tamanho": "eno",
+  "papel": "solo",
+  "atributos": {
+    "for": 7,
+    "des": 1,
+    "con": 4,
+    "int": -5,
+    "sab": 1,
+    "car": -4
+  },
+  "pv": 220,
+  "defesa": 25,
+  "pericias": {
+    "inic": 6,
+    "perc": 6,
+    "fort": 18,
+    "refl": 12,
+    "vont": 6,
+    "furt": 1
+  },
+  "deslocamento": {
+    "deslocamento": 6,
+    "natacao": 9
+  },
+  "sentidos": [
+    "penumbra"
+  ],
+  "corpoACorpo": "Mordida +21 (2d10+18) e cauda +21 (2d8+18).",
+  "tesouro": "Couro de fobossuco (CD 21 para extrair, vale T$ 100 para fabricar armaduras superiores).",
+  "notas": "<p><em>A calma do lago é interrompida pelo surgimento de uma enorme criatura reptiliana. Semelhante a um crocodilo de aparência primitiva e coberta por protuberâncias ósseas, a monstruosidade de quase 15 metros de comprimento abre sua longa mandíbula, revelando uma fileira de dentes poderosos capazes de destroçar mesmo uma embarcação.</em></p><p>Uma verdadeira cria de Megalokk, o fobossuco é um predador atroz originário da Era dos Monstros. Capaz de nadar grandes distâncias, mesmo em alto-mar, é conhecido por atacar presas de qualquer tipo e tamanho. Até recentemente, era encontrado apenas na costa de Lamnor e nas águas dentro e ao redor de Galrasia. A queda da Flecha de Fogo, entretanto, afetou suas rotas marinhas, levando alguns indivíduos para as águas próximas de Khubar e do Mar do Dragão-Rei.</p><p><strong>Furtividade:</strong> +1 (+11 dentro d’água).</p>",
+  "ataques": [
+    {
+      "arma": "Mordida",
+      "descricao": "mordida",
+      "img": "icons/creatures/abilities/mouth-teeth-long-red.webp",
+      "ataque": 21,
+      "dano": [
+        [
+          "2d10+18",
+          "perfuracao"
+        ]
+      ]
+    },
+    {
+      "arma": "Cauda",
+      "descricao": "cauda",
+      "img": "systems/tormenta20/icons/poderes/ameacas/cauda.webp",
+      "ataque": 21,
+      "dano": [
+        [
+          "2d8+18",
+          "impacto"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Agarrar Aprimorado",
+      "img": "systems/tormenta20/icons/poderes/ameacas/agarrar.webp",
+      "descricao": "<p>Se o fobossuco acerta um ataque de mordida, pode fazer a manobra agarrar como uma ação livre (teste +26).</p>",
+      "acao": "livre"
+    },
+    {
+      "poder": "Cauda Esperta",
+      "img": "systems/tormenta20/icons/poderes/ameacas/cauda.webp",
+      "descricao": "<p>Uma vez por rodada, quando uma criatura se move para flanquear o fobossuco, ele faz um ataque de cauda contra essa criatura. Se ele acertar esse ataque, a criatura interrompe seu deslocamento, é empurrada 1,5m para longe do fobossuco e perde a ação que usou para se deslocar.</p>",
+      "acao": "reacao"
+    },
+    {
+      "poder": "Giro da Morte",
+      "img": "systems/tormenta20/icons/poderes/ameacas/dilacerar.webp",
+      "descricao": "<p>Se o fobossuco estiver agarrando uma criatura dentro d’água e usar a manobra agarrar novamente para causar dano, causa +4d10 pontos de dano.</p>",
+      "danos": [
+        [
+          "4d10",
+          "perfuracao",
+          "Dano extra"
+        ]
+      ]
+    }
+  ]
+}

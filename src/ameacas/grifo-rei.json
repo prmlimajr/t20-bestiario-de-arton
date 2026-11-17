@@ -1,0 +1,98 @@
+{
+  "nome": "Grifo-Rei",
+  "img": "assets/tokens/grifo-rei.png",
+  "nd": "12",
+  "tipo": "ani",
+  "tamanho": "eno",
+  "papel": "solo",
+  "atributos": {
+    "for": 9,
+    "des": 5,
+    "con": 7,
+    "int": 0,
+    "sab": 3,
+    "car": 0
+  },
+  "pv": 600,
+  "defesa": 43,
+  "pericias": {
+    "inic": 17,
+    "perc": 15,
+    "fort": 20,
+    "refl": 26,
+    "vont": 12,
+    "ades": 10
+  },
+  "deslocamento": {
+    "deslocamento": 12,
+    "voo": 24
+  },
+  "sentidos": [
+    "faro",
+    "penumbra"
+  ],
+  "resistencias": {
+    "dano": 10
+  },
+  "imunidadeCondicoes": [
+    "medo"
+  ],
+  "resistenciasTexto": "evasão, imunidade a medo, redução de dano 10/mágico, resistência a magia +2",
+  "corpoACorpo": "Mordida +36 (4d12+20) e duas garras +36 (4d8+20).",
+  "notas": "<p><em>Ele é grande como um elefante, as asas capazes de encobrir um celeiro, o pelo longo e dourado ondulando ao vento. Quando arreganha o bico, seu piado-urro alcança e ecoa nas montanhas distantes.</em></p><p>Em Arbória, o mundo divino de Allihanna, existem criaturas especialmente abençoadas pela magia da natureza. Exemplares extraordinários de suas espécies, estas criaturas são chamadas de feras-reais e são mais fortes, ágeis e inteligentes que suas contrapartes normais. Feras-reais costumam assumir a liderança de seus bandos ou manadas ou, no caso de animais solitários, como tigres, dominam o dobro do território que normalmente controlariam. Um mesmo bando ou manada dificilmente terá mais de uma fera-real — a exceção são animais liderados por casais, como lobos, que podem ter uma fera-rainha e uma fera-rei.</p><p>Feras-reais raramente vêm para Arton — quando o fazem, isso é resultado de uma invocação poderosa ou de uma demanda da própria Allihanna. Entretanto, de tempos em tempos, um animal artoniano se torna tão poderoso, e tão importante para o equilíbrio da natureza, que uma bênção da Deusa da Natureza recai sobre ele, transformando-o em uma fera-real.</p><p><strong>Redução de dano:</strong> 10/mágico.</p><p><strong>Adestramento:</strong> +10 (+20 com grifos).</p>",
+  "ataques": [
+    {
+      "arma": "Mordida",
+      "descricao": "mordida",
+      "img": "icons/creatures/abilities/mouth-teeth-long-red.webp",
+      "ataque": 36,
+      "dano": [
+        [
+          "4d12+20",
+          "perfuracao"
+        ]
+      ]
+    },
+    {
+      "arma": "Garras",
+      "descricao": "duas garras",
+      "qtd": 2,
+      "ataque": 36,
+      "dano": [
+        [
+          "4d8+20",
+          "corte"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Evasão",
+      "img": "systems/tormenta20/icons/poderes/classes/especialistas/evasao.webp",
+      "descricao": "<p>Quando sofre um efeito que permite um teste de Reflexos para reduzir o dano à metade, o grifo-rei não sofre dano algum se passar.</p>"
+    },
+    {
+      "poder": "Resistência a Magia",
+      "img": "systems/tormenta20/icons/poderes/ameacas/resistencia-magia.webp",
+      "descricao": "<p>O grifo-rei recebe +2 em testes de resistência contra magias.</p>"
+    },
+    {
+      "poder": "Bote",
+      "img": "systems/tormenta20/icons/poderes/ameacas/bote.webp",
+      "descricao": "<p>O grifo-rei faz uma investida e ataca com sua mordida e suas garras. Os três ataques recebem o bônus de +2 da investida, mas devem ser feitos contra a mesma criatura.</p>",
+      "acao": "completa"
+    },
+    {
+      "poder": "Empatia Selvagem",
+      "img": "systems/tormenta20/icons/poderes/ameacas/voz-da-natureza.webp",
+      "descricao": "<p>O grifo-rei pode usar Adestramento para mudar atitude e persuasão com grifos.</p>"
+    },
+    {
+      "poder": "Aura de Majestade",
+      "img": "systems/tormenta20/icons/poderes/ameacas/aura-aterradora.webp",
+      "descricao": "<p>Sempre que uma criatura tentar executar uma ação hostil contra o grifo-rei pela primeira vez em uma cena, ela deve fazer um teste de Vontade (CD 35). Se falhar, sofre –3 em testes de perícia e rolagens de dano contra o grifo-rei até o fim da cena. <em>Medo.</em></p>",
+      "resistencia": "Vontade CD 35 evita"
+    }
+  ]
+}

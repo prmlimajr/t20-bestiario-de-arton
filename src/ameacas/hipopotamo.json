@@ -1,0 +1,66 @@
+{
+  "nome": "Hipopótamo",
+  "img": "assets/tokens/hipopotamo.png",
+  "nd": "4",
+  "tipo": "ani",
+  "tamanho": "gra",
+  "papel": "solo",
+  "atributos": {
+    "for": 5,
+    "des": -1,
+    "con": 3,
+    "int": -4,
+    "sab": 1,
+    "car": -3
+  },
+  "pv": 140,
+  "defesa": 23,
+  "pericias": {
+    "inic": 3,
+    "perc": 5,
+    "fort": 16,
+    "refl": 4,
+    "vont": 10,
+    "atle": 9
+  },
+  "deslocamento": {
+    "deslocamento": 9,
+    "natacao": 9
+  },
+  "sentidos": [
+    "faro",
+    "penumbra"
+  ],
+  "corpoACorpo": "Mordida +16 (2d12+11, x3).",
+  "tesouro": "Nenhum.",
+  "notas": "<p><em>A criatura exibe um corpanzil arredondado, com uma boca larga e enorme, marcada por presas grossas e sem ponta. Sua pele lisa e pernas curtas fazem parecer ser uma criatura lenta e pacífica.</em></p><p>Conhecido por uma aparente indolência que esconde uma enorme ferocidade, o hipopótamo é um grande mamífero anfíbio que habita rios e lagos. Embora sejam mais comuns em Ubani, estes animais podem ser encontrados em qualquer região de Arton, com exceção de locais muito frios, como as Uivantes. Vivem em manadas de dezenas de indivíduos e passam a maior parte do tempo dentro da água ou às suas margens. São extremamente territorialistas, atacando qualquer criatura, predadora ou não, que se aproxime de seu espaço.</p>",
+  "ataques": [
+    {
+      "arma": "Mordida",
+      "descricao": "mordida",
+      "img": "icons/creatures/abilities/mouth-teeth-long-red.webp",
+      "ataque": 16,
+      "critico": "x3",
+      "dano": [
+        [
+          "2d12+11",
+          "perfuracao"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Mordida Avassaladora",
+      "img": "systems/tormenta20/icons/poderes/ameacas/mordida.webp",
+      "descricao": "<p>Uma criatura atingida pela mordida do hipopótamo tem sua armadura ou escudo (à sua escolha) avariado. Se não estiver usando armadura ou empunhando um escudo, sofre +1d12 pontos de dano (em ambos os casos, Ref CD 18 evita).</p>",
+      "danos": [
+        [
+          "1d12",
+          "perfuracao"
+        ]
+      ],
+      "resistencia": "Reflexos CD 18 evita"
+    }
+  ]
+}

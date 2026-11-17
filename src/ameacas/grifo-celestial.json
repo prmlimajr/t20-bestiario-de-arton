@@ -1,0 +1,79 @@
+{
+  "nome": "Grifo Celestial",
+  "img": "assets/tokens/grifo-celestial.png",
+  "nd": "8",
+  "tipo": "esp",
+  "tamanho": "eno",
+  "papel": "solo",
+  "atributos": {
+    "for": 6,
+    "des": 5,
+    "con": 4,
+    "int": -1,
+    "sab": 3,
+    "car": 1
+  },
+  "pv": 320,
+  "defesa": 32,
+  "pericias": {
+    "inic": 13,
+    "perc": 13,
+    "fort": 12,
+    "refl": 21,
+    "vont": 12
+  },
+  "deslocamento": {
+    "deslocamento": 12,
+    "voo": 36
+  },
+  "sentidos": [
+    "escuro"
+  ],
+  "imunidadeCondicoes": [
+    "medo"
+  ],
+  "resistenciasTexto": "imunidade a medo",
+  "corpoACorpo": "Mordida +26 (2d12+14) e duas garras +26 (2d6+14).",
+  "tesouro": "Nenhum.",
+  "notas": "<p><em>A fera imponente lembra outros grifos que vocês já viram, mas maior, com uma pelagem ainda mais dourada e reluzente. Tem dois pares de asas brancas e luminosas, como as de anjos. Apesar da aparência de predador, seu olhar é calmo e repleto de serenidade.</em></p><p>Enquanto grifos comuns existem em estado selvagem e são mais ou menos acessíveis, o grifo celestial é uma versão extraplanar do animal — maior, mais inteligente e ainda mais majestoso. São encontrados facilmente apenas em Arbória, o Reino de Allihanna, sendo raridade em Arton.</p><p>Quando um devoto presta um grande serviço à Deusa da Natureza, pode ser presenteado com esta montaria sagrada. Também é possível para altos clérigos da deusa conjurá-los por curtos períodos, para transporte rápido ou auxílio em combate.</p><p>O grifo celestial não tem o mesmo apetite descontrolado por cavalos de seu primo mundano. No entanto, podem ficar inquietos na presença de abissais e outros seres malignos, bem como criaturas da Tormenta ou devotos de Megalokk.</p><p><strong>Parceiro:</strong> veja o poder “Montaria: Grifo Celestial” no compêndio de parceiros deste módulo.</p>",
+  "ataques": [
+    {
+      "arma": "Mordida",
+      "descricao": "mordida",
+      "img": "icons/creatures/abilities/mouth-teeth-long-red.webp",
+      "ataque": 26,
+      "dano": [
+        [
+          "2d12+14",
+          "perfuracao"
+        ]
+      ]
+    },
+    {
+      "arma": "Garras",
+      "descricao": "duas garras",
+      "qtd": 2,
+      "ataque": 26,
+      "dano": [
+        [
+          "2d6+14",
+          "corte"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Bote Rasante",
+      "img": "systems/tormenta20/icons/poderes/ameacas/bote.webp",
+      "descricao": "<p>O grifo celestial faz uma investida e ataca com sua mordida e suas duas garras. Os três ataques recebem o bônus de +2 da investida, mas devem ser feitos contra o mesmo alvo. Após os ataques, o grifo pode continuar seu movimento, até o limite de seu deslocamento.</p>",
+      "acao": "completa"
+    },
+    {
+      "poder": "Presença Majestosa",
+      "img": "systems/tormenta20/icons/poderes/ameacas/aura-aterradora.webp",
+      "descricao": "<p>Uma criatura que ataque o grifo deve fazer um teste de Vontade (CD 26). Se falhar, não conseguirá machucá-lo e perderá a ação. Caso passe, a criatura não é mais afetada por esta habilidade até o fim da cena.</p>",
+      "resistencia": "Vontade CD 26 evita"
+    }
+  ]
+}

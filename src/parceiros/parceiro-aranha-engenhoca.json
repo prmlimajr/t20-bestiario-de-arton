@@ -1,0 +1,14 @@
+{
+  "name": "Parceiro: Aranha Engenhoca",
+  "type": "poder",
+  "img": "assets/tokens/aranha-engenhoca.png",
+  "system": {
+    "description": {
+      "value": "<p>A aranha engenhoca é um parceiro engenhômato que conta como uma engenhoca de @UUID[Compendium.tormenta20.magias.Item.tMZhHyjssqzaEe1L]{Teia} e que aumenta a CD dos testes de Reflexos para resistir a suas engenhocas em +1.</p><p><strong>Não automatizado:</strong> +1 na CD de Reflexos das suas engenhocas.</p><p><strong>Engenhômatos como Parceiros</strong></p><p>Engenhômatos são máquinas avançadas, que combinam características de engenhocas e de autômatos. Sua criação e manutenção exigem conhecimento e técnicas especializadas; apenas personagens com o poder @UUID[Compendium.tormenta20.poderes.Item.ptPx5rxZdlUfsM9t]{Autômato} (<em>Tormenta20</em>, p. 69) podem fabricar e manter engenhômatos.</p><p>Ao adquirir o poder Autômato, no lugar do autômato padrão, você pode escolher um engenhômato que você seja capaz de fabricar. Esse engenhômato <em>não</em> recebe um tipo de parceiro como definido no poder. Entretanto, no 7° nível, ele se torna um parceiro iniciante de um tipo à sua escolha entre os listados no poder e, no 15°, se torna veterano.</p><p>Porém, fabricar um engenhômato segue as mesmas regras para engenhocas, exceto que a magia que ele simula é definida por seu tipo e seu custo de fabricação aumenta em 50% (ou seja, T$ 150 x o custo em PM da magia). Um engenhômato funciona como um parceiro e uma engenhoca e conta no limite de ambos. Entretanto, ele não precisa ser empunhado ou vestido, pode ser ativado com um comando verbal a até 9m e seu efeito se origina dele, e não do personagem. Bônus de parceiro fornecidos por engenhômatos não contam como bônus de itens (apenas de parceiros mesmo).</p>"
+    },
+    "source": "Bestiário de Arton",
+    "tipo": "geral",
+    "subtipo": "Parceiros"
+  },
+  "effects": []
+}

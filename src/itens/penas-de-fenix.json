@@ -1,0 +1,17 @@
+{
+  "name": "Pena de Fênix",
+  "type": "consumivel",
+  "img": "systems/tormenta20/icons/itens/gerais/pena.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>[Tesouro Especial]</strong></p><p>As penas de uma fênix carregam uma porção de sua capacidade de ressurreição. Itens extremamente raros, só podem ser extraídos no breve momento entre uma fênix se sacrificar e seu corpo ser consumido por suas chamas. Alternativamente, uma fênix pode ceder uma de suas penas como recompensa a um grupo de aventureiros verdadeiramente heroicos.</p><p>Um personagem que esteja empunhando uma dessas penas pode gastar uma ação completa e consumir a pena para ressuscitar uma criatura que esteja tocando, como pelo efeito do poder @UUID[Compendium.tormenta20.poderes.Item.f1wsMyoaUc84zuqx]{Dom da Ressurreição} (<em>Tormenta20</em>, p. 133).</p><p>Penas de fênix são itens bastante valorizados por aventureiros e podem chegar a valer T$ 5.000. Sua venda, entretanto, é considerada um sacrilégio aos olhos dos devotos de Thyatis, sobretudo pelas circunstâncias geralmente associadas à sua obtenção.</p>"
+    },
+    "source": "Bestiário de Arton",
+    "tipo": "material",
+    "qtd": 1,
+    "preco": 5000,
+    "ativacao": {
+      "execucao": "full"
+    }
+  }
+}

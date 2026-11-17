@@ -1,0 +1,88 @@
+{
+  "nome": "Crocodilo Esqueleto",
+  "img": "assets/tokens/crocodilo-esqueleto.png",
+  "nd": "2",
+  "tipo": "mor",
+  "tamanho": "gra",
+  "papel": "solo",
+  "atributos": {
+    "for": 5,
+    "des": 1,
+    "con": 3,
+    "int": 0,
+    "sab": 1,
+    "car": -2
+  },
+  "pv": 63,
+  "defesa": 18,
+  "pericias": {
+    "inic": 4,
+    "perc": 4,
+    "fort": 13,
+    "refl": 7,
+    "vont": 2,
+    "furt": 4
+  },
+  "deslocamento": {
+    "deslocamento": 6,
+    "natacao": 9
+  },
+  "sentidos": [
+    "escuro"
+  ],
+  "resistencias": {
+    "corte": 5,
+    "frio": 5,
+    "perfuracao": 5
+  },
+  "resistenciasTexto": "redução de corte, frio e perfuração 5",
+  "corpoACorpo": "Mordida +12 (1d10+6) e cauda +12 (1d8+6).",
+  "tesouro": "Nenhum.",
+  "notas": "<p><em>Ao adentrar a grande caverna, vocês se deparam com uma estranha escultura feita a partir de centenas de ossos, claramente oriundos de diversas criaturas diferentes. Vagamente humanoide, parece ser apenas uma obra de arte macabra até que suas órbitas se iluminam e seus estranhos braços começam a brandir suas armas.</em></p><p>Esqueletos estão entre os primeiros tipos de mortos-vivos que um necromante aprende a erguer. Sua criação é relativamente simples e exige apenas uma ossada funcional, alguns componentes místicos e energia negativa. Entretanto, uma vez que as técnicas necessárias para criar estes lacaios desmortos sejam dominadas, alguns necromantes passam a experimentar com esqueletos de criaturas maiores e mais perigosas. Alguns, mais habilidosos, conseguem até criar amálgamas esqueléticos — verdadeiros amontoados de ossos animados formados pela combinação das partes mais “úteis” de várias ossadas.</p><p><strong>Inteligência:</strong> — (registrada como 0 na ficha).</p><p><strong>Furtividade:</strong> +4 (+9 dentro d’água).</p>",
+  "ataques": [
+    {
+      "arma": "Mordida",
+      "descricao": "mordida",
+      "img": "icons/creatures/abilities/mouth-teeth-long-red.webp",
+      "ataque": 12,
+      "dano": [
+        [
+          "1d10+6",
+          "perfuracao"
+        ]
+      ]
+    },
+    {
+      "arma": "Cauda",
+      "descricao": "cauda",
+      "img": "systems/tormenta20/icons/poderes/ameacas/cauda.webp",
+      "ataque": 12,
+      "dano": [
+        [
+          "1d8+6",
+          "impacto"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Agarrar Aprimorado",
+      "img": "systems/tormenta20/icons/poderes/ameacas/agarrar.webp",
+      "descricao": "<p>Se o crocodilo esqueleto acerta um ataque de mordida, pode fazer a manobra agarrar como uma ação livre (teste +14).</p>",
+      "acao": "livre"
+    },
+    {
+      "poder": "Bocarra Desimpedida",
+      "img": "systems/tormenta20/icons/poderes/ameacas/engolir.webp",
+      "descricao": "<p>Se vencer um teste oposto para agarrar uma criatura Grande ou menor por 5 ou mais, o crocodilo esqueleto “engole” uma parte da criatura, como um braço, perna ou asa, e a captura com suas costelas. Contra uma criatura agarrada dessa forma, o crocodilo recebe +5 em testes de manobra para agarrar e causa +1d10 pontos de dano com essa manobra.</p>",
+      "danos": [
+        [
+          "1d10",
+          "impacto",
+          "Dano extra"
+        ]
+      ]
+    }
+  ]
+}

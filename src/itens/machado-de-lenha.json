@@ -1,0 +1,71 @@
+{
+  "name": "Machado de Lenha",
+  "type": "arma",
+  "img": "systems/tormenta20/icons/itens/equipamentos/machadinha.webp",
+  "system": {
+    "description": {
+      "value": "<p>Uma ferramenta comum. Sua lâmina projetada para cortar madeira rígida é capaz de ignorar 5 pontos de RD de objetos e construtos.</p><p><strong>Arma Simples • Corpo a Corpo • Uma Mão • T$ 15 • Dano 1d6 • Crítico x3 • Corte • 1 Espaço</strong></p>"
+    },
+    "source": "Bestiário de Arton",
+    "peso": 2,
+    "espacos": 1,
+    "qtd": 1,
+    "preco": 15,
+    "rolls": [
+      {
+        "name": "Ataque",
+        "key": "ataque0",
+        "type": "ataque",
+        "parts": [
+          [
+            "1d20",
+            "",
+            ""
+          ],
+          [
+            "luta",
+            "",
+            ""
+          ],
+          [
+            "0",
+            "",
+            ""
+          ]
+        ],
+        "adaptavel": "",
+        "versatil": ""
+      },
+      {
+        "name": "Dano",
+        "key": "dano1",
+        "type": "dano",
+        "parts": [
+          [
+            "1d6",
+            "corte",
+            ""
+          ],
+          [
+            "@for",
+            "",
+            ""
+          ]
+        ],
+        "adaptavel": "",
+        "versatil": ""
+      }
+    ],
+    "criticoM": 20,
+    "criticoX": 3,
+    "alcance": "",
+    "proficiencia": "simples",
+    "proposito": "corpo-a-corpo",
+    "empunhadura": "uma",
+    "equipado2": {
+      "slot": 0,
+      "type": "hand"
+    },
+    "tipoUso": "sim"
+  }
+}

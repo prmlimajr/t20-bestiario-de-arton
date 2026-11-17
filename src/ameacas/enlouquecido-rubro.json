@@ -1,0 +1,129 @@
+{
+  "nome": "Enlouquecido Rubro",
+  "img": "assets/tokens/enlouquecido-rubro.png",
+  "nd": "6",
+  "tipo": "hum",
+  "raca": "bugbear",
+  "tamanho": "med",
+  "papel": "solo",
+  "atributos": {
+    "for": 7,
+    "des": 2,
+    "con": 3,
+    "int": 0,
+    "sab": -5,
+    "car": -2
+  },
+  "pv": 200,
+  "defesa": 24,
+  "pericias": {
+    "inic": 7,
+    "perc": 0,
+    "fort": 18,
+    "refl": 18,
+    "vont": 0,
+    "atle": 12,
+    "inti": 12
+  },
+  "deslocamento": {
+    "deslocamento": 9
+  },
+  "sentidos": [
+    "faro",
+    "escuro"
+  ],
+  "imunidadeCondicoes": [
+    "mental",
+    "medo"
+  ],
+  "resistenciasTexto": "imunidade a efeitos mentais e medo, indiferença à dor",
+  "corpoACorpo": "Maça x2 +20 (2d8+10 mais 2d6 psíquico).",
+  "equipamento": "Maça aumentada.",
+  "tesouro": "Metade.",
+  "notas": "<p><em>A corrupção da Tormenta é conhecida por sua capacidade de alterar a forma física da realidade, dando a ela uma aparência deturpada inexplicável e incompreensível para outros seres. Entretanto, existe outro aspecto dessa corrupção, mais insidioso e menos aparente, mas nem por isso menos incompreensível: a corrupção da mente.</em></p><p>Enlouquecidos rubros são indivíduos cujas mentes foram corrompidas pela Tormenta, mas que, à primeira vista, não exibem sinais visíveis dessa influência. Seu comportamento, entretanto, não deixa dúvidas de que há algo errado: enlouquecidos são erráticos e propensos a surtos de agressividade e violência. Quando atacam, seus olhos ganham um brilho rubro que transmite a insanidade de suas mentes. Mais do que isso, são capazes de espalhar a loucura da Tormenta àqueles ao seu redor.</p><p>A transformação em um enlouquecido rubro geralmente é resultado de uma incursão malsucedida a uma área de Tormenta, mas também pode ser causada por uma derrota contra lefeu ou como uma punição a inimigos imposta por cultistas rubros ou devotos de Aharadak. Enlouquecidos podem ser encontrados próximo a qualquer lugar sob a influência rubra, seja como ameaças errantes ou como defensores sob controle de outros seres da Tormenta.</p>",
+  "ataques": [
+    {
+      "arma": "Maça",
+      "descricao": "maça x2",
+      "img": "systems/tormenta20/icons/itens/equipamentos/maca.webp",
+      "qtd": 2,
+      "ataque": 20,
+      "dano": [
+        [
+          "2d8+10",
+          "impacto"
+        ],
+        [
+          "2d6",
+          "psiquico"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Alimentar a Loucura",
+      "img": "systems/tormenta20/icons/poderes/ameacas/insanidade-tormenta.webp",
+      "descricao": "<p>Se estiver em alcance curto de outra criatura sob efeito de uma condição mental ou de medo, o enlouquecido recebe um bônus de +2 em testes de ataque e rolagens de dano.</p>",
+      "efeitos": [
+        {
+          "name": "Alimentar a Loucura",
+          "description": "<p>+2 em testes de ataque e rolagens de dano.</p>",
+          "system": {
+            "changes": [
+              {
+                "key": "system.modificadores.ataque.cac",
+                "value": 2,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              },
+              {
+                "key": "system.modificadores.dano.cac",
+                "value": 2,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "poder": "Indiferença à Dor",
+      "img": "systems/tormenta20/icons/poderes/ameacas/odio-puro.webp",
+      "descricao": "<p>Todo o dano não mágico que o enlouquecido sofre é reduzido à metade.</p>"
+    },
+    {
+      "poder": "Mente Aberrante",
+      "img": "systems/tormenta20/icons/poderes/ameacas/imunidade-aberrante.webp",
+      "descricao": "<p>Sempre que o enlouquecido faz um teste de Vontade para resistir a uma habilidade, a criatura que usou essa habilidade sofre 3d6 pontos de dano psíquico.</p>",
+      "danos": [
+        [
+          "3d6",
+          "psiquico"
+        ]
+      ]
+    },
+    {
+      "poder": "Olhar Insano",
+      "img": "systems/tormenta20/icons/poderes/ameacas/insanidade-tormenta.webp",
+      "descricao": "<p>Uma criatura em alcance curto, capaz de ver o enlouquecido, faz um teste de Vontade (CD 22). Se falhar, ela sofre um dos seguintes efeitos (role 1d6): 1) abalado; 2) alquebrado; 3) atordoado por 1 rodada; 4) confuso; 5) frustrado; 6) 3d6 pontos de dano psíquico. Uma criatura só pode ser alvo desta habilidade uma vez por cena.</p>",
+      "acao": "movimento",
+      "danos": [
+        [
+          "1d6",
+          "",
+          "Efeito"
+        ],
+        [
+          "3d6",
+          "psiquico",
+          "Dano (resultado 6)"
+        ]
+      ],
+      "resistencia": "Vontade CD 22 evita"
+    }
+  ]
+}

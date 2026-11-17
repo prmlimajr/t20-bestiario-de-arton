@@ -1,0 +1,172 @@
+{
+  "nome": "Ferani Miragem",
+  "img": "assets/tokens/ferani-miragem.png",
+  "nd": "6",
+  "tipo": "mon",
+  "raca": "trog",
+  "tamanho": "med",
+  "papel": "solo",
+  "atributos": {
+    "for": 2,
+    "des": 5,
+    "con": 3,
+    "int": -1,
+    "sab": 2,
+    "car": 0
+  },
+  "pv": 200,
+  "defesa": 27,
+  "pericias": {
+    "inic": 10,
+    "perc": 7,
+    "fort": 12,
+    "refl": 18,
+    "vont": 6,
+    "atle": 7,
+    "furt": 16,
+    "sobr": 9
+  },
+  "deslocamento": {
+    "deslocamento": 12
+  },
+  "sentidos": [
+    "escuro"
+  ],
+  "imunidadeCondicoes": [
+    "medo"
+  ],
+  "resistenciasTexto": "evasão, imunidade a medo",
+  "corpoACorpo": "Lança +20 (2d8+14, 19, mais veneno) e mordida +20 (2d6+14 mais veneno).",
+  "aDistancia": "Arco curto x2 +20 (2d6+12, x3, mais veneno).",
+  "equipamento": "Arco curto, escudo leve, flechas x20, lança precisa, manto camuflado (deserto).",
+  "tesouro": "Padrão.",
+  "notas": "<p><em>Embora claramente um trog, o lanceiro à sua frente pouco lembra aqueles que habitam o Reinado. Sua pele amarelada parece adaptada aos rigores do deserto. Suas vestes em tom de areia complementam sua camuflagem natural. Seus movimentos, suaves e ritmados, assemelham-se a uma hipnótica dança de combate.</em></p><p>Um dos primeiros povos a ocupar Halak-Tûr após a queda dos zarkhassianos, os ferani são um grupo de trogs que veio de terras distantes do oeste. Guiados pela Canção das Pedras, uma crença mística que dá a eles o poder de se comunicar com os espíritos da terra, os ferani se espalharam pelo Deserto da Perdição. Aqui, se estabeleceram como nômades que extraem seu sustento da caça, coleta de raízes e eventuais saques a viajantes e comunidades de outros povos.</p><p>Como parte de sua adaptação à vida no deserto escaldante, os ferani desenvolveram técnicas de luta únicas, propícias para combater em um ambiente de areias e rochas. Empregando lança, escudo e furtividade, lanceiros ferani defendem suas tribos, combatem monstros do deserto e executam saques ousados contra caravanas e entrepostos comerciais.</p><p>Além de seus famosos lanceiros do deserto, os ferani também contam com uma ordem de guerreiros de elite, os miragens. Combatentes sagrados, eles aprendem versos específicos da Canção das Rochas, que usam para complementar suas habilidades marciais. Miragens são defensores do povo ferani e muitas vezes podem ser encontrados liderando grupos de lanceiros em missões importantes para suas tribos.</p><p><strong>Furtividade:</strong> +16 (+18 em deserto).</p>",
+  "ataques": [
+    {
+      "arma": "Lança",
+      "descricao": "lança (mais veneno)",
+      "img": "systems/tormenta20/icons/itens/equipamentos/lanca.webp",
+      "ataque": 20,
+      "critico": "19",
+      "dano": [
+        [
+          "2d8+14",
+          "perfuracao"
+        ]
+      ]
+    },
+    {
+      "arma": "Mordida",
+      "descricao": "mordida (mais veneno)",
+      "img": "icons/creatures/abilities/mouth-teeth-long-red.webp",
+      "ataque": 20,
+      "dano": [
+        [
+          "2d6+14",
+          "perfuracao"
+        ]
+      ]
+    },
+    {
+      "arma": "Arco curto",
+      "descricao": "arco curto x2 (mais veneno)",
+      "img": "systems/tormenta20/icons/itens/equipamentos/arco-curto.webp",
+      "qtd": 2,
+      "ataque": 20,
+      "critico": "x3",
+      "alcance": "medium",
+      "dano": [
+        [
+          "2d6+12",
+          "perfuracao"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Evasão",
+      "img": "systems/tormenta20/icons/poderes/classes/especialistas/evasao.webp",
+      "descricao": "<p>Quando sofre um efeito que permite um teste de Reflexos para reduzir o dano à metade, o ferani não sofre dano algum se passar.</p>"
+    },
+    {
+      "poder": "Emboscar",
+      "img": "systems/tormenta20/icons/poderes/ameacas/investida.webp",
+      "descricao": "<p>Na primeira rodada de combate, o ferani miragem pode realizar uma ação padrão adicional.</p>"
+    },
+    {
+      "poder": "Escaramuça Desértica",
+      "img": "systems/tormenta20/icons/poderes/ameacas/investida.webp",
+      "descricao": "<p>Quando se move 6m ou mais, até o início do seu próximo turno o ferani recebe camuflagem leve, +2 na Defesa e em Reflexos e +1d8 nas rolagens de dano em ataques contra alvos em alcance curto.</p>",
+      "efeitos": [
+        {
+          "name": "Escaramuça Desértica",
+          "description": "<p>+2 na Defesa e em Reflexos e +1d8 nas rolagens de dano contra alvos em alcance curto, até o início do próximo turno.</p><p><strong>Não automatizado:</strong> camuflagem leve.</p>",
+          "system": {
+            "changes": [
+              {
+                "key": "system.attributes.defesa.bonus",
+                "value": 2,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              },
+              {
+                "key": "system.pericias.refl.bonus",
+                "value": 2,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              },
+              {
+                "key": "system.modificadores.dano.geral",
+                "value": "1d8",
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "poder": "Mau Cheiro",
+      "img": "systems/tormenta20/icons/poderes/ameacas/veneno.webp",
+      "descricao": "<p>Todas as criaturas (exceto trogs) em alcance curto ficam enjoadas por 1d6 rodadas (Fort CD 22 evita). Uma criatura que passe no teste de resistência fica imune a esta habilidade por um dia. <em>Veneno.</em></p>",
+      "acao": "padrao",
+      "danos": [
+        [
+          "1d6",
+          "",
+          "Rodadas (enjoado)"
+        ]
+      ],
+      "resistencia": "Fortitude CD 22 evita"
+    },
+    {
+      "poder": "Passo do Deserto",
+      "img": "systems/tormenta20/icons/magias/salto-dimensional.webp",
+      "descricao": "<p>Se estiver sob areia, terra ou outro tipo de terreno que não seja rocha sólida (ou o equivalente), o ferani pode se teleportar para um espaço desocupado em alcance curto sobre o mesmo tipo de terreno. <em>Recarga (movimento).</em></p>",
+      "acao": "livre"
+    },
+    {
+      "poder": "Veneno",
+      "img": "systems/tormenta20/icons/poderes/ameacas/veneno.webp",
+      "descricao": "<p>Peçonha comum (perde 1d12 PV, Fort CD 22 evita).</p>",
+      "danos": [
+        [
+          "1d12",
+          "perda",
+          "Peçonha"
+        ]
+      ],
+      "resistencia": "Fortitude CD 22 evita"
+    },
+    {
+      "poder": "Sangue Frio",
+      "img": "systems/tormenta20/icons/poderes/ameacas/vulnerabilidade.webp",
+      "descricao": "<p>O ferani sofre 1 ponto de dano adicional por dado de dano de frio.</p>"
+    }
+  ]
+}

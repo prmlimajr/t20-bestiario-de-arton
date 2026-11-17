@@ -1,0 +1,161 @@
+{
+  "nome": "Ginete do Pavor",
+  "img": "assets/tokens/ginete-do-pavor.png",
+  "nd": "17",
+  "tipo": "esp",
+  "tamanho": "med",
+  "papel": "solo",
+  "atributos": {
+    "for": 7,
+    "des": 3,
+    "con": 5,
+    "int": 1,
+    "sab": 3,
+    "car": 1
+  },
+  "pv": 999,
+  "defesa": 54,
+  "pericias": {
+    "inic": 17,
+    "perc": 17,
+    "fort": 30,
+    "refl": 24,
+    "vont": 17,
+    "cava": 17,
+    "furt": 19,
+    "inti": 17
+  },
+  "deslocamento": {
+    "deslocamento": 9
+  },
+  "sentidos": [
+    "faro",
+    "cegas",
+    "escuro"
+  ],
+  "resistencias": {
+    "frio": "imune",
+    "trevas": "imune",
+    "dano": 10
+  },
+  "imunidadeCondicoes": [
+    "medo"
+  ],
+  "resistenciasTexto": "cura acelerada 30/fogo ou luz, imunidade a frio, medo e trevas, redução de dano 10/mágico, resistência à magia +5",
+  "corpoACorpo": "Gadanho x3 +47 (4d12+30, x4, mais 4d8 trevas).",
+  "tesouro": "Essência de morte (CD 32 para extrair, reduz em 1 PM o custo para fabricar uma arma com o encanto <em>tumular</em>).",
+  "notas": "<p><em>Como que saindo de um pesadelo, a abominação feita de trevas galopa na direção de vocês. Leva algum tempo para que percebam ser, na verdade, duas criaturas — um imenso lobo warg e seu cavaleiro, um monstruoso bugbear empunhando uma enorme lâmina serrilhada.</em></p><p>Considerados lendas entre os próprios bugbear, sempre se pensou que ginetes do pavor seriam enviados de Ragnar para punir infiéis, ou inimigos dos duyshidakk, ou ambos. Contudo, mesmo após a morte do antigo deus bugbear, eles continuam existindo.</p><p>Solitários ou em bandos, os ginetes parecem dedicados a espalhar medo e escuridão, aterrorizando desde viajantes desprotegidos a povoados inteiros. São alimentados pelo rancor imortal do deus abatido? Pertencem a algum culto necromântico secreto? Nem os duyshidakk sabem a resposta, muito menos os aventureiros do Reinado, às vezes contratados para lidar com essas aparições macabras em vários pontos de Arton.</p><p><strong>Cura acelerada:</strong> 30/fogo ou luz. <strong>Redução de dano:</strong> 10/mágico.</p>",
+  "ataques": [
+    {
+      "arma": "Gadanho",
+      "descricao": "gadanho x3",
+      "img": "systems/tormenta20/icons/itens/equipamentos/gadanho.webp",
+      "qtd": 3,
+      "ataque": 47,
+      "critico": "x4",
+      "dano": [
+        [
+          "4d12+30",
+          "corte"
+        ],
+        [
+          "4d8",
+          "trevas"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Cura Acelerada",
+      "img": "systems/tormenta20/icons/magias/curar-ferimentos.webp",
+      "descricao": "<p>No início de cada um de seus turnos, o ginete recupera 30 pontos de vida. Esta habilidade não funciona se o ginete sofreu dano de fogo ou luz desde o seu último turno.</p>",
+      "danos": [
+        [
+          "30",
+          "curapv",
+          "Cura acelerada"
+        ]
+      ]
+    },
+    {
+      "poder": "Resistência a Magia",
+      "img": "systems/tormenta20/icons/poderes/ameacas/resistencia-magia.webp",
+      "descricao": "<p>O ginete do pavor recebe +5 em testes de resistência contra magias.</p>"
+    },
+    {
+      "poder": "Arma de Morte",
+      "img": "systems/tormenta20/icons/itens/equipamentos/gadanho.webp",
+      "descricao": "<p>O gadanho do ginete é uma arma mágica que ignora redução de dano. Além disso, cada vez que o ginete do pavor reduz um inimigo a 0 PV ou menos com essa arma, o dano de trevas dela aumenta em +1d8 até o fim da cena.</p>",
+      "danos": [
+        [
+          "1d8",
+          "trevas",
+          "+1d8 por inimigo"
+        ]
+      ]
+    },
+    {
+      "poder": "Mão de Ragnar",
+      "img": "systems/tormenta20/icons/poderes/ameacas/ataque-trevas.webp",
+      "descricao": "<p>Criaturas imunes a dano de trevas, em vez disso, sofrem metade do dano de trevas do ginete, e criaturas que recuperariam PV com dano de trevas não o fazem.</p>"
+    },
+    {
+      "poder": "Olhar Amedrontador",
+      "img": "systems/tormenta20/icons/magias/amedrontar.webp",
+      "descricao": "<p>O ginete lança @UUID[Compendium.tormenta20.magias.Item.m14TgW19d1JTBz8U]{Amedrontar}, como um clérigo de Ragnar de 17º nível, sem gastar PM (CD 44, limite de PM 17).</p>",
+      "acao": "movimento",
+      "resistencia": "Vontade CD 44 reduz"
+    },
+    {
+      "poder": "Passo Fantasmagórico",
+      "img": "systems/tormenta20/icons/poderes/ameacas/sombra-rubra.webp",
+      "descricao": "<p>Sempre que o ginete se desloca, ele e sua montaria se tornam incorpóreos até o fim do deslocamento. Qualquer criatura nos espaços pelos quais ele passar enquanto incorpóreo sofre 4d8 pontos de dano de frio e 4d8 pontos de dano de trevas e fica alquebrada (Von CD 44 reduz à metade e evita a condição).</p>",
+      "danos": [
+        [
+          "4d8",
+          "frio"
+        ],
+        [
+          "4d8",
+          "trevas"
+        ]
+      ],
+      "resistencia": "Vontade CD 44 reduz à metade e evita"
+    },
+    {
+      "poder": "Warg Espectral",
+      "img": "systems/tormenta20/icons/poderes/ameacas/mordida.webp",
+      "descricao": "<p>O ginete cavalga um warg espectral, um parceiro montaria (Grande) que não reduz sua Furtividade. Enquanto o ginete está montado, seu deslocamento se torna voo 15m (10q), ele recebe uma ação de movimento extra por turno (apenas para se deslocar) e +1d6 em rolagens de dano corpo a corpo e, uma vez por rodada, quando acerta um ataque corpo a corpo, pode fazer a manobra derrubar como uma ação livre (teste +49).</p>",
+      "efeitos": [
+        {
+          "name": "Warg Espectral (montado)",
+          "description": "<p>Voo 15m e +1d6 em rolagens de dano corpo a corpo.</p><p><strong>Não automatizado:</strong> ação de movimento extra (apenas para se deslocar) e derrubar como ação livre (teste +49).</p>",
+          "system": {
+            "changes": [
+              {
+                "key": "system.attributes.movement.fly.base",
+                "value": 15,
+                "priority": null,
+                "type": "override",
+                "phase": "initial"
+              },
+              {
+                "key": "system.modificadores.dano.cac",
+                "value": "1d6",
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "poder": "Inimigo da Luz",
+      "img": "systems/tormenta20/icons/poderes/ameacas/fraqueza-zumbi.webp",
+      "descricao": "<p>Quando exposto à luz do sol ou similar, o ginete fica ofuscado e sua cura acelerada não funciona.</p>"
+    }
+  ]
+}

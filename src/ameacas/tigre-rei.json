@@ -1,0 +1,125 @@
+{
+  "nome": "Tigre-Rei",
+  "img": "assets/tokens/tigre-rei.png",
+  "nd": "9",
+  "tipo": "ani",
+  "tamanho": "eno",
+  "papel": "solo",
+  "atributos": {
+    "for": 9,
+    "des": 5,
+    "con": 7,
+    "int": 0,
+    "sab": 3,
+    "car": 0
+  },
+  "pv": 310,
+  "defesa": 33,
+  "pericias": {
+    "inic": 18,
+    "perc": 14,
+    "fort": 15,
+    "refl": 21,
+    "vont": 9,
+    "ades": 12,
+    "atle": 19,
+    "furt": 12
+  },
+  "deslocamento": {
+    "deslocamento": 15
+  },
+  "sentidos": [
+    "faro",
+    "penumbra"
+  ],
+  "resistencias": {
+    "dano": 10
+  },
+  "imunidadeCondicoes": [
+    "medo"
+  ],
+  "resistenciasTexto": "imunidade a medo, redução de dano 10/mágico, resistência a magia +2",
+  "corpoACorpo": "Mordida +26 (3d10+9) e duas garras +26 (3d8+9).",
+  "tesouro": "Nenhum.",
+  "notas": "<p><em>Ele é grande como um elefante, as asas capazes de encobrir um celeiro, o pelo longo e dourado ondulando ao vento. Quando arreganha o bico, seu piado-urro alcança e ecoa nas montanhas distantes.</em></p><p>Em Arbória, o mundo divino de Allihanna, existem criaturas especialmente abençoadas pela magia da natureza. Exemplares extraordinários de suas espécies, estas criaturas são chamadas de feras-reais e são mais fortes, ágeis e inteligentes que suas contrapartes normais. Feras-reais costumam assumir a liderança de seus bandos ou manadas ou, no caso de animais solitários, como tigres, dominam o dobro do território que normalmente controlariam. Um mesmo bando ou manada dificilmente terá mais de uma fera-real — a exceção são animais liderados por casais, como lobos, que podem ter uma fera-rainha e uma fera-rei.</p><p>Feras-reais raramente vêm para Arton — quando o fazem, isso é resultado de uma invocação poderosa ou de uma demanda da própria Allihanna. Entretanto, de tempos em tempos, um animal artoniano se torna tão poderoso, e tão importante para o equilíbrio da natureza, que uma bênção da Deusa da Natureza recai sobre ele, transformando-o em uma fera-real.</p><p><strong>Redução de dano:</strong> 10/mágico.</p><p><strong>Adestramento:</strong> +12 (+22 com tigres). <strong>Furtividade:</strong> +12 (+17 em florestas).</p>",
+  "ataques": [
+    {
+      "arma": "Mordida",
+      "descricao": "mordida",
+      "img": "icons/creatures/abilities/mouth-teeth-long-red.webp",
+      "ataque": 26,
+      "dano": [
+        [
+          "3d10+9",
+          "perfuracao"
+        ]
+      ]
+    },
+    {
+      "arma": "Garras",
+      "descricao": "duas garras",
+      "qtd": 2,
+      "ataque": 26,
+      "dano": [
+        [
+          "3d8+9",
+          "corte"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Resistência a Magia",
+      "img": "systems/tormenta20/icons/poderes/ameacas/resistencia-magia.webp",
+      "descricao": "<p>O tigre-rei recebe +2 em testes de resistência contra magias.</p>"
+    },
+    {
+      "poder": "Bote",
+      "img": "systems/tormenta20/icons/poderes/ameacas/bote.webp",
+      "descricao": "<p>O tigre-rei faz uma investida e ataca com sua mordida e suas garras. Os três ataques recebem o bônus de +2 da investida, mas devem ser feitos contra a mesma criatura.</p>",
+      "acao": "completa"
+    },
+    {
+      "poder": "Empatia Selvagem",
+      "img": "systems/tormenta20/icons/poderes/ameacas/voz-da-natureza.webp",
+      "descricao": "<p>O tigre-rei pode usar Adestramento para mudar atitude e persuasão com tigres.</p>"
+    },
+    {
+      "poder": "Ímpeto Destrutivo",
+      "img": "systems/tormenta20/icons/poderes/ameacas/urro-selvagem.webp",
+      "descricao": "<p>O tigre-rei recebe +2 em testes de ataque e rolagens de dano em seu primeiro turno de combate.</p>",
+      "efeitos": [
+        {
+          "name": "Ímpeto Destrutivo",
+          "description": "<p>Primeiro turno de combate: +2 em testes de ataque e rolagens de dano.</p>",
+          "system": {
+            "changes": [
+              {
+                "key": "system.modificadores.ataque.cac",
+                "value": 2,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              },
+              {
+                "key": "system.modificadores.dano.cac",
+                "value": 2,
+                "priority": null,
+                "type": "add",
+                "phase": "initial"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "poder": "Rugido Paralisante",
+      "img": "systems/tormenta20/icons/poderes/ameacas/urro-selvagem.webp",
+      "descricao": "<p>Criaturas em alcance curto ficam imóveis por 1 rodada (Fort CD 26 evita). Uma criatura só pode ser alvo desta habilidade uma vez por cena.</p>",
+      "acao": "movimento",
+      "resistencia": "Fortitude CD 26 evita"
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "nome": "Elefante-Rei",
+  "img": "assets/tokens/elefante-rei.png",
+  "nd": "15",
+  "tipo": "ani",
+  "tamanho": "col",
+  "papel": "solo",
+  "atributos": {
+    "for": 10,
+    "des": 0,
+    "con": 8,
+    "int": 0,
+    "sab": 3,
+    "car": 2
+  },
+  "pv": 730,
+  "defesa": 50,
+  "pericias": {
+    "inic": 13,
+    "perc": 18,
+    "fort": 30,
+    "refl": 13,
+    "vont": 22,
+    "ades": 17
+  },
+  "deslocamento": {
+    "deslocamento": 12
+  },
+  "sentidos": [
+    "faro",
+    "penumbra"
+  ],
+  "resistencias": {
+    "dano": 5
+  },
+  "imunidadeCondicoes": [
+    "medo"
+  ],
+  "resistenciasTexto": "imunidade a medo, redução de dano 5, redução de dano 10/mágico, resistência a magia +2",
+  "corpoACorpo": "Presas +43 (6d12+66, x3) e tromba +43 (6d10+50 impacto).",
+  "tesouro": "Nenhum.",
+  "notas": "<p><em>Ele é grande como um elefante, as asas capazes de encobrir um celeiro, o pelo longo e dourado ondulando ao vento. Quando arreganha o bico, seu piado-urro alcança e ecoa nas montanhas distantes.</em></p><p>Em Arbória, o mundo divino de Allihanna, existem criaturas especialmente abençoadas pela magia da natureza. Exemplares extraordinários de suas espécies, estas criaturas são chamadas de feras-reais e são mais fortes, ágeis e inteligentes que suas contrapartes normais. Feras-reais costumam assumir a liderança de seus bandos ou manadas ou, no caso de animais solitários, como tigres, dominam o dobro do território que normalmente controlariam. Um mesmo bando ou manada dificilmente terá mais de uma fera-real — a exceção são animais liderados por casais, como lobos, que podem ter uma fera-rainha e uma fera-rei.</p><p>Feras-reais raramente vêm para Arton — quando o fazem, isso é resultado de uma invocação poderosa ou de uma demanda da própria Allihanna. Entretanto, de tempos em tempos, um animal artoniano se torna tão poderoso, e tão importante para o equilíbrio da natureza, que uma bênção da Deusa da Natureza recai sobre ele, transformando-o em uma fera-real.</p><p><strong>Redução de dano:</strong> 5 (registrada na ficha) e 10/mágico.</p><p><strong>Adestramento:</strong> +17 (+27 com elefantes).</p>",
+  "ataques": [
+    {
+      "arma": "Presas",
+      "descricao": "presas",
+      "img": "systems/tormenta20/icons/poderes/ameacas/chifres.webp",
+      "ataque": 43,
+      "critico": "x3",
+      "dano": [
+        [
+          "6d12+66",
+          "perfuracao"
+        ]
+      ]
+    },
+    {
+      "arma": "Tromba",
+      "descricao": "tromba",
+      "img": "systems/tormenta20/icons/poderes/ameacas/pancada.webp",
+      "ataque": 43,
+      "dano": [
+        [
+          "6d10+50",
+          "impacto"
+        ]
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "poder": "Resistência a Magia",
+      "img": "systems/tormenta20/icons/poderes/ameacas/resistencia-magia.webp",
+      "descricao": "<p>O elefante-rei recebe +2 em testes de resistência contra magias.</p>"
+    },
+    {
+      "poder": "Arremessar",
+      "img": "systems/tormenta20/icons/poderes/ameacas/derrubar.webp",
+      "descricao": "<p>Se começar seu turno agarrando uma criatura Grande ou menor, o elefante-rei arremessa a vítima 1d6 x 1,5m em uma direção à escolha dele. A vítima sofre 6d8 pontos de dano de impacto, fica caída e, se atingir algum obstáculo, sofre +2d8 pontos de dano (Ref CD 40 reduz à metade e evita a condição).</p>",
+      "acao": "movimento",
+      "danos": [
+        [
+          "6d8",
+          "impacto"
+        ],
+        [
+          "2d8",
+          "impacto",
+          "Obstáculo"
+        ],
+        [
+          "1d6",
+          "",
+          "Distância (x1,5m)"
+        ]
+      ],
+      "resistencia": "Reflexos CD 40 reduz à metade e evita"
+    },
+    {
+      "poder": "Atropelamento",
+      "img": "systems/tormenta20/icons/poderes/ameacas/investida.webp",
+      "descricao": "<p>O elefante-rei percorre até o dobro de seu deslocamento. Ele pode passar pelo espaço ocupado de quaisquer inimigos menores que ele, mas não pode passar duas vezes pelo mesmo espaço. Criaturas atropeladas desta forma sofrem 6d10+50 pontos de dano de impacto e ficam caídas (Ref CD 40 reduz à metade e evita a condição). <em>Recarga (movimento).</em></p>",
+      "acao": "completa",
+      "danos": [
+        [
+          "6d10+50",
+          "impacto"
+        ]
+      ],
+      "resistencia": "Reflexos CD 40 reduz à metade e evita"
+    },
+    {
+      "poder": "Empatia Selvagem",
+      "img": "systems/tormenta20/icons/poderes/ameacas/voz-da-natureza.webp",
+      "descricao": "<p>O elefante-rei pode usar Adestramento para mudar atitude e persuasão com elefantes.</p>"
+    },
+    {
+      "poder": "Pisotear",
+      "img": "systems/tormenta20/icons/poderes/ameacas/cascos.webp",
+      "descricao": "<p>Uma criatura que o elefante-rei esteja agarrando, ou que esteja caída adjacente a ele, sofre 12d10+100 pontos de dano de impacto e fica fraca por 1 rodada (Fort CD 40 reduz à metade e evita a condição).</p>",
+      "acao": "padrao",
+      "danos": [
+        [
+          "12d10+100",
+          "impacto"
+        ]
+      ],
+      "resistencia": "Fortitude CD 40 reduz à metade e evita"
+    },
+    {
+      "poder": "Prender",
+      "img": "systems/tormenta20/icons/poderes/ameacas/agarrar.webp",
+      "descricao": "<p>Se o elefante-rei acerta um ataque de tromba, pode fazer a manobra agarrar ou derrubar (teste +53).</p>",
+      "acao": "livre"
+    }
+  ]
+}

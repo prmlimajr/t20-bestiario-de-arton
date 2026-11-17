@@ -1,0 +1,137 @@
+{
+  "name": "Montaria: Grifo Celestial",
+  "type": "poder",
+  "img": "assets/tokens/grifo-celestial.png",
+  "system": {
+    "description": {
+      "value": "<p>O grifo celestial é um parceiro montaria (Enorme) que fornece os benefícios a seguir. Um grifo celestial só irá seguir um devoto de Allihanna.</p>\n<p><strong>Iniciante</strong>: seu deslocamento muda para 12m (normal e de voo).</p>\n<p><strong>Veterano</strong>: você recebe uma ação de movimento extra por turno (apenas para se deslocar) e, uma vez por rodada, recebe +1d6 em uma rolagem de dano corpo a corpo.</p>\n<p><strong>Mestre</strong>: seu deslocamento (normal e de voo) muda para 18m e o bônus na rolagem de dano aumenta para +2d6.</p>"
+    },
+    "source": "Bestiário de Arton",
+    "tipo": "geral",
+    "subtipo": "Montaria"
+  },
+  "effects": [
+    {
+      "name": "Montaria: Grifo Celestial Iniciante",
+      "description": "<p>Deslocamento 12m, voo 12m.</p>",
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.movement.walk.base",
+            "value": 12,
+            "priority": null,
+            "type": "override",
+            "phase": "initial"
+          },
+          {
+            "key": "system.attributes.movement.fly.base",
+            "value": 12,
+            "priority": null,
+            "type": "override",
+            "phase": "initial"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Montaria: Grifo Celestial Veterano",
+      "description": "<p>Deslocamento 12m, voo 12m.</p><p>Para o dano extra, marque o efeito \"Grifo Celestial: +1d6 de dano\" na janela de ataque.</p><p><strong>Não automatizado:</strong> ação de movimento extra por turno (apenas para se deslocar).</p>",
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.movement.walk.base",
+            "value": 12,
+            "priority": null,
+            "type": "override",
+            "phase": "initial"
+          },
+          {
+            "key": "system.attributes.movement.fly.base",
+            "value": 12,
+            "priority": null,
+            "type": "override",
+            "phase": "initial"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Montaria: Grifo Celestial Mestre",
+      "description": "<p>Deslocamento 18m, voo 18m.</p><p>Para o dano extra, marque o efeito \"Grifo Celestial: +2d6 de dano\" na janela de ataque.</p><p><strong>Não automatizado:</strong> ação de movimento extra por turno (apenas para se deslocar).</p>",
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.movement.walk.base",
+            "value": 18,
+            "priority": null,
+            "type": "override",
+            "phase": "initial"
+          },
+          {
+            "key": "system.attributes.movement.fly.base",
+            "value": 18,
+            "priority": null,
+            "type": "override",
+            "phase": "initial"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Grifo Celestial: +1d6 de dano",
+      "img": "icons/svg/upgrade.svg",
+      "description": "<p>Veterano: uma vez por rodada, +1d6 em uma rolagem de dano corpo a corpo.</p>",
+      "disabled": true,
+      "transfer": true,
+      "duration": {
+        "expiry": null
+      },
+      "system": {
+        "onuse": true,
+        "abilityUse": {
+          "custo": null,
+          "types": [
+            "attack"
+          ]
+        },
+        "changes": [
+          {
+            "key": "dano",
+            "value": "1d6",
+            "priority": 0,
+            "type": "add",
+            "phase": "initial"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Grifo Celestial: +2d6 de dano",
+      "img": "icons/svg/upgrade.svg",
+      "description": "<p>Mestre: uma vez por rodada, +2d6 em uma rolagem de dano corpo a corpo (substitui o +1d6).</p>",
+      "disabled": true,
+      "transfer": true,
+      "duration": {
+        "expiry": null
+      },
+      "system": {
+        "onuse": true,
+        "abilityUse": {
+          "custo": null,
+          "types": [
+            "attack"
+          ]
+        },
+        "changes": [
+          {
+            "key": "dano",
+            "value": "2d6",
+            "priority": 0,
+            "type": "add",
+            "phase": "initial"
+          }
+        ]
+      }
+    }
+  ]
+}

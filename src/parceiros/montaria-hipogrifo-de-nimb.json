@@ -1,0 +1,41 @@
+{
+  "name": "Montaria: Hipogrifo de Nimb",
+  "type": "poder",
+  "img": "assets/tokens/hipogrifo-de-nimb-parceiro.png",
+  "system": {
+    "description": {
+      "value": "<p>O Hipogrifo de Nimb é um parceiro montaria (Grande) que aceita ser montado apenas por quem ele quiser. Ele fornece os seguintes benefícios: seu deslocamento muda para 18m (voo 36m) e você recebe uma ação de movimento extra por turno (apenas para se deslocar).</p>\n<p>Além disso, você pode lançar @UUID[Compendium.tormenta20.magias.Item.s9z7z8KtujpICCZw]{Sussurros Insanos}. Caso aprenda essa magia, seu custo diminui em –1 PM.</p>"
+    },
+    "source": "Bestiário de Arton",
+    "tipo": "geral",
+    "subtipo": "Montaria"
+  },
+  "effects": [
+    {
+      "name": "Montaria: Hipogrifo de Nimb",
+      "description": "<p>Deslocamento 18m, voo 36m.</p><p><strong>Não automatizado:</strong> ação de movimento extra por turno (apenas para se deslocar); acesso a Sussurros Insanos (ou –1 PM no custo).</p>",
+      "transfer": true,
+      "duration": {
+        "expiry": null
+      },
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.movement.walk.base",
+            "value": 18,
+            "priority": null,
+            "type": "override",
+            "phase": "initial"
+          },
+          {
+            "key": "system.attributes.movement.fly.base",
+            "value": 36,
+            "priority": null,
+            "type": "override",
+            "phase": "initial"
+          }
+        ]
+      }
+    }
+  ]
+}
